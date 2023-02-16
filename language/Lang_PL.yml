@@ -1,0 +1,1807 @@
+ 
+ 
+ # TRANSLATIONS OF THE LANGUAGE AND DIALOGUE FILES
+ 
+LANGUAGE:
+  separer: <gradient:blue:aqua>████████████████████████████████</gradient>
+  command by player: '%tag% <red>Ta komenda musi być wykonana przez gracza.'
+  command by console: '%tag% <red>Ta komenda musi być wykonana przez konsolę.'
+  disabled world command: '%tag% <red>Komendy klanów są wyłączone na tym świecie.'
+  disabled region command: '%tag% <red>Komendy klanów są wyłączone w tym regionie.'
+  error start action: '%tag% <red>Wystąpił błąd przy uruchamianiu.'
+  error character: '%tag% <red>Wykryto nieprawidłowe znaki.'
+  error mod desc: '%tag% <red>Błąd zmiany opisu Klanu.'
+  has globalff: '%tag% <green>Globalny friendly fire jest teraz włączony!'
+  no permission: '%tag% <red>Nie masz uprawnień'
+  chest extra buyed update: '%tag% <aqua>%player% <green>zakupił nową skrzynię dla Klanu.'
+  currency vault: Pieniądze
+  currency playerpoints: Punkty
+  currency clansouls: Dusze
+  export same storage: '%tag% <red>Do eksportu należy wybrać inny magazyn niż bieżący.'
+  export no data: '%tag% <red>Obecnie nie ma żadnych danych do eksportu.'
+  export mysql deconfigured: '%tag% <red>Wystąpił błąd, pola mysql są źle skonfigurowane.'
+  export mysql connection error: '%tag% <red>Wystąpił błąd w połączeniu z MYSQL.'
+  export sqlite connection error: '%tag% <red>Wystąpił błąd w połączeniu z SQLITE.'
+  export yaml connection error: '%tag% <red>Wystąpił błąd w połączeniu z YAML.'
+  tag in use: '%tag% <red>Ten Tag jest już w użyciu.'
+  clan not found: '%tag% <red>Klan z tym Tagiem nie istnieje.'
+  clan ally header: <blue>Lista Sojuszników. <dark_gray>(tag/kdr/members)
+  clan list empty: ' <red>Nie ma żadnego Klanu na tej liście.'
+  clan is your clan: '%tag% <red>To jest twój Klan.'
+  clan is rival: '%tag% <red>Ten Klan jest już rywalem.'
+  clan already ally: '%tag% <red>Ten Klan jest już sojusznikiem.'
+  clan dont ally: '%tag% <red>Ten Klan nie jest sojusznikiem.'
+  clan player isnot your clan: '%tag% <red>Ten gracz nie jest w Twoim Klanie.'
+  clan player skin in update gui: <green>Aktualizowanie skina, czekaj...
+  clan player skin in update: '%tag% <green>Aktualizowanie skina, może to zająć chwilę...'
+  clan player skin finish update: '%tag% <green>Twój skin został zakualizowany'
+  clan player skin error update: '%tag% <red>Wystąpił błąd podczas aktualizacji Twojego skina'
+  clan pvp disabled: '%tag% <red>Klanowe PVP jest teraz wyłączone.'
+  clan allypvp disabled: '%tag% <red>PVP pomiędzy sojusznikami wyłączone.'
+  clan player blocked invite gui: <red>Wyłączono zaproszenia do Klanów.
+  clan player blocked invite: '%tag% <red>Ten gracz ma wyłączoną możliwość zapraszania do Klanu.'
+  clan player accept success invite gui: <green>Zaproszenie zaakceptowane.
+  clan player accept success invite: '%tag% <red>Pomyślnie zaakceptowałeś zaproszenie.'
+  clan player accept error invite gui: <red>Błąd akceptacji.
+  clan player accept error invite: '%tag% <red>Wystąpił problem z akceptacją zaproszenia.'
+  clan player deny success invite gui: <red>Zaproszenie odrzucone.
+  clan player deny success invite: '%tag% <red>Pomyślnie odrzuciłeś zaproszenie.'
+  clan player deny error invite gui: <red>Błąd odrzucenia.
+  clan player deny error invite: '%tag% <red>Wystąpił problem z odrzuceniem zaproszenia.'
+  clan player isalready banned: '%tag% <red>Ten gracz jest już zbanowany w Klanie.'
+  clan player isnot banned: '%tag% <red>Ten gracz nie jest zbanowany w Klanie.'
+  clan player is banned: '%tag% <red>Ten gracz jest zbanowany z Klanu i nie może otrzymywać zaproszeń.'
+  clan player is banned gui: <red>Gracz jest zbanowany z Klanu.
+  clan player error unban: '%tag% <red>Wystąpił błąd przy próbie odbanowania tego gracza'
+  clan player error unban gui: <red>Błąd odbanowania gracza.
+  clan player error ban: '%tag% <red>Wystąpił błąd przy próbie zbanowania tego gracza'
+  clan player error ban gui: <red>Błąd banowania gracza.
+  clan player success ban: '%tag% <green>Gracz został pomyślnie zbanowany w Klanie.'
+  clan player success ban gui: <green>Gracz został pomyślnie zbanowany.
+  clan player success unban: '%tag% <green>Gracz został pomyślnie odbanowany z Klanu.'
+  clan player success unban gui: <green>Gracz pomyślnie odbanowany.
+  clan player are banned: '%tag% <red>Jesteś zbanowany z tego Klanu i nie możesz dołączać do członków.'
+  clan player error change nickname: '%tag% <red>Błąd zmiany nicku.'
+  clan player error change nickname gui: <red>Błąd zmiany nicku.
+  clan player changed nickname: '%tag% <green>Nick został pomyślnie zmieniony!'
+  clan player changed nickname gui: <green>Nick pomyślnie zmieniony!
+  clan player nickname default: '%tag% <red>Twój nick jest już domyślny.'
+  clan player nickname default gui: <red>Nick jest już domyślny.
+  clan reward level: '%tag% <yellow>Otrzymałeś nagrody za osiągnięcie przez Twój Klan poziomu %num%'
+  clan max members: <red>Ten Klan ma już maksymalną liczbę graczy.
+  clan max members level: '%tag% <red>Ten Klan ma już maksymalną liczbę graczy dla bieżącego poziomu.'
+  clan player kicked out: '%tag% <green>Zostałeś wyrzucony z klanu <aqua>%clan% <red>przez <green>%clan_leader%'
+  clan player kicked outby: '%tag% <dark_red>%player% <yellow>został wyrzucony z klanu przez <green>%clan_leader%'
+  clan tag equals: '%tag% <red>Niezmieniony TAG, wygląda na taki sam.'
+  clan name equals: '%tag% <red>Niezmieniona NAZWA, wygląda na taką samą.'
+  clan already rival: '%tag% <red>Ten Klan jest już rywalem.'
+  clan is ally: '%tag% <red>Ten Klan jest już sojusznikiem.'
+  clan rival error remove: '%tag% <red>Błąd usuwania rywala.'
+  clan dont rival: '%tag% <red>Ten Klan nie jest rywalem.'
+  clan new ally: '%tag% <red>! <yellow>Nowe sojusze zostały zawarte z klanem <green>%clan_tag%'
+  clan removed ally: '%tag% <red>! <yellow>Sojusz z klanem <green>%clan_tag% <yellow>został zerwany.'
+  clan one removed ally: '%tag% <red>! <yellow>Sojusz został zerwany.'
+  clan one removed rival: '%tag% <red>! <yellow>Rywalizacja została zakończona.'
+  clan created: '%tag% <red>! <yellow>Nowy klan <aqua>%clan_tag% <yellow>został utworzony przez <green>%player%.'
+  clan deleted: '%tag% <red>! <yellow>Klan <aqua>%clan_tag% <yellow>został usunięty przez <green>%player%.'
+  clan deleted small: <red><strikethrough>Usunięte
+  clan ff changed: '%tag% <red>! <yellow>Przyjazne ostrzały są <aqua>%value%.'
+  clan globalff changed: '%tag% <red>! <yellow>Globalne przyjazne ostrzały są <aqua>%value%.'
+  clan new join: '%tag% <red>! <yellow>Gracz <green>%player% <yellow>wstąpił do Klanu.'
+  clan new kick: '%tag% <red>! <yellow>Gracz <green>%player% <yellow>został wygnany z Klanu.'
+  clan new leave: '%tag% <red>! <red>Gracz <green>%player% <yellow>opuszcza klan <green>%clan_tag% <red>Klan.'
+  clan new rival: '%tag% <red>! <yellow>Nowa rywalizacja z klanem <green>%clan_tag%'
+  clan new rival removed: '%tag% <red>! <yellow>Rywalizacja z klanem <green>%clan_tag% <yellow>została rozwiązana.'
+  clan new leader: '%tag% <red>! <yellow>Nowym liderem klanu <green>%clan_tag% <yellow>jest <green>%player%'
+  clan rival removed: '%tag% <red>! <yellow>Rywalizacja z klanem <green>%clan_tag% <yellow>została zakończona.'
+  clan verify changed: '%tag% <red>! <yellow>Klan został zmieniony na <green>%value%.'
+  clan new promote: '%tag% <red>! <yellow>Gracz <green>%player% <yellow>został awansowany na <aqua>%role_formated%.'
+  clan new demote: '%tag% <red>! <red>Gracz <green>%player% <yellow>został zdegradowany.'
+  clan tag blacklist: '%tag% <red>Ten Tag nie może być użyty w Klanach.'
+  clan changed settings: '%tag% <green>Ustawienia Klanu zostały zmienione.'
+  clan changed settings gui: <green>Ustawienia zostały zmienione.
+  clan sync settings gui: <green>Synchronizacja uprawnień...
+  clan settings warinvite: <aqua>Zaproszenie do Wojny
+  clan settings allysharedchat: <aqua>Wspólny czat sojuszników
+  clan settings joinleave: <aqua>Dołącz i Opuść
+  clan settings allysharedhome: <aqua>Wspólne warpy sojuszników
+  clan settings clanff: <aqua>FF Klanu
+  clan settings opened: <aqua>Klan jest otwarty dla wszystkich
+  clan settings publichomes: <aqua>Teleporty publiczne
+  clan delete error gui: <dark_red>Błąd usuwania!
+  clan no actions: '%tag% <red>Brak akcji do anulowania.'
+  clan actions expired: '%tag% <red>Czas na akcję minął.'
+  clan point reason level change: Zmiana poziomu Klanu
+  clan point reason no reason: Brak powodu
+  banner delete error gui: <red>Błąd usuwania!
+  banner delete success gui: <aqua>Pomyślnie usunięto!
+  banner delete error: '%tag% <red>Wystąpił błąd podczas usuwania.'
+  banner delete success: '%tag% <green>Banner został pomyślnie usunięty!'
+  banner empty: '%tag% <red>Twój Klan nie posiada Banera!'
+  banner empty gui: <red>Twój Klan nie posiada Banera!
+  banner empty item: <red>Przedmiot musi być banerem!
+  banner not acceptable: '%tag% <red>Ten przedmiot nie jest akceptowalny jako Banner Klanu.'
+  banner not acceptable gui: <red>Przedmiot nie jest akceptowalny.
+  banner not banner: '%tag% <red>Przedmiot, który trzymasz, musi być banerem'
+  banner hand empty: '%tag% <red>Musisz trzymać przedmiot.'
+  banner upload error gui: <red>Błąd zapisywania banera.
+  banner upload success gui: <aqua>Zapisano nowy banner!
+  banner upload success: '%tag% <aqua>Nowy banner Klanu został zapisany!'
+  help uclan header: <blue><bold>Pomoc dla Admina Klanu:</bold> <gray>(%page%/%pages%)
+  help clan header: '<blue><bold>Pomoc z Klanem:</bold> <gray>(%page%/%pages%) <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help clan header subcommand: '<newline><blue><bold>Pomoc z podkomendami:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help list empty: ' <red>- Na tej liście nic nie ma.'
+  help clan home list header: '<newline>%uclans_tag_color% <blue><bold>Lista home:'
+  help clan home list format: '<click:run_command:"/{_clan} {_home} {_teleport} %uclans_home:{name}:name%"><hover:show_text:''<green>Kliknij, aby przeteleportować.''> <gray>- <green>{num} <gray>| <white>Nazwa: <green>%uclans_home:{name}:name% <gray>| <white>Serwer: <green>%uclans_home:{name}:server% <gray>| <white>Lokalizacja: <green>%uclans_home:{name}:location%</hover></click>'
+  help clan home list format visit: ' <gray>- <green>{num} <gray>| <white>Nazwa: <green>%uclans_home:{name}:name% <gray>| <white>Serwer: <green>%uclans_home:{name}:server%'
+  help clan home view header: '<newline><blue><bold>Informacje o Home:'
+  help clan home view format:
+  - '<blue><bold>|</bold> <blue>Info:'
+  - ' <white>Nazwa: <aqua>%uclans_home:{name}:name%'
+  - ' <white>Serwer: <aqua>%uclans_home:{name}:server%'
+  - ' <white>Lokalizacja: <aqua>%uclans_home:{name}:location%'
+  - ''
+  - <click:suggest_command:"/{_clan} {_home} {_teleport} %uclans_home:{name}:name%"><hover:show_text:'<green>Kliknij, aby się przeteleportować.'><aqua>[Teleport]</hover></click>
+  help clan member list header: '<newline>%uclans_tag_color%<blue><bold> lista członków:'
+  help clan member list format: '<click:suggest_command:"/{_clan} {_profile} {_view} %uclans_player_realname% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_player_role_formated% <green>%uclans_player_nickname% <gray>| <white>Dołączył: <green>%uclans_player_joindate_formated% | <white>KDR: <green>%uclans_player_kdr%</hover></click>'
+  help clan permissions view header: '<newline>%uclans_tag_color%<blue><bold> lista uprawnień:'
+  help clan permissions view format: ' <gray>- %role% <gray>| <white>Klucz: <green>%key% <gray>| <white>Wartość: <green>%value%'
+  help clan ally list header: '<newline>%uclans_tag_color%<blue><bold> lista sojuszy:'
+  help clan ally list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Poziom: <green>%uclans_level% | <white>Lider: <green>%uclans_leader% | <white>Data utworzenia: <green>%uclans_creation_date_formated%</hover></click>'
+  help clan rival list header: '<newline>%uclans_tag_color%<blue><bold> lista rywali:'
+  help clan rival list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Poziom: <green>%uclans_level% | <white>Lider: <green>%uclans_leader% | <white>Data utworzenia: <green>%uclans_creation_date_formated%</hover></click>'
+  help clan member_search list header: '<newline>%uclans_tag_color%<blue><bold> wyszukiwanie członka Lista:'
+  help clan member_search list format: '<click:suggest_command:"/{_clan} {_member} zaproszenie %uclans_player_realname% "><hover:show_text:''<green>Kliknij, aby zaprosić.''> <gray>- %uclans_player_role_formated% <green>%uclans_player_nickname% <gray>| <white>Ostatnio widziany: <green>%uclans_player_lastsee_formated% | <white>KDR: <green>%uclans_player_kdr% <yellow>[Zaproś]</hover></click>'
+  help clan banned list header: '<newline>%uclans_tag_color%<blue><bold> lista zbanowanych członków:'
+  help clan banned list format: '<click:suggest_command:"/{_clan} {_profile} {_view} %uclans_player_realname% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- <green>%uclans_player_nickname% <gray> | <white>KDR: <green>%uclans_player_kdr%</hover></click>'
+  help clan banner list header: '<newline>%uclans_tag_color%<blue><bold> baner:'
+  help clan banner list format:
+  - '<blue><bold>|</bold> <blue>Info:'
+  - ' <white>Posiada baner: <aqua>%uclans_hasbanner_formated%'
+  - ' <white>Baner: <aqua>%uclans_banner_material%'
+  help clan list view header: '<newline><blue><bold> Lista najlepszych klanów:</bold> <newline> <gray>Kolejność: <green>%current%'
+  help clan list view format all: '%tag% <click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% | <white>Utworzenie: <green>%uclans_creation_date_formated% <gray>| <white>Lider: <green>%uclans_leader% | <white>Członkowie: <green>%uclans_count_members% <yellow>[KLIKNIJ]</hover></click>'
+  help clan list view format kill: '%tag% <click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% | <white>Zabójstwa: <green>%uclans_clan_kills% <gray>| <white>Lider: <green>%uclans_leader% | <white>Członkowie: <green>%uclans_count_members% <yellow>[KLIKNIJ]</hover></click>'
+  help clan list view format death: '%tag% <click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% | <white>Śmierci: <green>%uclans_clan_deaths% <gray>| <white>Lider: <green>%uclans_leader% | <white>Członkowie: <green>%uclans_count_members% <yellow>[KLIKNIJ]</hover></click>'
+  help clan list view format kdr: '%tag% <click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% | <white>Kdr: <green>%uclans_clan_kdr% <gray>| <white>Lider: <green>%uclans_leader% | <white>Członkowie: <green>%uclans_count_members% <yellow>[KLIKNIJ]</hover></click>'
+  help clan list view format member: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% | <white>Członkowie: <green>%uclans_count_members% <gray>| <white>Lider: <green>%uclans_leader% | <white>Członkowie: <green>%uclans_count_members% <yellow>[KLIKNIJ]</hover></click>'
+  help clan list view format bank: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% | <white>Bank: <green>%uclans_bank_balance_formated% <gray>| <white>Lider: <green>%uclans_leader% | <white>Członkowie: <green>%uclans_count_members% <yellow>[KLIKNIJ]</hover></click>'
+  help clan list view format level: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% | <white>Poziom: <green>%uclans_level% <gray>| <white>Lider: <green>%uclans_leader% | <white>Członkowie: <green>%uclans_count_members% <yellow>[KLIKNIJ]</hover></click>'
+  help clan list view format war: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% | <white>Wojna: <green>%uclans_clan_war_win% <gray>| <white>Lider: <green>%uclans_leader% | <white>Członkowie: <green>%uclans_count_members% <yellow>[KLIKNIJ]</hover></click>'
+  help clan list view format point: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% | <white>Punkty: <green>%uclans_points% <gray>| <white>Lider: <green>%uclans_leader% | <white>Członkowie: <green>%uclans_count_members% <yellow>[KLIKNIJ]</hover></click>'
+  help clan list view format patent: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić.''> <gray>- %uclans_tag_color% | <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Lider: <green>%uclans_leader% | <white>Członkowie: <green>%uclans_count_members% <yellow>[KLIKNIJ]</hover></click>'
+  help clan invites list header: '<newline><green>%uclans_player_realname% <blue><bold>Lista zaproszeń:'
+  help clan invites list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby wyświetlić informacje o klanie.''> <gray>- <green>%uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Członkowie: <green>%uclans_count_members%<gray> | <white>Poziom: <green>%uclans_level%</hover></click> <click:suggest_command:"/{_clan} {_join} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby zaakceptować.''><green>[AKCEPTUJ]</hover></click> <click:suggest_command:"/{_clan} {_deny} %uclans_tag_nocolor% "><hover:show_text:''<green>Kliknij, aby odrzucić.''><red>[ODRZUĆ]</hover></click>'
+  help clan profile view header: '<newline>%uclans_player_nickname% <blue><bold>Informacje o profilu:'
+  help clan profile view format:
+  - '<blue><bold>|</bold> <blue>Gracz:'
+  - ' <white>Gracz: <aqua>%uclans_player_nickname%'
+  - '<blue><bold>|</bold> <blue>Informacje:'
+  - ' <white>Nazwa: <aqua>%uclans_player_realname%'
+  - ' <white>Ostatnio widziany: <aqua>%uclans_player_lastsee_formated%'
+  - ' <white>KDR: <aqua>%uclans_player_kdr%'
+  - ' <white>Rola: <aqua>%uclans_player_role_formated%'
+  - '<blue><bold>|</bold> <blue>Ustawienia:'
+  - ' <white>Zaproszenia do Klanu: <aqua>%uclans_player_settings_state:INVITATIONS%'
+  - ''
+  help clan settings view header: '<newline>%uclans_tag_color% <blue><bold>Ustawienia Klanu:'
+  help clan settings view format:
+  - '<blue><bold>|</bold> <blue>Informacje:'
+  - ' <white>Klan: <aqua>%uclans_tag_color%'
+  - '<blue><bold>|</bold> <blue>Ustawienia:'
+  - ' <white>Zaproszenia wojny: <aqua>%uclans_settings_state:WARINVITE%'
+  - ' <white>Wspólny czat sojuszników: <aqua>%uclans_settings_state:ALLYSHAREDCHAT%'
+  - ' <white>Wspólne warpy sojuszników: <aqua>%uclans_settings_state:ALLYSHAREDHOME%'
+  - ' <white>Dołączanie i wychodzenie: <aqua>%uclans_settings_state:JOINLEAVE%'
+  - ' <white>Wrogie działania członków klanu: <aqua>%uclans_settings_state:CLANFF%'
+  - ' <white>Zarządzanie warpami przez członków: <aqua>%uclans_settings_state:MEMBERMANAGERHOMES%'
+  - ' <white>Zarządzanie wojnami przez członków: <aqua>%uclans_settings_state:MEMBERMANAGERWARS%'
+  - ' <white>Otwarty dla wszystkich: <aqua>%uclans_settings_state:OPENED%'
+  - ' <white>Warpy publiczne: <aqua>%uclans_settings_state:PUBLICHOMES%'
+  - ''
+  help clan info view header: '<newline>%uclans_tag_color% <blue><bold>Informacje o klanie:'
+help clan info view format:
+  - '<blue><bold>|</bold> <blue>Informacje:'
+  - ' <white>Patent: <green>%uclans_patent_formated%'
+  - ' <white>Lider: <aqua>%uclans_leader%'
+  - ' <white>Data utworzenia: <aqua>%uclans_creation_date_formated%'
+  - ' <white>Zweryfikowany: <aqua>%uclans_verified%'
+  - ' <white>Sloty: <aqua>%uclans_slots% <gray>(+%uclans_slots_extra%)'
+  - ' <white>Otwarty dla wszystkich: <aqua>%uclans_isopen_formated%'
+  - ' <white>Członkowie: <aqua>%uclans_count_members% <gray>(%uclans_count_onlinemembers% online)'
+  - '<blue><bold>|</bold> <blue>Kdr:'
+  - ' <white>Zabójstwa: <aqua>%uclans_clan_kills%'
+  - ' <white>Śmierci: <aqua>%uclans_clan_deaths%'
+  - ' <white>Łączne Kdr: <aqua>%uclans_clan_kdr%'
+  - '<blue><bold>|</bold> <blue>Status:'
+  - ' <white>Bank: <aqua>%uclans_bank_balance_formated%'
+  - ' <white>Dusze: <aqua>%uclans_clan_souls%'
+  - ' <white>Poziom: <aqua>%uclans_level% <gray>(%uclans_max_level_reached% max.)'
+  - ' <white>Punkty: <aqua>%uclans_points%'
+  - ''
+  help info empty: <red>Nic tu nie ma
+  help admin pagination prev: <click:run_command:"/uclan help %page%"><hover:show_text:'<green>Kliknij, aby powrócić.'><aqua><< Poprzedni</hover></click>
+  help admin pagination next: <click:run_command:"/uclan help %page%"><hover:show_text:'<green>Kliknij, aby przejść dalej.'><aqua>Następny >></hover></click>
+  help admin pagination separer: <gray>|
+  help player pagination prev: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<green>Kliknij, aby powrócić.'><aqua><< Poprzedni</hover></click>
+  help player pagination next: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<green>Kliknij, aby przejść dalej.'><aqua>Następny >></hover></click>
+  help player pagination separer: <gray>|
+  help admin pagination prev: <click:run_command:"/uclan help %page%"><hover:show_text:'<green>Kliknij, aby powrócić.'><aqua><< Poprzedni</hover></click>
+  help admin pagination next: <click:run_command:"/uclan help %page%"><hover:show_text:'<green>Kliknij, aby przejść dalej.'><aqua>Następny >></hover></click>
+  help admin pagination separer: <gray>|
+  help player pagination prev: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<green>Kliknij, aby powrócić.'><aqua><< Poprzedni</hover></click>
+  help player pagination next: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<green>Kliknij, aby przejść dalej.'><aqua>Następny >></hover></click>
+  translaction players: Gracze
+  translaction is on: <green>Online
+  translaction is off: <red>Offline
+  translaction yes: <aqua>TAK
+  translaction no: <red>NIE
+  translaction no clan: <red>Brak Klanu
+  translaction kill: Zabójstwo
+  translaction death: Śmierć
+  translaction kdr: Wskaźnik zabójstw/śmierci
+  translaction member: Członek
+  translaction bank: Bank
+  translaction level: Poziom
+  translaction war: Wojna
+  translaction all: Wszystko
+  translaction point: Punkt
+  translaction patent: Patent
+  clan dont leader: '%tag% <red>Nie jesteś liderem Klanu.'
+  clan dont permission role: '%tag% <red>Twoja obecna rola nie pozwala Ci na to.'
+  clan dont mod and leader: '%tag% <red>Nie jesteś liderem ani moderatorem Klanu.'
+  clan dont mod and leader gui: <red>Wymaga <dark_red>Lidera <red>lub <dark_red>Moderatora<red>!
+  player no invitation: '%tag% <red>Nie masz zaproszeń do tego Klanu.'
+  player dont mod: '%tag% <red>Ten gracz nie jest moderatorem.'
+  player is mod: '%tag% <red>Ten gracz jest już moderatorem.'
+  player offline: '%tag% <red>Gracz jest offline lub nie istnieje!'
+  player cannot expel leader: '%tag% <red>Nie możesz wyrzucić lidera klanu.'
+  player cannot expel mod: '%tag% <red>Moderator nie może wyrzucić innego gracza tej samej pozycji.'
+  player is clan leader: '%tag% <red>Jesteś Liderem Klanu, aby opuścić użyj <aqua>/{_clan} {_disband}<red> i usuniesz Klan...'
+  you donthave clan: '%tag% <red>Nie masz klanu.'
+  player donthave clan: '%tag% <red>Ten gracz nie ma klanu.'
+  player donthave profile: '%tag% <red>Ten gracz nie ma profilu.'
+  player already participating: '%tag% <red>Jesteś już uczestnikiem tego klanu!.'
+  player new invite: '%tag% <green>Otrzymałeś nowe zaproszenie do dołączenia do klanu. Możesz je zaakceptować używając <aqua>/{_clan} {_join} <red><TAG> <green>lub zobaczyć listę w <aqua>/{_clan} {_profile} {_invites}'
+  player have clan: '%tag% <red>Masz już klan.'
+  player has clan: '%tag% <red>Ten gracz ma już klan.'
+  player is you: '%tag% <red>Ten gracz jesteś Ty.'
+  player dont have money: '%tag% <red>Potrzebujesz <green>%uclans_money_currency%%amount% <red>na to.'
+  player dont have money gui: <red>Potrzebujesz <green>%uclans_money_currency%%amount%
+  player debited money: '%tag% <green>Zostało odjęte <green>%amount% <yellow>z twojego konta.'
+  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>zostało wpłacone na twoje konto.'
+  player invitation player expired: '%tag% <red>Twoje zaproszenie gracza wygasło i nie było odpowiedzi.'
+  player invitation expired: '%tag% <red>Twoje zaproszenie do dołączenia do Klanu <white>%clan_tag% <red>wygasło.'
+  player invitation daniel: '%tag% <red>Gracz odrzucił zaproszenie.'
+  player already invited gui: <red>Zaproszenie dla gracza w toku!
+  player invitation error: '%tag% <red>Wystąpił błąd wysyłania zaproszenia.'
+  player invitation error gui: <red>Błąd wysyłania zaproszenia.
+  player invitation success: '%tag% <red>Zaproszenie zostało wysłane pomyślnie.'
+  player invitation success gui: <green>Zaproszenie wysłane pomyślnie!
+  gui error: '%tag% <red>Ten menu zawiera błąd i nie może być otwarte'
+  player teleport dont move: '%tag% <green>Przygotowywanie teleportacji, nie ruszaj się przez %sec% sec.'
+  player teleport moved: '%tag% <red>Ruszyłeś się i teleportacja została anulowana!!!'
+  player teleport true: '%tag% <green>Zostałeś przeteleportowany!'
+  player teleport false: '%tag% <red>Nie zostałeś przeteleportowany z powodu błędu!'
+  unknown error: '%tag% <red>Wystąpił nieznany błąd, spróbuj ponownie!'
+  nothing here: <red>Nic tu nie ma.
+  clan empty name: <red><Bez nazwy!>
+  clan empty desc: <red><Bez opisu!>
+  disabled function: '%tag% <red>Ta funkcja/dodatek wydaje się być wyłączony.'
+  disabled function gui: <red>Ta funkcja jest wyłączona.
+  admin opened clanchest: '%tag% <red>Administrator otworzył skrzynię Klanu.'
+  top kdr format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Kdr: <aqua>%uclans_clan_kdr%'
+  top kill format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Zabójstwa: <aqua>%uclans_clan_kills%'
+  top death format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Śmierci: <aqua>%uclans_clan_deaths%'
+  top member format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Członkowie: <aqua>%uclans_count_members%'
+  top bank format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Bank: <aqua>%uclans_bank_balance%'
+  top level format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>LV: <aqua>%uclans_level%'
+  top war format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <green>%uclans_clan_war_win%<gray>/<dark_red>%uclans_clan_war_lose%'
+  top point format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Punkty: <aqua>%uclans_points%'
+  clan new balance: '%tag% <green>Nowy saldo konta Klanu wynosi <green>%uclans_money_currency%%uclans_bank_balance%<yellow>, zmienione przez <green>%uclans_player%'
+  player reseted kdr: '%tag% <green>Gracz <green>%player% <yellow>ma KDR zresetowane!'
+  clan reseted kdr: '%tag% <green>Klan <green>%uclans_tag_color% <yellow>ma KDR zresetowane!'
+  value greater than zero: '%tag% <red>Wartość musi być większa niż zero'
+  clan patent change: '%tag% <yellow>Klan <aqua>%uclans_tag_color% <yellow>zmienił patent na <aqua>%uclans_patent_formated%'
+  clan not have levels: '%tag% <red>Klan nie ma poziomów do usunięcia'
+  clan has only levels: '%tag% <red>Klan ma tylko <aqua>%num% <red>poziomów'
+  command in cooldown: '%tag% <red>Poczekaj <aqua>%sec% <red>przed użyciem tej komendy ponownie.'
+  error length: '%tag% <red>Wartość musi mieć rozmiar pomiędzy <aqua>%min% <red>a <aqua>%max%'
+  state true: <green>WŁĄCZONE
+  state false: <red>WYŁĄCZONE
+  accept type: '%tag% <red>Nieprawidłowy typ, użyj: <aqua>%types%'
+  clan regroup invite expired: '%tag% <red>Zaproszenie na reorganizację wygasło!'
+  clan regroup invite doesnot exists: '%tag% <red>Nie ma żadnego zaproszenia na reorganizację.'
+  clan regroup invite already exists: '%tag% <red>Już jest wysłane zaproszenie na reorganizację.'
+  clan regroup invite deny: '%tag% <red>Gracz <green>%player% <red>odrzucił twoje zaproszenie!'
+  clan regroup invite accept: '%tag% <red>Gracz <green>%player% <yellow>przyjął twoje zaproszenie!'
+  clan regroup invite already denied: '%tag% <red>Już odrzuciłeś zaproszenie.'
+  clan regroup invite already accepted: '%tag% <red>Już przyjąłeś zaproszenie.'
+  clan has no members: '%tag% <red>Twój klan nie ma członków.'
+  clan rival remove already invited: '%tag% <red>Jest już wysłane żądanie pokoju z twojego klanu lub innego, poczekaj i spróbuj ponownie!'
+  clan rival remove error: '%tag% <red>Wystąpił błąd wysyłania żądania!'
+  clan rival remove moderation offline: '%tag% <red>Nie ma moderatorów lub online liderów w innym klanie.'
+  clan rival remove sended: '%tag% <green>Wysłano prośbę o pokój, czekaj na akceptację lub odrzucenie przez klan.'
+  clan rival remove not found: '%tag% <red>Nie ma żądań o pokój.'
+  clan rival remove deny: '%tag% <red>Odrzuciłeś prośbę o usunięcie rywalizacji.'
+  clan rival remove deny received: '%tag% <red>Inny klan odrzucił prośbę o pokój.'
+  clan rival remove expired: '%tag% <red>Zaproszenie na pokój wygasło!'
+  clan ally invite not found: '%tag% <red>Nie ma zaproszeń na sojusz.'
+  clan ally invite deny: '%tag% <red>Odrzuciłeś zaproszenie na sojusz.'
+  clan ally invite already invited: '%tag% <red>Jest już zaproszenie od twojego klanu lub innego w toku do tego klanu, zaczekaj i spróbuj ponownie!'
+  clan ally invite error: '%tag% <red>Wystąpił błąd wysyłania żądania!'
+  clan ally invite moderation offline: '%tag% <red>Nie ma moderatorów lub online liderów w innym klanie.'
+  clan ally invite sended: '%tag% <green>Wysłano zaproszenie, czekaj na akceptację lub odrzucenie przez klan.'
+  clan ally invite expired: '%tag% <red>Zaproszenie na sojusz wygasło!'
+  clan ally invite deny received: '%tag% <red>Inny klan odrzucił prośbę o sojusz.'
+  clan not have points: '%tag% <red>Klan nie ma punktów do usunięcia'
+  clan has only points: '%tag% <red>Klan ma tylko <aqua>%num% <red>punktów'
+  clan ally in limit: '%tag% <red>Twój klan osiągnął limit sojuszy i musi zdobyć poziomy, aby odblokować więcej sojuszy, limit aktualnego klanu to <aqua>%uclans_limit_ally%'
+  clan rival in limit: '%tag% <red>Twój klan osiągnął limit rywalizacji i potrzebuje zdobywać poziomy, aby odblokować więcej rywalizacji. Obecny limit Twojego klanu to <aqua>%uclans_limit_rival%'
+  clan create error: '%tag% <red>Wystąpił błąd podczas tworzenia.'
+  clan create success: '%tag% <green>Nowy klan został pomyślnie utworzony!'
+  command deprecated: '%tag% <red>Ten komend jest przestarzały i może zostać usunięty z ustawień'
+  chan does not exists: '%tag% <red>Ten klan nie istnieje'
+  need level min: '%tag% <red>Twój klan musi mieć co najmniej <aqua>%level% <red>, aby to zrobić!'
+  player_leave: '%tag% <red>Członek <aqua>%player% <red>wylogował się.'
+  player_join: '%tag% <green>Członek <aqua>%player% <green>właśnie dołączył.'
+  home name without space: '%tag% <red>Nazwa nie może zawierać spacji.'
+  home already exists: '%tag% <red>Już istnieje członek o takim imieniu.'
+  home create success gui: <green>Utworzono nowy warp!
+  home no exists gui: <red>Ten warp jest nieprawidłowy.
+  home delete error gui: <red>Wystąpił błąd podczas usuwania.
+  home delete success: '%tag% <green>Warp został pomyślnie usunięty!'
+  home delete success gui: <green>Pomyślnie usunięto!
+  new create home: '%tag% <green>Nowy klanowy warp został utworzony na serwerze <aqua>%server% <green>z nazwą <aqua>%name%'
+  home removed: '%tag% <red>Warp <aqua>%name% <red>serwera <aqua>%server% <red>klanu został usunięty'
+  home limit: <red>To jest limit (%limit%) dla Twojego Klanu!
+  home limit reached: '%tag% <red>Limit dla Twojego klanu to %homes% warpy.'
+  new point received: '%tag% <green>Twój klan otrzymał <aqua>%points% punktów<green>, a teraz ma <aqua>%totalpoints% punktów (%reason%)'
+  new_point_removed: '%tag% <red>Twój klan stracił <aqua>%points% punktów<red>, a teraz ma <aqua>%totalpoints% punktów (%reason%)'
+  new_point_set: '%tag% <green>Punkty klanu zostały zmienione na <aqua>%totalpoints% punktów (%reason%)'
+ 
+# TRANSLATIONS OF GUI MENU FILES // TŁUMACZENIA PLIKÓW GUI MENU
+ 
+GUI:
+  General disband_confirm title: <red>Potwierdzasz usunięcie Klanu?
+  General disband_confirm items fill name: ' '
+  General disband_confirm items fill lore: [
+    ]
+  General disband_confirm items confirm name: <green>Potwierdź
+  General disband_confirm items confirm lore:
+  - ''
+  - ' <red>Kliknij, aby potwierdzić.'
+  General disband_confirm items cancel name: <green>Anuluj
+  General disband_confirm items cancel lore:
+  - ''
+  - ' <yellow>Kliknij, aby anulować.'
+  General changeleader_confirm title: <red>Potwierdzasz zmianę lidera klanu?
+  General changeleader_confirm items fill name: ' '
+  General changeleader_confirm items fill lore: [
+    ]
+  General changeleader_confirm items confirm name: <green>Potwierdź
+  General changeleader_confirm items confirm lore:
+  - ''
+  - ' <red>Kliknij, aby potwierdzić.'
+  General changeleader_confirm items cancel name: <green>Anuluj
+  General changeleader_confirm items cancel lore:
+  - ''
+  - ' <yellow>Kliknij, aby anulować.'
+  General clan_homes title: <blue>Warp Klanu
+  General clan_homes items fill name: ' '
+  General clan_homes items fill lore: [
+    ]
+  General clan_homes items ally_homes name: <green>Zobacz sojusznicze warpy
+  General clan_homes items ally_homes lore:
+  - ''
+  - ' <yellow>Kliknij, aby otworzyć.'
+  General clan_homes items create name: <green>Stwórz nowy warp
+  General clan_homes items create lore:
+  - ''
+  - ' <yellow>Kliknij, aby stworzyć.'
+  General clan_homes items back name: <red>Wróć
+  General clan_homes items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby wrócić.'
+  General clan_homes items next name: <green>Następna strona
+  General clan_homes items next lore:
+  - ''
+  - ' <yellow>Kliknij, aby kontynuować.'
+  General clan_homes items previous name: <green>Poprzednia strona
+  General clan_homes items previous lore:
+  - ''
+  - ' <yellow>Kliknij, aby wrócić.'
+  General clan_homes items current name: <green>Warp %uclans_home:{name}:name%
+  clan_homes_items_current_lore:
+- ''
+- ' <yellow>Informacje o Warpie'
+- ' <gray>'
+- ' <gray>Serwer: <green>%uclans_home:{name}:server%'
+- ' <gray>Nazwa: <aqua>%uclans_home:{name}:name%'
+- ' <gray>Lokalizacja: <aqua>%uclans_home:{name}:location%'
+- ''
+- ' <yellow>Kliknij Lewym Przyciskiem, aby przeteleportować się '
+- ' <red>Kliknij Prawym Przyciskiem, aby usunąć.'
+  clan_homes_items_current_visit_name: <green>Warp %uclans_home:{name}:name%
+  clan_homes_items_current_visit_lore:
+- ''
+- ' <yellow>Informacje o Warpie'
+- ' <gray>'
+- ' <gray>Serwer: <green>%uclans_home:{name}:server%'
+- ' <gray>Nazwa: <aqua>%uclans_home:{name}:name%'
+  clan_delhome_confirm_title: <red>Potwierdzenie usunięcia warpu <dark_red>%home_name% <red>?'
+  General clan_delhome_confirm items fill name: ' '
+  General clan_delhome_confirm items fill lore: [
+    ]
+  General clan_delhome_confirm items confirm name: <green>Kliknij, aby potwierdzić
+  General clan_delhome_confirm items confirm lore:
+  - ' '
+  - ' <yellow>Kliknij, aby potwierdzić.'
+  General clan_delhome_confirm items cancel name: <green>Kliknij, aby anulować
+  General clan_delhome_confirm items cancel lore:
+  - ' '
+  - ' <yellow>Kliknij, aby anulować.'
+  General noclan_home title: <blue>Klan <gray>| <red>Brak klanu
+  General noclan_home items fill name: ' '
+  General noclan_home items fill lore: [
+    ]
+  General noclan_home items fill2 name: ' '
+  General noclan_home items fill2 lore: [
+    ]
+  General noclan_home items commands name: <green>Lista Komend i Pomoc
+  General noclan_home items commands lore:
+  - ' <yellow>Kliknij, aby zobaczyć pełną listę'
+  - <yellow>komend dla Klanów i Landów.
+  General noclan_home items clans name: <green>All Clans
+  General noclan_home items clans lore:
+  - ' <yellow>Click to open the clan list menu.'
+  General noclan_home items create name: <red>Nie masz klanu
+  General noclan_home items create lore:
+  - ' <yellow>Kliknij, aby stworzyć klan.'
+  General noclan_home items profile name: <green>Twój profil
+  General noclan_home items profile lore:
+  - ' <yellow>Kliknij, aby otworzyć Twój profil'
+  General clan_home title: <blue>Menu Klanu
+  General clan_home items fill name: ' '
+  General clan_home items fill lore: [
+    ]
+  General clan_home items fill2 name: ' '
+  General clan_home items fill2 lore: [
+    ]
+  General clan_home items info name: <green>Klan %uclans_tag_color%
+  clan_home_items_info_lore:
+  - ' <yellow>Informacje Klanu'
+  - ' <gray>'
+  - ' <gray>Patent: <green>%uclans_patent_formated%'
+  - ''
+  - ' <gray>Poziom Klanu: <green>%uclans_level%'
+  - ' <gray>Punkty Klanu: <green>%uclans_points% <dark_gray>(%uclans_points_to_nextlevel% do następnego poziomu)'
+  - ' <gray>Bank: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Opis: <aqua>%uclans_desc_color%'
+  - ' '
+  - ' <yellow>Kliknij, aby otworzyć listę stanów.'
+  clan_home_items_banner_name: <green>Banner Klanu
+  clan_home_items_banner_lore:
+  - ' '
+  - ' <yellow>Informacje o Bannerze:'
+  - ''
+  - ' <white>Posiada Banner: <aqua>%uclans_hasbanner_formated%'
+  - ' <white>Banner: <aqua>%uclans_banner_material%'
+  - ' '
+  - ' <yellow>Banner Klanu jest Twoją marką!'
+  General clan_home items clans name: <green>Wszystkie Klany
+  General clan_home items clans lore:
+  - ' <yellow>Kliknij, aby otworzyć menu listy klanów.'
+  General clan_home items commands name: <green>Lista poleceń i pomoc
+  General clan_home items commands lore:
+  - ' <yellow>Kliknij, aby zobaczyć pełną listę'
+  - <yellow>poleceń dla Klanów i Ziemi.
+  General clan_home items settings name: <green>Ustawienia Klanu
+  General clan_home items settings lore:
+  - ' <yellow>Kliknij, aby otworzyć.'
+  General clan_home items home name: <green>Otwórz menu warpu.
+  General clan_home items home lore:
+  - ' <yellow>Kliknij, aby otworzyć.'
+  General clan_home items ally name: <green>Sojusze
+  General clan_home items ally lore:
+  - ' '
+  - ' <gray>Sojusze: <aqua>%uclans_clan_count_ally%'
+  - ' '
+  - ' <yellow>Kliknij, aby otworzyć menu sojuszy.'
+  General clan_home items rival name: <green>Rywale
+  General clan_home items rival lore:
+  - ' '
+  - ' <gray>Rywale: <aqua>%uclans_clan_count_rival%'
+  - ' '
+  - ' <yellow>Kliknij, aby otworzyć menu rywalizacji.'
+  General clan_home items members name: <green>Członkowie Klanu
+  General clan_home items members lore:
+  - ' '
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ' '
+  - ' <yellow>Kliknij, aby otworzyć menu członków.'
+  General player_profile title: <blue>Profil <gray>| <green>%uclans_player%
+  General player_profile items head name: <green>%uclans_player%
+  General player_profile items head lore:
+  - ''
+  - ' <gray>Klan: <aqua>%uclans_hasclan_formated%'
+  - ' <gray>Rola: <aqua>%uclans_player_role_formated%'
+  - ' <gray>Lider: <aqua>%uclans_leader_formated%'
+  - ' '
+  - ' <gray>Nick: <aqua>%uclans_player%'
+  - ' <gray>KDR: <aqua>%uclans_player_kills%<dark_gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <gray>Data dołączenia: <aqua>%uclans_player_joindate_formated%'
+  - ' <gray>Ostatnio widziany: <aqua>%uclans_player_lastsee_formated%'
+  General player_profile items invites name: <green>Zaproszenia
+  General player_profile items invites lore:
+  - ''
+  - ' <yellow>Zarządzaj przychodzącymi zaproszeniami.'
+  - ' <yellow>Kliknij, aby otworzyć.'
+  General player_profile items settings name: <green>Ustawienia profilu.
+  General player_profile items settings lore:
+  - ''
+  - ' <yellow>Edytuj preferencje swojego profilu.'
+  - ' '
+  - ' <yellow>Kliknij, aby otworzyć.'
+  General player_profile items back name: <red>Powrót do strony głównej
+  General player_profile items back lore:
+  - ' <yellow>Kliknij, aby powrócić do strony głównej'
+  General player_profile items fill name: ' '
+  General player_profile items fill lore: [
+    ]
+  General player_settings title: <blue>Menu Ustawień Profilu
+  General player_settings items fill name: ' '
+  General player_settings items fill lore: [
+    ]
+  General player_settings items fill2 name: ' '
+  General player_settings items fill2 lore: [
+    ]
+  General player_settings items nickname name: <green>Zmień widoczność nicku.
+  General player_settings items nickname lore:
+  - ''
+  - ' <gray>Imię: <aqua>%uclans_player_realname%'
+  - ' <gray>Obecne: <aqua>%uclans_player_nickname%'
+  - ''
+  - ' <yellow>LEFT-CLICK, aby zmienić.'
+  - ' <red>RIGHT-CLICK, aby zresetować.'
+  General player_settings items skin name: <green>Aktualizuj Skórkę.
+  General player_settings items skin lore:
+  - ''
+  - ' <yellow>Kliknij, aby zaktualizować bieżącą skórkę.'
+  General player_settings items skin_cooldown name: <green>Skórka zaktualizowana!
+  General player_settings items skin_cooldown lore:
+  - ''
+  - ' <red>Poczekaj <aqua>%time%</aqua> <red>, aby ponownie zaktualizować.'
+  General player_settings items invite name: <green>Zaproszenia Klanowe.
+  General player_settings items invite lore:
+  - ''
+  - ' <white>Stan: %uclans_player_settings_state:INVITATIONS%'
+  - ''
+  - ' <yellow>Kliknij, aby przełączyć.'
+  - ''
+  - ' <red>Jeśli ta opcja jest wyłączona'
+  - <red>nie otrzymasz zaproszeń klanowych.
+  General player_settings items back name: <red>Wróc do profilu
+  General player_settings items back lore:
+  - ' <yellow>Kliknij, aby wrócić do profilu'
+  General clan_stats title: <blue>Statystyki <gray>| %uclans_tag_color%
+  General clan_stats items fill name: ' '
+  General clan_stats items fill lore: [
+    ]
+  General clan_stats items back name: <red>Wróć
+  General clan_stats items back lore:
+  - ' <yellow>Kliknij, aby wrócić'
+  General clan_stats items limits name: '<green>Limit Klanu:'
+  General clan_stats items limits lore:
+  - ' '
+  - '<yellow>O limitach:'
+  - ' '
+  - ' <gray>Teleporty: <aqua>%uclans_limit_home%'
+  - ' <gray>Sojusze: <aqua>%uclans_limit_ally%'
+  - ' <gray>Wrogowie: <aqua>%uclans_limit_rival%'
+  - ' <gray>Sloty: <aqua>%uclans_slots_total%'
+  - ' '
+  - ' <yellow>Limity zwiększają się, gdy klan'
+  - <yellow>zdobywa poziomy.
+  General clan_stats items member_rival_ally name: '<green>Członkowie, Wrogowie i Sojusze:'
+  General clan_stats items member_rival_ally lore:
+  - ' '
+  - '<yellow>O członkach, wrogach i sojuszach:'
+  - ' '
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ' <gray>Członkowie Online: <aqua>%uclans_count_onlinemembers%'
+  - ' <gray>Sojusze: <aqua>%uclans_clan_count_ally%'
+  - ' <gray>Wrogowie: <aqua>%uclans_clan_count_rival%'
+  General clan_stats items others name: '<green>Statystyki innych:'
+  General clan_stats items others lore:
+  - ' '
+  - '<yellow>Inni:</yellow>'
+  - ' '
+  - ' <gray>Dołączeni członkowie: <aqua>%uclans_clan_member_joined%'
+  - ' <gray>Opuszczający członkowie: <aqua>%uclans_clan_member_leave%'
+  - ' <gray>Wyrzuceni członkowie: <aqua>%uclans_clan_member_kicked%'
+  - ' <gray>Zmiany tagów: <aqua>%uclans_clan_tag_changed%'
+  General clan_stats items status name: '<green>Status:'
+  General clan_stats items status lore:
+  - ' '
+  - '<yellow>O statusie:</yellow>'
+  - ' '
+  - ' <gray>Bank: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <gray>Dusze: <green>%uclans_money_currency%%uclans_clan_souls%'
+  - ' <gray>Poziom: <aqua>%uclans_level%'
+  - ' <gray>Osiągnięty maksymalny poziom: <aqua>%uclans_max_level_reached%'
+  - ' <gray>Punkty klanowe: <aqua>%uclans_points%'
+  - ' <gray>Ukończone zadania: <aqua>%uclans_quest_finished%'
+  General clan_stats items war name: '<green>Statystyki wojen:'
+  General clan_stats items war lore:
+  - ' '
+  - '<yellow>O wojnach:</yellow>'
+  - ' '
+  - ' <gray>Zwycięstwa w wojnie: <aqua>%uclans_clan_war_win%'
+  - ' <gray>Porażki w wojnie: <aqua>%uclans_clan_war_lose%'
+  - ' <gray>Łączna liczba wojen: <aqua>%uclans_clan_war_total%'
+  General clan_stats items kdr name: '<green>KDR:'
+  General clan_stats items kdr lore:
+  - ' '
+  - '<yellow>O KDR:'
+  - ' '
+  - ' <gray>Zabójstwa: <aqua>%uclans_clan_kills%'
+  - ' <gray>Śmierci: <aqua>%uclans_clan_deaths%'
+  - ' <gray>Suma KDR: <aqua>%uclans_clan_kdr%'
+  General clan_stats items banner name: <green>Baner Klanu
+  General clan_stats items banner lore:
+  - ' '
+  - ' <yellow>Informacje o banerze:'
+  - ''
+  - ' <white>Posiada Baner: <aqua>%uclans_hasbanner_formated%'
+  General clan_stats items foundation name: '<green>Założenie:'
+  General clan_stats items foundation lore:
+  - ' '
+  - '<yellow>O Założeniu:'
+  - ' '
+  - ' <gray>Patent: <green>%uclans_patent_formated%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Data utworzenia: <aqua>%uclans_creation_date_formated%'
+  - ' <gray>Zweryfikowane: <white>%uclans_verified%'
+  - ' <gray>Sloty: <white>%uclans_slots% <dark_gray>(+%uclans_slots_extra%)'
+  - ' <gray>Otwarte dla wszystkich: <white>%uclans_isopen_formated%'
+  - ' '
+  - ' <gray>Moderatorzy (%uclans_count_moderators%):'
+  - '  <green>%uclans_moderators%'
+  General clan_stats items members name: <green>Lista członków
+  General clan_stats items members lore:
+  - ' '
+  - ' <szary>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <żółty>Kliknij, aby otworzyć.'
+  General clan_stats items homes name: <green>Lista Warpów
+  General clan_stats items homes lore:
+  - ' '
+  - ' <szary>Warpy: <aqua>%uclans_home%'
+  - ''
+  - ' <żółty>Kliknij, aby otworzyć.'
+  General clan_settings title: <czerwony>Menu Ustawień
+  General clan_settings items fill name: ' '
+  General clan_settings items fill lore: [
+    ]
+  General clan_settings items fill2 name: ' '
+  General clan_settings items fill2 lore: [
+    ]
+  General clan_settings items clan_roles name: <green>Rangi klanowe
+  General clan_settings items clan_roles lore:
+  - ''
+  - ' <yellow>Zarządzaj rangami klanowymi.'
+  - ' <yellow>Kliknij, aby otworzyć.'
+  General clan_settings items member_ban name: <green>Zbanowani gracze.
+  General clan_settings items member_ban lore:
+  - ''
+  - ' <white>Zbanowani: <aqua>%uclans_count_banned%'
+  - ''
+  - ' <red>Zbanowani gracze nie mogą dołączać do klanu,'
+  - ' <red>jeśli jest otwarty, ani nie mogą być znowu zaproszeni.'
+  - ''
+  - ' <yellow>Kliknij, aby otworzyć.'
+  General clan_settings items clan_edit name: <green>Edytuj klan.
+  General clan_settings items clan_edit lore:
+  - ''
+  - ' <yellow>Edytuj ustawienia klanu.'
+  - ' <yellow>Kliknij, aby otworzyć.'
+  General clan_settings items back name: <red>Wróć
+  General clan_settings items back lore:
+  - ' <yellow>Kliknij, aby wrócić'
+  General clan_roles title: <red>Rangi Klanowe
+  General clan_roles items fill name: ' '
+  General clan_roles items fill lore: [
+    ]
+  General clan_roles items fill2 name: ' '
+  General clan_roles items fill2 lore: [
+    ]
+  General clan_roles items back name: <red>Wróć
+  General clan_roles items back lore:
+  - ' <yellow>Kliknij, aby wrócić'
+  General clan_roles items update name: <red>Zsynchronizuj uprawnienia
+  General clan_roles items update lore:
+  - ' <yellow>Kliknij, aby zsynchronizować z domyślnymi'
+  - <yellow>uprawnieniami.
+  General clan_roles items blocked name: <red>%name%
+  General clan_roles items blocked lore:
+  - ' '
+  - ' <yellow>Nie można edytować tej roli'
+  General clan_roles_editor title: <red>Edytor uprawnień <gray>| <aqua>%name%
+  General clan_roles_editor items fill name: ' '
+  General clan_roles_editor items fill lore: [
+    ]
+  General clan_roles_editor items next name: <green>Następny
+  General clan_roles_editor items next lore:
+  - ' <yellow>Kliknij, aby przejść do następnego'
+  General clan_roles_editor items previous name: <green>Poprzedni
+  General clan_roles_editor items previous lore:
+  - ' <yellow>Kliknij, aby przejść do poprzedniego'
+  General clan_roles_editor items back name: <red>Wróć
+  General clan_roles_editor items back lore:
+  - ' <yellow>Kliknij, aby wrócić'
+  General clan_roles_editor items current name: <green>%key%
+  General clan_roles_editor items current lore:
+  - ' '
+  - ' <white>Stan: %value%'
+  - ''
+  - ' <yellow>Kliknij, aby przełączyć'
+  General banned_members title: <red>Zbanowani Gracze <gray>| <aqua>%amount%
+  General banned_members items fill name: ' '
+  General banned_members items fill lore: [
+    ]
+  General banned_members items next name: <green>Następny
+  General banned_members items next lore:
+  - ' <yellow>Kliknij, aby przejść do następnego'
+  General banned_members items previous name: <green>Poprzedni
+  General banned_members items previous lore:
+  - ' <yellow>Kliknij, aby przejść do poprzedniego'
+  General banned_members items current name: <aqua>%uclans_player%
+  General banned_members items current lore:
+  - ' <yellow>Kliknij, aby <red>ODBANOWAĆ</red><yellow> tego gracza.'
+  General banned_members items add name: <red>Zbanuj gracza
+  General banned_members items add lore:
+  - ' <yellow>Kliknij, aby zbanować.'
+  General banned_members items back name: <red>Wróć
+  General banned_members items back lore:
+  - ' <yellow>Kliknij, aby wrócić'
+  General clan_actions title: <red>Edycja Klanu
+  General clan_actions items fill name: ' '
+  General clan_actions items fill lore: [
+    ]
+  General clan_actions items fill2 name: ' '
+  General clan_actions items fill2 lore: [
+    ]
+  General clan_actions items desc name: 'Zmiana opisu Klanu'
+  General clan_actions items desc lore:
+  - 'Kliknij, aby zmienić opis Klanu.'
+  General clan_actions items modtag name: 'Zmiana tagu Klanu'
+  General clan_actions items modtag lore:
+  - 'Kliknij, aby zmienić tag Klanu.'
+  General clan_actions items join_leave name: 'Dołącz i opuść'
+  General clan_actions items join_leave lore:
+  - ' '
+  - 'Stan: %uclans_actions_state:JOINLEAVE%'
+  - ''
+  - 'Kliknij, aby przełączyć'
+  - ' '
+  - 'Gdy jest wyłączone, Twój Klan'
+  - 'nie będzie widział więcej wiadomości podczas'
+  - 'wejścia lub wyjścia.'
+  General clan_actions items opened name: 'Klan jest otwarty dla wszystkich'
+  General clan_actions items opened lore:
+  - ' '
+  - 'Stan: %uclans_actions_state:OPENED%'
+  - ''
+  - 'Kliknij, aby przełączyć, czy Klan'
+  - 'jest otwarty dla wszystkich, czy tylko dla zaproszonych.'
+  General clan_actions items publichomes name: 'Warpy są publiczne'
+  General clan_actions items publichomes lore:
+  - ' '
+  - ' <white>Stan: %uclans_actions_state:PUBLICHOMES%'
+  - ''
+  - ' <yellow>Kliknij, aby włączyć lub wyłączyć'
+  - <yellow>czynienie warpów publicznymi i
+  - <yellow>widocznymi dla innych klanów.
+  General clan_actions items ff name: <green>Ognisty przyjaciel
+  General clan_actions items ff lore:
+  - ' '
+  - ' <white>Stan: %uclans_actions_state:CLANFF%'
+  - ''
+  - ' <yellow>Kliknij, aby włączyć'
+  - ' '
+  - ' <red>Po włączeniu, członkowie będą'
+  - <red>mogli atakować się nawzajem.
+  General clan_actions items allysharedhome name: <green>Wspólny warp sojuszu
+  General clan_actions items allysharedhome lore:
+  - ' '
+  - ' <white>Stan: %uclans_actions_state:ALLYSHAREDHOME%'
+  - ''
+  - ' <yellow>Kliknij, aby włączyć'
+  - ' '
+  - ' <red>Po wyłączeniu, warpy twojego klanu'
+  - <red>nie pojawią się na liście wspólnych warpów sojuszu.
+  General clan_actions items allysharedchat name: <green>Wspólny czat sojuszu
+  General clan_actions items allysharedchat lore:
+  - ' '
+  - ' <white>Stan: %uclans_actions_state:ALLYSHAREDCHAT%'
+  - ''
+  - ' <yellow>Kliknij, aby przełączać'
+  - ' '
+  - ' <red>Kiedy wyłączone, twój klan nie'
+  - <red>otrzymuje ani nie wysyła wiadomości od sojuszników.
+  General clan_actions items warinvite name: <green>Zaproszenia Wojny
+  General clan_actions items warinvite lore:
+  - ' '
+  - ' <white>Stan: %uclans_actions_state:WARINVITE%'
+  - ''
+  - ' <yellow>Kliknij, aby przełączać'
+  - ' '
+  - ' <red>Kiedy wyłączone, twój klan'
+  - <red>nie otrzymuje wyzwań
+  General clan_actions items delete name: <red>Usuń klan
+  General clan_actions items delete lore:
+  - ' <yellow>Kliknij, aby usunąć klan'
+  - ' <red>Może to zrobić tylko Lider!'
+  - ' <red>To usunie ochronę twojej ziemi'
+  - ' <red>Wymagane jest potwierdzenie na CZACIE!'
+  - ' '
+  - ' <red>Uwaga, tej operacji nie można cofnąć!'
+  General clan_actions items back name: <red>Wróć
+  General clan_actions items back lore:
+  - ' <yellow>Kliknij, aby wrócić'
+  General clan_top title: <blue>Lista Klanów <gray>| <green>%current%
+  General clan_top items fill name: ' '
+  General clan_top items fill lore: [
+    ]
+  General clan_top items fill2 name: ' '
+  General clan_top items fill2 lore: [
+    ]
+  General clan_top items fill3 name: ' '
+  General clan_top items fill3 lore: [
+    ]
+  General clan_top items active name: ' <green>Aktualny'
+  General clan_top items active lore: [
+    ]
+  General clan_top items all name: Wszystkie Klan
+  General clan_top items all lore:
+  - ' Kliknij, aby wyświetlić'
+  - ' '
+  General clan_top items kdr name: Najlepsze KDR
+  General clan_top items kdr lore:
+  - ' Kliknij, aby posortować'
+  - ' listę według KDR '
+  - ' '
+  General clan_top items kill name: Najlepsze Zabójstwa
+  General clan_top items kill lore:
+  - ' Kliknij, aby posortować'
+  - ' listę według Zabójstw '
+  - ' '
+  General clan_top items death name: Najlepsze Śmierć
+  General clan_top items death lore:
+  - ' Kliknij, aby posortować'
+  - ' listę według Śmierć '
+  - ' '
+  General clan_top items bank name: Najlepsze Bank
+  General clan_top items bank lore:
+  - ' Kliknij, aby posortować'
+  - ' listę według Bank '
+  - ' '
+  General clan_top items member name: Najlepszy Członek
+  General clan_top items member lore:
+  - ' Kliknij, aby posortować'
+  - ' listę według Członek '
+  - ' '
+  General clan_top items level name: Najlepszy Poziom
+  General clan_top items level lore:
+  - ' Kliknij, aby posortować'
+  - ' listę według poziomu '
+  - ' '
+  General clan_top items war name: Najlepsza Wojna
+  General clan_top items war lore:
+  - ' Kliknij, aby posortować'
+  - ' listę według Najlepszej Wojny '
+  - ' '
+  General clan_top items point name: <red>Punkty
+  General clan_top items point lore:
+  - ' <yellow>Kliknij, aby posortować'
+  - '<yellow>listę według punktów'
+  - ' '
+  General clan_top items patent name: <red>Patent
+  General clan_top items patent lore:
+  - ' <yellow>Kliknij, aby posortować'
+  - '<yellow>listę według patentów'
+  - ' '
+  General clan_top items current_war name: <green>Klan %uclans_tag_color%
+  General clan_top items current_war lore:
+  - ''
+  - ' <yellow>Informacje o klanie'
+  - ' <gray>'
+  - ' <gray>Wygrane wojny: <green>%uclans_clan_war_win%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij prawym przyciskiem, aby wyświetlić informacje.'
+  General clan_top items current_bank name: <green>Klan %uclans_tag_color%
+  General clan_top items current_bank lore:
+  - ''
+  - ' <yellow>Informacje o klanie'
+  - ' <gray>'
+  - ' <gray>Bank: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij prawym przyciskiem, aby wyświetlić informacje.'
+  General clan_top items current_member name: <green>Klan %uclans_tag_color%
+  General clan_top items current_member lore:
+  - ''
+  - ' <yellow>Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>Członkowie: <green>%uclans_count_members%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij PPM aby wyświetlić informacje.'
+  General clan_top items current_death name: <green>Klan %uclans_tag_color%
+  General clan_top items current_death lore:
+  - ''
+  - ' <yellow>Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>Śmierci: <green>%uclans_clan_deaths%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij PPM aby wyświetlić informacje.'
+  General clan_top items current_kill name: <green>Klan %uclans_tag_color%
+  General clan_top items current_kill lore:
+  - ''
+  - ' <yellow>Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>Zabójstwa: <green>%uclans_clan_kills%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij PPM aby wyświetlić informacje.'
+  General clan_top items current_kdr name: <green>Klan %uclans_tag_color%
+  General clan_top items current_kdr lore:
+  - ''
+  - ' <yellow>Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>KDR: <green>%uclans_clan_kdr%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij prawym przyciskiem, aby wyświetlić informacje.'
+  General clan_top items current_level name: <green>Klan %uclans_tag_color%
+  General clan_top items current_level lore:
+  - ''
+  - ' <yellow>Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>Poziom: <green>%uclans_level%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij prawym przyciskiem, aby wyświetlić informacje.'
+  General clan_top items current_point name: <green>Klan %uclans_tag_color%
+  General clan_top items current_point lore:
+  - ''
+  - ' <yellow>Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>Punkty: <green>%uclans_points%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij prawym przyciskiem, aby wyświetlić informacje.'
+  General clan_top items current_all name: <green>Klan %uclans_tag_color%
+  General clan_top items current_all lore:
+  - ''
+  - ' Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>Data utworzenia: <green>%uclans_creation_date_formated%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij prawym przyciskiem, aby wyświetlić informacje.'
+  General clan_top items current_patent name: <green>Klan %uclans_tag_color%
+  General clan_top items current_patent lore:
+  - ''
+  - ' Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>Patent: <green>%uclans_patent_formated%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij prawym przyciskiem, aby wyświetlić informacje.'
+  General clan_top items current name: <green>Klan %uclans_tag_color%
+  General clan_top items current lore:
+  - ''
+  - ' Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>Poziom: <green>%uclans_level%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij prawym przyciskiem, aby wyświetlić informacje.'
+  General clan_top items next name: <green>Następny
+  General clan_top items next lore:
+  - ' <yellow>Kliknij, aby przejść dalej'
+  General clan_top items previous name: <green>Poprzedni
+  General clan_top items previous lore:
+  - ' <yellow>Kliknij, aby wrócić'
+  General clan_top items back name: <red>Wróć
+  General clan_top items back lore:
+  - ' <yellow>Kliknij, aby wrócić'
+  General clan_members_invite title: <blue>Zaproś członków
+  General clan_members_invite items fill name: ' '
+  General clan_members_invite items fill lore: [
+    ]
+  General clan_members_invite items back name: <red>Wróć
+  General clan_members_invite items back lore:
+  - ' <yellow>Kliknij, aby wrócić'
+  General clan_members_invite items current name: <green>%uclans_player%
+  General clan_members_invite items current lore:
+  - ''
+  - ' <gray>Nazwa: <aqua>%uclans_player%'
+  - ' <gray>KDR: <aqua>%uclans_player_kills%<dark_gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <gray>Wejście: <aqua>%uclans_player_joindate_formated%'
+  - ' <gray>Ostatnio widziany: <aqua>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <yellow>Kliknij, aby zaprosić'
+  General clan_members_invite items search name: <red>Szukaj
+  General clan_members_invite items search lore:
+  - ' <yellow>Kliknij, aby wyszukać członków'
+  General clan_search_members_invite title: <blue>Wyszukaj <gray>| <dark_red>%amount% wynik(ów)<gray>
+  General clan_search_members_invite items fill name: ' '
+  General clan_search_members_invite items fill lore: [
+    ]
+  General clan_search_members_invite items back name: 'Powrót'
+  General clan_search_members_invite items back lore:
+  - ' <yellow>Kliknij, aby powrócić'
+  General clan_search_members_invite items current name: '%uclans_player%'
+  General clan_search_members_invite items current lore:
+  - ''
+  - ' <gray>Nick: <aqua>%uclans_player%'
+  - ' <gray>KDR: <aqua>%uclans_player_kills%<dark_gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <gray>Data wejścia: <aqua>%uclans_player_joindate_formated%'
+  - ' <gray>Ostatnio widziany: <aqua>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <yellow>Kliknij, aby zaprosić.'
+  General rival title: 'Lista rywali <gray>| %uclans_tag_color%'
+  General rival items fill name: ' '
+  General rival items fill lore: [
+    ]
+  General rival items back name: <red>Powrót
+  General rival items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby powrócić.'
+  General rival items next name: <green>Następna strona
+  General rival items next lore:
+  - ''
+  - ' <yellow>Kliknij, aby przejść dalej.'
+  General rival items previous name: <green>Poprzednia strona
+  General rival items previous lore:
+  - ''
+  - ' <yellow>Kliknij, aby powrócić.'
+  General rival items current name: <green>Klan %uclans_tag_color%
+  General rival items current lore:
+  - ''
+  - ' <yellow>Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>Poziom: <green>%uclans_level%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij prawym przyciskiem myszy, aby zobaczyć informacje.'
+  General ally title: <blue>Lista sojuszy <gray>| %uclans_tag_color%
+  General ally items fill name: ' '
+  General ally items fill lore: [
+    ]
+  General ally items back name: <red>Powrót
+  General ally items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby powrócić.'
+  General ally items next name: <green>Następna strona
+  General ally items next lore:
+  - ''
+  - ' <yellow>Kliknij, aby przejść do następnej strony.'
+  General ally items previous name: <green>Poprzednia strona
+  General ally items previous lore:
+  - ''
+  - ' <yellow>Kliknij, aby wrócić do poprzedniej strony.'
+  General ally items current name: <green>Klan %uclans_tag_color%
+  General ally items current lore:
+  - ''
+  - ' <yellow>Informacje o Klanie'
+  - ' <gray>'
+  - ' <gray>Poziom: <green>%uclans_level%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Lider: <aqua>%uclans_leader%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij prawym przyciskiem, aby zobaczyć informacje.'
+  General members title: <blue>Lista członków <gray>| %uclans_tag_color%
+  General members items fill name: ' '
+  General members items fill lore: [
+    ]
+  General members items back name: <red>Powrót
+  General members items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby wrócić.'
+  General members items next name: <green>Następna strona
+  General members items next lore:
+  - ''
+  - ' <yellow>Kliknij, aby przejść dalej.'
+  General members items previous name: <green>Poprzednia strona
+  General members items previous lore:
+  - ''
+  - ' <yellow>Kliknij, aby wrócić.'
+  General members items invite name: <green>Zaproś graczy
+  General members items invite lore:
+  - ' <yellow>Kliknij, aby zaprosić nowych członków'
+  General members items current name: <green>%uclans_player%
+  General members items current lore:
+  - ''
+  - ' <gray>Rola: <aqua>%uclans_player_role_formated%'
+  - ' <gray>Nick: <aqua>%uclans_player%'
+  - ' <gray>KDR: <aqua>%uclans_player_kills%<dark_gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <gray>Dołączył: <aqua>%uclans_player_joindate_formated%'
+  - ' <gray>Ostatnio widziany: <aqua>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <yellow>Kliknij, aby zobaczyć profil.'
+  General listhomes title: <blue>Lista Warpów <gray>| %uclans_tag_color%
+  General listhomes items fill name: ' '
+  General listhomes items fill lore: [
+    ]
+  General listhomes items back name: <red>Powrót
+  General listhomes items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby powrócić.'
+  General listhomes items next name: <green>Następna strona
+  General listhomes items next lore:
+  - ''
+  - ' <yellow>Kliknij, aby przejść dalej.'
+  General listhomes items previous name: <green>Poprzednia strona
+  General listhomes items previous lore:
+  - ''
+  - ' <yellow>Kliknij, aby powrócić.'
+  General listhomes items current name: <green>Home %uclans_home:{name}:name%
+  General listhomes items current lore:
+  - ''
+  - ' <yellow>Informacje o Warpie'
+  - ' <gray>'
+  - ' <gray>Serwer: <green>%uclans_home:{name}:server%'
+  - ' <gray>Nazwa: <aqua>%uclans_home:{name}:name%'
+  - ' <gray>Lokalizacja: <aqua>%uclans_home:<num>:location%'
+  General clan_allyhome title: <blue>Sojusznicze Warpy
+  General clan_allyhome items back name: <red>Powrót
+  General clan_allyhome items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby powrócić.'
+  General clan_allyhome items next name: <green>Następna strona
+  General clan_allyhome items next lore:
+  - ''
+  - ' <yellow>Kliknij, aby przejść dalej.'
+  General clan_allyhome items previous name: <green>Poprzednia strona
+  General clan_allyhome items previous lore:
+  - ''
+  - ' <yellow>Kliknij, aby powrócić.'
+  General clan_allyhome items current name: <green>Warp %uclans_home:{name}:name% klanu %uclans_tag_color%.
+  General clan_allyhome items current lore:
+  - ''
+  - ' <yellow>Informacje o Warpie'
+  - ' <gray>'
+  - ' <gray>Klan: <aqua>%uclans_tag_color%'
+  - ' <gray>Serwer: <green>%uclans_home:{name}:server%'
+  - ' <gray>Nazwa: <aqua>%uclans_home:{name}:name%'
+  - ''
+  - ' <yellow>Kliknij lewym przyciskiem, aby się teleportować.'
+  General clan_allyhome items fill name: ' '
+  General clan_allyhome items fill lore: [
+    ]
+  General invites title: <blue>Lista zaproszeń <gray>| <green>%uclans_player_name%
+  General invites items fill name: ' '
+  General invites items fill lore: [
+    ]
+  General invites items back name: <red>Powrót
+  General invites items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby powrócić.'
+  General invites items next name: <green>Następna strona
+  General invites items next lore:
+  - ''
+  - ' <yellow>Kliknij, aby przejść dalej.'
+  General invites items previous name: <green>Poprzednia strona
+  General invites items previous lore:
+  - ''
+  - ' <yellow>Kliknij, aby wrócić.'
+  General invites items current name: <green>Zaproszenie do klanu %uclans_tag_color%
+  General invites items current lore:
+  - ''
+  - ' <yellow>Informacje o zaproszeniu'
+  - ' <gray>'
+  - ' <gray>Klan: <green>%uclans_tag_color%'
+  - ' <gray>Patent: <aqua>%uclans_patent_formated%'
+  - ' <gray>Poziom: <aqua>%uclans_level%'
+  - ' <gray>Członkowie: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kliknij lewym przyciskiem, aby zaakceptować.'
+  - ' <red>Kliknij prawym przyciskiem, aby odrzucić.'
+  General banner_home title: <blue><bold>Menu banerów
+  General banner_home items fill name: ' '
+  General banner_home items fill lore: [
+    ]
+  General banner_home items fill2 name: ' '
+  General banner_home items fill2 lore: [
+    ]
+  General banner_home items current name: <green>Aktualny baner
+  General banner_home items current lore:
+  - ' '
+  - ' <yellow>Twój klanowy baner to Twoja marka.'
+  - ''
+  - ' <aqua><bold><< <red>Użyj przycisków po bokach <aqua><bold>>>'
+  General banner_home items upload name: <green>Prześlij
+  General banner_home items upload lore:
+  - ''
+  - ' <yellow>Kliknij, aby otworzyć menu przesyłania.'
+  General banner_home items delete name: <green>Usuń baner
+  General banner_home items delete lore:
+  - ''
+  - ' <yellow>Kliknij, aby usunąć aktualny baner.'
+  General banner_home items pre name: <green>Gotowe banery
+  General banner_home items pre lore:
+  - ''
+  - ' <yellow>Kliknij, aby otworzyć listę.'
+  General banner_home items back name: <red>Powrót
+  General banner_home items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby wrócić.'
+  General banner_delete title: <red>Potwierdź usunięcie aktualnego banera?
+  General banner_delete items fill name: ' '
+  General banner_delete items fill lore: [
+    ]
+  General banner_delete items confirm name: <green>Potwierdź
+  General banner_delete items confirm lore:
+  - ''
+  - ' <red>Kliknij, aby potwierdzić.'
+  General banner_delete items cancel name: <green>Anuluj
+  General banner_delete items cancel lore:
+  - ''
+  - ' <yellow>Kliknij, aby anulować.'
+  General banner_upload title: <blue><bold>Przesyłanie banera
+  General banner_upload items fill name: ' '
+  General banner_upload items fill lore: [
+    ]
+  General banner_upload items fill2 name: <red>Umieść tu swój nowy baner!
+  General banner_upload items fill2 lore:
+  - ' '
+  - ' <red>Umieść tu swój nowy baner!'
+  General banner_upload items upload_slot name: ''
+  General banner_upload items upload_slot lore: [
+    ]
+  General banner_upload items back name: <red>Powrót
+  General banner_upload items back lore:
+  - ''
+  - ' <red>Kliknij, aby wrócić.'
+  General banner_upload items confirm name: <green>Zapisz
+  General banner_upload items confirm lore:
+  - ''
+  - ' <yellow>Kliknij, aby zapisać.'
+
+ 
+ 
+ # TRANSLATIONS OF THE COMMANDS
+ 
+COMMANDS:
+  clan help show on_help: <click:suggest_command:"/{_clan} {_help}"><hover:show_text:'<green>Kliknij, aby zobaczyć pomoc dotyczącą Klanów.'> <aqua>/{_clan} {_help} <gray>-<yellow> Wyświetl menu pomocy.</hover></click>
+  clan help show on_success: '%tag% <green>Przeglądasz pomoc!'
+  clan help show on_error: '%tag%<red>Błąd wyświetlania tekstu.'
+  clan help show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_help}'
+  clan create show on_help: <click:suggest_command:"/{_clan} {_create} "><hover:show_text:'<green>Stwórz nowy Klan.'> <aqua>/{_clan} {_create} <red><tag> <gray>-<yellow> Kliknij, aby utworzyć nowy Klan.</hover></click>
+  clan create show on_success: '%tag% <green>Utworzyłeś nowy klan!'
+  clan create show on_error: '%tag% <red>Błąd tworzenia nowego Klanu, spróbuj ponownie.'
+  clan create show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_create} <red><tag>'
+  clan cancel show on_help: <click:suggest_command:"/{_clan} {_cancel}"><hover:show_text:'<green>Kliknij, aby anulować oczekujące akcje.'> <aqua>/{_clan} {_cancel} <gray>-<yellow> Anuluj oczekujące akcje.</hover></click>
+  clan cancel show on_success: '%tag% <green>Pomyślnie anulowano!'
+  clan cancel show on_error: '%tag% <red>Błąd anulowania'
+  clan cancel show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_cancel}'
+  clan changeleader show on_help: <click:suggest_command:"/{_clan} {_changeleader} "><hover:show_text:'<green>Kliknij, aby przekazać przywództwo.'> <aqua>/{_clan} {_changeleader} <red><player> <gray>-<yellow> Przekazanie przywództwa.</hover></click>
+  clan changeleader show on_success: '%tag% <green>Zmieniłeś lidera klanu na %clan_leader%'
+  clan changeleader show on_error: '%tag% <red>Błąd przekazywania przywództwa.'
+  clan changeleader show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_changeleader} <red><player>'
+  clan desc show on_help: <click:suggest_command:"/{_clan} {_desc} "><hover:show_text:'<green>Kliknij, aby dodać/zmienić opis Klanu.'> <aqua>/{_clan} {_desc} <red><description> <gray>-<yellow> Dodaj opis do Klanu.</hover></click>
+  clan desc show on_success: '%tag% <green>Zmieniłeś opis klanu!'
+  clan desc show on_error: '%tag% <red>Błąd zmiany opisu klanu.'
+  clan desc show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_desc} <opis>'
+  clan disband show on_help: <click:suggest_command:"/{_clan} {_disband}"><hover:show_text:'<green>Kliknij, aby usunąć klan.'> <aqua>/{_clan} {_disband} <szary>-<żółty> Usuń swój klan.</hover></click>
+  clan disband show on_success: '%tag% <green>Usunąłeś swój klan!'
+  clan disband show on_error: '%tag% <red>Błąd usuwania klanu, spróbuj ponownie.'
+  clan disband show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_disband}'
+  clan leave show on_help: <click:suggest_command:"/{_clan} {_leave}"><hover:show_text:'<green>Kliknij, aby opuścić klan.'> <aqua>/{_clan} {_leave} <szary>-<żółty> Opuść klan.</hover></click>
+  clan leave show on_success: '%tag% <green>Opuściłeś klan!'
+  clan leave show on_error: '%tag% <red>Błąd opuszczania klanu, spróbuj ponownie.'
+  clan leave show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_leave}'
+  clan join show on_help: <click:suggest_command:"/{_clan} {_join} "><hover:show_text:'<green>Kliknij, aby zaakceptować zaproszenie.'> <aqua>/{_clan} {_join} <czerwony><tag> <szary>-<żółty> Zaakceptuj zaproszenie do klanu.</hover></click>
+  clan join show on_success: '%tag% <green>Zaakceptowałeś zaproszenie do klanu!'
+  clan join show on_error: '%tag% <red>Błąd wstępowania do klanu, spróbuj ponownie.'
+  clan join show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_join} <czerwony><tag>'
+  clan deny show on_help: <click:suggest_command:"/{_clan} {_deny} "><hover:show_text:'<green>Kliknij, aby anulować zaproszenie.'> <aqua>/{_clan} {_deny} <czerwony><tag> <szary>-<żółty> Odrzuć zaproszenie do klanu.</hover></click>
+  clan deny show on_success: '%tag% <green>Odrzuciłeś zaproszenie!'
+  clan deny show on_error: '%tag% <red>Błąd odrzucania zaproszenia.'
+  clan deny show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_deny} <red><tag>'
+  clan promote show on_help: <click:suggest_command:"/{_clan} {_promote} "><hover:show_text:'<green>Kliknij, aby awansować gracza.'> <aqua>/{_clan} {_promote} <red><player> <gray>-<yellow> Awansuj członka.</hover></click>
+  clan promote show on_success: '%tag% <green>Gracz otrzymał awans.'
+  clan promote show on_error: '%tag% <red>Ten gracz nie ma już dostępnych awansów.'
+  clan promote show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_promote} <red><player>'
+  clan demote show on_help: <click:suggest_command:"/{_clan} {_demote} "><hover:show_text:'<green>Kliknij, aby zdegradować gracza.'> <aqua>/{_clan} {_demote} <red><player> <gray>-<yellow> Zdegradować członka.</hover></click>
+  clan demote show on_success: '%tag% <green>Gracz został zdegradowany w klanie.'
+  clan demote show on_error: '%tag% <red>Ten gracz nie może być dalej degradowany.'
+  clan demote show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_demote} <red><player>'
+  clan home show on_help: <click:run_command:"/{_clan} {_home} "><hover:show_text:'<green>Kliknij, aby wyświetlić komendy dotyczące warpów.'> <aqua>/{_clan} {_home} <gray>-<yellow> Warp klanowy.</hover></click> <hover:show_text:'<green>Z podkomendami.'><green>[!]</hover>
+  clan home show on_success: '%tag% <green>Sukces!'
+  clan home show on_error: '%tag% <red>Błąd podczas używania komendy.'
+  clan home show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_home}'
+  clan home subcommands create: <click:suggest_command:"/{_clan} {_home} {_create} "><hover:show_text:'<green>Kliknij, aby stworzyć.'> <aqua>/{_clan} {_home} {_create} <red><name> <light_purple>(hasło)<gray>-<yellow> Stwórz warp klanowy.</hover></click>
+  clan home subcommands create show on_success: '%tag% <green>Nowy warp klanowy został pomyślnie utworzony.'
+  clan home subcommands create show on_error: '%tag% <red>Wystąpił błąd podczas tworzenia.'
+  clan home subcommands create show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_home} {_create} <red><nazwa> <light_purple>(hasło)'
+  clan home subcommands delete: <click:suggest_command:"/{_clan} {_home} {_delete} "><hover:show_text:'<green>Kliknij, aby usunąć warp.'> <aqua>/{_clan} {_home} {_delete} <red><nazwa> <gray>-<yellow> Usuń warp.</hover></click>
+  clan home subcommands delete show on_success: '%tag% <green>Pomyślnie usunięto nowy warp klanowy.'
+  clan home subcommands delete show on_error: '%tag% <red>Wystąpił błąd podczas usuwania.'
+  clan home subcommands delete show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_home} {_delete} <red><nazwa>'
+  clan home subcommands list: <click:suggest_command:"/{_clan} {_home} {_list} "><hover:show_text:'<green>Kliknij, aby wyświetlić wszystkie warp.'> <aqua>/{_clan} {_home} {_list} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> Wyświetl wszystkie warp.</hover></click>
+  clan home subcommands list show on_success: '%tag% <green>Sukces.'
+  clan home subcommands list show on_error: '%tag% <red>Wystąpił błąd podczas wyświetlania.'
+  clan home subcommands list show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_home} {_list} <light_purple>(tag) <light_purple>(-gui)'
+  clan home subcommands teleport: <click:suggest_command:"/{_clan} {_home} {_teleport} "><hover:show_text:'<green>Kliknij, aby się teleportować do warpu.'> <aqua>/{_clan} {_home} {_teleport} <red><nazwa> <gray>-<yellow> Teleportuj się do warpu.</hover></click>
+  clan home subcommands teleport show on_success: '%tag% <green>Sukces.'
+  clan home subcommands teleport show on_error: '%tag% <red>Wystąpił błąd podczas teleportacji.'
+  clan home subcommands teleport show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_home} {_teleport} <red><nazwa>'
+  clan home subcommands view: <click:suggest_command:"/{_clan} {_home} {_view} "><hover:show_text:'<green>Kliknij, aby wyświetlić warp.'> <aqua>/{_clan} {_home} {_view} <red><nazwa> <gray>-<yellow> Wyświetl warp.</hover></click>
+  clan home subcommands view show on_success: '%tag% <green>Sukces.'
+  clan home subcommands view show on_error: '%tag% <red>Wystąpił błąd podczas wyświetlania.'
+  clan home subcommands view show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_home} {_view} <red><nazwa>'
+  clan chat show on_help: <click:suggest_command:"/{_clan} {_chat} "><hover:show_text:'<green>Kliknij, aby przełączyć czat klanowy.'> <aqua>/{_clan} {_chat} <gray>-<yellow> Przełącz czat klanowy.</hover></click>
+  clan chat show on_success: '%tag% <green>Czat klanowy jest teraz zablokowany jako: <aqua>%player_chat%'
+  clan chat show on_error: '%tag% <red>Wystąpił błąd podczas korzystania z czatu.'
+  clan chat show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_chat}'
+  clan ff show on_help: <click:suggest_command:"/{_clan} {_ff} "><hover:show_text:'<green>Kliknij, aby przełączyć przyjazny ogień klanowy.'> <aqua>/{_clan} {_ff} <gray>-<yellow> Przełącz przyjazny ogień klanowy.</hover></click>
+  clan ff show on_success: '%tag% <green>Przyjazny Ogień Klany został zmieniony na <aqua>%clan_ff%'
+  clan ff show on_error: '%tag% <red>Wystąpił błąd podczas korzystania z przyjaznego ognia klanowego.'
+  clan ff show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_ff}'
+  clan modtag show on_help: <click:suggest_command:"/{_clan} {_modtag} "><hover:show_text:'<green>Kliknij, aby zmienić tag klanowy.'> <aqua>/{_clan} {_modtag} <red><nowytag> <gray>-<yellow> Zmień tag klanowy.</hover></click>
+  clan modtag show on_success: '%tag% <green>Tag klanu został zmieniony na <aqua>%clan_tag%'
+  clan modtag show on_error: '%tag% <red>Wystąpił błąd podczas zmiany tagu klanu.'
+  clan modtag show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_modtag} <red><nowytag>'
+  clan list show on_help: <click:suggest_command:"/{_clan} {_list} "><hover:show_text:'<green>Kliknij, aby wyświetlić listę wszystkich klanów.'> <aqua>/{_clan} {_list} <light_purple>(typ) <light_purple>(-gui) <gray>-<yellow> Wyświetl listę wszystkich klanów.</hover></click>
+  clan list show on_success: '%tag% <green>Sukces.'
+  clan list show on_error: '%tag% <red>Błąd podczas korzystania z listy.'
+  clan list show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_list} <light_purple>(typ) <light_purple>(-gui)'
+  clan info show on_help: <click:suggest_command:"/{_clan} {_info} "><hover:show_text:'<green>Kliknij, aby zobaczyć informacje o klanie.'> <aqua>/{_clan} {_info} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> Wyświetla informacje o klanie.</hover></click>
+  clan info show on_success: ''
+  clan info show on_error: '%tag% <red>Błąd podczas korzystania z informacji o klanie.'
+  clan info show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_info} <light_purple>(tag) <light_purple>(-gui)'
+  clan profile show on_help: <click:run_command:"/{_clan} {_profile} "><hover:show_text:'<green>Kliknij, aby rozwinąć.'> <aqua>/{_clan} {_profile} <gray>-<yellow> Wyświetla polecenia dla członków.</hover></click> <hover:show_text:'<green>Z podpoleceniami.'><green>[!]</hover>
+  clan profile show on_success: '%tag% <green>Sukces!'
+  clan profile show on_error: '%tag% <red>Błąd podczas korzystania z profilu.'
+  clan profile show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_profile}'
+  clan profile subcommands view: <click:suggest_command:"/{_clan} {_profile} {_view} "><hover:show_text:'<green>Kliknij, aby zobaczyć profil.'> <aqua>/{_clan} {_profile} {_view} <light_purple>(gracz) <light_purple>(-gui) <gray>-<yellow> Wyświetla profil gracza.</hover></click>
+  clan profile subcommands view show on_success: '%tag% <green>Sukces.'
+  clan profile subcommands view show on_error: '%tag% <red>Wystąpił błąd podczas wyświetlania.'
+  clan profile subcommands view show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_profile} {_view} <light_purple>(gracz) <light_purple>(-gui)'
+  clan profile subcommands set: <click:suggest_command:"/{_clan} {_profile} {_set} "><hover:show_text:'<green>Kliknij, aby ustawić ustawienia profilu.'> <aqua>/{_clan} {_profile} {_set} <red><klucz> <wartość> <gray>-<yellow> Ustawia ustawienia profilu.</hover></click>
+  clan profile subcommands set show on_success: '%tag% <green>Konfiguracja profilu została pomyślnie zmieniona.'
+  clan profile subcommands set show on_error: '%tag% <red>Wystąpił błąd podczas zmiany konfiguracji profilu.'
+  clan profile subcommands set show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_profile} {_set} <red><klucz> <wartość>'
+  clan profile subcommands updateskin: <click:suggest_command:"/{_clan} {_profile} {_updateskin} "><hover:show_text:'<green>Kliknij, aby zaktualizować skórkę.'> <aqua>/{_clan} {_profile} {_updateskin} <gray>-<yellow> Aktualizuj skórkę.</hover></click>
+  clan profile subcommands updateskin show on_success: '%tag% <green>Aktualizuję skórkę, proszę czekać...'
+  clan profile subcommands updateskin show on_error: '%tag% <red>Wystąpił błąd podczas aktualizacji skórki, być może została już zaktualizowana niedawno.'
+  clan profile subcommands updateskin show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_profile} {_updateskin}'
+  clan profile subcommands invites: <click:suggest_command:"/{_clan} {_profile} {_invites} "><hover:show_text:'<green>Kliknij, aby zobaczyć zaproszenia.'> <aqua>/{_clan} {_profile} {_invites} <light_purple>(-gui) <gray>-<yellow> Zobacz zaproszenia.</hover></click>
+  clan profile subcommands invites show on_success: '%tag% <green>Sukces'
+  clan profile subcommands invites show on_error: '%tag% <red>Wystąpił błąd podczas wyświetlania zaproszeń.'
+  clan profile subcommands invites show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_profile} {_invites} <light_purple>(-gui)'
+  clan rival show on_help: <click:run_command:"/{_clan} {_rival} "><hover:show_text:'<green>Kliknij, aby rozwinąć komendy rywalizacji klanowej.'> <aqua>/{_clan} {_rival} <gray>-<yellow> Rywalizacja klanowa.</hover></click> <hover:show_text:'<green>Z podkomendami.'><green>[!]</hover>
+  clan rival show on_success: '%tag% <green>Lista rywalizacji została zaktualizowana.'
+  clan rival show on_error: '%tag% <red>Wystąpił błąd podczas używania komendy rywalizacji.'
+  clan rival show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_rival}.'
+  clan rival subcommands add: <click:suggest_command:"/{_clan} {_rival} {_add} "><hover:show_text:'<green>Kliknij, aby dodać nowego rywala.'> <aqua>/{_clan} {_rival} {_add} <red><tag> <gray>-<yellow> Dodaj rywala klanu.</hover></click>
+  clan rival subcommands add show on_success: '%tag% <green>Nowy rywal został pomyślnie dodany.'
+  clan rival subcommands add show on_error: '%tag% <red>Wystąpił błąd podczas dodawania nowego rywala.'
+  clan rival subcommands add show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_rival} {_add} <red><tag>'
+  clan rival subcommands remove: <click:suggest_command:"/{_clan} {_rival} {_remove} "><hover:show_text:'<green>Kliknij, aby usunąć rywala.'> <aqua>/{_clan} {_rival} {_remove} <red><tag> <gray>-<yellow> Usuń rywala.</hover></click>
+  clan rival subcommands remove show on_success: '%tag% <green>Usunięto nowego rywala klanu.'
+  clan rival subcommands remove show on_error: '%tag% <red>Błąd usuwania rywala klanu.'
+  clan rival subcommands remove show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_rival} {_remove} <red><tag>'
+  clan rival subcommands list: <click:suggest_command:"/{_clan} {_rival} {_list} "><hover:show_text:'<green>Kliknij, aby wyświetlić rywalizacje klanów.'> <aqua>/{_clan} {_rival} {_list} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> Wyświetl rywalizacje klanów.</hover></click>
+  clan rival subcommands list show on_success: '%tag% <green>Sukces'
+  clan rival subcommands list show on_error: '%tag% <red>Błąd wyświetlania rywalizacji.'
+  clan rival subcommands list show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_rival} {_list} <light_purple>(tag) <light_purple>(-gui)'
+  clan rival subcommands deny: <click:suggest_command:"/{_clan} {_rival} {_deny} "><hover:show_text:'<green>Kliknij, aby odmówić rywalizacji klanów.'> <aqua>/{_clan} {_rival} {_deny} <red><tag> <gray>-<yellow> Odmów rywalizacji klanów.</hover></click>
+  clan rival subcommands deny show on_success: '%tag% <green>Nowy rywalowy klan został pomyślnie odrzucony.'
+  clan rival subcommands deny show on_error: '%tag% <red>Błąd odrzucenia rywalowego klanu.'
+  clan rival subcommands deny show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_rival} {_deny} <red><tag>'
+  clan rival subcommands accept: <click:suggest_command:"/{_clan} {_rival} {_accept} "><hover:show_text:'<green>Kliknij, aby zaakceptować rywalizację.'> <aqua>/{_clan} {_rival} {_accept} <red><tag> <gray>-<yellow> Zaakceptuj rywalizację.</hover></click>
+  clan rival subcommands accept show on_success: '%tag% <green>Nowy rywalowy klan został pomyślnie zaakceptowany.'
+  clan rival subcommands accept show on_error: '%tag% <red>Błąd zaakceptowania rywalowego klanu.'
+  clan rival subcommands accept show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_rival} {_accept} <red><tag>'
+  clan ally show on_help: <click:run_command:"/{_clan} {_ally} "><hover:show_text:'<green>Kliknij, aby wyświetlić komendy sojuszy.'> <aqua>/{_clan} {_ally} <gray>-<yellow> Sojusze klanów.</hover></click> <hover:show_text:'<green>Z podkomendami.'><green>[!]</hover>
+  clan ally show on_success: '%tag% <green>Lista sojuszy została zaktualizowana.'
+  clan ally show on_error: '%tag% <red>Błąd użycia sojuszu.'
+  clan ally show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_ally}'
+  clan ally subcommands add: <click:suggest_command:"/{_clan} {_ally} {_add} "><hover:show_text:'<green>Kliknij, aby dodać nowy sojusz.'> <aqua>/{_clan} {_ally} {_add} <red><tag> <gray>-<yellow> Dodaj nowy sojusz.</hover></click>
+  clan ally subcommands add show on_success: '%tag% <green>Nowe zaproszenie do sojuszu zostało wysłane, proszę czekać...'
+  clan ally subcommands add show on_error: '%tag% <red>Błąd wysyłania zaproszenia.'
+  clan ally subcommands add show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_ally} {_add} <red><tag>'
+  clan ally subcommands remove: <click:suggest_command:"/{_clan} {_ally} {_remove} "><hover:show_text:'<green>Kliknij, aby usunąć sojusz klanowy.'> <aqua>/{_clan} {_ally} {_remove} <red><tag> <gray>-<yellow> Usuń sojusz.</hover></click>
+  clan ally subcommands remove show on_success: '%tag% <green>Sojusz pomyślnie usunięty.'
+  clan ally subcommands remove show on_error: '%tag% <red>Błąd usuwania sojuszu.'
+  clan ally subcommands remove show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_ally} {_remove} <red><tag>'
+  clan ally subcommands accept: <click:suggest_command:"/{_clan} {_ally} {_accept} "><hover:show_text:'<green>Kliknij, aby zaakceptować sojusz klanowy.'> <aqua>/{_clan} {_ally} {_accept} <red><tag> <gray>-<yellow> Wyświetl listę sojuszy klanowych.</hover></click>
+  clan ally subcommands accept show on_success: '%tag% <green>Nowy sojusz zaakceptowany pomyślnie.'
+  clan ally subcommands accept show on_error: '%tag% <red>Błąd akceptowania sojuszu.'
+  clan ally subcommands accept show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_ally} {_accept} <red><tag>'
+  clan ally subcommands deny: <click:suggest_command:"/{_clan} {_ally} {_deny} "><hover:show_text:'<green>Kliknij, aby odrzucić sojusz klanowy.'> <aqua>/{_clan} {_ally} {_deny} <red><tag> <gray>-<yellow> Odrzuć sojusz klanowy.</hover></click>
+  clan ally subcommands deny show on_success: '%tag% <green>Sojusz pomyślnie odrzucony.'
+  clan ally subcommands deny show on_error: '%tag% <red>Błąd odrzucania sojuszu.'
+  clan ally subcommands deny show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_ally} {_deny} <red><tag>'
+  clan ally subcommands list: <click:suggest_command:"/{_clan} {_ally} {_list} "><hover:show_text:'<green>Kliknij, aby wyświetlić listę sojuszy klanowych.'> <aqua>/{_clan} {_ally} {_list} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> Wyświetl listę sojuszy klanowych.</hover></click>
+  clan ally subcommands list show on_success: '%tag% <green>Sukces'
+  clan ally subcommands list show on_error: '%tag% <red>Błąd podczas listowania sojuszy.'
+  clan ally subcommands list show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_ally} {_list} <light_purple>(tag) <light_purple>(-gui)'
+  clan member show on_help: <click:run_command:"/{_clan} {_member} "><hover:show_text:'<green>Kliknij, aby rozwinąć komendy dla członków klanu.'> <aqua>/{_clan} {_member} <gray>-<yellow> Członek klanu.</hover></click> <hover:show_text:'<green>Z podkomendami.'><green>[!]</hover>
+  clan member show on_success: '%tag% <green>Pomyślnie użyto członka klanu.'
+  clan member show on_error: '%tag% <red>Błąd podczas używania członka klanu.'
+  clan member show on_usage: '%tag% <red>Użyj <gold>/{_clan} {_member}'
+  clan member subcommands invite: <click:suggest_command:"/{_clan} {_member} {_invite} "><hover:show_text:'<green>Kliknij, aby zaprosić gracza.'> <aqua>/{_clan} {_member} {_invite} <red><player> <gray>-<yellow> Zaproszenie gracza.</hover></click>
+  clan member subcommands invite show on_success: '%tag% <green>Nowe zaproszenie wysłane pomyślnie, poczekaj, aż gracz zaakceptuje lub odrzuci prośbę.'
+  clan member subcommands invite show on_error: '%tag% <red>Wystąpił błąd podczas wysyłania zaproszenia.'
+  clan member subcommands invite show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_member} {_invite} <red><player>'
+  clan member subcommands kick: <click:suggest_command:"/{_clan} {_member} {_kick} "><hover:show_text:'<green>Kliknij, aby wyrzucić członka.'> <aqua>/{_clan} {_member} {_kick} <red><player> <gray>-<yellow> Wyrzucenie członka.</hover></click>
+  clan member subcommands kick show on_success: '%tag% <green>Gracz został pomyślnie wyrzucony.'
+  clan member subcommands kick show on_error: '%tag% <red>Wystąpił błąd podczas wyrzucania gracza.'
+  clan member subcommands kick show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_member} {_kick} <red><player>'
+  clan member subcommands list: <click:suggest_command:"/{_clan} {_member} {_list} "><hover:show_text:'<green>Kliknij, aby wyświetlić listę członków klanu.'> <aqua>/{_clan} {_member} {_list} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> Wyświetla listę członków klanu.</hover></click>
+  clan member subcommands list show on_success: '%tag% <green>Sukces'
+  clan member subcommands list show on_error: '%tag% <red>Błąd wyświetlania listy członków.'
+  clan member subcommands list show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_member} {_list} <light_purple>(tag) <light_purple>(-gui)'
+  clan member subcommands search: <click:suggest_command:"/{_clan} {_member} {_search} "><hover:show_text:'<green>Kliknij, aby wyszukać członka klanu.'> <aqua>/{_clan} {_member} {_search} <red><text> <light_purple>(-gui) <gray>-<yellow> Wyszukuje członka klanu.</hover></click>
+  clan member subcommands search show on_success: '%tag% <green>Sukces'
+  clan member subcommands search show on_error: '%tag% <red>Błąd wyszukiwania członka klanu.'
+  clan member subcommands search show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_member} {_search} <red><text> <light_purple>(-gui)'
+  clan settings show on_help: <click:run_command:"/{_clan} {_settings} "><hover:show_text:'<green>Kliknij, aby rozwinąć komendy ustawień klanu.'> <aqua>/{_clan} {_settings} <gray>-<yellow> Zmienia ustawienia klanu.</hover></click> <hover:show_text:'<green>Z podkomendami.'><green>[!]</hover>
+  clan settings show on_success: '%tag% <green>Sukces'
+  clan settings show on_error: '%tag% <red>Wystąpił błąd podczas zmiany ustawień klanu.'
+  clan settings show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_settings}'
+  clan settings subcommands banned: <click:suggest_command:"/{_clan} {_settings} {_banned} "><hover:show_text:'<green>Kliknij, aby wyświetlić listę zbanowanych graczy.'> <aqua>/{_clan} {_settings} {_banned} <light_purple>(-gui) <gray>-<yellow> Wyświetl listę zbanowanych graczy.</hover></click>
+  clan settings subcommands banned show on_success: '%tag% <green>Sukces'
+  clan settings subcommands banned show on_error: '%tag% <red>Wystąpił błąd podczas wyświetlania listy zbanowanych graczy.'
+  clan settings subcommands banned show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_settings} {_banned} <light_purple>(-gui)'
+  clan settings subcommands view: <click:suggest_command:"/{_clan} {_settings} {_view} "><hover:show_text:'<green>Kliknij, aby wyświetlić ustawienia klanu.'> <aqua>/{_clan} {_settings} {_view} <light_purple>(-gui) <gray>-<yellow> Wyświetl ustawienia klanu.</hover></click>
+  clan settings subcommands view show on_success: '%tag% <green>Sukces'
+  clan settings subcommands view show on_error: '%tag% <red>Wystąpił błąd podczas wyświetlania ustawień klanu.'
+  clan settings subcommands view show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_settings} {_view} <light_purple>(-gui)'
+  clan settings subcommands set: <click:suggest_command:"/{_clan} {_settings} {_set} "><hover:show_text:'<green>Kliknij, aby zmienić ustawienia klanu.'> <aqua>/{_clan} {_settings} {_set} <red><klucz> <wartość> <gray>-<yellow> Zmień ustawienia klanu.</hover></click>
+  clan settings subcommands set show on_success: '%tag% <green>Ustawienia klanu zmienione na <aqua>%typ%<gray>:<aqua>%wartość%'
+  clan settings subcommands set show on_error: '%tag% <red>Wystąpił błąd podczas zmieniania ustawień klanu.'
+  clan settings subcommands set show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_settings} {_set} <red><klucz> <wartość>'
+  clan role show on_help: <click:run_command:"/{_clan} {_role} "><hover:show_text:'<green>Kliknij, aby wyświetlić komendy dla roli.'> <aqua>/{_clan} {_role} <gray>-<yellow> Zmień rolę klanową.</hover></click> <hover:show_text:'<green>Z podkomendami.'><green>[!]</hover>
+  clan role show on_success: '%tag% <green>sukces'
+  clan role show on_error: '%tag% <red>Wystąpił błąd podczas zmiany roli klanowej.'
+  clan role show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_role}'
+  clan role subcommands sync: <click:suggest_command:"/{_clan} {_role} {_sync} "><hover:show_text:'<green>Kliknij, aby zsynchronizować uprawnienia roli.'> <aqua>/{_clan} {_role} {_sync} <light_purple>(-gui) <gray>-<yellow> Zsynchronizuj uprawnienia roli.</hover></click>
+  clan role subcommands sync show on_success: '%tag% <green>Sukces'
+  clan role subcommands sync show on_error: '%tag% <red>Wystąpił błąd podczas synchronizowania ról.'
+  clan role subcommands sync show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_role} {_sync}'
+  clan role subcommands view: <click:suggest_command:"/{_clan} {_role} {_view} "><hover:show_text:'<green>Kliknij, aby zobaczyć rolę klanową.'> <aqua>/{_clan} {_role} {_view} <light_purple>(-gui) <gray>-<yellow> Zobacz rolę klanową.</hover></click>
+  clan role subcommands view show on_success: '%tag% <green>Uprawnienia zostały pomyślnie zsynchronizowane.'
+  clan role subcommands view show on_error: '%tag% <red>Wystąpił błąd podczas wyświetlania roli klanowej.'
+  clan role subcommands view show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_role} {_view} <light_purple>(-gui)'
+  clan role subcommands set: <click:suggest_command:"/{_clan} {_role} {_set} "><hover:show_text:'<green>Kliknij, aby zmienić rolę klanową.'> <aqua>/{_clan} {_role} {_set} <red><rola> <klucz> <wartość> <gray>-<yellow> Zmień rolę klanową.</hover></click>
+  clan role subcommands set show on_success: '%tag% <green>Rola klanowa %role% została zmieniona na <aqua>%key%<gray>:<aqua>%value%'
+  clan role subcommands set show on_error: '%tag% <red>Wystąpił błąd podczas zmiany roli klanowej.'
+  clan role subcommands set show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_role} {_set} <red><rola> <klucz> <wartość>'
+  clan regroup show on_help: <click:run_command:"/{_clan} {_regroup} "><hover:show_text:'<green>Kliknij, aby rozwinąć polecenia regroup.'> <aqua>/{_clan} {_regroup} <gray>-<yellow> Regroup klanu.</hover></click> <hover:show_text:'<green>Z podpoleceniami.'><green>[!]</hover>
+  clan regroup show on_success: '%tag% <green>Żądanie regroup zostało wysłane.'
+  clan regroup show on_error: '%tag% <red>Wystąpił błąd podczas składania zamówienia.'
+  clan regroup show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_regroup}'
+  clan regroup subcommands send: <click:suggest_command:"/{_clan} {_regroup} {_send} "><hover:show_text:'<green>Kliknij, aby wysłać zaproszenie do regroup'> <aqua>/{_clan} {_regroup} {_send} <gray>-<yellow> Wyślij regroup klanowy.</hover></click>
+  clan regroup subcommands send show on_success: '%tag% <green>Zaproszenie do regroup zostało pomyślnie wysłane, poczekaj na odpowiedź gracza.'
+  clan regroup subcommands send show on_error: '%tag% <red>Wystąpił błąd podczas wysyłania zaproszenia do regroup.'
+  clan regroup subcommands send show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_regroup} {_send}'
+  clan regroup subcommands accept: <click:suggest_command:"/{_clan} {_regroup} {_accept} "><hover:show_text:'<green>Kliknij, aby zaakceptować zaproszenie do regroup'> <aqua>/{_clan} {_regroup} {_accept} <gray>-<yellow> Zaakceptuj zaproszenie do regroup.</hover></click>
+  clan regroup subcommands accept show on_success: '%tag% <green>Pomyślnie zaakceptowałeś zaproszenie do grupy.'
+  clan regroup subcommands accept show on_error: '%tag% <red>Wystąpił błąd podczas akceptowania zaproszenia do grupy.'
+  clan regroup subcommands accept show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_regroup} {_accept}'
+  clan regroup subcommands deny: <click:suggest_command:"/{_clan} {_regroup} {_deny} "><hover:show_text:'<green>Kliknij, aby odrzucić zaproszenie do grupy.'> <aqua>/{_clan} {_regroup} {_deny} <gray>-<yellow> Odrzuć zaproszenie do grupy.</hover></click>
+  clan regroup subcommands deny show on_success: '%tag% <green>Pomyślnie odrzuciłeś zaproszenie do grupy.'
+  clan regroup subcommands deny show on_error: '%tag% <red>Wystąpił błąd podczas odrzucania zaproszenia do grupy.'
+  clan regroup subcommands deny show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_regroup} {_deny}'
+  clan ban show on_help: <click:suggest_command:"/{_clan} {_ban} "><hover:show_text:'<green>Kliknij, aby zbanować gracza.'> <aqua>/{_clan} {_ban} <red><player> <gray>-<yellow> Zbanuj gracza.</hover></click>
+  clan ban show on_success: '%tag% <green>Pomyślnie zbanowano gracza.'
+  clan ban show on_error: '%tag% <red>Wystąpił błąd podczas banowania gracza.'
+  clan ban show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_ban} <red><nickname>'
+  clan unban show on_help: <click:suggest_command:"/{_clan} {_unban} "><hover:show_text:'<green>Kliknij, aby odbanować gracza.'> <aqua>/{_clan} {_unban} <red><player> <gray>-<yellow> Odbanuj gracza.</hover></click>
+  clan unban show on_success: '%tag% <green>Pomyślnie odbanowano gracza.'
+  clan unban show on_error: '%tag% <red>Wystąpił błąd podczas odbanowywania gracza.'
+  clan unban show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_unban} <red><player>'
+  clan nickname show on_help: <click:suggest_command:"/{_clan} {_nickname} "><hover:show_text:'<green>Kliknij, aby zmienić nick klanowy.'> <aqua>/{_clan} {_nickname} <red><nickname> <gray>-<yellow> Zmień nick klanowy.</hover></click>
+  clan nickname show on_success: '%tag% <green>Pomyślnie zmieniono nick klanowy.'
+  clan nickname show on_error: '%tag% <red>Wystąpił błąd podczas zmiany nicku klanowego.'
+  clan nickname show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_nickname} <red><nickname>'
+  clan banner show on_help: <click:run_command:"/{_clan} {_banner} "><hover:show_text:'<green>Kliknij, aby rozwinąć komendy banera klanowego.'> <aqua>/{_clan} {_banner} <gray>-<yellow> Zmień baner klanowy.</hover></click> <hover:show_text:'<green>Z podkomendami.'><green>[!]</hover>
+  clan banner show on_success: '%tag% <green>Sukces.'
+  clan banner show on_error: '%tag% <red>Wystąpił błąd podczas zmiany banera klanowego.'
+  clan banner show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_banner}'
+  clan banner subcommands upload: <click:suggest_command:"/{_clan} {_banner} {_upload} "><hover:show_text:'<green>Kliknij, aby przesłać baner.'> <aqua>/{_clan} {_banner} {_upload} <light_purple>(-gui) <gray>-<yellow> Prześlij baner klanowy.</hover></click>
+  clan banner subcommands upload show on_success: '%tag% <green>Pomyślnie zapisano nowy baner klanowy.'
+  clan banner subcommands upload show on_error: '%tag% <red>Wystąpił błąd podczas przesyłania banerów klanowych.'
+  clan banner subcommands upload show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_banner} {_upload} <light_purple>(-gui)'
+  clan banner subcommands delete: <click:suggest_command:"/{_clan} {_banner} {_delete} "><hover:show_text:'<green>Kliknij, aby usunąć baner.'> <aqua>/{_clan} {_banner} {_delete} <gray>-<yellow> Usuń baner klanowy.</hover></click>
+  clan banner subcommands delete show on_success: '%tag% <green>Baner został pomyślnie usunięty.'
+  clan banner subcommands delete show on_error: '%tag% <red>Wystąpił błąd podczas usuwania banera klanowego.'
+  clan banner subcommands delete show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_banner} {_delete}'
+  clan banner subcommands view: <click:suggest_command:"/{_clan} {_banner} {_view} "><hover:show_text:'<green>Kliknij, aby zobaczyć informacje o banerze.'> <aqua>/{_clan} {_banner} {_view} <light_purple>(-gui) <gray>-<yellow> Wyświetl informacje o banerze.</hover></click>
+  clan banner subcommands view show on_success: '%tag% <green>Sukces.'
+  clan banner subcommands view show on_error: '%tag% <red>Wystąpił błąd podczas wyświetlania banera klanowego.'
+  clan banner subcommands view show on_usage: '%tag% <red>Użyj <aqua>/{_clan} {_banner} {_view} <light_purple>(-gui)'
+  uclan help show on_help: <click:suggest_command:"/{_uclan} {_help}"><hover:show_text:'<green>Kliknij, aby wyświetlić pomoc dla klanów.'> <aqua>/{_uclan} {_help} <gray>-<yellow> Wyświetl menu pomocy.</hover></click>
+  uclan help show on_success: '%tag% <green>Sukces w korzystaniu z pomocy.'
+  uclan help show on_error: '%tag% <red>Błąd podczas korzystania z pomocy.'
+  uclan help show on_usage: '%tag% <red>Błąd użycia <aqua>/{_uclan} {_help}'
+  uclan chatspy show on_help: <click:suggest_command:"/{_uclan} {_chatspy} "><hover:show_text:'<green>Kliknij, aby szpiegować chat klanowy.'> <aqua>/{_uclan} {_chatspy} <gray>-<yellow> Szpieguj chat klanowy.</hover></click>
+  uclan chatspy show on_success: '%tag% <green>Szpiegowanie czatu jest teraz: %state%'
+  uclan chatspy show on_error: '%tag% <red>Wystąpił błąd podczas zmieniania.'
+  uclan chatspy show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_chatspy}'
+  uclan addslot show on_help: <click:suggest_command:"/{_uclan} {_addslot} "><hover:show_text:'<green>Kliknij, aby dodać sloty do klanu.'> <aqua>/{_uclan} {_addslot} <red><player|tag> <gray>-<yellow> Dodaj sloty do klanu.</hover></click>
+  uclan addslot show on_success: '%tag% <green>Dodałeś %num% slotów do klanu %clan%'
+  uclan addslot show on_error: '%tag% <red>Wystąpił błąd podczas dodawania.'
+  uclan addslot show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_addslot} <red><gracz|tag> <amount>'
+  uclan setslot show on_help: <click:suggest_command:"/{_uclan} {_setslot}"><hover:show_text:'<green>Kliknij, aby ustawić sloty dla klanu.'> <aqua>/{_uclan} {_setslot} <red><player|tag> <amount>  <gray>-<yellow> Ustaw sloty dla klanu.</hover></click>
+  uclan setslot show on_success: '%tag% <green>Ustawiłeś %num% slotów dla klanu %clan%'
+  uclan setslot show on_error: '%tag% <red>Wystąpił błąd podczas ustawiania.'
+  uclan setslot show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_setslot} <red><gracz|tag> <amount>'
+  uclan removeslot show on_help: <click:suggest_command:"/{_uclan} {_removeslot} "><hover:show_text:'<green>Kliknij, aby usunąć sloty z klanu.'> <aqua>/{_uclan} {_removeslot} <red><player|tag> <amount> <gray>-<yellow> Usuń sloty z klanu.</hover></click>
+  uclan removeslot show on_success: '%tag% <green>Usunąłeś %num% slotów z klanu %clan%'
+  uclan removeslot show on_error: '%tag% <red>Wystąpił błąd podczas usuwania.'
+  uclan removeslot show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_removeslot} <red><gracz|tag> <amount>'
+  uclan addpoints show on_help: <click:suggest_command:"/{_uclan} {_addpoints} "><hover:show_text:'<green>Kliknij, aby dodać punkty do klanu.'> <aqua>/{_uclan} {_addpoints} <red><player|tag> <amount> [reason] <gray>-<yellow> Dodaj punkty do klanu.</hover></click>
+  uclan addpoints show on_success: '%tag% <green>Dodałeś %num% punktów do klanu %clan%.'
+  uclan addpoints show on_error: '%tag% <red>Wystąpił błąd podczas dodawania punktów.'
+  uclan addpoints show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_addpoints} <red><gracz|tag> <amount> [powód]'
+  uclan setpoints show on_help: <click:suggest_command:"/{_uclan} {_setpoints} "><hover:show_text:'<green>Kliknij, aby ustawić punkty dla klanu.'> <aqua>/{_uclan} {_setpoints} <red><player|tag> <amount> [powód] <gray>-<yellow> Ustawia punkty dla klanu.</hover></click>
+  uclan setpoints show on_success: '%tag% <green>Ustawiłeś %num% punktów dla klanu %clan%.'
+  uclan setpoints show on_error: '%tag% <red>Wystąpił błąd podczas ustawiania punktów.'
+  uclan setpoints show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_setpoints} <red><gracz|tag> <amount> [powód]'
+  uclan removepoints show on_help: <click:suggest_command:"/{_uclan} {_removepoints}"><hover:show_text:'<green>Kliknij, aby usunąć punkty dla klanu.'> <aqua>/{_uclan} {_removepoints} <red><player|tag> <amount> [powód] <gray>-<yellow> Usuwa punkty dla klanu.</hover></click>
+  uclan removepoints show on_success: '%tag% <green>Usunąłeś %num% punktów dla klanu %clan%.'
+  uclan removepoints show on_error: '%tag% <red>Wystąpił błąd podczas usuwania punktów.'
+  uclan removepoints show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_removepoints} <red><gracz|tag> <amount> [powód]'
+  uclan changetag show on_help: <click:suggest_command:"/{_uclan} {_changetag}"><hover:show_text:'<green>Kliknij, aby zmienić tag klanu.'> <aqua>/{_uclan} {_changetag} <red><player|tag> <newtag> <gray>-<yellow> Zmienia tag klanu.</hover></click>
+  uclan changetag show on_success: '%tag% <green>Tag klanu <aqua>%clan% <green>został zmieniony na <aqua>%newtag%.'
+  uclan changetag show on_error: '%tag% <red>Wystąpił błąd podczas zmiany tagu.'
+  uclan changetag show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_changetag} <red><gracz|tag> <nowytag>'
+  uclan resetplayerkdr show on_help: <click:suggest_command:"/{_uclan} {_resetplayerkdr}"><hover:show_text:'<green>Kliknij, aby zresetować KDR gracza.'> <aqua>/{_uclan} {_resetplayerkdr} <red><player> <gray>-<yellow> Reset KDR gracza.</hover></click>
+  uclan resetplayerkdr show on_success: '%tag% <green>Zresetowałeś KDR gracza <green>%player%'
+  uclan resetplayerkdr show on_error: '%tag% <red>Wystąpił błąd podczas resetowania'
+  uclan resetplayerkdr show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_resetplayerkdr} <red><player>'
+  uclan resetclankdr show on_help: <click:suggest_command:"/{_uclan} {_resetclankdr} "><hover:show_text:'<green>Kliknij, aby zresetować KDR klanu.'> <aqua>/{_uclan} {_resetclankdr} <red><player|tag> <gray>-<yellow> Reset KDR klanu.</hover></click>
+  uclan resetclankdr show on_success: '%tag% <green>Zresetowałeś KDR klanu <green>%uclans_tag_color%'
+  uclan resetclankdr show on_error: '%tag% <red>Wystąpił błąd podczas resetowania'
+  uclan resetclankdr show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_resetclankdr} <red><player|tag>'
+  uclan globalff show on_help: <click:suggest_command:"/{_uclan} {_globalff} "><hover:show_text:'<green>Kliknij, aby przełączyć włączanie/wyłączanie przyjaznego ognia.'> <aqua>/{_uclan} {_globalff} <gray>-<yellow> Przełączanie przyjaznego ognia klanu.</hover></click>
+  uclan globalff show on_success: '%tag% <green>Zmieniłeś globalne ustawienie przyjaznego ognia na <aqua>%globalff%'
+  uclan globalff show on_error: '%tag% <red>Błąd podczas użycia ustawienia globalnego ognia.'
+  uclan globalff show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_globalff}'
+  uclan delete show on_help: <click:suggest_command:"/{_uclan} {_delete} "><hover:show_text:'<green>Kliknij, aby usunąć klan.'> <aqua>/{_uclan} {_delete} <red><player|tag> <gray>-<yellow> Usuń klan.</hover></click>
+  uclan delete show on_success: '%tag% <green>Usunąłeś klan!'
+  uclan delete show on_error: '%tag% <red>Wystąpił błąd podczas usuwania klanu.'
+  uclan delete show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_delete} <red><gracz|tag>'
+  uclan forcejoin show on_help: <click:suggest_command:"/{_uclan} {_forcejoin} "><hover:show_text:'<green>Kliknij, aby dodać gracza do klanu.'> <aqua>/{_uclan} {_forcejoin} <red><gracz> <gracz|tag> <gray>-<yellow> Dodaj gracza do klanu.</hover></click>
+  uclan forcejoin show on_success: '%tag% <green>Dodałeś gracza!'
+  uclan forcejoin show on_error: '%tag% <red>Wystąpił błąd podczas dodawania gracza.'
+  uclan forcejoin show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_forcejoin} <red><gracz> <gracz|tag>'
+  uclan verify show on_help: <click:suggest_command:"/{_uclan} {_verify} "><hover:show_text:'<green>Kliknij, aby zweryfikować klan.'> <aqua>/{_uclan} {_verify} <red><gracz|tag> <gray>-<yellow> Zweryfikuj klan.</hover></click>
+  uclan verify show on_success: '%tag% <green>Przełączyłeś weryfikację klanu!'
+  uclan verify show on_error: '%tag% <red>Wystąpił błąd podczas weryfikacji klanu.'
+  uclan verify show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_verify} <red><gracz|tag>'
+  uclan reload show on_help: <click:suggest_command:"/{_uclan} {_reload} "><hover:show_text:'<green>Kliknij, aby przeładować konfiguracje wtyczki.'> <aqua>/{_uclan} {_reload} <gray>-<yellow> Przeładuj ustawienia.</hover></click>
+  uclan reload show on_success: '%tag% <green>Wtyczka została pomyślnie przeładowana <gray>(%time%).'
+  uclan reload show on_error: '%tag% <red>Wystąpił błąd podczas przeładowywania ustawień.'
+  uclan reload show on_usage: '%tag% <red>Użyj <aqua>/{_uclan} {_reload}'
+ 
+ 
+ # TRANSLATIONS OF THE CHAT ACTIONS
+ 
+CHAT:
+  changenickname:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Wpisz tymczasowy nick na czacie, może zawierać tylko litery i cyfry.
+    - ' <gray>- Wpisz <red>cancel</red> lub <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kliknij, aby anulować."><red>[KLIKNIJ TUTAJ]</red></hover></click>, aby anulować.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Wpisz tymczasowy nick na czacie!
+    title:
+      line: <red>! <yellow>Nick
+      subline: <yellow>Wpisz na czacie!
+    bossbar: <red><bold>!</bold> <yellow>Wpisz nick na czacie! <red>({time})
+  commandunknownplayer:
+    message:
+    - '%tag% <red>Nieznana komenda, <aqua><click:run_command:"/{_clan} {_help}"><hover:show_text:"<green>Kliknij tutaj, aby zobaczyć pomoc."><red>[KLIKNIJ TUTAJ]</red></hover></click> <red>lub użyj <light_purple>/{_clan} {_help} <red>, aby zobaczyć listę dostępnych komend.'
+    actionbar: <light_purple>/{_clan} {_help} <red>, aby zobaczyć dostępne komendy.
+    title:
+      line: <red>! <light_purple>/{_clan} {_help}
+      subline: <yellow>By zobaczyć komendy!
+    bossbar: <light_purple>/{_clan} {_help} <red>, aby zobaczyć dostępne komendy. <red>({time})
+  commandunknownadmin:
+    message:
+  - '%tag% <red>Nieznana komenda, <aqua><click:run_command:"/uclan help"><hover:show_text:"<green>Kliknij, aby zobaczyć pomoc."><red>[KLIKNIJ TUTAJ]</red></hover></click> <red>lub użyj <light_purple>/uclan help <red>, aby zobaczyć listę dostępnych komend.'
+    actionbar: <light_purple>/uclan help <red>, aby zobaczyć dostępne komendy.
+    title:
+      line: <red>! <light_purple>/uclan help
+      subline: <yellow>Aby zobaczyć komendy!
+    bossbar: <light_purple>/uclan help <red>, aby zobaczyć dostępne komendy. <red>({time})
+  clanlevelreceived:
+    message:
+    - '%tag% <yellow>Klan <aqua>%uclans_tag_color% <yellow>osiągnął poziom <aqua>%uclans_level%'
+    actionbar: <aqua>%uclans_tag_color% <yellow>osiągnął poziom <aqua>%uclans_level%
+    title:
+      line: <green>+ Poziom
+      subline: <aqua>%uclans_tag_color%
+    bossbar: <aqua>%uclans_tag_color% <yellow>osiągnął poziom <aqua>%uclans_level% <red>({time})
+  clanpatentreceived:
+    message:
+    - '%tag% <yellow>Klan <aqua>%uclans_tag_color% <yellow>zmienił patent na <aqua>%uclans_patent_formated%'
+    actionbar: <aqua>%uclans_tag_color% <yellow>ma nowy patent <aqua>%uclans_patent_formated%
+    title:
+      line: <green>+ Patent
+      subline: <aqua>%uclans_patent_formated%
+    bossbar: <aqua>%uclans_tag_color% <yellow>ma nowy patent <aqua>%uclans_patent_formated% <red>({time})
+  clanhomecreate:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Napisz na czacie nazwę nowego <aqua>Warpu Klanowego<yellow>.
+    - ' <gray>- Napisz <red>cancel</red> <gray>lub <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kliknij, aby anulować."><red>[KLIKNIJ TUTAJ]</red></hover></click> by anulować.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Napisz na czacie nazwę nowego warpu klanowego!
+    title:
+      line: <red>! <yellow>Nowy Warp
+      subline: <yellow>Napisz na czacie!
+    bossbar: <red><bold>!</bold> <yellow>Napisz na czacie nazwę nowego warpu klanowego! <red>({time})
+  clancreate:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Napisz na czacie tag <aqua>nowego klanu<yellow>, który chcesz stworzyć.
+    - ' <gray>- Napisz <red>cancel</red> <gray>lub <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kliknij, aby anulować."><red>[KLIKNIJ TUTAJ]</red></hover></click> by anulować.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Napisz na czacie tag swojego nowego klanu!
+    title:
+      line: <red>! <yellow>Nowy Klan
+      subline: <yellow>Napisz na czacie!
+    bossbar: <red><bold>!</bold> <yellow>Napisz na czacie tag klanu! <red>({time})
+   clanmodtag:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Napisz na czacie <aqua>nowy tag <yellow>dla klanu.
+    - ' <gray>- Wpisz <red>cancel</red> lub kliknij <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kliknij, aby anulować."><red>[TUTAJ]</red></hover></click> aby anulować.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Napisz na czacie nowy tag dla klanu <aqua>(tag jest pojedynczym słowem)!
+    title:
+      line: <red>! <yellow>Nowy Tag
+      subline: <yellow>Napisz na czacie!
+    bossbar: <red><bold>!</bold> <yellow>Napisz na czacie nowy tag dla klanu <red>({time})</red>
+  clandesc:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Napisz na czacie nowy opis dla klanu.
+    - ' <gray>- Wpisz <red>cancel</red> lub kliknij <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kliknij, aby anulować."><red>[TUTAJ]</red></hover></click> aby anulować.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Napisz na czacie nowy opis dla klanu!
+    title:
+      line: <red>! <yellow>Nowy Opis
+      subline: <yellow>Napisz na czacie!
+    bossbar: <red><bold>!</bold> <yellow>Napisz na czacie nowy opis dla klanu <red>({time})
+  invitereceive:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>Otrzymano zaproszenie do dołączenia do klanu <white>%clan_tag_nocolor%
+    - <click:run_command:"/{_clan} {_join} %clan_tag_nocolor%"><hover:show_text:"<green>Kliknij, aby zaakceptować, lub użyj <aqua>/{_clan} {_join} %clan_tag_nocolor%."><green>[ZA AKCEPTUJ]</green></hover></click>    <click:run_command:"/{_clan} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Kliknij, aby odrzucić, lub użyj <aqua>/{_clan} {_deny} %clan_tag_nocolor%."><red>[ODRZUĆ]</red></hover></click>    <click:run_command:"/{_clan} {_profile} {_invites}"><hover:show_text:"<green>Kliknij, aby wyświetlić wszystkie lub użyj <aqua>/{_clan} {_profile} {_invites}."><yellow>[ZOBACZ WSZYSTKIE]</yellow></hover></click>
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Otrzymano zaproszenie do dołączenia do klanu <white>%clan_tag_nocolor%
+    title:
+      line: <red>! <yellow>Nowe zaproszenie
+      subline: <yellow>Klan <white>%clan_tag_nocolor%
+    bossbar: <red><bold>!</bold> <yellow>Otrzymano zaproszenie do dołączenia do klanu <white>%clan_tag_nocolor% <red>({time})
+  clanregroupreceive:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>Otrzymano prośbę o ponowne zebranie się! <white>%clan_sender%
+    - <red>! <yellow>Wygasa za <aqua>%sec_expires% sek.<gray>.
+    - <click:run_command:"/{_clan} {_regroup} accept"><hover:show_text:"<green>Kliknij, aby zaakceptować, lub użyj <aqua>/{_clan} {_regroup} accept."><green>[ZA AKCEPTUJ]</green></hover></click>
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Otrzymano prośbę o ponowne zebranie się!
+    title:
+      line: <red>! <yellow>Prośba o ponowne zebranie się
+      subline: <yellow>Akceptujesz czy ignorujesz?
+    bossbar: <red><bold>!</bold> <yellow>Otrzymano prośbę o ponowne zebranie się! <red>({time})
+  claninvite:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>Wpisz na czacie nazwę gracza, którego chcesz zaprosić do klanu.
+    - ' <gray>- Napisz <red>cancel</red> lub <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kliknij, aby anulować."><red>[KLIKNIJ TUTAJ]</red></hover></click> aby anulować.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+  actionbar: <red><bold>!</bold> <yellow>Wpisz na czacie nazwę gracza, którego chcesz zaprosić!
+  title:
+    line: <red>! <yellow>Nowe Zaproszenie
+    subline: <yellow>Wpisz na czacie nazwę gracza?
+  bossbar: <red><bold>!</bold> <yellow>Wpisz na czacie nazwę gracza, którego chcesz zaprosić! <red>({time})
+  clanrivalremove:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>Klan <white>%clan_tag% <yellow>wysłał prośbę o pokój.
+    - <red>! <yellow>Wygasa za <aqua>%sec_expires% sekund<gray>.
+    - <click:run_command:"/{_clan} {_rival} {_accept} %clan_tag_nocolor%"><hover:show_text:"<green>Kliknij, aby zaakceptować lub użyj <aqua>/{_clan} {_rival} {_accept} %clan_tag_nocolor%."><green>[ZAACCEPTUJ]</green></hover></click>      <click:run_command:"/{_clan} {_rival} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Kliknij, aby odrzucić lub użyj <aqua>/{_clan} {_rival} {_deny} %clan_tag_nocolor%"><red>[ODRZUĆ]</red></hover></click>
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Żądanie pokoju otrzymane!
+    title:
+      line: <red>! <yellow>Żądanie pokoju
+      subline: <yellow>Napisz na czacie?
+    bossbar: <red><bold>!</bold> <yellow>Żądanie pokoju otrzymane! <red>({time})
+  clanallyreceive:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>Otrzymano prośbę o sojusz od klanu <white>%clan_tag%
+    - <red>! <yellow>Wygasa za <aqua>%sec_expires% sek<gray>.
+    - <click:run_command:"/{_clan} {_ally} {_accept} %clan_tag_nocolor%"><hover:show_text:"<green>Kliknij, aby zaakceptować lub użyj <aqua>/{_clan} {_ally} {_accept} %clan_tag_nocolor%"><green>[AKCEPTUJ]</green></hover></click>      <click:run_command:"/{_clan} {_ally} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Kliknij, aby odrzucić lub użyj <aqua>/{_clan} {_ally} {_deny} %clan_tag_nocolor%"><red>[ODRZUĆ]</red></hover></click>
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>>Otrzymano prośbę o sojusz
+    title:
+      line: <red>! <yellow>Prośba o sojusz
+      subline: <yellow>Zaakceptować czy odrzucić?
+    bossbar: <red><bold>!</bold> <yellow>Otrzymano prośbę o sojusz <red>({time})
