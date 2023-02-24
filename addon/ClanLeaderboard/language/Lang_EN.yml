@@ -1,0 +1,24 @@
+COMUM:
+  player dont have clan: '%tag% <red>This player does not have a clanS.'
+  gui error: '%tag% <red>This menu contains an error and cannot be opened'
+  disabled function: '%tag% <red>This function is turned off or disabled.'
+  chan does not exists: '%tag% <red>This clan does not exist'
+  command by player: '%tag% <red>This command must be used by a player.'
+  no permission: '%tag% <red>You dont have permissions for this.'
+  header help: '<green><bold>Admin Leaderboard Commands:'
+  already exists: '%tag% <red>There is already a board in this location!'
+  sign look: '%tag% <red>You need to be looking at a SIGN or ARMOR_STAND.'
+  enabled true: <green>Enabled
+  enabled false: <red>Disabled
+  type kill: Kills
+  type death: Deaths
+  type kdr: Kdr
+  type member: Members
+  type bank: Bank
+  type level: Levels
+  type war: Wars
+  type all: Date
+  type patent: Patent
+player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>has been deposited in your account.'
+player dont have money gui: <red>You need to <green>%uclans_money_currency%%amount%
+player debited money: '%tag% <yellow>It was debited <green>%amount% <yellow>your account.'
