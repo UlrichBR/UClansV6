@@ -1,0 +1,23 @@
+COMUM:
+  player dont have clan: '%tag% <red>This player does not have a clan.'
+  you dont have clan: '%tag% <red>You dont have a clan.'
+  gui error: '%tag% <red>This menu contains an error and cannot be opened'
+  disabled function: '%tag% <red>This function is turned off or disabled.'
+  chan does not exists: '%tag% <red>This clan does not exist'
+  command by player: '%tag% <red>This command must be used by a player.'
+  no permission: '%tag% <red>You dont have permissions for this.'
+Config:
+  Corpses:
+    catch:
+      message:
+        text:
+        - ' '
+        - <red><bold>!</bold> <yellow>You captured <dark_red>%player%'s corpse <yellow>and received rewards!<yellow>.
+        - ' '
+      actionbar:
+        text: <red><bold>!</bold> <yellow>You captured <dark_red>%player%'s corpse<yellow>!
+      title:
+        line: <red>! <dark_red>%player%'s corpse
+        subline: <yellow>Captured!
+      bossbar:
+        text: <red><bold>!</bold> <yellow>You captured <dark_red>%player%'s corpse<yellow>! <red>({time})
