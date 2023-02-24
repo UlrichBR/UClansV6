@@ -1,0 +1,134 @@
+COMUM:
+  player dont have clan: '%tag% <red>This player does not have a clan.'
+  gui error: '%tag% <red>This menu contains an error and cannot be opened'
+  disabled function: '%tag% <red>This function is turned off or disabled.'
+  chan does not exists: '%tag% <red>This clan does not exist'
+  command by player: '%tag% <red>This command must be used by a player.'
+  no permission: '%tag% <red>You dont have permissions for this.'
+  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>has been deposited in your account.'
+  player dont have money: '%tag% <red>You need to <green>%uclans_money_currency%%amount%'
+  player dont have money gui: <red>You need to <green>%uclans_money_currency%%amount%
+  player debited money: '%tag% <yellow>It was debited <green>%amount% <yellow>your account.'
+  player money nozero: '%tag% <red>The value must be greater than zero'
+  help clan header subcommand: '<newline><blue><bold>Help with subcommands:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help list empty: ' <red>- There is nothing on this list.'
+  clan dont permission role: '%tag% <red>Your current role you cannot do this.'
+  bank value max title: <dark_red>! <red>Valor max de <green>%uclans_money_currency%%max%
+  bank value min title: <dark_red>! <red>Valor min de <green>%uclans_money_currency%%min%
+  bank value max: '%tag% <red>Valor max de <green>%uclans_money_currency%%max%'
+  bank value min: '%tag% <red>Valor min de <green>%uclans_money_currency%%min%'
+  bank add error gui: <red>Transaction error!
+  bank add success gui: <green>Success!
+  bank need: '%tag% <red>The clan bank does not have <green>%uclans_money_currency%%amount%'
+  bank need gui: <red>Bank need <green>%uclans_money_currency%%amount%
+  bank view: '%tag% <yellow>The clan bank now has <green>%uclans_money_currency%%amount%'
+GUI:
+  Bank home_bank title: <blue>Bank <gray>| <aqua>%uclans_tag_color%
+  Bank home_bank items fill name: ' '
+  Bank home_bank items fill lore: [
+    ]
+  Bank home_bank items fill2 name: ' '
+  Bank home_bank items fill2 lore: [
+    ]
+  Bank home_bank items balance name: <green>Clan Balance
+  Bank home_bank items balance lore:
+  - ''
+  - ' <white>Total: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - ' <yellow>Select the action below.'
+  Bank home_bank items add name: <green>Add %uclans_money_current_formated% on Bank
+  Bank home_bank items add lore:
+  - ''
+  - ' <yellow>Click to Open.'
+  Bank home_bank items withdraw name: <green>Withdraw %uclans_money_current_formated% of Bank
+  Bank home_bank items withdraw lore:
+  - ''
+  - ' <yellow>Click to Open.'
+  Bank home_bank items back name: <red>Come back
+  Bank home_bank items back lore:
+  - ''
+  - ' <yellow>Click to go back.'
+  Bank bank_withdraw title: '<red>WithDraw: <green>%uclans_money_currency%%amount%'
+  Bank bank_withdraw items fill name: ' '
+  Bank bank_withdraw items fill lore: [
+    ]
+  Bank bank_withdraw items fill2 name: ' '
+  Bank bank_withdraw items fill2 lore: [
+    ]
+  Bank bank_withdraw items balance name: <green>Clan Balance
+  Bank bank_withdraw items balance lore:
+  - ''
+  - ' <white>Total: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - ' <yellow>Select the action below.'
+  Bank bank_withdraw items player name: <green>%uclans_player%
+  Bank bank_withdraw items player lore:
+  - ''
+  - ' <white>%uclans_money_current_formated%: <green>%uclans_money_currency%%uclans_money_player%'
+  - ''
+  Bank bank_withdraw items add name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_withdraw items add lore:
+  - ''
+  - ' <yellow>Click to add.'
+  Bank bank_withdraw items add2 name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_withdraw items add2 lore:
+  - ''
+  - ' <yellow>Click to add.'
+  Bank bank_withdraw items remove name: <red>-%uclans_money_currency%%remove%
+  Bank bank_withdraw items remove lore:
+  - ''
+  - ' <yellow>Click to remove.'
+  Bank bank_withdraw items remove2 name: <red>-%uclans_money_currency%%remove%
+  Bank bank_withdraw items remove2 lore:
+  - ''
+  - ' <yellow>Click to remove.'
+  Bank bank_withdraw items go name: <green>Withdraw <green>%uclans_money_currency%%amount%
+  Bank bank_withdraw items go lore:
+  - ''
+  - ' <yellow>Click to withdraw <green>%uclans_money_currency%%amount%.'
+  Bank bank_withdraw items back name: <red>Come back
+  Bank bank_withdraw items back lore:
+  - ''
+  - ' <yellow>Click to go back.'
+  Bank bank_add title: '<green>Add: <green>%uclans_money_currency%%amount%'
+  Bank bank_add items fill name: ' '
+  Bank bank_add items fill lore: [
+    ]
+  Bank bank_add items fill2 name: ' '
+  Bank bank_add items fill2 lore: [
+    ]
+  Bank bank_add items balance name: <green>Clan Balance
+  Bank bank_add items balance lore:
+  - ''
+  - ' <white>Total: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - ' <yellow>Select the action below.'
+  Bank bank_add items player name: <green>%uclans_player%
+  Bank bank_add items player lore:
+  - ''
+  - ' <white>%uclans_money_current_formated%: <green>%uclans_money_currency%%uclans_money_player%'
+  - ''
+  Bank bank_add items add name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_add items add lore:
+  - ''
+  - ' <yellow>Click to add.'
+  Bank bank_add items add2 name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_add items add2 lore:
+  - ''
+  - ' <yellow>Click to add.'
+  Bank bank_add items remove name: <red>-%uclans_money_currency%%remove%
+  Bank bank_add items remove lore:
+  - ''
+  - ' <yellow>Click to remove.'
+  Bank bank_add items remove2 name: <red>-%uclans_money_currency%%remove%
+  Bank bank_add items remove2 lore:
+  - ''
+  - ' <yellow>Click to remove.'
+  Bank bank_add items go name: <green>Add <green>%uclans_money_currency%%amount%
+  Bank bank_add items go lore:
+  - ''
+  - ' <yellow>Click to add <green>%uclans_money_currency%%amount%.'
+  Bank bank_add items back name: <red>Come back
+  Bank bank_add items back lore:
+  - ''
+  - ' <yellow>Click to go back.'
