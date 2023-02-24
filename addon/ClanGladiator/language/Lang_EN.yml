@@ -1,0 +1,248 @@
+COMUM:
+  no permission: '%tag% <red>You dont have permissions for this.'
+  header help: '<green><bold>Glad Commands:'
+  chan does not exists: '%tag% <red>This clan does not exist'
+  command by player: '%tag% <red>This command must be used by a player.'
+  not found: <strikethrough>Not Found
+  none: <strikethrough>None
+  gui error: '%tag% <red>This menu contains an error and cannot be opened'
+  all days: Every day
+  arena exists: '%tag% <red>An arena with this name already exists'
+  arena not exists: '%tag% <red>There is no arena with this name, use <aqua>/clanglad arena list <red>to see them all.'
+  arena not exists player: '%tag% <red>There is no arena with this name.'
+  arena header: '<blue><bold>List of Arenas:'
+  arena format: ' <green>%num%° <gray>- <aqua>%id% <gray>- <aqua>%status%'
+  arena empty: ' <red>No arenas to show.'
+  arena status true: ' <green>Enabled'
+  arena status false: ' <red>Disabled'
+  arena amount error: '%tag% <red>The quantity is out of the limit.'
+  arena already started: '%tag% <red>There is already an event happening in this arena.'
+  arena no started: '%tag% <red>There is no event taking place in this arena.'
+  arena no enabled: '%tag% <red>This arena doesnt seem to be enabled, check the status in <aqua>/clanglad view <arena>'
+  arena already ingame: '%tag% <red>This arena is already in game, you can watch it using /gladiator watch <arena>'
+  arena isnot ingame: '%tag% <red>There are no events happening in this arena at the moment.'
+  arena command disabled: '%tag% <red>This command cannot be used in Gladiator event.'
+  arena pvp wait: '%tag% <red>PVP is off in preparation.'
+  player donthave clan: '%tag% <red>You need a clan to participate in this event.'
+  player isnot atevent: '%tag% <red>Tou are not participating in any Gladiator events.'
+  player isin event: '%tag% <red>You are already participating in an event'
+  player teleport arena location: '%tag% <yellow>You have been teleported to <aqua>%point%'
+  translate point spawn: <green>Spawn
+  translate point lobby: <aqua>Lobby
+  translate point exit: <red>Exit
+  check wand: '%tag% <red>You need to mark the points before creating the region/arena.'
+  region marked point: '%tag% <yellow>Point <aqua>#%point_number% <yellow>was scored in <aqua>%location%'
+  material not exists: '%tag% <red>There is no valid block material with this name.'
+  tag not exists: '%tag% <red>This Tag has not yet been created in the configuration file.'
+  arena reason nulled: Without a reason.
+  arena reason less than 2: Not enough players entered to start.
+  arena reason winner: One clan won.
+  arena reason less players difference: The two clans need to match the number of players!
+  arena reason clan not found: Clan not found, may have been deleted.
+  arena state stoped: <red>Stoped.
+  arena state inlobby: <yellow>Waiting Players...
+  arena state started: <yellow>Started!
+  arena state ending: <yellow>Ending
+  arena state canceled: <red>Canceled
+  arena state inwait: <yellow>Waiting...
+  arena clan empty: <red>No Clan.
+  arena not found: <dark_red>Arena Not Found!
+  arena event message join: '%tag% <green>The player %player% left the event, relocating: <gray>Clans: <aqua>%clans%<gray>, Players: <aqua>%players%'
+  arena event message leave: '%tag% <red>The player %player% join the event, relocating: <gray>Clans: <aqua>%clans%<gray>, Players: <aqua>%players%'
+  arena event message death: '%tag% <red>The player %player% died and exited the event, rearranging: <gray>Clans: <aqua>%clans%<gray>, Players: <aqua>%players%'
+  arena event message waiting: '%tag% <green>Waiting for players and Clans, currently: <gray>Clans: <aqua>%clans%<gray>, Players: <aqua>%players%'
+  arena scheduler header: '%tag% <green>Schedulers of arena %arena%:'
+  arena scheduler format daily: ' <aqua>%num% <gray>- <aqua>{frequency} <gray>-  <green>Hour: {hour}:{minute}'
+  arena scheduler format weekly: ' <aqua>%num% <gray>- <aqua>{frequency} <gray>-  <green> {week_day} <gray>| <green>Hour: {hour}:{minute}'
+  arena scheduler format monthly: ' <aqua>%num% <gray>- <aqua>{frequency} <gray>-  <green> Day: {month_day} <gray>| <green>Hour: {hour}:{minute}'
+  arena scheduler frequency error: '%tag% <red>Frequency must be <aqua>DAILY<red>, <aqua>WEEKLY <red>or <aqua>MONTHLY'
+  arena scheduler weekday error: '%tag% <red>the day of the week must be <aqua>MONDAY<red>, <aqua>TUESDAY<red>, <aqua>WEDNESDAY<red>, <aqua>THURSDAY<red>, <aqua>FRIDAY<red>, <aqua>SATURDAY <red>or <aqua>SUNDAY'
+  arena scheduler monthday error: '%tag% <red>The day of the month must be numeric between <aqua>1 <red>and <aqua>31'
+  arena scheduler hour error: '%tag% <red>The time must be in 24 hour (00:00) format using for example <aqua>01:00 <red>or <aqua>24:00'
+  arena scheduler num error: '%tag% <red>There is no scheduler with this number. use <green>/clanglad scheduler list <name> <red>to list.'
+  arena reward header: '%tag% <green>Rewards of arena %arena%:'
+  arena reward format: ' <gray>- <aqua>%reward%'
+  arena reward empty: ' <red>Empty.'
+  arena view header: '%tag% <green>Info of arena %arena%:'
+  arena view format:
+  - ' <white>Name: <aqua>%arena%'
+  - ' <white>State: <aqua>%arena_state%'
+  - ' <white>Enabled: <aqua>%arena_enabled%'
+  - ' <white>Desc: <aqua>%arena_desc%'
+  - ' <white>Icon: <aqua>%arena_material%'
+  - ' <white>Tag: <aqua>%arena_tag%'
+LANGUAGE:
+  arena no upcoming events: <red>No upcoming events.
+  arena event now: <green>Happening now!
+  arena no event: No Event
+ 
+ 
+# CHEST GUI
+ 
+ 
+GUI:
+  gladiator glad_view title: <blue>Events Menu
+  gladiator glad_view items fill name: ' '
+  gladiator glad_view items fill lore: [
+    ]
+  gladiator glad_view items fill2 name: ' '
+  gladiator glad_view items fill2 lore: [
+    ]
+  gladiator glad_view items actives name: <green>Active events
+  gladiator glad_view items actives lore:
+  - ' '
+  - ' <yellow>Click to open.'
+  gladiator glad_view items nexts name: <green>All events
+  gladiator glad_view items nexts lore:
+  - ' '
+  - ' <yellow>Click to open.'
+  gladiator glad_actives title: <blue>Active Events
+  gladiator glad_actives items fill name: ' '
+  gladiator glad_actives items fill lore: [
+    ]
+  gladiator glad_actives items current name: <green>%arena%
+  gladiator glad_actives items current lore:
+  - ''
+  - ' <white>Name: <aqua>%arena%'
+  - ' <white>State: <aqua>%arena_state%'
+  - ' '
+  - ' <yellow>Click to Watch'
+  gladiator glad_actives items prev name: <green>Previous
+  gladiator glad_actives items prev lore:
+  - ' '
+  - ' <yellow>Click to previous.'
+  gladiator glad_actives items next name: <green>Next
+  gladiator glad_actives items next lore:
+  - ' '
+  - ' <yellow>Click to next.'
+  gladiator glad_actives items back name: <red>Come back
+  gladiator glad_actives items back lore:
+  - ' '
+  - ' <yellow>Click to go back'
+  gladiator glad_nexts title: <blue>All Events
+  gladiator glad_nexts items fill name: ' '
+  gladiator glad_nexts items fill lore: [
+    ]
+  gladiator glad_nexts items current name: <green>%arena%
+  gladiator glad_nexts items current lore:
+  - ''
+  - ' <white>Name: <aqua>%arena%'
+  - ' <white>Frequency: <aqua>{type}'
+  - ' <white>Day: <aqua>{day}'
+  - ' <white>Hour: <aqua>{hour}'
+  gladiator glad_nexts items prev name: <green>Previous
+  gladiator glad_nexts items prev lore:
+  - ' '
+  - ' <yellow>Click to previous.'
+  gladiator glad_nexts items next name: <green>Next
+  gladiator glad_nexts items next lore:
+  - ' '
+  - ' <yellow>Click to next.'
+  gladiator glad_nexts items back name: <red>Come back
+  gladiator glad_nexts items back lore:
+  - ' '
+  - ' <yellow>Click to go back.'
+ 
+# COMUM: %clans%, %players%, %arena%, %time%
+# CANCELATIONS: %reason%
+# ENDING: %winner%, %living_members%
+ANNOUNCE:
+  INWAIT:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - <red>GLADIATOR EVENT will start soon...
+    - <gray>Gather your clan and your equipment.
+    - ' '
+    - ' <gray>Arena: <aqua>%arena% <dark_gray>| <gray>Time: <aqua>%time% sec.'
+    - ' <gray>Clans: <aqua>%clans% <dark_gray>| <gray>Players: <aqua>%players%'
+    - ' '
+    - ' '
+    - '<click:run_command:"/gladiator join %arena%"><hover:show_text:"<red>Click to enter the event."><green><bold>[JOIN]</bold></green></hover></click>  <click:run_command:"/gladiator watch %arena%"><hover:show_text:"<red>Click to Watch event."><yellow><bold>[WATCH EVENT]</bold></yellow></hover></click>  <click:run_command:"/gladiator help"><hover:show_text:"<red>Click to view help."><aqua>[?]</aqua></hover></click>   '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>GLADIATOR <yellow>event will start soon...
+    title:
+      line: <red>GLADIATOR
+      subline: <aqua>/gladiator join %arena%
+    bossbar: <red><bold>GLADIATOR</bold> <yellow>event will start soon... <red>({time})
+  INLOBBY:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - <red>GLADIATOR EVENT <gold><bold>LOCKED
+    - <gray>Clans have <aqua>%time% secs <gray>to regroup the clan.
+    - ' '
+    - ' <gray>Clans: <aqua>%clans% <dark_gray>| <gray>Players: <aqua>%players%'
+    - ' '
+    - '<click:run_command:"/gladiator watch %arena%"><hover:show_text:"<red>Click to Watch event."><yellow><bold>[WATCH EVENT]</bold></yellow></hover></click>  <click:run_command:"/gladiator help"><hover:show_text:"<red>Click to view help."><aqua>[?]</aqua></hover></click>   '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>Gradiator event locked!
+    title:
+      line: <red>GLADIATOR
+      subline: <yellow>Event Locked!
+    bossbar: <red><bold>Gradiator event locked!</bold> <red>({time})
+  STARTED:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - <red>GLADIATOR EVENT has <green><bold>STARTED
+    - <gray>The event has started and the <red><bold>PVP IS ON
+    - <gray>May the best team win!
+    - ' '
+    - ' <gray>Clans: <aqua>%clans% <dark_gray>| <gray>Players: %players%'
+    - ' '
+    - '<click:run_command:"/gladiator watch %arena%"><hover:show_text:"<red>Click to Watch event."><yellow><bold>[WATCH EVENT]</bold></yellow></hover></click>  <click:run_command:"/gladiator help"><hover:show_text:"<red>Click to view help."><aqua>[?]</aqua></hover></click>   '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>Gradiator event started!
+    title:
+      line: <red>GLADIATOR
+      subline: <yellow>Event Started!
+    bossbar: <red><bold>Gradiator event started!</bold> <red>({time})
+  ENDING:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - <red>GLADIATOR EVENT has <green><bold>ENDED
+    - <gray>The winning clan was <aqua>%winner%
+    - '<gray>Living members: <aqua>%living_members%'
+    - ''
+    - ' <red>The winning clan has %time% to collect the war spoils!'
+    - ' '
+    - '<click:run_command:"/gladiator help"><hover:show_text:"<red>Click to view help."><aqua>[?]</aqua></hover></click>   '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>Gradiator event ended, Winner is <aqua>%winner%!
+    title:
+      line: <red>GLADIATOR ENDED
+      subline: <yellow>Winner is <aqua>%winner%
+    bossbar: <red><bold>Gradiator ended, Winner is <aqua>%winner%! <red>({time})
+  CANCELED:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - <red>GLADIATOR EVENT has been <dark_red><bold>CANCELED
+    - '<gray>Reason: <red>%reason%'
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>Gradiator event canceled!
+    title:
+      line: <red>GLADIATOR
+      subline: <yellow>Event Canceled!
+    bossbar: <red><bold>Gradiator event canceled!</bold> <red>({time})
+  STOPED:
+    message: [
+      ]
+    actionbar: ''
+    title:
+      line: ''
+      subline: ''
+    bossbar: ''
