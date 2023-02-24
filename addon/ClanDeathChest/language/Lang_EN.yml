@@ -1,0 +1,10 @@
+COMUM:
+  player donthave clan: '%tag% <red>This player does not have a clan.'
+  gui error: '%tag% <red>This menu contains an error and cannot be opened'
+  disabled function: '%tag% <red>This function is turned off or disabled.'
+  chan does not exists: '%tag% <red>This clan does not exist'
+  command by player: '%tag% <red>This command must be used by a player.'
+  no permission: '%tag% <red>You dont have permissions for this.'
+  disabled world: '%tag% <red>You cannot use chest in this world'
+  chest colected: '%tag% <green>%player%''s death chest has been collected!'
+  disappears: <dark_red>!! Disappears on closing !!
