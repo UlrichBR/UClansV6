@@ -1,0 +1,434 @@
+COMUM:
+  player donthave clan: '%tag% <red>This player does not have a clan.'
+  gui error: '%tag% <red>This menu contains an error and cannot be opened'
+  disabled function: '%tag% <red>This function is turned off or disabled.'
+  chan does not exists: '%tag% <red>This clan does not exist'
+  command by player: '%tag% <red>This command must be used by a player.'
+  no permission: '%tag% <red>You dont have permissions for this.'
+  clan not found: '%tag% <red>Clan with this TAG does not exist.'
+  clan is your clan: '%tag% <red>This is your Clan.'
+  clan is ally: '%tag% <red>This Clan is already an ally.'
+  player in war: '%tag% <red>You are participating in the war!'
+  this player in war: '%tag% <red>This player is participating in a war!'
+  war pvp wait: '%tag% <red>PVP is off in preparation.'
+  war command disabled: '%tag% <red>This command cannot be used in Clan Wars.'
+  clan player need mod leader: '%tag% <red>You need to be a moderator or leader to do this.'
+  clan player need mod leader gui: <red>Need to be a moderator or leader.
+  clan player teleport not allowed: '%tag% <red>You cannot teleport to that location right now.'
+  arena exists: '%tag% <red>An arena with this name already exists'
+  arena not exists: '%tag% <red>There is no arena with this name, use <aqua>/{_clan}war arena list <red>to see them all.'
+  arena not exists player: '%tag% <red>There is no arena with this name.'
+  arena no events: '%tag% <red>There are no events happening in this arena right now.'
+  arena spectator off: '%tag% <red>Spectator mode is off in this arena.'
+  accept type: '%tag% <red>The type is invalid, use: <aqua>%types%'
+  help clan header subcommand: '<newline><blue>Help with subcommands:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help list empty: ' <red>- There is nothing on this list.'
+  clan dont permission role: '%tag% <red>Your current role you cannot do this.'
+  arena header: '<blue>List of Arenas:'
+  arena format: ' <green>%num%° <gray>- <aqua>%id% <gray>- <aqua>%status%'
+  arena empty: ' <red>No arenas to show.'
+  arena status true: ' <green>Enabled'
+  arena status false: ' <red>Disabled'
+  arena amount error: '%tag% <red>The quantity is out of the limit.'
+  kit nokit: <red>No Kit!
+  clan in war: '%tag% <red>Clan in war!'
+  clan war invite canceled: '%tag% <red>The Clan canceled the challenge to war!'
+  gui kit empty: '%tag% <red>There are no kits available'
+  clan war invite empty inventory: '%tag% <red>This war has been marked with kit <aqua>%kit_name% <red>so your inventory needs to be empty!'
+  clan war invited noempty inventory: '%tag% <red>The war cannot be accepted because the player who sent has changed the inventory.'
+  clan war invite noempty inventory: '%tag% <red>The clan admin cannot accept the war because you changed your inventory.'
+  clan war in cooldown: '%tag% <red>One or both clans have participated in wars recently and need to wait to participate in another war. The time between wars is %sec% seconds'
+  clan war win: '%tag% <yellow>The Clan <aqua>%clanwin% <yellow>won a fight against <aqua>%clanlose%<yellow>, with %clanlives_size% <yellow>members alive.'
+  clan war disabled: '%tag% <red>This clan has disabled receiving war invitations.'
+  clan war invite already invited: '%tag% <red>There is already an invitation from your clan or another one in progress to this clan, wait and try again!'
+  clan war inviter already invited: '%tag% <red>There is already an invitation from this clan, wait and try again!'
+  clan war inviter already invited gui: <red>Clan has already been challenged
+  clan war invite error: '%tag% <red>There was an error sending the request!'
+  clan war invite error gui: <red>Error sending the request
+  clan war invite moderation offline: '%tag% <red>There are no moderators or online leaders in the other clan.'
+  clan war invite moderation offline gui: <red>Clan moderation is offline.
+  clan war require min level: '%tag% <red>Your clan must be at the minimum level <aqua>%min%</aqua> <red>to participate in wars.'
+  clan war require min level gui: <red>Your clan needs <aqua>%min%</aqua> <red>levels to this.
+  clan war invite min level: '%tag% <red>This clan must be at the minimum level <aqua>%min%</aqua> <red>to participate in wars.'
+  clan war invite min level gui: <red>This clan needs <aqua>%min%</aqua> <red>level required.
+  clan war invite by other: '%tag% <red>The invitation was not sent by your clan.'
+  clan war invite sended: '%tag% <green>Invitation sent, wait for the clan to accept or deny.'
+  clan war invite not found: '%tag% <red>There are no invitations for war.'
+  clan war invite deny received: '%tag% <red>The other clan denied the request for an war.'
+  clan war invite expired: '%tag% <red>The invitation to war has expired!'
+  clan war left player: '%tag% <yellow>Player <aqua>%player% <yellow>is out of the war, <aqua>%clanall_joined_players%<gray>/<aqua>%max% <yellow>left.'
+  clan war send to: '%tag% <green>The clan <aqua>%clan1% <green>challenged the clan <aqua>%clan2% <green>to war, waiting ...'
+  clan war send accepted: '%tag% <green>The <aqua>%clan2% <green>clan accepted the <aqua>%clan1% <green>war challenge, the battle begins soon!<newline> <gray>- You can watch the war using <aqua>/{_clan} {_war} {_spectate} %arena%'
+  clan war send danied: '%tag% <red>The %clan2% <red>clan did not accept the <aqua>%clan1% <red>war challenge.'
+  clan war send started: '%tag% <green>The war between the <aqua>%clan1% <green>and <aqua>%clan2% <green>clans has started.'
+  clan war send ending: '%tag% <green>The war between the <aqua>%clan1% <green>and <aqua>%clan2% <green>clans ended, the winner was the <aqua><bold>%clan_tag_winner% <green>clan.'
+  arena list header: '<blue><bold>War arena List:'
+  arena list format: ' <green>%arena_name% <gray>- <gray>%arena_desc% <gray>- <white>Size: <aqua>%arena_size% <gray>- <white>Mode: <aqua>%arena_mode%'
+  arena list format inuse: ' <green>%clan1%<red>x<green>%clan2% <gray>- <white>Arena: <aqua>%arena% <gray>- <white>Kit: <aqua>%kit% <gray>- <white>Max Players: <aqua>%max%'
+  kits list header: '<blue><bold>Kit List:'
+  kits list empty: ' <red>- No kits to show'
+  kits list format: ' <green>%kit_name% <gray>- <gray>%kit_desc% <gray>- <white>Date: <aqua>%kit_creation_date% <gray>- <white>Amount: <aqua>%kit_amount%'
+  kit not exists: '%tag% <red>There is no kit with this name.'
+  kit already exists: '%tag% <red>There is already a kit with this name.'
+  empty inventory: '%tag% <red>Your inventory cannot be empty.'
+  material not exists: '%tag% <red>There is no valid block material with this name.'
+  error character: '%tag% <red>This contains invalid characters.'
+  arena state stoped: <red>Stoped.
+  arena state inlobby: <yellow>Waiting Players...
+  arena state started: <yellow>Started!
+  arena state ending: <yellow>Ending
+  arena state canceled: <red>Canceled
+  arena state inwait: <yellow>Waiting...
+  arena clan empty: <red>No Clan.
+  arena not found: <dark_red>Arena Not Found!
+  player teleport arena location: '%tag% <yellow>You have been teleported to <aqua>%point%'
+  translate point spawn: <green>Spawn 2
+  translate point lobby: <aqua>Lobby
+  translate point exit: <red>Exit
+  translate point spectator: <green>Spectator
+  war reason nulled: Without a reason.
+  war reason less than 2: Not enough players entered to start.
+  war reason winner: One clan won.
+  war reason less players difference: The two clans need to match the number of players!
+  war reason clan not found: Clan not found, may have been deleted.
+  war max reached: '%tag% <red>The maximum number of players for your clan has already been reached.'
+  player already in war: '%tag% <red>You are already participating in the war!'
+  clan no warr: '%tag% <red>Your clan is not participating in a war'
+  check wand: '%tag% <red>You need to mark the points before creating the region/arena.'
+  region marked point: '%tag% <yellow>Point <aqua>#%point_number% <yellow>was scored in <aqua>%location%'
+  header help: '<green><bold>War Admin Commands:'
+  war waiting for players: '%tag% <yellow>Waiting for players. Joined: <aqua>%clanall_joined_players%<gray>/<aqua>%max%<yellow>, Time: <aqua>%war_time_next% sec.'
+  war joined player: '%tag% <aqua>%player% <yellow>of clan <aqua>%clan% <yellow>joined: <aqua>%clanall_joined_players%<gray>/<aqua>%max%<yellow>.'
+GUI:
+  War war_amount title: <blue>Select max amount of Players.
+  War war_amount items fill name: ' '
+  War war_amount items fill lore: [
+    ]
+  War war_amount items back name: <green>Click to back
+  War war_amount items back lore:
+  - ' '
+  - ' <yellow>Click to go back home.'
+  War war_amount items select name: <green>%amount%
+  War war_amount items select lore:
+  - ' '
+  - ' <yellow>Click to select'
+  War war_select_clan title: <blue>Select a Clan
+  War war_select_clan items fill name: ' '
+  War war_select_clan items fill lore: [
+    ]
+  War war_select_clan items previous name: <green>Previous Page
+  War war_select_clan items previous lore:
+  - ' '
+  - ' <yellow>Click to go previous page.'
+  # %player%, nicknames or base64Textures
+  War war_select_clan items previous texture: ''
+  War war_select_clan items next name: <green>Next Page
+  War war_select_clan items next lore:
+  - ' '
+  - ' <yellow>Click to go next page.'
+  War war_select_clan items back name: <green>Click to back
+  War war_select_clan items back lore:
+  - ' '
+  - ' <yellow>Click to go back home.'
+  War war_select_clan items select name: <aqua>%uclans_tag_color%
+  War war_select_clan items select lore:
+  - ' '
+  - ' <white>Clan: <aqua>%uclans_tag_color%'
+  - ' <white>Leader: <aqua>%uclans_leader%'
+  - ' <white>Online: <aqua>%uclans_count_onlinemembers%'
+  - ' '
+  - ' <yellow>Click to select'
+  War war_select_clan items wait name: <dark_red>Waiting for clans....
+  War war_select_clan items wait lore:
+  - ' '
+  - ' <red>No clan is connected, waiting'
+  - <red>for new clans to join...
+  War war_select_arena title: <blue>Select a Arena
+  War war_select_arena items fill name: ' '
+  War war_select_arena items fill lore: [
+    ]
+  War war_select_arena items previous name: <green>Previous Page
+  War war_select_arena items previous lore:
+  - ' '
+  - ' <yellow>Click to go previous page.'
+  War war_select_arena items next name: <green>Next Page
+  War war_select_arena items next lore:
+  - ' '
+  - ' <yellow>Click to go next page.'
+  War war_select_arena items back name: <green>Click to back
+  War war_select_arena items back lore:
+  - ' '
+  - ' <yellow>Click to go back home.'
+  War war_select_arena items select name: <green>%arena_name%
+  War war_select_arena items select lore:
+  - ' '
+  - ' <aqua>%arena_desc%'
+  - ' <yellow>Clique para selecionar.'
+  War war_select_kit title: <blue>Select kit mode.
+  War war_select_kit:
+    items fill name: ' '
+    items fill lore: [
+      ]
+  War war_select_kit items previous name: <green>Previous Page
+  War war_select_kit items previous lore:
+  - ' '
+  - ' <yellow>Click to go previous page.'
+  War war_select_kit items next name: <green>Next Page
+  War war_select_kit items next lore:
+  - ' '
+  - ' <yellow>Click to go next page.'
+  War war_select_kit items back name: <green>Click to back
+  War war_select_kit items back lore:
+  - ' '
+  - ' <yellow>Click to go back home.'
+  War war_select_kit items nokit name: <red>DO NOT USE KIT
+  War war_select_kit items nokit lore:
+  - ' '
+  - ' <yellow> Click to send the challenge'
+  - <yellow>with player items.
+  War war_select_kit items yeskit name: <green>YES, USE KIT
+  War war_select_kit items yeskit lore:
+  - ' '
+  - ' <yellow> Click to open a kit selector '
+  - ' '
+  - <red><bold> All participant inventory
+  - <red><bold> must be empty!
+  War war_select_kit_list title: <blue>Select a kit.
+  War war_select_kit_list items fill name: ' '
+  War war_select_kit_list items fill lore: [
+    ]
+  War war_select_kit_list items previous name: <green>Previous Page
+  War war_select_kit_list items previous lore:
+  - ' '
+  - ' <yellow>Click to go previous page.'
+  War war_select_kit_list items next name: <green>Next Page
+  War war_select_kit_list items next lore:
+  - ' '
+  - ' <yellow>Click to go next page.'
+  War war_select_kit_list items back name: <green>Click to back
+  War war_select_kit_list items back lore:
+  - ' '
+  - ' <yellow>Click to go back home.'
+  War war_select_kit_list items select name: <green>%kit_name%
+  War war_select_kit_list items select lore:
+  - ' '
+  - ' <gray>Desc: <aqua>%kit_desc%'
+  - ' <gray>Creation: <aqua>%kit_creation_date%'
+  War war_arenas title: <blue>War arenas.
+  War war_arenas:
+    items fill name: ' '
+    items fill lore: [
+      ]
+  War war_arenas items previous name: <green>Previous Page
+  War war_arenas items previous lore:
+  - ' '
+  - ' <yellow>Click to go previous page.'
+  War war_arenas items next name: <green>Next Page
+  War war_arenas items next lore:
+  - ' '
+  - ' <yellow>Click to go next page.'
+  War war_arenas items back name: <green>Click to back
+  War war_arenas items back lore:
+  - ' '
+  - ' <yellow>Click to go back home.'
+  War war_arenas items current name: <green>%clan1%<red>x<green>%clan2%
+  War war_arenas items current lore:
+  - ' '
+  - ' <white>Clans: <aqua>%clan1%<red>x<aqua>%clan2%'
+  - ' <white>Arena: <aqua>%arena%'
+  - ' <white>Kit: <aqua>%kit%'
+  - ' <white>Max Players: <aqua>%max%'
+  - ''
+  - <yellow>Click to SPECTATE
+  War war_arenas items current_inactive name: <green>%arena_name%
+  War war_arenas items current_inactive lore:
+  - ' '
+  - ' <white>Name: <aqua>%arena_name%'
+  - ' <white>Desc: <aqua>%arena_desc%'
+  - ' <white>Mode: <aqua>%arena_mode%'
+  - ' <white>Size: <aqua>%arena_size%'
+  War war_home title: <blue>Clan Wars.
+  War war_home:
+    items fill name: ' '
+    items fill lore: [
+      ]
+  War war_home items challenge name: <green>Challenges
+  War war_home items challenge lore:
+  - ' '
+  - ' <yellow>Click to open.'
+  War war_home items arenas name: <green>List of arenas
+  War war_home items arenas lore:
+  - ' '
+  - ' <yellow>Click to open.'
+  War war_home items kits name: <green>List of kits
+  War war_home items kits lore:
+  - ' '
+  - ' <yellow>Click to open.'
+  War war_home items back name: <green>Click to back
+  War war_home items back lore:
+  - ' '
+  - ' <yellow>Click to go back home.'
+  War war_kits title: <blue>War kits.
+  War war_kits:
+    items fill name: ' '
+    items fill lore: [
+      ]
+  War war_kits items previous name: <green>Previous Page
+  War war_kits items previous lore:
+  - ' '
+  - ' <yellow>Click to go previous page.'
+  War war_kits items next name: <green>Next Page
+  War war_kits items next lore:
+  - ' '
+  - ' <yellow>Click to go next page.'
+  War war_kits items back name: <green>Click to back
+  War war_kits items back lore:
+  - ' '
+  - ' <yellow>Click to go back home.'
+  War war_kits items current name: <green>Kit %kit_name%
+  War war_kits items current lore:
+  - ' '
+  - ' <white>Name: <aqua>%kit_name%'
+  - ' <white>Desc: <aqua>%kit_desc%'
+  - ' <white>Date: <aqua>%kit_creation_date%'
+  - ' <white>Item amount: <aqua>%kit_amount%'
+  - ''
+  - <yellow>Click to preview
+  War war_kits_preview title: <blue>Kit preview <gray>| <green>%kit_name%
+  War war_kits_preview:
+    items fill name: ' '
+    items fill lore: [
+      ]
+  War war_kits_preview items previous name: <green>Previous Page
+  War war_kits_preview items previous lore:
+  - ' '
+  - ' <yellow>Click to go previous page.'
+  War war_kits_preview items next name: <green>Next Page
+  War war_kits_preview items next lore:
+  - ' '
+  - ' <yellow>Click to go next page.'
+  War war_kits_preview items back name: <green>Click to back
+  War war_kits_preview items back lore:
+  - ' '
+  - ' <yellow>Click to go back home.'
+ 
+# COMUM: %clans%, %players%, %arena%, %time%
+# CANCELATIONS: %reason%
+# ENDING: %winner%, %living_members%
+ANNOUNCE:
+  invite_sended:
+    message:
+    - ' '
+    - <green>Invitation sent, wait for the clan to accept or deny.
+    - ' <gray>- You can cancel the invitation <click:run_command:"/{_clan} {_war} {_cancel}"><hover:show_text:"<red>Click to cancel."><red><bold>[CLICK TO CANCEL]</bold></red></hover></click>'
+    actionbar: <green>Wait for the clan to accept or deny.
+    title:
+      line: ''
+      subline: ''
+    bossbar: <green>Wait for the clan to accept or deny. <red>({time})
+  inwait_announce:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>A war is about to begin!
+    - <red>! <yellow>Help your team win this battle!
+    - <click:run_command:"/{_clan} {_war} {_join}"><hover:show_text:"<red>Click to join"><green><bold>[JOIN]</bold></green></hover></click>
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ''
+    actionbar: <red>! <yellow>A War is about to begin!
+    title:
+      line: <yellow>A war!
+      subline: <yellow>About to begin!
+    bossbar: <red>! <yellow>A war is about to begin! <red>({time})
+  inlobby_announce:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>The time for entering the war is over!
+    - <red>! <yellow>Get ready, the war starts in a few seconds!
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ''
+    actionbar: <red>! <yellow>Get ready, the war starts in a few seconds!
+    title:
+      line: <yellow>Get ready
+      subline: <yellow>Starts in a few seconds!
+    bossbar: <red>! <yellow>Get ready, the war starts in a few seconds! <red>({time})
+  instarted_announce:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>The war has begun, may the best clan win!
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ''
+    actionbar: <red>! <yellow>The war has begun, may the best clan win!
+    title:
+      line: <yellow>War has begun
+      subline: <yellow>May the best clan win.
+    bossbar: <red>! <yellow>The war has begun, may the best clan win! <red>({time})
+  inending_announce:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - '<red>! <yellow>The war is over, Winning clan: <aqua>%clan_tag_winner%'''
+    - <red>! <yellow>Has 60 sec to collect the spoils of war!
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ''
+    actionbar: '<red>! <yellow>The war is over, Winning: <aqua>%clan_tag_winner%'
+    title:
+      line: <yellow>War is over
+      subline: '<yellow>Winning: <aqua>%clan_tag_winner%'
+    bossbar: '<red>! <yellow>The war is over, Winning: <aqua>%clan_tag_winner% <red>({time})'
+  inending_announce2:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - '<red>! <yellow>The war is over, Winning clan: <aqua>%clan_tag_winner%'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ''
+    actionbar: '<red>! <yellow>The war is over, Winning: <aqua>%clan_tag_winner%'
+    title:
+      line: <yellow>War is over
+      subline: '<yellow>Winning: <aqua>%clan_tag_winner%'
+    bossbar: '<red>! <yellow>The war is over, Winning: <aqua>%clan_tag_winner% <red>({time})'
+  instoped_announce:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>The war is over!
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red>! <yellow>The war is over!
+    title:
+      line: ''
+      subline: ''
+    bossbar: <red>! <yellow>The war is over! <red>({time})
+  incanceled_announce:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>The event has been canceled!
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red>! <yellow>The event has been canceled!
+    title:
+      line: ''
+      subline: ''
+    bossbar: <red>! <yellow>The event has been canceled! <red>({time})
+  receive:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <red>A War Challenge<yellow> was thrown at your clan!
+    - '<red>! <yellow>Challenging clan: <white>%clan_tag%'
+    - '<red>! <yellow>Arena: <white>%arena% <gray>- <yellow>Max Players: <aqua>%max%X%max%'
+    - '<red>! <yellow>Mode: <white>%mode%'
+    - '<yellow>Kit: <aqua>%kit% <dark_gray> | <gray>Expires in <aqua>%sec_expires% sec<gray>.'
+    - ''
+    - <click:run_command:"/{_clan} {_war} {_accept}"><hover:show_text:"<red>Click to accept"><green><bold>[ACCEPT/JOIN]</bold></green></hover></click> <click:run_command:"/{_clan} {_war} {_deny} %clan_tag_nocolor%"><hover:show_text:"<red>Click to deny"><red><bold>[DENY]</bold></red></hover></click>
+    - ''
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    actionbar: <red>! <yellow>A War Challenge was thrown at your clan!
+    title:
+      line: <red>War Challenge
+      subline: '<yellow>Challenging: <white>%clan_tag%'
+    bossbar: <red>! <yellow>A War Challenge was thrown at your clan! <red>({time})
