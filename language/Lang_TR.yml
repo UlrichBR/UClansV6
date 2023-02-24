@@ -4,8 +4,8 @@
  
 LANGUAGE:
   separer: <gradient:blue:aqua>████████████████████████████████</gradient>
-  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır..'
-  command by console: '%tag% <red>Bu komut bir KONSOL tarafından kullanılmalıdır..'
+  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+  command by console: '%tag% <red>Bu komut bir KONSOL tarafından kullanılmalıdır.'
   disabled world command: '%tag% <red>Klan komutları bu dünyada kapalı.'
   disabled region command: '%tag% <red>Bu bölgede klan komutları kapatıldı.'
   error start action: '%tag% <red>Bunu çalıştırırken bir hata oluştu.'
