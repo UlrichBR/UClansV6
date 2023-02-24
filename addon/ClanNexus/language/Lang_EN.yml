@@ -1,0 +1,227 @@
+COMUM:
+  player dont have clan: '%tag% <red>This player does not have a clan.'
+  gui error: '%tag% <red>This menu contains an error and cannot be opened'
+  disabled function: '%tag% <red>This function is turned off or disabled.'
+  chan does not exists: '%tag% <red>This clan does not exist'
+  clan does not nexus: '%tag% <red>This clan does not have a Nexus.'
+  command by player: '%tag% <red>This command must be used by a player.'
+  no permission: '%tag% <red>You dont have permissions for this.'
+  disabled world: '%tag% <red>You cannot use in this world.'
+  disabled region: '%tag% <red>You cannot use in this region.'
+  clan dont permission role: '%tag% <red>Your current role you cannot do this.'
+  clan dont permission role gui: <red>Your role cannot do this.
+  clan dont nexus: '%tag% <red>Your clan doesnt have a nexus.'
+  help clan header subcommand: '<newline><blue><bold>Help with subcommands:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help list empty: ' <red>- There is nothing on this list.'
+  banner get error: '%tag% <red>There was an error getting the clan banner.'
+  banner get error gui: <red>Error getting banner!
+  banner get success: '%tag% <green>Clan banner successfully received.'
+  banner no clan: '%tag% <red>This banner does not belong to your clan.'
+  land errorclaim: '%tag% <red>An error occurred while claim the land.'
+  land hasland: '%tag% <red>Your clan already has a land.'
+  land successclaim: '%tag% <green>Successfully secured land, use <aqua>/clan nexus<green> to manage'
+  land veryclose: '%tag% <red>There is other land very close to the limits.'
+  land nobanner: '%tag% <red>Your clan does not have a banner set up yet.'
+  nexus is protected: '%tag% <red>The Nexus is active and protecting this land!'
+  nexus min members: '%tag% <red>This Nexus does not have an amount of members online to protect it.'
+  nexus is nearby: '%tag% <red>You are trying to build too close to the nexus.'
+  nexus feed error: '%tag% <red>An error occurred while feeding the nexus.'
+  nexus feed success: '%tag% <green>The nexus was fed on <aqua>%life% <green>and <aqua>%amount% blocks was consumed.'
+  nexus under attack true: <dark_red>UNDER ATTACK!
+  nexus under attack false: <aqua>EVERYTHING IS PEACEFUL!
+  nexus under attack check: <red>checking terrain...
+  nexus in maxlevel: '%tag%<red>The nexus is at the maximum allowed level.'
+  nexus view header: '<newline><blue><bold>Nexus Info:'
+  nexus view format:
+  - '<blue><bold>|</bold> <blue>Owner:'
+  - ' <white>Clan: <aqua>%uclans_tag_color%'
+  - ' <white>Members: <aqua>%uclans_count_members%'
+  - ' <white>Leader: <aqua>%uclans_leader_formated%'
+  - '<blue><bold>|</bold> <blue>Info:'
+  - ' <white>Creation: <aqua>%clannexus_land_creation%'
+  - ' <white>Level: <aqua>%clannexus_land_level%'
+  - ' <white>Size: <aqua>%clannexus_land_size%'
+  - ' <white>Life: <aqua>%clannexus_land_nexus_life%<gray>/<aqua>%clannexus_land_nexus_maxhealth%'
+  - ' <white>Shield: <aqua>%clannexus_land_nexus_shield%'
+  player teleport dont move: '%tag% <yellow>Preparing teleport, do not move by %sec% sec.'
+  player teleport moved: '%tag% <red>You moved and the teleport was canceled!!!'
+  player teleport true: '%tag% <yellow>You were teleported!'
+  player teleport false: '%tag% <red>You have not been teleported for any mistake!'
+  player no money: '%tag% <red>You dont have enough money for this.'
+  player no money gui: <red>Dont have enough money.
+  player error withdraw: '%tag% <red>There was an error debiting money from your account.'
+  player error withdraw gui: <red>Error when debiting.
+  land build outside: '%tag% <red>You are building outside your land.'
+  land build only land: '%tag% <red>You can only build on your land.'
+  land upgrade error: '%tag% <red>An error occurred while improving clan nexus, try again.'
+  land upgrade error gui: <red>Error while upgrading
+  land uograde success: '%tag% <green>Your clans nexus has been successfully improved!'
+  land upgrade success gui: <green>Successfully Improved Nexus!
+  land teleport error gui: <red>Error when teleporting!
+  land teleport error: '%tag% <red>An error occurred while teleporting to Nexus spawn.'
+  land teleport error create: '%tag% <red>An error occurred while changing the spawn location.'
+  land teleport error create gui: <red>Error when changing!
+  land teleport success create: '%tag% <green>The spawn location has been successfully changed to its current location.'
+  land teleport success create gui: <green>Changed Spawn!
+  nexus deleted by admin: '%tag% <red>Your clans Nexus and land have been deleted by an admin, your items and house may be unprotected now!'
+  nexus attack stoped: '%tag% <aqua>Attack on your clan''s nexus has stopped, but beware they may attack you again!'
+  nexus attack stoped bar: <aqua>Nexus attack has stopped!
+  nexus attack down: '%tag% <gold>Your clans Nexus has been destroyed and your land is now vulnerable, run to defend your lands!'
+  nexus attack down bar: <gold>Nexus has been destroyed!
+  nexus regenerated: '%tag% <green>Your clans Nexus has regenerated and is now active again, a %shield_time% minute shield is active on your land!'
+  nexus regenerated bar: <green>Nexus has regenerated!
+  nexus under attack: '%tag% <dark_red>The Nexus of your clan is being attacked, if it is destroyed your land becomes vulnerable, run to protect your lands!'
+  nexus under attack bar: <dark_red>Nexus under Attack!
+  nexus shield down: '%tag% <gold>Watch out, your Nexus shield has ended and is now vulnerable to attacks!'
+  nexus shield down bar: <gold>Nexus shield has ended!
+  nexus created: '%tag% <green>Clan Nexus was created, defense to protect your land!!'
+  nexus created bar: <green>The Nexus Was Created!
+  nexus error delete gui: <red>Error when deleting.
+  nexus error delete: '%tag% <red>There was an error deleting nexus, please try again.'
+  nexus success delete: '%tag% <green>Clan Nexus Your clan has been successfully deleted.'
+  nexus success delete leader: '%tag% <red>The Clan Nexus has been deleted by the leader or a moderator!'
+  
+  # JOIN AND LEAVE LAND MESSAGES (Use '' to not send, All placeholders from PLACEHOLDERS.txt can be used.)
+  enter title: <blue>Entered
+  enter title sub: <green>%uclans_tag_color%
+  enter actionbar: <blue>Entered the land of <green>%uclans_tag_color%
+  enter message: ''
+  leave title: <red>Left
+  leave title sub: <green>%uclans_tag_color%
+  leave actionbar: <blue>Left the land of <green>%uclans_tag_color%
+  leave message: ''
+  land focus title: <dark_red>Focused!
+  land focus title_sub: <red>Nexus of %uclans_tag_color%
+  land focus actionbar: <dark_red>Clan %uclans_tag_color% <dark_red>nexus focused on you!!!
+  land focus message: '%tag% <dark_red>Clan %uclans_tag_color% <dark_red>nexus has focused on you, the attacks will begin soon!!!'
+  land unfocus title: <red>Blurred
+  land unfocus title_sub: <red>Nexus of %uclans_tag_color%
+  land unfocus actionbar: <yellow>Clan %uclans_tag_color% <yellow>nexus blurred from you!!!
+  land unfocus message: '%tag% <yellow>Clan %uclans_tag_color% <yellow>nexus blurred from you!!!'
+  land attack title: <red>Attack!
+  land attack title_sub: <red>Nexus attack of %uclans_tag_color%
+  land attack actionbar: <red>An attack from %uclans_tag_color% <red>nexus is coming your way!
+  land attack message: '%tag% <red>An attack from %uclans_tag_color% <red>nexus is coming your way!'
+  header help: '<green>Nexus Admin Commands:'
+  header list: '<green>List of Nexus:'
+  line list: '<green>%num% <gray>- <green>ID: <aqua>%id% <gray>- <green>Name: <aqua>%name%'
+  empty list: ' <red>- Empty.'
+GUI:
+   
+  Nexus: ''
+  Nexus home title: <blue>Nexus <gray>| <aqua>%uclans_tag_color%
+  Nexus home items fill name: ' '
+  Nexus home items fill lore: [
+    ]
+  Nexus home items fill2 name: ' '
+  Nexus home items fill2 lore: [
+    ]
+  Nexus home items banner name: <green>Clan Nexus
+  Nexus home items banner lore:
+  - ''
+  - ' <yellow>Nexus information:'
+  - ''
+  - ' <white>Creation: <aqua>%clannexus_land_creation%'
+  - ' <white>Level: <aqua>%clannexus_land_level%'
+  - ' <white>Size: <aqua>%clannexus_land_size%'
+  - ' <white>Life: <aqua>%clannexus_land_nexus_life%<gray>/<aqua>%clannexus_land_nexus_maxhealth%'
+  - ''
+  - ' <white>Shield: <aqua>%clannexus_land_nexus_shield%'
+  Nexus home items settings name: <green>Nexus Ajusts
+  Nexus home items settings lore:
+  - ''
+  - ' <yellow>Click to open.'
+  Nexus home items spawn name: <green>Nexus Spawn
+  Nexus home items spawn lore:
+  - ''
+  - ' <yellow>Teleport to nexus.'
+  Nexus home items upgrade name: <green>Land Upgrade
+  Nexus home items upgrade lore:
+  - ''
+  - ' <yellow>Click to open.'
+  Nexus home items life name: '<green>Feed info:'
+  Nexus home items life lore:
+  - ''
+  - ' <yellow>You can feed your nexus to'
+  - <yellow>regain health using <aqua>%clannexus_feed_block%<yellow>, each
+  - '<yellow>block restores <green>%clannexus_feed_amount% '
+  - ''
+  - ' <yellow>If you are holding more than 1 item'
+  - ' <yellow>it will try to consume as many items as'
+  - <yellow>possible to recover.
+  Nexus home items back name: <red>Come back
+  Nexus home items back lore:
+  - ''
+  - ' <yellow>Click to go back.'
+  Nexus delete title: <red>Confirm delete the Nexus?
+  Nexus delete items fill name: ' '
+  Nexus delete items fill lore: [
+    ]
+  Nexus delete items confirm name: <green>CONFIRM
+  Nexus delete items confirm lore:
+  - ''
+  - ' <yellow>Click to confirm'
+  Nexus delete items cancel name: <red>CANCEL
+  Nexus delete items cancel lore:
+  - ''
+  - ' <red>Click to cancel and return'
+  Nexus settings title: <blue>Nexus ajusts
+  Nexus settings items fill name: ' '
+  Nexus settings items fill lore: [
+    ]
+  Nexus settings items setspawn name: <yellow>Adjust the spawn.
+  Nexus settings items setspawn lore:
+  - ''
+  - ' <yellow>Click to adjust the spawn to'
+  - '<yellow>your current location '
+  - ''
+  - ' <red>The spawn must be inside the terrain.'
+  Nexus home settings remove name: <green>Remove nexus
+  Nexus home settings remove lore:
+  - ''
+  - ' <red>The nexus will be removed and'
+  - <red>the terrain will be unprotected.
+  Nexus settings items back name: <red>Come back
+  Nexus settings items back lore:
+  - ''
+  - ' <yellow>Click to go back.'
+  Nexus upgrade title: <blue>Nexus Upgrade <gray>| <green>%clannexus_land_level%
+  Nexus upgrade items fill name: ' '
+  Nexus upgrade items fill2 name: ' '
+  Nexus upgrade items info name: '<green>Nexus Info:'
+  Nexus upgrade items info lore:
+  - ''
+  - ' <yellow>Nexus information:'
+  - ''
+  - ' <white>Level: <aqua>%clannexus_land_level%'
+  - ' <white>Size: <aqua>%clannexus_land_size%'
+  - ' <white>Life: <aqua>%clannexus_land_nexus_life%<gray>/<aqua>%clannexus_land_nexus_maxhealth%'
+  Nexus upgrade items moneybuy name: <green>Buy with Money.
+  Nexus upgrade items moneybuy lore:
+  - ''
+  - ' <white>Price: <green>$%price%'
+  - ''
+  - '<yellow>Improvements:'
+  - ' <white>Life: <aqua>+%improve_life% <gray>(%improve_maxhealth%)'
+  - ' <white>Size: <aqua>+%improve_size% <gray>(%improve_maxsize%)'
+  - ''
+  - ' <yellow>Click to Buy.'
+  Nexus upgrade items maxlevel name: <red>Maximum level
+  Nexus upgrade items maxlevel lore:
+  - ''
+  - ' <red>Your Nexus is at maximum level'
+  Nexus upgrade items back name: <red>Come back
+  Nexus upgrade items back lore:
+  - ''
+  - ' <yellow>Click to go back.'
+  Nexus home_noland title: <dark_red>No Nexus
+  Nexus home_noland items fill name: ' '
+  Nexus home_noland items fill2 name: ' '
+  Nexus home_noland items get name: <green>Start the Nexus claim.
+  Nexus home_noland items get lore:
+  - ''
+  - ' <yellow>Your clan has no nexus, you can start the claim now'
+  Nexus home_noland items back name: <red>Come back
+  Nexus home_noland items back lore:
+  - ''
+  - ' <yellow>Click to go back.'
