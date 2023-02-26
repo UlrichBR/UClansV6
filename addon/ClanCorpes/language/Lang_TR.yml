@@ -1,23 +1,23 @@
 COMUM:
-  player dont have clan: '%tag% <red>This player does not have a clan.'
-  you dont have clan: '%tag% <red>You dont have a clan.'
-  gui error: '%tag% <red>This menu contains an error and cannot be opened'
-  disabled function: '%tag% <red>This function is turned off or disabled.'
-  chan does not exists: '%tag% <red>This clan does not exist'
-  command by player: '%tag% <red>This command must be used by a player.'
-  no permission: '%tag% <red>You dont have permissions for this.'
+  player dont have clan: '%tag% <red>Bu oyuncunun bir klanı yok.'
+  you dont have clan: '%tag% <red>Klanınız yok.'
+  gui error: '%tag% <red>Bu menü bir hata içeriyor ve açılamıyor'
+  disabled function: '%tag% <red>Bu işlev kapalı veya devre dışı.'
+  chan does not exists: '%tag% <red>Bu klan mevcut değil'
+  command by player: '%tag% <red>Bu klan mevcut değil.'
+  no permission: '%tag% <red>Bunun için izniniz yok.'
 Config:
   Corpses:
     catch:
       message:
         text:
         - ' '
-        - <red><bold>!</bold> <yellow>You captured <dark_red>%player%'s corpse <yellow>and received rewards!<yellow>.
+        - <red><bold>!</bold> <dark_red>%player%'ın cesedini <yellow>ele geçirdin ve ödüller aldın!
         - ' '
       actionbar:
-        text: <red><bold>!</bold> <yellow>You captured <dark_red>%player%'s corpse<yellow>!
+        text: <red><bold>!</bold> <dark_red>%player%'ın cesedini <yellow>ele geçirdiniz!
       title:
-        line: <red>! <dark_red>%player%'s corpse
-        subline: <yellow>Captured!
+        line: <red>! <dark_red>%player%'ın cesedi
+        subline: <yellow>Ele geçirilmiş!
       bossbar:
-        text: <red><bold>!</bold> <yellow>You captured <dark_red>%player%'s corpse<yellow>! <red>({time})
+        text: <red><bold>!</bold> <dark_red>%player%'ın <yellow>cesedini ele geçirdiniz! <red>({time})
