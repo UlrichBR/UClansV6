@@ -4,11 +4,11 @@ COMUM:
   disabled function: '%tag% <red>Bu işlev kapalı veya devre dışı.'
   chan does not exists: '%tag% <red>Bu klan mevcut değil'
   chest in use: '%tag% <red>Klan sandığı zaten başka bir oyuncu tarafından kullanılıyor, tekrarı önlemek için aynı anda yalnızca bir oyuncu sandığı kullanabilir.'
-  chest name: '%uclans_tag_color% <green>sandığı <dark_gray>[%page%/%pages%]'
-  chest limit: <red>This is the limit for your Clan!
-  chest limit reached: '%tag% <red>The limit for your clan is %pages% chests.'
-  no permission: '%tag% <red>You dont have permissions for this.'
-  no data to export: '%tag% <red>There is no data to export.'
+  chest name: '<green>%uclans_tag_color% <green>sandığı <dark_gray>[%page%/%pages%]'
+  chest limit: <red>Bu, Klanınız için sınırdır!
+  chest limit reached: '%tag% <red>Klanınız için sınır %pages% sandıktır.'
+  no permission: '%tag% <red>Bunun için izniniz yok.'
+  no data to export: '%tag% <red>Dışa aktarılacak veri yok.'
   warn reexport: ' <red>- Beware, if you re-export the database will be rewritten and the existing chests will be changed. If this worked correctly it is recommended that you delete the old chest storage file.'
   help clan header subcommand: '<newline><blue><bold>Help with subcommands:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
   help list empty: ' <red>- There is nothing on this list.'
