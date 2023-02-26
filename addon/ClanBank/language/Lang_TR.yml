@@ -1,18 +1,18 @@
 COMUM:
-  player dont have clan: '%tag% <red>This player does not have a clan.'
-  gui error: '%tag% <red>This menu contains an error and cannot be opened'
-  disabled function: '%tag% <red>This function is turned off or disabled.'
-  chan does not exists: '%tag% <red>This clan does not exist'
-  command by player: '%tag% <red>This command must be used by a player.'
-  no permission: '%tag% <red>You dont have permissions for this.'
-  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>has been deposited in your account.'
-  player dont have money: '%tag% <red>You need to <green>%uclans_money_currency%%amount%'
-  player dont have money gui: <red>You need to <green>%uclans_money_currency%%amount%
-  player debited money: '%tag% <yellow>It was debited <green>%amount% <yellow>your account.'
-  player money nozero: '%tag% <red>The value must be greater than zero'
-  help clan header subcommand: '<newline><blue><bold>Help with subcommands:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
-  help list empty: ' <red>- There is nothing on this list.'
-  clan dont permission role: '%tag% <red>Your current role you cannot do this.'
+  player dont have clan: '%tag% <red>Bu oyuncunun bir klanı yok.'
+  gui error: '%tag% <red>Bu menü bir hata içeriyor ve açılamıyor'
+  disabled function: '%tag% <red>Bu işlev kapalı veya devre dışı.'
+  chan does not exists: '%tag% <red>Bu klan mevcut değil'
+  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+  no permission: '%tag% <red>Bunun için izniniz yok.'
+  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>hesabınıza yatırıldı.'
+  player dont have money: '%tag% <green>%uclans_money_currency%%amount% <red>ihtiyacınız var.'
+  player dont have money gui: <red><green>%uclans_money_currency%%amount% <red>ihtiyacınız var.
+  player debited money: '%tag% <yellow>Hesabınızdan <green>%amount% <yellow>alındı.'
+  player money nozero: '%tag% <red>Değer sıfırdan büyük olmalıdır'
+  help clan header subcommand: '<newline><blue><bold>Alt komutlarla ilgili yardım:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>zorunlu <gray>| <light_purple>() <gray>isteğe bağlı <newline> '
+  help list empty: ' <red>- Bu listede hiçbir şey yok.'
+  clan dont permission role: '%tag% <red>Mevcut rolünüz bunu yapamazsınız.'
   bank value max title: <dark_red>! <red>Valor max de <green>%uclans_money_currency%%max%
   bank value min title: <dark_red>! <red>Valor min de <green>%uclans_money_currency%%min%
   bank value max: '%tag% <red>Valor max de <green>%uclans_money_currency%%max%'
