@@ -1,0 +1,89 @@
+COMUM:
+  player donthave clan: '%tag% <red>This player does not have a clan.'
+  gui error: '%tag% <red>This menu contains an error and cannot be opened'
+  disabled function: '%tag% <red>This function is turned off or disabled.'
+  chan does not exists: '%tag% <red>This clan does not exist'
+  chest in use: '%tag% <red>The clan chest is already being used by another player, to avoid duplication only one player can use the chest at a time.'
+  chest name: <green>Chest of %uclans_tag_color% dark_gray>[%page%/%pages%]
+  chest limit: <red>This is the limit for your Clan!
+  chest limit reached: '%tag% <red>The limit for your clan is %pages% chests.'
+  no permission: '%tag% <red>You dont have permissions for this.'
+  no data to export: '%tag% <red>There is no data to export.'
+  warn reexport: ' <red>- Beware, if you re-export the database will be rewritten and the existing chests will be changed. If this worked correctly it is recommended that you delete the old chest storage file.'
+  help clan header subcommand: '<newline><blue><bold>Help with subcommands:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help list empty: ' <red>- There is nothing on this list.'
+  clan dont permission role: '%tag% <red>Your current role you cannot do this.'
+  need money hook: '%tag% <red>There are no money methods enabled'
+  no permission buy extra: '%tag% <red>You cannot buy more pages from the chest'
+  chest extra error: <red>Error when buying!
+  chest extra needmoney gui: <red>Not enough money to buy!
+  chest extra needmoney: <red>You dont have enough money to buy
+  chest extra buyed: <aqua>Successfully purchased!
+  chest items count: '%tag% <red>Items can only be viewed in the gui menu!'
+  chest unlocked false: <red>Error to UnLock!
+  chest unlocked true: <green>Successfully Unlocked!
+  chest locked false: <red>Error to Lock!
+  chest locked true: <aqua>Successfully Locked!
+  chest error save drop: '%tag% <red>An error occurred while saving one or more items to the bau. The item has been dropped on the ground!'
+  player dont have money: '%tag% <red>You need to <green>$%amount% <red>for this.'
+  player dont have money gui: <red>You need to <green>$%amount%
+  player debited money: '%tag% <yellow>It was debited <green>%amount% <yellow>your account.'
+  player deposited money: '%tag% <green>$%amount% <yellow>has been deposited in your account.'
+  disabled world chest: '%tag% <red>You cannot use chests in this world'
+  disabled region chest: '%tag% <red>You cannot use chests in this region'
+  command by player: '%tag% <red>This command must be used by a player.'
+LANGUAGE:
+  clan chest in limit: '%tag% <red>Your clan has reached the chest limit and needs to gain levels to unlock more chest pages, Your clans current limit is <aqua>%uclans_limit_chest%'
+ 
+ 
+# CHEST GUI
+ 
+ 
+GUI:
+  chest load_chest title: <blue>Loading items...
+  chest load_chest items fill name: ' '
+  chest load_chest items fill lore: [
+    ]
+  chest load_chest items fill2 name: ' <red>Wait.'
+  chest load_chest items fill2 lore: [
+    ]
+  chest buy_chest title: <red>Confirm <aqua>Buy 1 Page <red>?
+  chest buy_chest items fill name: ' '
+  chest buy_chest items fill lore: [
+    ]
+  chest buy_chest items confirm name: <green>Click to confirm
+  chest buy_chest items confirm lore:
+  - ' '
+  - ' <yellow>Click to go confirm.'
+  chest buy_chest items cancel name: <green>Click to cancel
+  chest buy_chest items cancel lore:
+  - ' '
+  - ' <yellow>Click to go cancel.'
+  chest chest title: <blue>Chest <gray>| %uclans_tag_color%.
+  chest chest items fill name: ' '
+  chest chest items fill lore: [
+    ]
+  chest chest items back name: <green>Click to back
+  chest chest items back lore:
+  - ' '
+  - ' <yellow>Click to go back home.'
+  chest chest items sort name: <green>Click to organize.
+  chest chest items sort lore:
+  - ' '
+  - ' <yellow>Items will be organized by '
+  - <yellow>type, color and quantity.
+  chest chest items previous name: <green>Previous Page
+  chest chest items previous lore:
+  - ' '
+  - ' <yellow>Click to go previous page.'
+  chest chest items next name: <green>Next Page
+  chest chest items next lore:
+  - ' '
+  - ' <yellow>Click to go next page.'
+  chest chest items buy name: <green><green>Buy extra chests.
+  chest chest items buy lore:
+  - ' '
+  - ' <white>Price: <green>$%price%'
+  - ' <white>Extra Limit: <aqua>%clan_extra%<gray>/<aqua>%clan_limit%'
+  - ' '
+  - <yellow>Click to buy!
