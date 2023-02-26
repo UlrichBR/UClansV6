@@ -1,0 +1,134 @@
+COMUM:
+  player dont have clan: '%tag% <red>Bu oyuncunun bir klanı yok.'
+  gui error: '%tag% <red>Bu menü bir hata içeriyor ve açılamıyor'
+  disabled function: '%tag% <red>Bu işlev kapalı veya devre dışı.'
+  chan does not exists: '%tag% <red>Bu klan mevcut değil'
+  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+  no permission: '%tag% <red>Bunun için izniniz yok.'
+  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>hesabınıza yatırıldı.'
+  player dont have money: '%tag% <green>%uclans_money_currency%%amount% <red>ihtiyacınız var.'
+  player dont have money gui: <red><green>%uclans_money_currency%%amount% <red>ihtiyacınız var.
+  player debited money: '%tag% <yellow>Hesabınızdan <green>%amount% <yellow>alındı.'
+  player money nozero: '%tag% <red>Değer sıfırdan büyük olmalıdır'
+  help clan header subcommand: '<newline><blue><bold>Alt komutlarla ilgili yardım:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>zorunlu <gray>| <light_purple>() <gray>isteğe bağlı <newline> '
+  help list empty: ' <red>- Bu listede hiçbir şey yok.'
+  clan dont permission role: '%tag% <red>Mevcut rolünüz bunu yapamazsınız.'
+  bank value max title: <dark_red>! <red>Maksimum değer <green>%uclans_money_currency%%max%
+  bank value min title: <dark_red>! <red>Minimum değer <green>%uclans_money_currency%%min%
+  bank value max: '%tag% <red>Maksimum değer <green>%uclans_money_currency%%max%'
+  bank value min: '%tag% <red>Minimum değer <green>%uclans_money_currency%%min%'
+  bank add error gui: <red>İşlem hatası!
+  bank add success gui: <green>Başarılı!
+  bank need: '%tag% <red>Klan bankasında <green>%uclans_money_currency%%amount% <red>yok'
+  bank need gui: <red>Bankanın <green>%uclans_money_currency%%amount% <red>ihtiyacı var
+  bank view: '%tag% <yellow>Klan bankasında artık <green>%uclans_money_currency%%amount% <yellow>var'
+GUI:
+  Bank home_bank title: <blue>Banka <gray>| <aqua>%uclans_tag_color%
+  Bank home_bank items fill name: ' '
+  Bank home_bank items fill lore: [
+    ]
+  Bank home_bank items fill2 name: ' '
+  Bank home_bank items fill2 lore: [
+    ]
+  Bank home_bank items balance name: <green>Klan Bakiyesi
+  Bank home_bank items balance lore:
+  - ''
+  - ' <white>Toplam: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - ' <yellow>Aşağıdaki eylemi seçin.'
+  Bank home_bank items add name: <green>Bankaya %uclans_money_current_formated% ekle
+  Bank home_bank items add lore:
+  - ''
+  - ' <yellow>Açmak için tıklayın.'
+  Bank home_bank items withdraw name: <green>Bankadan %uclans_money_current_formated% çekin
+  Bank home_bank items withdraw lore:
+  - ''
+  - ' <yellow>Açmak için tıklayın.'
+  Bank home_bank items back name: <red>Geri Dön
+  Bank home_bank items back lore:
+  - ''
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Bank bank_withdraw title: '<red>Çek: <green>%uclans_money_currency%%amount%'
+  Bank bank_withdraw items fill name: ' '
+  Bank bank_withdraw items fill lore: [
+    ]
+  Bank bank_withdraw items fill2 name: ' '
+  Bank bank_withdraw items fill2 lore: [
+    ]
+  Bank bank_withdraw items balance name: <green>Klan Bakiyesi
+  Bank bank_withdraw items balance lore:
+  - ''
+  - ' <white>Toplam: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - ' <yellow>Aşağıdaki eylemi seçin.'
+  Bank bank_withdraw items player name: <green>%uclans_player%
+  Bank bank_withdraw items player lore:
+  - ''
+  - ' <white>%uclans_money_current_formated%: <green>%uclans_money_currency%%uclans_money_player%'
+  - ''
+  Bank bank_withdraw items add name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_withdraw items add lore:
+  - ''
+  - ' <yellow>Eklemek için tıklayın.'
+  Bank bank_withdraw items add2 name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_withdraw items add2 lore:
+  - ''
+  - ' <yellow>Eklemek için tıklayın.'
+  Bank bank_withdraw items remove name: <red>-%uclans_money_currency%%remove%
+  Bank bank_withdraw items remove lore:
+  - ''
+  - ' <yellow>Kaldırmak için tıklayın.'
+  Bank bank_withdraw items remove2 name: <red>-%uclans_money_currency%%remove%
+  Bank bank_withdraw items remove2 lore:
+  - ''
+  - ' <yellow>Kaldırmak için tıklayın.'
+  Bank bank_withdraw items go name: <green>Çek <green>%uclans_money_currency%%amount%
+  Bank bank_withdraw items go lore:
+  - ''
+  - ' <yellow>Çekmek için tıklayın <green>%uclans_money_currency%%amount%.'
+  Bank bank_withdraw items back name: <red>Geri Dön
+  Bank bank_withdraw items back lore:
+  - ''
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Bank bank_add title: '<green>Ekle: <green>%uclans_money_currency%%amount%'
+  Bank bank_add items fill name: ' '
+  Bank bank_add items fill lore: [
+    ]
+  Bank bank_add items fill2 name: ' '
+  Bank bank_add items fill2 lore: [
+    ]
+  Bank bank_add items balance name: <green>Klan Bakiyesi
+  Bank bank_add items balance lore:
+  - ''
+  - ' <white>Toplam: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - ' <yellow>Aşağıdaki eylemi seçin.'
+  Bank bank_add items player name: <green>%uclans_player%
+  Bank bank_add items player lore:
+  - ''
+  - ' <white>%uclans_money_current_formated%: <green>%uclans_money_currency%%uclans_money_player%'
+  - ''
+  Bank bank_add items add name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_add items add lore:
+  - ''
+  - ' <yellow>Eklemek için tıklayın.'
+  Bank bank_add items add2 name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_add items add2 lore:
+  - ''
+  - ' <yellow>Eklemek için tıklayın.'
+  Bank bank_add items remove name: <red>-%uclans_money_currency%%remove%
+  Bank bank_add items remove lore:
+  - ''
+  - ' <yellow>Kaldırmak için tıklayın.'
+  Bank bank_add items remove2 name: <red>-%uclans_money_currency%%remove%
+  Bank bank_add items remove2 lore:
+  - ''
+  - ' <yellow>Kaldırmak için tıklayın.'
+  Bank bank_add items go name: <green>Add <green>%uclans_money_currency%%amount%
+  Bank bank_add items go lore:
+  - ''
+  - ' <yellow>Eklemek için tıklayın <green>%uclans_money_currency%%amount%.'
+  Bank bank_add items back name: <red>Geri Dön
+  Bank bank_add items back lore:
+  - ''
+  - ' <yellow>Geri dönmek için tıklayın.'

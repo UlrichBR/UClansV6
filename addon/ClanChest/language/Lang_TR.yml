@@ -1,0 +1,89 @@
+COMUM:
+  player donthave clan: '%tag% <red>Bu oyuncunun bir klanı yok.'
+  gui error: '%tag% <red>Bu menü bir hata içeriyor ve açılamıyor'
+  disabled function: '%tag% <red>Bu işlev kapalı veya devre dışı.'
+  chan does not exists: '%tag% <red>Bu klan mevcut değil'
+  chest in use: '%tag% <red>Klan sandığı zaten başka bir oyuncu tarafından kullanılıyor, tekrarı önlemek için aynı anda yalnızca bir oyuncu sandığı kullanabilir.'
+  chest name: '<green>%uclans_tag_color% <green>sandığı <dark_gray>[%page%/%pages%]'
+  chest limit: <red>Bu, Klanınız için sınırdır!
+  chest limit reached: '%tag% <red>Klanınız için sınır %pages% sandıktır.'
+  no permission: '%tag% <red>Bunun için izniniz yok.'
+  no data to export: '%tag% <red>Dışa aktarılacak veri yok.'
+  warn reexport: ' <red>- Dikkatli olun, yeniden dışa aktarırsanız veritabanı yeniden yazılacak ve mevcut sandıklar değiştirilecektir. Bu düzgün çalıştıysa, eski sandık depolama dosyasını silmeniz önerilir.'
+  help clan header subcommand: '<newline><blue><bold>Alt komutlarla ilgili yardım:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>zorunlu <gray>| <light_purple>() <gray>isteğe bağlı <newline> '
+  help list empty: ' <red>- Bu listede hiçbir şey yok.'
+  clan dont permission role: '%tag% <red>Mevcut rolünüzle bunu yapamazsınız.'
+  need money hook: '%tag% <red>Etkinleştirilmiş para yöntemi yok'
+  no permission buy extra: '%tag% <red>Sandıktan daha fazla sayfa satın alamazsınız'
+  chest extra error: <red>Satın alırken hata oluşdu!
+  chest extra needmoney gui: <red>Satın almak için yeterli para yok!
+  chest extra needmoney: <red>Satın almak için yeterli paranız yok
+  chest extra buyed: <aqua>Başarıyla satın alındı!
+  chest items count: '%tag% <red>Eşyalar yalnızca gui menüsünde görüntülenebilir!'
+  chest unlocked false: <red>Kilit Açma Hatası!
+  chest unlocked true: <green>Başarıyla Kilit Açıldı!
+  chest locked false: <red>Kilitleme Hatası!
+  chest locked true: <aqua>Başarıyla Kilitlendi!
+  chest error save drop: '%tag% <red>Sandığa bir veya daha fazla eşya kaydedilirken bir hata oluştu. Eşylar yere düşürüldü!'
+  player dont have money: '%tag% <red>Bunun için <green>$%amount% <red>ihtiyacınız var.'
+  player dont have money gui: <green>$%amount% <red>ihtiyacınız var.
+  player debited money: '%tag% <yellow>Hesabınızdan <green>%amount% <yellow>borçlandırıldı.'
+  player deposited money: '%tag% <green>$%amount% <yellow>hesabınıza yatırıldı.'
+  disabled world chest: '%tag% <red>Bu dünyada sandık kullanamazsınız'
+  disabled region chest: '%tag% <red>Bu bölgede sandık kullanamazsınız'
+  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+LANGUAGE:
+  clan chest in limit: '%tag% <red>Klanınız sandık sınırına ulaştı ve daha fazla sandık sayfası açmak için seviye atlaması gerekiyor, Klanınızın mevcut sınırı <aqua>%uclans_limit_chest%'
+ 
+ 
+# CHEST GUI
+ 
+ 
+GUI:
+  chest load_chest title: <blue>Eşyalar yükleniyor...
+  chest load_chest items fill name: ' '
+  chest load_chest items fill lore: [
+    ]
+  chest load_chest items fill2 name: ' <red>Bekle.'
+  chest load_chest items fill2 lore: [
+    ]
+  chest buy_chest title: <red>Onayla <aqua>1 Sayfa Satın Al <red>?
+  chest buy_chest items fill name: ' '
+  chest buy_chest items fill lore: [
+    ]
+  chest buy_chest items confirm name: <green>Onaylamak için tıklayın
+  chest buy_chest items confirm lore:
+  - ' '
+  - ' <yellow>Onaylamak için tıklayın.'
+  chest buy_chest items cancel name: <green>İptal etmek için tıklayın
+  chest buy_chest items cancel lore:
+  - ' '
+  - ' <yellow>Geri dönmek için tıklayın.'
+  chest chest title: <blue>Sandık <gray>| %uclans_tag_color%.
+  chest chest items fill name: ' '
+  chest chest items fill lore: [
+    ]
+  chest chest items back name: <green>Geri dönmek için tıklayın
+  chest chest items back lore:
+  - ' '
+  - ' <yellow>Ana sayfaya dönmek için tıklayın.'
+  chest chest items sort name: <green>Düzenlemek için tıklayın.
+  chest chest items sort lore:
+  - ' '
+  - ' <yellow>Öğeler tür, renk ve miktara '
+  - <yellow>göre düzenlenecektir.
+  chest chest items previous name: <green>Önceki sayfa
+  chest chest items previous lore:
+  - ' '
+  - ' <yellow>Önceki sayfaya gitmek için tıklayın.'
+  chest chest items next name: <green>Sonraki Sayfa
+  chest chest items next lore:
+  - ' '
+  - ' <yellow>Sonraki sayfaya gitmek için tıklayın.'
+  chest chest items buy name: <green><green>Ekstra sandık satın alın.
+  chest chest items buy lore:
+  - ' '
+  - ' <white>Fiyat: <green>$%price%'
+  - ' <white>Ekstra Limit: <aqua>%clan_extra%<gray>/<aqua>%clan_limit%'
+  - ' '
+  - <yellow>Ekstra Limit!

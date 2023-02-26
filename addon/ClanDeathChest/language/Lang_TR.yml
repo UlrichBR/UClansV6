@@ -1,0 +1,10 @@
+COMUM:
+  player donthave clan: '%tag% <red>Bu oyuncunun bir klanı yok.'
+  gui error: '%tag% <red>Bu menü bir hata içeriyor ve açılamıyor'
+  disabled function: '%tag% <red>Bu işlev kapalı veya devre dışı.'
+  chan does not exists: '%tag% <red>Bu klan mevcut değil'
+  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+  no permission: '%tag% <red>Bunun için izniniz yok.'
+  disabled world: '%tag% <red>Bu dünyada sandık kullanamazsın'
+  chest colected: '%tag% <green>%player%''ın ölüm sandığı toplandı!'
+  disappears: <dark_red>!! Kapanırken kayboluyor !!
