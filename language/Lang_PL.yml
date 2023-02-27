@@ -357,8 +357,8 @@ LANGUAGE:
   home limit: <red>To jest limit (%limit%) dla Twojego Klanu!
   home limit reached: '%tag% <red>Limit dla Twojego klanu to %homes% warpy.'
   new point received: '%tag% <green>Twój klan otrzymał <aqua>%points% punktów<green>, a teraz ma <aqua>%totalpoints% punktów (%reason%)'
-  new_point_removed: '%tag% <red>Twój klan stracił <aqua>%points% punktów<red>, a teraz ma <aqua>%totalpoints% punktów (%reason%)'
-  new_point_set: '%tag% <green>Punkty klanu zostały zmienione na <aqua>%totalpoints% punktów (%reason%)'
+  new point removed: '%tag% <red>Twój klan stracił <aqua>%points% punktów<red>, a teraz ma <aqua>%totalpoints% punktów (%reason%)'
+  new point set: '%tag% <green>Punkty klanu zostały zmienione na <aqua>%totalpoints% punktów (%reason%)'
  
 # TRANSLATIONS OF GUI MENU FILES // TŁUMACZENIA PLIKÓW GUI MENU
  
@@ -412,7 +412,7 @@ GUI:
   - ''
   - ' <yellow>Kliknij, aby wrócić.'
   General clan_homes items current name: <green>Warp %uclans_home:{name}:name%
-  clan_homes_items_current_lore:
+  General clan_homes items current lore:
   - ''
   - ' <yellow>Informacje o Warpie'
   - ' <gray>'
@@ -422,14 +422,14 @@ GUI:
   - ''
   - ' <yellow>Kliknij Lewym Przyciskiem, aby przeteleportować się '
   - ' <red>Kliknij Prawym Przyciskiem, aby usunąć.'
-  clan_homes_items_current_visit_name: <green>Warp %uclans_home:{name}:name%
-  clan_homes_items_current_visit_lore:
+  General clan_homes items current visit name: <green>Warp %uclans_home:{name}:name%
+  General clan_homes items current visit lore:
   - ''
   - ' <yellow>Informacje o Warpie'
   - ' <gray>'
   - ' <gray>Serwer: <green>%uclans_home:{name}:server%'
   - ' <gray>Nazwa: <aqua>%uclans_home:{name}:name%'
-  clan_delhome_confirm_title: <red>Potwierdzenie usunięcia warpu <dark_red>%home_name% <red>?'
+  General clan_delhome_confirm title: <red>Potwierdzenie usunięcia warpu <dark_red>%home_name% <red>?'
   General clan_delhome_confirm items fill name: ' '
   General clan_delhome_confirm items fill lore: [
     ]
@@ -469,7 +469,7 @@ GUI:
   General clan_home items fill2 lore: [
     ]
   General clan_home items info name: <green>Klan %uclans_tag_color%
-  clan_home_items_info_lore:
+  General clan_home items info lore:
   - ' <yellow>Informacje Klanu'
   - ' <gray>'
   - ' <gray>Patent: <green>%uclans_patent_formated%'
@@ -482,15 +482,15 @@ GUI:
   - ' <gray>Opis: <aqua>%uclans_desc_color%'
   - ' '
   - ' <yellow>Kliknij, aby otworzyć listę stanów.'
-  clan_home_items_banner_name: <green>Banner Klanu
-  clan_home_items_banner_lore:
+  General clan_home items banner name: <green>Baner Klanu
+  General clan_home items banner lore:
   - ' '
-  - ' <yellow>Informacje o Bannerze:'
+  - ' <yellow>Informacje o Banerze:'
   - ''
-  - ' <white>Posiada Banner: <aqua>%uclans_hasbanner_formated%'
-  - ' <white>Banner: <aqua>%uclans_banner_material%'
+  - ' <white>Posiada Baner: <aqua>%uclans_hasbanner_formated%'
+  - ' <white>Baner: <aqua>%uclans_banner_material%'
   - ' '
-  - ' <yellow>Banner Klanu jest Twoją marką!'
+  - ' <yellow>Baner Klanu jest Twoją marką!'
   General clan_home items clans name: <green>Wszystkie Klany
   General clan_home items clans lore:
   - ' <yellow>Kliknij, aby otworzyć menu listy klanów.'
