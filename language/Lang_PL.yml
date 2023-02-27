@@ -239,7 +239,7 @@ LANGUAGE:
   translaction no clan: <red>Brak Klanu
   translaction kill: Zabójstwo
   translaction death: Śmierć
-  translaction kdr: Wskaźnik zabójstw/śmierci
+  translaction kdr: Wskaźnik KDR
   translaction member: Członek
   translaction bank: Bank
   translaction level: Poziom
@@ -470,7 +470,7 @@ GUI:
     ]
   General clan_home items info name: <green>Klan %uclans_tag_color%
   General clan_home items info lore:
-  - ' <yellow>Informacje Klanu'
+  - ' <yellow>Informacje o Klanie'
   - ' <gray>'
   - ' <gray>Patent: <green>%uclans_patent_formated%'
   - ''
@@ -865,44 +865,44 @@ GUI:
   General clan_top items active name: ' <green>Aktualny'
   General clan_top items active lore: [
     ]
-  General clan_top items all name: Wszystkie Klan
+  General clan_top items all name: <red>Wszystkie Klany
   General clan_top items all lore:
   - ' <yellow>Kliknij, aby wyświetlić'
   - ' '
-  General clan_top items kdr name: Najlepsze KDR
+  General clan_top items kdr name: <red>Najlepsze KDR
   General clan_top items kdr lore:
   - ' <yellow>Kliknij, aby posortować'
   - '<yellow>listę według KDR '
   - ' '
-  General clan_top items kill name: Najlepsze Zabójstwa
+  General clan_top items kill name: <red>Najwięcej Zabójstw
   General clan_top items kill lore:
   - ' <yellow>Kliknij, aby posortować'
-  - '<yellow>listę według Zabójstw '
+  - '<yellow>listę według liczby Zabójstw '
   - ' '
-  General clan_top items death name: Najlepsze Śmierć
+  General clan_top items death name: <red>Najwięcej Śmierci
   General clan_top items death lore:
   - ' <yellow>Kliknij, aby posortować'
-  - '<yellow>listę według Śmierć '
+  - '<yellow>listę według liczby Śmierć '
   - ' '
-  General clan_top items bank name: Najlepsze Bank
+  General clan_top items bank name: <red>Najlepsze Banki
   General clan_top items bank lore:
   - ' <yellow>Kliknij, aby posortować'
-  - '<yellow>listę według Bank '
+  - '<yellow>listę według stanu Banku '
   - ' '
-  General clan_top items member name: Najlepszy Członek
+  General clan_top items member name: <red>Najwięcej Członków
   General clan_top items member lore:
   - ' <yellow>Kliknij, aby posortować'
-  - '<yellow>listę według Członek '
+  - '<yellow>listę według ilości Członków '
   - ' '
-  General clan_top items level name: Najlepszy Poziom
+  General clan_top items level name: <red>Najwyższy Poziom
   General clan_top items level lore:
   - ' <yellow>Kliknij, aby posortować'
-  - '<yellow>listę według poziomu '
+  - '<yellow>listę według Poziomu '
   - ' '
-  General clan_top items war name: Najlepsza Wojna
+  General clan_top items war name: <red>Najwięcej Wojen
   General clan_top items war lore:
   - ' <yellow>Kliknij, aby posortować'
-  - '<yellow>listę według Najlepszej Wojny '
+  - '<yellow>listę według liczby Wojen '
   - ' '
   General clan_top items point name: <red>Punkty
   General clan_top items point lore:
