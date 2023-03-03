@@ -1,0 +1,1798 @@
+ 
+ 
+ # TRANSLATIONS OF THE LANGUAGE AND DIALOGUE FILES
+ 
+LANGUAGE:
+  separer: <gradient:blue:yellow>████████████████████████████████</gradient>
+  command by player: '%tag% <white>Эта команда должна быть использована игроком.'
+  command by console: '%tag% <white>Эта команда должна использоваться консолью.'
+  disabled world command: '%tag% <white>Клановые команды в этом мире отключены.'
+  disabled region command: '%tag% <white>Команды кланов отключены в этом регионе.'
+  error start action: '%tag% <white>Произошла ошибка при запуске этого.'
+  error character: '%tag% <white>Это содержит недопустимые символы.'
+  error mod desc: '%tag% <white>Ошибка при изменении описания клана.'
+  has globalff: '%tag% <white>Глобальный дружественный огонь теперь включен!'
+  no permission: '%tag% <white>У вас недостаточно прав.'
+  chest extra buyed update: '%tag% <yellow>%player% <white>приобрел новый сундук для клана.'
+  currency vault: Деньги
+  currency playerpoints: Поинты
+  currency clansouls: Души
+  export same storage: '%tag% <white>Для экспорта необходимо выбрать хранилище, отличное от текущего.'
+  export no data: '%tag% <white>В настоящее время нет данных для экспорта.'
+  export mysql deconfiguwhite: '%tag% <white>Произошла ошибка, поля mysql неправильно сконфигурированы.'
+  export mysql connection error: '%tag% <white>Произошла ошибка при подключении к MYSQL.'
+  export sqlite connection error: '%tag% <white>Произошла ошибка при подключении к SQLITE.'
+  export yaml connection error: '%tag% <white>Произошла ошибка при подключении к YAML.'
+  tag in use: '%tag% <white>Этот тег уже используется.'
+  clan not found: '%tag% <white>Клана с этим ТЕГОМ не существует.'
+  clan ally header: <blue>Список союзников. <dark_gray>(tag/kdr/members)
+  clan list empty: ' <white>Клана в этом списке нет.'
+  clan is your clan: '%tag% <white>Это твой клан.'
+  clan is rival: '%tag% <white>Этот клан уже является соперником.'
+  clan already ally: '%tag% <white>Этот клан уже является союзником.'
+  clan dont ally: '%tag% <white>Этот Клан не является союзником.'
+  clan player isnot your clan: '%tag% <white>Этот игрок не состоит в вашем клане.'
+  clan player skin in update gui: <white>Обновляем скин, подождите...
+  clan player skin in update: '%tag% <white>Обновление скина, пожалуйста, подождите, так как это может занять некоторое время...'
+  clan player skin finish update: '%tag% <white>Ваш скин был обновлен'
+  clan player skin error update: '%tag% <white>Произошла ошибка при обновлении вашего скина'
+  clan pvp disabled: '%tag% <white>Клановое PVP теперь отключено.'
+  clan allypvp disabled: '%tag% <white>PVP между союзниками отключен.'
+  clan player blocked invite gui: <white>Клановые приглашения отключены.
+  clan player blocked invite: '%tag% <white>Этот игрок отключил приглашения в клан.'
+  clan player accept success invite gui: <white>Приглашение принято.
+  clan player accept success invite: '%tag% <white>Вы успешно приняли приглашение.'
+  clan player accept error invite gui: <white>Ошибка принятия.
+  clan player accept error invite: '%tag% <white>Произошла ошибка при принятии приглашения.'
+  clan player deny success invite gui: <white>Приглашение отклонено.
+  clan player deny success invite: '%tag% <white>Вы успешно отклонили приглашение.'
+  clan player deny error invite gui: <white>Ошибка для отклонения.
+  clan player deny error invite: '%tag% <white>Произошла ошибка с отклонением приглашения.'
+  clan player isalready banned: '%tag% <white>Этот игрок уже забанен в Клане.'
+  clan player isnot banned: '%tag% <white>Этот игрок не забанен в клане.'
+  clan player is banned: '%tag% <white>Этот игрок забанен в клане и не может получать приглашения.'
+  clan player is banned gui: <white>Игрок не забанен в клане.
+  clan player error unban: '%tag% <white>Произошла ошибка при выдаче разбана игроку'
+  clan player error unban gui: <white>Ошибка разбана игрока.
+  clan player error ban: '%tag% <white>Произошла ошибка, из-за которой этот игрок был заблокирован'
+  clan player error ban gui: <white>Ошибка выдачи бана игроку.
+  clan player success ban: '%tag% <white>Игрок был успешно исключен из Клана.'
+  clan player success ban gui: <white>Игрок успешно заблокирован.
+  clan player success unban: '%tag% <white>Игрок был успешно исключен из Клана.'
+  clan player success unban gui: <white>Игрок успешно снял блокировку.
+  clan player are banned: '%tag% <white>Вы забанены в этом клане и не можете присоединиться к его участникам.'
+  clan player error change nickname: '%tag% <white>Ошибка при смене ника.'
+  clan player error change nickname gui: <white>Ошибка при смене ника.
+  clan player changed nickname: '%tag% <white>Ник успешно изменен!'
+  clan player changed nickname gui: <white>Ник успешно изменен!
+  clan player nickname default: '%tag% <white>Ваш ник уже используется по умолчанию.'
+  clan player nickname default gui: <white>Ник уже установлен по умолчанию.
+  clan reward level: '%tag% <yellow>Вы заработали награды за достижение вашим кланом уровня %num%'
+  clan max members: <white>В этом клане уже есть максимальное количество игроков.
+  clan max members level: '%tag% <white>В этом клане уже есть максимальное количество игроков для текущего уровня.'
+  clan player kicked out: '%tag% <white>Тебя выгнали из клана <yellow>%clan% <white>лидером <white>%clan_leader%'
+  clan player kicked outby: '%tag% <dark_white>%player% <yellow>был выгнан из клана <white>%clan_leader%'
+  clan tag equals: '%tag% <white>Неизмененный ТЕГ, по-видимому, тот же самый.'
+  clan name equals: '%tag% <white>Неизмененный НИК, по-видимому, тот же самый.'
+  clan already rival: '%tag% <white>Этот клан уже является соперником.'
+  clan is ally: '%tag% <white>Этот клан уже является союзником.'
+  clan rival error remove: '%tag% <white>Ошибка удаления соперника.'
+  clan dont rival: '%tag% <white>Этот клан не является соперником.'
+  clan new ally: '%tag% <yellow>С кланом был заключен новый союз <white>%clan_tag%'
+  clan removed ally: '%tag% <yellow>Союз с кланом <white>%clan_tag% <yellow>был удален.'
+  clan one removed ally: '%tag% <yellow>Союз был удален.'
+  clan one removed rival: '%tag% <yellow>Соперничество было удалено.'
+  clan created: '%tag% <yellow>Новый клан <yellow>%clan_tag% <yellow>был создан игроком <white>%player%.'
+  clan deleted: '%tag% <yellow>Клан <yellow>%clan_tag% <yellow>был удален лидером <white>%player%.'
+  clan deleted small: <white><strikethrough>Удален
+  clan ff changed: '%tag% <yellow>Дружественный огонь <yellow>%value%.'
+  clan globalff changed: '%tag% <yellow>Глобальный дружественный огонь <yellow>%value%.'
+  clan new join: '%tag% <yellow>Игрок <white>%player% <yellow>вступил в клан.'
+  clan new kick: '%tag% <yellow>Игрок <white>%player% <yellow>был изгнан из Клана.'
+  clan new leave: '%tag% <white>Игрок <white>%player% <yellow>покинул <white>%clan_tag%.'
+  clan new rival: '%tag% <yellow>Новое соперничество с Кланом <white>%clan_tag%'
+  clan new rival removed: '%tag% <yellow>Соперничество с кланом <white>%clan_tag% <yellow>было удалено.'
+  clan new leader: '%tag% <yellow>Новый лидер клана <white>%clan_tag% <yellow>теперь <white>%player%'
+  clan rival removed: '%tag% <yellow>Соперничество с Кланом <white>%clan_tag% <yellow>было отменено.'
+  clan verify changed: '%tag% <yellow>Клан был изменен на <white>%value%.'
+  clan new promote: '%tag% <yellow>Игрок <white>%player% <yellow>получил повышение до <yellow>%role_formated%.'
+  clan new demote: '%tag% <white>Игрок <white>%player% <yellow>был понижен.'
+  clan tag blacklist: '%tag% <white>Этот тег нельзя использовать в кланах.'
+  clan changed settings: '%tag% <white>Настройки клана были изменены.'
+  clan changed settings gui: <white>Настройки были изменены.
+  clan sync settings gui: <white>Синхронизация разрешений...
+  clan settings warinvite: <yellow>Приглашение на войну
+  clan settings allyshawhitechat: <yellow>Общий чат союзника
+  clan settings joinleave: <yellow>Присоединившиеся/Покинувшие
+  clan settings allyshawhitehome: <yellow>Деленные дома с союзниками
+  clan settings clanff: <yellow>Клан FF
+  clan settings opened: <yellow>Клан открыт для всех
+  clan settings publichomes: <yellow>Дома как общественные
+  clan delete error gui: <dark_white>Ошибка удаления!
+  clan no actions: '%tag% <white>Нет никаких невыполненных действий, которые можно было бы отменить.'
+  clan actions expiwhite: '%tag% <white>Время для действий закончилось.'
+  clan point reason level change: Изменение уровня клана
+  clan point reason no reason: Нет причины
+  banner delete error gui: <white>Ошибка удаленая!
+  banner delete success gui: <yellow>Успешное удаление!
+  banner delete error: '%tag% <white>Произошла ошибка при удалении.'
+  banner delete success: '%tag% <white>Баннер успешно удален!'
+  banner empty: '%tag% <white>У вашего клана нет баннера!'
+  banner empty gui: <white>У вашего клана нет баннера!
+  banner empty item: <white>Элемент должен быть баннером!
+  banner not acceptable: '%tag% <white>Этот предмет неприемлем в качестве кланового баннера.'
+  banner not acceptable gui: <white>Товар не является приемлемым.
+  banner not banner: '%tag% <white>Предмет, который вы держите в руках, должен быть баннером'
+  banner hand empty: '%tag% <white>Вы должны держать в руках какой-то предмет.'
+  banner upload error gui: <white>Ошибка сохранения баннера
+  banner upload success gui: <yellow>Сохранен новый баннер!
+  banner upload success: '%tag% <yellow>Новое знамя клана было сохранено!'
+  help uclan header: <blue><bold>Административные команды:</bold> <white>(%page%/%pages%)
+  help clan header: '<blue><bold>Помощь по кланам:</bold> <white>(%page%/%pages%) <newline> <white>[!] <white>subcmd <white>| <white><> <white>obligatory <white>| <yellow>() <white>optional <newline> '
+  help clan header subcommand: '<newline><blue><bold>Помощь с подкомандами:</bold> <newline> <white>[!] <white>subcmd <white>| <white><> <white>obligatory <white>| <yellow>() <white>optional <newline> '
+  help list empty: ' <white>- В этом списке ничего нет.'
+  help clan home list header: '<newline>%uclans_tag_color% <blue><bold>Список домов:'
+  help clan home list format: '<click:run_command:"/{_clan} {_home} {_teleport} %uclans_home:{name}:name%"><hover:show_text:''<white>Нажми, для телепорта.''> <white>- <white>{num} <white>| <white>Имя: <white>%uclans_home:{name}:name% <white>| <white>Сервер: <white>%uclans_home:{name}:server% <white>| <white>Локация: <white>%uclans_home:{name}:location%</hover></click>'
+  help clan home list format visit: ' <white>- <white>{num} <white>| <white>Имя: <white>%uclans_home:{name}:name% <white>| <white>Сервер: <white>%uclans_home:{name}:server%'
+  help clan home view header: '<newline><blue><bold>Информация о доме:'
+  help clan home view format:
+  - '<blue><bold>|</bold> <blue>Info:'
+  - ' <white>Имя: <yellow>%uclans_home:{name}:name%'
+  - ' <white>Сервер: <yellow>%uclans_home:{name}:server%'
+  - ' <white>Локация: <yellow>%uclans_home:{name}:location%'
+  - ''
+  - <click:suggest_command:"/{_clan} {_home} {_teleport} %uclans_home:{name}:name%"><hover:show_text:'<white>Нажми, для телепорта.'><yellow>[Teleport]</hover></click>
+  help clan member list header: '<newline>%uclans_tag_color%<blue><bold> список участников:'
+  help clan member list format: '<click:suggest_command:"/{_clan} {_profile} {_view} %uclans_player_realname% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_player_role_formated% <white>%uclans_player_nickname% <white>| <white>Присоединился: <white>%uclans_player_joindate_formated% | <white>KDR: <white>%uclans_player_kdr%</hover></click>'
+  help clan permissions view header: '<newline>%uclans_tag_color%<blue><bold> список разрешений:'
+  help clan permissions role view format: '<blue><bold>|</bold> <blue>%role%: '
+  help clan permissions view format: ' <white>Ключ: <white>%key% <white>| <white>Значение: <white>%value%'
+  help clan ally list header: '<newline>%uclans_tag_color%<blue><bold> список союзников:'
+  help clan ally list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% <white>| <white>Патент: <white>%uclans_patent_formated% <white>| <white>Уровень: <white>%uclans_level% | <white>Лидер: <white>%uclans_leader% | <white>Создан: <white>%uclans_creation_date_formated%</hover></click>'
+  help clan rival list header: '<newline>%uclans_tag_color%<blue><bold> список соперников:'
+  help clan rival list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% <white>| <white>Патент: <white>%uclans_patent_formated% <white>| <white>Уровень: <white>%uclans_level% | <white>Лидер: <white>%uclans_leader% | <white>Создан: <white>%uclans_creation_date_formated%</hover></click>'
+  help clan member_search list header: '<newline>%uclans_tag_color%<blue><bold> искать участника клана:'
+  help clan member_search list format: '<click:suggest_command:"/{_clan} {_member} invite %uclans_player_realname% "><hover:show_text:''<white>Нажми, чтобы пригласить.''> <white>- %uclans_player_role_formated% <white>%uclans_player_nickname% <white>| <white>Последняя раз: <white>%uclans_player_lastsee_formated% | <white>KDR: <white>%uclans_player_kdr% <yellow>[Пригласить]</hover></click>'
+  help clan banned list header: '<newline>%uclans_tag_color%<blue><bold> список заблокированных участников:'
+  help clan banned list format: '<click:suggest_command:"/{_clan} {_profile} {_view} %uclans_player_realname% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- <white>%uclans_player_nickname% <white> | <white>KDR: <white>%uclans_player_kdr%</hover></click>'
+  help clan banner list header: '<newline>%uclans_tag_color%<blue><bold> баннер:'
+  help clan banner list format:
+  - '<blue><bold>|</bold> <blue>Информация:'
+  - ' <white>Имеется баннер: <yellow>%uclans_hasbanner_formated%'
+  - ' <white>Баннер: <yellow>%uclans_banner_material%'
+  help clan list view header: '<newline><blue><bold> Список топ кланов:</bold> <newline> <white>Ордер: <white>%current%'
+  help clan list view format all: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% | <white>Creation: <white>%uclans_creation_date_formated% <white>| <white>Лидер: <white>%uclans_leader% | <white>Участников: <white>%uclans_count_members% <yellow>[CLICK]</hover></click>'
+  help clan list view format kill: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% | <white>Kills: <white>%uclans_clan_kills% <white>| <white>Лидер: <white>%uclans_leader% | <white>Участников: <white>%uclans_count_members% <yellow>[CLICK]</hover></click>'
+  help clan list view format death: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% | <white>Deaths: <white>%uclans_clan_deaths% <white>| <white>Лидер: <white>%uclans_leader% | <white>Участников: <white>%uclans_count_members% <yellow>[CLICK]</hover></click>'
+  help clan list view format kdr: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% | <white>Kdr: <white>%uclans_clan_kdr% <white>| <white>Лидер: <white>%uclans_leader% | <white>Участников: <white>%uclans_count_members% <yellow>[CLICK]</hover></click>'
+  help clan list view format member: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% | <white>Участников: <white>%uclans_count_members% <white>| <white>Лидер: <white>%uclans_leader% | <white>Участников: <white>%uclans_count_members% <yellow>[CLICK]</hover></click>'
+  help clan list view format bank: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% | <white>Bank: <white>%uclans_bank_balance_formated% <white>| <white>Лидер: <white>%uclans_leader% | <white>Участников: <white>%uclans_count_members% <yellow>[CLICK]</hover></click>'
+  help clan list view format level: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% | <white>Уровень: <white>%uclans_level% <white>| <white>Лидер: <white>%uclans_leader% | <white>Участников: <white>%uclans_count_members% <yellow>[CLICK]</hover></click>'
+  help clan list view format war: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% | <white>War: <white>%uclans_clan_war_win% <white>| <white>Лидер: <white>%uclans_leader% | <white>Участников: <white>%uclans_count_members% <yellow>[CLICK]</hover></click>'
+  help clan list view format point: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% | <white>Points: <white>%uclans_points% <white>| <white>Лидер: <white>%uclans_leader% | <white>Участников: <white>%uclans_count_members% <yellow>[CLICK]</hover></click>'
+  help clan list view format patent: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть.''> <white>- %uclans_tag_color% | <white>Патент: <white>%uclans_patent_formated% <white>| <white>Лидер: <white>%uclans_leader% | <white>Участников: <white>%uclans_count_members% <yellow>[CLICK]</hover></click>'
+  help clan invites list header: '<newline><white>%uclans_player_realname% <blue><bold>invitations List:'
+  help clan invites list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы увидеть информацию.''> <white>- <white>%uclans_tag_color% <white>| <white>Патент: <white>%uclans_patent_formated% <white>| <white>Участников: <white>%uclans_count_members%<white> | <white>Уровень: <white>%uclans_level%</hover></click> <click:suggest_command:"/{_clan} {_join} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы принять.''><white>[ПРИНЯТЬ]</hover></click> <click:suggest_command:"/{_clan} {_deny} %uclans_tag_nocolor% "><hover:show_text:''<white>Нажми, чтобы отклонить.''><white>[ОТКЛОНИТЬ]</hover></click>'
+  help clan profile view header: '<newline>%uclans_player_nickname% <blue><bold>информация профиля:'
+  help clan profile view format:
+  - '<blue><bold>|</bold> <blue>Игрок:'
+  - ' <white>Игрок: <yellow>%uclans_player_nickname%'
+  - '<blue><bold>|</bold> <blue>Информация:'
+  - ' <white>Ник: <yellow>%uclans_player_realname%'
+  - ' <white>Последний раз: <yellow>%uclans_player_lastsee_formated%'
+  - ' <white>KDR: <yellow>%uclans_player_kdr%'
+  - ' <white>Роль: <yellow>%uclans_player_role_formated%'
+  - '<blue><bold>|</bold> <blue>Settings:'
+  - ' <white>Приглашение в клан: <yellow>%uclans_player_settings_state:INVITATIONS%'
+  - ''
+  help clan settings view header: '<newline>%uclans_tag_color% <blue><bold>настройки клана:'
+  help clan settings view format:
+  - '<blue><bold>|</bold> <blue>Информация:'
+  - ' <white>Clan: <yellow>%uclans_tag_color%'
+  - '<blue><bold>|</bold> <blue>Settings:'
+  - ' <white>Приглашений на войну: <yellow>%uclans_settings_state:WARINVITE%'
+  - ' <white>Общий чат союзника: <yellow>%uclans_settings_state:ALLYSHAwhiteCHAT%'
+  - ' <white>Общие дома союзников: <yellow>%uclans_settings_state:ALLYSHAwhiteHOME%'
+  - ' <white>Присоединившихся/Покинувших: <yellow>%uclans_settings_state:JOINLEAVE%'
+  - ' <white>Дружественный огонь клана: <yellow>%uclans_settings_state:CLANFF%'
+  - ' <white>Участники управляющего дома: <yellow>%uclans_settings_state:MEMBERMANAGERHOMES%'
+  - ' <white>Участники управляющих войной: <yellow>%uclans_settings_state:MEMBERMANAGERWARS%'
+  - ' <white>Открыт для всех: <yellow>%uclans_settings_state:OPENED%'
+  - ' <white>Публичные дома: <yellow>%uclans_settings_state:PUBLICHOMES%'
+  - ''
+  help clan info view header: '<newline>%uclans_tag_color% <blue><bold>Информация о клане:'
+  help clan info view format:
+  - '<blue><bold>|</bold> <blue>Информация:'
+  - ' <white>Патент: <white>%uclans_patent_formated%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Дата создания: <yellow>%uclans_creation_date_formated%'
+  - ' <white>Верификация: <yellow>%uclans_verified%'
+  - ' <white>Слоты: <yellow>%uclans_slots% <white>(+%uclans_slots_extra%)'
+  - ' <white>Открыт для всех: <yellow>%uclans_isopen_formated%'
+  - ' <white>Участников: <yellow>%uclans_count_members% <white>(%uclans_count_onlinemembers% online)'
+  - '<blue><bold>|</bold> <blue>Kdr:'
+  - ' <white>Убийства: <yellow>%uclans_clan_kills%'
+  - ' <white>Смертей: <yellow>%uclans_clan_deaths%'
+  - ' <white>Общий KDR: <yellow>%uclans_clan_kdr%'
+  - '<blue><bold>|</bold> <blue>Status:'
+  - ' <white>Банк: <yellow>%uclans_bank_balance_formated%'
+  - ' <white>Души: <yellow>%uclans_clan_souls%'
+  - ' <white>Уровень: <yellow>%uclans_level% <white>(%uclans_max_level_reached% max.)'
+  - ' <white>Поинты: <yellow>%uclans_points%'
+  - ''
+  help info empty: <white>Ничего нету
+  help admin pagination prev: <click:run_command:"/uclan help %page%"><hover:show_text:'<white>Нажми, чтобы вернуться назад.'><yellow><< Предыдущая</hover></click>
+  help admin pagination next: <click:run_command:"/uclan help %page%"><hover:show_text:'<white>Нажмите, чтобы перейти.'><yellow>Следующая >></hover></click>
+  help admin pagination separer: <white>|
+  help player pagination prev: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<white>Нажми, чтобы вернуться назад.'><yellow><< Предыдущая</hover></click>
+  help player pagination next: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<white>Нажмите, чтобы перейтиe.'><yellow>Следующая >></hover></click>
+  help player pagination separer: <white>|
+  translaction players: игроки
+  translaction is on: <white>Онлайн
+  translaction is off: <white>Оффлайн
+  translaction yes: <yellow>ДА
+  translaction no: <white>НЕТ
+  translaction no clan: <white>Нету клана
+  translaction kill: Убийств
+  translaction death: Смертей
+  translaction kdr: KDR
+  translaction member: Участников
+  translaction bank: Банк
+  translaction level: Уровень
+  translaction war: Войны
+  translaction all: Все
+  translaction point: Поинты
+  translaction patent: Патент
+  clan dont leader: '%tag% <white>Ты не лидер Клана.'
+  clan dont permission role: '%tag% <white>Ваша текущая роль, вы не можете этого сделать.'
+  player no invitation: '%tag% <white>У вас нет приглашения в этот клан.'
+  clan dont mod and leader: '%tag% <white>Вы не являетесь лидером или модером клана.'
+  clan dont mod and leader gui: <white>Требуется <dark_white>Лидер <white>или <dark_white>Модератор<white>!
+  player dont mod: '%tag% <white>Этот игрок не является модератором.'
+  player is mod: '%tag% <white>Этот игрок уже модератор'
+  player offline: '%tag% <white>Игрок находится в оффлайн или не существует!'
+  player cannot expel leader: '%tag% <white>Вы не можете изгнать лидера клана, Абалдел?'
+  player cannot expel mod: '%tag% <white>Модератор не может исключить другого с той же должности.'
+  player is clan leader: '%tag% <white>Вы лидер клана, чтобы оставить использование <yellow>/{_clan} {_disband}<white> и вы удалите Клан...'
+  you donthave clan: '%tag% <white>У тебя нет Клана.'
+  player donthave clan: '%tag% <white>У этого игрока нет клана.'
+  player donthave profile: '%tag% <white>У этого игрока нет профиля.'
+  player already participating: '%tag% <white>Вы уже участвуете в этом клане!'
+  player new invite: '%tag% <white>Вы получили новое приглашение вступить в клан. вы можете принять, используя <yellow>/{_clan} {_join} <white><TAG> <white>или посмотрите список <yellow>/{_clan} {_profile} {_invites}'
+  player have clan: '%tag% <white>У тебя уже есть клан.'
+  player has clan: '%tag% <white>У этого игрока уже есть клан.'
+  player is you: '%tag% <white>Этот игрок - это вы.'
+  player dont have money: '%tag% <white>Тебе нужно <white>%uclans_money_currency%%amount% <white>для этого.'
+  player dont have money gui: <white>Тебе нужно <white>%uclans_money_currency%%amount%
+  player debited money: '%tag% <white>Сумма была списана <white>%amount% <yellow>на ваш аккаунт.'
+  player deposited money: '%tag% <white>%uclans_money_currency%%amount% <yellow>был внесен на ваш счет.'
+  player invitation player expiwhite: '%tag% <white>Срок действия вашего приглашения игрока истек, и ответа не было.'
+  player invitation expiwhite: '%tag% <white>Ваше приглашение вступить в Клан <white>%clan_tag% <white>истекло.'
+  player invitation daniel: '%tag% <white>Игрок отклонил приглашение.'
+  player already invited gui: <white>Приглашение для игрока в процессе игры!
+  player invitation error: '%tag% <white>Произошла ошибка при отправке приглашения.'
+  player invitation error gui: <white>Ошибка при отправке приглашения.
+  player invitation success: '%tag% <white>Приглашение было успешно отправлено.'
+  player invitation success gui: <white>Приглашение отправлено успешно!
+  gui error: '%tag% <white>Это меню содержит ошибку и не может быть открыто'
+  player teleport dont move: '%tag% <white>Готовя телепорт, не двигайтесь %sec%сек.'
+  player teleport moved: '%tag% <white>Вы переместились, и телепортация была отменена!!!'
+  player teleport true: '%tag% <white>Тебя телепортировали!'
+  player teleport false: '%tag% <white>Вы не были телепортированы ни по какой ошибке!'
+  unknown error: '%tag% <white>При этом произошла неизвестная ошибка, пожалуйста, попробуйте еще раз!'
+  nothing here: <white>Ничего нету.
+  clan empty name: <white><Без имени!>
+  clan empty desc: <white><Без описания!>
+  disabled function: '%tag% <white>Эта функция / дополнение, похоже, отключена.'
+  disabled function gui: <white>Эта функция отключена.
+  admin opened clanchest: '%tag% <white>Администратор открыл клановый сундук.'
+  top kdr format: '<yellow>%num%: <white>| <white>%uclans_tag_color% <white>| <white>Kdr: <yellow>%uclans_clan_kdr%'
+  top kill format: '<yellow>%num%: <white>| <white>%uclans_tag_color% <white>| <white>Убийтсв: <yellow>%uclans_clan_kills%'
+  top death format: '<yellow>%num%: <white>| <white>%uclans_tag_color% <white>| <white>Смертей: <yellow>%uclans_clan_deaths%'
+  top member format: '<yellow>%num%: <white>| <white>%uclans_tag_color% <white>| <white>Участников: <yellow>%uclans_count_members%'
+  top bank format: '<yellow>%num%: <white>| <white>%uclans_tag_color% <white>| <white>Банк: <yellow>%uclans_bank_balance%'
+  top level format: '<yellow>%num%: <white>| <white>%uclans_tag_color% <white>| <white>Уровень: <yellow>%uclans_level%'
+  top war format: '<yellow>%num%: <white>| <white>%uclans_tag_color% <white>| <white>%uclans_clan_war_win%<white>/<dark_white>%uclans_clan_war_lose%'
+  top point format: '<yellow>%num%: <white>| <white>%uclans_tag_color% <white>| <white>Поинты: <yellow>%uclans_points%'
+  clan new balance: '%tag% <white>Новый балансовый счет банка является <white>%uclans_money_currency%%uclans_bank_balance%<yellow>, изменено <white>%uclans_player%'
+  player reseted kdr: '%tag% <white>Игрок <white>%player% <yellow>был сброшен KDR!'
+  clan reseted kdr: '%tag% <white>Клан <white>%uclans_tag_color% <yellow>был сброшен KDR!'
+  value greater than zero: '%tag% <white>Значение должно быть больше нуля'
+  clan patent change: '%tag% <yellow>%uclans_tag_color% <yellow>клан сменил патент на <yellow>%uclans_patent_formated%'
+  clan not have levels: '%tag% <white>У клана нет уровней для удаления'
+  clan has only levels: '%tag% <white>Клан имеет только <yellow>%num% <white>уровень'
+  command in cooldown: '%tag% <white>Подождите <yellow>%sec% <white>чтобы снова использовать эту команду.'
+  error length: '%tag% <white>Tего значение должно иметь размер между <yellow>%min% <white>и <yellow>%max%'
+  state true: <white>ВКЛЮЧЕН
+  state false: <white>ОТКЛЮЧЕН
+  accept type: '%tag% <white>Тип недопустим, используйте: <yellow>%types%'
+  clan regroup invite expiwhite: '%tag% <white>Срок действия приглашения на перегруппировку истек!'
+  clan regroup invite doesnot exists: '%tag% <white>Запрос на перегруппировку не отправлен.'
+  clan regroup invite already exists: '%tag% <white>Уже отправлен запрос на перегруппировку.'
+  clan regroup invite deny: '%tag% <white>Игрок <white>%player% <white>отклонил в вашем запросе!'
+  clan regroup invite accept: '%tag% <white>Игрок <white>%player% <yellow>принял ваш запрос!'
+  clan regroup invite already denied: '%tag% <white>Вы уже отклонили запрос.'
+  clan regroup invite already accepted: '%tag% <white>Вы уже приняли запрос.'
+  clan has no members: '%tag% <white>В вашем клане нет участников.'
+  clan rival remove already invited: '%tag% <white>Уже есть запрос на мир от вашего клана или другого находящегося в процессе обращения к этому клану, подождите и попробуйте еще раз!'
+  clan rival remove error: '%tag% <white>Произошла ошибка при отправке запроса!'
+  clan rival remove moderation offline: '%tag% <white>В другом клане нет модераторов или онлайн-лидеров.'
+  clan rival remove sended: '%tag% <white>Запрос на мир отправлен, подождите, пока клан примет или отклонит.'
+  clan rival remove not found: '%tag% <white>Нет никаких просьб о мире.'
+  clan rival remove deny: '%tag% <white>Вы отклонили просьбу убрать соперничество.'
+  clan rival remove deny received: '%tag% <white>Другой клан отклонил просьбу о мире.'
+  clan rival remove expiwhite: '%tag% <white>Срок действия приглашения к миру истек!'
+  clan ally invite not found: '%tag% <white>Нет никаких приглашений для союзников.'
+  clan ally invite deny: '%tag% <white>Вы отклонили приглашение в альянс.'
+  clan ally invite already invited: '%tag% <white>Уже получено приглашение от вашего клана или другого находящегося в процессе приема в этот клан, подождите и попробуйте еще раз!'
+  clan ally invite error: '%tag% <white>Произошла ошибка при отправке запроса!'
+  clan ally invite moderation offline: '%tag% <white>В другом клане нет модераторов или онлайн-лидеров.'
+  clan ally invite sended: '%tag% <white>Приглашение отправлено, дождитесь, пока клан примет или отклонит.'
+  clan ally invite expiwhite: '%tag% <white>Срок действия приглашения в альянс истек!'
+  clan ally invite deny received: '%tag% <white>Другой клан отклонил просьбу о союзе.'
+  clan not have points: '%tag% <white>У клана нет очков для снятия'
+  clan has only points: '%tag% <white>Клан имеет <yellow>%num% <white>поинтов'
+  clan ally in limit: '%tag% <white>Ваш клан достиг предела союзников и нуждается в повышении уровней, чтобы разблокировать больше союзников, текущий лимит вашего клана составляет <yellow>%uclans_limit_ally%'
+  clan rival in limit: '%tag% <white>Ваш клан достиг предела соперничества и нуждается в повышении уровней, чтобы разблокировать больше соперничеств, текущий лимит вашего клана составляет <yellow>%uclans_limit_rival%'
+  clan create error: '%tag% <white>Произошла ошибка создания.'
+  clan create success: '%tag% <white>Новый клан создан успешно!'
+  command deprecated: '%tag% <white>Эта команда устарела и может быть удалена из настроек'
+  chan does not exists: '%tag% <white>Этого клана не существует'
+  need level min: '%tag% <white>Ваш клан должен иметь по крайней мере <yellow>%level% <white>для этого!'
+  player_leave: '%tag% <white>Участник <yellow>%player% <white>вышел с сервера.'
+  player_join: '%tag% <white>Участник <yellow>%player% <white>присоединился.'
+  home name without space: '%tag% <white>Имя не может содержать пробелов.'
+  home already exists: '%tag% <white>Уже есть дом с таким именем.'
+  home create success gui: <white>Новый дом успешно создан!
+  home no exists gui: <white>В этом доме произошла ошибка.
+  home delete error gui: <white>Произошла ошибка при удалении.
+  home delete success: '%tag% <white>Главная страница успешно удалена!'
+  home delete success gui: <white>Успешно удален!
+  new create home: '%tag% <white>На сервере <yellow>%server% <white>создан новый клановый дом с имененм <yellow>%name%'
+  home removed: '%tag% <white>Клановый дом <yellow>%name% <white>на сервере <yellow>%server% <white>был удален'
+  home limit: <white>Это ограничение (%limit%) для вашего клана!
+  home limit reached: '%tag% <white>Лимит для вашего клана составляет %homes% домов.'
+  new point received: '%tag% <white>Ваш клан получил <yellow>%points% поинтов<white>, и теперь имеет <yellow>%totalpoints% поинтов (%reason%)'
+  new point removed: '%tag% <white>Клан потерял <yellow>%points% поинов<white>, и теперь имеет <yellow>%totalpoints% поинтов (%reason%)'
+  new point set: '%tag% <white>Вашему клано количество поинтов было изменено на <yellow>%totalpoints% поинтов (%reason%)'
+  export mysql deconfigured: '%tag% <red>An error occurred, mysql fields are misconfigured.'
+  clan settings allysharedchat: <aqua>Ally shared chat
+  clan settings allysharedhome: <aqua>Ally shared homes
+  clan actions expired: '%tag% <red>The time for action is over.'
+  player invitation player expired: '%tag% <red>Your player invite has expired and there has been no response.'
+  player invitation expired: '%tag% <red>Your invitation to join the Clan <white>%clan_tag% <red>has expired.'
+  clan regroup invite expired: '%tag% <red>The invitation to regroup has expired!'
+  clan rival remove expired: '%tag% <red>The invitation to peace has expired!'
+  clan ally invite expired: '%tag% <red>The invitation to alliance has expired!'
+ 
+# TRANSLATIONS OF GUI MENU FILES
+ 
+GUI:
+  General disband_confirm title: <white>Подтвердить удаления клана?
+  General disband_confirm items fill name: ' '
+  General disband_confirm items fill lore: [
+    ]
+  General disband_confirm items confirm name: <white>Подтвердить
+  General disband_confirm items confirm lore:
+  - ''
+  - ' <white>Нажми, чтобы подтвердить.'
+  General disband_confirm items cancel name: <white>Отменить
+  General disband_confirm items cancel lore:
+  - ''
+  - ' <yellow>Нажми, чтобы отменить.'
+  General changeleader_confirm title: <white>Cconfirm changing Клан Leader?
+  General changeleader_confirm items fill name: ' '
+  General changeleader_confirm items fill lore: [
+    ]
+  General changeleader_confirm items confirm name: <white>Подтвердить
+  General changeleader_confirm items confirm lore:
+  - ''
+  - ' <white>Нажми, чтобы подтвердить.'
+  General changeleader_confirm items cancel name: <white>Отменить
+  General changeleader_confirm items cancel lore:
+  - ''
+  - ' <yellow>Нажми, чтобы отменить.'
+  General clan_homes title: <blue>Клановый дом
+  General clan_homes items fill name: ' '
+  General clan_homes items fill lore: [
+    ]
+  General clan_homes items ally_homes name: <white>Дома союзников
+  General clan_homes items ally_homes lore:
+  - ''
+  - ' <yellow>Нажми, чтобы открыть'
+  General clan_homes items create name: <white>Создать новый клан
+  General clan_homes items create lore:
+  - ''
+  - ' <yellow>Нажми, чтобы создать.'
+  General clan_homes items back name: <white>Вернуться назад
+  General clan_homes items back lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General clan_homes items next name: <white>Следующая страница
+  General clan_homes items next lore:
+  - ''
+  - ' <yellow>Нажми, чтобы продолжить.'
+  General clan_homes items previous name: <white>Предыдущая страница
+  General clan_homes items previous lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General clan_homes items current name: <white>Дом %uclans_home:{name}:name%
+  General clan_homes items current lore:
+  - ''
+  - ' <yellow>Информация дома'
+  - ' <white>'
+  - ' <white>Сервер: <white>%uclans_home:{name}:server%'
+  - ' <white>Имя: <yellow>%uclans_home:{name}:name%'
+  - ' <white>Локация: <yellow>%uclans_home:{name}:location%'
+  - ''
+  - ' <yellow>ЛКМ, для телепорта '
+  - ' <white>ПКМ, чтобы удалить.'
+  General clan_homes items current visit name: <white>Дом %uclans_home:{name}:name%
+  General clan_homes items current visit lore:
+  - ''
+  - ' <yellow>Информация дома'
+  - ' <white>'
+  - ' <white>Сервер: <white>%uclans_home:{name}:server%'
+  - ' <white>Имя: <yellow>%uclans_home:{name}:name%'
+  General clan_delhome_confirm title: <white>Подтвердить удаление <dark_white>%home_name% <white>?
+  General clan_delhome_confirm items fill name: ' '
+  General clan_delhome_confirm items fill lore: [
+    ]
+  General clan_delhome_confirm items confirm name: <white>Нажми, чтобы подтвердить
+  General clan_delhome_confirm items confirm lore:
+  - ' '
+  - ' <yellow>Нажми, чтобы подтвердить.'
+  General clan_delhome_confirm items cancel name: <white>Нажми, чтобы отменить
+  General clan_delhome_confirm items cancel lore:
+  - ' '
+  - ' <yellow>Нажми, чтобы отменить.'
+  General noclan_home title: <blue>Клан <white>| <white>Без клана
+  General noclan_home items fill name: ' '
+  General noclan_home items fill lore: [
+    ]
+  General noclan_home items fill2 name: ' '
+  General noclan_home items fill2 lore: [
+    ]
+  General noclan_home items commands name: <white>Список команд
+  General noclan_home items commands lore:
+  - ' <yellow>Нажмите, чтобы увидеть полный список команд'
+  General noclan_home items clans name: <white>Все кланы
+  General noclan_home items clans lore:
+  - ' <yellow>Нажми, чтобы открыть меню'
+  General noclan_home items create name: <white>Вы не имеете клан
+  General noclan_home items create lore:
+  - ' <yellow>Нажми, чтобы создать клан.'
+  General noclan_home items profile name: <white>Твой профиль
+  General noclan_home items profile lore:
+  - ' <yellow>Нажми, чтобы открыть твой профиль'
+  General clan_home title: <blue>Клан меню
+  General clan_home items fill name: ' '
+  General clan_home items fill lore: [
+    ]
+  General clan_home items fill2 name: ' '
+  General clan_home items fill2 lore: [
+    ]
+  General clan_home items info name: <white>Клан %uclans_tag_color%
+  General clan_home items info lore:
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Патент: <white>%uclans_patent_formated%'
+  - ''
+  - ' <white>Уровень клана: <white>%uclans_level%'
+  - ' <white>Поинты клана: <white>%uclans_points% <dark_gray>(%uclans_points_to_nextlevel% for next LevelUp)'
+  - ' <white>Банк: <white>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Описание: <yellow>%uclans_desc_color%'
+  - ' '
+  - ' <yellow>Нажмите, чтобы открыть список состояний.'
+  General clan_home items banner name: <white>Баннер клана
+  General clan_home items banner lore:
+  - ' '
+  - ' <yellow>Информация о баннере:'
+  - ''
+  - ' <white>Имеется баннер: <yellow>%uclans_hasbanner_formated%'
+  - ' <white>Банер: <yellow>%uclans_banner_material%'
+  - ' '
+  - ' <yellow>Баннер клана - это ваш бренд'
+  General clan_home items clans name: <white>Все кланны
+  General clan_home items clans lore:
+  - ' <yellow>Нажми, чтобы открыть меню.'
+  General clan_home items commands name: <white>Список команд и помощь
+  General clan_home items commands lore:
+  - ' <yellow>Нажмите, чтобы увидеть полный список команд'
+  General clan_home items settings name: <white>Настройки клана
+  General clan_home items settings lore:
+  - ' <yellow>Нажми, чтобы открыть'
+  General clan_home items home name: <white>Открыть мен дома
+  General clan_home items home lore:
+  - ' <yellow>Нажми, чтобы открыть'
+  General clan_home items ally name: <white>Союзники
+  General clan_home items ally lore:
+  - ' '
+  - ' <white>Союзников: <yellow>%uclans_clan_count_ally%'
+  - ' '
+  - ' <yellow>Нажми, чтобы открыть меню союзников.'
+  General clan_home items rival name: <white>Соперники
+  General clan_home items rival lore:
+  - ' '
+  - ' <white>Соперников: <yellow>%uclans_clan_count_rival%'
+  - ' '
+  - ' <yellow>Нажми, чтобы открыть меню соперников.'
+  General clan_home items members name: <white>Участники клана
+  General clan_home items members lore:
+  - ' '
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ' '
+  - ' <yellow>Нажми, чтобы открыть меню с участниками.'
+  General player_profile title: <blue>Профиль <white>| <white>%uclans_player%
+  General player_profile items head name: <white>%uclans_player%
+  General player_profile items head lore:
+  - ''
+  - ' <white>Клан: <yellow>%uclans_hasclan_formated%'
+  - ' <white>Роль: <yellow>%uclans_player_role_formated%'
+  - ' <white>Лидер: <yellow>%uclans_leader_formated%'
+  - ' '
+  - ' <white>Ник: <yellow>%uclans_player%'
+  - ' <white>Kdr: <yellow>%uclans_player_kills%<dark_gray>/<yellow>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <white>Присоединился: <yellow>%uclans_player_joindate_formated%'
+  - ' <white>Последний онлайн: <yellow>%uclans_player_lastsee_formated%'
+  General player_profile items invites name: <white>Приглашения.
+  General player_profile items invites lore:
+  - ''
+  - ' <yellow>Управлять входящими Приглашениями.'
+  - ' <yellow>Нажми, чтобы открыть'
+  General player_profile items settings name: <white>Настройки профиля.
+  General player_profile items settings lore:
+  - ''
+  - ' <yellow>Измените настройки своего профиля.'
+  - ' '
+  - ' <yellow>Нажми, чтобы открыть'
+  General player_profile items back name: <white>Вернуться домой
+  General player_profile items back lore:
+  - ' <yellow>Нажмите, чтобы вернуться домой'
+  General player_profile items fill name: ' '
+  General player_profile items fill lore: [
+    ]
+  General player_settings title: <blue>Меню настроек игрока
+  General player_settings items fill name: ' '
+  General player_settings items fill lore: [
+    ]
+  General player_settings items fill2 name: ' '
+  General player_settings items fill2 lore: [
+    ]
+  General player_settings items nickname name: <white>Измените видимый ник.
+  General player_settings items nickname lore:
+  - ''
+  - ' <white>Имя: <yellow>%uclans_player_realname%'
+  - ' <white>Текущие: <yellow>%uclans_player_nickname%'
+  - ''
+  - ' <yellow>ЛКМ, чтобы изменить.'
+  - ' <white>ПКМ, чтобы сбросить.'
+  General player_settings items skin name: <white>Обновить скин
+  General player_settings items skin lore:
+  - ''
+  - ' <yellow>Нажми, чтобы обновить скин.'
+  General player_settings items skin_cooldown name: <white>Скин обновлен!
+  General player_settings items skin_cooldown lore:
+  - ''
+  - ' <white>Подождите <yellow>%time%</yellow> <white>чтобы, обновить опять.'
+  General player_settings items invite name: <white>Клановые Приглашения.
+  General player_settings items invite lore:
+  - ''
+  - ' <white>Тип: %uclans_player_settings_state:INVITATIONS%'
+  - ''
+  - ' <yellow>Нажми, чтобы отключить.'
+  - ''
+  General player_settings items back name: <white>Вернуться
+  General player_settings items back lore:
+  - ' <yellow>Нажми, чтобы вернуться'
+  General clan_stats title: <blue>Статистика <white>| %uclans_tag_color%
+  General clan_stats items fill name: ' '
+  General clan_stats items fill lore: [
+    ]
+  General clan_stats items back name: <white>Вернуться назад
+  General clan_stats items back lore:
+  - ' <yellow>Нажми, чтобы вернуться назад'
+  General clan_stats items limits name: '<white>Клановые лимиты:'
+  General clan_stats items limits lore:
+  - ' '
+  - '<yellow>О лимитах:'
+  - ' '
+  - ' <white>Домов: <yellow>%uclans_limit_home%'
+  - ' <white>Союзников: <yellow>%uclans_limit_ally%'
+  - ' <white>Соперников: <yellow>%uclans_limit_rival%'
+  - ' <white>Слоты: <yellow>%uclans_slots_total%'
+  - ' '
+  - ' <yellow>Для повышения лимитов'
+  - <yellow>повышайте уровень клана.
+  General clan_stats items member_rival_ally name: '<white>Участники, соперники и союзники:'
+  General clan_stats items member_rival_ally lore:
+  - ' '
+  - '<yellow>О них:'
+  - ' '
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ' <white>Онлайн участников: <yellow>%uclans_count_onlinemembers%'
+  - ' <white>Союзников: <yellow>%uclans_clan_count_ally%'
+  - ' <white>Соперников: <yellow>%uclans_clan_count_rival%'
+  General clan_stats items others name: '<white>Остальная статистика:'
+  General clan_stats items others lore:
+  - ' '
+  - '<yellow>Остальное:'
+  - ' '
+  - ' <white>Участников присоединилось: <yellow>%uclans_clan_member_joined%'
+  - ' <white>Участников вышло: <yellow>%uclans_clan_member_leave%'
+  - ' <white>Участников изгнано: <yellow>%uclans_clan_member_kicked%'
+  - ' <white>Тег: <yellow>%uclans_clan_tag_changed%'
+  General clan_stats items status name: '<white>Статус:'
+  General clan_stats items status lore:
+  - ' '
+  - '<yellow>О статусе:'
+  - ' '
+  - ' <white>Банк: <white>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <white>Души: <white>%uclans_money_currency%%uclans_clan_souls%'
+  - ' <white>Уровень: <yellow>%uclans_level%'
+  - ' <white>Достигнут максимальный уровень: <yellow>%uclans_max_level_reached%'
+  - ' <white>Поинты клана: <yellow>%uclans_points%'
+  - ' <white>Квестов завершено: <yellow>%uclans_quest_finished%'
+  General clan_stats items war name: '<white>Статистика войнов:'
+  General clan_stats items war lore:
+  - ' '
+  - '<yellow>О войнах:'
+  - ' '
+  - ' <white>Выиграно: <yellow>%uclans_clan_war_win%'
+  - ' <white>Проигранно: <yellow>%uclans_clan_war_lose%'
+  - ' <white>Всего: <yellow>%uclans_clan_war_total%'
+  General clan_stats items kdr name: '<white>KDR:'
+  General clan_stats items kdr lore:
+  - ' '
+  - '<yellow>О KDR:'
+  - ' '
+  - ' <white>Убийств: <yellow>%uclans_clan_kills%'
+  - ' <white>Смертей: <yellow>%uclans_clan_deaths%'
+  - ' <white>KDK вообщем: <yellow>%uclans_clan_kdr%'
+  General clan_stats items banner name: <white>Банне клана
+  General clan_stats items banner lore:
+  - ' '
+  - ' <yellow>Информация о баннере:'
+  - ''
+  - ' <white>Имеется баннер: <yellow>%uclans_hasbanner_formated%'
+  General clan_stats items foundation name: '<white>Основа:'
+  General clan_stats items foundation lore:
+  - ' '
+  - '<yellow>Об основе:'
+  - ' '
+  - ' <white>Патент: <white>%uclans_patent_formated%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Дата создания: <yellow>%uclans_creation_date_formated%'
+  - ' <white>Верификация: <white>%uclans_verified%'
+  - ' <white>Слоты: <white>%uclans_slots% <dark_gray>(+%uclans_slots_extra%)'
+  - ' <white>Открыт для всех: <white>%uclans_isopen_formated%'
+  - ' '
+  - ' <white>Модераторы (%uclans_count_moderators%):'
+  - '  <white>%uclans_moderators%'
+  General clan_stats items members name: <white>Список участников
+  General clan_stats items members lore:
+  - ' '
+  - ' <white>Участники: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>Нажми, чтобы открыть'
+  General clan_stats items homes name: <white>Список домов
+  General clan_stats items homes lore:
+  - ' '
+  - ' <white>Дома: <yellow>%uclans_home%'
+  - ''
+  - ' <yellow>Нажми, чтобы открыть'
+  General clan_settings title: <white>Меню настроек
+  General clan_settings items fill name: ' '
+  General clan_settings items fill lore: [
+    ]
+  General clan_settings items fill2 name: ' '
+  General clan_settings items fill2 lore: [
+    ]
+  General clan_settings items clan_roles name: <white>Клановые роли
+  General clan_settings items clan_roles lore:
+  - ''
+  - ' <yellow>Управление клановыми ролями.'
+  - ' <yellow>Нажми, чтобы открыть'
+  General clan_settings items member_ban name: <white>Заблокированные участники
+  General clan_settings items member_ban lore:
+  - ''
+  - ' <white>Заблокированные: <yellow>%uclans_count_banned%'
+  - ''
+  - ' <white>Забаненные игроки не могут вступить '
+  - <white>в клан, если он открыт, и их нельзя пригласить снова.
+  - ''
+  - ' <yellow>Нажми, чтобы открыть'
+  General clan_settings items clan_edit name: <white>Изменить клан.
+  General clan_settings items clan_edit lore:
+  - ''
+  - ' <yellow>Настройки клановых изменений.'
+  - ' <yellow>Нажми, чтобы открыть'
+  General clan_settings items back name: <white>Вернуться назад
+  General clan_settings items back lore:
+  - ' <yellow>Нажми, чтобы вернуться назад'
+  General clan_roles title: <white>Clan Roles
+  General clan_roles items fill name: ' '
+  General clan_roles items fill lore: [
+    ]
+  General clan_roles items fill2 name: ' '
+  General clan_roles items fill2 lore: [
+    ]
+  General clan_roles items back name: <white>Вернуться назад
+  General clan_roles items back lore:
+  - ' <yellow>Нажми, чтобы вернуться назад'
+  General clan_roles items update name: <white>Синхронизация разрешений
+  General clan_roles items update lore:
+  - ' <yellow>Нажмите, чтобы синхронизировать с настройками по умолчанию'
+  General clan_roles items blocked name: <white>%name%
+  General clan_roles items blocked lore:
+  - ' '
+  - ' <yellow>Вы не можете редактировать эту роль'
+  General clan_roles_editor title: <white>Настройка разрешений <white>| <yellow>%name%
+  General clan_roles_editor items fill name: ' '
+  General clan_roles_editor items fill lore: [
+    ]
+  General clan_roles_editor items next name: <white>Далее
+  General clan_roles_editor items next lore:
+  - ' <yellow>Нажми, чтобы перейти дальше'
+  General clan_roles_editor items previous name: <white>Предыдущее
+  General clan_roles_editor items previous lore:
+  - ' <yellow>Нажми, чтобы перейти назад'
+  General clan_roles_editor items back name: <white>Вернуться назад
+  General clan_roles_editor items back lore:
+  - ' <yellow>Нажми, чтобы вернуться назад'
+  General clan_roles_editor items current name: <white>%key%
+  General clan_roles_editor items current lore:
+  - ' '
+  - ' <white>Тип: %value%'
+  - ''
+  - ' <yellow>Нажми, чтобы отключить'
+  General banned_members title: <white>Забаненые игроки <white>| <yellow>%amount%
+  General banned_members items fill name: ' '
+  General banned_members items fill lore: [
+    ]
+  General banned_members items next name: <white>Далее
+  General banned_members items next lore:
+  - ' <yellow>Нажми, чтобы перейти дальше'
+  General banned_members items previous name: <white>Предыдущее
+  General banned_members items previous lore:
+  - ' <yellow>Нажми, чтобы перейти назад'
+  General banned_members items current name: <yellow>%uclans_player%
+  General banned_members items current lore:
+  - ' <yellow>Нажми, чтобы <white>РАЗБАНИТЬ</white><yellow> игрока.'
+  General banned_members items add name: <white>Выдать бан
+  General banned_members items add lore:
+  - ' <yellow>Нажми, чтобы забанить.'
+  General banned_members items back name: <white>Вернуться назад
+  General banned_members items back lore:
+  - ' <yellow>Нажми, чтобы вернуться назад'
+  General clan_actions title: <white>Изменения клана
+  General clan_actions items fill name: ' '
+  General clan_actions items fill lore: [
+    ]
+  General clan_actions items fill2 name: ' '
+  General clan_actions items fill2 lore: [
+    ]
+  General clan_actions items desc name: <white>Изменить описание
+  General clan_actions items desc lore:
+  - ' <yellow>Нажми, чтобы изменить описание клана.'
+  General clan_actions items modtag name: <white>Изменить тег клана
+  General clan_actions items modtag lore:
+  - ' <yellow>Нажми, чтобы изменить тег клана'
+  General clan_actions items join_leave name: <white>Присоединившиеся/Покинувшие
+  General clan_actions items join_leave lore:
+  - ' '
+  - ' <white>Тип: %uclans_actions_state:JOINLEAVE%'
+  - ''
+  - ' <yellow>Нажми, чтобы отключить '
+  - ' '
+  General clan_actions items opened name: <white>Открыт для всех
+  General clan_actions items opened lore:
+  - ' '
+  - ' <white>Тип: %uclans_actions_state:OPENED%'
+  - ''
+  General clan_actions items publichomes name: <white>Публичные дома
+  General clan_actions items publichomes lore:
+  - ' '
+  - ' <white>Тип: %uclans_actions_state:PUBLICHOMES%'
+  - ''
+  General clan_actions items ff name: <white>Огонь по своим
+  General clan_actions items ff lore:
+  - ' '
+  - ' <white>Тип: %uclans_actions_state:CLANFF%'
+  - ''
+  - ' <yellow>Нажми, чтобы отключить '
+  - ' '
+  General clan_actions items allyshawhitehome name: <white>Разделенные дома союзников
+  General clan_actions items allyshawhitehome lore:
+  - ' '
+  - ' <white>Тип: %uclans_actions_state:ALLYSHAwhiteHOME%'
+  - ''
+  - ' <yellow>Нажми, чтобы отключить '
+  - ' '
+  General clan_actions items allyshawhitechat name: <white>Разделенный чат с союзниками
+  General clan_actions items allyshawhitechat lore:
+  - ' '
+  - ' <white>Тип: %uclans_actions_state:ALLYSHAwhiteCHAT%'
+  - ''
+  - ' <yellow>Нажми, чтобы отключить '
+  - ' '
+  General clan_actions items warinvite name: <white>Приглашения на войну
+  General clan_actions items warinvite lore:
+  - ' '
+  - ' <white>Тип: %uclans_actions_state:WARINVITE%'
+  - ''
+  - ' <yellow>Нажми, чтобы отключить '
+  - ' '
+  General clan_actions items delete name: <white>Удалить Клан
+  General clan_actions items delete lore:
+  - ' <yellow>Нажми, чтобы удалить клан'
+  - ''
+  - ' <white>Только Лидер может это сделать!'
+  - ' <white>Это снимет защиту с вашей земли,'
+  - ' <white>для этого требуется подтверждение в чате!'
+  - ' '
+  - ' <white>Внимание, это действие нельзя отменить!'
+  General clan_actions items back name: <white>Вернуться назад
+  General clan_actions items back lore:
+  - ' <yellow>Нажми, чтобы вернуться назад'
+  General clan_top title: <blue>Список кланов <white>| <white>%current%
+  General clan_top items fill name: ' '
+  General clan_top items fill lore: [
+    ]
+  General clan_top items fill2 name: ' '
+  General clan_top items fill2 lore: [
+    ]
+  General clan_top items fill3 name: ' '
+  General clan_top items fill3 lore: [
+    ]
+  General clan_top items active name: ' <white>Текущий'
+  General clan_top items active lore: [
+    ]
+  General clan_top items all name: <white>Все кланы
+  General clan_top items all lore:
+  - ' <yellow>Нажми, чтобы увидеть'
+  - ' '
+  General clan_top items kdr name: <white>Топ KDR
+  General clan_top items kdr lore:
+  - ' <yellow>Нажми, чтобы увидеть'
+  - ' '
+  General clan_top items kill name: <white>Топ УБИЙСТВ
+  General clan_top items kill lore:
+  - ' <yellow>Нажми, чтобы увидеть'
+  - ' '
+  General clan_top items death name: <white>Топ СМЕРТЕЙ
+  General clan_top items death lore:
+  - ' <yellow>Нажми, чтобы увидеть'
+  - ' '
+  General clan_top items bank name: <white>Топ по БАНКУ
+  General clan_top items bank lore:
+  - ' <yellow>Нажми, чтобы увидеть'
+  - ' '
+  General clan_top items member name: <white>Топ по УЧАСТНИКАМ
+  General clan_top items member lore:
+  - ' <yellow>Нажми, чтобы увидеть'
+  - ' '
+  General clan_top items level name: <white>Топ по УРОВНЮ
+  General clan_top items level lore:
+  - ' <yellow>Нажми, чтобы увидеть'
+  - ' '
+  General clan_top items war name: <white>Топ по ВОЙНАМ
+  General clan_top items war lore:
+  - ' <yellow>Нажми, чтобы увидеть'
+  - ' '
+  General clan_top items point name: <white>Топ по ПОИНТАМ
+  General clan_top items point lore:
+  - ' <yellow>Нажми, чтобы увидеть'
+  - ' '
+  General clan_top items patent name: <white>Топ по ПАТЕНТУ
+  General clan_top items patent lore:
+  - ' <yellow>Нажми, чтобы увидеть'
+  - ' '
+  General clan_top items current_war name: <white>Клан %uclans_tag_color%
+  General clan_top items current_war lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Выйгранно войн: <white>%uclans_clan_war_win%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items current_bank name: <white>Clan %uclans_tag_color%
+  General clan_top items current_bank lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Банк: <white>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items current_member name: <white>Clan %uclans_tag_color%
+  General clan_top items current_member lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Участников: <white>%uclans_count_members%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items current_death name: <white>Clan %uclans_tag_color%
+  General clan_top items current_death lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Смертей: <white>%uclans_clan_deaths%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items current_kill name: <white>Clan %uclans_tag_color%
+  General clan_top items current_kill lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Убийств: <white>%uclans_clan_kills%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items current_kdr name: <white>Clan %uclans_tag_color%
+  General clan_top items current_kdr lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>KDR: <white>%uclans_clan_kdr%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items current_level name: <white>Clan %uclans_tag_color%
+  General clan_top items current_level lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Уровень: <white>%uclans_level%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items current_point name: <white>Clan %uclans_tag_color%
+  General clan_top items current_point lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Поинты: <white>%uclans_points%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items current_all name: <white>Clan %uclans_tag_color%
+  General clan_top items current_all lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Дата создания: <white>%uclans_creation_date_formated%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items current_patent name: <white>Clan %uclans_tag_color%
+  General clan_top items current_patent lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Патент: <white>%uclans_patent_formated%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items current name: <white>Clan %uclans_tag_color%
+  General clan_top items current lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Уровень: <white>%uclans_level%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General clan_top items next name: <white>Далее
+  General clan_top items next lore:
+  - ' <yellow>Нажми, чтобы перейти дальше'
+  General clan_top items previous name: <white>Предыдущее
+  General clan_top items previous lore:
+  - ' <yellow>Нажми, чтобы перейти назад'
+  General clan_top items back name: <white>Вернуться назад
+  General clan_top items back lore:
+  - ' <yellow>Нажми, чтобы вернуться назад'
+  General clan_members_invite title: <blue>Приглашенные игроки
+  General clan_members_invite items fill name: ' '
+  General clan_members_invite items fill lore: [
+    ]
+  General clan_members_invite items back name: <white>Вернуться назад
+  General clan_members_invite items back lore:
+  - ' <yellow>Нажми, чтобы вернуться назад'
+  General clan_members_invite items current name: <white>%uclans_player%
+  General clan_members_invite items current lore:
+  - ''
+  - ' <white>Ник: <yellow>%uclans_player%'
+  - ' <white>Kdr: <yellow>%uclans_player_kills%<dark_gray>/<yellow>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <white>Присоединился: <yellow>%uclans_player_joindate_formated%'
+  - ' <white>Последний онлайн: <yellow>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <yellow>Нажми, чтобы пригласить.'
+  General clan_members_invite items search name: <white>Поиск
+  General clan_members_invite items search lore:
+  - ' <yellow>Нажми, чтобы найти игрока.'
+  General clan_search_members_invite title: <blue>Поиск <white>| <dark_white>%amount% result(s)<white>
+  General clan_search_members_invite items fill name: ' '
+  General clan_search_members_invite items fill lore: [
+    ]
+  General clan_search_members_invite items back name: <white>Вернуться назад
+  General clan_search_members_invite items back lore:
+  - ' <yellow>Нажми, чтобы вернуться назад'
+  General clan_search_members_invite items current name: <white>%uclans_player%
+  General clan_search_members_invite items current lore:
+  - ''
+  - ' <white>Ник: <yellow>%uclans_player%'
+  - ' <white>Kdr: <yellow>%uclans_player_kills%<dark_gray>/<yellow>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <white>Присоединился: <yellow>%uclans_player_joindate_formated%'
+  - ' <white>Последний онлайн: <yellow>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <yellow>Нажми, чтобы пригласить.'
+  General rival title: <blue>Список соперников <white>| %uclans_tag_color%
+  General rival items fill name: ' '
+  General rival items fill lore: [
+    ]
+  General rival items back name: <white>Вернуться назад
+  General rival items back lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General rival items next name: <white>Следующая страница
+  General rival items next lore:
+  - ''
+  - ' <yellow>Нажми, чтобы продолжить.'
+  General rival items previous name: <white>Предыдущая страница
+  General rival items previous lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General rival items current name: <white>Клан %uclans_tag_color%
+  General rival items current lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Уровень: <white>%uclans_level%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General ally title: <blue>Список союзников <white>| %uclans_tag_color%
+  General ally items fill name: ' '
+  General ally items fill lore: [
+    ]
+  General ally items back name: <white>Вернуться назад
+  General ally items back lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General ally items next name: <white>Следующая страница
+  General ally items next lore:
+  - ''
+  - ' <yellow>Нажми, чтобы продолжить.'
+  General ally items previous name: <white>Предыдущая страница
+  General ally items previous lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General ally items current name: <white>Клан %uclans_tag_color%
+  General ally items current lore:
+  - ''
+  - ' <yellow>Информация клана'
+  - ' <white>'
+  - ' <white>Уровень: <white>%uclans_level%'
+  - ' <white>'
+  - ' <white>Тег: <yellow>%uclans_tag_color%'
+  - ' <white>Лидер: <yellow>%uclans_leader%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ПКМ, чтобы увидеть информацию.'
+  General members title: <blue>Список участников <white>| %uclans_tag_color%
+  General members items fill name: ' '
+  General members items fill lore: [
+    ]
+  General members items back name: <white>Вернуться назад
+  General members items back lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General members items next name: <white>Следующая страница
+  General members items next lore:
+  - ''
+  - ' <yellow>Нажми, чтобы продолжить.'
+  General members items previous name: <white>Предыдущая страница
+  General members items previous lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General members items invite name: <white>Invite players
+  General members items invite lore:
+  - ' <yellow>Нажми, чтобы пригласить new members'
+  General members items current name: <white>%uclans_player%
+  General members items current lore:
+  - ''
+  - ' <white>Роль: <yellow>%uclans_player_role_formated%'
+  - ' <white>Ник: <yellow>%uclans_player%'
+  - ' <white>Kdr: <yellow>%uclans_player_kills%<dark_gray>/<yellow>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <white>Присоединился: <yellow>%uclans_player_joindate_formated%'
+  - ' <white>Последний онлайн: <yellow>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <yellow>Нажми, чтобы увидеть profile.'
+  General listhomes title: <blue>Список домов <white>| %uclans_tag_color%
+  General listhomes items fill name: ' '
+  General listhomes items fill lore: [
+    ]
+  General listhomes items back name: <white>Вернуться назад
+  General listhomes items back lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General listhomes items next name: <white>Следующая страница
+  General listhomes items next lore:
+  - ''
+  - ' <yellow>Нажми, чтобы продолжить.'
+  General listhomes items previous name: <white>Предыдущая страница
+  General listhomes items previous lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General listhomes items current name: <white>Дом %uclans_home:{name}:name%
+  General listhomes items current lore:
+  - ''
+  - ' <yellow>Информация о доме'
+  - ' <white>'
+  - ' <white>Сервер: <white>%uclans_home:{name}:server%'
+  - ' <white>Имя: <yellow>%uclans_home:{name}:name%'
+  - ' <white>Локация: <yellow>%uclans_home:<num>:location%'
+  General clan_allyhome title: <blue>Дома союзников
+  General clan_allyhome items back name: <white>Вернуться назад
+  General clan_allyhome items back lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General clan_allyhome items next name: <white>Следующая страница
+  General clan_allyhome items next lore:
+  - ''
+  - ' <yellow>Нажми, чтобы продолжить.'
+  General clan_allyhome items previous name: <white>Предыдущая страница
+  General clan_allyhome items previous lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General clan_allyhome items current name: <white>Дома %uclans_home:{name}:name% клана %uclans_tag_color%.
+  General clan_allyhome items current lore:
+  - ''
+  - ' <yellow>Информация о доме'
+  - ' <white>'
+  - ' <white>Клан: <yellow>%uclans_tag_color%'
+  - ' <white>Сервер: <white>%uclans_home:{name}:server%'
+  - ' <white>Имя: <yellow>%uclans_home:{name}:name%'
+  - ''
+  - ' <yellow>Left-Click to teleport.'
+  General clan_allyhome items fill name: ' '
+  General clan_allyhome items fill lore: [
+    ]
+  General invites title: <blue>Список приглашений <white>| <white>%uclans_player_name%
+  General invites items fill name: ' '
+  General invites items fill lore: [
+    ]
+  General invites items back name: <white>Вернуться назад
+  General invites items back lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General invites items next name: <white>Следующая страница
+  General invites items next lore:
+  - ''
+  - ' <yellow>Нажми, чтобы продолжить.'
+  General invites items previous name: <white>Предыдущая страница
+  General invites items previous lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General invites items current name: <white>Приглашение к %uclans_tag_color%
+  General invites items current lore:
+  - ''
+  - ' <yellow>Информация о приглашении'
+  - ' <white>'
+  - ' <white>Клан: <white>%uclans_tag_color%'
+  - ' <white>Патент: <yellow>%uclans_patent_formated%'
+  - ' <white>Уровень: <yellow>%uclans_level%'
+  - ' <white>Участников: <yellow>%uclans_count_members%'
+  - ''
+  - ' <yellow>ЛКМ, чтобы принять.'
+  - ' <white>ПКМ, чтобы отклонить.'
+  General banner_home title: <blue><bold>Меню баннеров
+  General banner_home items fill name: ' '
+  General banner_home items fill lore: [
+    ]
+  General banner_home items fill2 name: ' '
+  General banner_home items fill2 lore: [
+    ]
+  General banner_home items current name: <white>Текущий баннер
+  General banner_home items current lore:
+  - ' '
+  - ' <yellow>Клановый баннер - это ваш бренд.'
+  - ''
+  General banner_home items upload name: <white>Загрузить
+  General banner_home items upload lore:
+  - ''
+  - ' <yellow>Нажми, чтобы открыть меню загрузки.'
+  General banner_home items delete name: <white>Удалить баннер
+  General banner_home items delete lore:
+  - ''
+  - ' <yellow>Нажми, чтобы удалить текущий баннер.'
+  General banner_home items pre name: <white>Предварительно созданные баннера.
+  General banner_home items pre lore:
+  - ''
+  - ' <yellow>Нажми, чтобы открыть список.'
+  General banner_home items back name: <white>Вернуться назад
+  General banner_home items back lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  General banner_delete title: <white>Подтвердить удаление баннера?
+  General banner_delete items fill name: ' '
+  General banner_delete items fill lore: [
+    ]
+  General banner_delete items confirm name: <white>Подтвердить
+  General banner_delete items confirm lore:
+  - ''
+  - ' <white>Нажми, чтобы подтвердить.'
+  General banner_delete items cancel name: <white>Отменить
+  General banner_delete items cancel lore:
+  - ''
+  - ' <yellow>Нажми, чтобы отменить.'
+  General banner_upload title: <blue><bold>Загрузка баннера
+  General banner_upload items fill name: ' '
+  General banner_upload items fill lore: [
+    ]
+  General banner_upload items fill2 name: <white>Разместите свой новый баннер здесь!
+  General banner_upload items fill2 lore:
+  - ' '
+  General banner_upload items upload_slot name: ''
+  General banner_upload items upload_slot lore: [
+    ]
+  General banner_upload items back name: <white>Вернуться назад
+  General banner_upload items back lore:
+  - ''
+  - ' <white>Нажми, чтобы вернуться назад.'
+  General banner_upload items confirm name: <white>Нажми, чтобы сохранить
+  General banner_upload items confirm lore:
+  - ''
+  - ' <yellow>Нажми, для сохранения.'
+  General clan_actions items allysharedhome name: <green>Allied shared Home
+  General clan_actions items allysharedhome lore:
+  - ' '
+  - ' <white>State: %uclans_actions_state:ALLYSHAREDHOME%'
+  - ''
+  - ' <yellow>Click to toggle '
+  - ' '
+  - ' <red>When disabled, your clan''s homes will'
+  - <red>not appear in the allied home list.
+  General clan_actions items allysharedchat name: <green>Allied shared chat
+  General clan_actions items allysharedchat lore:
+  - ' '
+  - ' <white>State: %uclans_actions_state:ALLYSHAREDCHAT%'
+  - ''
+  - ' <yellow>Click to toggle '
+  - ' '
+  - ' <red>When disabled, your clan does not'
+  - <red>receive or send messages from allies.
+ 
+ 
+ # TRANSLATIONS OF THE COMMANDS
+ 
+COMMANDS:
+  clan help show on_help: <click:suggest_command:"/{_clan} {_help}"><hover:show_text:'<white>Нажми, чтобы увидеть помощь.'> <yellow>/{_clan} {_help} <white>-<yellow> Увидеть меню помощи.</hover></click>
+  clan help show on_success: '%tag% <white>Вы обращаетесь за помощью!'
+  clan help show on_error: '%tag% <white>Ошибка..'
+  clan help show on_usage: '%tag% <white>Используйте <yellow>/{_clan} {_help}'
+  clan create show on_help: <click:suggest_command:"/{_clan} {_create} "><hover:show_text:'<white>Create a new Clan.'> <yellow>/{_clan} {_create} <white><tag> <white>-<yellow> Нажми, чтобы создать a new Clan.</hover></click>
+  clan create show on_success: '%tag% <white>Вы создали клан!'
+  clan create show on_error: '%tag% <white>Ошибка..'
+  clan create show on_usage: '%tag% <white>Используйте <yellow>/{_clan} {_create} <white><tag>'
+  clan cancel show on_help: <click:suggest_command:"/{_clan} {_cancel}"><hover:show_text:'<white>Нажми, чтобы отменить.'> <yellow>/{_clan} {_cancel} <white>-<yellow> Отменить действие.</hover></click>
+  clan cancel show on_success: '%tag% <white>Вы успешно отменили!!'
+  clan cancel show on_error: '%tag% <white>Ошибка..'
+  clan cancel show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_cancel}'
+  clan changeleader show on_help: <click:suggest_command:"/{_clan} {_changeleader} "><hover:show_text:'<white>Нажмите, чтобы передать руководство.'> <yellow>/{_clan} {_changeleader} <white><player> <white>-<yellow> Передача руководства.</hover></click>
+  clan changeleader show on_success: '%tag% <white>Вы изменили лидера клана на %clan_leader%'
+  clan changeleader show on_error: '%tag% <white>Ошибка..'
+  clan changeleader show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_changeleader} <white><player>'
+  clan desc show on_help: <click:suggest_command:"/{_clan} {_desc} "><hover:show_text:'<white>Нажми, чтобы добавить/изменить описание.'> <yellow>/{_clan} {_desc} <white><description> <white>-<yellow> Добавить/изменить описание клана.</hover></click>
+  clan desc show on_success: '%tag% <white>Вы изменили описание клана!'
+  clan desc show on_error: '%tag% <white>Ошибка..'
+  clan desc show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_desc} <description>'
+  clan disband show on_help: <click:suggest_command:"/{_clan} {_disband}"><hover:show_text:'<white>Нажми, чтобы расформировать клан.'> <yellow>/{_clan} {_disband} <white>-<yellow> Удалить клан.</hover></click>
+  clan disband show on_success: '%tag% <white>Вы расформировали клан!'
+  clan disband show on_error: '%tag% <white>Ошибка..'
+  clan disband show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_disband}'
+  clan leave show on_help: <click:suggest_command:"/{_clan} {_leave}"><hover:show_text:'<white>Нажми, чтобы покинуть клан.'> <yellow>/{_clan} {_leave} <white>-<yellow> Покинуть клан.</hover></click>
+  clan leave show on_success: '%tag% <white>Вы покинули клан!'
+  clan leave show on_error: '%tag% <white>Ошибка..'
+  clan leave show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_leave}'
+  clan join show on_help: <click:suggest_command:"/{_clan} {_join} "><hover:show_text:'<white>Нажми, чтобы принять приглашение.'> <yellow>/{_clan} {_join} <white><tag> <white>-<yellow> Принять приглашение.</hover></click>
+  clan join show on_success: '%tag% <white>Вы приняли приглашение в Клан!'
+  clan join show on_error: '%tag% <white>Ошибка..'
+  clan join show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_join} <white><tag>'
+  clan deny show on_help: <click:suggest_command:"/{_clan} {_deny} "><hover:show_text:'<white>Нажми, чтобы отменить приглашение.'> <yellow>/{_clan} {_deny} <white><tag> <white>-<yellow> Отклонить приглашение.</hover></click>
+  clan deny show on_success: '%tag% <white>Вы отклонили приглашение!'
+  clan deny show on_error: '%tag% <white>Ошибка..'
+  clan deny show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_deny} <white><tag>'
+  clan promote show on_help: <click:suggest_command:"/{_clan} {_promote} "><hover:show_text:'<white>Нажми, чтобы повысить участника.'> <yellow>/{_clan} {_promote} <white><player> <white>-<yellow> Повышение участника.</hover></click>
+  clan promote show on_success: '%tag% <white>Игрок был повышен.'
+  clan promote show on_error: '%tag% <white>Ошибка..'
+  clan promote show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_promote} <white><player>'
+  clan demote show on_help: <click:suggest_command:"/{_clan} {_demote} "><hover:show_text:'<white>Click to demote a player.'> <yellow>/{_clan} {_demote} <white><player> <white>-<yellow> Понижение участника.</hover></click>
+  clan demote show on_success: '%tag% <white>Игрок был понижен в клане.'
+  clan demote show on_error: '%tag% <white>Ошибка..'
+  clan demote show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_demote} <white><player>'
+  clan home show on_help: <click:run_command:"/{_clan} {_home} "><hover:show_text:'<white>Нажмите, чтобы развернуть начальные команды.'> <yellow>/{_clan} {_home} <white>-<yellow> Клановы дом.</hover></click> <hover:show_text:'<white>Подкоманды.'><white>[!]</hover>
+  clan home show on_success: '%tag% <white>Успешно!'
+  clan home show on_error: '%tag% <white>Ошибка..'
+  clan home show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_home}'
+  clan home subcommands create: <click:suggest_command:"/{_clan} {_home} {_create} "><hover:show_text:'<white>Нажми, чтобы создать.'> <yellow>/{_clan} {_home} {_create} <white><name> <yellow>(password)<white>-<yellow> Создать дом.</hover></click>
+  clan home subcommands create show on_success: '%tag% <white>Вы успешно создали новый дом.'
+  clan home subcommands create show on_error: '%tag% <white>Ошибка..'
+  clan home subcommands create show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_home} {_create} <white><name> <yellow>(password)'
+  clan home subcommands delete: <click:suggest_command:"/{_clan} {_home} {_delete} "><hover:show_text:'<white>Нажмите, чтобы удалить дом.'> <yellow>/{_clan} {_home} {_delete} <white><name> <white>-<yellow> Удалить дом.</hover></click>
+  clan home subcommands delete show on_success: '%tag% <white>The new clan home has been successfully deleted.'
+  clan home subcommands delete show on_error: '%tag% <white>Ошибка..'
+  clan home subcommands delete show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_home} {_delete} <white><name>'
+  clan home subcommands list: <click:suggest_command:"/{_clan} {_home} {_list} "><hover:show_text:'<white>Нажми, чтобы увидеть список всех домов.'> <yellow>/{_clan} {_home} {_list} <yellow>(tag) <yellow>(-gui) <white>-<yellow> Список всех домов.</hover></click>
+  clan home subcommands list show on_success: '%tag% <white>Успешно!'
+  clan home subcommands list show on_error: '%tag% <white>Ошибка..'
+  clan home subcommands list show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_home} {_list} <yellow>(tag) <yellow>(-gui)'
+  clan home subcommands teleport: <click:suggest_command:"/{_clan} {_home} {_teleport} "><hover:show_text:'<white>Нажми, чтобы телепортироваться домой.'> <yellow>/{_clan} {_home} {_teleport} <white><name> <white>-<yellow> Телепорт домой.</hover></click>
+  clan home subcommands teleport show on_success: '%tag% <white>Успешно!'
+  clan home subcommands teleport show on_error: '%tag% <white>Ошибка..'
+  clan home subcommands teleport show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_home} {_teleport} <white><name>'
+  clan home subcommands view: <click:suggest_command:"/{_clan} {_home} {_view} "><hover:show_text:'<white>Нажми, чтобы увидеть дома.'> <yellow>/{_clan} {_home} {_view} <white><name> <white>-<yellow> Увидеть дома.</hover></click>
+  clan home subcommands view show on_success: '%tag% <white>Успешно!'
+  clan home subcommands view show on_error: '%tag% <white>Ошибка..'
+  clan home subcommands view show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_home} {_view} <white><name>'
+  clan chat show on_help: <click:suggest_command:"/{_clan} {_chat} "><hover:show_text:'<white>Нажми, чтобы отключить клан чат.'> <yellow>/{_clan} {_chat} <white>-<yellow> Отключить клан-чат.</hover></click>
+  clan chat show on_success: ''
+  clan chat show on_error: '%tag% <white>Ошибка..'
+  clan chat show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_chat}'
+  clan ff show on_help: <click:suggest_command:"/{_clan} {_ff} "><hover:show_text:'<white>Нажми, чтобы отключить огонь по своим.'> <yellow>/{_clan} {_ff} <white>-<yellow> Отключить огонь по своим.</hover></click>
+  clan ff show on_success: '%tag% <white>Огонь по своим переключен на <yellow>%clan_ff%'
+  clan ff show on_error: '%tag% <white>Ошибка..'
+  clan ff show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_ff}'
+  clan modtag show on_help: <click:suggest_command:"/{_clan} {_modtag} "><hover:show_text:'<white>Нажми, чтобы изменить клан тег.'> <yellow>/{_clan} {_modtag} <white><newtag> <white>-<yellow> Изменить тег клана.</hover></click>
+  clan modtag show on_success: '%tag% <white>Тег клана изменен на <yellow>%clan_tag%'
+  clan modtag show on_error: '%tag% <white>Ошибка..'
+  clan modtag show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_modtag} <white><newtag>'
+  clan list show on_help: <click:suggest_command:"/{_clan} {_list} "><hover:show_text:'<white>Нажми, чтобы увидеть список всех кланов.'> <yellow>/{_clan} {_list} <yellow>(type) <yellow>(-gui) <white>-<yellow> Список всех кланов.</hover></click>
+  clan list show on_success: '%tag% <white>Успешно!'
+  clan list show on_error: '%tag% <white>Ошибка..'
+  clan list show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_list} <yellow>(type) <yellow>(-gui)'
+  clan info show on_help: <click:suggest_command:"/{_clan} {_info} "><hover:show_text:'<white>Нажми, чтобы увидеть клановую информацию.'> <yellow>/{_clan} {_info} <yellow>(tag) <yellow>(-gui) <white>-<yellow> Увидеть клановую информацию.</hover></click>
+  clan info show on_success: ''
+  clan info show on_error: '%tag% <white>Ошибка..'
+  clan info show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_info} <yellow>(tag) <yellow>(-gui)'
+  clan profile show on_help: <click:run_command:"/{_clan} {_profile} "><hover:show_text:'<white>Click to expand.'> <yellow>/{_clan} {_profile} <white>-<yellow> Увидеть команды участников.</hover></click> <hover:show_text:'<white>Подкоманды.'><white>[!]</hover>
+  clan profile show on_success: '%tag% <white>Успешно'
+  clan profile show on_error: '%tag% <white>Ошибка..'
+  clan profile show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_profile}'
+  clan profile subcommands view: <click:suggest_command:"/{_clan} {_profile} {_view} "><hover:show_text:'<white>Нажми, чтобы увидеть профиль.'> <yellow>/{_clan} {_profile} {_view} <yellow>(player) <yellow>(-gui) <white>-<yellow> Увидеть профиль игрока.</hover></click>
+  clan profile subcommands view show on_success: '%tag% <white>Успешно!'
+  clan profile subcommands view show on_error: '%tag% <white>Ошибка..'
+  clan profile subcommands view show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_profile} {_view} <yellow>(player) <yellow>(-gui)'
+  clan profile subcommands set: <click:suggest_command:"/{_clan} {_profile} {_set} "><hover:show_text:'<white>Нажми, чтобы увидеть настройки профиля.'> <yellow>/{_clan} {_profile} {_set} <white><key> <value> <white>-<yellow> Установка настроек для профиля.</hover></click>
+  clan profile subcommands set show on_success: '%tag% <white>Конфигурация профиля успешно изменена'
+  clan profile subcommands set show on_error: '%tag% <white>Ошибка..'
+  clan profile subcommands set show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_profile} {_set} <white><key> <value>'
+  clan profile subcommands updateskin: <click:suggest_command:"/{_clan} {_profile} {_updateskin} "><hover:show_text:'<white>Click to Обновить скин'> <yellow>/{_clan} {_profile} {_updateskin} <white>-<yellow> Обновить скин</hover></click>
+  clan profile subcommands updateskin show on_success: '%tag% <white>Обновляем скин, пожалуйста подождите...'
+  clan profile subcommands updateskin show on_error: '%tag% <white>Ошибка..'
+  clan profile subcommands updateskin show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_profile} {_updateskin}'
+  clan profile subcommands invites: <click:suggest_command:"/{_clan} {_profile} {_invites} "><hover:show_text:'<white>Нажми, чтобы увидеть Приглашения.'> <yellow>/{_clan} {_profile} {_invites} <yellow>(-gui) <white>-<yellow> Увидеть Приглашения.</hover></click>
+  clan profile subcommands invites show on_success: '%tag% <white>Успешно'
+  clan profile subcommands invites show on_error: '%tag% <white>Ошибка..'
+  clan profile subcommands invites show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_profile} {_invites} <yellow>(-gui)'
+  clan rival show on_help: <click:run_command:"/{_clan} {_rival} "><hover:show_text:'<white>Нажмите, чтобы увидеть команды соперника.'> <yellow>/{_clan} {_rival} <white>-<yellow> Clan rivalries.</hover></click> <hover:show_text:'<white>Подкоманды.'><white>[!]</hover>
+  clan rival show on_success: ''
+  clan rival show on_error: '%tag% <white>Ошибка...'
+  clan rival show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_rival}.'
+  clan rival subcommands add: <click:suggest_command:"/{_clan} {_rival} {_add} "><hover:show_text:'<white>Нажми, чтобы добавить соперника.'> <yellow>/{_clan} {_rival} {_add} <white><tag> <white>-<yellow> Добавить клан соперника.</hover></click>
+  clan rival subcommands add show on_success: ''
+  clan rival subcommands add show on_error: '%tag% <white>Ошибка..'
+  clan rival subcommands add show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_rival} {_add} <white><tag>'
+  clan rival subcommands remove: <click:suggest_command:"/{_clan} {_rival} {_remove} "><hover:show_text:'<white>Click to remove a rival.'> <yellow>/{_clan} {_rival} {_remove} <white><tag> <white>-<yellow> Удалить соперника.</hover></click>
+  clan rival subcommands remove show on_success: ''
+  clan rival subcommands remove show on_error: '%tag% <white>Ошибка..'
+  clan rival subcommands remove show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_rival} {_remove} <white><tag>'
+  clan rival subcommands list: <click:suggest_command:"/{_clan} {_rival} {_list} "><hover:show_text:'<white>Нажми, чтобы увидеть кланы-соперников.'> <yellow>/{_clan} {_rival} {_list} <yellow>(tag) <yellow>(-gui) <white>-<yellow> Список кланов-соперников.</hover></click>
+  clan rival subcommands list show on_success: '%tag% <white>Успешно'
+  clan rival subcommands list show on_error: '%tag% <white>Ошибка..'
+  clan rival subcommands list show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_rival} {_list} <yellow>(tag) <yellow>(-gui)'
+  clan rival subcommands deny: <click:suggest_command:"/{_clan} {_rival} {_deny} "><hover:show_text:'<white>Нажми, чтобы отклонить соперничество.'> <yellow>/{_clan} {_rival} {_deny} <white><tag> <white>-<yellow> Отклонить соперничество.</hover></click>
+  clan rival subcommands deny show on_success: ''
+  clan rival subcommands deny show on_error: <white>Ошибка..
+  clan rival subcommands deny show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_rival} {_deny} <white><tag>'
+  clan rival subcommands accept: <click:suggest_command:"/{_clan} {_rival} {_accept} "><hover:show_text:'<white>Нажми, чтобы принять соперничество.'> <yellow>/{_clan} {_rival} {_accept} <white><tag> <white>-<yellow> Принять соперничество.</hover></click>
+  clan rival subcommands accept show on_success: ''
+  clan rival subcommands accept show on_error: '%tag% <white>Ошибка..'
+  clan rival subcommands accept show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_rival} {_accept} <white><tag>'
+  clan ally show on_help: <click:run_command:"/{_clan} {_ally} "><hover:show_text:'<white>Нажми, чтобы увидеть список команд союзников.'> <yellow>/{_clan} {_ally} <white>-<yellow> Клан союзников.</hover></click> <hover:show_text:'<white>Подкоманды.'><white>[!]</hover>
+  clan ally show on_success: ''
+  clan ally show on_error: '%tag% <white>Ошибка..'
+  clan ally show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_ally}'
+  clan ally subcommands add: <click:suggest_command:"/{_clan} {_ally} {_add} "><hover:show_text:'<white>Нажми, чтобы добавить союзника.'> <yellow>/{_clan} {_ally} {_add} <white><tag> <white>-<yellow> Добавить союзника.</hover></click>
+  clan ally subcommands add show on_success: ''
+  clan ally subcommands add show on_error: '%tag% <white>Ошибка..'
+  clan ally subcommands add show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_ally} {_add} <white><tag>'
+  clan ally subcommands remove: <click:suggest_command:"/{_clan} {_ally} {_remove} "><hover:show_text:'<white>Click to remove clan alliances.'> <yellow>/{_clan} {_ally} {_remove} <white><tag> <white>-<yellow> Удалить союзника.</hover></click>
+  clan ally subcommands remove show on_success: ''
+  clan ally subcommands remove show on_error: '%tag% <white>Ошибка..'
+  clan ally subcommands remove show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_ally} {_remove} <white><tag>'
+  clan ally subcommands accept: <click:suggest_command:"/{_clan} {_ally} {_accept} "><hover:show_text:'<white>Нажми, чтобы принять клановый союзн.'> <yellow>/{_clan} {_ally} {_accept} <white><tag> <white>-<yellow> Список союзников.</hover></click>
+  clan ally subcommands accept show on_success: ''
+  clan ally subcommands accept show on_error: '%tag% <white>Ошибка..'
+  clan ally subcommands accept show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_ally} {_accept} <white><tag>'
+  clan ally subcommands deny: <click:suggest_command:"/{_clan} {_ally} {_deny} "><hover:show_text:'<white>Нажми, чтобы отклонить союз.'> <yellow>/{_clan} {_ally} {_deny} <white><tag> <white>-<yellow> Отклонить союз клана.</hover></click>
+  clan ally subcommands deny show on_success: ''
+  clan ally subcommands deny show on_error: '%tag% <white>Ошибка..'
+  clan ally subcommands deny show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_ally} {_deny} <white><tag>'
+  clan ally subcommands list: <click:suggest_command:"/{_clan} {_ally} {_list} "><hover:show_text:'<white>Нажми, чтобы увидеть список союзников.'> <yellow>/{_clan} {_ally} {_list} <yellow>(tag) <yellow>(-gui) <white>-<yellow> Список союзников.</hover></click>
+  clan ally subcommands list show on_success: '%tag% <white>Успешно'
+  clan ally subcommands list show on_error: '%tag% <white>Ошибка..'
+  clan ally subcommands list show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_ally} {_list} <yellow>(tag) <yellow>(-gui)'
+  clan member show on_help: <click:run_command:"/{_clan} {_member} "><hover:show_text:'<white>Нажми, чтобы увидеть список команд участников.'> <yellow>/{_clan} {_member} <white>-<yellow> Участник клана.</hover></click> <hover:show_text:'<white>Подкоманды.'><white>[!]</hover>
+  clan member show on_success: '%tag% <white>Успешно to use member.'
+  clan member show on_error: '%tag% <white>Error to use member.'
+  clan member show on_usage: '%tag% <white>Используй <gold>/{_clan} {_member}'
+  clan member subcommands invite: <click:suggest_command:"/{_clan} {_member} {_invite} "><hover:show_text:'<white>Нажми, чтобы пригласить игрока.'> <yellow>/{_clan} {_member} {_invite} <white><player> <white>-<yellow> Пригласить игрока.</hover></click>
+  clan member subcommands invite show on_success: ''
+  clan member subcommands invite show on_error: '%tag% %tag% <white>Ошибка..'
+  clan member subcommands invite show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_member} {_invite} <white><player>'
+  clan member subcommands kick: <click:suggest_command:"/{_clan} {_member} {_kick} "><hover:show_text:'<white>Нажми, чтобы выгнать участника.'> <yellow>/{_clan} {_member} {_kick} <white><player> <white>-<yellow> Выгнать участника.</hover></click>
+  clan member subcommands kick show on_success: '%tag% <white>Игрок успешно изгнан'
+  clan member subcommands kick show on_error: '%tag% <white>Ошибка..'
+  clan member subcommands kick show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_member} {_kick} <white><player>'
+  clan member subcommands list: <click:suggest_command:"/{_clan} {_member} {_list} "><hover:show_text:'<white>Нажми, чтобы увидеть список.'> <yellow>/{_clan} {_member} {_list} <yellow>(tag) <yellow>(-gui) <white>-<yellow> Список участников клана.</hover></click>
+  clan member subcommands list show on_success: '%tag% <white>Успешно'
+  clan member subcommands list show on_error: '%tag% <white>Ошибка..'
+  clan member subcommands list show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_member} {_list} <yellow>(tag) <yellow>(-gui)'
+  clan member subcommands search: <click:suggest_command:"/{_clan} {_member} {_search} "><hover:show_text:'<white>Нажми, чтобы найти игрока.'> <yellow>/{_clan} {_member} {_search} <white><text> <yellow>(-gui) <white>-<yellow> Поиск игрока.</hover></click>
+  clan member subcommands search show on_success: '%tag% <white>Успешно'
+  clan member subcommands search show on_error: '%tag% <white>Ошибка..'
+  clan member subcommands search show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_member} {_search} <white><text> <yellow>(-gui)'
+  clan settings show on_help: <click:run_command:"/{_clan} {_settings} "><hover:show_text:'<white>Нажми, чтобы увидить настройки.'> <yellow>/{_clan} {_settings} <white>-<yellow> Change clan settings.</hover></click> <hover:show_text:'<white>Подкоманды.'><white>[!]</hover>
+  clan settings show on_success: '%tag% <white>Успешно'
+  clan settings show on_error: '%tag% <white>Ошибка..'
+  clan settings show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_settings}'
+  clan settings subcommands banned: <click:suggest_command:"/{_clan} {_settings} {_banned} "><hover:show_text:'<white>Нажми, чтобы увидеть список забаненых.'> <yellow>/{_clan} {_settings} {_banned} <yellow>(-gui) <white>-<yellow> Список забаненых.</hover></click>
+  clan settings subcommands banned show on_success: '%tag% <white>Успешно'
+  clan settings subcommands banned show on_error: '%tag% <white>Ошибка..'
+  clan settings subcommands banned show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_settings} {_banned} <yellow>(-gui)'
+  clan settings subcommands view: <click:suggest_command:"/{_clan} {_settings} {_view} "><hover:show_text:'<white>Нажми, чтобы увидеть настройки клана'> <yellow>/{_clan} {_settings} {_view} <yellow>(-gui) <white>-<yellow> Настройки клана.</hover></click>
+  clan settings subcommands view show on_success: '%tag% <white>Успешно'
+  clan settings subcommands view show on_error: '%tag% <white>Ошибка..'
+  clan settings subcommands view show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_settings} {_view} <yellow>(-gui)'
+  clan settings subcommands set: <click:suggest_command:"/{_clan} {_settings} {_set} "><hover:show_text:'<white>Нажми, чтобы увидеть настройки клана'> <yellow>/{_clan} {_settings} {_set} <white><key> <value> <white>-<yellow> Изменить настройки клана.</hover></click>
+  clan settings subcommands set show on_success: '%tag% <white>Настройки клана changed to <yellow>%type%<white>:<yellow>%value%'
+  clan settings subcommands set show on_error: '%tag% <white>Ошибка..'
+  clan settings subcommands set show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_settings} {_set} <white><key> <value>'
+  clan role show on_help: <click:run_command:"/{_clan} {_role} "><hover:show_text:'<white>Нажми, чтобы увидеть команды ролей.'> <yellow>/{_clan} {_role} <white>-<yellow> Изменить роли клана.</hover></click> <hover:show_text:'<white>Подкоманды.'><white>[!]</hover>
+  clan role show on_success: '%tag% <white>Успешно'
+  clan role show on_error: '%tag% <white>Ошибка..'
+  clan role show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_role}'
+  clan role subcommands sync: <click:suggest_command:"/{_clan} {_role} {_sync} "><hover:show_text:'<white>Нажми, чтобы синхронизировать права.'> <yellow>/{_clan} {_role} {_sync} <yellow>(-gui) <white>-<yellow> Синхронизировать права ролей.</hover></click>
+  clan role subcommands sync show on_success: '%tag% <white>Успешно'
+  clan role subcommands sync show on_error: '%tag% <white>Ошибка..'
+  clan role subcommands sync show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_role} {_sync}'
+  clan role subcommands view: <click:suggest_command:"/{_clan} {_role} {_view} "><hover:show_text:'<white>Нажми, чтобы увидеть роли клана'> <yellow>/{_clan} {_role} {_view} <yellow>(-gui) <white>-<yellow> Увидеть роли клана.</hover></click>
+  clan role subcommands view show on_success: ''
+  clan role subcommands view show on_error: '%tag% <white>Ошибка..'
+  clan role subcommands view show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_role} {_view} <yellow>(-gui)'
+  clan role subcommands set: <click:suggest_command:"/{_clan} {_role} {_set} "><hover:show_text:'<white>Нажми, чтобы изменить роли клана'> <yellow>/{_clan} {_role} {_set} <white><role> <key> <value> <white>-<yellow> Изменить роль клана.</hover></click>
+  clan role subcommands set show on_success: ''
+  clan role subcommands set show on_error: '%tag% <white>Ошибка..'
+  clan role subcommands set show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_role} {_set} <white><role> <key> <value>'
+  clan regroup show on_help: <click:run_command:"/{_clan} {_regroup} "><hover:show_text:'<white>Нажми, чтобы увидеть команды перегруппировки.'> <yellow>/{_clan} {_regroup} <white>-<yellow> Перегруппировка клана.</hover></click> <hover:show_text:'<white>Подкоманды.'><white>[!]</hover>
+  clan regroup show on_success: ''
+  clan regroup show on_error: '%tag% <white>Ошибка..'
+  clan regroup show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_regroup}'
+  clan regroup subcommands send: <click:suggest_command:"/{_clan} {_regroup} {_send} "><hover:show_text:'<white>Нажми, чтобы отправить запрос перегруппировки'> <yellow>/{_clan} {_regroup} {_send} <white>-<yellow> Отправить клану перегруппировку.</hover></click>
+  clan regroup subcommands send show on_success: ''
+  clan regroup subcommands send show on_error: '%tag% <white>Ошибка..'
+  clan regroup subcommands send show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_regroup} {_send}'
+  clan regroup subcommands accept: <click:suggest_command:"/{_clan} {_regroup} {_accept} "><hover:show_text:'<white>Нажми, чтобы принять приглашение перегруппировки'> <yellow>/{_clan} {_regroup} {_accept} <white>-<yellow> Принять перегруппировку.</hover></click>
+  clan regroup subcommands accept show on_success: ''
+  clan regroup subcommands accept show on_error: '%tag% <white>Ошибка..'
+  clan regroup subcommands accept show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_regroup} {_accept}'
+  clan regroup subcommands deny: <click:suggest_command:"/{_clan} {_regroup} {_deny} "><hover:show_text:'<white>Нажми, чтобы отклонить перегруппировку'> <yellow>/{_clan} {_regroup} {_deny} <white>-<yellow> Отменить перегруппировку клана.</hover></click>
+  clan regroup subcommands deny show on_success: ''
+  clan regroup subcommands deny show on_error: '%tag% <white>Ошибка..'
+  clan regroup subcommands deny show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_regroup} {_deny}'
+  clan ban show on_help: <click:suggest_command:"/{_clan} {_ban} "><hover:show_text:'<white>Click to ban a player.'> <yellow>/{_clan} {_ban} <white><player> <white>-<yellow> Забанить игрока.</hover></click>
+  clan ban show on_success: '%tag% <white>Игрок успешно забанен'
+  clan ban show on_error: '%tag% <white>Ошибка..'
+  clan ban show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_ban} <white><nickname>'
+  clan unban show on_help: <click:suggest_command:"/{_clan} {_unban} "><hover:show_text:'<white>Click to unban a player.'> <yellow>/{_clan} {_unban} <white><player> <white>-<yellow> Разбанить игрока.</hover></click>
+  clan unban show on_success: '%tag% <white>Игрок успешно разбанен.'
+  clan unban show on_error: '%tag% <white>Ошибка..'
+  clan unban show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_unban} <white><player>'
+  clan nickname show on_help: <click:suggest_command:"/{_clan} {_nickname} "><hover:show_text:'<white>Изменить никнейм клана.'> <yellow>/{_clan} {_nickname} <white><nickname> <white>-<yellow> Изменить ник клана.</hover></click>
+  clan nickname show on_success: '%tag% <white>Вы успешно изменили никнейм.'
+  clan nickname show on_error: '%tag% <white>Ошибка..'
+  clan nickname show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_nickname} <white><nickname>'
+  clan banner show on_help: <click:run_command:"/{_clan} {_banner} "><hover:show_text:'<white>Нажми, чтобы увидеть команды баннера.'> <yellow>/{_clan} {_banner} <white>-<yellow> Изменить клановый баннер.</hover></click> <hover:show_text:'<white>Подкоманды.'><white>[!]</hover>
+  clan banner show on_success: '%tag% <white>Успешно'
+  clan banner show on_error: '%tag% <white>Ошибка..'
+  clan banner show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_banner}'
+  clan banner subcommands upload: <click:suggest_command:"/{_clan} {_banner} {_upload} "><hover:show_text:'<white>Нажми, чтобы загрузить кланновый банер.'> <yellow>/{_clan} {_banner} {_upload} <yellow>(-gui) <white>-<yellow> Загрузить клановый баннер.</hover></click>
+  clan banner subcommands upload show on_success: ''
+  clan banner subcommands upload show on_error: '%tag% <white>Ошибка..'
+  clan banner subcommands upload show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_banner} {_upload} <yellow>(-gui)'
+  clan banner subcommands delete: <click:suggest_command:"/{_clan} {_banner} {_delete} "><hover:show_text:'<white>Нажми, чтобы удалить кланновый баннер.'> <yellow>/{_clan} {_banner} {_delete} <white>-<yellow> Удалить кланновый баннер.</hover></click>
+  clan banner subcommands delete show on_success: ''
+  clan banner subcommands delete show on_error: '%tag% <white>Ошибка..'
+  clan banner subcommands delete show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_banner} {_delete}'
+  clan banner subcommands view: <click:suggest_command:"/{_clan} {_banner} {_view} "><hover:show_text:'<white>Нажми, чтобы увидеть информацию о баннере.'> <yellow>/{_clan} {_banner} {_view} <yellow>(-gui) <white>-<yellow> Увидеть информацию о баннере.</hover></click>
+  clan banner subcommands view show on_success: '%tag% <white>Успешно!'
+  clan banner subcommands view show on_error: '%tag% <white>Ошибка..'
+  clan banner subcommands view show on_usage: '%tag% <white>Используй <yellow>/{_clan} {_banner} {_view} <yellow>(-gui)'
+  uclan help show on_help: <click:suggest_command:"/{_uclan} {_help}"><hover:show_text:'<white>Нажми, чтобы увидеть помощь по кланам.'> <yellow>/{_uclan} {_help} <white>-<yellow> Увидеть помощь по кланам.</hover></click>
+  uclan help show on_success: ''
+  uclan help show on_error: '%tag% <white>Ошибка..'
+  uclan help show on_usage: '%tag% <white>Ошибка.. <yellow>/{_uclan} {_help}'
+  uclan chatspy show on_help: <click:suggest_command:"/{_uclan} {_chatspy} "><hover:show_text:'<white>Нажми, чтобы следить за чатом кланов.'> <yellow>/{_uclan} {_chatspy} <white>-<yellow> Видеть клановые чаты.</hover></click>
+  uclan chatspy show on_success: '%tag% <white>Слежка чата теперь: %state%'
+  uclan chatspy show on_error: '%tag% <white>Ошибка..'
+  uclan chatspy show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_chatspy}'
+  uclan addslot show on_help: <click:suggest_command:"/{_uclan} {_addslot} "><hover:show_text:'<white>Нажми, чтобы добавить слоты клану.'> <yellow>/{_uclan} {_addslot} <white><player|tag> <white>-<yellow> Добавить слоты клану.</hover></click>
+  uclan addslot show on_success: ''
+  uclan addslot show on_error: '%tag% <white>Ошибка..'
+  uclan addslot show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_addslot} <white><player|tag> <amount>'
+  uclan setslot show on_help: <click:suggest_command:"/{_uclan} {_setslot}"><hover:show_text:'<white>Нажми, чтобы установить слоты клану.'> <yellow>/{_uclan} {_setslot} <white><player|tag> <amount>  <white>-<yellow> Установить слоты клану.</hover></click>
+  uclan setslot show on_success: ''
+  uclan setslot show on_error: '%tag% <white>Ошибка..'
+  uclan setslot show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_setslot} <white><player|tag> <amount>'
+  uclan removeslot show on_help: <click:suggest_command:"/{_uclan} {_removeslot} "><hover:show_text:'<white>Нажми, чтобы удалить слоты клану.'> <yellow>/{_uclan} {_removeslot} <white><player|tag> <amount> <white>-<yellow> Удалить слоты клану.</hover></click>
+  uclan removeslot show on_success: ''
+  uclan removeslot show on_error: '%tag% <white>Ошибка...'
+  uclan removeslot show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_removeslot} <white><player|tag> <amount>'
+  uclan addpoints show on_help: <click:suggest_command:"/{_uclan} {_addpoints} "><hover:show_text:'<white>Нажми, чтобы добавить поинты клану.'> <yellow>/{_uclan} {_addpoints} <white><player|tag> <amount> [reason] <white>-<yellow> Добавить поинты клану.</hover></click>
+  uclan addpoints show on_success: ''
+  uclan addpoints show on_error: '%tag% <white>Ошибка..'
+  uclan addpoints show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_addpoints} <white><player|tag> <amount> [reason]'
+  uclan setpoints show on_help: <click:suggest_command:"/{_uclan} {_setpoints} "><hover:show_text:'<white>Нажми, чтобы установить поинты клану.'> <yellow>/{_uclan} {_setpoints} <white><player|tag> <amount> [reason] <white>-<yellow> Установить поинты клану.</hover></click>
+  uclan setpoints show on_success: ''
+  uclan setpoints show on_error: '%tag% <white>Ошибка..'
+  uclan setpoints show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_setpoints} <white><player|tag> <amount> [reason]'
+  uclan removepoints show on_help: <click:suggest_command:"/{_uclan} {_removepoints} "><hover:show_text:'<white>Нажми, чтобы удалить поинты клану.'> <yellow>/{_uclan} {_removepoints} <white><player|tag> <amount> [reason] <white>-<yellow> Удалить поинты клану.</hover></click>
+  uclan removepoints show on_success: ''
+  uclan removepoints show on_error: '%tag% <white>Ошибка..'
+  uclan removepoints show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_removepoints} <white><player|tag> <amount> [reason]'
+  uclan changetag show on_help: <click:suggest_command:"/{_uclan} {_changetag} "><hover:show_text:'<white>Нажми, чтобы изменить тег клану.'> <yellow>/{_uclan} {_changetag} <white><player|tag> <newtag> <white>-<yellow> Изменение тега клана.</hover></click>
+  uclan changetag show on_success: ''
+  uclan changetag show on_error: '%tag% <white>Ошибка..'
+  uclan changetag show on_usage: '%tag% <white>Erro use <yellow>/{_uclan} {_changetag} <white><player|tag> <newtag>'
+  uclan resetplayerkdr show on_help: <click:suggest_command:"/{_uclan} {_resetplayerkdr}"><hover:show_text:'<white>Нажми, чтобы сбросить игроку KDR.'> <yellow>/{_uclan} {_resetplayerkdr} <white><player> <white>-<yellow> Сбросить игроку KDR.</hover></click>
+  uclan resetplayerkdr show on_success: ''
+  uclan resetplayerkdr show on_error: '%tag% <white>Ошибка..'
+  uclan resetplayerkdr show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_resetplayerkdr} <white><player>'
+  uclan resetclankdr show on_help: <click:suggest_command:"/{_uclan} {_resetclankdr} "><hover:show_text:'<white>Нажми, чтобы сбросить клану KDR.'> <yellow>/{_uclan} {_resetclankdr} <white><player|tag> <white>-<yellow> Сбросить клану KDR.</hover></click>
+  uclan resetclankdr show on_success: ''
+  uclan resetclankdr show on_error: '%tag% <white>Ошибка..'
+  uclan resetclankdr show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_resetclankdr} <white><player|tag>'
+  uclan globalff show on_help: <click:suggest_command:"/{_uclan} {_globalff} "><hover:show_text:'<white>Нажми, чтобы отключить огонь по своим.'> <yellow>/{_uclan} {_globalff} <white>-<yellow> Переключить огонь по своим.</hover></click>
+  uclan globalff show on_success: '%tag% <white>Вы изменили огонь по своим на <yellow>%globalff%'
+  uclan globalff show on_error: '%tag% <white>Ошибка..'
+  uclan globalff show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_globalff}'
+  uclan delete show on_help: <click:suggest_command:"/{_uclan} {_delete} "><hover:show_text:'<white>Нажми, чтобы расформировать клан.'> <yellow>/{_uclan} {_delete} <white><player|tag> <white>-<yellow> Удаление клана.</hover></click>
+  uclan delete show on_success: '%tag% <white>Вы расформировали клан!'
+  uclan delete show on_error: '%tag% <white>Ошибка..'
+  uclan delete show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_delete} <white><player|tag>'
+  uclan forcejoin show on_help: <click:suggest_command:"/{_uclan} {_forcejoin} "><hover:show_text:'<white>Нажми, чтобы добавить игрока в клан.'> <yellow>/{_uclan} {_forcejoin} <white><player> <player|tag> <white>-<yellow> Добавить в клан игрока.</hover></click>
+  uclan forcejoin show on_success: ''
+  uclan forcejoin show on_error: '%tag% <white>Ошибка..'
+  uclan forcejoin show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_forcejoin} <white><player> <player|tag>'
+  uclan verify show on_help: <click:suggest_command:"/{_uclan} {_verify} "><hover:show_text:'<white>Нажми, чтобы верефицировать клан.'> <yellow>/{_uclan} {_verify} <white><player|tag> <white>-<yellow> Верификация клана.</hover></click>
+  uclan verify show on_success: ''
+  uclan verify show on_error: '%tag% <white>Ошибка..'
+  uclan verify show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_verify} <white><player|tag>'
+  uclan reload show on_help: <click:suggest_command:"/{_uclan} {_reload} "><hover:show_text:'<white>Нажми, чтобы перезагрузить настройки.'> <yellow>/{_uclan} {_reload} <white>-<yellow> Перезагрузить настройки плагина.</hover></click>
+  uclan reload show on_success: '%tag% <white>Плагин перезагружен <yellow>(%time%).'
+  uclan reload show on_error: '%tag% <white>Ошибка..'
+  uclan reload show on_usage: '%tag% <white>Используй <yellow>/{_uclan} {_reload}'
+ 
+ 
+ # TRANSLATIONS OF THE CHAT ACTIONS
+ 
+CHAT:
+  changenickname:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>Введите свой временный ник в чате, он должен содержать только буквы и цифры.
+    - ' <white>- Тип <white>отменить</white> <white>или <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<white>Нажми, чтобы отменить."><white>[НАЖМИ СЮДА]</white></hover></click> чтобы отменить.'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <yellow>Введите свой временный ник в чате!
+    title:
+      line: <yellow>Никнейм
+      subline: <white>Набери в чате!
+    bossbar: <yellow>Введите свой временный ник в чате! <yellow>({time})
+  commandunknownplayer:
+    message:
+    - '%tag% <white>Неизвестная команда, <yellow><click:run_command:"/{_clan} {_help}"><hover:show_text:"<white>Нажми, чтобы увидеть помощь."><white>[НАЖМИ СЮДА]</white></hover></click> <white>или используй <yellow>/{_clan} {_help} <white>чтобы просмотреть список доступных команд.'
+    actionbar: <yellow>/{_clan} {_help} <white>чтобы просмотреть доступные команды.
+    title:
+      line: <yellow>/{_clan} {_help}
+      subline: <white>Чтобы увидеть команды!
+    bossbar: <yellow>/{_clan} {_help} <white>чтобы просмотреть доступные команды. <yellow>({time})
+  commandunknownadmin:
+    message:
+    - '%tag% <white>Неизвестная команда, <yellow><click:run_command:"/uclan help"><hover:show_text:"<white>Нажми, чтобы увидеть помощь."><white>[НАЖМИ СЮДА]</white></hover></click> <white>или используй <yellow>/uclan help <white>чтобы просмотреть доступные команды.'
+    actionbar: <yellow>/uclan help <white>чтобы просмотреть доступные команды.
+    title:
+      line: <yellow>/uclan help
+      subline: <white>Чтобы увидеть команды!
+    bossbar: <yellow>/uclan help <white>чтобы просмотреть доступные команды. <yellow>({time})
+  clanlevelreceived:
+    message:
+    - '%tag% <yellow>%uclans_tag_color% <yellow>теперь имеет уровень <yellow>%uclans_level%'
+    actionbar: <yellow>%uclans_tag_color% <yellow>теперь имеет уровень <yellow>%uclans_level%
+    title:
+      line: <white>+ УРОВЕНЬ
+      subline: <yellow>%uclans_tag_color%
+    bossbar: <yellow>%uclans_tag_color% <yellow>теперь имеет уровень <yellow>%uclans_level% <yellow>({time})
+  clanpatentreceived:
+    message:
+    - '%tag% <yellow>The <yellow>%uclans_tag_color% <yellow>изменили патент на <yellow>%uclans_patent_formated%'
+    actionbar: <yellow>%uclans_tag_color% <yellow>теперь новый патент <yellow>%uclans_patent_formated%
+    title:
+      line: <white>+ ПАТЕНТ
+      subline: <yellow>%uclans_patent_formated%
+    bossbar: <yellow>%uclans_tag_color% <yellow>теперь новый патент <yellow>%uclans_patent_formated% <yellow>({time})
+  clanhomecreate:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>Напишите в чате имя нового <yellow>Кланового дома
+    - ' <white>- Тип <white>отменить</white> <white>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<white>Нажми, чтобы отменить."><white>[НАЖМИ СЮДА]</white></hover></click> чтобы отменить.'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <yellow>Введите свой новый дом клана в чате!
+    title:
+      line: <yellow>НОВЫЙ КЛАНОВЫЙ ДОМ
+      subline: <white>Напиши в чат название
+    bossbar: <yellow>Введите свой новый дом клана в чате! <yellow>({time})
+  clancreate:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>Напишите в чате тег <yellow>НОВОГО КЛАНА <white>который ты хочешь сделать.
+    - ' <white>- Тип <white>отменить</white> <white>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<white>Нажми, чтобы отменить."><white>[НАЖМИ СЮДА]</white></hover></click> чтобы отменить.'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <yellow>Напишите тег вашего нового клана в чате!
+    title:
+      line: <yellow>НОВЫЙ КЛАН
+      subline: <white>Напиши в чат название
+    bossbar: <yellow>Напишите тег вашего нового клана в чате! <yellow>({time})
+  clanmodtag:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>Напиши в чат <yellow>Новый ТЕГ <white>для клана
+    - ' <white>- Тип <white>отменить</white> <white>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<white>Нажми, чтобы отменить."><white>[НАЖМИ СЮДА]</white></hover></click> чтобы отменить.'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <yellow>Напиши в чат новый тег клана
+    title:
+      line: <yellow>НОВЫЙ ТЕГ
+      subline: <white>Напиши в чат название
+    bossbar: <yellow>Напиши в чат новый тег клана <yellow>({time})
+  clandesc:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>Напиши в чат <yellow>Новое описание <white>для клана
+    - ' <white>- Тип <white>отменить</white> <white>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<white>Нажми, чтобы отменить."><white>[НАЖМИ СЮДА]</white></hover></click> чтобы отменить.'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <yellow>Напиши в чат новое описание
+    title:
+      line: <yellow>НОВОЕ ОПИСАНИЕ
+      subline: <white>Напиши новое описание
+    bossbar: <yellow>Напиши в чат новое описание <yellow>({time})
+  invitereceive:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>Получено приглашение вступить в клан <yellow>%clan_tag_nocolor%
+    - <click:run_command:"/{_clan} {_join} %clan_tag_nocolor%"><hover:show_text:"<white>Чтобы принять, или используй <yellow>/{_clan} {_join} %clan_tag_nocolor%."><white>[ПРИНЯТЬ]</white></hover></click>    <click:run_command:"/{_clan} {_deny} %clan_tag_nocolor%"><hover:show_text:"<white>Нажми чтобы отклонить, или используй <yellow>/{_clan} {_deny} %clan_tag_nocolor%."><white>[ОТКЛОНИТЬ]</white></hover></click>    <click:run_command:"/{_clan} {_profile} {_invites}"><hover:show_text:"<white>Нажми, чтобы увидеть ВСЕ, или используй <yellow>/{_clan} {_profile} {_invites} ."><yellow>[УВИДЕТЬ ВСЕ]</yellow></hover></click>
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <yellow>Получено приглашение вступить в клан <white>%clan_tag_nocolor%
+    title:
+      line: <yellow>ПРИГЛАШЕНИЕ В КЛАН
+      subline: <white>Клан <white>%clan_tag_nocolor%
+    bossbar: <yellow>Получено приглашение вступить в клан <white>%clan_tag_nocolor% <yellow>({time})
+  clanregroupreceive:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>Запрос на перегруппировку! <yellow>%clan_sender%
+    - <white>Истечет через <yellow>%sec_expires% сек<white>.
+    - <click:run_command:"/{_clan} {_regroup} accept"><hover:show_text:"<white>Нажми чтобы принять, или используй <yellow>/{_clan} {_regroup} accept."><white>[ПРИНЯТЬ]</white></hover></click>
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <yellow>Запрос на перегруппировку!
+    title:
+      line: <yellow>Перегруппировку
+      subline: <white>Прими или игнорируй
+    bossbar: <yellow>Запрос на перегруппировку! <yellow>({time})
+  claninvite:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>Напишите в чате, кого вы хотите пригласить в клан.
+    - ' <white>- Тип <white>отменить</white> <white>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<white>Нажми, чтобы отменить."><white>[НАЖМИ СЮДА]</white></hover></click> чтобы отменить.'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <yellow>>Напишите в чате, кого вы хотите пригласить в клан.
+    title:
+      line: <yellow>НОВОЕ ПРИГЛАШЕНИЕ
+      subline: <white>Напиши в чат кого пригласишь
+    bossbar: <yellow>Напишите в чате, кого вы хотите пригласить в клан! <yellow>({time})
+  clanrivalremove:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <yellow>%clan_tag% <white>клан отправил запрос о мире.
+    - <white>Истечет через <yellow>%sec_expires% сек<white>.
+    - <click:run_command:"/{_clan} {_rival} {_accept} %clan_tag_nocolor%"><hover:show_text:"<white>Нажми чтобы принять, или используй <yellow>/{_clan} {_rival} {_accept} %clan_tag_nocolor%."><white>[ПРИНЯТЬ]</white></hover></click>      <click:run_command:"/{_clan} {_rival} {_deny} %clan_tag_nocolor%"><hover:show_text:"<white>Нажми чтобы отклонить, или используй <yellow>/{_clan} {_rival} {_deny} %clan_tag_nocolor%"><white>[ОТКЛОНИТЬ]</white></hover></click>
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <yellow>>Просьба о мире получена!
+    title:
+      line: <yellow>ПРОСЬБА О МИРЕ
+      subline: <white>Прими или отклони предложение
+    bossbar: <yellow>Просьба о мире получена! <yellow>({time})
+  clanallyreceive:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>Запрос на вступление в союз получен от клана <yellow>%clan_tag%
+    - <white>Истечет через <yellow>%sec_expires% сек<white>.
+    - <click:run_command:"/{_clan} {_ally} {_accept} %clan_tag_nocolor%"><hover:show_text:"<white>Нажми чтобы принять, или используй <yellow>/{_clan} {_ally} {_accept} %clan_tag_nocolor%"><white>[ПРИНЯТЬ]</white></hover></click>      <click:run_command:"/{_clan} {_ally} {_deny} %clan_tag_nocolor%"><hover:show_text:"<white>Нажми чтобы отклонить, или используй <yellow>/{_clan} {_ally} {_deny} %clan_tag_nocolor%"><white>[ОТПИЛОНИТЬ]</white></hover></click>
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <yellow>>Запрос союза получен
+    title:
+      line: <yellow>Запрос союза
+      subline: <white>Прими или отклони предложение
+    bossbar: <yellow>Запрос союза получен <yellow>({time})
