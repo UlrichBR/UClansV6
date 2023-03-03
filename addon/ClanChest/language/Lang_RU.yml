@@ -1,0 +1,89 @@
+COMUM:
+  player donthave clan: '%tag% <white>У этого игрока нет клана.'
+  gui error: '%tag% <white>Это меню содержит ошибку и не может быть открыто'
+  disabled function: '%tag% <white>Эта функция выключена или деактивирована.'
+  chan does not exists: '%tag% <white>Этого клана не существует'
+  chest in use: '%tag% <white>Клановый сундук уже используется другим игроком, чтобы избежать дублирования, только один игрок может использовать сундук одновременно.'
+  chest name: <white>Сундук %uclans_tag_color% <dark_gray>[%page%/%pages%]
+  chest limit: <white>Это предел для вашего клана!
+  chest limit reached: '%tag% <white>Лимит для вашего клана составляет %pages% сундуков.'
+  no permission: '%tag% <white>У вас нет разрешений для этого.'
+  no data to export: '%tag% <white>Нет данных для экспорта.'
+  warn reexport: ' <white>- Будьте осторожны, при повторном экспорте база данных будет переписана, а существующие сундуки изменены. Если это сработало правильно, рекомендуется удалить файл хранилища old chest.'
+  help clan header subcommand: '<newline><blue><bold>Помощь с подкомандами:</bold> <newline> <yellow>[!] <gray>subcmd <gray>| <white><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help list empty: ' <white>- В этом списке ничего нет.'
+  clan dont permission role: '%tag% <white>Ваша текущая роль, вы не можете этого сделать.'
+  need money hook: '%tag% <white>Денежные методы не включены'
+  no permission buy extra: '%tag% <white>Вы не можете купить больше страниц из сундука'
+  chest extra error: <white>Ошибка покупки!
+  chest extra needmoney gui: <white>У вас недостаточно денег для покупки!
+  chest extra needmoney: <white>У вас недостаточно денег для покупки
+  chest extra buyed: <white>Успешно куплено!
+  chest items count: '%tag% <white>Элементы можно просматривать только в графическом меню!'
+  chest unlocked false: <white>Ошибка разблокировки!
+  chest unlocked true: <yellow>Успешная разблокировка!
+  chest locked false: <white>Ошибка блокировку!
+  chest locked true: <white>Успешная блокировка!
+  chest error save drop: '%tag% <white>При сохранении одного или нескольких элементов в bau возникает ошибка белого цвета. Предмет был уронен на землю!'
+  player dont have money: '%tag% <white>Вам нужно <yellow>$%amount% <white>для этого.'
+  player dont have money gui: <white>Тебе нужно <yellow>$%amount%
+  player debited money: '%tag% <yellow>Было списано <yellow>%amount% <white>с вашего счета.'
+  player deposited money: '%tag% <yellow>$%amount% <yellow>было внесено на ваш счет.'
+  disabled world chest: '%tag% <white>Вы не можете использовать сундуки в этом мире'
+  disabled region chest: '%tag% <white>Вы не можете использовать сундуки в этом регионе'
+  command by player: '%tag% <white>Эта команда должна быть использована игроком.'
+LANGUAGE:
+  clan chest in limit: '%tag% <white>Ваш клан достиг предела сундука и должен набрать уровни, чтобы разблокировать больше страниц сундука, текущий лимит вашего клана составляет <yellow>%uclans_limit_chest%'
+ 
+ 
+# CHEST GUI
+ 
+ 
+GUI:
+  chest load_chest title: <blue>Загрузка предметов...
+  chest load_chest items fill name: ' '
+  chest load_chest items fill lore: [
+    ]
+  chest load_chest items fill2 name: ' <white>Подождите.'
+  chest load_chest items fill2 lore: [
+    ]
+  chest buy_chest title: <white>Подтвердите покупку страницы
+  chest buy_chest items fill name: ' '
+  chest buy_chest items fill lore: [
+    ]
+  chest buy_chest items confirm name: <yellow>Подтвердить
+  chest buy_chest items confirm lore:
+  - ' '
+  - ' <yellow>Нажми, чтобы подтвердить.'
+  chest buy_chest items cancel name: <yellow>Отклонить
+  chest buy_chest items cancel lore:
+  - ' '
+  - ' <yellow>Нажми, чтобы отклонить.'
+  chest chest title: <blue>Сундук <gray>| %uclans_tag_color%.
+  chest chest items fill name: ' '
+  chest chest items fill lore: [
+    ]
+  chest chest items back name: <yellow>Вернуться назад
+  chest chest items back lore:
+  - ' '
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  chest chest items sort name: <yellow>Нажмите, чтобы упорядочить.
+  chest chest items sort lore:
+  - ' '
+  - ' <yellow>Товары будут упорядочены'
+  - <yellow>по типу, цвету и количеству.
+  chest chest items previous name: <yellow>Предыдущая страница
+  chest chest items previous lore:
+  - ' '
+  - ' <yellow>Нажми, чтобы вернуться.'
+  chest chest items next name: <yellow>Следующая страница
+  chest chest items next lore:
+  - ' '
+  - ' <yellow>Нажми, чтобы перейти на следующию.'
+  chest chest items buy name: <yellow>Купите дополнительные сундуки.
+  chest chest items buy lore:
+  - ' '
+  - ' <white>Цена: <yellow>$%price%'
+  - ' <white>Дополнительный лимит: <green>%clan_extra%<gray>/<red>%clan_limit%'
+  - ' '
+  - <yellow>Нажми, чтобы купить!
