@@ -1,0 +1,127 @@
+COMUM:
+  you player has no clan: '%tag% <white>У вас нет клана, создайте его или станьте участником клана.'
+  gui error: '%tag% <white>Это меню содержит ошибку и не может быть открыто'
+  do not shift: '%tag% <white>Не переключайтесь на квесты'
+  empty whitelist: <white>Пусто
+  disabled function: '%tag% <white>Эта функция выключена или деактивирована.'
+  week plus: 1 неделя+
+  disabled world quest: '%tag% <white>Вы не можете использовать квесты в этом мире'
+  command by player: '%tag% <white>Эта команда должна быть использована игроком.'
+  clan point reason quest finished: Завершенный квест %uclans_quest_finished%
+  clan quest change: '%tag% <white>Клановые квестовые очки теперь <yellow>%uclans_quest_points%<white>, всего завершено <yellow>%uclans_quest_finished%'
+  help clan header subcommand: '<newline><blue><bold>Помощь с подкомандами:</bold> <newline> <white>[!] <gray>subcmd <gray>| <white><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  clan dont permission role: '%tag% <white>Ваша текущая роль, вы не можете этого сделать.'
+  clan dont permission role gui: <white>Ваша роль не может запустить это
+  player no running quest: '%tag% <white>У вас еще не начаты никакие квесты.'
+  help quest status header: <blue><bold> Статус задания:</bold>
+  help quest status header empty: ' <gray>- <white>Вы не выполняете никаких заданий.'
+  help quest list header: <newline>%uclans_tag_color%<blue><bold> Список заданий:</bold> <dark_gray>(%page%/%pages%)
+  help quest list format: '<white>Id: <white>{QUEST} <gray>| <white>Название: %uclans_quest_name:{QUEST}% <gray>| <white>Тип: <yellow>%uclans_quest_type_formated:{QUEST}%<newline> <gray>- <white>Миссии: <yellow>%uclans_quest_missions:{QUEST}% <gray>| <yellow>%uclans_quest_whitelist:{QUEST}%<newline> <gray>- <yellow>Награды: <white>Поинты: <yellow>%uclans_quest_reward_points:{QUEST}% <gray>| <white>EXP: <yellow>%uclans_quest_reward_exp:{QUEST}% <gray>| <white>Монет: <white>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
+  help quest list format finished: '<dark_white>МИССИЯ ЗАВЕРШЕНА <gray>| <white>Id: <white>{QUEST} <gray>| <white>Название: %uclans_quest_name:{QUEST}% <white>%uclans_player_nickname% <gray>| <white>Тип: <yellow>%uclans_quest_type_formated:{QUEST}%'
+  help quest list format other: '<white>Выполняется другим игроком! <gray>| <white>Id: <white>{QUEST} <gray>| <white>Название: %uclans_quest_name:{QUEST}% <white>%uclans_player_nickname% <gray>| <white>Тип: <yellow>%uclans_quest_type_formated:{QUEST}%'
+  help quest list format running: '<white>Ваша текущая миссия! <gray>| <white>Id: <white>{QUEST} <gray>| <white>Название: %uclans_quest_name:{QUEST}% <gray>| <white>Тип: <yellow>%uclans_quest_type_formated:{QUEST}%<newline> <gray>- <white>Миссии: <yellow>%uclans_quest_missions:{QUEST}% <gray>| <yellow>%uclans_quest_whitelist:{QUEST}% <gray>(<yellow>%uclans_playerquest_earned%<gray>/<yellow>%uclans_quest_mission_total:{QUEST}%<gray>)<newline> <gray>- <white>Истекает: <yellow>%uclans_playerquest_expires_time_left% <gray>(%uclans_playerquest_expires%)<newline> <gray>- <yellow>Награды: <white>Поинты: <yellow>%uclans_quest_reward_points:{QUEST}% <gray>| <white>EXP: <yellow>%uclans_quest_reward_exp:{QUEST}% <gray>| <white>Монет: <white>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
+  help quest list empty: ' <white>Ничего из этого списка.'
+  help quest pagination prev: <click:run_command:"/{_clan} {_quest} {_list} %page%"><hover:show_text:'<white>Вернуться назад.'><yellow><< Предыдущая</hover></click>
+  help quest pagination next: <click:run_command:"/{_clan} {_quest} {_list} %page%"><hover:show_text:'<white>Перейти на следующию.'><yellow>Следующая >></hover></click>
+  help quest pagination separer: <gray>|
+GUI:
+   
+  #QUEST GUI MESSAGES
+  quest home_quest title: <blue>Квесты <gray>| %uclans_tag_color%
+  quest home_quest items fill name: ' '
+  quest home_quest items fill2 name: ' '
+  quest home_quest items daily name: ' <yellow>ЕЖЕДНЕВНЫЕ МИССИИ'
+  quest home_quest items daily lore:
+  - ''
+  - ' <yellow>Нажми, чтобы открыть.'
+  quest home_quest items once name: ' <yellow>ВСЕ ЗАДАНИЯ'
+  quest home_quest items once lore:
+  - ''
+  - ' <yellow>Нажми, чтобы открыть.'
+  quest home_quest items back name: ' <red>Вернуться назад'
+  quest home_quest items back lore:
+  - ''
+  - ' <yellow>Click to go back.'
+  quest home_list title: <blue>Quests <gray>| %uclans_tag_color%
+  quest home_list items fill name: ' '
+  quest home_list items course name: ' <white>%uclans_quest_name:{QUEST}%'
+  quest home_list items course lore:
+  - ''
+  - ' <gold>Your current mission!'
+  - ''
+  - ' <white>Тип: <yellow>%uclans_quest_type_formated:{QUEST}%'
+  - ' <white>Название: <yellow>%uclans_quest_name:{QUEST}%'
+  - ' <white>Всего: <yellow>%uclans_playerquest_earned%<gray>/<yellow>%uclans_quest_mission_total:{QUEST}%'
+  - ' <white>Истекает: <yellow>%uclans_playerquest_expires_time_left% <gray>(%uclans_playerquest_expires%)'
+  - ' <white>Миссии: <yellow>%uclans_quest_missions:{QUEST}%'
+  - ' <gray>- %uclans_quest_whitelist:{QUEST}%'
+  - ''
+  - ' <yellow>Награды:'
+  - ' <white>Поинты: <yellow>%uclans_quest_reward_points:{QUEST}%'
+  - ' <white>EXP: <yellow>%uclans_quest_reward_exp:{QUEST}%'
+  - ' <white>Монет: <white>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
+  - ''
+  - ' <yellow>Нажмите, чтобы отказаться!'
+  quest home_list items course_other name: ' <white>%uclans_quest_name:{QUEST}%'
+  quest home_list items course_other lore:
+  - ''
+  - ' <white>Выполняется другим игроком!'
+  - ''
+  - ' <white>Тип: <yellow>%uclans_quest_type_formated:{QUEST}%'
+  - ' <white>Название: <yellow>%uclans_quest_name:{QUEST}%'
+  - ' <white>Миссии: <yellow>%uclans_quest_missions:{QUEST}%'
+  - <gray>- <yellow>%uclans_quest_whitelist:{QUEST}%
+  - ''
+  - ' <yellow>Награды:'
+  - ' <white>Поинты: <yellow>%uclans_quest_reward_points:{QUEST}%'
+  - ' <white>EXP: <yellow>%uclans_quest_reward_exp:{QUEST}%'
+  - ' <white>Монет: <white>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
+  quest home_list items finished name: ' <white>%uclans_quest_name:{QUEST}%'
+  quest home_list items finished lore:
+  - ''
+  - ' <dark_white>МИССИЯ ЗАВЕРШЕНА'
+  - ''
+  - ' <white>Тип: <yellow>%uclans_quest_type_formated:{QUEST}%'
+  - ' <white>Название: <yellow>%uclans_quest_name:{QUEST}%'
+  - ' <white>Миссии: <yellow>%uclans_quest_missions:{QUEST}%'
+  - <gray>- <yellow>%uclans_quest_whitelist:{QUEST}%
+  quest home_list items back name: ' <white>Вернуться назад'
+  quest home_list items back lore:
+  - ''
+  - ' <yellow>Нажми, чтобы вернуться назад.'
+  quest home_list items next name: ' <white>Next page'
+  quest home_list items next lore:
+  - ''
+  - ' <yellow>Нажми, чтобы перейти на следующию.'
+  quest home_list items previous name: ' <white>Предыдущая страница'
+  quest home_list items previous lore:
+  - ''
+  - ' <yellow>Нажми, чтобы перейти на предыдущию.'
+ 
+#QUEST MESSAGES
+ 
+QUEST:
+  warning expiwhite title: <white>Истекающий белый!
+  warning expiwhite title sub: <yellow>%uclans_quest_name:{QUEST}%
+  warning expiwhite actionbar: <white>Истекающий белый! <gray>| <yellow>%uclans_quest_name:{QUEST}%
+  warning expiwhite message: '%tag% <white>Твой квест <yellow>%uclans_quest_name:{QUEST}% <white>истек белый цвет и был деактивирован'
+  warning earned title: <yellow>+%act_amount%
+  warning earned title sub: <yellow>%uclans_quest_name:{QUEST}% <gray>(%uclans_playerquest_earned%<gray>/%uclans_quest_mission_total:{QUEST}%)
+  warning earned actionbar: <yellow>+%act_amount% <gray>| <yellow>%uclans_quest_name:{QUEST}% <gray>(%uclans_playerquest_earned%<gray>/%uclans_quest_mission_total:{QUEST}%)
+  warning earned message: '%tag% <yellow>Вы собрали <yellow>+%act_amount% <yellow>on <yellow>%uclans_quest_name:{QUEST}% <gray>(%uclans_playerquest_earned%<gray>/%uclans_quest_mission_total:{QUEST}%)'
+  warning finished title: <yellow>ЗАВЕРШЕНО!
+  warning finished title sub: <yellow>%uclans_quest_name:{QUEST}% <gray>(+%uclans_quest_reward_points:{QUEST}%)
+  warning finished actionbar: <yellow>ЗАВЕРШЕНО! <gray>| <yellow>%uclans_quest_name:{QUEST}% <gray>(+%uclans_quest_reward_points:{QUEST}%)
+  warning finished message: '%tag% <yellow>Вы завершили задание <yellow>%uclans_quest_name:{QUEST}% <gray>(+%uclans_quest_reward_points:{QUEST}%)'
+  type daily: <white>Ежедневные задания!
+  type once: <white>Только один раз!
+  this day: ' <white>Этот день.'
+  other player gui: <white>Это делает другой игрок!
+  other player: '%tag% <white>Это делает другой игрок!'
+  error to start gui: <white>Ошибка начала!
+  success to start gui: <white>Задание начато, удачи!
+  error to remove gui: <white>Ошибка при отказе!
+  success to temove gui: <white>Вы отказались от задания!
+  player already started gui: <white>У вас есть активный квест!
+  player already started: '%tag% <white>У вас есть активный квест!'
+  player already finished: '%tag% <white>Этот квест уже был выполнен другим участником.'
