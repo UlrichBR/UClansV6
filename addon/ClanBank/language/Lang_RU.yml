@@ -1,26 +1,26 @@
 COMUM:
-  player dont have clan: '%tag% <white>У этого игрока нет клана.'
-  gui error: '%tag% <white>Это меню содержит ошибку и не может быть открыто'
-  disabled function: '%tag% <white>Эта функция выключена или деактивирована.'
-  chan does not exists: '%tag% <white>Этого клана не существует'
-  command by player: '%tag% <white>Эта команда должна быть использована игроком.'
-  no permission: '%tag% <white>У вас нет разрешений для этого.'
+  player dont have clan: '%tag% <red>У этого игрока нет клана.'
+  gui error: '%tag% <red>Это меню содержит ошибку и не может быть открыто'
+  disabled function: '%tag% <red>Эта функция выключена или деактивирована.'
+  chan does not exists: '%tag% <red>Этого клана не существует'
+  command by player: '%tag% <red>Эта команда должна быть использована игроком.'
+  no permission: '%tag% <red>У вас нет разрешений для этого.'
   player deposited money: '%tag% <yellow>%uclans_money_currency%%amount% <yellow>был внесен на ваш счет.'
-  player dont have money: '%tag% <white>Вам нужно <yellow>%uclans_money_currency%%amount%'
-  player dont have money gui: <white>You need to <yellow>%uclans_money_currency%%amount%
+  player dont have money: '%tag% <red>Вам нужно <yellow>%uclans_money_currency%%amount%'
+  player dont have money gui: <red>You need to <yellow>%uclans_money_currency%%amount%
   player debited money: '%tag% <yellow>Было списано <yellow>%amount% <yellow>с вашего аккаунта.'
-  player money nozero: '%tag% <white>Значение должно быть больше нуля'
-  help clan header subcommand: '<newline><blue><bold>Помощь с подкомандами:</bold> <newline> <yellow>[!] <gray>subcmd <gray>| <white><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
-  help list empty: ' <white>- В этом списке ничего нет.'
-  clan dont permission role: '%tag% <white>Ваша текущая роль, вы не можете этого сделать.'
-  bank value max title: <dark_white>! <white>Значение максимально для <yellow>%uclans_money_currency%%max%
-  bank value min title: <dark_white>! <white>Значение минимально для <yellow>%uclans_money_currency%%min%
-  bank value max: '%tag% <white>Значение максимально для <yellow>%uclans_money_currency%%max%'
-  bank value min: '%tag% <white>Значение минимально для <yellow>%uclans_money_currency%%min%'
-  bank add error gui: <white>Ошибка транзакции!
+  player money nozero: '%tag% <red>Значение должно быть больше нуля'
+  help clan header subcommand: '<newline><blue><bold>Помощь с подкомандами:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help list empty: ' <red>- В этом списке ничего нет.'
+  clan dont permission role: '%tag% <red>Ваша текущая роль, вы не можете этого сделать.'
+  bank value max title: <dark_red>! <red>Значение максимально для <yellow>%uclans_money_currency%%max%
+  bank value min title: <dark_red>! <red>Значение минимально для <yellow>%uclans_money_currency%%min%
+  bank value max: '%tag% <red>Значение максимально для <yellow>%uclans_money_currency%%max%'
+  bank value min: '%tag% <red>Значение минимально для <yellow>%uclans_money_currency%%min%'
+  bank add error gui: <red>Ошибка транзакции!
   bank add success gui: <yellow>Успешно!
-  bank need: '%tag% <white>Клановый банк не имеет <yellow>%uclans_money_currency%%amount%'
-  bank need gui: <white>Банку нужно <yellow>%uclans_money_currency%%amount%
+  bank need: '%tag% <red>Клановый банк не имеет <yellow>%uclans_money_currency%%amount%'
+  bank need gui: <red>Банку нужно <yellow>%uclans_money_currency%%amount%
   bank view: '%tag% <yellow>Клановый банк теперь имеет <yellow>%uclans_money_currency%%amount%'
 GUI:
   Bank home_bank title: <blue>Банк <gray>| <aqua>%uclans_tag_color%
@@ -30,47 +30,47 @@ GUI:
   Bank home_bank items fill2 name: ' '
   Bank home_bank items fill2 lore: [
     ]
-  Bank home_bank items balance name: <yellow>Баланс клана
+  Bank home_bank items balance name: <blue>Баланс клана
   Bank home_bank items balance lore:
   - ''
   - ' <white>Всего: <yellow>%uclans_money_currency%%uclans_bank_balance%'
   - ''
   - ' <yellow>Выберите действие ниже.'
-  Bank home_bank items add name: <yellow>Зачислить %uclans_money_current_formated% в банк
+  Bank home_bank items add name: <blue>Зачислить %uclans_money_current_formated% в банк
   Bank home_bank items add lore:
   - ''
   - ' <yellow>Нажми, чтобы открыть.'
-  Bank home_bank items withdraw name: <yellow>Снять %uclans_money_current_formated% с банка
+  Bank home_bank items withdraw name: <blue>Снять %uclans_money_current_formated% с банка
   Bank home_bank items withdraw lore:
   - ''
   - ' <yellow>Нажми, чтобы открыть.'
-  Bank home_bank items back name: <white>Вернуться назад
+  Bank home_bank items back name: <red>Вернуться назад
   Bank home_bank items back lore:
   - ''
   - ' <yellow>Click to go back.'
-  Bank bank_withdraw title: '<white>Снять: <yellow>%uclans_money_currency%%amount%'
+  Bank bank_withdraw title: '<red>Снять: <yellow>%uclans_money_currency%%amount%'
   Bank bank_withdraw items fill name: ' '
   Bank bank_withdraw items fill lore: [
     ]
   Bank bank_withdraw items fill2 name: ' '
   Bank bank_withdraw items fill2 lore: [
     ]
-  Bank bank_withdraw items balance name: <yellow>Баланс клана
+  Bank bank_withdraw items balance name: <blue>Баланс клана
   Bank bank_withdraw items balance lore:
   - ''
   - ' <white>Всего: <yellow>%uclans_money_currency%%uclans_bank_balance%'
   - ''
   - ' <yellow>Выберите действие ниже.'
-  Bank bank_withdraw items player name: <yellow>%uclans_player%
+  Bank bank_withdraw items player name: <blue>%uclans_player%
   Bank bank_withdraw items player lore:
   - ''
   - ' <white>%uclans_money_current_formated%: <yellow>%uclans_money_currency%%uclans_money_player%'
   - ''
-  Bank bank_withdraw items add name: <yellow>+ <yellow>%uclans_money_currency%%add%
+  Bank bank_withdraw items add name: <blue>+ <yellow>%uclans_money_currency%%add%
   Bank bank_withdraw items add lore:
   - ''
   - ' <yellow>Нажми, чтобы добавить.'
-  Bank bank_withdraw items add2 name: <yellow>+ <yellow>%uclans_money_currency%%add%
+  Bank bank_withdraw items add2 name: <blue>+ <yellow>%uclans_money_currency%%add%
   Bank bank_withdraw items add2 lore:
   - ''
   - ' <yellow>Нажми, чтобы добавить.'
@@ -82,53 +82,53 @@ GUI:
   Bank bank_withdraw items remove2 lore:
   - ''
   - ' <yellow>Нажми, чтобы удалить.'
-  Bank bank_withdraw items go name: <yellow>Снять <yellow>%uclans_money_currency%%amount%
+  Bank bank_withdraw items go name: <blue>Снять <yellow>%uclans_money_currency%%amount%
   Bank bank_withdraw items go lore:
   - ''
   - ' <yellow>Нажми, чтобы снять <yellow>%uclans_money_currency%%amount%.'
-  Bank bank_withdraw items back name: <white>Вернуться назад
+  Bank bank_withdraw items back name: <red>Вернуться назад
   Bank bank_withdraw items back lore:
   - ''
   - ' <yellow>Нажми, чтобы вернуться назад.'
-  Bank bank_add title: '<yellow>Добавить: <yellow>%uclans_money_currency%%amount%'
+  Bank bank_add title: '<green>Добавить: <yellow>%uclans_money_currency%%amount%'
   Bank bank_add items fill name: ' '
   Bank bank_add items fill lore: [
     ]
   Bank bank_add items fill2 name: ' '
   Bank bank_add items fill2 lore: [
     ]
-  Bank bank_add items balance name: <yellow>Баланс клана
+  Bank bank_add items balance name: <blue>Баланс клана
   Bank bank_add items balance lore:
   - ''
   - ' <white>Всего: <yellow>%uclans_money_currency%%uclans_bank_balance%'
   - ''
   - ' <yellow>Выберите действие ниже.'
-  Bank bank_add items player name: <yellow>%uclans_player%
+  Bank bank_add items player name: <blue>%uclans_player%
   Bank bank_add items player lore:
   - ''
   - ' <white>%uclans_money_current_formated%: <yellow>%uclans_money_currency%%uclans_money_player%'
   - ''
-  Bank bank_add items add name: <yellow>+ <yellow>%uclans_money_currency%%add%
+  Bank bank_add items add name: <green>+ <yellow>%uclans_money_currency%%add%
   Bank bank_add items add lore:
   - ''
   - ' <yellow>Нажми, чтобы добавить.'
-  Bank bank_add items add2 name: <yellow>+ <yellow>%uclans_money_currency%%add%
+  Bank bank_add items add2 name: <green>+ <yellow>%uclans_money_currency%%add%
   Bank bank_add items add2 lore:
   - ''
   - ' <yellow>Нажми, чтобы добавить.'
-  Bank bank_add items remove name: <white>-%uclans_money_currency%%remove%
+  Bank bank_add items remove name: <red>-%uclans_money_currency%%remove%
   Bank bank_add items remove lore:
   - ''
   - ' <yellow>Нажми, чтобы удалить.'
-  Bank bank_add items remove2 name: <white>-%uclans_money_currency%%remove%
+  Bank bank_add items remove2 name: <red>-%uclans_money_currency%%remove%
   Bank bank_add items remove2 lore:
   - ''
   - ' <yellow>Нажми, чтобы удалить.'
-  Bank bank_add items go name: <yellow>Add <yellow>%uclans_money_currency%%amount%
+  Bank bank_add items go name: <blue>Add <yellow>%uclans_money_currency%%amount%
   Bank bank_add items go lore:
   - ''
   - ' <yellow>Нажми, чтобы добавить <yellow>%uclans_money_currency%%amount%.'
-  Bank bank_add items back name: <white>Вернуться назад
+  Bank bank_add items back name: <red>Вернуться назад
   Bank bank_add items back lore:
   - ''
   - ' <yellow>Нажми, чтобы вернуться назад.'
