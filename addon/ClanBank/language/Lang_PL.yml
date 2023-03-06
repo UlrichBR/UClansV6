@@ -1,0 +1,134 @@
+COMUM:
+  player dont have clan: '%tag% <red>Ten gracz nie posiada klanu.'
+  gui error: '%tag% <red>To menu zawiera błąd i nie może być otwarte.'
+  disabled function: '%tag% <red>Ta funkcja jest wyłączona lub wyłączona.'
+  chan does not exists: '%tag% <red>Ten klan nie istnieje.'
+  command by player: '%tag% <red>Tę komendę musi użyć gracz.'
+  no permission: '%tag% <red>Nie masz uprawnień do wykonania tej czynności.'
+  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>zostało wpłacone na twoje konto.'
+  player dont have money: '%tag% <red>Musisz mieć <green>%uclans_money_currency%%amount%.'
+  player dont have money gui: <red>Musisz mieć <green>%uclans_money_currency%%amount%.
+  player debited money: '%tag% <yellow>Zostało pobrane <green>%amount% <yellow>z twojego konta.'
+  player money nozero: '%tag% <red>Wartość musi być większa niż zero.'
+  help clan header subcommand: '<newline><blue><bold>Pomoc z podkomendami:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>wymagane <gray>| <light_purple>() <gray>opcjonalne <newline> '
+  help list empty: ' <red>- Nie ma nic na tej liście.'
+  clan dont permission role: '%tag% <red>Twoja obecna rola nie pozwala Ci na to.'
+  bank value max title: <dark_red>! <red>Maksymalna wartość to <green>%uclans_money_currency%%max%.
+  bank value min title: <dark_red>! <red>Minimalna wartość to <green>%uclans_money_currency%%min%.
+  bank value max: '%tag% <red>Maksymalna wartość to <green>%uclans_money_currency%%max%.'
+  bank value min: '%tag% <red>Minimalna wartość to <green>%uclans_money_currency%%min%.'
+  bank add error gui: <red>Błąd transakcji!
+  bank add success gui: <green>Sukces!
+  bank need: '%tag% <red>Bank klanowy nie ma <green>%uclans_money_currency%%amount%'
+  bank need gui: <red>Bank wymaga <green>%uclans_money_currency%%amount%
+  bank view: '%tag% <yellow>Bank klanowy posiada teraz <green>%uclans_money_currency%%amount%'
+GUI:
+  Bank home_bank title: <blue>Bank <gray>| <aqua>%uclans_tag_color%
+  Bank home_bank items fill name: ' '
+  Bank home_bank items fill lore: [
+    ]
+  Bank home_bank items fill2 name: ' '
+  Bank home_bank items fill2 lore: [
+    ]
+  Bank home_bank items balance name: <green>Saldo klanowe
+  Bank home_bank items balance lore:
+  - ''
+  - ' <white>Całkowita suma: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - ' <yellow>Wybierz poniższą akcję.'
+  Bank home_bank items add name: <green>Dodaj %uclans_money_current_formated% do banku
+  Bank home_bank items add lore:
+  - ''
+  - ' <yellow>Kliknij, aby otworzyć.'
+  Bank home_bank items withdraw name: <green>Wypłać %uclans_money_current_formated% z banku
+  Bank home_bank items withdraw lore:
+  - ''
+  - ' <yellow>Kliknij, aby otworzyć.'
+  Bank home_bank items back name: <red>Powrót
+  Bank home_bank items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby powrócić.'
+  Bank bank_withdraw title: '<red>Wypłata: <green>%uclans_money_currency%%amount%'
+  Bank bank_withdraw items fill name: ' '
+  Bank bank_withdraw items fill lore: [
+    ]
+  Bank bank_withdraw items fill2 name: ' '
+  Bank bank_withdraw items fill2 lore: [
+    ]
+  Bank bank_withdraw items balance name: <green>Saldo klanu
+  Bank bank_withdraw items balance lore:
+  - ''
+  - ' <white>Razem: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - ' <yellow>Wybierz jedną z poniższych opcji.'
+  Bank bank_withdraw items player name: <green>%uclans_player%
+  Bank bank_withdraw items player lore:
+  - ''
+  - ' <white>%uclans_money_current_formated%: <green>%uclans_money_currency%%uclans_money_player%'
+  - ''
+  Bank bank_withdraw items add name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_withdraw items add lore:
+  - ''
+  - ' <yellow>Kliknij, aby dodać.'
+  Bank bank_withdraw items add2 name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_withdraw items add2 lore:
+  - ''
+  - ' <yellow>Kliknij, aby dodać.'
+  Bank bank_withdraw items remove name: <red>-%uclans_money_currency%%remove%
+  Bank bank_withdraw items remove lore:
+  - ''
+  - ' <yellow>Kliknij, aby usunąć.'
+  Bank bank_withdraw items remove2 name: <red>-%uclans_money_currency%%remove%
+  Bank bank_withdraw items remove2 lore:
+  - ''
+  - ' <yellow>Kliknij, aby usunąć.'
+  Bank bank_withdraw items go name: <green>Wypłać <green>%uclans_money_currency%%amount%
+  Bank bank_withdraw items go lore:
+  - ''
+  - ' <yellow>Kliknij, aby wypłacić <green>%uclans_money_currency%%amount%.'
+  Bank bank_withdraw items back name: <red>Powrót
+  Bank bank_withdraw items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby wrócić.'
+  Bank bank_add title: '<green>Dodaj: <green>%uclans_money_currency%%amount%'
+  Bank bank_add items fill name: ' '
+  Bank bank_add items fill lore: [
+    ]
+  Bank bank_add items fill2 name: ' '
+  Bank bank_add items fill2 lore: [
+    ]
+  Bank bank_add items balance name: <green>Saldo klanu
+  Bank bank_add items balance lore:
+  - ''
+  - ' <white>Łącznie: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - ' <yellow>Wybierz akcję poniżej.'
+  Bank bank_add items player name: <green>%uclans_player%
+  Bank bank_add items player lore:
+  - ''
+  - ' <white>%uclans_money_current_formated%: <green>%uclans_money_currency%%uclans_money_player%'
+  - ''
+  Bank bank_add items add name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_add items add lore:
+  - ''
+  - ' <yellow>Kliknij, aby dodać.'
+  Bank bank_add items add2 name: <green>+ <green>%uclans_money_currency%%add%
+  Bank bank_add items add2 lore:
+  - ''
+  - ' <yellow>Kliknij, aby dodać.'
+  Bank bank_add items remove name: <red>-%uclans_money_currency%%remove%
+  Bank bank_add items remove lore:
+  - ''
+  - ' <yellow>Kliknij, aby usunąć.'
+  Bank bank_add items remove2 name: <red>-%uclans_money_currency%%remove%
+  Bank bank_add items remove2 lore:
+  - ''
+  - ' <yellow>Kliknij, aby usunąć.'
+  Bank bank_add items go name: <green>Dodaj <green>%uclans_money_currency%%amount%
+  Bank bank_add items go lore:
+  - ''
+  - ' <yellow>Kliknij, aby dodać <green>%uclans_money_currency%%amount%.'
+  Bank bank_add items back name: <red>Powrót
+  Bank bank_add items back lore:
+  - ''
+  - ' <yellow>Kliknij, aby powrócić.'

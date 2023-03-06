@@ -1,0 +1,89 @@
+COMUM:
+  player donthave clan: '%tag% <red>Ten gracz nie ma klanu.'
+  gui error: '%tag% <red>To menu zawiera błąd i nie może być otwarte.'
+  disabled function: '%tag% <red>Ta funkcja jest wyłączona lub wyłączona.'
+  chan does not exists: '%tag% <red>Ten klan nie istnieje.'
+  chest in use: '%tag% <red>Skrzynia klanowa jest już używana przez innego gracza, aby uniknąć duplikacji tylko jeden gracz może używać skrzyni w tym samym czasie.'
+  chest name: <green>Skrzynia %uclans_tag_color% dark_gray>[%page%/%pages%]
+  chest limit: <red>To jest limit dla twojego klanu!
+  chest limit reached: '%tag% <red>Limit dla twojego klanu to %pages% skrzyń.'
+  no permission: '%tag% <red>Nie masz uprawnień do tego.'
+  no data to export: '%tag% <red>Nie ma danych do wyeksportowania.'
+  warn reexport: ' <red>- Uważaj, jeśli ponownie wyeksportujesz bazę danych, zostanie ona przepisana, a istniejące skrzynie zostaną zmienione. Jeśli to działało poprawnie, zaleca się usunięcie pliku magazynu starych skrzyń.'
+  help clan header subcommand: '<newline><blue><bold>Pomoc z podkomendami:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obowiązkowy <gray>| <light_purple>() <gray>opcjonalny <newline> '
+  help list empty: ' <red>- Na tej liście nie ma niczego.'
+  clan dont permission role: '%tag% <red>Twoja obecna rola nie pozwala Ci na to.'
+  need money hook: '%tag% <red>Nie ma włączonych metod pieniężnych'
+  no permission buy extra: '%tag% <red>Nie możesz kupić więcej stron ze skrzyni'
+  chest extra error: <red>Błąd podczas zakupu!
+  chest extra needmoney gui: <red>Niewystarczająca ilość pieniędzy na zakup!
+  chest extra needmoney: <red>Nie masz wystarczająco dużo pieniędzy na zakup.
+  chest extra buyed: <aqua>Zakupiono pomyślnie!
+  chest items count: '%tag% <red>Przedmioty można wyświetlić tylko w menu gui!'
+  chest unlocked false: <red>Błąd odblokowania!
+  chest unlocked true: <green>Pomyślnie odblokowano!
+  chest locked false: <red>Błąd blokowania!
+  chest locked true: <aqua>Pomyślnie zablokowano!
+  chest error save drop: '%tag% <red>Wystąpił błąd podczas zapisywania jednego lub więcej przedmiotów do bau. Przedmiot został upuszczony na ziemię!'
+  player dont have money: '%tag% <red>Musisz posiadać <green>$%amount% <red>aby to zrobić.'
+  player dont have money gui: <red>Musisz posiadać <green>$%amount%
+  player debited money: '%tag% <yellow>Zostało pobrane <green>%amount% <yellow>z twojego konta.'
+  player deposited money: '%tag% <green>$%amount% <yellow>zostało wpłacone na twoje konto.'
+  disabled world chest: '%tag% <red>Nie możesz używać skrzyń w tej krainie.'
+  disabled region chest: '%tag% <red>Nie możesz używać skrzyń w tej regii.'
+  command by player: '%tag% <red>Tę komendę może użyć tylko gracz.'
+LANGUAGE:
+  clan chest in limit: '%tag% <red>Twój klan osiągnął limit skrzyń i musi zdobyć poziomy, aby odblokować więcej stron skrzyń. Obecny limit twojego klanu to <aqua>%uclans_limit_chest%.'
+ 
+ 
+# CHEST GUI
+ 
+ 
+GUI:
+  chest load_chest title: <blue>Ładowanie przedmiotów...
+  chest load_chest items fill name: ' '
+  chest load_chest items fill lore: [
+    ]
+  chest load_chest items fill2 name: ' <red>Czekaj.'
+  chest load_chest items fill2 lore: [
+    ]
+  chest buy_chest title: <red>Potwierdź <aqua>Zakup 1 Strony <red>?
+  chest buy_chest items fill name: ' '
+  chest buy_chest items fill lore: [
+  ]
+  chest buy_chest items confirm name: <green>Kliknij, aby potwierdzić
+  chest buy_chest items confirm lore:
+  - ' '
+  - ' <yellow>Kliknij, aby przejść do potwierdzenia.'
+  chest buy_chest items cancel name: <green>Kliknij, aby anulować
+  chest buy_chest items cancel lore:
+  - ' '
+  - ' <yellow>Kliknij, aby przejść do anulowania.'
+  chest chest title: <blue>Skrzynia <gray>| %uclans_tag_color%.
+  chest chest items fill name: ' '
+  chest chest items fill lore: [
+  ]
+  chest chest items back name: <green>Kliknij, aby wrócić
+  chest chest items back lore:
+  - ' '
+  - ' <yellow>Kliknij, aby powrócić do domu.'
+  chest chest items sort name: <green>Kliknij, aby zorganizować.
+  chest chest items sort lore:
+  - ' '
+  - ' <yellow>Przedmioty zostaną zorganizowane według'
+  - <yellow>typu, koloru i ilości.
+  chest chest items previous name: <green>Poprzednia strona
+  chest chest items previous lore:
+  - ' '
+  - ' <yellow>Kliknij, aby przejść do poprzedniej strony.'
+  chest chest items next name: <green>Następna strona
+  chest chest items next lore:
+  - ' '
+  - ' <yellow>Kliknij, aby przejść do następnej strony.'
+  chest chest items buy name: <green>Kup dodatkowe skrzynie.  
+  chest chest items buy lore:
+  - ' '
+  - ' <white>Cena: <green>$%price%'
+  - ' <white>Limit dodatkowych: <aqua>%clan_extra%<gray>/<aqua>%clan_limit%'
+  - ' '
+  - <yellow>Kliknij, aby kupić!

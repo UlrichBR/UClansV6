@@ -1,0 +1,10 @@
+COMUM:
+  player donthave clan: '%tag% <red>Gracz nie należy do żadnego klanu.'
+  gui error: '%tag% <red>Wystąpił błąd podczas otwierania tego menu.'
+  disabled function: '%tag% <red>Ta funkcja jest wyłączona lub zdezaktywowana.'
+  chan does not exists: '%tag% <red>Ten klan nie istnieje.'
+  command by player: '%tag% <red>Tę komendę musi użyć gracz.'
+  no permission: '%tag% <red>Nie masz uprawnień do wykonania tej czynności.'
+  disabled world: '%tag% <red>Nie możesz używać skrzyń śmierci w tym świecie.'
+  chest colected: '%tag% <green>Zbieranie skrzyni śmierci gracza %player% zakończone powodzeniem!'
+  disappears: <dark_red>!! Znika po zamknięciu !!
