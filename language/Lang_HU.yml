@@ -1,0 +1,1797 @@
+ 
+ 
+ # TRANSLATIONS OF THE LANGUAGE AND DIALOGUE FILES
+ 
+LANGUAGE:
+  separer: <gradient:blue:aqua>████████████████████████████████</gradient>
+  command by player: '%tag% <red>Ezt a parancsot csak játékos használhatja.'
+  command by console: '%tag% <red>A parancs nem futtatható konzolból.'
+  disabled world command: '%tag% <red>Klán parancsok nem elérhetőek ebben a világban.'
+  disabled region command: '%tag% <red>Klán parancsok nem elérhetőek ebben a zónában.'
+  error start action: '%tag% <red>Hiba történt.'
+  error character: '%tag% <red>Érvénytelen karaktert tartalmaz.'
+  error mod desc: '%tag% <red>Hiba történt a leírás megváltoztatása során.'
+  has globalff: '%tag% <green>Globális baráti tűz bekapcsolva!'
+  no permission: '%tag% <red>Nincs jogosultságod'
+  chest extra buyed update: '%tag% <aqua>%player% <green>új klán ládát vásárolt.'
+  currency vault: Pénz
+  currency playerpoints: Pont
+  currency clansouls: Lélek
+  export same storage: '%tag% <red>Az exportáláshoz a jelenlegitől eltérő helyet kell választanod.'
+  export no data: '%tag% <red>Nincs exportálandó adat.'
+  export mysql deconfigured: '%tag% <red>Hiba történt! A mysql mezők rosszul vannak bekonfigurálva.'
+  export mysql connection error: '%tag% <red>Hiba történt a MYSQL csatlakozás során.'
+  export sqlite connection error: '%tag% <red>Hiba történt a SQLITE csatlakozás során.'
+  export yaml connection error: '%tag% <red>Hiba történt a YAML csatlakozás során.'
+  tag in use: '%tag% <red>Ez a tag már használatban van.'
+  clan not found: '%tag% <red>Nem létezik klán ezzel a taggel.'
+  clan ally header: <blue>Szövetségesek listája. <dark_gray>(tag/kdr/tagok)
+  clan list empty: ' <red>Nincs klán ebben a listában.'
+  clan is your clan: '%tag% <red>Ez a Te klánod.'
+  clan is rival: '%tag% <red>Ez a klán már rivális.'
+  clan already ally: '%tag% <red>Ez a klán már szövetséges.'
+  clan dont ally: '%tag% <red>Ez a klán nem szövetséges.'
+  clan player isnot your clan: '%tag% <red>Ez a játékos nincs a klánodban.'
+  clan player skin in update gui: <green>Kinézet frissítése, kérlek várj...
+  clan player skin in update: '%tag% <green>Kinézet frissítése, ez egy kevés időbe telhet...'
+  clan player skin finish update: '%tag% <green>Kinézeted frissítve'
+  clan player skin error update: '%tag% <red>Hiba történt a kinézetet frissítése során'
+  clan pvp disabled: '%tag% <red>Klán PVP kikapcsolva.'
+  clan allypvp disabled: '%tag% <red>Szövetségesek közti PVP kikapcsolva.'
+  clan player blocked invite gui: <red>Klán meghívók kikapcsolva.
+  clan player blocked invite: '%tag% <red>A játékos kikapcsolta a klán meghívókat.'
+  clan player accept success invite gui: <green>Meghívó elfogadva.
+  clan player accept success invite: '%tag% <red>Sikeresen elfogadtad a meghívót.'
+  clan player accept error invite gui: <red>Hiba az elfogadás során.
+  clan player accept error invite: '%tag% <red>Hiba történt a meghívás elfogadása során.'
+  clan player deny success invite gui: <red>Meghívás elutasítva.
+  clan player deny success invite: '%tag% <red>Sikeresen elutasítottad a meghívót.'
+  clan player deny error invite gui: <red>Hiba történt az elutasítás során.
+  clan player deny error invite: '%tag% <red>Hiba történt a meghívás elutasítása során.'
+  clan player isalready banned: '%tag% <red>A játékos már kitiltásra került a klánból.'
+  clan player isnot banned: '%tag% <red>A játékos nincs kitiltva a klánból.'
+  clan player is banned: '%tag% <red>A játékos ki van tiltva a klánból így nem fogadhat meghívást.'
+  clan player is banned gui: <red>Játékos kitiltva a klánból.
+  clan player error unban: '%tag% <red>Hiba történt a játékos feloldása során'
+  clan player error unban gui: <red>Hiba történt a játékos feloldása során.
+  clan player error ban: '%tag% <red>Hiba történt a játékos kitiltása során'
+  clan player error ban gui: <red>Hiba történt a játékos kitiltása során.
+  clan player success ban: '%tag% <green>A játékos sikeresen kitiltásra került a klánból.'
+  clan player success ban gui: <green>Játékos sikeresen kitiltásra került.
+  clan player success unban: '%tag% <green>A játékos sikeresen feloldásra került a klánból.'
+  clan player success unban gui: <green>A játékos sikeresen feloldásra került.
+  clan player are banned: '%tag% <red>Ki lettél tiltva ebből a klánból.'
+  clan player error change nickname: '%tag% <red>Hiba történt a becenév megváltoztatása során.'
+  clan player error change nickname gui: <red>Hiba történt a becenév megváltoztatása során..
+  clan player changed nickname: '%tag% <green>Becenév megváltoztatva!'
+  clan player changed nickname gui: <green>Bevenév megváltoztatva!
+  clan player nickname default: '%tag% <red>A beceneved már az alapértelmezett.'
+  clan player nickname default gui: <red>A beceneved már az alapértelemzett.
+  clan reward level: '%tag% <yellow>Klán jutalmak lettek feloldva a következő szint eléréséért: %num%'
+  clan max members: <red>A klán már elérte a maximális létszámot.
+  clan max members level: '%tag% <red>A klán már elérte a maximális létszámot a szintjének megfelelően.'
+  clan player kicked out: '%tag% <green>Ki lettél rúgva a(z) <aqua>%clan% <green>klánból <green>%clan_leader% <red>által'
+  clan player kicked outby: '%tag% <dark_red>%player% <yellow>ki lett rúgva a klánból <green>%clan_leader% <yellow>által'
+  clan tag equals: '%tag% <red>Változatlan tag, úgy tűnik ugyanaz, mint az előző'
+  clan name equals: '%tag% <red>Változatlan név, úgy tűnik ugyanaz, mint az előző.'
+  clan already rival: '%tag% <red>Ez a klán már rivális.'
+  clan is ally: '%tag% <red>Ez a klán már szövetséges.'
+  clan rival error remove: '%tag% <red>Hiba történt a rivális eltörlése során.'
+  clan dont rival: '%tag% <red>Ez a klán nem rivális.'
+  clan new ally: '%tag% <red>! <yellow>Új szövetség alakult ki a(z) <green>%clan_tag% klánnal'
+  clan removed ally: '%tag% <red>! <yellow>A szövetség megbontva a(z) <green>%clan_tag% <yellow>klánnal.'
+  clan one removed ally: '%tag% <red>! <yellow>Egy szövetség megbontásra került.'
+  clan one removed rival: '%tag% <red>! <yellow>Egy rivális eltörlésre került.'
+  clan created: '%tag% <red>! <aqua>%clan_tag% <yellow>klán létrehozva <green>%player% <yellow>által.'
+  clan deleted: '%tag% <red>! <aqua>%clan_tag% <yellow>klán törölve <green>%player% <yellow>által.'
+  clan deleted small: <red><strikethrough>Törölve
+  clan ff changed: '%tag% <red>! <yellow>Baráti tűz <aqua>%value%.'
+  clan globalff changed: '%tag% <red>! <yellow>Globális baráti tűz <aqua>%value%.'
+  clan new join: '%tag% <red>! <green>%player% <yellow>csatlakozott a klánhoz.'
+  clan new kick: '%tag% <red>! <green>%player% <yellow>ki lett rúgva a klánból.'
+  clan new leave: '%tag% <red>! <green>%player% <yellow>kilépett a(z) <green>%clan_tag% <red>klánból.'
+  clan new rival: '%tag% <red>! <yellow>Új rivális: <green>%clan_tag%'
+  clan new rival removed: '%tag% <red>! <green>%clan_tag% <yellow>klán többé nem rivális.'
+  clan new leader: '%tag% <red>! <green>%clan_tag% <yellow>klán új vezetője: <green>%player%'
+  clan rival removed: '%tag% <red>! <green>%clan_tag% <yellow>klán többé nem rivális.'
+  clan verify changed: '%tag% <red>! <yellow>A klán megváltoztatva erre: <green>%value%.'
+  clan new promote: '%tag% <red>! <green>%player% <yellow>előléptetve erre: <aqua>%role_formated%.'
+  clan new demote: '%tag% <red>! <green>%player% <yellow>lefokozva.'
+  clan tag blacklist: '%tag% <red>Ez a tag nem használható.'
+  clan changed settings: '%tag% <green>Klán beállítások módosítva.'
+  clan changed settings gui: <green>Beállítások módosítva.
+  clan sync settings gui: <green>Jogosultságok szinkronizálása...
+  clan settings warinvite: <aqua>Háború meghívó
+  clan settings allysharedchat: <aqua>Szövetséges chat
+  clan settings joinleave: <aqua>Csatlakozás és kilépés
+  clan settings allysharedhome: <aqua>Szövetséges otthon
+  clan settings clanff: <aqua>Klán FF
+  clan settings opened: <aqua>Nyitott klán
+  clan settings publichomes: <aqua>Az otthonok nyilvánosak
+  clan delete error gui: <dark_red>Hiba a törlés során!
+  clan no actions: '%tag% <red>Nincs megszakítható művelet.'
+  clan actions expired: '%tag% <red>Az időkorlát lejárt.'
+  clan point reason level change: Klán szint változás
+  clan point reason no reason: Nincs indok
+  banner delete error gui: <red>Hiba a törlés során!
+  banner delete success gui: <aqua>Sikeresen törölve!
+  banner delete error: '%tag% <red>Hiba történt a törlés során.'
+  banner delete success: '%tag% <green>Banner sikeresen törölve!'
+  banner empty: '%tag% <red>A klánodnak nincs Bannere!'
+  banner empty gui: <red>A klánodnak nincs Bannere!
+  banner empty item: <red>A tárgynak egy bannernek kell lennie!
+  banner not acceptable: '%tag% <red>Ez a tárgy nem elfogadható bannernek.'
+  banner not acceptable gui: <red>Ez a tárgy nem elfogadható.
+  banner not banner: '%tag% <red>A kezedben lévő tárgynak bannernek kell lennie'
+  banner hand empty: '%tag% <red>A kezedben kell lennie egy tárgynak.'
+  banner upload error gui: <red>Hiba történt a banner mentése során.
+  banner upload success gui: <aqua>Új banner elmentve!
+  banner upload success: '%tag% <aqua>Új klán banner elmentve!'
+  help uclan header: <blue><bold>Admin Klán Segítség:</bold> <gray>(%page%/%pages%)
+  help clan header: '<blue><bold>Klán segítség:</bold> <gray>(%page%/%pages%) <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help clan header subcommand: '<newline><blue><bold>Alparancsok segítség:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help list empty: ' <red>- Üres lista.'
+  help clan home list header: '<newline>%uclans_tag_color% <blue><bold>otthon lista:'
+  help clan home list format: '<click:run_command:"/{_clan} {_home} {_teleport} %uclans_home:{name}:name%"><hover:show_text:''<green>Kattints a teleportáláshoz.''> <gray>- <green>{num} <gray>| <white>Név: <green>%uclans_home:{name}:name% <gray>| <white>Szerver: <green>%uclans_home:{name}:server% <gray>| <white>Helyszín: <green>%uclans_home:{name}:location%</hover></click>'
+  help clan home list format visit: ' <gray>- <green>{num} <gray>| <white>Név: <green>%uclans_home:{name}:name% <gray>| <white>Szerver: <green>%uclans_home:{name}:server%'
+  help clan home view header: '<newline><blue><bold>Otthon információ:'
+  help clan home view format:
+  - '<blue><bold>|</bold> <blue>Információ:'
+  - ' <white>Név: <aqua>%uclans_home:{name}:name%'
+  - ' <white>Szerver: <aqua>%uclans_home:{name}:server%'
+  - ' <white>Helyszín: <aqua>%uclans_home:{name}:location%'
+  - ''
+  - <click:suggest_command:"/{_clan} {_home} {_teleport} %uclans_home:{name}:name%"><hover:show_text:'<green>Kattints a teleportáláshoz.'><aqua>[Teleportálás]</hover></click>
+  help clan member list header: '<newline>%uclans_tag_color%<blue><bold> member list:'
+  help clan member list format: '<click:suggest_command:"/{_clan} {_profile} {_view} %uclans_player_realname% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_player_role_formated% <green>%uclans_player_nickname% <gray>| <white>Csatlakozott: <green>%uclans_player_joindate_formated% | <white>KDR: <green>%uclans_player_kdr%</hover></click>'
+  help clan permissions view header: '<newline>%uclans_tag_color%<blue><bold> jogosultság lista:'
+  help clan permissions view format: ' <gray>- %role% <gray>| <white>Kulcs: <green>%key% <gray>| <white>Érték: <green>%value%'
+  help clan ally list header: '<newline>%uclans_tag_color%<blue><bold> szövetségesek lista:'
+  help clan ally list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Szint: <green>%uclans_level% | <white>Vezető: <green>%uclans_leader% | <white>Létrehozva: <green>%uclans_creation_date_formated%</hover></click>'
+  help clan rival list header: '<newline>%uclans_tag_color%<blue><bold> rivális lista:'
+  help clan rival list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Szint: <green>%uclans_level% | <white>Vezető: <green>%uclans_leader% | <white>Létrehozva: <green>%uclans_creation_date_formated%</hover></click>'
+  help clan member_search list header: '<newline>%uclans_tag_color%<blue><bold> keresés a tag listában:'
+  help clan member_search list format: '<click:suggest_command:"/{_clan} {_member} invite %uclans_player_realname% "><hover:show_text:''<green>Click to invite.''> <gray>- %uclans_player_role_formated% <green>%uclans_player_nickname% <gray>| <white>Utoljára aktív: <green>%uclans_player_lastsee_formated% | <white>KDR: <green>%uclans_player_kdr% <yellow>[Meghívás]</hover></click>'
+  help clan banned list header: '<newline>%uclans_tag_color%<blue><bold> kitiltott tag lista:'
+  help clan banned list format: '<click:suggest_command:"/{_clan} {_profile} {_view} %uclans_player_realname% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- <green>%uclans_player_nickname% <gray> | <white>KDR: <green>%uclans_player_kdr%</hover></click>'
+  help clan banner list header: '<newline>%uclans_tag_color%<blue><bold> banner:'
+  help clan banner list format:
+  - '<blue><bold>|</bold> <blue>Információ:'
+  - ' <white>Van Banner: <aqua>%uclans_hasbanner_formated%'
+  - ' <white>Banner: <aqua>%uclans_banner_material%'
+  help clan list view header: '<newline><blue><bold> TOP klánok lista:</bold> <newline> <gray>Rendezés: <green>%current%'
+  help clan list view format all: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% | <white>Létrehozva: <green>%uclans_creation_date_formated% <gray>| <white>Vezető: <green>%uclans_leader% | <white>Tagok: <green>%uclans_count_members% <yellow>[KATT]</hover></click>'
+  help clan list view format kill: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% | <white>Ölések: <green>%uclans_clan_kills% <gray>| <white>Vezető: <green>%uclans_leader% | <white>Tagok: <green>%uclans_count_members% <yellow>[KATT]</hover></click>'
+  help clan list view format death: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% | <white>Halálok: <green>%uclans_clan_deaths% <gray>| <white>Vezető: <green>%uclans_leader% | <white>Tagok: <green>%uclans_count_members% <yellow>[KATT]</hover></click>'
+  help clan list view format kdr: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% | <white>Kdr: <green>%uclans_clan_kdr% <gray>| <white>Vezető: <green>%uclans_leader% | <white>Tagok: <green>%uclans_count_members% <yellow>[KATT]</hover></click>'
+  help clan list view format member: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% | <white>Tagok: <green>%uclans_count_members% <gray>| <white>Vezető: <green>%uclans_leader% | <white>Tagok: <green>%uclans_count_members% <yellow>[KATT]</hover></click>'
+  help clan list view format bank: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% | <white>Bank: <green>%uclans_bank_balance_formated% <gray>| <white>Leader: <green>%uclans_leader% | <white>Tagok: <green>%uclans_count_members% <yellow>[KATT]</hover></click>'
+  help clan list view format level: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% | <white>Szint: <green>%uclans_level% <gray>| <white>Vezető: <green>%uclans_leader% | <white>Tagok: <green>%uclans_count_members% <yellow>[KATT]</hover></click>'
+  help clan list view format war: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% | <white>Háború: <green>%uclans_clan_war_win% <gray>| <white>Vezető: <green>%uclans_leader% | <white>Tagok: <green>%uclans_count_members% <yellow>[KATT]</hover></click>'
+  help clan list view format point: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% | <white>Pontok: <green>%uclans_points% <gray>| <white>Vezető: <green>%uclans_leader% | <white>Tagok: <green>%uclans_count_members% <yellow>[KATT]</hover></click>'
+  help clan list view format patent: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a megtekintéshez.''> <gray>- %uclans_tag_color% | <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Vezető: <green>%uclans_leader% | <white>Tagok: <green>%uclans_count_members% <yellow>[KATT]</hover></click>'
+  help clan invites list header: '<newline><green>%uclans_player_realname% <blue><bold>meghívások lista:'
+  help clan invites list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints a klán információkhoz.''> <gray>- <green>%uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Tagok: <green>%uclans_count_members%<gray> | <white>Szint: <green>%uclans_level%</hover></click> <click:suggest_command:"/{_clan} {_join} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints az elfogadáshoz.''><green>[ELFOGAD]</hover></click> <click:suggest_command:"/{_clan} {_deny} %uclans_tag_nocolor% "><hover:show_text:''<green>Kattints az elutasításhoz.''><red>[ELUTASÍT]</hover></click>'
+  help clan profile view header: '<newline>%uclans_player_nickname% <blue><bold>profile Info:'
+  help clan profile view format:
+  - '<blue><bold>|</bold> <blue>Játékos:'
+  - ' <white>Játékos: <aqua>%uclans_player_nickname%'
+  - '<blue><bold>|</bold> <blue>Információ:'
+  - ' <white>Név: <aqua>%uclans_player_realname%'
+  - ' <white>Utoljára aktív: <aqua>%uclans_player_lastsee_formated%'
+  - ' <white>Kdr: <aqua>%uclans_player_kdr%'
+  - ' <white>Rang: <aqua>%uclans_player_role_formated%'
+  - '<blue><bold>|</bold> <blue>Beállítások:'
+  - ' <white>Klán meghívások: <aqua>%uclans_player_settings_state:INVITATIONS%'
+  - ''
+  help clan settings view header: '<newline>%uclans_tag_color% <blue><bold>Klán beállítások:'
+  help clan settings view format:
+  - '<blue><bold>|</bold> <blue>Információk:'
+  - ' <white>Klán: <aqua>%uclans_tag_color%'
+  - '<blue><bold>|</bold> <blue>Beállítások:'
+  - ' <white>Háború meghívások: <aqua>%uclans_settings_state:WARINVITE%'
+  - ' <white>Szövetséges chat: <aqua>%uclans_settings_state:ALLYSHAREDCHAT%'
+  - ' <white>Szövetséges otthon: <aqua>%uclans_settings_state:ALLYSHAREDHOME%'
+  - ' <white>Csatlakozás és kilépés: <aqua>%uclans_settings_state:JOINLEAVE%'
+  - ' <white>Klán baráti tűz: <aqua>%uclans_settings_state:CLANFF%'
+  - ' <white>Tag otthon kezelés: <aqua>%uclans_settings_state:MEMBERMANAGERHOMES%'
+  - ' <white>Tag háború kezelés: <aqua>%uclans_settings_state:MEMBERMANAGERWARS%'
+  - ' <white>Nyitott klán: <aqua>%uclans_settings_state:OPENED%'
+  - ' <white>Publikus otthonok: <aqua>%uclans_settings_state:PUBLICHOMES%'
+  - ''
+  help clan info view header: '<newline>%uclans_tag_color% <blue><bold>Klán információk:'
+  help clan info view format:
+  - '<blue><bold>|</bold> <blue>Információk:'
+  - ' <white>Patent: <green>%uclans_patent_formated%'
+  - ' <white>Vezető: <aqua>%uclans_leader%'
+  - ' <white>Létrehozva: <aqua>%uclans_creation_date_formated%'
+  - ' <white>Megerősítve: <aqua>%uclans_verified%'
+  - ' <white>Slotok: <aqua>%uclans_slots% <gray>(+%uclans_slots_extra%)'
+  - ' <white>Nyitott: <aqua>%uclans_isopen_formated%'
+  - ' <white>Tagok: <aqua>%uclans_count_members% <gray>(%uclans_count_onlinemembers% online)'
+  - '<blue><bold>|</bold> <blue>Kdr:'
+  - ' <white>Ölések: <aqua>%uclans_clan_kills%'
+  - ' <white>Halálok: <aqua>%uclans_clan_deaths%'
+  - ' <white>Kdr összesen: <aqua>%uclans_clan_kdr%'
+  - '<blue><bold>|</bold> <blue>Státusz:'
+  - ' <white>Bank: <aqua>%uclans_bank_balance_formated%'
+  - ' <white>Lelkek: <aqua>%uclans_clan_souls%'
+  - ' <white>Szint: <aqua>%uclans_level% <gray>(%uclans_max_level_reached% max.)'
+  - ' <white>Pontok: <aqua>%uclans_points%'
+  - ''
+  help info empty: <red>Nincs adat
+  help admin pagination prev: <click:run_command:"/uclan help %page%"><hover:show_text:'<green>Kattints a visszalépéshez.'><aqua><< Előző</hover></click>
+  help admin pagination next: <click:run_command:"/uclan help %page%"><hover:show_text:'<green>Kattints a továbblépéshez.'><aqua>Következő >></hover></click>
+  help admin pagination separer: <gray>|
+  help player pagination prev: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<green>Kattints a visszalépéshez.'><aqua><< Előző</hover></click>
+  help player pagination next: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<green>Kattints a továbblépéshez.'><aqua>Következő >></hover></click>
+  help player pagination separer: <gray>|
+  translaction players: játékosok
+  translaction is on: <green>Elérhető
+  translaction is off: <red>Nem elérhető
+  translaction yes: <aqua>IGEN
+  translaction no: <red>NEM
+  translaction no clan: <red>Nincs klán
+  translaction kill: Ölés
+  translaction death: Halál
+  translaction kdr: KDR
+  translaction member: Tag
+  translaction bank: Bank
+  translaction level: Szint
+  translaction war: Háború
+  translaction all: Összes
+  translaction point: Pont
+  translaction patent: Patent
+  clan dont leader: '%tag% <red>Nem vagy a klán vezetője.'
+  clan dont permission role: '%tag% <red>Nincs jogosultságod.'
+  player no invitation: '%tag% <red>Nincs meghívód.'
+  clan dont mod and leader: '%tag% <red>Nem vagy klán vezető vagy moderátor.'
+  clan dont mod and leader gui: <red>Szükséges rang <dark_red>Vezető <red>vagy <dark_red>Moderátor<red>!
+  player dont mod: '%tag% <red>A játékos nem moderátor.'
+  player is mod: '%tag% <red>A játékos moderátor.'
+  player offline: '%tag% <red>A játékos nem elérhető vagy nem létezik!'
+  player cannot expel leader: '%tag% <red>Nem rúghatod ki a klán vezetőt.'
+  player cannot expel mod: '%tag% <red>Nem rúghatsz ki egyenragút.'
+  player is clan leader: '%tag% <red>Te vagy a klán vezető, kilépéshez használd a(z) <aqua>/{_clan} {_disband}<red> parancsot, de vigyázz mert a klán törlésre fog kerülni ...'
+  you donthave clan: '%tag% <red>Nincs klánod.'
+  player donthave clan: '%tag% <red>A játékosnak nincs klánja.'
+  player donthave profile: '%tag% <red>A játékosnak nincs profilja.'
+  player already participating: '%tag% <red>Már a klán tagja vagy!.'
+  player new invite: '%tag% <green>Új klán meghívót kaptál. Elfogadáshoz használd a(z) <aqua>/{_clan} {_join} <red><TAG> parancsot <green>vagy nézd meg a listát a(z) <aqua>/{_clan} {_profile} {_invites} paranccsal'
+  player have clan: '%tag% <red>Már van klánod.'
+  player has clan: '%tag% <red>A játékosnak már van klánja.'
+  player is you: '%tag% <red>Ez a játékos Te vagy.'
+  player dont have money: '%tag% <red>Szükséged van <green>%uclans_money_currency%%amount% <red>ehhez.'
+  player dont have money gui: <red>Szükséges <green>%uclans_money_currency%%amount%
+  player debited money: '%tag% <green>Levonva <green>%amount% <yellow>az egyenlegedből.'
+  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>hozzáadva az egyenlegedhez.'
+  player invitation player expired: '%tag% <red>A játékos meghívód lejárt és nem érkezett válasz.'
+  player invitation expired: '%tag% <red>A meghívód a(z) <white>%clan_tag% klánhoz <red>lejárt.'
+  player invitation daniel: '%tag% <red>A játékos elutasította a meghívást.'
+  player already invited gui: <red>A játékos meghívója folyamatban van!
+  player invitation error: '%tag% <red>Hiba történt a meghívás során.'
+  player invitation error gui: <red>Hiba történt a meghívás során.
+  player invitation success: '%tag% <red>A meghívó sikeresen elküldve.'
+  player invitation success gui: <green>Meghívás sikeresen elküldve!
+  gui error: '%tag% <red>A menü hibát tartalmaz, így nem megnyitható'
+  player teleport dont move: '%tag% <green>Teleportálás folyamatban, ne mozogj %sec% másodpercig.'
+  player teleport moved: '%tag% <red>Megmozdultál, így a teleportálás megszakadt!'
+  player teleport true: '%tag% <green>Sikeres teleportálás!'
+  player teleport false: '%tag% <red>Sikertelen teleportálás!'
+  unknown error: '%tag% <red>Ismeretlen hiba, kérlek próbáld újra!'
+  nothing here: <red>Nincs adat.
+  clan empty name: <red><Nincs név!>
+  clan empty desc: <red><Nincs leírás!>
+  disabled function: '%tag% <red>Ez a funkció/bővítmény ki van kapcsolva.'
+  disabled function gui: <red>Ez a funkció ki van kapcsolva.
+  admin opened clanchest: '%tag% <red>Egy admin megnyitotta a klán ládát.'
+  top kdr format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Kdr: <aqua>%uclans_clan_kdr%'
+  top kill format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Ölések: <aqua>%uclans_clan_kills%'
+  top death format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Halálok: <aqua>%uclans_clan_deaths%'
+  top member format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Tagok: <aqua>%uclans_count_members%'
+  top bank format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Bank: <aqua>%uclans_bank_balance%'
+  top level format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Szint: <aqua>%uclans_level%'
+  top war format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <green>%uclans_clan_war_win%<gray>/<dark_red>%uclans_clan_war_lose%'
+  top point format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Pont: <aqua>%uclans_points%'
+  clan new balance: '%tag% <green>A bank új vagyonmérlege <green>%uclans_money_currency%%uclans_bank_balance%<yellow>, beállítva <green>%uclans_player% <yellow>által'
+  player reseted kdr: '%tag% <green>%player% <yellow>játékos visszaállította a KDR-ét!'
+  clan reseted kdr: '%tag% <green>%uclans_tag_color% <yellow>klán visszaállította a KDR-ét!'
+  value greater than zero: '%tag% <red>Az értéknek nagyobbnak kell lenne, mint 0!'
+  clan patent change: '%tag% <aqua>%uclans_tag_color% <yellow>klán megváltoztatta a patentet a következőre: <aqua>%uclans_patent_formated%'
+  clan not have levels: '%tag% <red>A klán nem rendelkezik törölhető szinttel'
+  clan has only levels: '%tag% <red>A szintje csak <aqua>%num%'
+  command in cooldown: '%tag% <red>Várj <aqua>%sec% <red>másodpercet, mielőtt újra használnád ezt a parancsot.'
+  error length: '%tag% <red>Az érték legalább <aqua>%min% <red>maximum <aqua>%max%'
+  state true: <green>BEKAPCSOLVA
+  state false: <red>KIKAPCSOLVA
+  accept type: '%tag% <red>Érvénytelen típus, használd: <aqua>%types%'
+  clan regroup invite expired: '%tag% <red>The invitation to regroup has expired!'
+  clan regroup invite doesnot exists: '%tag% <red>There is no regroup request sent.'
+  clan regroup invite already exists: '%tag% <red>There is already a regroup request sent.'
+  clan regroup invite deny: '%tag% <red>The player <green>%player% <red>denied your request!'
+  clan regroup invite accept: '%tag% <red>The player <green>%player% <yellow>accepted your request!'
+  clan regroup invite already denied: '%tag% <red>You already denied the request.'
+  clan regroup invite already accepted: '%tag% <red>You already accepted the request.'
+  clan has no members: '%tag% <red>A klánodnak nincsenek tagjai.'
+  clan rival remove already invited: '%tag% <red>Már van békekérés amely folyamatban van ehhez a klánhoz, kérlek próbáld újra később!'
+  clan rival remove error: '%tag% <red>Hiba történt a kérelem elküldése során!'
+  clan rival remove moderation offline: '%tag% <red>Nincs aktív moderátor vagy vezető a másik klánban.'
+  clan rival remove sended: '%tag% <green>Békekérelem elküldve, várakozás a másik klán válaszára.'
+  clan rival remove not found: '%tag% <red>Nincsen békekérés.'
+  clan rival remove deny: '%tag% <red>Elutasítottad a békekérést.'
+  clan rival remove deny received: '%tag% <red>A másik klán elutasította a békekérést.'
+  clan rival remove expired: '%tag% <red>A békekérés lejárt!'
+  clan ally invite not found: '%tag% <red>Nincsnek meghívók szövetségre'
+  clan ally invite deny: '%tag% <red>Elutasítottad a meghívást a szövetségbe.'
+  clan ally invite already invited: '%tag% <red>Már van meghívás amely folyamatban van ehhez a klánhoz, kérlek próbáld újra később!'
+  clan ally invite error: '%tag% <red>Hiba történt a kérelem elküldése során!'
+  clan ally invite moderation offline: '%tag% <red>Nincs elérhető vezető vagy moderátor a másik klánból.'
+  clan ally invite sended: '%tag% <green>Meghívó elküldve, várkozás a másik klán válaszára.'
+  clan ally invite expired: '%tag% <red>Meghívó a szövetségre lejárt!'
+  clan ally invite deny received: '%tag% <red>A másik klán elutasította a meghívót szövetségre.'
+  clan not have points: '%tag% <red>A klán nem rendelkezik eltávolítható pontokkal'
+  clan has only points: '%tag% <red>A klán pontja csak <aqua>%num%'
+  clan ally in limit: '%tag% <red>A klánod elérte a maximális szövetséges limitet. Érjetek el nagyobb szintet a több szövetségesért! A klánod jelenlegi limitje: <aqua>%uclans_limit_ally%'
+  clan rival in limit: '%tag% <red>A klánod elérte a maximális rivális limitet. Érjetek el nagyobb szintet a több riválisért! A klánod jelenlegi limitje: <aqua>%uclans_limit_rival%'
+  clan create error: '%tag% <red>Hiba történt a létrehozás során.'
+  clan create success: '%tag% <green>Klán sikeresen létrehozva!'
+  command deprecated: '%tag% <red>Ez a parancs elavult, eltávolítható a beállításokból.'
+  chan does not exists: '%tag% <red>A klán nem létezik'
+  need level min: '%tag% <red>Minimum klán szint szükséges: <aqua>%level%!'
+  player_leave: '%tag% <aqua>%player% <red>lelépett a szerverről.'
+  player_join: '%tag% <aqua>%player% <green>csatlakozott a szerverre.'
+  home name without space: '%tag% <red>A név nem tartalmazhat szóközt.'
+  home already exists: '%tag% <red>Már van ilyen otthon.'
+  home create success gui: <green>Új otthon létrehozva!
+  home no exists gui: <red>Az otthon hibát tartalmaz.
+  home delete error gui: <red>Hiba történt a törlés során.
+  home delete success: '%tag% <green>Otthon törölve!'
+  home delete success gui: <green>Sikeresen törölve!
+  new create home: '%tag% <green>Új klán otthon létrehozva! Szerver: <aqua>%server% <green>Név: <aqua>%name%'
+  home removed: '%tag% <red>Klán otthon törölve! <red>Szerver: <aqua>%server% <red>Név: <aqua>%name%'
+  home limit: <red>Limit elérve! (%limit%)!
+  home limit reached: '%tag% <red>A klánod limitje %homes% otthon.'
+  new point received: '%tag% <green>A klánod kapott <aqua>%points% pontot<green>, az új összpont: <aqua>%totalpoints% (%reason%)'
+  new point removed: '%tag% <red>A klánod vesztett <aqua>%points% pontot<red>, az új összpont <aqua>%totalpoints% (%reason%)'
+  new point set: '%tag% <green>A klánod pontja megváltoztatva: <aqua>%totalpoints% (%reason%)'
+ 
+# TRANSLATIONS OF GUI MENU FILES
+ 
+GUI:
+  General disband_confirm title: <red>Klán törlése?
+  General disband_confirm items fill name: ' '
+  General disband_confirm items fill lore: [
+    ]
+  General disband_confirm items confirm name: <green>Igen
+  General disband_confirm items confirm lore:
+  - ''
+  - ' <red>Kattints a megerősítéshez.'
+  General disband_confirm items cancel name: <green>Nem
+  General disband_confirm items cancel lore:
+  - ''
+  - ' <yellow>Kattints a megszakításhoz.'
+  General changeleader_confirm title: <red>Klán vezető megváltoztatása?
+  General changeleader_confirm items fill name: ' '
+  General changeleader_confirm items fill lore: [
+    ]
+  General changeleader_confirm items confirm name: <green>Igen
+  General changeleader_confirm items confirm lore:
+  - ''
+  - ' <red>Kattints a megerősítéshez.'
+  General changeleader_confirm items cancel name: <green>Nem
+  General changeleader_confirm items cancel lore:
+  - ''
+  - ' <yellow>Kattints a megszakításhoz.'
+  General clan_homes title: <blue>Klán otthon
+  General clan_homes items fill name: ' '
+  General clan_homes items fill lore: [
+    ]
+  General clan_homes items ally_homes name: <green>Szövetséges otthonok
+  General clan_homes items ally_homes lore:
+  - ''
+  - ' <yellow>Kattints a megnyitáshoz.'
+  General clan_homes items create name: <green>Új otthon létrehozása
+  General clan_homes items create lore:
+  - ''
+  - ' <yellow>Kattints a létrehozása.'
+  General clan_homes items back name: <red>Vissza
+  General clan_homes items back lore:
+  - ''
+  - ' <yellow>Kattints a visszalépéshez.'
+  General clan_homes items next name: <green>Következő oldal
+  General clan_homes items next lore:
+  - ''
+  - ' <yellow>Kattints a következő oldalhoz.'
+  General clan_homes items previous name: <green>Előző oldal
+  General clan_homes items previous lore:
+  - ''
+  - ' <yellow>Kattints az előző oldalhoz.'
+  General clan_homes items current name: <green>Otthon %uclans_home:{name}:name%
+  General clan_homes items current lore:
+  - ''
+  - ' <yellow>Otthon információ'
+  - ' <gray>'
+  - ' <gray>Szerver: <green>%uclans_home:{name}:server%'
+  - ' <gray>Név: <aqua>%uclans_home:{name}:name%'
+  - ' <gray>Koordináta: <aqua>%uclans_home:{name}:location%'
+  - ''
+  - ' <yellow>Bal katt a teleportáláshoz '
+  - ' <red>Jobb katt a törléshez.'
+  General clan_homes items current visit name: <green>Otthon %uclans_home:{name}:name%
+  General clan_homes items current visit lore:
+  - ''
+  - ' <yellow>Otthon információ'
+  - ' <gray>'
+  - ' <gray>Szerver: <green>%uclans_home:{name}:server%'
+  - ' <gray>Név: <aqua>%uclans_home:{name}:name%'
+  General clan_delhome_confirm title: <red>Otthon <dark_red>%home_name% törlése<red>?
+  General clan_delhome_confirm items fill name: ' '
+  General clan_delhome_confirm items fill lore: [
+    ]
+  General clan_delhome_confirm items confirm name: <green>Igen
+  General clan_delhome_confirm items confirm lore:
+  - ' '
+  - ' <yellow>Kattints a megerősítéshez.'
+  General clan_delhome_confirm items cancel name: <green>Nem
+  General clan_delhome_confirm items cancel lore:
+  - ' '
+  - ' <yellow>Kattints a megszakításhoz.'
+  General noclan_home title: <blue>Klán <gray>| <red>Klán nélkül
+  General noclan_home items fill name: ' '
+  General noclan_home items fill lore: [
+    ]
+  General noclan_home items fill2 name: ' '
+  General noclan_home items fill2 lore: [
+    ]
+  General noclan_home items commands name: <green>Parancs lista és segítség
+  General noclan_home items commands lore:
+  - ' <yellow>Kattints ide a parancsokért'
+  General noclan_home items clans name: <green>Összes klán
+  General noclan_home items clans lore:
+  - ' <yellow>Kattints ide a klán listáért.'
+  General noclan_home items create name: <red>Nincs klánod
+  General noclan_home items create lore:
+  - ' <yellow>Kattints a klán létrehozásához.'
+  General noclan_home items profile name: <green>Profilod
+  General noclan_home items profile lore:
+  - ' <yellow>Kattints a profilod megnyitásához'
+  General clan_home title: <blue>Klán menü
+  General clan_home items fill name: ' '
+  General clan_home items fill lore: [
+    ]
+  General clan_home items fill2 name: ' '
+  General clan_home items fill2 lore: [
+    ]
+  General clan_home items info name: <green>Klán %uclans_tag_color%
+  General clan_home items info lore:
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Patent: <green>%uclans_patent_formated%'
+  - ''
+  - ' <gray>Klán szint: <green>%uclans_level%'
+  - ' <gray>Klán pont: <green>%uclans_points% <dark_gray>(%uclans_points_to_nextlevel% for next LevelUp)'
+  - ' <gray>Bank: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Leírás: <aqua>%uclans_desc_color%'
+  - ' '
+  - ' <yellow>Kattints a státusz lista megnyitásához.'
+  General clan_home items banner name: <green>Klán Banner
+  General clan_home items banner lore:
+  - ' '
+  - ' <yellow>Banner információ:'
+  - ''
+  - ' <white>Van Banner: <aqua>%uclans_hasbanner_formated%'
+  - ' <white>Banner: <aqua>%uclans_banner_material%'
+  - ' '
+  - ' <yellow>A klán banner a logód!'
+  General clan_home items clans name: <green>Összes klán
+  General clan_home items clans lore:
+  - ' <yellow>Kattints a klán lista megnyitásához.'
+  General clan_home items commands name: <green>Parancs lista
+  General clan_home items commands lore:
+  - ' <yellow>Kattints ide a parancsokért'
+  General clan_home items settings name: <green>Klán beállítások
+  General clan_home items settings lore:
+  - ' <yellow>Kattints a megnyitáshoz.'
+  General clan_home items home name: <green>Otthon menü megnyitása.
+  General clan_home items home lore:
+  - ' <yellow>Kattints a megnyitáshoz.'
+  General clan_home items ally name: <green>Szövetségesek
+  General clan_home items ally lore:
+  - ' '
+  - ' <gray>Szövetségek: <aqua>%uclans_clan_count_ally%'
+  - ' '
+  - ' <yellow>Kattints ide a szövetség menü megnyitásához.'
+  General clan_home items rival name: <green>Riválisok
+  General clan_home items rival lore:
+  - ' '
+  - ' <gray>Riválisok: <aqua>%uclans_clan_count_rival%'
+  - ' '
+  - ' <yellow>Kattints ide a rivális menü megnyitásához.'
+  General clan_home items members name: <green>Klán tagok
+  General clan_home items members lore:
+  - ' '
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ' '
+  - ' <yellow>Kattints ide a tag menü megnyitásához.'
+  General player_profile title: <blue>Profil <gray>| <green>%uclans_player%
+  General player_profile items head name: <green>%uclans_player%
+  General player_profile items head lore:
+  - ''
+  - ' <gray>Klán: <aqua>%uclans_hasclan_formated%'
+  - ' <gray>Rang: <aqua>%uclans_player_role_formated%'
+  - ' <gray>Vezető: <aqua>%uclans_leader_formated%'
+  - ' '
+  - ' <gray>Becenév: <aqua>%uclans_player%'
+  - ' <gray>Kdr: <aqua>%uclans_player_kills%<dark_gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <gray>Csatlakozás: <aqua>%uclans_player_joindate_formated%'
+  - ' <gray>Utoljára aktív: <aqua>%uclans_player_lastsee_formated%'
+  General player_profile items invites name: <green>Meghívások.
+  General player_profile items invites lore:
+  - ''
+  - ' <yellow>Bejövő meghívók kezelése.'
+  - ' <yellow>Kattints a megnyitáshoz.'
+  General player_profile items settings name: <green>Profil beállítások.
+  General player_profile items settings lore:
+  - ''
+  - ' <yellow>Profil beállítások szerkesztése.'
+  - ' '
+  - ' <yellow>Kattints a megnyitáshoz.'
+  General player_profile items back name: <red>Vissza
+  General player_profile items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General player_profile items fill name: ' '
+  General player_profile items fill lore: [
+    ]
+  General player_settings title: <blue>Profil beállítás menü
+  General player_settings items fill name: ' '
+  General player_settings items fill lore: [
+    ]
+  General player_settings items fill2 name: ' '
+  General player_settings items fill2 lore: [
+    ]
+  General player_settings items nickname name: <green>Becenév  beállítása.
+  General player_settings items nickname lore:
+  - ''
+  - ' <gray>Név: <aqua>%uclans_player_realname%'
+  - ' <gray>Jelenlegi: <aqua>%uclans_player_nickname%'
+  - ''
+  - ' <yellow>BAL-KATT megváltoztatás.'
+  - ' <red>JOBB-KATT visszaállítás.'
+  General player_settings items skin name: <green>Kinézet frissítése.
+  General player_settings items skin lore:
+  - ''
+  - ' <yellow>Kattints a kinézeted frissítéséhez.'
+  General player_settings items skin_cooldown name: <green>Kinézet frissítve!
+  General player_settings items skin_cooldown lore:
+  - ''
+  - ' <red>Várj <aqua>%time%</aqua> <red>másodpercet a frissítéshez.'
+  General player_settings items invite name: <green>Klán meghívások.
+  General player_settings items invite lore:
+  - ''
+  - ' <white>Státusz: %uclans_player_settings_state:INVITATIONS%'
+  - ''
+  - ' <yellow>Kattints a kapcsoláshoz.'
+  - ''
+  - ' <red>Ha ki van kapcsolva, nem fogsz'
+  - <red>kapni klán meghívásokat.
+  General player_settings items back name: <red>Vissza
+  General player_settings items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General clan_stats title: <blue>Statisztikák <gray>| %uclans_tag_color%
+  General clan_stats items fill name: ' '
+  General clan_stats items fill lore: [
+    ]
+  General clan_stats items back name: <red>Vissza
+  General clan_stats items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General clan_stats items limits name: '<green>Klán limitek:'
+  General clan_stats items limits lore:
+  - ' '
+  - '<yellow>Limitek:'
+  - ' '
+  - ' <gray>Otthonok: <aqua>%uclans_limit_home%'
+  - ' <gray>Szövetségesek: <aqua>%uclans_limit_ally%'
+  - ' <gray>Riválisok: <aqua>%uclans_limit_rival%'
+  - ' <gray>Slotok: <aqua>%uclans_slots_total%'
+  - ' '
+  - ' <yellow>A limit a klán szinttel'
+  - <yellow>növekedhet.
+  General clan_stats items member_rival_ally name: '<green>Tagok, Riválisok és Szövetségek:'
+  General clan_stats items member_rival_ally lore:
+  - ' '
+  - '<yellow>Tagok, riválisok és szövetségek:'
+  - ' '
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ' <gray>Online tagok: <aqua>%uclans_count_onlinemembers%'
+  - ' <gray>Szövetségesek: <aqua>%uclans_clan_count_ally%'
+  - ' <gray>Riválisok: <aqua>%uclans_clan_count_rival%'
+  General clan_stats items others name: '<green>Egyéb statisztikák:'
+  General clan_stats items others lore:
+  - ' '
+  - '<yellow>Egyéb:'
+  - ' '
+  - ' <gray>Csatlakozott tag: <aqua>%uclans_clan_member_joined%'
+  - ' <gray>Kilépett tag: <aqua>%uclans_clan_member_leave%'
+  - ' <gray>Kirúgott tag: <aqua>%uclans_clan_member_kicked%'
+  - ' <gray>Tag változások: <aqua>%uclans_clan_tag_changed%'
+  General clan_stats items status name: '<green>Státusz:'
+  General clan_stats items status lore:
+  - ' '
+  - '<yellow>Státusz:'
+  - ' '
+  - ' <gray>Bank: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <gray>Lélek: <green>%uclans_money_currency%%uclans_clan_souls%'
+  - ' <gray>Szint: <aqua>%uclans_level%'
+  - ' <gray>Max Szint elérve: <aqua>%uclans_max_level_reached%'
+  - ' <gray>Klán pont: <aqua>%uclans_points%'
+  - ' <gray>Befejezett küldetések: <aqua>%uclans_quest_finished%'
+  General clan_stats items war name: '<green>Háború statisztikák:'
+  General clan_stats items war lore:
+  - ' '
+  - '<yellow>Háborúk:'
+  - ' '
+  - ' <gray>Győzelmek: <aqua>%uclans_clan_war_win%'
+  - ' <gray>Vereségek: <aqua>%uclans_clan_war_lose%'
+  - ' <gray>Összes háború: <aqua>%uclans_clan_war_total%'
+  General clan_stats items kdr name: '<green>KDR:'
+  General clan_stats items kdr lore:
+  - ' '
+  - '<yellow>KDR:'
+  - ' '
+  - ' <gray>Ölések: <aqua>%uclans_clan_kills%'
+  - ' <gray>Halálok: <aqua>%uclans_clan_deaths%'
+  - ' <gray>KDR összesen: <aqua>%uclans_clan_kdr%'
+  General clan_stats items banner name: <green>Klán Banner
+  General clan_stats items banner lore:
+  - ' '
+  - ' <yellow>Banner információ:'
+  - ''
+  - ' <white>Van Banner: <aqua>%uclans_hasbanner_formated%'
+  General clan_stats items foundation name: '<green>Foundation:'
+  General clan_stats items foundation lore:
+  - ' '
+  - '<yellow>About the foundation:'
+  - ' '
+  - ' <gray>Patent: <green>%uclans_patent_formated%'
+  - ' <gray>Leader: <aqua>%uclans_leader%'
+  - ' <gray>Creation date: <aqua>%uclans_creation_date_formated%'
+  - ' <gray>Is Verified: <white>%uclans_verified%'
+  - ' <gray>Slots: <white>%uclans_slots% <dark_gray>(+%uclans_slots_extra%)'
+  - ' <gray>Open to all: <white>%uclans_isopen_formated%'
+  - ' '
+  - ' <gray>Moderators (%uclans_count_moderators%):'
+  - '  <green>%uclans_moderators%'
+  General clan_stats items members name: <green>Tag lista
+  General clan_stats items members lore:
+  - ' '
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Kattints a megnyitáshoz.'
+  General clan_stats items homes name: <green>Otthon lista
+  General clan_stats items homes lore:
+  - ' '
+  - ' <gray>Otthonok: <aqua>%uclans_home%'
+  - ''
+  - ' <yellow>Kattints a megnyitáshoz.'
+  General clan_settings title: <red>Beállítások menü
+  General clan_settings items fill name: ' '
+  General clan_settings items fill lore: [
+    ]
+  General clan_settings items fill2 name: ' '
+  General clan_settings items fill2 lore: [
+    ]
+  General clan_settings items clan_roles name: <green>Klán rangok
+  General clan_settings items clan_roles lore:
+  - ''
+  - ' <yellow>Klán rangok kezelése.'
+  - ' <yellow>Kattints a megnyitáshoz.'
+  General clan_settings items member_ban name: <green>Kitiltott játékosok.
+  General clan_settings items member_ban lore:
+  - ''
+  - ' <white>Kitiltva: <aqua>%uclans_count_banned%'
+  - ''
+  - ' <red>Kitiltott játékosok nem tudnak'
+  - <red>csatlakozni a klánhoz.
+  - ''
+  - ' <yellow>Kattints a megnyitáshoz.'
+  General clan_settings items clan_edit name: <green>Klán szerkesztése.
+  General clan_settings items clan_edit lore:
+  - ''
+  - ' <yellow>Klán beállítások kezelése.'
+  - ' <yellow>Kattints a megnyitáshoz.'
+  General clan_settings items back name: <red>Vissza
+  General clan_settings items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General clan_roles title: <red>Klán rangok
+  General clan_roles items fill name: ' '
+  General clan_roles items fill lore: [
+    ]
+  General clan_roles items fill2 name: ' '
+  General clan_roles items fill2 lore: [
+    ]
+  General clan_roles items back name: <red>Vissza
+  General clan_roles items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General clan_roles items update name: <red>Jogosultságok szinkronizálása
+  General clan_roles items update lore:
+  - ' <yellow>Alapértelmezett jogosultságok'
+  - <yellow>szinkronizálása.
+  General clan_roles items blocked name: <red>%name%
+  General clan_roles items blocked lore:
+  - ' '
+  - ' <yellow>Nem szerkesztheted ezt a rangot'
+  General clan_roles_editor title: <red>Jog szerkesztő <gray>| <aqua>%name%
+  General clan_roles_editor items fill name: ' '
+  General clan_roles_editor items fill lore: [
+    ]
+  General clan_roles_editor items next name: <green>Következő
+  General clan_roles_editor items next lore:
+  - ' <yellow>Kattints a következő oldalhoz'
+  General clan_roles_editor items previous name: <green>Előző
+  General clan_roles_editor items previous lore:
+  - ' <yellow>Kattints az előző oldalhoz'
+  General clan_roles_editor items back name: <red>Vissza
+  General clan_roles_editor items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General clan_roles_editor items current name: <green>%key%
+  General clan_roles_editor items current lore:
+  - ' '
+  - ' <white>Státusz: %value%'
+  - ''
+  - ' <yellow>Kattints a kapcsoláshoz'
+  General banned_members title: <red>Kitiltott játékosok <gray>| <aqua>%amount%
+  General banned_members items fill name: ' '
+  General banned_members items fill lore: [
+    ]
+  General banned_members items next name: <green>Következő
+  General banned_members items next lore:
+  - ' <yellow>Kattints a következő oldalhoz'
+  General banned_members items previous name: <green>Előző
+  General banned_members items previous lore:
+  - ' <yellow>Kattints az előző oldalhoz'
+  General banned_members items current name: <aqua>%uclans_player%
+  General banned_members items current lore:
+  - ' <yellow>Kattints a <red>FELOLDÁSHOZ</red><yellow>'
+  General banned_members items add name: <red>Játékos kitiltása
+  General banned_members items add lore:
+  - ' <yellow>Kattints a kitiltáshoz.'
+  General banned_members items back name: <red>Vissza
+  General banned_members items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General clan_actions title: <red>Klán szerkesztése
+  General clan_actions items fill name: ' '
+  General clan_actions items fill lore: [
+    ]
+  General clan_actions items fill2 name: ' '
+  General clan_actions items fill2 lore: [
+    ]
+  General clan_actions items desc name: <green>Klán leírás megváltoztatása
+  General clan_actions items desc lore:
+  - ' <yellow>Kattints a klán leírás megváltoztatásához.'
+  General clan_actions items modtag name: <green>Klán tag megváltoztatása
+  General clan_actions items modtag lore:
+  - ' <yellow>Kattints a klán tag megváltoztatásához'
+  General clan_actions items join_leave name: <green>Csatlakozás és kilépés
+  General clan_actions items join_leave lore:
+  - ' '
+  - ' <white>Státusz: %uclans_actions_state:JOINLEAVE%'
+  - ''
+  - ' <yellow>Kattints a kapcsoláshoz '
+  - ' '
+  - ' <red>Ha ki van kapcsolva, nem'
+  - <red>jelenik meg a chaten a
+  - <red>belépés és kilépés.
+  General clan_actions items opened name: <green>Nyitott klán
+  General clan_actions items opened lore:
+  - ' '
+  - ' <white>Státusz: %uclans_actions_state:OPENED%'
+  - ''
+  - ' <yellow>Bárki csatlakozhat szabadon vagy'
+  - <yellow>csak meghívóval lehet csatlakozni.
+  General clan_actions items publichomes name: <green>Publikus otthonok
+  General clan_actions items publichomes lore:
+  - ' '
+  - ' <white>Státusz: %uclans_actions_state:PUBLICHOMES%'
+  - ''
+  - ' <yellow>Otthonokat más klánok is láthatják'
+  General clan_actions items ff name: <green>Baráti tűz
+  General clan_actions items ff lore:
+  - ' '
+  - ' <white>Státusz: %uclans_actions_state:CLANFF%'
+  - ''
+  - ' <yellow>Kattints a kapcsoláshoz '
+  - ' '
+  - ' <red>Ha aktiválva van, a klán'
+  - <red>tagok sebezhetik egymást.
+  General clan_actions items allysharedhome name: <green>Szövetséges otthonok
+  General clan_actions items allysharedhome lore:
+  - ' '
+  - ' <white>Státusz: %uclans_actions_state:ALLYSHAREDHOME%'
+  - ''
+  - ' <yellow>Kattints a kapcsoláshoz '
+  - ' '
+  - ' <red>Ha ki van kapcsolva, szövetségesek'
+  - <red>nem látják az otthonotok.
+  General clan_actions items allysharedchat name: <green>Szövetséges chat
+  General clan_actions items allysharedchat lore:
+  - ' '
+  - ' <white>Státusz: %uclans_actions_state:ALLYSHAREDCHAT%'
+  - ''
+  - ' <yellow>Kattints a kapcsoláshoz '
+  - ' '
+  - ' <red>Ha ki van kapcsolva, nem kaptok'
+  - <red>üzeneteket a szövetségesektől.
+  General clan_actions items warinvite name: <green>Háború meghívások
+  General clan_actions items warinvite lore:
+  - ' '
+  - ' <white>Státusz: %uclans_actions_state:WARINVITE%'
+  - ''
+  - ' <yellow>Kattints a kapcsoláshoz '
+  - ' '
+  - ' <red>Ha ki van kapcsolva, nem kaptok'
+  - <red>háború meghívásokat
+  General clan_actions items delete name: <red>Klán törlése
+  General clan_actions items delete lore:
+  - ' <yellow>Kattints a klán törléséhez'
+  - ' <red>Csak a vezető törölheti a klánt!'
+  - ' <red>A klán terület törölve lesz'
+  - ' <red>CHAT megerősítés szükséges!'
+  - ' '
+  - ' <red>Figyelem, nem visszavonható!'
+  General clan_actions items back name: <red>Vissza
+  General clan_actions items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General clan_top title: <blue>Klán lista <gray>| <green>%current%
+  General clan_top items fill name: ' '
+  General clan_top items fill lore: [
+    ]
+  General clan_top items fill2 name: ' '
+  General clan_top items fill2 lore: [
+    ]
+  General clan_top items fill3 name: ' '
+  General clan_top items fill3 lore: [
+    ]
+  General clan_top items active name: ' <green>Jelenlegi'
+  General clan_top items active lore: [
+    ]
+  General clan_top items all name: <red>Összes klán
+  General clan_top items all lore:
+  - ' <yellow>Kattints a megtekintéshez'
+  - ' '
+  General clan_top items kdr name: <red>Top KDR
+  General clan_top items kdr lore:
+  - ' <yellow>Kattints a KDR'
+  - '<yellow>szerinti rendezéshez '
+  - ' '
+  General clan_top items kill name: <red>Top ÖLÉSEK
+  General clan_top items kill lore:
+  - ' <yellow>Kattints az ölések'
+  - '<yellow>szerinti rendezéshez '
+  - ' '
+  General clan_top items death name: <red>Top HALÁLOK
+  General clan_top items death lore:
+  - ' <yellow>Kattints a halálok'
+  - '<yellow>szerinti rendezéshez '
+  - ' '
+  General clan_top items bank name: <red>Top BANK
+  General clan_top items bank lore:
+  - ' <yellow>Kattints a bank'
+  - '<yellow>szerinti rendezéshez '
+  - ' '
+  General clan_top items member name: <red>Top játékos
+  General clan_top items member lore:
+  - ' <yellow>Kattints a játékos'
+  - '<yellow>szerinti rendezéshez '
+  - ' '
+  General clan_top items level name: <red>Top szint
+  General clan_top items level lore:
+  - ' <yellow>Kattints a szint'
+  - '<yellow>szerinti rendezéshez '
+  - ' '
+  General clan_top items war name: <red>Top háború
+  General clan_top items war lore:
+  - ' <yellow>Kattints a háború'
+  - '<yellow>szerinti rendezéshez '
+  - ' '
+  General clan_top items point name: <red>Összes pont
+  General clan_top items point lore:
+  - ' <yellow>Kattints a pont'
+  - '<yellow>szerinti rendezéshez '
+  - ' '
+  General clan_top items patent name: <red>Patent
+  General clan_top items patent lore:
+  - ' <yellow>Kattints a patent'
+  - '<yellow>szerinti rendezéshez '
+  - ' '
+  General clan_top items current_war name: <green>Klán %uclans_tag_color%
+  General clan_top items current_war lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Háború győzelmek: <green>%uclans_clan_war_win%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items current_bank name: <green>Klán %uclans_tag_color%
+  General clan_top items current_bank lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Bank: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items current_member name: <green>Klán %uclans_tag_color%
+  General clan_top items current_member lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Tagok: <green>%uclans_count_members%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items current_death name: <green>Klán %uclans_tag_color%
+  General clan_top items current_death lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Halálok: <green>%uclans_clan_deaths%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items current_kill name: <green>Klán %uclans_tag_color%
+  General clan_top items current_kill lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Ölések: <green>%uclans_clan_kills%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items current_kdr name: <green>Klán %uclans_tag_color%
+  General clan_top items current_kdr lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>KDR: <green>%uclans_clan_kdr%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items current_level name: <green>Klán %uclans_tag_color%
+  General clan_top items current_level lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Szint: <green>%uclans_level%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items current_point name: <green>Klán %uclans_tag_color%
+  General clan_top items current_point lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Pont: <green>%uclans_points%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items current_all name: <green>Klán %uclans_tag_color%
+  General clan_top items current_all lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Létrehozva: <green>%uclans_creation_date_formated%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items current_patent name: <green>Klán %uclans_tag_color%
+  General clan_top items current_patent lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Patent: <green>%uclans_patent_formated%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items current name: <green>Klán %uclans_tag_color%
+  General clan_top items current lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Szint: <green>%uclans_level%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General clan_top items next name: <green>Következő
+  General clan_top items next lore:
+  - ' <yellow>Kattints a következő oldalhoz'
+  General clan_top items previous name: <green>Előző
+  General clan_top items previous lore:
+  - ' <yellow>Kattints az előző oldalhoz'
+  General clan_top items back name: <red>Vissza
+  General clan_top items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General clan_members_invite title: <blue>Játékos meghívás
+  General clan_members_invite items fill name: ' '
+  General clan_members_invite items fill lore: [
+    ]
+  General clan_members_invite items back name: <red>Vissza
+  General clan_members_invite items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General clan_members_invite items current name: <green>%uclans_player%
+  General clan_members_invite items current lore:
+  - ''
+  - ' <gray>Becenév: <aqua>%uclans_player%'
+  - ' <gray>KDR: <aqua>%uclans_player_kills%<dark_gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <gray>Csatlakozás: <aqua>%uclans_player_joindate_formated%'
+  - ' <gray>Utoljára aktív: <aqua>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <yellow>Kattints a meghíváshoz.'
+  General clan_members_invite items search name: <red>Keresés
+  General clan_members_invite items search lore:
+  - ' <yellow>Kattints a játékos kereséshez.'
+  General clan_search_members_invite title: <blue>Keresés <gray>| <dark_red>%amount% eredmény(ek)<gray>
+  General clan_search_members_invite items fill name: ' '
+  General clan_search_members_invite items fill lore: [
+    ]
+  General clan_search_members_invite items back name: <red>Vissza
+  General clan_search_members_invite items back lore:
+  - ' <yellow>Kattints a visszalépéshez'
+  General clan_search_members_invite items current name: <green>%uclans_player%
+  General clan_search_members_invite items current lore:
+  - ''
+  - ' <gray>Becenév: <aqua>%uclans_player%'
+  - ' <gray>KDR: <aqua>%uclans_player_kills%<dark_gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <gray>Csatlakozás: <aqua>%uclans_player_joindate_formated%'
+  - ' <gray>Utoljára aktív: <aqua>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <yellow>Kattints a meghíváshoz.'
+  General rival title: <blue>Rivális lista <gray>| %uclans_tag_color%
+  General rival items fill name: ' '
+  General rival items fill lore: [
+    ]
+  General rival items back name: <red>Vissza
+  General rival items back lore:
+  - ''
+  - ' <yellow>Kattints a visszalépéshez.'
+  General rival items next name: <green>Következő oldal
+  General rival items next lore:
+  - ''
+  - ' <yellow>Kattints a következő oldalhoz.'
+  General rival items previous name: <green>Előző oldal
+  General rival items previous lore:
+  - ''
+  - ' <yellow>Kattints az előző oldalhoz.'
+  General rival items current name: <green>Klán %uclans_tag_color%
+  General rival items current lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Szint: <green>%uclans_level%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General ally title: <blue>Szövetséges lista <gray>| %uclans_tag_color%
+  General ally items fill name: ' '
+  General ally items fill lore: [
+    ]
+  General ally items back name: <red>Vissza
+  General ally items back lore:
+  - ''
+  - ' <yellow>Kattints a visszalépéshez.'
+  General ally items next name: <green>Következő oldal
+  General ally items next lore:
+  - ''
+  - ' <yellow>Kattints a következő oldalhoz.'
+  General ally items previous name: <green>Előző oldal
+  General ally items previous lore:
+  - ''
+  - ' <yellow>Kattints az előző oldalhoz.'
+  General ally items current name: <green>Klán %uclans_tag_color%
+  General ally items current lore:
+  - ''
+  - ' <yellow>Klán információ'
+  - ' <gray>'
+  - ' <gray>Szint: <green>%uclans_level%'
+  - ' <gray>'
+  - ' <gray>Tag: <aqua>%uclans_tag_color%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Jobb kattolj az információkért.'
+  General members title: <blue>Tag lista <gray>| %uclans_tag_color%
+  General members items fill name: ' '
+  General members items fill lore: [
+    ]
+  General members items back name: <red>Vissza
+  General members items back lore:
+  - ''
+  - ' <yellow>Kattints a visszalépéshez.'
+  General members items next name: <green>Következő oldal
+  General members items next lore:
+  - ''
+  - ' <yellow>Kattints a következő oldalhoz.'
+  General members items previous name: <green>Előző oldal
+  General members items previous lore:
+  - ''
+  - ' <yellow>Kattints az előző oldalhoz.'
+  General members items invite name: <green>Játékos meghívása
+  General members items invite lore:
+  - ' <yellow>Kattints játékos meghívásához'
+  General members items current name: <green>%uclans_player%
+  General members items current lore:
+  - ''
+  - ' <gray>Rang: <aqua>%uclans_player_role_formated%'
+  - ' <gray>Becenév: <aqua>%uclans_player%'
+  - ' <gray>KDR: <aqua>%uclans_player_kills%<dark_gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <gray>Csatlakozás: <aqua>%uclans_player_joindate_formated%'
+  - ' <gray>Utoljára aktív: <aqua>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <yellow>Kattints a profil megtekintéséhez.'
+  General listhomes title: <blue>Otthon lista <gray>| %uclans_tag_color%
+  General listhomes items fill name: ' '
+  General listhomes items fill lore: [
+    ]
+  General listhomes items back name: <red>Vissza
+  General listhomes items back lore:
+  - ''
+  - ' <yellow>Kattints a visszalépéshez.'
+  General listhomes items next name: <green>Következő oldal
+  General listhomes items next lore:
+  - ''
+  - ' <yellow>Kattints a következő oldalhoz.'
+  General listhomes items previous name: <green>Előző oldal
+  General listhomes items previous lore:
+  - ''
+  - ' <yellow>Kattints az előző oldalhoz.'
+  General listhomes items current name: <green>Otthon %uclans_home:{name}:name%
+  General listhomes items current lore:
+  - ''
+  - ' <yellow>Otthon információ'
+  - ' <gray>'
+  - ' <gray>Szerver: <green>%uclans_home:{name}:server%'
+  - ' <gray>Név: <aqua>%uclans_home:{name}:name%'
+  - ' <gray>Helyszín: <aqua>%uclans_home:<num>:location%'
+  General clan_allyhome title: <blue>Szövetséges otthon
+  General clan_allyhome items back name: <red>Vissza
+  General clan_allyhome items back lore:
+  - ''
+  - ' <yellow>Kattints a visszalépéshez.'
+  General clan_allyhome items next name: <green>Következő oldal
+  General clan_allyhome items next lore:
+  - ''
+  - ' <yellow>Kattints a következő oldalhoz.'
+  General clan_allyhome items previous name: <green>Előző oldal
+  General clan_allyhome items previous lore:
+  - ''
+  - ' <yellow>Kattints az előző oldalhoz.'
+  General clan_allyhome items current name: <green>Otthon %uclans_home:{name}:name% klán %uclans_tag_color%.
+  General clan_allyhome items current lore:
+  - ''
+  - ' <yellow>Otthon információ'
+  - ' <gray>'
+  - ' <gray>Klán: <aqua>%uclans_tag_color%'
+  - ' <gray>Szerver: <green>%uclans_home:{name}:server%'
+  - ' <gray>Név: <aqua>%uclans_home:{name}:name%'
+  - ''
+  - ' <yellow>Bal katt a teleportáláshoz.'
+  General clan_allyhome items fill name: ' '
+  General clan_allyhome items fill lore: [
+    ]
+  General invites title: <blue>Meghívó lista <gray>| <green>%uclans_player_name%
+  General invites items fill name: ' '
+  General invites items fill lore: [
+    ]
+  General invites items back name: <red>Vissza
+  General invites items back lore:
+  - ''
+  - ' <yellow>Kattints a visszalépéshez.'
+  General invites items next name: <green>Következő oldal
+  General invites items next lore:
+  - ''
+  - ' <yellow>Kattints a következő oldalhoz.'
+  General invites items previous name: <green>Előző oldal
+  General invites items previous lore:
+  - ''
+  - ' <yellow>Kattints az előző oldalhoz.'
+  General invites items current name: <green>Meghívó %uclans_tag_color%
+  General invites items current lore:
+  - ''
+  - ' <yellow>Meghívó információ'
+  - ' <gray>'
+  - ' <gray>Klán: <green>%uclans_tag_color%'
+  - ' <gray>Patent: <aqua>%uclans_patent_formated%'
+  - ' <gray>Szint: <aqua>%uclans_level%'
+  - ' <gray>Tagok: <aqua>%uclans_count_members%'
+  - ''
+  - ' <yellow>Bal katt elfogadás.'
+  - ' <red>Jobb katt elutasítás.'
+  General banner_home title: <blue><bold>Banner menü
+  General banner_home items fill name: ' '
+  General banner_home items fill lore: [
+    ]
+  General banner_home items fill2 name: ' '
+  General banner_home items fill2 lore: [
+    ]
+  General banner_home items current name: <green>Jelenlegi Banner
+  General banner_home items current lore:
+  - ' '
+  - ' <yellow>A klán banner a klánod logója.'
+  - ''
+  - ' <aqua><bold><< <red>Használd a gombokat a szélén <aqua><bold>>>'
+  General banner_home items upload name: <green>Feltöltés
+  General banner_home items upload lore:
+  - ''
+  - ' <yellow>Kattints a feltöltés menü megnyitásához.'
+  General banner_home items delete name: <green>Banner törlése
+  General banner_home items delete lore:
+  - ''
+  - ' <yellow>Kattints a jelenlegi banner törléséhez.'
+  General banner_home items pre name: <green>Kész bannerek.
+  General banner_home items pre lore:
+  - ''
+  - ' <yellow>Kattints a lista megnyitásához.'
+  General banner_home items back name: <red>Vissza
+  General banner_home items back lore:
+  - ''
+  - ' <yellow>Kattints a visszalépéshez.'
+  General banner_delete title: <red>Biztosan törlöd a jelenlegi bannert?
+  General banner_delete items fill name: ' '
+  General banner_delete items fill lore: [
+    ]
+  General banner_delete items confirm name: <green>Igen
+  General banner_delete items confirm lore:
+  - ''
+  - ' <red>Kattints a megerősítéshez.'
+  General banner_delete items cancel name: <green>Nem
+  General banner_delete items cancel lore:
+  - ''
+  - ' <yellow>Kattints a megszakításhoz.'
+  General banner_upload title: <blue><bold>Banner feltöltés
+  General banner_upload items fill name: ' '
+  General banner_upload items fill lore: [
+    ]
+  General banner_upload items fill2 name: <red>Tedd ide az új bannered!
+  General banner_upload items fill2 lore:
+  - ' '
+  - ' <red>Tedd ide az új bannered!'
+  General banner_upload items upload_slot name: ''
+  General banner_upload items upload_slot lore: [
+    ]
+  General banner_upload items back name: <red>Vissza
+  General banner_upload items back lore:
+  - ''
+  - ' <red>Kattints a visszalépéshez.'
+  General banner_upload items confirm name: <green>Kattints a mentéshez.
+  General banner_upload items confirm lore:
+  - ''
+  - ' <yellow>Kattints ide a mentéshez.'
+ 
+ 
+ # TRANSLATIONS OF THE COMMANDS
+ 
+COMMANDS:
+  clan help show on_help: <click:suggest_command:"/{_clan} {_help}"><hover:show_text:'<green>Kattints ide klán segítségért.'> <aqua>/{_clan} {_help} <gray>-<yellow> Segítség menü megjelenítése.</hover></click>
+  clan help show on_success: '%tag% <green>A segítséget tekinted meg!'
+  clan help show on_error: '%tag%<red>Hiba történt az üzenet megjelenítésekor.'
+  clan help show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_help}'
+  clan create show on_help: <click:suggest_command:"/{_clan} {_create} "><hover:show_text:'<green>Új klán létrehozása.'> <aqua>/{_clan} {_create} <red><tag> <gray>-<yellow> Kattints új klán létrehozásához.</hover></click>
+  clan create show on_success: '%tag% <green>Létrehoztál egy új klánt!'
+  clan create show on_error: '%tag% <red>Hiba történt a klán létrehozása során, próbáld újra.'
+  clan create show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_create} <red><tag>'
+  clan cancel show on_help: <click:suggest_command:"/{_clan} {_cancel}"><hover:show_text:'<green>Kattints ide a kimenő műveletek megszakításához.'> <aqua>/{_clan} {_cancel} <gray>-<yellow> Műveletek megszakítása.</hover></click>
+  clan cancel show on_success: '%tag% <green>Sikeresen megszakítva!'
+  clan cancel show on_error: '%tag% <red>Hiba történt a megszakítás során'
+  clan cancel show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_cancel}'
+  clan changeleader show on_help: <click:suggest_command:"/{_clan} {_changeleader} "><hover:show_text:'<green>Kattints ide a vezető rang átadásához.'> <aqua>/{_clan} {_changeleader} <red><player> <gray>-<yellow> Vezető rang átadása.</hover></click>
+  clan changeleader show on_success: '%tag% <green>Átadtad a vezető rangot neki: %clan_leader%'
+  clan changeleader show on_error: '%tag% <red>Hiba történt az átadás során.'
+  clan changeleader show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_changeleader} <red><player>'
+  clan desc show on_help: <click:suggest_command:"/{_clan} {_desc} "><hover:show_text:'<green>Kattints ide klán leírás létrehozásához/szerkesztéséhez.'> <aqua>/{_clan} {_desc} <red><description> <gray>-<yellow> Leírás hozzáadása a klánhoz.</hover></click>
+  clan desc show on_success: '%tag% <green>Megváltoztattad a klán leírását!'
+  clan desc show on_error: '%tag% <red>Hiba történt a leírás megváltoztatása során.'
+  clan desc show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_desc} <description>'
+  clan disband show on_help: <click:suggest_command:"/{_clan} {_disband}"><hover:show_text:'<green>Kattints a klán törléséhez.'> <aqua>/{_clan} {_disband} <gray>-<yellow> Klán törlése.</hover></click>
+  clan disband show on_success: '%tag% <green>Törölted a klánod!'
+  clan disband show on_error: '%tag% <red>Hiba történt a klán törlése során, próbáld újra.'
+  clan disband show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_disband}'
+  clan leave show on_help: <click:suggest_command:"/{_clan} {_leave}"><hover:show_text:'<green>Kattints a klán elhagyásához.'> <aqua>/{_clan} {_leave} <gray>-<yellow> Klán elhagyása.</hover></click>
+  clan leave show on_success: '%tag% <green>Elhagytad a klánt!'
+  clan leave show on_error: '%tag% <red>Hiba történt a klán elhagyása során, próbáld újra.'
+  clan leave show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_leave}'
+  clan join show on_help: <click:suggest_command:"/{_clan} {_join} "><hover:show_text:'<green>Kattints ide a meghívó elfogadásához.'> <aqua>/{_clan} {_join} <red><tag> <gray>-<yellow> Meghívás elfogadása.</hover></click>
+  clan join show on_success: '%tag% <green>Elfogadtad a meghívást!'
+  clan join show on_error: '%tag% <red>Hiba történt a csatlakozás során, próbáld újra.'
+  clan join show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_join} <red><tag>'
+  clan deny show on_help: <click:suggest_command:"/{_clan} {_deny} "><hover:show_text:'<green>Kattints a meghívó elutasításához.'> <aqua>/{_clan} {_deny} <red><tag> <gray>-<yellow> Meghívás elutasítása.</hover></click>
+  clan deny show on_success: '%tag% <green>Meghívás elutasítva!'
+  clan deny show on_error: '%tag% <red>Hiba törtélnt az elutasítás során.'
+  clan deny show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_deny} <red><tag>'
+  clan promote show on_help: <click:suggest_command:"/{_clan} {_promote} "><hover:show_text:'<green>Kattints a játékos előreléptetéséhez.'> <aqua>/{_clan} {_promote} <red><player> <gray>-<yellow> Játékos előreléptetése.</hover></click>
+  clan promote show on_success: '%tag% <green>A játékos előreléptetve.'
+  clan promote show on_error: '%tag% <red>A játékosnak nincs több előreléptetési lehetősége.'
+  clan promote show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_promote} <red><player>'
+  clan demote show on_help: <click:suggest_command:"/{_clan} {_demote} "><hover:show_text:'<green>Kattints a játékos lefokozásához.'> <aqua>/{_clan} {_demote} <red><player> <gray>-<yellow> Játékos lefokozása.</hover></click>
+  clan demote show on_success: '%tag% <green>Játékos lefokozva.'
+  clan demote show on_error: '%tag% <red>A játékost nem lehet tovább lefokozni'
+  clan demote show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_demote} <red><player>'
+  clan home show on_help: <click:run_command:"/{_clan} {_home} "><hover:show_text:'<green>Kattints ide az otthon parancsokért.'> <aqua>/{_clan} {_home} <gray>-<yellow> Klán otthonok.</hover></click> <hover:show_text:'<green>Alparancsokkal.'><green>[!]</hover>
+  clan home show on_success: '%tag% <green>Siker!'
+  clan home show on_error: '%tag% <red>Hiba történt.'
+  clan home show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_home}'
+  clan home subcommands create: <click:suggest_command:"/{_clan} {_home} {_create} "><hover:show_text:'<green>Kattints a létrehozáshoz.'> <aqua>/{_clan} {_home} {_create} <red><name> <light_purple>(password)<gray>-<yellow> Otthon létrehozása.</hover></click>
+  clan home subcommands create show on_success: '%tag% <green>Klán otthon sikeresen létrehozva.'
+  clan home subcommands create show on_error: '%tag% <red>Hiba történt a létrehozás során.'
+  clan home subcommands create show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_home} {_create} <red><name> <light_purple>(password)'
+  clan home subcommands delete: <click:suggest_command:"/{_clan} {_home} {_delete} "><hover:show_text:'<green>Kattints az otthon törléséhez.'> <aqua>/{_clan} {_home} {_delete} <red><name> <gray>-<yellow> Otthon törlése.</hover></click>
+  clan home subcommands delete show on_success: '%tag% <green>Klán otthon sikeresen törölve.'
+  clan home subcommands delete show on_error: '%tag% <red>Hiba történt a törlés során.'
+  clan home subcommands delete show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_home} {_delete} <red><name>'
+  clan home subcommands list: <click:suggest_command:"/{_clan} {_home} {_list} "><hover:show_text:'<green>Kattints ide az otthonok listázásához.'> <aqua>/{_clan} {_home} {_list} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> Otthonok listázása.</hover></click>
+  clan home subcommands list show on_success: '%tag% <green>Siker.'
+  clan home subcommands list show on_error: '%tag% <red>Hiba történt a listázás során.'
+  clan home subcommands list show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_home} {_list} <light_purple>(tag) <light_purple>(-gui)'
+  clan home subcommands teleport: <click:suggest_command:"/{_clan} {_home} {_teleport} "><hover:show_text:'<green>Kattints a teleportáláshoz.'> <aqua>/{_clan} {_home} {_teleport} <red><name> <gray>-<yellow> Teleportálás az otthonhoz.</hover></click>
+  clan home subcommands teleport show on_success: '%tag% <green>Siker.'
+  clan home subcommands teleport show on_error: '%tag% <red>Hiba történt a teleportálás során.'
+  clan home subcommands teleport show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_home} {_teleport} <red><name>'
+  clan home subcommands view: <click:suggest_command:"/{_clan} {_home} {_view} "><hover:show_text:'<green>Kattints az otthon megtekintéséhez.'> <aqua>/{_clan} {_home} {_view} <red><name> <gray>-<yellow> Otthon megtekintése.</hover></click>
+  clan home subcommands view show on_success: '%tag% <green>Siker.'
+  clan home subcommands view show on_error: '%tag% <red>Hiba történt a megtekintés során.'
+  clan home subcommands view show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_home} {_view} <red><name>'
+  clan chat show on_help: <click:suggest_command:"/{_clan} {_chat} "><hover:show_text:'<green>Kattints a klán chat kapcsolásához.'> <aqua>/{_clan} {_chat} <gray>-<yellow> Klán chat kapcsolása.</hover></click>
+  clan chat show on_success: '%tag% <green>Klán chat: <aqua>%player_chat%'
+  clan chat show on_error: '%tag% <red>Hiba a chat használat során.'
+  clan chat show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_chat}'
+  clan ff show on_help: <click:suggest_command:"/{_clan} {_ff} "><hover:show_text:'<green>Kattints a baráti tűz kapcsolásához.'> <aqua>/{_clan} {_ff} <gray>-<yellow> Baráti tűz kapcsolása.</hover></click>
+  clan ff show on_success: '%tag% <green>Baráti tűz: <aqua>%clan_ff%'
+  clan ff show on_error: '%tag% <red>Hiba történt.'
+  clan ff show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_ff}'
+  clan modtag show on_help: <click:suggest_command:"/{_clan} {_modtag} "><hover:show_text:'<green>Kattints a klán tag megváltoztatásához.'> <aqua>/{_clan} {_modtag} <red><newtag> <gray>-<yellow> Klán tag megváltoztatása.</hover></click>
+  clan modtag show on_success: '%tag% <green>Klán tag megváltoztatva a következőre: <aqua>%clan_tag%'
+  clan modtag show on_error: '%tag% <red>Hiba történt a klán tag megváltoztatása során.'
+  clan modtag show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_modtag} <red><newtag>'
+  clan list show on_help: <click:suggest_command:"/{_clan} {_list} "><hover:show_text:'<green>Kattints az összes klán listázásához.'> <aqua>/{_clan} {_list} <light_purple>(type) <light_purple>(-gui) <gray>-<yellow> Összes klán listázása.</hover></click>
+  clan list show on_success: '%tag% <green>Siker.'
+  clan list show on_error: '%tag% <red>Hiba történt a listázás során.'
+  clan list show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_list} <light_purple>(type) <light_purple>(-gui)'
+  clan info show on_help: <click:suggest_command:"/{_clan} {_info} "><hover:show_text:'<green>Kattints ide a klán infóért.'> <aqua>/{_clan} {_info} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> Klán információ megtekintése.</hover></click>
+  clan info show on_success: ''
+  clan info show on_error: '%tag% <red>Hiba történt az infó során.'
+  clan info show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_info} <light_purple>(tag) <light_purple>(-gui)'
+  clan profile show on_help: <click:run_command:"/{_clan} {_profile} "><hover:show_text:'<green>Kattints a továbbiakért.'> <aqua>/{_clan} {_profile} <gray>-<yellow> Tag parancsok megtekintése</hover></click> <hover:show_text:'<green>Alparancsokkal.'><green>[!]</hover>
+  clan profile show on_success: '%tag% <green>Siker!'
+  clan profile show on_error: '%tag% <red>Hiba történt a profil megjelenítése során.'
+  clan profile show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_profile}'
+  clan profile subcommands view: <click:suggest_command:"/{_clan} {_profile} {_view} "><hover:show_text:'<green>Kattints ide a profil megtekintéséhez.'> <aqua>/{_clan} {_profile} {_view} <light_purple>(player) <light_purple>(-gui) <gray>-<yellow> Játékos profil megtekintése.</hover></click>
+  clan profile subcommands view show on_success: '%tag% <green>Siker.'
+  clan profile subcommands view show on_error: '%tag% <red>Hiba történt a megtekintés során.'
+  clan profile subcommands view show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_profile} {_view} <light_purple>(player) <light_purple>(-gui)'
+  clan profile subcommands set: <click:suggest_command:"/{_clan} {_profile} {_set} "><hover:show_text:'<green>Kattints ide a profil beállítások kezeléséhez.'> <aqua>/{_clan} {_profile} {_set} <red><key> <value> <gray>-<yellow> Profil beállítások kezelése.</hover></click>
+  clan profile subcommands set show on_success: '%tag% <green>Profil beállítások megváltoztatva'
+  clan profile subcommands set show on_error: '%tag% <red>Hiba történt a profil beállítások megváltoztatása során.'
+  clan profile subcommands set show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_profile} {_set} <red><key> <value>'
+  clan profile subcommands updateskin: <click:suggest_command:"/{_clan} {_profile} {_updateskin} "><hover:show_text:'<green>Kattints ide a kinézet frissítéséhez.'> <aqua>/{_clan} {_profile} {_updateskin} <gray>-<yellow> Kinézet frissítése.</hover></click>
+  clan profile subcommands updateskin show on_success: '%tag% <green>Kinézet frissítése, kérlek várj...'
+  clan profile subcommands updateskin show on_error: '%tag% <red>Hiba történt a kinézet feltöltse során.'
+  clan profile subcommands updateskin show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_profile} {_updateskin}'
+  clan profile subcommands invites: <click:suggest_command:"/{_clan} {_profile} {_invites} "><hover:show_text:'<green>Kattints ide a meghívások megtekintéséhez.'> <aqua>/{_clan} {_profile} {_invites} <light_purple>(-gui) <gray>-<yellow> Meghívások megtekintése.</hover></click>
+  clan profile subcommands invites show on_success: '%tag% <green>Siker'
+  clan profile subcommands invites show on_error: '%tag% <red>Hiba történt a meghívások megtekintése során.'
+  clan profile subcommands invites show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_profile} {_invites} <light_purple>(-gui)'
+  clan rival show on_help: <click:run_command:"/{_clan} {_rival} "><hover:show_text:'<green>Kattints ide a rivális parancsokért.'> <aqua>/{_clan} {_rival} <gray>-<yellow> Rivális klánok.</hover></click> <hover:show_text:'<green>alparancsokkal.'><green>[!]</hover>
+  clan rival show on_success: '%tag% <green>Rivális lista frissítve.'
+  clan rival show on_error: '%tag% <red>Hiba történt.'
+  clan rival show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_rival}.'
+  clan rival subcommands add: <click:suggest_command:"/{_clan} {_rival} {_add} "><hover:show_text:'<green>Kattints ide új rivális hozzáadásához.'> <aqua>/{_clan} {_rival} {_add} <red><tag> <gray>-<yellow> Klán rivális hozzáadása.</hover></click>
+  clan rival subcommands add show on_success: '%tag% <green>Új rivális hozzáadva'
+  clan rival subcommands add show on_error: '%tag% <red>Hiba történt új rivális hozzáadása során.'
+  clan rival subcommands add show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_rival} {_add} <red><tag>'
+  clan rival subcommands remove: <click:suggest_command:"/{_clan} {_rival} {_remove} "><hover:show_text:'<green>Kattints ide a rivális törléséhez.'> <aqua>/{_clan} {_rival} {_remove} <red><tag> <gray>-<yellow> Rivális törlése.</hover></click>
+  clan rival subcommands remove show on_success: '%tag% <green>Rivális klán törölve'
+  clan rival subcommands remove show on_error: '%tag% <red>Hiba történt a rivális klán törlése során.'
+  clan rival subcommands remove show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_rival} {_remove} <red><tag>'
+  clan rival subcommands list: <click:suggest_command:"/{_clan} {_rival} {_list} "><hover:show_text:'<green>Kattints ide a riválisok listázásához.'> <aqua>/{_clan} {_rival} {_list} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> Rivális klánok listázása.</hover></click>
+  clan rival subcommands list show on_success: '%tag% <green>Siker'
+  clan rival subcommands list show on_error: '%tag% <red>Hiba történt a riválisok listázása során.'
+  clan rival subcommands list show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_rival} {_list} <light_purple>(tag) <light_purple>(-gui)'
+  clan rival subcommands deny: <click:suggest_command:"/{_clan} {_rival} {_deny} "><hover:show_text:'<green>Kattints ide a rivális elutasításához.'> <aqua>/{_clan} {_rival} {_deny} <red><tag> <gray>-<yellow> Rivális elutasítása.</hover></click>
+  clan rival subcommands deny show on_success: '%tag% <green>Új rivális klán sikeresen elutasítva'
+  clan rival subcommands deny show on_error: '%tag% <red>Hiba történt az elutasítás során.'
+  clan rival subcommands deny show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_rival} {_deny} <red><tag>'
+  clan rival subcommands accept: <click:suggest_command:"/{_clan} {_rival} {_accept} "><hover:show_text:'<green>Kattints ide a rivális elfogadásához.'> <aqua>/{_clan} {_rival} {_accept} <red><tag> <gray>-<yellow> Rivális elfogadása.</hover></click>
+  clan rival subcommands accept show on_success: '%tag% <green>Új rivális klán sikeresen elfogadva'
+  clan rival subcommands accept show on_error: '%tag% <red>Hiba történt az elfogadás során.'
+  clan rival subcommands accept show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_rival} {_accept} <red><tag>'
+  clan ally show on_help: <click:run_command:"/{_clan} {_ally} "><hover:show_text:'<green>Kattints ide a további parancsokért.'> <aqua>/{_clan} {_ally} <gray>-<yellow> Klán szövetségek.</hover></click> <hover:show_text:'<green>alparancsokkal.'><green>[!]</hover>
+  clan ally show on_success: '%tag% <green>Szövetségesek frissítve.'
+  clan ally show on_error: '%tag% <red>Hiba történt.'
+  clan ally show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_ally}'
+  clan ally subcommands add: <click:suggest_command:"/{_clan} {_ally} {_add} "><hover:show_text:'<green>Kattints ide új szövetséges hozzáadásához.'> <aqua>/{_clan} {_ally} {_add} <red><tag> <gray>-<yellow> Szövetséges hozzáadása.</hover></click>
+  clan ally subcommands add show on_success: '%tag% <green>Szövetségi meghívó kiküldve, kérlek várj...'
+  clan ally subcommands add show on_error: '%tag% <red>Hiba történt a meghívó kiküldése során.'
+  clan ally subcommands add show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_ally} {_add} <red><tag>'
+  clan ally subcommands remove: <click:suggest_command:"/{_clan} {_ally} {_remove} "><hover:show_text:'<green>Kattints ide szövetséges törléséhez.'> <aqua>/{_clan} {_ally} {_remove} <red><tag> <gray>-<yellow> Szövetséges törlése.</hover></click>
+  clan ally subcommands remove show on_success: '%tag% <green>Szövetséges sikeresen törölve.'
+  clan ally subcommands remove show on_error: '%tag% <red>Hiba történt a szövetséges eltávolítása során.'
+  clan ally subcommands remove show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_ally} {_remove} <red><tag>'
+  clan ally subcommands accept: <click:suggest_command:"/{_clan} {_ally} {_accept} "><hover:show_text:'<green>Kattints ide szövetségi meghívó elfogadásához'> <aqua>/{_clan} {_ally} {_accept} <red><tag> <gray>-<yellow> Klán szövetség elfogadása.</hover></click>
+  clan ally subcommands accept show on_success: '%tag% <green>Új szövetség elfogadva'
+  clan ally subcommands accept show on_error: '%tag% <red>Hiba történt az elfogadás során.'
+  clan ally subcommands accept show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_ally} {_accept} <red><tag>'
+  clan ally subcommands deny: <click:suggest_command:"/{_clan} {_ally} {_deny} "><hover:show_text:'<green>Kattints ide szövetségi meghívó elutasításához.'> <aqua>/{_clan} {_ally} {_deny} <red><tag> <gray>-<yellow> Klán szövetség elutasítása.</hover></click>
+  clan ally subcommands deny show on_success: '%tag% <green>Szövetség elutasítva'
+  clan ally subcommands deny show on_error: '%tag% <red>Hiba történt az elutasítás során.'
+  clan ally subcommands deny show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_ally} {_deny} <red><tag>'
+  clan ally subcommands list: <click:suggest_command:"/{_clan} {_ally} {_list} "><hover:show_text:'<green>Click to list clan alliances.'> <aqua>/{_clan} {_ally} {_list} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> List clan alliances.</hover></click>
+  clan ally subcommands list show on_success: '%tag% <green>Success'
+  clan ally subcommands list show on_error: '%tag% <red>Error listing alliances.'
+  clan ally subcommands list show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_ally} {_list} <light_purple>(tag) <light_purple>(-gui)'
+  clan member show on_help: <click:run_command:"/{_clan} {_member} "><hover:show_text:'<green>Kattints ide a parancsok listázásához.'> <aqua>/{_clan} {_member} <gray>-<yellow> Klán tag parancsok.</hover></click> <hover:show_text:'<green>Alparancsokkal.'><green>[!]</hover>
+  clan member show on_success: '%tag% <green>Siker.'
+  clan member show on_error: '%tag% <red>Hiba.'
+  clan member show on_usage: '%tag% <red>Használat <gold>/{_clan} {_member}'
+  clan member subcommands invite: <click:suggest_command:"/{_clan} {_member} {_invite} "><hover:show_text:'<green>Kattints ide játékos meghívásához.'> <aqua>/{_clan} {_member} {_invite} <red><player> <gray>-<yellow> Játékos meghívása.</hover></click>
+  clan member subcommands invite show on_success: '%tag% <green>Meghívó elküldve, várj amíg elfogadásra/elutasításra kerül'
+  clan member subcommands invite show on_error: '%tag% <red>Hiba történt a meghívó elküldése során.'
+  clan member subcommands invite show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_member} {_invite} <red><player>'
+  clan member subcommands kick: <click:suggest_command:"/{_clan} {_member} {_kick} "><hover:show_text:'<green>Kattints ide játékos kirúgásához.'> <aqua>/{_clan} {_member} {_kick} <red><player> <gray>-<yellow> Játékos kirúgása.</hover></click>
+  clan member subcommands kick show on_success: '%tag% <green>Játékos sikeresen kirúgva'
+  clan member subcommands kick show on_error: '%tag% <red>Hiba történt a játékos kirúgása során.'
+  clan member subcommands kick show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_member} {_kick} <red><player>'
+  clan member subcommands list: <click:suggest_command:"/{_clan} {_member} {_list} "><hover:show_text:'<green>Kattints ide a klán tagok listázásához.'> <aqua>/{_clan} {_member} {_list} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> Klán tagok listázása.</hover></click>
+  clan member subcommands list show on_success: '%tag% <green>Siker'
+  clan member subcommands list show on_error: '%tag% <red>Hiba történt a listázás során.'
+  clan member subcommands list show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_member} {_list} <light_purple>(tag) <light_purple>(-gui)'
+  clan member subcommands search: <click:suggest_command:"/{_clan} {_member} {_search} "><hover:show_text:'<green>Kattints ide a tagok kereséséhez.'> <aqua>/{_clan} {_member} {_search} <red><text> <light_purple>(-gui) <gray>-<yellow> Játékos keresése.</hover></click>
+  clan member subcommands search show on_success: '%tag% <green>Siker'
+  clan member subcommands search show on_error: '%tag% <red>Hiba történt a keresés során.'
+  clan member subcommands search show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_member} {_search} <red><text> <light_purple>(-gui)'
+  clan settings show on_help: <click:run_command:"/{_clan} {_settings} "><hover:show_text:'<green>Kattints ide a további parancsokért.'> <aqua>/{_clan} {_settings} <gray>-<yellow> Klán beállítások megváltoztatása.</hover></click> <hover:show_text:'<green>Alparancsokkal.'><green>[!]</hover>
+  clan settings show on_success: '%tag% <green>Siker'
+  clan settings show on_error: '%tag% <red>Hiba történt a klán beállítások megváltoztatása során.'
+  clan settings show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_settings}'
+  clan settings subcommands banned: <click:suggest_command:"/{_clan} {_settings} {_banned} "><hover:show_text:'<green>Kattints ide a kitiltott játékosok listázásához.'> <aqua>/{_clan} {_settings} {_banned} <light_purple>(-gui) <gray>-<yellow> Kitiltott játékosok listázása.</hover></click>
+  clan settings subcommands banned show on_success: '%tag% <green>Siker'
+  clan settings subcommands banned show on_error: '%tag% <red>Hiba történt listázás során.'
+  clan settings subcommands banned show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_settings} {_banned} <light_purple>(-gui)'
+  clan settings subcommands view: <click:suggest_command:"/{_clan} {_settings} {_view} "><hover:show_text:'<green>Kattints ide a klán beállítások megtekintéséhez'> <aqua>/{_clan} {_settings} {_view} <light_purple>(-gui) <gray>-<yellow> Klán beállítások megtekintése.</hover></click>
+  clan settings subcommands view show on_success: '%tag% <green>Siker'
+  clan settings subcommands view show on_error: '%tag% <red>Hiba történt a megtekintés során.'
+  clan settings subcommands view show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_settings} {_view} <light_purple>(-gui)'
+  clan settings subcommands set: <click:suggest_command:"/{_clan} {_settings} {_set} "><hover:show_text:'<green>Kattints ide a klán beállítások kezeléséhez'> <aqua>/{_clan} {_settings} {_set} <red><key> <value> <gray>-<yellow> Klán beállítások kezelése.</hover></click>
+  clan settings subcommands set show on_success: '%tag% <green>Klán beállítás megváltoztatva <aqua>%type%<gray>:<aqua>%value%'
+  clan settings subcommands set show on_error: '%tag% <red>Hiba történt a beállítás során.'
+  clan settings subcommands set show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_settings} {_set} <red><key> <value>'
+  clan role show on_help: <click:run_command:"/{_clan} {_role} "><hover:show_text:'<green>Kattints ide a parancsokért.'> <aqua>/{_clan} {_role} <gray>-<yellow> Klán rang megváltoztatása.</hover></click> <hover:show_text:'<green>Alparancsokkal.'><green>[!]</hover>
+  clan role show on_success: '%tag% <green>Siker'
+  clan role show on_error: '%tag% <red>Hiba történt.'
+  clan role show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_role}'
+  clan role subcommands sync: <click:suggest_command:"/{_clan} {_role} {_sync} "><hover:show_text:'<green>Kattints ide a jogok szinkronizálásához.'> <aqua>/{_clan} {_role} {_sync} <light_purple>(-gui) <gray>-<yellow> Jogok szinkronizálása.</hover></click>
+  clan role subcommands sync show on_success: '%tag% <green>Siker'
+  clan role subcommands sync show on_error: '%tag% <red>Hiba történt a szinkronizálás során.'
+  clan role subcommands sync show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_role} {_sync}'
+  clan role subcommands view: <click:suggest_command:"/{_clan} {_role} {_view} "><hover:show_text:'<green>Kattints ide a klán rang megtekintéséhez'> <aqua>/{_clan} {_role} {_view} <light_purple>(-gui) <gray>-<yellow> Klán rang megtekintése.</hover></click>
+  clan role subcommands view show on_success: '%tag% <green>Jogok sikeresen szinkronizálva.'
+  clan role subcommands view show on_error: '%tag% <red>Hiba történt a klán jogok megtekintése során'
+  clan role subcommands view show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_role} {_view} <light_purple>(-gui)'
+  clan role subcommands set: <click:suggest_command:"/{_clan} {_role} {_set} "><hover:show_text:'<green>Klán rang megváltoztatása'> <aqua>/{_clan} {_role} {_set} <red><role> <key> <value> <gray>-<yellow> Klán rang megváltoztatása.</hover></click>
+  clan role subcommands set show on_success: '%tag% <green>Klán rang %role% megváltoztatva a következőre: <aqua>%key%<gray>:<aqua>%value%'
+  clan role subcommands set show on_error: '%tag% <red>Hiba történt a klán rang megváltoztatása során.'
+  clan role subcommands set show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_role} {_set} <red><role> <key> <value>'
+  clan regroup show on_help: <click:run_command:"/{_clan} {_regroup} "><hover:show_text:'<green>Kattints ide a további parancsokért.'> <aqua>/{_clan} {_regroup} <gray>-<yellow> Klán regroup.</hover></click> <hover:show_text:'<green>Alparancsokkal.'><green>[!]</hover>
+  clan regroup show on_success: '%tag% <green>Regroup kérelem elküldve.'
+  clan regroup show on_error: '%tag% <red>Hiba történt.'
+  clan regroup show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_regroup}'
+  clan regroup subcommands send: <click:suggest_command:"/{_clan} {_regroup} {_send} "><hover:show_text:'<green>Kattints ide regroup küldéséhez'> <aqua>/{_clan} {_regroup} {_send} <gray>-<yellow> Regroup küldése.</hover></click>
+  clan regroup subcommands send show on_success: '%tag% <green>Regroup meghívó sikeresen kiküldve, várakozás a válaszra'
+  clan regroup subcommands send show on_error: '%tag% <red>Hiba történt a meghívó kiküldése során.'
+  clan regroup subcommands send show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_regroup} {_send}'
+  clan regroup subcommands accept: <click:suggest_command:"/{_clan} {_regroup} {_accept} "><hover:show_text:'<green>Kattints ide a regroup meghívó elfogádásához'> <aqua>/{_clan} {_regroup} {_accept} <gray>-<yellow> Regroup meghívó elfogadása.</hover></click>
+  clan regroup subcommands accept show on_success: '%tag% <green>Sikeresen elfogadtad a meghívás'
+  clan regroup subcommands accept show on_error: '%tag% <red>Hiba történt az elfogadás során'
+  clan regroup subcommands accept show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_regroup} {_accept}'
+  clan regroup subcommands deny: <click:suggest_command:"/{_clan} {_regroup} {_deny} "><hover:show_text:'<green>Kattints ide a regroup meghívó elutasításához'> <aqua>/{_clan} {_regroup} {_deny} <gray>-<yellow> Regroup meghívó elutasítása.</hover></click>
+  clan regroup subcommands deny show on_success: '%tag% <green>Sikeresen elutasítottad a meghívást'
+  clan regroup subcommands deny show on_error: '%tag% <red>Hiba történt az elutasítás során.'
+  clan regroup subcommands deny show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_regroup} {_deny}'
+  clan ban show on_help: <click:suggest_command:"/{_clan} {_ban} "><hover:show_text:'<green>Kattints ide játékos kitiltásához.'> <aqua>/{_clan} {_ban} <red><player> <gray>-<yellow> Játékos kitiltása.</hover></click>
+  clan ban show on_success: '%tag% <green>Játékos sikeresen kitiltva.'
+  clan ban show on_error: '%tag% <red>Hiba történt a játékos kitiltása során.'
+  clan ban show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_ban} <red><nickname>'
+  clan unban show on_help: <click:suggest_command:"/{_clan} {_unban} "><hover:show_text:'<green>Kattints ide játékos feloldásához.'> <aqua>/{_clan} {_unban} <red><player> <gray>-<yellow> Játékos feloldása.</hover></click>
+  clan unban show on_success: '%tag% <green>Játékos sikeresen feloldva.'
+  clan unban show on_error: '%tag% <red>Hiba történt a játékos feloldása során.'
+  clan unban show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_unban} <red><player>'
+  clan nickname show on_help: <click:suggest_command:"/{_clan} {_nickname} "><hover:show_text:'<green>Kattints ide a klán becenév megváltoztatásához.'> <aqua>/{_clan} {_nickname} <red><nickname> <gray>-<yellow> Klán becenév megváltoztatása.</hover></click>
+  clan nickname show on_success: '%tag% <green>Becenév sikeresen megváltoztatva.'
+  clan nickname show on_error: '%tag% <red>Hiba történt a becenév megváltoztatása során.'
+  clan nickname show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_nickname} <red><nickname>'
+  clan banner show on_help: <click:run_command:"/{_clan} {_banner} "><hover:show_text:'<green>Kattints ide a további parancsokért.'> <aqua>/{_clan} {_banner} <gray>-<yellow> Klán banner megváltoztatása.</hover></click> <hover:show_text:'<green>Alparancsokkal.'><green>[!]</hover>
+  clan banner show on_success: '%tag% <green>Siker'
+  clan banner show on_error: '%tag% <red>Hiba történt a klán banner megváltoztatása során.'
+  clan banner show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_banner}'
+  clan banner subcommands upload: <click:suggest_command:"/{_clan} {_banner} {_upload} "><hover:show_text:'<green>Kattints ide banner feltöltéséhez.'> <aqua>/{_clan} {_banner} {_upload} <light_purple>(-gui) <gray>-<yellow> Klán banner feltöltése.</hover></click>
+  clan banner subcommands upload show on_success: '%tag% <green>Új klán banner elmentve.'
+  clan banner subcommands upload show on_error: '%tag% <red>Hiba történt a feltöltés során.'
+  clan banner subcommands upload show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_banner} {_upload} <light_purple>(-gui)'
+  clan banner subcommands delete: <click:suggest_command:"/{_clan} {_banner} {_delete} "><hover:show_text:'<green>Kattints ide a banner törléséhez.'> <aqua>/{_clan} {_banner} {_delete} <gray>-<yellow> Klán banner törlése.</hover></click>
+  clan banner subcommands delete show on_success: '%tag% <green>A banner sikeresen törölve.'
+  clan banner subcommands delete show on_error: '%tag% <red>Hiba történt a banner törlése során.'
+  clan banner subcommands delete show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_banner} {_delete}'
+  clan banner subcommands view: <click:suggest_command:"/{_clan} {_banner} {_view} "><hover:show_text:'<green>Kattints ide a banner információhoz.'> <aqua>/{_clan} {_banner} {_view} <light_purple>(-gui) <gray>-<yellow> Banner információ megtekintése.</hover></click>
+  clan banner subcommands view show on_success: '%tag% <green>Siker.'
+  clan banner subcommands view show on_error: '%tag% <red>Hiba történt a megtekintés során.'
+  clan banner subcommands view show on_usage: '%tag% <red>Használat <aqua>/{_clan} {_banner} {_view} <light_purple>(-gui)'
+  uclan help show on_help: <click:suggest_command:"/{_uclan} {_help}"><hover:show_text:'<green>Kattints ide a klán segítségért.'> <aqua>/{_uclan} {_help} <gray>-<yellow> Segítség menü megjelenítése.</hover></click>
+  uclan help show on_success: '%tag% <green>Siker.'
+  uclan help show on_error: '%tag% <red>Hiba'
+  uclan help show on_usage: '%tag% <red>Hibás használat <aqua>/{_uclan} {_help}'
+  uclan chatspy show on_help: <click:suggest_command:"/{_uclan} {_chatspy} "><hover:show_text:'<green>Kattints ide a klán chat kémkedéséhez.'> <aqua>/{_uclan} {_chatspy} <gray>-<yellow> Klán chat kémkedés.</hover></click>
+  uclan chatspy show on_success: '%tag% <green>Chat Spy állapota: %state%'
+  uclan chatspy show on_error: '%tag% <red>Hiba történt.'
+  uclan chatspy show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_chatspy}'
+  uclan addslot show on_help: <click:suggest_command:"/{_uclan} {_addslot} "><hover:show_text:'<green>Kattints ide a slot adáshoz.'> <aqua>/{_uclan} {_addslot} <red><player|tag> <gray>-<yellow> Slot hozzáadása a klánhoz.</hover></click>
+  uclan addslot show on_success: '%tag% <green>Hozzáadva %num% slot a klánhoz: %clan%'
+  uclan addslot show on_error: '%tag% <red>Hiba történt.'
+  uclan addslot show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_addslot} <red><player|tag> <amount>'
+  uclan setslot show on_help: <click:suggest_command:"/{_uclan} {_setslot}"><hover:show_text:'<green>Kattints ide a slot beállításához.'> <aqua>/{_uclan} {_setslot} <red><player|tag> <amount>  <gray>-<yellow> Slotok beállítása a klánnak.</hover></click>
+  uclan setslot show on_success: '%tag% <green>%num% beállítva a klánnak: %clan%'
+  uclan setslot show on_error: '%tag% <red>Hiba történt.'
+  uclan setslot show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_setslot} <red><player|tag> <amount>'
+  uclan removeslot show on_help: <click:suggest_command:"/{_uclan} {_removeslot} "><hover:show_text:'<green>Kattints ide a slot elvételéhez.'> <aqua>/{_uclan} {_removeslot} <red><player|tag> <amount> <gray>-<yellow> Slot elvétele klántól.</hover></click>
+  uclan removeslot show on_success: '%tag% <green>%num% slot elvéve a klántól: %clan%'
+  uclan removeslot show on_error: '%tag% <red>Hiba történt.'
+  uclan removeslot show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_removeslot} <red><player|tag> <amount>'
+  uclan addpoints show on_help: <click:suggest_command:"/{_uclan} {_addpoints} "><hover:show_text:'<green>Kattints ide a pont adásához.'> <aqua>/{_uclan} {_addpoints} <red><player|tag> <amount> [reason] <gray>-<yellow> Pont adása klánnak.</hover></click>
+  uclan addpoints show on_success: '%tag% <green>%num% pont adva a klánnak: %clan%'
+  uclan addpoints show on_error: '%tag% <red>Hiba történt.'
+  uclan addpoints show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_addpoints} <red><player|tag> <amount> [reason]'
+  uclan setpoints show on_help: <click:suggest_command:"/{_uclan} {_setpoints} "><hover:show_text:'<green>Kattints ide a pont beállításához.'> <aqua>/{_uclan} {_setpoints} <red><player|tag> <amount> [reason] <gray>-<yellow> Pont beállítása klánnak.</hover></click>
+  uclan setpoints show on_success: '%tag% <green>%num% pont beállítva a klánnak: %clan%'
+  uclan setpoints show on_error: '%tag% <red>Hiba történt.'
+  uclan setpoints show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_setpoints} <red><player|tag> <amount> [reason]'
+  uclan removepoints show on_help: <click:suggest_command:"/{_uclan} {_removepoints} "><hover:show_text:'<green>Kattints ide a pont elvételéhez.'> <aqua>/{_uclan} {_removepoints} <red><player|tag> <amount> [reason] <gray>-<yellow> Pont elvétele klántól.</hover></click>
+  uclan removepoints show on_success: '%tag% <green>%num% pont elvéve a klántól: %clan%'
+  uclan removepoints show on_error: '%tag% <red>Hiba történt.'
+  uclan removepoints show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_removepoints} <red><player|tag> <amount> [reason]'
+  uclan changetag show on_help: <click:suggest_command:"/{_uclan} {_changetag} "><hover:show_text:'<green>Kattints ide a klán tag megváltoztatásához.'> <aqua>/{_uclan} {_changetag} <red><player|tag> <newtag> <gray>-<yellow> Klán tag megváltoztatása.</hover></click>
+  uclan changetag show on_success: '%tag% <green>Klán tag <aqua>%clan% <green>megváltoztatva a következőre: <aqua>%newtag%'
+  uclan changetag show on_error: '%tag% <red>Hiba történt.'
+  uclan changetag show on_usage: '%tag% <red>Hibás Használat <aqua>/{_uclan} {_changetag} <red><player|tag> <newtag>'
+  uclan resetplayerkdr show on_help: <click:suggest_command:"/{_uclan} {_resetplayerkdr}"><hover:show_text:'<green>Kattints ide a játékos KDR visszaállításához.'> <aqua>/{_uclan} {_resetplayerkdr} <red><player> <gray>-<yellow> Játékos KDR visszaállítása.</hover></click>
+  uclan resetplayerkdr show on_success: '%tag% <green>Játékos KDR visszaállítva neki: <green>%player%'
+  uclan resetplayerkdr show on_error: '%tag% <red>Hiba történt'
+  uclan resetplayerkdr show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_resetplayerkdr} <red><player>'
+  uclan resetclankdr show on_help: <click:suggest_command:"/{_uclan} {_resetclankdr} "><hover:show_text:'<green>Kattints ide a klán KDR visszaállításához.'> <aqua>/{_uclan} {_resetclankdr} <red><player|tag> <gray>-<yellow> Klán KDR visszaállítása.</hover></click>
+  uclan resetclankdr show on_success: '%tag% <green>Klán KDR visszaállítva nekik: <green>%uclans_tag_color%'
+  uclan resetclankdr show on_error: '%tag% <red>Hiba történt'
+  uclan resetclankdr show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_resetclankdr} <red><player|tag>'
+  uclan globalff show on_help: <click:suggest_command:"/{_uclan} {_globalff} "><hover:show_text:'<green>Kattints ide a baráti tűz kapcsolásához.'> <aqua>/{_uclan} {_globalff} <gray>-<yellow> Baráti tűz kapcsolása.</hover></click>
+  uclan globalff show on_success: '%tag% <green>Baráti tűz: <aqua>%globalff%'
+  uclan globalff show on_error: '%tag% <red>Hiba történt.'
+  uclan globalff show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_globalff}'
+  uclan delete show on_help: <click:suggest_command:"/{_uclan} {_delete} "><hover:show_text:'<green>Kattints ide klán törléséhez.'> <aqua>/{_uclan} {_delete} <red><player|tag> <gray>-<yellow> Klán törlése.</hover></click>
+  uclan delete show on_success: '%tag% <green>Klán törölve!'
+  uclan delete show on_error: '%tag% <red>Hiba történt.'
+  uclan delete show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_delete} <red><player|tag>'
+  uclan forcejoin show on_help: <click:suggest_command:"/{_uclan} {_forcejoin} "><hover:show_text:'<green>Kattints ide játékos hozzáadásához.'> <aqua>/{_uclan} {_forcejoin} <red><player> <player|tag> <gray>-<yellow> Játékos hozzáadása klánhoz.</hover></click>
+  uclan forcejoin show on_success: '%tag% <green>Játékos hozzáadva!'
+  uclan forcejoin show on_error: '%tag% <red>Hiba történt.'
+  uclan forcejoin show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_forcejoin} <red><player> <player|tag>'
+  uclan verify show on_help: <click:suggest_command:"/{_uclan} {_verify} "><hover:show_text:'<green>Kattints ide klán megerősítéséhez.'> <aqua>/{_uclan} {_verify} <red><player|tag> <gray>-<yellow> Klán megerősítése.</hover></click>
+  uclan verify show on_success: '%tag% <green>Klán megerősítés!'
+  uclan verify show on_error: '%tag% <red>Hiba történt a klán ellenőrzése során.'
+  uclan verify show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_verify} <red><player|tag>'
+  uclan reload show on_help: <click:suggest_command:"/{_uclan} {_reload} "><hover:show_text:'<green>Kattints ide a konfig újratöltéséhez.'> <aqua>/{_uclan} {_reload} <gray>-<yellow> Konfig újratöltése.</hover></click>
+  uclan reload show on_success: '%tag% <green>Plugin újratöltve <gray>(%time%).'
+  uclan reload show on_error: '%tag% <red>Hiba történt.'
+  uclan reload show on_usage: '%tag% <red>Használat <aqua>/{_uclan} {_reload}'
+ 
+ 
+ # TRANSLATIONS OF THE CHAT ACTIONS
+ 
+CHAT:
+  changenickname:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Írd le az ideiglenes neved a chatre, csak betűket és számokat tartalmazhat.
+    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Type your temporary nickname in the chat!
+    title:
+      line: <red>! <yellow>Nickname
+      subline: <yellow>Type in the chat!
+    bossbar: <red><bold>!</bold> <yellow>Type your nickname in the chat! <red>({time})
+  commandunknownplayer:
+    message:
+    - '%tag% <red>Unknown command, <aqua><click:run_command:"/{_clan} {_help}"><hover:show_text:"<green>Click here to view Help."><red>[CLICK HERE]</red></hover></click> <red>or use <light_purple>/{_clan} {_help} <red>to see the list of available commands.'
+    actionbar: <light_purple>/{_clan} {_help} <red>to see available commands.
+    title:
+      line: <red>! <light_purple>/{_clan} {_help}
+      subline: <yellow>To see commands!
+    bossbar: <light_purple>/{_clan} {_help} <red>to see available commands. <red>({time})
+  commandunknownadmin:
+    message:
+    - '%tag% <red>Unknown command, <aqua><click:run_command:"/uclan help"><hover:show_text:"<green>Click here to view Help."><red>[CLICK HERE]</red></hover></click> <red>or use <light_purple>/uclan help <red>to see the list of available commands.'
+    actionbar: <light_purple>/uclan help <red>to see available commands.
+    title:
+      line: <red>! <light_purple>/uclan help
+      subline: <yellow>To see commands!
+    bossbar: <light_purple>/uclan help <red>to see available commands. <red>({time})
+  clanlevelreceived:
+    message:
+    - '%tag% <yellow>The <aqua>%uclans_tag_color% <yellow>clan is now at level <aqua>%uclans_level%'
+    actionbar: <aqua>%uclans_tag_color% <yellow>clan is now at level <aqua>%uclans_level%
+    title:
+      line: <green>+ Level
+      subline: <aqua>%uclans_tag_color%
+    bossbar: <aqua>%uclans_tag_color% <yellow>clan is now at level <aqua>%uclans_level% <red>({time})
+  clanpatentreceived:
+    message:
+    - '%tag% <yellow>The <aqua>%uclans_tag_color% <yellow>changed patent to <aqua>%uclans_patent_formated%'
+    actionbar: <aqua>%uclans_tag_color% <yellow>has new patent <aqua>%uclans_patent_formated%
+    title:
+      line: <green>+ Patent
+      subline: <aqua>%uclans_patent_formated%
+    bossbar: <aqua>%uclans_tag_color% <yellow>has new patent <aqua>%uclans_patent_formated% <red>({time})
+  clanhomecreate:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Write in the chat the name of the new <aqua>Clan Home<yellow>.
+    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Type your new clan home in the chat!
+    title:
+      line: <red>! <yellow>New Home
+      subline: <yellow>Type in the chat!
+    bossbar: <red><bold>!</bold> <yellow>Type your new clan home in the chat! <red>({time})
+  clancreate:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Write in the chat the tag of the <aqua>New Clan<yellow> you want to create <yellow>.
+    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Write the tag of your new clan in the chat!
+    title:
+      line: <red>! <yellow>New Clan
+      subline: <yellow>Write in the chat!
+    bossbar: <red><bold>!</bold> <yellow>Write the tag in the chat! <red>({time})
+  clanmodtag:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Write in the chat the <aqua>New Tag<yellow> of the clan <yellow>.
+    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Write the new tag of the clan in the chat!
+    title:
+      line: <red>! <yellow>New Tag
+      subline: <yellow>Write in the chat!
+    bossbar: <red><bold>!</bold> <yellow>Write the new tag in the chat! <red>({time})
+  clandesc:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Write in the chat the <aqua>New Description<yellow> of the clan <yellow>.
+    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Write the new tag of the clan in the chat!
+    title:
+      line: <red>! <yellow>New Description
+      subline: <yellow>Write in the chat!
+    bossbar: <red><bold>!</bold> <yellow>Write the new description in the chat! <red>({time})
+  invitereceive:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>Invitation received to join Clan <white>%clan_tag_nocolor%
+    - <click:run_command:"/{_clan} {_join} %clan_tag_nocolor%"><hover:show_text:"<green>Click to accept, or use <aqua>/{_clan} {_join} %clan_tag_nocolor%."><green>[ACCEPT]</green></hover></click>    <click:run_command:"/{_clan} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Click to deny, or use <aqua>/{_clan} {_deny} %clan_tag_nocolor%."><red>[DENY]</red></hover></click>    <click:run_command:"/{_clan} {_profile} {_invites}"><hover:show_text:"<green>Click to view all, or use <aqua>/{_clan} {_profile} {_invites} ."><yellow>[VIEW ALL]</yellow></hover></click>
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Invitation received to join Clan <white>%clan_tag_nocolor%
+    title:
+      line: <red>! <yellow>New Invitation
+      subline: <yellow>Clan <white>%clan_tag_nocolor%
+    bossbar: <red><bold>!</bold> <yellow>Invitation received to join Clan <white>%clan_tag_nocolor% <red>({time})
+  clanregroupreceive:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>Regroup request received! <white>%clan_sender%
+    - <red>! <yellow>Expires in <aqua>%sec_expires% sec<gray>.
+    - <click:run_command:"/{_clan} {_regroup} accept"><hover:show_text:"<green>Click to accept, or use <aqua>/{_clan} {_regroup} accept."><green>[ACCEPT]</green></hover></click>
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>Regroup request received!
+    title:
+      line: <red>! <yellow>Regroup request
+      subline: <yellow>Accept or ignore?
+    bossbar: <red><bold>!</bold> <yellow>Regroup request received! <red>({time})
+  claninvite:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>Write in the chat who you want to invite to the clan.
+    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>>Write in the chat who you want to invite!
+    title:
+      line: <red>! <yellow>New Invite
+      subline: <yellow>Write in the chat?
+    bossbar: <red><bold>!</bold> <yellow>Write in the chat who you want to invite! <red>({time})
+  clanrivalremove:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>The <white>%clan_tag% <yellow>clan has sent a peace request.
+    - <red>! <yellow>Expires in <aqua>%sec_expires% sec<gray>.
+    - <click:run_command:"/{_clan} {_rival} {_accept} %clan_tag_nocolor%"><hover:show_text:"<green>Click to accept, or use <aqua>/{_clan} {_rival} {_accept} %clan_tag_nocolor%."><green>[ACCEPT]</green></hover></click>      <click:run_command:"/{_clan} {_rival} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Click to deny, or use <aqua>/{_clan} {_rival} {_deny} %clan_tag_nocolor%"><red>[DENY]</red></hover></click>
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>>Peace request received!
+    title:
+      line: <red>! <yellow>Peace request
+      subline: <yellow>Write in the chat?
+    bossbar: <red><bold>!</bold> <yellow>Peace request received! <red>({time})
+  clanallyreceive:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red>! <yellow>Alliance request received from clan <white>%clan_tag%
+    - <red>! <yellow>Expires in <aqua>%sec_expires% sec<gray>.
+    - <click:run_command:"/{_clan} {_ally} {_accept} %clan_tag_nocolor%"><hover:show_text:"<green>Click to accept, or use <aqua>/{_clan} {_ally} {_accept} %clan_tag_nocolor%"><green>[ACCEPT]</green></hover></click>      <click:run_command:"/{_clan} {_ally} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Click to deny, or use <aqua>/{_clan} {_ally} {_deny} %clan_tag_nocolor%"><red>[DENY]</red></hover></click>
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <yellow>>Alliance request received
+    title:
+      line: <red>! <yellow>Alliance request
+      subline: <yellow>Accept or Deny?
+    bossbar: <red><bold>!</bold> <yellow>Alliance request received <red>({time})
