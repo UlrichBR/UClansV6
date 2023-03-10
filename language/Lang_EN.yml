@@ -145,13 +145,18 @@ LANGUAGE:
   help clan member list header: '<newline>%uclans_tag_color%<blue><bold> member list:'
   help clan member list format: '<click:suggest_command:"/{_clan} {_profile} {_view} %uclans_player_realname% "><hover:show_text:''<green>Click to view.''> <gray>- %uclans_player_role_formated% <green>%uclans_player_nickname% <gray>| <white>Joined: <green>%uclans_player_joindate_formated% | <white>KDR: <green>%uclans_player_kdr%</hover></click>'
   help clan permissions view header: '<newline>%uclans_tag_color%<blue><bold> permission list:'
-  help clan permissions view format: ' <gray>- %role% <gray>| <white>Key: <green>%key% <gray>| <white>Value: <green>%value%'
+  help clan permissions role view format: '<blue><bold>|</bold> <blue>%role%: '
+  help clan permissions view format: ' <white>Key: <green>%key% <gray>| <white>Value: <green>%value%'
   help clan ally list header: '<newline>%uclans_tag_color%<blue><bold> list of alliances:'
   help clan ally list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Click to view.''> <gray>- %uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Level: <green>%uclans_level% | <white>Leader: <green>%uclans_leader% | <white>Creation: <green>%uclans_creation_date_formated%</hover></click>'
   help clan rival list header: '<newline>%uclans_tag_color%<blue><bold> list of rivals:'
   help clan rival list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Click to view.''> <gray>- %uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Level: <green>%uclans_level% | <white>Leader: <green>%uclans_leader% | <white>Creation: <green>%uclans_creation_date_formated%</hover></click>'
   help clan member_search list header: '<newline>%uclans_tag_color%<blue><bold> search member List:'
   help clan member_search list format: '<click:suggest_command:"/{_clan} {_member} invite %uclans_player_realname% "><hover:show_text:''<green>Click to invite.''> <gray>- %uclans_player_role_formated% <green>%uclans_player_nickname% <gray>| <white>Last see: <green>%uclans_player_lastsee_formated% | <white>KDR: <green>%uclans_player_kdr% <yellow>[Invite]</hover></click>'
+  help logger header: <blue><bold>Clan Logger:</bold> <gray>%time% <gray>| <gray>(%page%/%pages%)
+  help logger format: '<hover:show_text:''<green>%uclans_logger:{id}:text%''><gray>- <white>Origin: <aqua>%uclans_logger:{id}:plugin%<gray> | <white>Date: <aqua>%uclans_logger:{id}:date% <dark_gray>(Expires: %uclans_logger:{id}:expires%)<newline>  <aqua>%uclans_logger:{id}:text%</hover>'
+  help logger clear success gui: <green>Successfully cleared log
+  help logger clear error gui: <red>Error clearing the log
   help clan banned list header: '<newline>%uclans_tag_color%<blue><bold> banned member List:'
   help clan banned list format: '<click:suggest_command:"/{_clan} {_profile} {_view} %uclans_player_realname% "><hover:show_text:''<green>Click to view.''> <gray>- <green>%uclans_player_nickname% <gray> | <white>KDR: <green>%uclans_player_kdr%</hover></click>'
   help clan banner list header: '<newline>%uclans_tag_color%<blue><bold> banner:'
@@ -226,6 +231,9 @@ LANGUAGE:
   help player pagination prev: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<green>Click to go back.'><aqua><< Previous</hover></click>
   help player pagination next: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<green>Click to advance.'><aqua>Next >></hover></click>
   help player pagination separer: <gray>|
+  help player logger prev: <click:run_command:"/{_clan} {_logger} {_view} %time% %page%"><hover:show_text:'<green>Click to go back.'><aqua><< Previous</hover></click>
+  help player logger next: <click:run_command:"/{_clan} {_logger} {_view} %time% %page%"><hover:show_text:'<green>Click to advance.'><aqua>Next >></hover></click>
+  help player logger separer: <gray>|
   translaction players: players
   translaction is on: <green>Online
   translaction is off: <red>Offline
@@ -477,6 +485,13 @@ GUI:
   - ' <gray>Desc: <aqua>%uclans_desc_color%'
   - ' '
   - ' <yellow>Click to open a status list.'
+  General clan_home items logger name: <green>Clan logger
+  General clan_home items logger lore:
+  - ' <yellow>Clan happenings'
+  - ' <gray>'
+  - ' <gray>Amount: <green>%uclans_logger_amount%'
+  - ' '
+  - ' <yellow>Click to open.'
   General clan_home items banner name: <green>Clan Banner
   General clan_home items banner lore:
   - ' '
@@ -1248,7 +1263,7 @@ GUI:
   - ''
   - ' <yellow>Left-Click to accept.'
   - ' <red>Right-Click to deny.'
-  General banner_home title: <blue><bold>Banner menu
+  General banner_home title: <blue>Banner menu
   General banner_home items fill name: ' '
   General banner_home items fill lore: [
     ]
@@ -1289,7 +1304,7 @@ GUI:
   General banner_delete items cancel lore:
   - ''
   - ' <yellow>Click to cancel.'
-  General banner_upload title: <blue><bold>Banner Upload
+  General banner_upload title: <blue>Banner Upload
   General banner_upload items fill name: ' '
   General banner_upload items fill lore: [
     ]
@@ -1308,6 +1323,89 @@ GUI:
   General banner_upload items confirm lore:
   - ''
   - ' <yellow>Click here to save.'
+  General clan_logger title: <blue>Clan Logger <gray>| <green>{timer}
+  General clan_logger items fill name: ' '
+  General clan_logger items fill lore: [
+    ]
+  General clan_logger items fill2 name: ' '
+  General clan_logger items fill2 lore: [
+    ]
+  General clan_logger items current name: '<white>Origin:  <green>%uclans_logger:{id}:plugin%'
+  General clan_logger items current lore:
+  - ' '
+  - ' <white>Date: <aqua>%uclans_logger:{id}:date% <dark_gray>(Expires: %uclans_logger:{id}:expires%'
+  - ' '
+  - ' <gray>- <yellow>%uclans_logger:{id}:text%'
+  General clan_logger items clear name: <green>Clear all log
+  General clan_logger items clear lore:
+  - ''
+  - ' <yellow>Click to clear.'
+  - ''
+  - <red>! This cannot be undone
+  General clan_logger items next name: <green>Next page
+  General clan_logger items next lore:
+  - ''
+  - ' <yellow>Click to proceed.'
+  General clan_logger items previous name: <green>Previous page
+  General clan_logger items previous lore:
+  - ''
+  - ' <yellow>Click to Come back.'
+  General clan_logger items back name: <red>Come back
+  General clan_logger items back lore:
+  - ''
+  - ' <yellow>Click to Come back.'
+  General clan_logger items filter_all name: '<green>Filter: <aqua>All'
+  General clan_logger items filter_all lore:
+  - ''
+  - ' <yellow>Click to apply filter.'
+  General clan_logger items filter_all_current name: '<green>Filter: <aqua>All'
+  General clan_logger items filter_all_current lore:
+  - ''
+  - ' <green>Current filter'
+  General clan_logger items filter_daily name: '<green>Filter: <aqua>Daily'
+  General clan_logger items filter_daily lore:
+  - ''
+  - ' <yellow>Click to apply filter.'
+  General clan_logger items filter_daily_current name: '<green>Filter: <aqua>Daily'
+  General clan_logger items filter_daily_current lore:
+  - ''
+  - ' <green>Current filter'
+  General clan_logger items filter_weekly name: '<green>Filter: <aqua>Weekly'
+  General clan_logger items filter_weekly lore:
+  - ''
+  - ' <yellow>Click to apply filter.'
+  General clan_logger items filter_weekly_current name: '<green>Filter: <aqua>Weekly'
+  General clan_logger items filter_weekly_current lore:
+  - ''
+  - ' <green>Current filter'
+  General clan_logger items filter_monthly name: '<green>Filter: <aqua>Monthly'
+  General clan_logger items filter_monthly lore:
+  - ''
+  - ' <yellow>Click to apply filter.'
+  General clan_logger items filter_monthly_current name: '<green>Filter: <aqua>Monthly'
+  General clan_logger items filter_monthly_current lore:
+  - ''
+  - ' <green>Current filter'
+  General clan_logger items filter_yearly name: '<green>Filter: <aqua>Yearly'
+  General clan_logger items filter_yearly lore:
+  - ''
+  - ' <yellow>Click to apply filter.'
+  General clan_logger items filter_yearly_current name: '<green>Filter: <aqua>Yearly'
+  General clan_logger items filter_yearly_current lore:
+  - ''
+  - ' <green>Current filter'
+  General clear_logger_confirm title: <red>Confirm clear clan log?
+  General clear_logger_confirm items fill name: ' '
+  General clear_logger_confirm items fill lore: [
+    ]
+  General clear_logger_confirm items confirm name: <green>Confirm
+  General clear_logger_confirm items confirm lore:
+  - ''
+  - ' <red>Click to confirm.'
+  General clear_logger_confirm items cancel name: <green>Cancel
+  General clear_logger_confirm items cancel lore:
+  - ''
+  - ' <yellow>Click to cancel.'
  
  
  # TRANSLATIONS OF THE COMMANDS
@@ -1390,7 +1488,7 @@ COMMANDS:
   clan ff show on_error: '%tag% <red>Error to use ff.'
   clan ff show on_usage: '%tag% <red>Use <aqua>/{_clan} {_ff}'
   clan modtag show on_help: <click:suggest_command:"/{_clan} {_modtag} "><hover:show_text:'<green>Click to change clan tag.'> <aqua>/{_clan} {_modtag} <red><newtag> <gray>-<yellow> Change clan tag.</hover></click>
-  clan modtag show on_success: '%tag% <green>A tag of Clan as changed to <aqua>%clan_tag%'
+  clan modtag show on_success: '%tag% <green>Tag of Clan as changed to <aqua>%clan_tag%'
   clan modtag show on_error: '%tag% <red>Error when changing the clan Tag.'
   clan modtag show on_usage: '%tag% <red>Use <aqua>/{_clan} {_modtag} <red><newtag>'
   clan list show on_help: <click:suggest_command:"/{_clan} {_list} "><hover:show_text:'<green>Click to list all clans.'> <aqua>/{_clan} {_list} <light_purple>(type) <light_purple>(-gui) <gray>-<yellow> List all clans.</hover></click>
@@ -1537,6 +1635,18 @@ COMMANDS:
   clan regroup subcommands deny show on_success: '%tag% <green>You have successfully danied the grouping invitation'
   clan regroup subcommands deny show on_error: '%tag% <red>An error occurred while denying the regroup invitation.'
   clan regroup subcommands deny show on_usage: '%tag% <red>Use <aqua>/{_clan} {_regroup} {_deny}'
+  clan logger show on_help: <click:run_command:"/{_clan} {_logger} "><hover:show_text:'<green>Click to expand logger commands.'> <aqua>/{_clan} {_logger} <gray>-<yellow> Clan Log.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  clan logger show on_success: '%tag% <green>Success.'
+  clan logger show on_error: '%tag% <red>Error.'
+  clan logger show on_usage: '%tag% <red>Use <aqua>/{_clan} {_logger}'
+  clan logger subcommands clear: <click:suggest_command:"/{_clan} {_logger} {_clear} "><hover:show_text:'<green>Click to clean clan log'> <aqua>/{_clan} {_logger} {_clear} <gray>-<yellow> Clear clan logger.</hover></click>
+  clan logger subcommands clear show on_success: '%tag% <green>The clan log has been successfully cleared.'
+  clan logger subcommands clear show on_error: '%tag% <red>There was an error clearing the clan log.'
+  clan logger subcommands clear show on_usage: '%tag% <red>Use <aqua>/{_clan} {_logger} {_clear}'
+  clan logger subcommands view: <click:suggest_command:"/{_clan} {_logger} {_view} "><hover:show_text:'<green>Click to view clan logger'> <aqua>/{_clan} {_logger} {_view} <light_purple>(time) <light_purple>(page) <light_purple>(-gui) <gray>-<yellow> View clan logger.</hover></click>
+  clan logger subcommands view show on_success: '%tag% <green>Success'
+  clan logger subcommands view show on_error: '%tag% <red>Error'
+  clan logger subcommands view show on_usage: '%tag% <red>Use <aqua>/{_clan} {_logger} {_view} <light_purple>(time) <light_purple>(page) <light_purple>(-gui)'
   clan ban show on_help: <click:suggest_command:"/{_clan} {_ban} "><hover:show_text:'<green>Click to ban a player.'> <aqua>/{_clan} {_ban} <red><player> <gray>-<yellow> Ban a player.</hover></click>
   clan ban show on_success: '%tag% <green>The player has been successfully banned.'
   clan ban show on_error: '%tag% <red>There was an error banning the player.'
@@ -1799,3 +1909,28 @@ CHAT:
       line: <red>! <yellow>Alliance request
       subline: <yellow>Accept or Deny?
     bossbar: <red><bold>!</bold> <yellow>Alliance request received <red>({time})
+ 
+ 
+ # TRANSLATIONS OF THE LOGGER ACTIONS
+ 
+#Variables: {player_other}, {clan_other}, {home} and uclans placeholders
+LOGGER:
+  CLANBANNERCHANGEEVENT: <yellow>Clan Banner changed to <green>%uclans_banner_material%<yellow>.
+  CLANHOMEDELETEEVENT: <yellow>Clan Home <green>{home} <yellow>has been deleted.
+  CLANHOMECREATEEVENT: <yellow>Clan Home called <green>%uclans_home:{home}:name% <yellow>has been created.
+  CLANRIVALADDEVENT: <yellow>A new rivalry was created with the clan <green>{clan_other}<yellow>.
+  CLANRIVALREMOVEEVENT: <yellow>Rivalry with clan <green>{clan_other} <yellow>has been dissolved.
+  CLANALLYREMOVEEVENT: <yellow>Alliance with clan <green>{clan_other} <yellow>has been removed.
+  CLANALLYADDEVENT: <yellow>A new alliance was formed with clan <green>{clan_other}<yellow>.
+  CLANLEADERCHANGEEVENT: <yellow>%uclans_leader_formated% <yellow>is now the new clan leader.
+  CLANVERIFYCHANGEEVENT: '<yellow>Clan verification is now: <white>%uclans_verified%'
+  PATENT_CLANLEVELEVENT: <yellow>Clan patent has now been changed to <green>%uclans_patent_formated%
+  CLANLEVELEVENT: '<yellow>Clan level changed to <green>%uclans_level% <dark_gray>(max: %uclans_max_level_reached%)'
+  CLANPOINTCHANGEEVENT: <yellow>Clan points have been changed to <green>%uclans_points%
+  CLANMODDESCEVENT: <yellow>Clan description has been changed to <green>%uclans_desc_nocolor%
+  CLANMODTAGEVENT: <yellow>Clan tag has been changed to <green>%uclans_tag_color%
+  CLANCREATEEVENT: <yellow>Clan was created.
+  CLANPLAYERLEAVEEVENT: <yellow>Player <green>%uclans_player_name% <yellow>has left the clan.
+  CLANPLAYERJOINEVENT: <yellow>Player <green>%uclans_player_name% <yellow>has joined the clan.
+  CLANPLAYERROLECHANGE: <yellow>Player <green>%uclans_player_name% <yellow>Role has now been changed to <green>%uclans_player_role_formated%
+  CLANPLAYERINVITERECEIVE: <yellow>Player <green>{player_other} <yellow>was invited to the clan by <green>%uclans_player_name%
