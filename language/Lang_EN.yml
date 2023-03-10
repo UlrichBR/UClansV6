@@ -1333,7 +1333,7 @@ GUI:
   General clan_logger items current name: '<white>Origin:  <green>%uclans_logger:{id}:plugin%'
   General clan_logger items current lore:
   - ' '
-  - ' <white>Date: <aqua>%uclans_logger:{id}:date% <dark_gray>(Expires: %uclans_logger:{id}:expires%'
+  - ' <white>Date: <aqua>%uclans_logger:{id}:date% <dark_gray>(Expires: %uclans_logger:{id}:expires%)'
   - ' '
   - ' <gray>- <yellow>%uclans_logger:{id}:text%'
   General clan_logger items clear name: <green>Clear all log
