@@ -305,13 +305,13 @@ LANGUAGE:
   state true: <green>BEKAPCSOLVA
   state false: <red>KIKAPCSOLVA
   accept type: '%tag% <red>Érvénytelen típus, használd: <aqua>%types%'
-  clan regroup invite expired: '%tag% <red>The invitation to regroup has expired!'
-  clan regroup invite doesnot exists: '%tag% <red>There is no regroup request sent.'
-  clan regroup invite already exists: '%tag% <red>There is already a regroup request sent.'
-  clan regroup invite deny: '%tag% <red>The player <green>%player% <red>denied your request!'
-  clan regroup invite accept: '%tag% <red>The player <green>%player% <yellow>accepted your request!'
+  clan regroup invite expired: '%tag% <red>Regroup meghívó lejárt!'
+  clan regroup invite doesnot exists: '%tag% <red>Nincs regroup kérelem.'
+  clan regroup invite already exists: '%tag% <red>Már van egy regroup kérelem elküldve.'
+  clan regroup invite deny: '%tag% <green>%player% <red>elutasította a kérelmed!'
+  clan regroup invite accept: '%tag% <green>%player% <yellow>elfogadta a kérelmed!'
   clan regroup invite already denied: '%tag% <red>You already denied the request.'
-  clan regroup invite already accepted: '%tag% <red>You already accepted the request.'
+  clan regroup invite already accepted: '%tag% <red>Már elfogadtad a kérelmet.'
   clan has no members: '%tag% <red>A klánodnak nincsenek tagjai.'
   clan rival remove already invited: '%tag% <red>Már van békekérés amely folyamatban van ehhez a klánhoz, kérlek próbáld újra később!'
   clan rival remove error: '%tag% <red>Hiba történt a kérelem elküldése során!'
@@ -649,19 +649,19 @@ GUI:
   - ' <yellow>Banner információ:'
   - ''
   - ' <white>Van Banner: <aqua>%uclans_hasbanner_formated%'
-  General clan_stats items foundation name: '<green>Foundation:'
+  General clan_stats items foundation name: '<green>Klán:'
   General clan_stats items foundation lore:
   - ' '
-  - '<yellow>About the foundation:'
+  - '<yellow>A klánról:'
   - ' '
   - ' <gray>Patent: <green>%uclans_patent_formated%'
-  - ' <gray>Leader: <aqua>%uclans_leader%'
-  - ' <gray>Creation date: <aqua>%uclans_creation_date_formated%'
-  - ' <gray>Is Verified: <white>%uclans_verified%'
-  - ' <gray>Slots: <white>%uclans_slots% <dark_gray>(+%uclans_slots_extra%)'
-  - ' <gray>Open to all: <white>%uclans_isopen_formated%'
+  - ' <gray>Vezető: <aqua>%uclans_leader%'
+  - ' <gray>Létrehozva: <aqua>%uclans_creation_date_formated%'
+  - ' <gray>Megerősítve: <white>%uclans_verified%'
+  - ' <gray>Slotok: <white>%uclans_slots% <dark_gray>(+%uclans_slots_extra%)'
+  - ' <gray>Nyitott: <white>%uclans_isopen_formated%'
   - ' '
-  - ' <gray>Moderators (%uclans_count_moderators%):'
+  - ' <gray>Moderátorok (%uclans_count_moderators%):'
   - '  <green>%uclans_moderators%'
   General clan_stats items members name: <green>Tag lista
   General clan_stats items members lore:
@@ -1635,163 +1635,163 @@ CHAT:
     - ' '
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - <red><bold>!</bold> <yellow>Írd le az ideiglenes neved a chatre, csak betűket és számokat tartalmazhat.
-    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - ' <gray>- Írd be a <red>cancel</red> szót <gray>vagy <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kattints ide a megszakításhoz."><red>[KATT IDE]</red></hover></click> a megszakításhoz.'
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - ' '
-    actionbar: <red><bold>!</bold> <yellow>Type your temporary nickname in the chat!
+    actionbar: <red><bold>!</bold> <yellow>Írd le az ideiglenes beceneved a chatre!
     title:
-      line: <red>! <yellow>Nickname
-      subline: <yellow>Type in the chat!
-    bossbar: <red><bold>!</bold> <yellow>Type your nickname in the chat! <red>({time})
+      line: <red>! <yellow>Becenév
+      subline: <yellow>Írd le a chatre!
+    bossbar: <red><bold>!</bold> <yellow>Írd le a beceneved a chatre! <red>({time})
   commandunknownplayer:
     message:
-    - '%tag% <red>Unknown command, <aqua><click:run_command:"/{_clan} {_help}"><hover:show_text:"<green>Click here to view Help."><red>[CLICK HERE]</red></hover></click> <red>or use <light_purple>/{_clan} {_help} <red>to see the list of available commands.'
-    actionbar: <light_purple>/{_clan} {_help} <red>to see available commands.
+    - '%tag% <red>Ismeretlen parancs, <aqua><click:run_command:"/{_clan} {_help}"><hover:show_text:"<green>Kattints ide segítségért."><red>[KATT IDE]</red></hover></click> <red>vagy használd a(z) <light_purple>/{_clan} {_help} <red>parancsot.'
+    actionbar: <light_purple>/{_clan} {_help} <red>az elérhető parancsokért.
     title:
       line: <red>! <light_purple>/{_clan} {_help}
-      subline: <yellow>To see commands!
-    bossbar: <light_purple>/{_clan} {_help} <red>to see available commands. <red>({time})
+      subline: <yellow>A parancsok listázásához!
+    bossbar: <light_purple>/{_clan} {_help} <red>a parancsok listázásához. <red>({time})
   commandunknownadmin:
     message:
-    - '%tag% <red>Unknown command, <aqua><click:run_command:"/uclan help"><hover:show_text:"<green>Click here to view Help."><red>[CLICK HERE]</red></hover></click> <red>or use <light_purple>/uclan help <red>to see the list of available commands.'
-    actionbar: <light_purple>/uclan help <red>to see available commands.
+    - '%tag% <red>Ismeretlen parancs, <aqua><click:run_command:"/uclan help"><hover:show_text:"<green>Kattints ide segítségért."><red>[KATT IDE]</red></hover></click> <red>vagy használd a(z) <light_purple>/uclan help <red>parancsot.'
+    actionbar: <light_purple>/uclan help <red>az elérhető parancsokért.
     title:
       line: <red>! <light_purple>/uclan help
-      subline: <yellow>To see commands!
-    bossbar: <light_purple>/uclan help <red>to see available commands. <red>({time})
+      subline: <yellow>a parancsok listázásához!
+    bossbar: <light_purple>/uclan help <red>a parancsok listázásához. <red>({time})
   clanlevelreceived:
     message:
-    - '%tag% <yellow>The <aqua>%uclans_tag_color% <yellow>clan is now at level <aqua>%uclans_level%'
-    actionbar: <aqua>%uclans_tag_color% <yellow>clan is now at level <aqua>%uclans_level%
+    - '%tag% <yellow>A(z) <aqua>%uclans_tag_color% <yellow>klán szintje <aqua>%uclans_level%'
+    actionbar: <aqua>%uclans_tag_color% <yellow>klán szintje <aqua>%uclans_level%
     title:
-      line: <green>+ Level
+      line: <green>+ Szint
       subline: <aqua>%uclans_tag_color%
-    bossbar: <aqua>%uclans_tag_color% <yellow>clan is now at level <aqua>%uclans_level% <red>({time})
+    bossbar: <aqua>%uclans_tag_color% <yellow>klán szintje <aqua>%uclans_level% <red>({time})
   clanpatentreceived:
     message:
-    - '%tag% <yellow>The <aqua>%uclans_tag_color% <yellow>changed patent to <aqua>%uclans_patent_formated%'
-    actionbar: <aqua>%uclans_tag_color% <yellow>has new patent <aqua>%uclans_patent_formated%
+    - '%tag% <yellow>A(z) <aqua>%uclans_tag_color% <yellow>megváltoztatta a patentot a következőre: <aqua>%uclans_patent_formated%'
+    actionbar: <aqua>%uclans_tag_color% <yellow>új patent <aqua>%uclans_patent_formated%
     title:
       line: <green>+ Patent
       subline: <aqua>%uclans_patent_formated%
-    bossbar: <aqua>%uclans_tag_color% <yellow>has new patent <aqua>%uclans_patent_formated% <red>({time})
+    bossbar: <aqua>%uclans_tag_color% <yellow>új patent <aqua>%uclans_patent_formated% <red>({time})
   clanhomecreate:
     message:
     - ' '
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
-    - <red><bold>!</bold> <yellow>Write in the chat the name of the new <aqua>Clan Home<yellow>.
-    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red><bold>!</bold> <yellow>Írd le a chatre az új <aqua>Klán otthon nevét<yellow>.
+    - ' <gray>- Írd be a <red>cancel</red> szót <gray>vagy <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kattints ide a megszakításhoz."><red>[KATT IDE]</red></hover></click> a megszakításhoz.'
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - ' '
-    actionbar: <red><bold>!</bold> <yellow>Type your new clan home in the chat!
+    actionbar: <red><bold>!</bold> <yellow>Írd le az új klán otthonod nevét a chatre!
     title:
-      line: <red>! <yellow>New Home
-      subline: <yellow>Type in the chat!
-    bossbar: <red><bold>!</bold> <yellow>Type your new clan home in the chat! <red>({time})
+      line: <red>! <yellow>Új otthon
+      subline: <yellow>Írd le a chatre!
+    bossbar: <red><bold>!</bold> <yellow>Írd le az új klán otthon nevét a chatre! <red>({time})
   clancreate:
     message:
     - ' '
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
-    - <red><bold>!</bold> <yellow>Write in the chat the tag of the <aqua>New Clan<yellow> you want to create <yellow>.
-    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red><bold>!</bold> <yellow>Írd le a chatre az <aqua>új klán<yellow> tagjét<yellow>.
+    - ' <gray>- Írd be a <red>cancel</red> szót <gray>vagy <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kattints ide a megszakításhoz."><red>[KATT IDE]</red></hover></click> a megszakításhoz.'
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - ' '
-    actionbar: <red><bold>!</bold> <yellow>Write the tag of your new clan in the chat!
+    actionbar: <red><bold>!</bold> <yellow>Írd le az új klán tagjét a chatre!
     title:
-      line: <red>! <yellow>New Clan
-      subline: <yellow>Write in the chat!
-    bossbar: <red><bold>!</bold> <yellow>Write the tag in the chat! <red>({time})
+      line: <red>! <yellow>Új klán
+      subline: <yellow>Írd le a chatre!
+    bossbar: <red><bold>!</bold> <yellow>Írd le a taget a chatre! <red>({time})
   clanmodtag:
     message:
     - ' '
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
-    - <red><bold>!</bold> <yellow>Write in the chat the <aqua>New Tag<yellow> of the clan <yellow>.
-    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red><bold>!</bold> <yellow>Írd le a chatre az <aqua>új tagjét<yellow> a klánnak <yellow>.
+    - ' <gray>- Írd be a <red>cancel</red> szót <gray>vagy <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kattints ide a megszakításhoz."><red>[KATT IDE]</red></hover></click> a megszakításhoz.'
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - ' '
-    actionbar: <red><bold>!</bold> <yellow>Write the new tag of the clan in the chat!
+    actionbar: <red><bold>!</bold> <yellow>Írd le a chatre a klán új tagjét!
     title:
-      line: <red>! <yellow>New Tag
-      subline: <yellow>Write in the chat!
-    bossbar: <red><bold>!</bold> <yellow>Write the new tag in the chat! <red>({time})
+      line: <red>! <yellow>Új tag
+      subline: <yellow>Írd le a chatre!
+    bossbar: <red><bold>!</bold> <yellow>Írd le az új taget a chatre! <red>({time})
   clandesc:
     message:
     - ' '
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
-    - <red><bold>!</bold> <yellow>Write in the chat the <aqua>New Description<yellow> of the clan <yellow>.
-    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red><bold>!</bold> <yellow>Írd le a chatre az <aqua>új leírását<yellow> a klánnak <yellow>.
+    - ' <gray>- Írd be a <red>cancel</red> szót <gray>vagy <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kattints ide a megszakításhoz."><red>[KATT IDE]</red></hover></click> a megszakításhoz.'
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - ' '
-    actionbar: <red><bold>!</bold> <yellow>Write the new tag of the clan in the chat!
+    actionbar: <red><bold>!</bold> <yellow>Írd le a chatre a klán új leírását!
     title:
-      line: <red>! <yellow>New Description
-      subline: <yellow>Write in the chat!
-    bossbar: <red><bold>!</bold> <yellow>Write the new description in the chat! <red>({time})
+      line: <red>! <yellow>Új leírás
+      subline: <yellow>Írd le a chatre!
+    bossbar: <red><bold>!</bold> <yellow>Írd le az új leírást a chatre! <red>({time})
   invitereceive:
     message:
     - ' '
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
-    - <red>! <yellow>Invitation received to join Clan <white>%clan_tag_nocolor%
-    - <click:run_command:"/{_clan} {_join} %clan_tag_nocolor%"><hover:show_text:"<green>Click to accept, or use <aqua>/{_clan} {_join} %clan_tag_nocolor%."><green>[ACCEPT]</green></hover></click>    <click:run_command:"/{_clan} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Click to deny, or use <aqua>/{_clan} {_deny} %clan_tag_nocolor%."><red>[DENY]</red></hover></click>    <click:run_command:"/{_clan} {_profile} {_invites}"><hover:show_text:"<green>Click to view all, or use <aqua>/{_clan} {_profile} {_invites} ."><yellow>[VIEW ALL]</yellow></hover></click>
+    - <red>! <yellow>Meghívó a következő klánba <white>%clan_tag_nocolor%
+    - <click:run_command:"/{_clan} {_join} %clan_tag_nocolor%"><hover:show_text:"<green>Kattints az elfogadáshoz, vagy használd a(z) <aqua>/{_clan} {_join} %clan_tag_nocolor%."><green>[ELFOGADÁS]</green></hover></click>    <click:run_command:"/{_clan} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Kattints az elutasításhoz, vagy használd a(z) <aqua>/{_clan} {_deny} %clan_tag_nocolor%."><red>[ELUTASÍTÁS]</red></hover></click>    <click:run_command:"/{_clan} {_profile} {_invites}"><hover:show_text:"<green>Kattints az összes megtekintéséhez, vagy használd a(z) <aqua>/{_clan} {_profile} {_invites} ."><yellow>[ÖSSZES MEGTEKINTÉSE]</yellow></hover></click>
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - ' '
-    actionbar: <red><bold>!</bold> <yellow>Invitation received to join Clan <white>%clan_tag_nocolor%
+    actionbar: <red><bold>!</bold> <yellow>Meghívó a következő klánba <white>%clan_tag_nocolor%
     title:
-      line: <red>! <yellow>New Invitation
-      subline: <yellow>Clan <white>%clan_tag_nocolor%
-    bossbar: <red><bold>!</bold> <yellow>Invitation received to join Clan <white>%clan_tag_nocolor% <red>({time})
+      line: <red>! <yellow>Új meghívó
+      subline: <yellow>Klán <white>%clan_tag_nocolor%
+    bossbar: <red><bold>!</bold> <yellow>Meghívó érkezett a következő klánhoz <white>%clan_tag_nocolor% <red>({time})
   clanregroupreceive:
     message:
     - ' '
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
-    - <red>! <yellow>Regroup request received! <white>%clan_sender%
-    - <red>! <yellow>Expires in <aqua>%sec_expires% sec<gray>.
-    - <click:run_command:"/{_clan} {_regroup} accept"><hover:show_text:"<green>Click to accept, or use <aqua>/{_clan} {_regroup} accept."><green>[ACCEPT]</green></hover></click>
+    - <red>! <yellow>Regroup kérelem érkezett! <white>%clan_sender%
+    - <red>! <yellow>Lejár <aqua>%sec_expires% másodperc<gray>.
+    - <click:run_command:"/{_clan} {_regroup} accept"><hover:show_text:"<green>Kattints az elfogadáshoz, vagy használd a(z) <aqua>/{_clan} {_regroup} accept."><green>[ELFOGAD]</green></hover></click>
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - ' '
-    actionbar: <red><bold>!</bold> <yellow>Regroup request received!
+    actionbar: <red><bold>!</bold> <yellow>Regroup kérelem érkezett!
     title:
-      line: <red>! <yellow>Regroup request
-      subline: <yellow>Accept or ignore?
-    bossbar: <red><bold>!</bold> <yellow>Regroup request received! <red>({time})
+      line: <red>! <yellow>Regroup kérelem
+      subline: <yellow>Elfogadás vagy elutasítás?
+    bossbar: <red><bold>!</bold> <yellow>Regroup kérelem érkezett! <red>({time})
   claninvite:
     message:
     - ' '
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
-    - <red>! <yellow>Write in the chat who you want to invite to the clan.
-    - ' <gray>- Type <red>cancel</red> <gray>or <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Click to cancel."><red>[CLICK HERE]</red></hover></click> to cancel.'
+    - <red>! <yellow>Írd le a chatre a meghívni kívánt játékos nevét.
+    - ' <gray>- Írd be a <red>cancel</red> szót <gray>vagy <click:run_command:"/{_clan} {_cancel}"><hover:show_text:"<red>Kattints ide a megszakításhoz."><red>[KATT IDE]</red></hover></click> a megszakításhoz.'
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - ' '
-    actionbar: <red><bold>!</bold> <yellow>>Write in the chat who you want to invite!
+    actionbar: <red><bold>!</bold> <yellow>>Írd le a chatre a meghívni kívánt játékos nevét!
     title:
-      line: <red>! <yellow>New Invite
-      subline: <yellow>Write in the chat?
-    bossbar: <red><bold>!</bold> <yellow>Write in the chat who you want to invite! <red>({time})
+      line: <red>! <yellow>Új meghívás
+      subline: <yellow>Írd le a chatre
+    bossbar: <red><bold>!</bold> <yellow>Írd le a chatre kit szeretnél meghívni! <red>({time})
   clanrivalremove:
     message:
     - ' '
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
-    - <red>! <yellow>The <white>%clan_tag% <yellow>clan has sent a peace request.
-    - <red>! <yellow>Expires in <aqua>%sec_expires% sec<gray>.
-    - <click:run_command:"/{_clan} {_rival} {_accept} %clan_tag_nocolor%"><hover:show_text:"<green>Click to accept, or use <aqua>/{_clan} {_rival} {_accept} %clan_tag_nocolor%."><green>[ACCEPT]</green></hover></click>      <click:run_command:"/{_clan} {_rival} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Click to deny, or use <aqua>/{_clan} {_rival} {_deny} %clan_tag_nocolor%"><red>[DENY]</red></hover></click>
+    - <red>! <yellow>A(z) <white>%clan_tag% <yellow>klán béke kérelmet küldött.
+    - <red>! <yellow>Lejár <aqua>%sec_expires% másodperc<gray>.
+    - <click:run_command:"/{_clan} {_rival} {_accept} %clan_tag_nocolor%"><hover:show_text:"<green>Kattints az elfogadsához, vagy használd a(z) <aqua>/{_clan} {_rival} {_accept} %clan_tag_nocolor%."><green>[ELFOGAD]</green></hover></click>      <click:run_command:"/{_clan} {_rival} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Kattints az elutasításhoz, vagy használd a(z) <aqua>/{_clan} {_rival} {_deny} %clan_tag_nocolor%"><red>[ELUTASÍT]</red></hover></click>
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - ' '
-    actionbar: <red><bold>!</bold> <yellow>>Peace request received!
+    actionbar: <red><bold>!</bold> <yellow>>Béke kérelem érkezett!
     title:
-      line: <red>! <yellow>Peace request
-      subline: <yellow>Write in the chat?
-    bossbar: <red><bold>!</bold> <yellow>Peace request received! <red>({time})
+      line: <red>! <yellow>Béke kérelem
+      subline: <yellow>Írd le a chatre!
+    bossbar: <red><bold>!</bold> <yellow>Béke kérelem érkezett! <red>({time})
   clanallyreceive:
     message:
     - ' '
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
-    - <red>! <yellow>Alliance request received from clan <white>%clan_tag%
-    - <red>! <yellow>Expires in <aqua>%sec_expires% sec<gray>.
-    - <click:run_command:"/{_clan} {_ally} {_accept} %clan_tag_nocolor%"><hover:show_text:"<green>Click to accept, or use <aqua>/{_clan} {_ally} {_accept} %clan_tag_nocolor%"><green>[ACCEPT]</green></hover></click>      <click:run_command:"/{_clan} {_ally} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Click to deny, or use <aqua>/{_clan} {_ally} {_deny} %clan_tag_nocolor%"><red>[DENY]</red></hover></click>
+    - <red>! <yellow>Szövetség kérelem érkezett a következő klántól <white>%clan_tag%
+    - <red>! <yellow>Lejár <aqua>%sec_expires% másodperc<gray>.
+    - <click:run_command:"/{_clan} {_ally} {_accept} %clan_tag_nocolor%"><hover:show_text:"<green>Kattints az elfogadsához, vagy használd a(z) <aqua>/{_clan} {_ally} {_accept} %clan_tag_nocolor%"><green>[ELFOGAD]</green></hover></click>      <click:run_command:"/{_clan} {_ally} {_deny} %clan_tag_nocolor%"><hover:show_text:"<green>Kattints az elutasításhoz, vagy használd a(z) <aqua>/{_clan} {_ally} {_deny} %clan_tag_nocolor%"><red>[ELUTASÍT]</red></hover></click>
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     - ' '
-    actionbar: <red><bold>!</bold> <yellow>>Alliance request received
+    actionbar: <red><bold>!</bold> <yellow>>Szövetség kérelem érkezett
     title:
-      line: <red>! <yellow>Alliance request
-      subline: <yellow>Accept or Deny?
-    bossbar: <red><bold>!</bold> <yellow>Alliance request received <red>({time})
+      line: <red>! <yellow>Szövetség kérelem
+      subline: <yellow>Elfogadás vagy elutasítás?
+    bossbar: <red><bold>!</bold> <yellow>Szövetség kérelem <red>({time})
