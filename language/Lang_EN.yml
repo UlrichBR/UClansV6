@@ -815,7 +815,7 @@ GUI:
   - ' <yellow>Click to toggle on and off to'
   - <yellow>making the homes public and
   - <yellow>visible to other clans.
-  General clan_actions items ff name: <green>Fire friend
+  General clan_actions items ff name: <green>Friendly Fire
   General clan_actions items ff lore:
   - ' '
   - ' <white>State: %uclans_actions_state:CLANFF%'
