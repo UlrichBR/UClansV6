@@ -11,6 +11,7 @@ COMUM:
   clan dont permission role: '%tag% <red>Your current role you cannot do this.'
   clan dont permission role gui: <red>Your role cannot do this.
   clan dont nexus: '%tag% <red>Your clan doesnt have a nexus.'
+  player not inside land: '%tag% <red>You are not inside a nexus land..'
   help clan header subcommand: '<newline><blue><bold>Help with subcommands:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
   help list empty: ' <red>- There is nothing on this list.'
   banner get error: '%tag% <red>There was an error getting the clan banner.'
@@ -47,8 +48,9 @@ COMUM:
   player teleport moved: '%tag% <red>You moved and the teleport was canceled!!!'
   player teleport true: '%tag% <yellow>You were teleported!'
   player teleport false: '%tag% <red>You have not been teleported for any mistake!'
-  player no money: '%tag% <red>You dont have enough money for this.'
-  player no money gui: <red>Dont have enough money.
+  player no money: '%tag% <red>You need <green>%uclans_money_currency%%price% <red>for this.'
+  player no money gui: <red>You need <green>%uclans_money_currency%%price%
+  player debited money: '%tag% <green>%uclans_money_currency%%price% <green>has been debited from your account'
   player error withdraw: '%tag% <red>There was an error debiting money from your account.'
   player error withdraw gui: <red>Error when debiting.
   land build outside: '%tag% <red>You are building outside your land.'
@@ -68,8 +70,9 @@ COMUM:
   nexus attack stoped bar: <aqua>Nexus attack has stopped!
   nexus attack down: '%tag% <gold>Your clans Nexus has been destroyed and your land is now vulnerable, run to defend your lands!'
   nexus attack down bar: <gold>Nexus has been destroyed!
-  nexus regenerated: '%tag% <green>Your clans Nexus has regenerated and is now active again, a %shield_time% minute shield is active on your land!'
+  nexus regenerated: '%tag% <green>Your clan Nexus has regenerated and is now active again, a %shield_time% minute shield is active on your land!'
   nexus regenerated bar: <green>Nexus has regenerated!
+  nexus under attack nofeed: '%tag% <dark_red>The Nexus of your clan is being attacked'
   nexus under attack: '%tag% <dark_red>The Nexus of your clan is being attacked, if it is destroyed your land becomes vulnerable, run to protect your lands!'
   nexus under attack bar: <dark_red>Nexus under Attack!
   nexus shield down: '%tag% <gold>Watch out, your Nexus shield has ended and is now vulnerable to attacks!'
@@ -199,7 +202,7 @@ GUI:
   Nexus upgrade items moneybuy name: <green>Buy with Money.
   Nexus upgrade items moneybuy lore:
   - ''
-  - ' <white>Price: <green>$%price%'
+  - ' <white>Price: <green>%uclans_money_currency%%price%'
   - ''
   - '<yellow>Improvements:'
   - ' <white>Life: <aqua>+%improve_life% <gray>(%improve_maxhealth%)'
