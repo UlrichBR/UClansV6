@@ -74,7 +74,7 @@ COMUM:
   nexus under attack bar: <dark_red>Nexus under Attack!
   nexus shield down: '%tag% <gold>Watch out, your Nexus shield has ended and is now vulnerable to attacks!'
   nexus shield down bar: <gold>Nexus shield has ended!
-  nexus created: '%tag% <green>Clan Nexus was created, defense to protect your land!!'
+  nexus created: '%tag% <green>Clan Nexus was created, defend it to protect your land!!'
   nexus created bar: <green>The Nexus Was Created!
   nexus error delete gui: <red>Error when deleting.
   nexus error delete: '%tag% <red>There was an error deleting nexus, please try again.'
