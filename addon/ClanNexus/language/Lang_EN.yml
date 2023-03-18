@@ -127,7 +127,7 @@ GUI:
   - ' <white>Life: <aqua>%clannexus_land_nexus_life%<gray>/<aqua>%clannexus_land_nexus_maxhealth%'
   - ''
   - ' <white>Shield: <aqua>%clannexus_land_nexus_shield%'
-  Nexus home items settings name: <green>Nexus Ajusts
+  Nexus home items settings name: <green>Nexus Adjustments
   Nexus home items settings lore:
   - ''
   - ' <yellow>Click to open.'
