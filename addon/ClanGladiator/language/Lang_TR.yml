@@ -1,0 +1,248 @@
+COMUM:
+  no permission: '%tag% <red>Bunun için izniniz yok.'
+  header help: '<green><bold>Glad Komutları:'
+  chan does not exists: '%tag% <red>Bu klan mevcut değil'
+  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+  not found: <strikethrough>Bulunamadı
+  none: <strikethrough>Yok
+  gui error: '%tag% <red>Bu menü bir hata içeriyor ve açılamıyor'
+  all days: Her gün
+  arena exists: '%tag% <red>Bu ada sahip bir arena zaten var'
+  arena not exists: '%tag% <red>Bu ada sahip bir arena yok, hepsini görmek için <aqua>/clanglad arena list <red> kullanın.'
+  arena not exists player: '%tag% <red>Bu isimde bir arena yok.'
+  arena header: '<blue><bold>Arenaların Listesi:'
+  arena format: ' <green>%num%° <gray>- <aqua>%id% <gray>- <aqua>%status%'
+  arena empty: ' <red>Gösterilecek arena yok.'
+  arena status true: ' <green>Etkinleştirilmiş'
+  arena status false: ' <red>Devre Dışı Bırakılmış '
+  arena amount error: '%tag% <red>Miktar limitin dışında.'
+  arena already started: '%tag% <red>Bu arenada zaten gerçekleşen bir etkinlik var.'
+  arena no started: '%tag% <red>Bu arenada gerçekleşen bir etkinlik yok.'
+  arena no enabled: '%tag% <red>Bu arena etkin görünmüyor, durumu <aqua>/clanglad view <arena> <red>yazarak kontrol edin'
+  arena already ingame: '%tag% <red>Bu arena zaten oyunda, /gladiator watch <arena> kullanarak izleyebilirsiniz'
+  arena isnot ingame: '%tag% <red>Şu anda bu arenada gerçekleşen bir olay yok.'
+  arena command disabled: '%tag% <red>Bu komut Gladyatör etkinliğinde kullanılamaz.'
+  arena pvp wait: '%tag% <red>PVP hazırlık aşamasında kapalı.'
+  player donthave clan: '%tag% <red>Bu etkinliğe katılmak için bir klana ihtiyacınız var.'
+  player isnot atevent: '%tag% <red>Herhangi bir Gladyatör etkinliğine katılmıyorsunuz.'
+  player isin event: '%tag% <red>Zaten bir etkinliğe katılıyorsunuz'
+  player teleport arena location: '%tag% <aqua>%point% <yellow>konumuna ışınlandınız'
+  translate point spawn: <green>Başlangıç
+  translate point lobby: <aqua>Lobi
+  translate point exit: <red>Çıkış
+  check wand: '%tag% <red>Bölgeyi/arenayı oluşturmadan önce noktaları işaretlemeniz gerekir.'
+  region marked point: '%tag% <aqua>#%point_number% <yellow>noktası <aqua>%location% <yellow>konumda kaydedildi'
+  material not exists: '%tag% <red>Bu ada sahip geçerli bir blok materyali yok.'
+  tag not exists: '%tag% <red>Bu Tag, yapılandırma dosyasında henüz oluşturulmadı.'
+  arena reason nulled: Sebepsiz.
+  arena reason less than 2: Başlamak için yeterli sayıda oyuncu girmedi.
+  arena reason winner: Bir klan kazandı.
+  arena reason less players difference: İki klanın oyuncu sayısıyla eşleşmesi gerekir!
+  arena reason clan not found: Klan bulunamadı, silinmiş olabilir.
+  arena state stoped: <red>Durduruldu.
+  arena state inlobby: <yellow>Oyuncular Bekleniyor...
+  arena state started: <yellow>Başladı!
+  arena state ending: <yellow>Bitirliyor
+  arena state canceled: <red>İptal Edildi
+  arena state inwait: <yellow>Bekleniyor...
+  arena clan empty: <red>Klan yok.
+  arena not found: <dark_red>Arena Bulunamadı!
+  arena event message join: '%tag% <green>%player% adlı oyuncu etkinlikten ayrıldı, relocating: <gray>Klanlar: <aqua>%clans%<gray>, Oyuncular: <aqua>%players%'
+  arena event message leave: '%tag% <red>%player% adlı oyuncu etkinliğe katıldı, relocating: <gray>Klanlar: <aqua>%clans%<gray>, Oyuncular: <aqua>%players%'
+  arena event message death: '%tag% <red>%player% oyuncusu öldü ve etkinlikten çıktı, rearranging: <gray>Klanlar: <aqua>%clans%<gray>, Oyuncular: <aqua>%players%'
+  arena event message waiting: '%tag% <green>Şu anda oyuncular ve Klanlar bekleniyor: <gray>Klanlar: <aqua>%clans%<gray>, Oyuncular: <aqua>%players%'
+  arena scheduler header: '%tag% <green>%arena% arenasının programları:'
+  arena scheduler format daily: ' <aqua>%num% <gray>- <aqua>{frequency} <gray>-  <green>Saat: {hour}:{minute}'
+  arena scheduler format weekly: ' <aqua>%num% <gray>- <aqua>{frequency} <gray>-  <green> {week_day} <gray>| <green>Saat: {hour}:{minute}'
+  arena scheduler format monthly: ' <aqua>%num% <gray>- <aqua>{frequency} <gray>-  <green> Gün: {month_day} <gray>| <green>Saat: {hour}:{minute}'
+  arena scheduler frequency error: '%tag% <red>Sıklık <aqua>DAILY<red>, <aqua>WEEKLY <red>veya <aqua>MONTHLY <red>olmalıdır'
+  arena scheduler weekday error: '%tag% <red>Haftanın günleri <aqua>MONDAY<red>, <aqua>TUESDAY<red>, <aqua>WEDNESDAY<red>, <aqua>THURSDAY<red>, <aqua>FRIDAY<red>, <aqua>SATURDAY <red>veya <aqua>SUNDAY <red>olmalıdır'
+  arena scheduler monthday error: '%tag% <red>Ayın günü, <aqua>1 <red> ile <aqua>31 <red>arasında sayı olmalıdır'
+  arena scheduler hour error: '%tag% <red>Saat, örneğin <aqua>01:00 <red>veya <aqua>24:00 <red>kullanılarak 24 saat (00:00) biçiminde olmalıdır.'
+  arena scheduler num error: '%tag% <red>Bu numaraya sahip bir program yok. listelemek için <green>/clanglad scheduler list <isim> <red>kullanın.'
+  arena reward header: '%tag% <green>%arena% arenasının ödülleri:'
+  arena reward format: ' <gray>- <aqua>%reward%'
+  arena reward empty: ' <red>Boş.'
+  arena view header: '%tag% <green>%arena% arenasının bilgileri:'
+  arena view format:
+  - ' <white>İsim: <aqua>%arena%'
+  - ' <white>Durum: <aqua>%arena_state%'
+  - ' <white>Aktiflik: <aqua>%arena_enabled%'
+  - ' <white>Açıklama: <aqua>%arena_desc%'
+  - ' <white>İkon: <aqua>%arena_material%'
+  - ' <white>Tag: <aqua>%arena_tag%'
+LANGUAGE:
+  arena no upcoming events: <red>Yaklaşan etkinlik yok.
+  arena event now: <green>Şimdi oluyor!
+  arena no event: Etkinlik Yok
+ 
+ 
+# CHEST GUI
+ 
+ 
+GUI:
+  gladiator glad_view title: <blue>Etkinlikler Menüsü
+  gladiator glad_view items fill name: ' '
+  gladiator glad_view items fill lore: [
+    ]
+  gladiator glad_view items fill2 name: ' '
+  gladiator glad_view items fill2 lore: [
+    ]
+  gladiator glad_view items actives name: <green>Aktif Etkinlikler
+  gladiator glad_view items actives lore:
+  - ' '
+  - ' <yellow>Açmak için tıklayın.'
+  gladiator glad_view items nexts name: <green>Tüm etkinlikler
+  gladiator glad_view items nexts lore:
+  - ' '
+  - ' <yellow>Açmak için tıklayın.'
+  gladiator glad_actives title: <blue>Aktif Etkinlikler
+  gladiator glad_actives items fill name: ' '
+  gladiator glad_actives items fill lore: [
+    ]
+  gladiator glad_actives items current name: <green>%arena%
+  gladiator glad_actives items current lore:
+  - ''
+  - ' <white>İsim: <aqua>%arena%'
+  - ' <white>Durum: <aqua>%arena_state%'
+  - ' '
+  - ' <yellow>İzlemek için tıklayın'
+  gladiator glad_actives items prev name: <green>Önceki
+  gladiator glad_actives items prev lore:
+  - ' '
+  - ' <yellow>Önceki için tıklayın.'
+  gladiator glad_actives items next name: <green>Sonraki
+  gladiator glad_actives items next lore:
+  - ' '
+  - ' <yellow>Sonraki için tıklayın.'
+  gladiator glad_actives items back name: <red>Geri Dön
+  gladiator glad_actives items back lore:
+  - ' '
+  - ' <yellow>Geri dönmek için tıklayın'
+  gladiator glad_nexts title: <blue>Tüm Etkinlikler
+  gladiator glad_nexts items fill name: ' '
+  gladiator glad_nexts items fill lore: [
+    ]
+  gladiator glad_nexts items current name: <green>%arena%
+  gladiator glad_nexts items current lore:
+  - ''
+  - ' <white>İsim: <aqua>%arena%'
+  - ' <white>Sıklık: <aqua>{type}'
+  - ' <white>Gün: <aqua>{day}'
+  - ' <white>Saat: <aqua>{hour}'
+  gladiator glad_nexts items prev name: <green>Önceki
+  gladiator glad_nexts items prev lore:
+  - ' '
+  - ' <yellow>Önceki için tıklayın.'
+  gladiator glad_nexts items next name: <green>Sonraki
+  gladiator glad_nexts items next lore:
+  - ' '
+  - ' <yellow>Sonraki için tıklayın.'
+  gladiator glad_nexts items back name: <red>Geri Dön
+  gladiator glad_nexts items back lore:
+  - ' '
+  - ' <yellow>Geri dönmek için tıklayın.'
+ 
+# COMUM: %clans%, %players%, %arena%, %time%
+# CANCELATIONS: %reason%
+# ENDING: %winner%, %living_members%
+ANNOUNCE:
+  INWAIT:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - <red>GLADYATÖR ETKİNLİĞİ yakında başlayacak...
+    - <gray>Klanınızı ve ekipmanınızı toplayın.
+    - ' '
+    - ' <gray>Arena: <aqua>%arena% <dark_gray>| <gray>Zaman: <aqua>%time% sn.'
+    - ' <gray>Klanlar: <aqua>%clans% <dark_gray>| <gray>Oyunular: <aqua>%players%'
+    - ' '
+    - ' '
+    - '<click:run_command:"/gladiator join %arena%"><hover:show_text:"<red>Etkinliğe girmek için tıklayın."><green><bold>[KATIL]</bold></green></hover></click>  <click:run_command:"/gladiator watch %arena%"><hover:show_text:"<red>Etkinliği İzlemek İçin Tıklayın."><yellow><bold>[ETKİNLİĞİ İZLE]</bold></yellow></hover></click>  <click:run_command:"/gladiator help"><hover:show_text:"<red>Yardımı görüntülemek için tıklayın."><aqua>[?]</aqua></hover></click>   '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>GLADYATÖR <yellow>etkinliği yakında başlayacak...
+    title:
+      line: <red>GLADYATÖR
+      subline: <aqua>/gladiator join %arena%
+    bossbar: <red><bold>GLADYATÖR</bold> <yellow>etkinliği yakında başlayacak... <red>({time})
+  INLOBBY:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - <red>GLADYATÖR ETKİNLİĞİ <gold><bold>KİLİTLENDİ
+    - <gray>Klanların, klanı yeniden gruplandırmak için <aqua>%time% sn <gray>süresi vardır.
+    - ' '
+    - ' <gray>Klanlar: <aqua>%clans% <dark_gray>| <gray>Oyuncular: <aqua>%players%'
+    - ' '
+    - '<click:run_command:"/gladiator watch %arena%"><hover:show_text:"<red>Etkinliği İzlemek İçin Tıklayın."><yellow><bold>[ETKİNLİĞİ İZLE]</bold></yellow></hover></click>  <click:run_command:"/gladiator help"><hover:show_text:"<red>Yardımı görüntülemek için tıklayın."><aqua>[?]</aqua></hover></click>   '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>Gladyatör etkinliği kilitlendi!
+    title:
+      line: <red>GLADYATÖR
+      subline: <yellow>Etkinliği Kilitlendi!
+    bossbar: <red><bold>Gladyatör etkinliği kilitlendi!</bold> <red>({time})
+  STARTED:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - <red>GLADYATÖR ETKİNLİĞİ <green><bold>BAŞLADI
+    - <gray>Etkinlik başladı ve <red><bold>PVP AÇIK
+    - <gray>İyi olan takım kazansın!
+    - ' '
+    - ' <gray>Klanlar: <aqua>%clans% <dark_gray>| <gray>Oyuncular: %players%'
+    - ' '
+    - '<click:run_command:"/gladiator watch %arena%"><hover:show_text:"<red>Etkinliği İzlemek İçin Tıklayın."><yellow><bold>[ETKİNLİĞİ İZLE]</bold></yellow></hover></click>  <click:run_command:"/gladiator help"><hover:show_text:"<red>Yardımı görüntülemek için tıklayın."><aqua>[?]</aqua></hover></click>   '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>Gladyatör etkinliği başladı!
+    title:
+      line: <red>GLADYATÖR
+      subline: <yellow>Etkinliği Başladı!
+    bossbar: <red><bold>Gladyatör etkinliği başladı!</bold> <red>({time})
+  ENDING:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - <red>GLADYATÖR ETKİNLİĞİ <green><bold>SONLANDIRILDI
+    - <gray>Kazanan klan <aqua>%winner% <gray>oldu
+    - '<gray>Yaşayan üyeler: <aqua>%living_members%'
+    - ''
+    - ' <red>Kazanan klanın savaş ganimetlerini toplamak için %time% süresi vardır!'
+    - ' '
+    - '<click:run_command:"/gladiator help"><hover:show_text:"<red>Yardımı görüntülemek için tıklayın."><aqua>[?]</aqua></hover></click>   '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>Gladyatör etkinliği sona erdi, Kazanan <aqua>%winner%!
+    title:
+      line: <red>GLADYATÖR SONA ERDİ
+      subline: <yellow>Kazanan <aqua>%winner%
+    bossbar: <red><bold>Gladyatör etkinliği sona erdi, Kazanan <aqua>%winner%! <red>({time})
+  CANCELED:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - <red>GLADYATÖR ETKİNLİĞİ <dark_red><bold>İPTAL EDİLDİ
+    - '<gray>Sebep: <red>%reason%'
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <red><bold>Gladyatör etkinliği iptal edildi!
+    title:
+      line: <red>GLADYATÖR
+      subline: <yellow>Etkinliği İptal Edildi!
+    bossbar: <red><bold>Gladyatör etkinliği iptal edildi!</bold> <red>({time})
+  STOPED:
+    message: [
+      ]
+    actionbar: ''
+    title:
+      line: ''
+      subline: ''
+    bossbar: ''
