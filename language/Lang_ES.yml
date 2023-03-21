@@ -303,7 +303,7 @@ LANGUAGE:
   clan has only levels: '%tag% <red>El clan sólo tiene <aqua>%num% <red>niveles'
   command in cooldown: '%tag% <red>Espere <aqua>%sec% <red>para volver a utilizar este comando.'
   error length: '%tag% <red>El valor debe tener un tamaño comprendido entre <aqua>%min% <red>y <aqua>%max%'
-  state true: <green>HABILITAD
+  state true: <green>HABILITADO
   state false: <red>DESDHABILITADO
   accept type: '%tag% <red>El tpo no es válido, usa: <aqua>%types%'
   clan regroup invite expired: '%tag% <red>¡La invitación para reagruparse ha expirado!'
@@ -483,7 +483,7 @@ GUI:
   - ' '
   - ' <yellow>Información de la Bandera:'
   - ''
-  - ' <white>Bandera: <aqua>%uclans_hasbanner_formated%'
+  - ' <white>Tiene Bandera: <aqua>%uclans_hasbanner_formated%'
   - ' <white>Bandera: <aqua>%uclans_banner_material%'
   - ' '
   - ' <yellow>¡La bandera es tu logo!'
@@ -492,7 +492,7 @@ GUI:
   - ' <yellow>Click para abrir la lista de clanes'
   General clan_home items commands name: <green>Comando de Listas y Ayuda
   General clan_home items commands lore:
-  - ' <yellow>CLick para ver la lista completa'
+  - ' <yellow>Click para ver la lista completa'
   - <yellow>de los comandos de Clanes y Terrenos.
   General clan_home items settings name: <green>Ajustes del Clan
   General clan_home items settings lore:
@@ -529,7 +529,7 @@ GUI:
   - ' <gray>Nombre: <aqua>%uclans_player%'
   - ' <gray>KDR: <aqua>%uclans_player_kills%<dark_gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
   - ' <gray>Se unió: <aqua>%uclans_player_joindate_formated%'
-  - ' <gray>Ultima vez listo: <aqua>%uclans_player_lastsee_formated%'
+  - ' <gray>Ultima vez visto: <aqua>%uclans_player_lastsee_formated%'
   General player_profile items invites name: <green>Invitaciones
   General player_profile items invites lore:
   - ''
@@ -589,10 +589,8 @@ GUI:
   General clan_stats items back name: <red>Volver
   General clan_stats items back lore:
   - ' <yellow>Click para volver'
-  General clan_stats items limits name: '<green>Limites del Clan'
+  General clan_stats items limits name: '<green>Límites del Clan'
   General clan_stats items limits lore:
-  - ' '
-  - '<yellow>Límites:'
   - ' '
   - ' <gray>Casas: <aqua>%uclans_limit_home%'
   - ' <gray>Alianzas: <aqua>%uclans_limit_ally%'
@@ -604,8 +602,6 @@ GUI:
   General clan_stats items member_rival_ally name: '<green>Miembros, Rivales and Aliados:'
   General clan_stats items member_rival_ally lore:
   - ' '
-  - '<yellow>Miembtos, Rivales y Aliados:'
-  - ' '
   - ' <gray>Miembros: <aqua>%uclans_count_members%'
   - ' <gray>Miembros conectados: <aqua>%uclans_count_onlinemembers%'
   - ' <gray>Aliados: <aqua>%uclans_clan_count_ally%'
@@ -613,16 +609,12 @@ GUI:
   General clan_stats items others name: '<green>Otras estadísticas:'
   General clan_stats items others lore:
   - ' '
-  - '<yellow>Otros:'
-  - ' '
   - ' <gray>Se han unido: <aqua>%uclans_clan_member_joined%'
   - ' <gray>Se han ido: <aqua>%uclans_clan_member_leave%'
   - ' <gray>Expulsado: <aqua>%uclans_clan_member_kicked%'
   - ' <gray>Cambios de Tag: <aqua>%uclans_clan_tag_changed%'
   General clan_stats items status name: '<green>Estado:'
   General clan_stats items status lore:
-  - ' '
-  - '<yellow>Estado:'
   - ' '
   - ' <gray>Banco: <green>%uclans_money_currency%%uclans_bank_balance%'
   - ' <gray>Almas: <green>%uclans_money_currency%%uclans_clan_souls%'
@@ -633,15 +625,11 @@ GUI:
   General clan_stats items war name: '<green>Estadísiticas de Guerra:'
   General clan_stats items war lore:
   - ' '
-  - '<yellow>Guerras:'
-  - ' '
   - ' <gray>Ganadas: <aqua>%uclans_clan_war_win%'
   - ' <gray>Perdidas: <aqua>%uclans_clan_war_lose%'
   - ' <gray>Totales: <aqua>%uclans_clan_war_total%'
   General clan_stats items kdr name: '<green>KDR:'
   General clan_stats items kdr lore:
-  - ' '
-  - '<yellow>KDR:'
   - ' '
   - ' <gray>Asesinatos: <aqua>%uclans_clan_kills%'
   - ' <gray>Muertes: <aqua>%uclans_clan_deaths%'
@@ -654,8 +642,6 @@ GUI:
   - ' <white>Tiene Bandera: <aqua>%uclans_hasbanner_formated%'
   General clan_stats items foundation name: '<green>Fundación'
   General clan_stats items foundation lore:
-  - ' '
-  - '<yellow>Fundación:'
   - ' '
   - ' <gray>Patentado: <green>%uclans_patent_formated%'
   - ' <gray>Lider: <aqua>%uclans_leader%'
@@ -1296,7 +1282,7 @@ GUI:
   General banner_upload items fill2 name: <red>¡Coloca tu nueva Bandera!
   General banner_upload items fill2 lore:
   - ' '
-  - ' <red>¡Coloca tu nueva Banderá aquí!'
+  - ' <red>¡Coloca tu nueva Bandera aquí!'
   General banner_upload items upload_slot name: ''
   General banner_upload items upload_slot lore: [
     ]
