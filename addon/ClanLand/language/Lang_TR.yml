@@ -1,373 +1,373 @@
 COMUM:
-  player donthave clan: '%tag% <red>This player does not have a clan.'
-  gui error: '%tag% <red>This menu contains an error and cannot be opened'
-  disabled function: '%tag% <red>This function is turned off or disabled.'
-  chan does not exists: '%tag% <red>This clan does not exist'
-  command by player: '%tag% <red>This command must be used by a player.'
-  no permission: '%tag% <red>You dont have permissions for this.'
-  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>has been deposited in your account.'
-  player dont have money: '%tag% <red>You need to <green>%uclans_money_currency%%amount%'
-  player dont have money gui: <red>Need to <green>%uclans_money_currency%%amount%
-  player not found: '%tag% <red>A player with this name was not found or he is offline.'
-  player debited money: '%tag% <yellow>It was debited <green>%amount% <yellow>your account.'
-  terrain name max chars: '%tag% <red>The land name can be between <aqua>%min% <red>and <aqua>%max% <red>characters.'
-  disabled world land: '%tag% <red>You cannot use land in this world'
-  land help header: '<blue>Clan land:'
-  land list header: '<newline>%uclans_tag_color%<blue><bold> land list:'
-  land list format: '<click:suggest_command:"/{_clan} {_land} {_view} %clanland_id%"><hover:show_text:''<green>Click to view.''> <gray>- <white>Id: %clanland_id% <gray>| <aqua>%clanland_name% <gray>| <white>Size: <aqua>%clanland_size% <gray>| <white>Level: <aqua>%clanland_level% <yellow>[CLICK TO VIEW]</hover></click>'
-  land list banned header: '<newline>%uclans_tag_color%<blue><bold> banned list:'
-  land list banned format: '<click:suggest_command:"/{_clan} {_land} {_unban} %uclans_player%"><hover:show_text:''<green>Click to unban.''> <gray>- <green>%uclans_player% <gray>| <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%) <white>Role: <aqua>%uclans_player_role_formated% <yellow>[CLICK TO UNBAN]</hover></click>'
-  land list trusted header: '<newline>%uclans_tag_color%<blue><bold> trusted list:'
-  land list trusted format: '<click:suggest_command:"/{_clan} {_land} {_untrust} %uclans_player%"><hover:show_text:''<green>Click to untrust.''> <gray>- <green>%uclans_player% <gray>| <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%) <white>Role: <aqua>%uclans_player_role_formated% <yellow>[CLICK TO UNTRUST]</hover></click>'
-  land view header: '<newline><blue><bold>Land Info:'
+  player donthave clan: '%tag% <red>Bu oyuncunun bir klanı yok.'
+  gui error: '%tag% <red>Bu menü bir hata içeriyor ve açılamıyor'
+  disabled function: '%tag% <red>Bu işlev kapalı veya devre dışı.'
+  chan does not exists: '%tag% <red>Bu klan mevcut değil'
+  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+  no permission: '%tag% <red>Bunun için izniniz yok.'
+  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>hesabınıza yatırıldı.'
+  player dont have money: '%tag% <green>%uclans_money_currency%%amount% <green>ihtyacınız var'
+  player dont have money gui: <green>%uclans_money_currency%%amount% <green>ihtyacınız var
+  player not found: '%tag% <red>Bu ada sahip bir oyuncu bulunamadı veya çevrimdışı.'
+  player debited money: '%tag% <yellow>Hesabınızdan <green>%amount% <yellow>alındı.'
+  terrain name max chars: '%tag% <red>Arazi adı <aqua>%min% <red> ile <aqua>%max% <red>karakterleri arasında olabilir.'
+  disabled world land: '%tag% <red>Bu dünyada araziyi kullanamazsın'
+  land help header: '<blue>Klan arazisi:'
+  land list header: '<newline>%uclans_tag_color%<blue><bold> arazi listesi:'
+  land list format: '<click:suggest_command:"/{_clan} {_land} {_view} %clanland_id%"><hover:show_text:''<green>Görüntülemek için tıklayın.''> <gray>- <white>Id: %clanland_id% <gray>| <aqua>%clanland_name% <gray>| <white>Boyut: <aqua>%clanland_size% <gray>| <white>Seviye: <aqua>%clanland_level% <yellow>[GÖRMEK İÇİN TIKLAYIN]</hover></click>'
+  land list banned header: '<newline>%uclans_tag_color%<blue><bold> yasaklı listesi:'
+  land list banned format: '<click:suggest_command:"/{_clan} {_land} {_unban} %uclans_player%"><hover:show_text:''<green>Yasağı kaldırmak için tıklayın.''> <gray>- <green>%uclans_player% <gray>| <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%) <white>Rol: <aqua>%uclans_player_role_formated% <yellow>[YASAĞI KALDIRMAK İÇİN TIKLA]</hover></click>'
+  land list trusted header: '<newline>%uclans_tag_color%<blue><bold> güvenilir liste:'
+  land list trusted format: '<click:suggest_command:"/{_clan} {_land} {_untrust} %uclans_player%"><hover:show_text:''<green>Güvenmemek için tıklayın.''> <gray>- <green>%uclans_player% <gray>| <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%) <white>Rol: <aqua>%uclans_player_role_formated% <yellow>[GÜVENMEMEK İÇİN TIKLAYIN]</hover></click>'
+  land view header: '<newline><blue><bold>Arazi Bilgisi:'
   land view format:
-  - '<blue><bold>|</bold> <blue>Owner:'
-  - ' <white>Clan: <aqua>%uclans_tag_color%'
-  - ' <white>Members: <aqua>%uclans_count_members%'
-  - ' <white>Leader: <aqua>%uclans_leader_formated%'
+  - '<blue><bold>|</bold> <blue>Sahip:'
+  - ' <white>Klan: <aqua>%uclans_tag_color%'
+  - ' <white>Üyeler: <aqua>%uclans_count_members%'
+  - ' <white>Lider: <aqua>%uclans_leader_formated%'
   - '<blue><bold>|</bold> <blue>Info:'
   - ' <white>Id: %clanland_id%'
-  - ' <white>Name: <aqua>%clanland_name%'
-  - ' <white>Size: <aqua>%clanland_size%'
-  - ' <white>Creation date: <aqua>%clanland_creation_date%'
-  help clan header subcommand: '<newline><blue><bold>Help with subcommands:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
-  help list empty: ' <red>- There is nothing on this list.'
-  clan dont permission role: '%tag% <red>Your current role you cannot do this.'
-  need bank money: '%tag% <red>Your clan needs <green>%uclans_money_currency%%amount% in the bank'
-  need bank money gui: <red>Needs <green>%uclans_money_currency%%amount% in bank.
-  economy disabled: '%tag% <red>The economy is off.'
-  economy disabled gui: <red>Economy is off
-  terrain no land: '%tag% <red>This land is not protected and does not belong to any clan.'
-  player teleport dont move: '%tag% <yellow>Preparing teleport, do not move by %sec% sec.'
-  player teleport moved: '%tag% <red>You moved and the teleport was canceled!!!'
-  player teleport true: '%tag% <yellow>You were teleported!'
-  player teleport false: '%tag% <red>You have not been teleported for any mistake!'
+  - ' <white>İsim: <aqua>%clanland_name%'
+  - ' <white>Boyut: <aqua>%clanland_size%'
+  - ' <white>Oluşturulma tarihi: <aqua>%clanland_creation_date%'
+  help clan header subcommand: '<newline><blue><bold>Alt komutlarla ilgili yardım:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>zorunlu <gray>| <light_purple>() <gray>isteğe bağlı <newline> '
+  help list empty: ' <red>- Bu listede hiçbir şey yok.'
+  clan dont permission role: '%tag% <red>Mevcut rolünüzle bunu yapamazsınız.'
+  need bank money: '%tag% <red>Klanınızın bankada <green>%uclans_money_currency%%amount% <red>ihtiyacı var'
+  need bank money gui: <red>Bankada <green>%uclans_money_currency%%amount% <red>gerekiyor.
+  economy disabled: '%tag% <red>Ekonomi kapalı.'
+  economy disabled gui: <red>Ekonomi kapalı
+  terrain no land: '%tag% <red>Bu arazi korumalı değildir ve herhangi bir klana ait değildir.'
+  player teleport dont move: '%tag% <yellow>Işınlanma hazırlanıyor, %sec% saniye kadar hareket etmeyin.'
+  player teleport moved: '%tag% <red>Hareket ettiniz ve ışınlanma iptal edildi!!!'
+  player teleport true: '%tag% <yellow>Işınlandın!'
+  player teleport false: '%tag% <red>Herhangi bir hata nedeniyle ışınlanmadınız!'
   player delete error gui: ''
   player delete error: ''
   player:
     delete success gui: ''
     delete success: ''
-  banner get error: '%tag% <red>There was an error getting the clan banner.'
-  banner get error gui: <red>Error getting banner!
-  banner get success: '%tag% <green>Clan banner successfully received. To start the claim click on the two points at the ends of the new land'
-  banner no clan: '%tag% <red>This baner does not belong to your clan.'
-  banner clan empty: '%tag% <red>This baner does not belong to your clan.'
-  disabled region: '%tag% <red>You cannot use in this region.'
-  land no owner: '%tag% <red>Your clan does not own this land.'
-  land empty: '%tag% <red>Your clan has no lands'
-  land nomember: '%tag% <red>You are not part of this clans land'
-  land player banned: '%tag% <red>You cannot do this as you are banned from this Land.'
-  land player unbanned: '%tag% <red>The player has been successfully unbanned!'
-  land player unbanned gui: <green>Player successfully unbanned!
-  land player unbanned error: '%tag% <red>There was an error unbanning the player!'
-  land player unbanned error gui: <red>Error unbanning player!
-  land player is banned: '%tag% <red>This player is banned from the Land.'
-  land player untrusted: '%tag% <red>The player has been successfully untrusted!'
-  land player untrusted gui: <green>Player successfully untrusted!
-  land player ununtrusted error: '%tag% <red>There was an error untrusting the player!'
-  land player ununtrusted error gui: <red>Error untrusting player!
-  land player already banned: '%tag% <red>This player is already banned from this land.'
-  land player no banned: '%tag% <red>This player is not banned from this land.'
-  land player no trusted: '%tag% <red>This player is not trusted from this land.'
-  land player already trusted: '%tag% <red>This player is already trusted from this land.'
-  land player is leader: '%tag% <red>This player is the leader of the Land.'
-  land player is leader gui: <red>Is the leader of the Land!
-  land errorclaim: '%tag% <red>An error occurred while claim the land.'
-  land hasland: '%tag% <red>Your clan already has a land.'
-  land successclaim: '%tag% <green>Successfully secured land, use <aqua>/clan nexus<green> to manage'
-  land veryclose: '%tag% <red>There is other land very close to the limits.'
-  land nobanner: '%tag% <red>Your clan does not have a banner set up yet.'
-  land claim canceled: '%tag% <red>The Claim was canceled because time ran out or you went too far.'
-  land claim start: '%tag% <green>You have started the Land Claim, select two points to generate the size.'
-  land claim claimed: '%tag% <green>The land has been successfully claimed.'
+  banner get error: '%tag% <red>Klan sancağı alınırken bir hata oluştu.'
+  banner get error gui: <red>Başlık alınırken hata oluştu!
+  banner get success: '%tag% <green>Klan sancağı başarıyla alındı. Hak talebini başlatmak için yeni arazinin sonundaki iki noktayı tıklayın.'
+  banner no clan: '%tag% <red>Bu baner klanınıza ait değil.'
+  banner clan empty: '%tag% <red>Bu banner klanınıza ait değil.'
+  disabled region: '%tag% <red>Bu bölgede kullanamazsınız.'
+  land no owner: '%tag% <red>Klanınız bu arazinin sahibi değil.'
+  land empty: '%tag% <red>Klanınızın toprağı yok'
+  land nomember: '%tag% <red>Bu klan arazisinin bir parçası değilsin'
+  land player banned: '%tag% <red>Bu araziden yasaklı olduğunuz için bunu yapamazsınız..'
+  land player unbanned: '%tag% <red>Oyuncunun yasağı başarıyla kaldırıldı!'
+  land player unbanned gui: <green>Oyuncunun yasağı başarıyla kaldırıldı!
+  land player unbanned error: '%tag% <red>Oyuncunun yasağı kaldırılırken bir hata oluştu!'
+  land player unbanned error gui: <red>Oyuncunun yasağı kaldırılırken hata oluştu!
+  land player is banned: '%tag% <red>Bu oyuncu araziden yasaklandı.'
+  land player untrusted: '%tag% <red>Oyuncuya başarıyla güvenilmedi!'
+  land player untrusted gui: <green>Oyuncuya başarıyla güvenilmedi!
+  land player ununtrusted error: '%tag% <red>Oyuncuya güvenilmezken bir hata oluştu!'
+  land player ununtrusted error gui: <red>Oyuncuya güvenilmezken hata oluştu!
+  land player already banned: '%tag% <red>Bu oyuncu zaten bu araziden yasaklandı.'
+  land player no banned: '%tag% <red>Bu oyuncu bu arazide yasaklı değil.'
+  land player no trusted: '%tag% <red>Bu oyuncuya bu arazide güvenilmez.'
+  land player already trusted: '%tag% <red>Bu oyuncuya bu arazide zaten güveniliyor.'
+  land player is leader: '%tag% <red>Bu oyuncu Ülkenin lideridir.'
+  land player is leader gui: <red>Ülkenin lideri mi!
+  land errorclaim: '%tag% <red>Arazi talep edilirken bir hata oluştu.'
+  land hasland: '%tag% <red>Klanınızın zaten bir arazisi var.'
+  land successclaim: '%tag% <green>Arsa başarıyla emniyete alındı, yönetmek için <aqua>/clan nexus<green> kullanın'
+  land veryclose: '%tag% <red>Sınırlara çok yakın başka arazi var.'
+  land nobanner: '%tag% <red>Klanınızın henüz ayarlanmış bir afişi yok.'
+  land claim canceled: '%tag% <red>Hak talebi, sürenin dolması veya çok ileri gitmeniz nedeniyle iptal edildi.'
+  land claim start: '%tag% <green>Arazi Talebini başlattınız, boyutu oluşturmak için iki nokta seçin.'
+  land claim claimed: '%tag% <green>Arazi başarıyla talep edildi.'
   land claim claimed gui: <green>Land successfully claimed.
-  land claim error: '%tag% <red>There was an error claiming the land.'
-  land claim error gui: <red>Claiming error!
-  land claim finish: '%tag% <green>You have selected the two points and now you can view the actual size of the terrain, you can even change the points or click inside the box to continue.'
-  land claim veryfaraway: '%tag% <red>The selected size exceeds the limit.'
-  land claim veryclose: '%tag% <red>The selected point appears to be very close to the first selected point.'
-  land claim tiny: '%tag% <red>The selected size is too small.'
-  land claim nearland: '%tag% <red>Looks like you''re too close to another terrain!'
+  land claim error: '%tag% <red>Arazi talep edilirken bir hata oluştu.'
+  land claim error gui: <red>Talep hatası!
+  land claim finish: '%tag% <green>İki noktayı seçtiniz ve artık arazinin gerçek boyutunu görüntüleyebilir, hatta noktaları değiştirebilir veya devam etmek için kutunun içine tıklayabilirsiniz.'
+  land claim veryfaraway: '%tag% <red>Seçilen boyut sınırı aşıyor.'
+  land claim veryclose: '%tag% <red>Seçilen nokta ilk seçilen noktaya çok yakın görünüyor.'
+  land claim tiny: '%tag% <red>Seçilen boyut çok küçük.'
+  land claim nearland: '%tag% <red>Görünüşe göre başka bir araziye çok yakınsın!'
   
   # JOIN AND LEAVE LAND MESSAGES (Use '' to not send, All placeholders from PLACEHOLDERS.txt can be used.)
-  enter title: <blue>Entered <green>%uclans_tag_color%
+  enter title: <green>%uclans_tag_color% <blue>Girildi
   enter title sub: <gold>%clanland_name%
-  enter actionbar: <blue>Entered the land <gold>%clanland_name% <blue>of <green>%uclans_tag_color%
-  enter message: '%tag% <blue>Entered the land <gold>%clanland_name% <blue>of <green>%uclans_tag_color%'
-  leave title: <red>Left <green>%uclans_tag_color%
+  enter actionbar: <green>%uclans_tag_color% <gold>%clanland_name% <blue>toprağına girdi
+  enter message: '%tag% <green>%uclans_tag_color% <gold>%clanland_name% <blue>toprağına girdi'
+  leave title: <green>%uclans_tag_color% <red>Çıkıldı
   leave title sub: <gold>%clanland_name%
-  leave actionbar: <red>Left the land <gold>%clanland_name% <red>of <green>%uclans_tag_color%
-  leave message: '%tag% <red>Left the land <gold>%clanland_name% <red>of <green>%uclans_tag_color%'
-  land build outside: '%tag% <red>You are building outside your land.'
-  land build only land: '%tag% <red>You can only build on your land.'
+  leave actionbar: <gold>%clanland_name% <green>%uclans_tag_color% <red>arazisinden ayrıldı
+  leave message: '<gold>%clanland_name% <green>%uclans_tag_color% <red>arazisinden ayrıldı'
+  land build outside: '%tag% <red>Arazinizin dışında inşa ediyorsunuz.'
+  land build only land: '%tag% <red>Sadece arazinize inşaat yapabilirsiniz.'
 COMMUM:
-  land player already member: '%tag% <red>This player is already a member of the Land.'
+  land player already member: '%tag% <red>Bu oyuncu zaten arazinin bir üyesi.'
 GUI:
-  Land home_noclaim title: <dark_red>No Land <gray>| <aqua>%uclans_tag_color%
+  Land home_noclaim title: <dark_red>Arazi yok <gray>| <aqua>%uclans_tag_color%
   Land home_noclaim items fill name: ' '
   Land home_noclaim items fill lore: [
     ]
   Land home_noclaim items fill2 name: ' '
   Land home_noclaim items fill2 lore: [
     ]
-  Land home_noclaim items info name: <green>Clan Banner
+  Land home_noclaim items info name: <green>Klan Bannerı
   Land home_noclaim items info lore:
   - ''
-  - ' <yellow>Banner information:'
+  - ' <yellow>Banner Bilgisi:'
   - ''
-  - ' <yellow>The clan banner is used to create'
-  - <yellow>the <green>Clans Land <yellow>and protect
-  - '<yellow>land for the clan '
+  - ' <yellow>Klan sancağı, <green>Klanın arazisini'
+  - <yellow>oluşturmak ve klanın topraklarını
+  - '<yellow>korumak için kullanılır '
   - ''
-  - ' <red>Only leader can manage lands!'
-  Land home_noclaim items start name: <green>Start the claim
+  - ' <red>Toprakları yalnızca lider yönetebilir!'
+  Land home_noclaim items start name: <green>Hak talebini başlat
   Land home_noclaim items start lore:
   - ''
-  - ' <yellow>Your clan has no land, you'
-  - <yellow>can start the claim now.
-  Land home_noclaim items banner name: <red>No Banner
+  - ' <yellow>Klanınızın arazisi yok,'
+  - <yellow>şimdi hak talebinde bulunabilirsiniz.
+  Land home_noclaim items banner name: <red>Banner yok
   Land home_noclaim items banner lore:
   - ''
-  - ' <red>To use the Lands your'
-  - <red>clan needs a Banner!
-  Land home_noclaim items nomod name: <red>No Land
+  - ' <red>Arazileri kullanmak için'
+  - <red>klanınızın bir Sancağa ihtiyacı var!
+  Land home_noclaim items nomod name: <red>Arazi yok
   Land home_noclaim items nomod lore:
   - ''
-  - ' <red>Your clan has no lands, only moderators'
-  - <red>or leader can claim new lands!
-  Land home_noclaim items back name: <red>Come back
+  - ' <red>Klanınızın toprağı yok, yalnızca moderatörler'
+  - <red>veya lider yeni topraklar talep edebilir!
+  Land home_noclaim items back name: <red>Geri dönmek
   Land home_noclaim items back lore:
   - ''
-  - ' <yellow>Click to go back.'
-  Land home_claim title: <blue>Claim <gray>| <aqua>%size% block(s)
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Land home_claim title: <blue>Talep edilen <gray>| <aqua>%size% blok
   Land home_claim items fill name: ' '
   Land home_claim items fill lore: [
     ]
   Land home_claim items fill2 name: ' '
   Land home_claim items fill2 lore: [
     ]
-  Land home_claim items claim name: <green>Claim Land
+  Land home_claim items claim name: <green>Arazi Talep Edin
   Land home_claim items claim lore:
   - ''
-  - ' <yellow>Info:'
+  - ' <yellow>Bilgi:'
   - ''
-  - ' <white>Size: <aqua>%size% block(s)'
-  - ' <white>Price: <green>%uclans_money_currency%%price%'
+  - ' <white>Boyut: <aqua>%size% block(s)'
+  - ' <white>Fiyat: <green>%uclans_money_currency%%price%'
   - ''
-  - ' <yellow>Click to finish claim.'
-  Land home_claim items ajust name: <green>Adjust size
+  - ' <yellow>Hak talebini bitirmek için tıklayın.'
+  Land home_claim items ajust name: <green>Boyutu ayarla
   Land home_claim items ajust lore:
   - ''
-  - ' <yellow>Close and continue selection.'
-  Land home_claim items deselect name: <green>Deselect
+  - ' <yellow>Seçimi kapat ve devam et.'
+  Land home_claim items deselect name: <green>Seçimi kaldır
   Land home_claim items deselect lore:
   - ''
-  - ' <yellow>Click to completely deselect.'
-  Land home_claim items back name: <red>Come back
+  - ' <yellow>Seçimi tamamen kaldırmak için tıklayın.'
+  Land home_claim items back name: <red>Geri dönmek
   Land home_claim items back lore:
   - ''
-  - ' <yellow>Click to go back.'
-  Land home_land title: <blue>List of Lands <gray>| <aqua>%uclans_tag_color%
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Land home_land title: <blue>Arazi Listesi <gray>| <aqua>%uclans_tag_color%
   Land home_land items fill name: ' '
   Land home_land items fill lore: [
     ]
-  Land home_land items current name: <gold>Land <aqua>%clanland_name%
+  Land home_land items current name: <gold>Arazi <aqua>%clanland_name%
   Land home_land items current lore:
   - ''
-  - ' <yellow>Land Information:'
+  - ' <yellow>Arazi Bilgileri:'
   - ''
-  - ' <white>Clan: <aqua>%uclans_tag_color%'
-  - ' <white>Leader: <aqua>%uclans_leader%'
-  - ' <white>Members: <aqua>%uclans_count_members%'
-  - ' <white>Banned: <red>%clanland_count_banned%'
-  - ' <white>Size: <aqua>%clanland_size%'
-  - ' <white>Creation date: <aqua>%clanland_creation_date%'
-  - ' <white>Level: <aqua>%clanland_level%'
+  - ' <white>Klan: <aqua>%uclans_tag_color%'
+  - ' <white>Lider: <aqua>%uclans_leader%'
+  - ' <white>Üyeleri: <aqua>%uclans_count_members%'
+  - ' <white>Yasaklamalar: <red>%clanland_count_banned%'
+  - ' <white>Boyut: <aqua>%clanland_size%'
+  - ' <white>Oluşturulma tarihi: <aqua>%clanland_creation_date%'
+  - ' <white>Seviye: <aqua>%clanland_level%'
   - ''
-  - <yellow>Click to open.
-  Land home_land items next name: <green>Next page.
+  - <yellow>Açmak için tıklayın.
+  Land home_land items next name: <green>Sonraki Sayfa.
   Land home_land items next lore:
   - ''
-  - ' <yellow>Click to proceed.'
-  Land home_land items prev name: <green>Previous page.
+  - ' <yellow>Devam etmek için tıklayın.'
+  Land home_land items prev name: <green>Önceki sayfa.
   Land home_land items prev lore:
   - ''
-  - ' <yellow>Click to come back.'
-  Land home_land items back name: <red>Come back
+  - ' <yellow>Geri gelmek için tıklayın.'
+  Land home_land items back name: <red>Geri dön
   Land home_land items back lore:
   - ''
-  - ' <yellow>Click to go back.'
-  Land land_info title: <blue>Land Info <gray>| <aqua>%clanland_name%
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Land land_info title: <blue>Arazi Bilgileri <gray>| <aqua>%clanland_name%
   Land land_info items fill name: ' '
   Land land_info items fill lore: [
     ]
   Land land_info items fill2 name: ' '
   Land land_info items fill2 lore: [
     ]
-  Land land_info items teleport name: <green>Teleport to Land
+  Land land_info items teleport name: <green>Araziye Işınlan
   Land land_info items teleport lore:
   - ''
-  - ' <yellow>Click to go to terrain spawn.'
-  Land land_info items info name: <green>Land %clanland_name%
+  - ' <yellow>Arazi spawnına gitmek için tıklayın.'
+  Land land_info items info name: <green>Arazi %clanland_name%
   Land land_info items info lore:
   - ''
-  - ' <yellow>Land Information:'
+  - ' <yellow>Arazi Bilgileri:'
   - ''
-  - ' <white>Clan: <aqua>%uclans_tag_color%'
-  - ' <white>Leader: <aqua>%uclans_leader%'
-  - ' <white>Members: <aqua>%uclans_count_members%'
-  - ' <white>Banned: <red>%clanland_count_banned%'
-  - ' <white>Size: <aqua>%clanland_size%'
-  - ' <white>Creation date: <aqua>%clanland_creation_date%'
-  - ' <white>Level: <aqua>%clanland_level%'
-  Land land_info items members name: <green>Land Members.
+  - ' <white>Klan: <aqua>%uclans_tag_color%'
+  - ' <white>Lider: <aqua>%uclans_leader%'
+  - ' <white>Üyeler: <aqua>%uclans_count_members%'
+  - ' <white>Yasaklamalar: <red>%clanland_count_banned%'
+  - ' <white>Boyut: <aqua>%clanland_size%'
+  - ' <white>Oluşturulma tarihi: <aqua>%clanland_creation_date%'
+  - ' <white>Seviye: <aqua>%clanland_level%'
+  Land land_info items members name: <green>Arazi Üyeleri.
   Land land_info items members lore:
   - ''
-  - ' <yellow>Click to open.'
-  Land land_info items banned name: <green>Banned Players.
+  - ' <yellow>Açmak için tıklayın.'
+  Land land_info items banned name: <green>Yasaklanmış Oyuncular.
   Land land_info items banned lore:
   - ''
-  - ' <yellow>Click to open.'
-  Land land_info items ajust name: <red>Land ajusts
+  - ' <yellow>Açmak için tıklayın.'
+  Land land_info items ajust name: <red>Arazi ayarları
   Land land_info items ajust lore:
   - ''
-  - ' <yellow>Click to open.'
-  Land land_info items back name: <red>Come back
+  - ' <yellow>Açmak için tıklayın.'
+  Land land_info items back name: <red>Geri dön
   Land land_info items back lore:
   - ''
-  - ' <yellow>Click to go back.'
-  Land land_banned title: <dark_red>Banned Players <gray>| <aqua>%clanland_name%
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Land land_banned title: <dark_red>Yasaklanan oyuncular <gray>| <aqua>%clanland_name%
   Land land_banned items fill name: ' '
   Land land_banned items fill lore: [
     ]
   Land land_banned items current name: <green>%uclans_player%
   Land land_banned items current lore:
   - ''
-  - ' <yellow>Player Information'
+  - ' <yellow>Oyuncu Bilgileri'
   - ''
   - ' <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
-  - ' <white>Role: <aqua>%uclans_player_role_formated%'
+  - ' <white>Rol: <aqua>%uclans_player_role_formated%'
   Land land_banned items current_action name: <green>%uclans_player%
   Land land_banned items current_action lore:
   - ''
-  - ' <yellow>Player Information'
+  - ' <yellow>Oyuncu Bilgileri'
   - ''
   - ' <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
-  - ' <white>Role: <aqua>%uclans_player_role_formated%'
+  - ' <white>Rol: <aqua>%uclans_player_role_formated%'
   - ''
-  - ' <red>CLICK TO UNBAN.'
-  Land land_banned items next name: <green>Next page.
+  - ' <red>YASAĞI KALDIRMAK İÇİN TIKLAYIN.'
+  Land land_banned items next name: <green>Sonraki Sayfa.
   Land land_banned items next lore:
   - ''
-  - ' <yellow>Click to proceed.'
-  Land land_banned items prev name: <green>Previous page.
+  - ' <yellow>Devam etmek için tıklayın.'
+  Land land_banned items prev name: <green>Önceki sayfa.
   Land land_banned items prev lore:
   - ''
-  - ' <yellow>Click to come back.'
-  Land land_banned items new name: <green>Ban a player
+  - ' <yellow>geri gelmek için tıklayın.'
+  Land land_banned items new name: <green>Bir oyuncuyu yasakla
   Land land_banned items new lore:
   - ''
-  - ' <green>Click to open.'
-  Land land_banned items back name: <red>Come back
+  - ' <green>Açmak için tıklayın.'
+  Land land_banned items back name: <red>Geri dön
   Land land_banned items back lore:
   - ''
-  - ' <yellow>Click to go back.'
-  Land land_members title: <blue>Land Members <gray>| <aqua>%clanland_name%
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Land land_members title: <blue>Arazi Üyeleri <gray>| <aqua>%clanland_name%
   Land land_members items fill name: ' '
   Land land_members items fill lore: [
     ]
   Land land_members items current name: <green>%uclans_player%
   Land land_members items current lore:
   - ''
-  - ' <yellow>Player Information'
+  - ' <yellow>Oyuncu Bilgileri'
   - ''
   - ' <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
-  - ' <white>Role: <aqua>%uclans_player_role_formated%'
+  - ' <white>Rol: <aqua>%uclans_player_role_formated%'
   Land land_members items current_action name: <green>%uclans_player%
   Land land_members items current_action lore:
   - ''
-  - ' <yellow>Player Information'
+  - ' <yellow>Oyuncu Bilgileri'
   - ''
   - ' <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
-  - ' <white>Role: <aqua>%uclans_player_role_formated%'
+  - ' <white>Rol: <aqua>%uclans_player_role_formated%'
   - ''
-  - ' <red>CLICK TO UNTRUST.'
-  Land land_members items next name: <green>Next page.
+  - ' <red>GÜVENMEMEK İÇİN TIKLAYIN.'
+  Land land_members items next name: <green>Sonraki Sayfa.
   Land land_members items next lore:
   - ''
-  - ' <yellow>Click to proceed.'
-  Land land_members items prev name: <green>Previous page.
+  - ' <yellow>Devam etmek için tıklayın.'
+  Land land_members items prev name: <green>Önceki sayfa.
   Land land_members items prev lore:
   - ''
-  - ' <yellow>Click to come back.'
-  Land land_members items new name: <green>Trust a player
+  - ' <yellow>Geri gelmek için tıklayın.'
+  Land land_members items new name: <green>Bir oyuncuya güven
   Land land_members items new lore:
   - ''
-  - ' <green>Click to open.'
-  Land land_members items back name: <red>Come back
+  - ' <green>Açmak için tıklayın.'
+  Land land_members items back name: <red>Geri dön
   Land land_members items back lore:
   - ''
-  - ' <yellow>Click to go back.'
-  Land confirm_unban title: <dark_red>Confirm Unban <green>%uclans_player%<dark_red>?
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Land confirm_unban title: <dark_red>Yasağı Kaldırmayı Onaylayın <green>%uclans_player%<dark_red>?
   Land confirm_unban items fill name: ' '
   Land confirm_unban items fill lore: [
     ]
-  Land confirm_unban items confirm name: <green>Unban <green>%uclans_player%
+  Land confirm_unban items confirm name: <green>Yasağı Kaldır <green>%uclans_player%
   Land confirm_unban items confirm lore:
   - ''
-  - ' <yellow>Click to confirm and <dark_red>UNBAN<yellow> player.'
-  Land confirm_unban items back name: <red>Cancel and return
+  - ' <yellow>Onaylamak için tıklayın ve bir oyuncunun<dark_red>YASAĞINI KALDIRIN.'
+  Land confirm_unban items back name: <red>İptal et ve geri dön
   Land confirm_unban items back lore:
   - ''
-  - ' <yellow>Click to go back.'
-  Land confirm_untrust title: <dark_red>Confirm Untrust <green>%uclans_player%<dark_red>?
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Land confirm_untrust title: <dark_red>Güvensizliği Onayla <green>%uclans_player%<dark_red>?
   Land confirm_untrust items fill name: ' '
   Land confirm_untrust items fill lore: [
     ]
-  Land confirm_untrust items confirm name: <green>Untrust <green>%uclans_player%
+  Land confirm_untrust items confirm name: <green>Güvensizlik <green>%uclans_player%
   Land confirm_untrust items confirm lore:
   - ''
-  - ' <yellow>Click to confirm and <dark_red>UNTRUST<yellow> player.'
-  Land confirm_untrust items back name: <red>Cancel and return
+  - ' <yellow>Onaylamak için tıklayın ve bir oyuncuya <dark_red>GÜVENMEYİN.'
+  Land confirm_untrust items back name: <red>İptal et ve geri dön
   Land confirm_untrust items back lore:
   - ''
-  - ' <yellow>Click to go back.'
-  Land confirm_abandon title: <dark_red>Confirm Abandon <aqua>%clanland_name%<dark_red>?
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Land confirm_abandon title: <dark_red>Vazgeçmeyi Onayla <aqua>%clanland_name%<dark_red>?
   Land confirm_abandon items fill name: ' '
   Land confirm_abandon items fill lore: [
     ]
-  Land confirm_abandon items confirm name: <green>Yes confirm.
+  Land confirm_abandon items confirm name: <green>Evet onayla
   Land confirm_abandon items confirm lore:
   - ''
-  - ' <yellow>Click to confirm and abandon.'
-  Land confirm_abandon items back name: <red>Cancel and return
+  - ' <yellow>Onaylamak ve vazgeçmek için tıklayın.'
+  Land confirm_abandon items back name: <red>İptal et ve geri dön
   Land confirm_abandon items back lore:
   - ''
-  - ' <yellow>Click to go back.'
-  Land land_ajust title: <red>Land ajusts <gray>| <aqua>%clanland_name%
+  - ' <yellow>Geri dönmek için tıklayın.'
+  Land land_ajust title: <red>Arazi ayarları <gray>| <aqua>%clanland_name%
   Land land_ajust items fill name: ' '
   Land land_ajust items fill lore: [
     ]
-  Land land_ajust items rename name: <green>Rename the land.
+  Land land_ajust items rename name: <green>Araziyi yeniden adlandır.
   Land land_ajust items rename lore:
   - ''
-  - ' <yellow>Click to rename the land.'
-  Land land_ajust items setspawn name: <green>Change Land spawn.
+  - ' <yellow>Araziyi yeniden adlandırmak için tıklayın.'
+  Land land_ajust items setspawn name: <green>Arazi spawnını değiştir.
   Land land_ajust items setspawn lore:
   - ''
-  - ' <yellow>Click to change the spawn '
-  - '<yellow>to your location or use the '
-  - <yellow>command <aqua>/clan land setspawn <yellow>while
-  - <yellow>inside your terrain.
-  Land land_ajust items abandon name: <green>Abandon the land.
+  - ' <yellow>Spawnınızı konumunuza göre '
+  - '<yellow>değiştirmek için tıklayın veya '
+  - <yellow>arazinizin içindeyken komutunu
+  - <aqua>/clan land setspawn <yellow>kullanın .
+  Land land_ajust items abandon name: <green>Araziyi terk et.
   Land land_ajust items abandon lore:
   - ''
-  - ' <dark_red>Attention, if you leave the'
-  - '<dark_red>land, items and buildings '
-  - <dark_red>lose protection!
+  - ' <dark_red>Dikkat, araziyi terk ederseniz'
+  - '<dark_red>eşyalar ve binalar '
+  - <dark_red>korumayı kaybeder!
   - ''
-  - ' <yellow>Click to abandon.'
-  Land land_ajust items back name: <red>Come Back.
+  - ' <yellow>Vazgeçmek için tıklayın.'
+  Land land_ajust items back name: <red>Geri dön.
   Land land_ajust items back lore:
   - ''
-  - ' <yellow>Click to go back.'
+  - ' <yellow>Geri dönmek için tıklayın.'
