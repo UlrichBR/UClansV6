@@ -22,6 +22,8 @@ COMUM:
   bank need: '%tag% <red>The clan bank does not have <green>%uclans_money_currency%%amount%'
   bank need gui: <red>Bank need <green>%uclans_money_currency%%amount%
   bank view: '%tag% <yellow>The clan bank now has <green>%uclans_money_currency%%amount%'
+  logger clanbankwithdrawevent: <red><bold>-</bold> <green>%uclans_money_currency%%amount% <yellow>was withdrawn from the bank by <green>%uclans_player%
+  logger clanbankaddevent: <green><bold>+</bold> <green>%uclans_money_currency%%amount% <yellow>was added to the bank by <green>%uclans_player%
 GUI:
   Bank home_bank title: <blue>Bank <gray>| <aqua>%uclans_tag_color%
   Bank home_bank items fill name: ' '

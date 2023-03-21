@@ -4,129 +4,129 @@
  
 LANGUAGE:
   separer: <gradient:blue:aqua>████████████████████████████████</gradient>
-  command by player: '%tag% <red>This command must be used by a player.'
-  command by console: '%tag% <red>This command must be used by a CONSOLE.'
-  disabled world command: '%tag% <red>Clan commands are turned off in this world.'
-  disabled region command: '%tag% <red>Clan commands are turned off in this region.'
-  error start action: '%tag% <red>There was an error running this.'
-  error character: '%tag% <red>This contains invalid characters.'
-  error mod desc: '%tag% <red>Error changing the Clan description.'
-  has globalff: '%tag% <green>Global friendly fire is now on!'
-  no permission: '%tag% <red>You do not have permission'
-  chest extra buyed update: '%tag% <aqua>%player% <green>has purchased a new Chest for the Clan.'
+  command by player: '%tag% <red>Este comando debe ser utilizado por un JUGADOR.'
+  command by console: '%tag% <red>Este comando debe ser utilizado por la CONSOLA.'
+  disabled world command: '%tag% <red>Los comandos de clan están desactivados en este mundo.'
+  disabled region command: '%tag% <red>Los comandos de clan están desactivados en esta región.'
+  error start action: '%tag% <red>Se ha producido un error al ejecutar esto.'
+  error character: '%tag% <red>Contiene caracteres no válidos.'
+  error mod desc: '%tag% <red>Error al cambiar la descripción del clan.'
+  has globalff: '%tag% <green>¡El fuego amigo global ya está en marcha!'
+  no permission: '%tag% <redNo tienes permiso'
+  chest extra buyed update: '%tag% <aqua>%player% <green>Ha comprado un nuevo cofre para el clan.'
   currency vault: Money
   currency playerpoints: Points
   currency clansouls: Souls
-  export same storage: '%tag% <red>You must choose a different storage than the current one to export.'
-  export no data: '%tag% <red>There is currently no data to export.'
-  export mysql deconfigured: '%tag% <red>An error occurred, mysql fields are misconfigured.'
-  export mysql connection error: '%tag% <red>There was an error connecting to MYSQL.'
-  export sqlite connection error: '%tag% <red>There was an error connecting to SQLITE.'
-  export yaml connection error: '%tag% <red>There was an error connecting to YAML.'
-  tag in use: '%tag% <red>This Tag is already in use.'
-  clan not found: '%tag% <red>Clan with this TAG does not exist.'
-  clan ally header: <blue>List of Allies. <dark_gray>(tag/kdr/members)
-  clan list empty: ' <red>No Clan in this list.'
-  clan is your clan: '%tag% <red>This is your Clan.'
-  clan is rival: '%tag% <red>This Clan is already an rival.'
-  clan already ally: '%tag% <red>This Clan is already an ally.'
-  clan dont ally: '%tag% <red>This Clan is not an ally.'
-  clan player isnot your clan: '%tag% <red>This player is not in your Clan.'
-  clan player skin in update gui: <green>Updating skin, wait...
-  clan player skin in update: '%tag% <green>Updating skin, please wait as this may take some time...'
-  clan player skin finish update: '%tag% <green>Your skin has been updated'
-  clan player skin error update: '%tag% <red>There was an error updating your skin'
-  clan pvp disabled: '%tag% <red>Clan PVP is now turned off.'
-  clan allypvp disabled: '%tag% <red>PVP between allies is off.'
-  clan player blocked invite gui: <red>Disabled clan invites.
-  clan player blocked invite: '%tag% <red>This player has disabled clan invites.'
-  clan player accept success invite gui: <green>Invitation accepted.
-  clan player accept success invite: '%tag% <red>You have successfully accepted the invitation.'
-  clan player accept error invite gui: <red>Error to accept.
-  clan player accept error invite: '%tag% <red>There was an error accepting the invitation.'
-  clan player deny success invite gui: <red>Invitation danied.
-  clan player deny success invite: '%tag% <red>You have successfully danied the invitation.'
-  clan player deny error invite gui: <red>Error to deny.
-  clan player deny error invite: '%tag% <red>There was an error denying the invitation.'
-  clan player isalready banned: '%tag% <red>This player is already banned from the Clan.'
-  clan player isnot banned: '%tag% <red>This player is not banned from the Clan.'
-  clan player is banned: '%tag% <red>This player is banned from the clan and cannot receive invites.'
-  clan player is banned gui: <red>Player is banned from the clan.
-  clan player error unban: '%tag% <red>There was an error unbanning this player'
-  clan player error unban gui: <red>Error unbanning player.
-  clan player error ban: '%tag% <red>There was an error banning this player'
-  clan player error ban gui: <red>Error to ban player.
-  clan player success ban: '%tag% <green>The Player has been successfully banned from the Clan.'
-  clan player success ban gui: <green>Player has successfully banned.
-  clan player success unban: '%tag% <green>The Player has been successfully unbanned from the Clan.'
-  clan player success unban gui: <green>Player has successfully unbanned.
-  clan player are banned: '%tag% <red>You are banned from this Clan and cannot join the members.'
-  clan player error change nickname: '%tag% <red>Error changing nickname.'
-  clan player error change nickname gui: <red>Error changing nickname.
-  clan player changed nickname: '%tag% <green>Nickname successfully changed!'
-  clan player changed nickname gui: <green>Nickname successfully changed!
-  clan player nickname default: '%tag% <red>Your nickname is already the default.'
-  clan player nickname default gui: <red>Nickname is already default.
-  clan reward level: '%tag% <yellow>You earned rewards for your clan reaching level %num%'
-  clan max members: <red>This Clan already has the maximum number of players.
-  clan max members level: '%tag% <red>This clan already has the maximum number of players for the current level.'
-  clan player kicked out: '%tag% <green>You have been kicked out of the clan <aqua>%clan% <red>by <green>%clan_leader%'
-  clan player kicked outby: '%tag% <dark_red>%player% <yellow>has been kicked out of the clan by <green>%clan_leader%'
-  clan tag equals: '%tag% <red>Unchanged TAG, appears to be the same.'
-  clan name equals: '%tag% <red>Unchanged NAME, appears to be the same.'
-  clan already rival: '%tag% <red>This Clan is already a rival.'
-  clan is ally: '%tag% <red>This Clan is already an ally.'
-  clan rival error remove: '%tag% <red>Error removing rival.'
-  clan dont rival: '%tag% <red>This Clan is not a rival.'
-  clan new ally: '%tag% <red>! <yellow>A new alliance was formed with the clan <green>%clan_tag%'
-  clan removed ally: '%tag% <red>! <yellow>The alliance with the clan <green>%clan_tag% <yellow>has removed.'
-  clan one removed ally: '%tag% <red>! <yellow>An alliance has been removed.'
-  clan one removed rival: '%tag% <red>! <yellow>An rivalrie has been removed.'
-  clan created: '%tag% <red>! <yellow>A new Clan <aqua>%clan_tag% <yellow>was created by <green>%player%.'
-  clan deleted: '%tag% <red>! <yellow>The Clan <aqua>%clan_tag% <yellow>was deleted by <green>%player%.'
-  clan deleted small: <red><strikethrough>Deleted
-  clan ff changed: '%tag% <red>! <yellow>The friendly fire is <aqua>%value%.'
-  clan globalff changed: '%tag% <red>! <yellow>Global friendly fire is <aqua>%value%.'
-  clan new join: '%tag% <red>! <yellow>The player <green>%player% <yellow>entered the Clan.'
-  clan new kick: '%tag% <red>! <yellow>The player <green>%player% <yellow>was expelled from the Clan.'
-  clan new leave: '%tag% <red>! <red>The player <green>%player% <yellow>left the <green>%clan_tag% <red>Clan.'
-  clan new rival: '%tag% <red>! <yellow>New rivalry with the Clan <green>%clan_tag%'
-  clan new rival removed: '%tag% <red>! <yellow>The rivalry with clan <green>%clan_tag% <yellow>has been dissolved.'
-  clan new leader: '%tag% <red>! <yellow>New leader of clan <green>%clan_tag% <yellow>is <green>%player%'
-  clan rival removed: '%tag% <red>! <yellow>The rivalry with the Clan <green>%clan_tag% <yellow>was undone.'
-  clan verify changed: '%tag% <red>! <yellow>The clan was changed to <green>%value%.'
-  clan new promote: '%tag% <red>! <yellow>The player <green>%player% <yellow>got promoted to <aqua>%role_formated%.'
-  clan new demote: '%tag% <red>! <red>The player <green>%player% <yellow>was demoted.'
-  clan tag blacklist: '%tag% <red>This Tag cannot be used in Clans.'
-  clan changed settings: '%tag% <green>Clan settings have been changed.'
-  clan changed settings gui: <green>Settings have been changed.
-  clan sync settings gui: <green>Synchronizing permissions...
-  clan settings warinvite: <aqua>War Invite
-  clan settings allysharedchat: <aqua>Ally shared chat
-  clan settings joinleave: <aqua>Join and Leave
-  clan settings allysharedhome: <aqua>Ally shared homes
+  export same storage: '%tag% <red>Debe elegir un almacenamiento diferente al actual para exportar.'
+  export no data: '%tag% <red>Actualmente no hay datos para exportar.'
+  export mysql deconfigured: '%tag% <red>Se ha producido un error, los campos mysql están mal configurados.'
+  export mysql connection error: '%tag% <red>Se ha producido un error al conectar con MYSQL.'
+  export sqlite connection error: '%tag% <red>Se ha producido un error al conectar con SQLITE.'
+  export yaml connection error: '%tag% <red>Se ha producido un error al conectar con YAML.'
+  tag in use: '%tag% <red>Esta TAG ya está en uso.'
+  clan not found: '%tag% <red>El Clan con este TAG no existe.'
+  clan ally header: <blue>Lista de aliados. <dark_gray>(tag/kdr/members)
+  clan list empty: ' <red>No hay ningún clan en esta lista.'
+  clan is your clan: '%tag% <red>Este es tu Clan.'
+  clan is rival: '%tag% <red>Este Clan ya es un rival.'
+  clan already ally: '%tag% <red>Este Clan ya es un aliado.'
+  clan dont ally: '%tag% <red>Este Clan no es un aliado.'
+  clan player isnot your clan: '%tag% <red>Este jugador no está en tu Clan.'
+  clan player skin in update gui: <green>Actualizando skin, espera...
+  clan player skin in update: '%tag% <green>Actualizando skin, por favor espere ya que esto puede tomar algún tiempo...'
+  clan player skin finish update: '%tag% <green>Tu skin ha sido actualizada'
+  clan player skin error update: '%tag% <red>Se ha producido un error al actualizar tu skin'
+  clan pvp disabled: '%tag% <red>El PVP de clan está desactivado.'
+  clan allypvp disabled: '%tag% <red>El PVP entre aliados está desactivado.'
+  clan player blocked invite gui: <red>Invitaciones de clanes deshabilitados.
+  clan player blocked invite: '%tag% <red>Este jugador ha desactivado las invitaciones del clan.'
+  clan player accept success invite gui: <green>Invitación aceptada.
+  clan player accept success invite: '%tag% <red>Ha aceptado correctamente la invitación.'
+  clan player accept error invite gui: <red>Error al aceptar.
+  clan player accept error invite: '%tag% <red>Se ha producido un error al aceptar la invitación.'
+  clan player deny success invite gui: <red>Invitación denegada.
+  clan player deny success invite: '%tag% <red>Has denegado correctamente la invitación.'
+  clan player deny error invite gui: <red>Error al denegar.
+  clan player deny error invite: '%tag% <red>Hubo un error al denegar la invitación.'
+  clan player isalready banned: '%tag% <red>Este jugador ya ha sido expulsado del Clan.'
+  clan player isnot banned: '%tag% <red>Este jugador no ha sido expulsado del Clan.'
+  clan player is banned: '%tag% <red>Este jugador está expulsado del clan y no puede recibir invitaciones.'
+  clan player is banned gui: <red>El jugador queda expulsado del clan.
+  clan player error unban: '%tag% <red>Se ha producido un error al desbanear a este jugador'
+  clan player error unban gui: <red>Error al desbanear a un jugador.
+  clan player error ban: '%tag% <red>Se ha producido un error al banear a este jugador'
+  clan player error ban gui: <red>Error al banear al jugador.
+  clan player success ban: '%tag% <green>El jugador ha sido expulsado con éxito del clan.'
+  clan player success ban gui: <green>El jugador ha sido baneado con éxito.
+  clan player success unban: '%tag% <green>El jugador ha sido desbaneado del clan.'
+  clan player success unban gui: <green>El jugador ha sido desbaneado con éxito.
+  clan player are banned: '%tag% <red>Estás expulsado de este Clan y no puedes unirte a los miembros.'
+  clan player error change nickname: '%tag% <red>Error al cambiar el nickname.'
+  clan player error change nickname gui: <red>Error al cambiar el nickname.
+  clan player changed nickname: '%tag% <green>Nickname cambiado con éxito!'
+  clan player changed nickname gui: <green>Nickname cambiado con éxito!
+  clan player nickname default: '%tag% <red>Tu nickname es el de default.'
+  clan player nickname default gui: <red>Nickname ya está default.
+  clan reward level: '%tag% <yellow>Has obtenido recompensas porque tu clan ha alcanzado el nivel %num%'
+  clan max members: <red>Este Clan ya tiene el máximo número de jugadores.
+  clan max members level: '%tag% <red>Este clan ya tiene el número máximo de jugadores para el nivel actual.'
+  clan player kicked out: '%tag% <green>Te han expulsado del clan <aqua>%clan% <red>por <green>%clan_leader%'
+  clan player kicked outby: '%tag% <dark_red>%player% <yellow>has sido expulsado del clan por <green>%clan_leader%'
+  clan tag equals: '%tag% <red>Sin cambios TAG, parece ser el mismo.'
+  clan name equals: '%tag% <red>Sin cambios NAME, parece ser el mismo.'
+  clan already rival: '%tag% <red>Este Clan ya es un rival.'
+  clan is ally: '%tag% <red>Este Clan ya es un aliado.'
+  clan rival error remove: '%tag% <red>Error al eliminar rival.'
+  clan dont rival: '%tag% <red>Este Clan no es un rival.'
+  clan new ally: '%tag% <red>! <yellow>Se formó una nueva alianza con el clan <green>%clan_tag%'
+  clan removed ally: '%tag% <red>! <yellow>La alianza con el clan <green>%clan_tag% <yellow>ha sido eliminada.'
+  clan one removed ally: '%tag% <red>! <yellow>Se ha eliminado una alianza.'
+  clan one removed rival: '%tag% <red>! <yellow>Se ha eliminado un rival.'
+  clan created: '%tag% <red>! <yellow>Un nuevo Clan <aqua>%clan_tag% <yellow>fue creado por <green>%player%.'
+  clan deleted: '%tag% <red>! <yellow>El Clan <aqua>%clan_tag% <yellow>fue eliminado por <green>%player%.'
+  clan deleted small: <red><strikethrough>Eliminado
+  clan ff changed: '%tag% <red>! <yellow>El fuego amigo es <aqua>%value%.'
+  clan globalff changed: '%tag% <red>! <yellow>El fuego amigo global es <aqua>%value%.'
+  clan new join: '%tag% <red>! <yellow>El jugador <green>%player% <yellow>entró en el Clan.'
+  clan new kick: '%tag% <red>! <yellow>El jugador <green>%player% <yellow>fue expulsado del Clan.'
+  clan new leave: '%tag% <red>! <red>El jugador <green>%player% <yellow>abandonó el <green>%clan_tag% <red>Clan.'
+  clan new rival: '%tag% <red>! <yellow>Nueva rivalidad con el Clan <green>%clan_tag%'
+  clan new rival removed: '%tag% <red>! <yellow>La rivalidad con el clan <green>%clan_tag% <yellow>ha sido disuelta.'
+  clan new leader: '%tag% <red>! <yellow>Nuevo líder del clan <green>%clan_tag% <yellow>es <green>%player%'
+  clan rival removed: '%tag% <red>! <yellow>La rivalidad con el Clan <green>%clan_tag% <yellow>fue deshecho.'
+  clan verify changed: '%tag% <red>! <yellow>El clan pasó a llamarse <green>%value%.'
+  clan new promote: '%tag% <red>! <yellow>El jugador <green>%player% <yellow>fue ascendido a <aqua>%role_formated%.'
+  clan new demote: '%tag% <red>! <red>El jugador <green>%player% <yellow>fue degradado.'
+  clan tag blacklist: '%tag% <red>Este TAG no se puede utilizar en Clanes.'
+  clan changed settings: '%tag% <green>Se ha modificado la configuración del clan.'
+  clan changed settings gui: <green>Se han modificado los ajustes.
+  clan sync settings gui: <green>Sincronizando permisos...
+  clan settings warinvite: <aqua>Invitación de guerra
+  clan settings allysharedchat: <aqua>Chat compartido con Aliados
+  clan settings joinleave: <aqua>Entrar y Salir
+  clan settings allysharedhome: <aqua>Homes alidas compartidas
   clan settings clanff: <aqua>Clan FF
-  clan settings opened: <aqua>Clan open to all
-  clan settings publichomes: <aqua>Homes as public
-  clan delete error gui: <dark_red>Error deleting!
-  clan no actions: '%tag% <red>There are no outstanding actions to cancel.'
-  clan actions expired: '%tag% <red>The time for action is over.'
-  clan point reason level change: Clan level change
-  clan point reason no reason: No reason
-  banner delete error gui: <red>Error deleting!
-  banner delete success gui: <aqua>Successfully deleted!
-  banner delete error: '%tag% <red>An error occurred when deleting.'
-  banner delete success: '%tag% <green>Banner successfully deleted!'
-  banner empty: '%tag% <red>Your Clan has no Banner!'
-  banner empty gui: <red>Your Clan has no Banner!
-  banner empty item: <red>The item must be a banner!
-  banner not acceptable: '%tag% <red>This item is not acceptable as a Clan banner.'
-  banner not acceptable gui: <red>Item is not acceptable.
-  banner not banner: '%tag% <red>The item you are holding must be a banner'
-  banner hand empty: '%tag% <red>You need to be holding an item.'
-  banner upload error gui: <red>Error saving banner.
-  banner upload success gui: <aqua>New banner saved!
-  banner upload success: '%tag% <aqua>The new clan banner has been saved!'
+  clan settings opened: <aqua>Clan abierto a todos
+  clan settings publichomes: <aqua>Homes publicas
+  clan delete error gui: <dark_red>¡Error al eliminar!
+  clan no actions: '%tag% <red>No hay acciones pendientes que cancelar.'
+  clan actions expired: '%tag% <red>Se acabó el tiempo de la acción.'
+  clan point reason level change: Cambio de nivel de clan
+  clan point reason no reason: Ninguna razón
+  banner delete error gui: <red>¡Error al eliminar!
+  banner delete success gui: <aqua>¡Eliminado con éxito!
+  banner delete error: '%tag% <red>Se ha producido un error al eliminar.'
+  banner delete success: '%tag% <green>¡Banner eliminado con éxito!'
+  banner empty: '%tag% <red>¡Tu clan no tiene Banner!'
+  banner empty gui: <red>¡Tu clan no tiene Banner!
+  banner empty item: <red>El item debe ser un banner!
+  banner not acceptable: '%tag% <red>Este item no es aceptable para un Clan banner.'
+  banner not acceptable gui: <red>El Item o es aceptable.
+  banner not banner: '%tag% <red>El item que sostiene debe ser un Banner'
+  banner hand empty: '%tag% <red>Tiene que tener en la mano un item.'
+  banner upload error gui: <red>Error al guardar banner.
+  banner upload success gui: <aqua>Nuevo banner giardado!
+  banner upload success: '%tag% <aqua>El banner del clan fue guardado!'
   help uclan header: <blue><bold>Admin Clan Help:</bold> <gray>(%page%/%pages%)
   help clan header: '<blue><bold>Help with Clan:</bold> <gray>(%page%/%pages%) <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
   help clan header subcommand: '<newline><blue><bold>Help with subcommands:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
@@ -153,10 +153,6 @@ LANGUAGE:
   help clan rival list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Click to view.''> <gray>- %uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Level: <green>%uclans_level% | <white>Leader: <green>%uclans_leader% | <white>Creation: <green>%uclans_creation_date_formated%</hover></click>'
   help clan member_search list header: '<newline>%uclans_tag_color%<blue><bold> search member List:'
   help clan member_search list format: '<click:suggest_command:"/{_clan} {_member} invite %uclans_player_realname% "><hover:show_text:''<green>Click to invite.''> <gray>- %uclans_player_role_formated% <green>%uclans_player_nickname% <gray>| <white>Last see: <green>%uclans_player_lastsee_formated% | <white>KDR: <green>%uclans_player_kdr% <yellow>[Invite]</hover></click>'
-  help logger header: <blue><bold>Clan Logger:</bold> <gray>%time% <gray>| <gray>(%page%/%pages%)
-  help logger format: '<hover:show_text:''<green>%uclans_logger:{id}:text%''><gray>- <white>Origin: <aqua>%uclans_logger:{id}:plugin%<gray> | <white>Date: <aqua>%uclans_logger:{id}:date% <dark_gray>(Expires: %uclans_logger:{id}:expires%)<newline>  <aqua>%uclans_logger:{id}:text%</hover>'
-  help logger clear success gui: <green>Successfully cleared log
-  help logger clear error gui: <red>Error clearing the log
   help clan banned list header: '<newline>%uclans_tag_color%<blue><bold> banned member List:'
   help clan banned list format: '<click:suggest_command:"/{_clan} {_profile} {_view} %uclans_player_realname% "><hover:show_text:''<green>Click to view.''> <gray>- <green>%uclans_player_nickname% <gray> | <white>KDR: <green>%uclans_player_kdr%</hover></click>'
   help clan banner list header: '<newline>%uclans_tag_color%<blue><bold> banner:'
@@ -224,22 +220,19 @@ LANGUAGE:
   - ' <white>Level: <aqua>%uclans_level% <gray>(%uclans_max_level_reached% max.)'
   - ' <white>Points: <aqua>%uclans_points%'
   - ''
-  help info empty: <red>Nothing here
+  help info empty: <red>Nada aquí
   help admin pagination prev: <click:run_command:"/uclan help %page%"><hover:show_text:'<green>Click to go back.'><aqua><< Previous</hover></click>
   help admin pagination next: <click:run_command:"/uclan help %page%"><hover:show_text:'<green>Click to advance.'><aqua>Next >></hover></click>
   help admin pagination separer: <gray>|
   help player pagination prev: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<green>Click to go back.'><aqua><< Previous</hover></click>
   help player pagination next: <click:run_command:"/{_clan} {_help} %page%"><hover:show_text:'<green>Click to advance.'><aqua>Next >></hover></click>
   help player pagination separer: <gray>|
-  help player logger prev: <click:run_command:"/{_clan} {_logger} {_view} %time% %page%"><hover:show_text:'<green>Click to go back.'><aqua><< Previous</hover></click>
-  help player logger next: <click:run_command:"/{_clan} {_logger} {_view} %time% %page%"><hover:show_text:'<green>Click to advance.'><aqua>Next >></hover></click>
-  help player logger separer: <gray>|
-  translaction players: players
+  translaction players: jugadores
   translaction is on: <green>Online
   translaction is off: <red>Offline
-  translaction yes: <aqua>YES
+  translaction yes: <aqua>SI
   translaction no: <red>NO
-  translaction no clan: <red>No Clan
+  translaction no clan: <red>No CLan
   translaction kill: Kill
   translaction death: Death
   translaction kdr: KDR
@@ -250,49 +243,49 @@ LANGUAGE:
   translaction all: All
   translaction point: Point
   translaction patent: Patent
-  clan dont leader: '%tag% <red>You are not the leader of the Clan.'
-  clan dont permission role: '%tag% <red>Your current role you cannot do this.'
-  player no invitation: '%tag% <red>You have no invites for this clan.'
-  clan dont mod and leader: '%tag% <red>You are not the leader or Mod of the Clan.'
-  clan dont mod and leader gui: <red>Requires <dark_red>Leader <red>or <dark_red>Mod<red>!
-  player dont mod: '%tag% <red>This player is not a moderator.'
-  player is mod: '%tag% <red>This player is already a moderator.'
-  player offline: '%tag% <red>The player is offline or does not exist!'
-  player cannot expel leader: '%tag% <red>You cannot expel the Clan Leader.'
-  player cannot expel mod: '%tag% <red>A moderator cannot expel another from the same position.'
-  player is clan leader: '%tag% <red>You are the Clan Leader, to leave use <aqua>/{_clan} {_disband}<red> and you will delete the Clan ...'
-  you donthave clan: '%tag% <red>You dont have a Clan.'
-  player donthave clan: '%tag% <red>This player does not have a clan.'
-  player donthave profile: '%tag% <red>This player does not have a profile.'
-  player already participating: '%tag% <red>You are already participating in this clan!.'
-  player new invite: '%tag% <green>You have received a new invitation to join a clan. you can accept using <aqua>/{_clan} {_join} <red><TAG> <green>or see the list in <aqua>/{_clan} {_profile} {_invites}'
-  player have clan: '%tag% <red>You already have a clan.'
-  player has clan: '%tag% <red>This player already has a clan.'
-  player is you: '%tag% <red>This player is you.'
-  player dont have money: '%tag% <red>You need to <green>%uclans_money_currency%%amount% <red>for this.'
-  player dont have money gui: <red>You need to <green>%uclans_money_currency%%amount%
-  player debited money: '%tag% <green>It was debited <green>%amount% <yellow>your account.'
-  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>has been deposited in your account.'
-  player invitation player expired: '%tag% <red>Your player invite has expired and there has been no response.'
-  player invitation expired: '%tag% <red>Your invitation to join the Clan <white>%clan_tag% <red>has expired.'
-  player invitation daniel: '%tag% <red>The player denied the invitation.'
-  player already invited gui: <red>Invitation for player in progress!
-  player invitation error: '%tag% <red>There was an error sending the invite.'
-  player invitation error gui: <red>Error to sending the invite.
-  player invitation success: '%tag% <red>The invitation was sent successfully.'
-  player invitation success gui: <green>Invitation sent successfully!
-  gui error: '%tag% <red>This menu contains an error and cannot be opened'
-  player teleport dont move: '%tag% <green>Preparing teleport, do not move by %sec% sec.'
-  player teleport moved: '%tag% <red>You moved and the teleport was canceled!!!'
-  player teleport true: '%tag% <green>You were teleported!'
-  player teleport false: '%tag% <red>You have not been teleported for any mistake!'
-  unknown error: '%tag% <red>An unknown error occurred with this, please try again!'
-  nothing here: <red>Nothing here.
+  clan dont leader: '%tag% <red>No eres el líder del Clan.'
+  clan dont permission role: '%tag% <red>En tu rango actual no puedes hacerlo.'
+  player no invitation: '%tag% <red>No tienes invitaciones para este clan.'
+  clan dont mod and leader: '%tag% <red>Usted no es el líder o Mod del Clan.'
+  clan dont mod and leader gui: <red>Requiere <dark_red>Líder <red>de <dark_red>Mod<red>!
+  player dont mod: '%tag% <red>Este jugador no es moderador.'
+  player is mod: '%tag% <red>Este jugador ya es moderador.'
+  player offline: '%tag% <red>El jugador está desconectado o no existe!'
+  player cannot expel leader: '%tag% <red>No se puede expulsar al Líder del Clan.'
+  player cannot expel mod: '%tag% <red>Un moderador no puede expulsar a otro del mismo rango.'
+  player is clan leader: '%tag% <red>Usted es el líder del clan, para dejar uso <aqua>/{_clan} {_disband}<red> y se eliminará el Clan ...'
+  you donthave clan: '%tag% <red>Tu no tienes un Clan.'
+  player donthave clan: '%tag% <red>Este jugador no tiene un clan.'
+  player donthave profile: '%tag% <red>Este jugador no tiene un perfil.'
+  player already participating: '%tag% <red>¡Ya estás participando en este clan!.'
+  player new invite: '%tag% <green>Has recibido una nueva invitación para unirte a un clan. puedes aceptarla usando <aqua>/{_clan} {_join} <red><TAG> <green>o ver la lista en <aqua>/{_clan} {_profile} {_invites}'
+  player have clan: '%tag% <red>Ya tienes un clan.'
+  player has clan: '%tag% <red>Este jugador ya tiene un clan.'
+  player is you: '%tag% <red>Este jugador eres tú.'
+  player dont have money: '%tag% <red>Necesita <green>%uclans_money_currency%%amount% <red>para esto.'
+  player dont have money gui: <red>Necesita <green>%uclans_money_currency%%amount%
+  player debited money: '%tag% <green>Se cargó en cuenta <green>%amount% <yellow>su cuenta.'
+  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>ha sido ingresado en su cuenta.'
+  player invitation player expired: '%tag% <red>Tu invitación de jugador ha caducado y no ha habido respuesta.'
+  player invitation expired: '%tag% <red>Su invitación a unirse al Clan <white>%clan_tag% <red>ha caducado.'
+  player invitation daniel: '%tag% <red>El jugador negó la invitación.'
+  player already invited gui: <red>¡Invitación para jugador en curso!!
+  player invitation error: '%tag% <red>Se ha producido un error al enviar la invitación.'
+  player invitation error gui: <red>Error al enviar la invitación.
+  player invitation success: '%tag% <red>La invitación se ha enviado correctamente.'
+  player invitation success gui: <green>¡Invitación enviada correctamente!
+  gui error: '%tag% <red>Este menú contiene un error y no puede abrirse'
+  player teleport dont move: '%tag% <green>Preparar el teletransporte, no moverse por %sec% sec.'
+  player teleport moved: '%tag% <red>¡¡¡Te moviste y el teletransporte fue cancelado!!!'
+  player teleport true: '%tag% <green>¡Has sido teletransportado!'
+  player teleport false: '%tag% <red>¡No has sido teletransportado por ningún error!'
+  unknown error: '%tag% <red>Se ha producido un error desconocido, inténtelo de nuevo.'
+  nothing here: <red>Nada Aqui
   clan empty name: <red><Without name!>
   clan empty desc: <red><Without description!>
-  disabled function: '%tag% <red>This function/addon appears to be off.'
-  disabled function gui: <red>This function is turned off.
-  admin opened clanchest: '%tag% <red>An admin opened the clan chest.'
+  disabled function: '%tag% <red>Esta función/addon parece estar desactivada.'
+  disabled function gui: <red>Esta función está desactivada.
+  admin opened clanchest: '%tag% <red>Un administrador abrió el cofre del clan.'
   top kdr format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Kdr: <aqua>%uclans_clan_kdr%'
   top kill format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Kills: <aqua>%uclans_clan_kills%'
   top death format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Deaths: <aqua>%uclans_clan_deaths%'
@@ -301,72 +294,72 @@ LANGUAGE:
   top level format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>LV: <aqua>%uclans_level%'
   top war format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <green>%uclans_clan_war_win%<gray>/<dark_red>%uclans_clan_war_lose%'
   top point format: '<aqua>%num%: <gray>| <green>%uclans_tag_color% <gray>| <white>Point: <aqua>%uclans_points%'
-  clan new balance: '%tag% <green>The banks new balance sheet is <green>%uclans_money_currency%%uclans_bank_balance%<yellow>, changed by <green>%uclans_player%'
-  player reseted kdr: '%tag% <green>The player <green>%player% <yellow>had the KDR reset!'
-  clan reseted kdr: '%tag% <green>The clan <green>%uclans_tag_color% <yellow>had the KDR reset!'
-  value greater than zero: '%tag% <red>Value must be greater than zero'
-  clan patent change: '%tag% <yellow>The <aqua>%uclans_tag_color% <yellow>clan changed patent to <aqua>%uclans_patent_formated%'
-  clan not have levels: '%tag% <red>Clan does not have levels to remove'
-  clan has only levels: '%tag% <red>The clan has only <aqua>%num% <red>levels'
-  command in cooldown: '%tag% <red>Wait for <aqua>%sec% <red>to use this command again.'
-  error length: '%tag% <red>The value must have a size between <aqua>%min% <red>and <aqua>%max%'
+  clan new balance: '%tag% <green>El nuevo balance de los bancos es <green>%uclans_money_currency%%uclans_bank_balance%<yellow>, changed by <green>%uclans_player%'
+  player reseted kdr: '%tag% <green>El jugador <green>%player% <yellow>el KDR fue reiniciado!'
+  clan reseted kdr: '%tag% <green>El clan <green>%uclans_tag_color% <yellow>el KDR fue reiniciado!'
+  value greater than zero: '%tag% <red>El valor debe ser superior a cero'
+  clan patent change: '%tag% <yellow>El <aqua>%uclans_tag_color% <yellow>clan cambió la patente por <aqua>%uclans_patent_formated%'
+  clan not have levels: '%tag% <red>Clan no tiene niveles para eliminar'
+  clan has only levels: '%tag% <red>El clan sólo tiene <aqua>%num% <red>levels'
+  command in cooldown: '%tag% <red>Espere a que <aqua>%sec% <red>para volver a utilizar este comando.'
+  error length: '%tag% <red>El valor debe tener un tamaño comprendido entre <aqua>%min% <red>y <aqua>%max%'
   state true: <green>ENABLED
   state false: <red>DISABLED
-  accept type: '%tag% <red>The type is invalid, use: <aqua>%types%'
-  clan regroup invite expired: '%tag% <red>The invitation to regroup has expired!'
-  clan regroup invite doesnot exists: '%tag% <red>There is no regroup request sent.'
-  clan regroup invite already exists: '%tag% <red>There is already a regroup request sent.'
-  clan regroup invite deny: '%tag% <red>The player <green>%player% <red>denied your request!'
-  clan regroup invite accept: '%tag% <red>The player <green>%player% <yellow>accepted your request!'
-  clan regroup invite already denied: '%tag% <red>You already denied the request.'
-  clan regroup invite already accepted: '%tag% <red>You already accepted the request.'
-  clan has no members: '%tag% <red>Your clan has no members.'
-  clan rival remove already invited: '%tag% <red>There is already a peace request from your clan or another one in progress to this clan, wait and try again!'
-  clan rival remove error: '%tag% <red>There was an error sending the request!'
-  clan rival remove moderation offline: '%tag% <red>There are no moderators or online leaders in the other clan.'
-  clan rival remove sended: '%tag% <green>Peace request sent, wait for the clan to accept or deny.'
-  clan rival remove not found: '%tag% <red>There are no peace requests.'
-  clan rival remove deny: '%tag% <red>You denied the request to remove the rivalry.'
-  clan rival remove deny received: '%tag% <red>The other clan denied the request for peace.'
-  clan rival remove expired: '%tag% <red>The invitation to peace has expired!'
-  clan ally invite not found: '%tag% <red>There are no invitations for allies.'
-  clan ally invite deny: '%tag% <red>You have denied the invitation to the alliance.'
-  clan ally invite already invited: '%tag% <red>There is already an invitation from your clan or another one in progress to this clan, wait and try again!'
-  clan ally invite error: '%tag% <red>There was an error sending the request!'
-  clan ally invite moderation offline: '%tag% <red>There are no moderators or online leaders in the other clan.'
-  clan ally invite sended: '%tag% <green>Invitation sent, wait for the clan to accept or deny.'
-  clan ally invite expired: '%tag% <red>The invitation to alliance has expired!'
-  clan ally invite deny received: '%tag% <red>The other clan denied the request for an alliance.'
-  clan not have points: '%tag% <red>Clan does not have points to remove'
-  clan has only points: '%tag% <red>The clan has only <aqua>%num% <red>points'
-  clan ally in limit: '%tag% <red>Your clan has reached the allies limit and needs to gain levels to unlock more allies, Your clans current limit is <aqua>%uclans_limit_ally%'
-  clan rival in limit: '%tag% <red>Your clan has reached the rivalries limit and needs to gain levels to unlock more rivalries, Your clans current limit is <aqua>%uclans_limit_rival%'
-  clan create error: '%tag% <red>There was an error creating.'
-  clan create success: '%tag% <green>New Clan created successfully!'
-  command deprecated: '%tag% <red>This command has been deprecated and can be removed from the settings'
-  chan does not exists: '%tag% <red>This clan does not exist'
-  need level min: '%tag% <red>Your Clan must have at least <aqua>%level% <red>for this!'
-  player_leave: '%tag% <red>Member <aqua>%player% <red>has logged out.'
-  player_join: '%tag% <green>Member <aqua>%player% <green>has just joined.'
-  home name without space: '%tag% <red>Name cannot contain spaces.'
-  home already exists: '%tag% <red>There is already a man with this name.'
-  home create success gui: <green>New home created!
-  home no exists gui: <red>This home has an error.
-  home delete error gui: <red>There was an error deleting.
-  home delete success: '%tag% <green>Home successfully deleted!'
-  home delete success gui: <green>Successfully deleted!
-  new create home: '%tag% <green>A new clan home has been created on the server <aqua>%server% <green>with the name <aqua>%name%'
-  home removed: '%tag% <red>The home <aqua>%name% <red>of the server <aqua>%server% <red>of the clan has been deleted'
-  home limit: <red>This is the limit (%limit%) for your Clan!
-  home limit reached: '%tag% <red>The limit for your clan is %homes% homes.'
-  new point received: '%tag% <green>Your clan received <aqua>%points% points<green>, and now has <aqua>%totalpoints% points (%reason%)'
-  new point removed: '%tag% <red>Your clan lost <aqua>%points% points<red>, and now has <aqua>%totalpoints% points (%reason%)'
-  new point set: '%tag% <green>Your clan points have been changed to <aqua>%totalpoints% points (%reason%)'
+  accept type: '%tag% <red>El type no es válido, utilizar: <aqua>%types%'
+  clan regroup invite expired: '%tag% <red>¡La invitación a reagruparse ha expirado!'
+  clan regroup invite doesnot exists: '%tag% <red>No se envía ninguna solicitud de reagrupamiento.'
+  clan regroup invite already exists: '%tag% <red>Ya se ha enviado una solicitud de reagrupamiento.'
+  clan regroup invite deny: '%tag% <red>El jugador <green>%player% <red>¡denego su petición!'
+  clan regroup invite accept: '%tag% <red>El jugador <green>%player% <yellow>ha aceptado su solicitud.'
+  clan regroup invite already denied: '%tag% <red>Ya ha denegado la solicitud.'
+  clan regroup invite already accepted: '%tag% <red>Ya ha aceptado la solicitud.'
+  clan has no members: '%tag% <red>Tu clan no tiene miembros.'
+  clan rival remove already invited: '%tag% <red>Ya hay una petición de paz de tu clan o de otro en curso a este clan, ¡espera y vuelve a intentarlo!'
+  clan rival remove error: '%tag% <red>Se ha producido un error al enviar la solicitud.'
+  clan rival remove moderation offline: '%tag% <red>En el otro clan no hay moderadores ni líderes en línea.'
+  clan rival remove sended: '%tag% <green>Petición de paz enviada, espera a que el clan acepte o deniegue.'
+  clan rival remove not found: '%tag% <red>No hay peticiones de paz.'
+  clan rival remove deny: '%tag% <red>Denegó la petición de eliminar la rivalidad.'
+  clan rival remove deny received: '%tag% <red>El otro clan denegó la petición de paz.'
+  clan rival remove expired: '%tag% <red>¡La invitación a la paz ha expirado!'
+  clan ally invite not found: '%tag% <red>No hay invitaciones para aliados.'
+  clan ally invite deny: '%tag% <red>Ha rechazado la invitación a la alianza.'
+  clan ally invite already invited: '%tag% <red>Ya hay una invitación de tu clan o de otro en curso a este clan, ¡espera y vuelve a intentarlo!'
+  clan ally invite error: '%tag% <red>Se ha producido un error al enviar la solicitud.'
+  clan ally invite moderation offline: '%tag% <red>En el otro clan no hay moderadores ni líderes en línea.'
+  clan ally invite sended: '%tag% <green>Invitación enviada, espera a que el clan acepte o rechace.'
+  clan ally invite expired: '%tag% <red>¡La invitación a la alianza ha expirado!'
+  clan ally invite deny received: '%tag% <red>El otro clan denegó la solicitud de alianza.'
+  clan not have points: '%tag% <red>Clan no tiene puntos para eliminar'
+  clan has only points: '%tag% <red>El clan sólo tiene <aqua>%num% <red>points'
+  clan ally in limit: '%tag% <red>Tu clan ha alcanzado el límite de aliados y necesita ganar niveles para desbloquear más aliados, El límite actual de tu clan es <aqua>%uclans_limit_ally%'
+  clan rival in limit: '%tag% <red>Tu clan ha alcanzado el límite de rivalidades y necesita ganar niveles para desbloquear más rivalidades, El límite actual de tu clan es <aqua>%uclans_limit_rival%'
+  clan create error: '%tag% <red>Se ha producido un error al crear.'
+  clan create success: '%tag% <green>¡Nuevo clan creado con éxito!'
+  command deprecated: '%tag% <red>Este comando ha quedado obsoleto y puede eliminarse de la configuración'
+  chan does not exists: '%tag% <red>Este clan no existe'
+  need level min: '%tag% <red>Tu Clan debe tener al menos <aqua>%level% <red>¡por esto!'
+  player_leave: '%tag% <red>Member <aqua>%player% <red>se ha desconectado.'
+  player_join: '%tag% <green>Member <aqua>%player% <green>acaba de unirse.'
+  home name without space: '%tag% <red>El nombre no puede contener espacios.'
+  home already exists: '%tag% <red>Ya hay un hombre con este nombre.'
+  home create success gui: <green>¡Nuevo home creado!
+  home no exists gui: <red>Esta home tiene un error.
+  home delete error gui: <red>Se ha producido un error al borrar.
+  home delete success: '%tag% <green>¡Home eliminada con éxito!'
+  home delete success gui: <green>Eliminado con éxito.
+  new create home: '%tag% <green>Se ha creado una nueva home del clan en el servidor <aqua>%server% <green>con el nombre <aqua>%name%'
+  home removed: '%tag% <red>El home <aqua>%name% <red>del servidor <aqua>%server% <red>del clan ha sido eliminado'
+  home limit: <red>Este es el límite (%limit%) para su Clan!
+  home limit reached: '%tag% <red>El límite para tu clan es %homes% homes.'
+  new point received: '%tag% <green>Su clan recibió <aqua>%points% points<green>, y ahora tiene <aqua>%totalpoints% points (%reason%)'
+  new point removed: '%tag% <red>Tu clan perdió <aqua>%points% points<red>, y ahora tiene <aqua>%totalpoints% points (%reason%)'
+  new point set: '%tag% <green>Tus puntos de clan han cambiado a <aqua>%totalpoints% points (%reason%)'
  
 # TRANSLATIONS OF GUI MENU FILES
  
 GUI:
-  General disband_confirm title: <red>Confirm deleting the Clan?
+  General disband_confirm title: <red>¿Confirmar la eliminación del Clan?
   General disband_confirm items fill name: ' '
   General disband_confirm items fill lore: [
     ]
@@ -378,7 +371,7 @@ GUI:
   General disband_confirm items cancel lore:
   - ''
   - ' <yellow>Click to cancel.'
-  General changeleader_confirm title: <red>Cconfirm changing the Clan Leader?
+  General changeleader_confirm title: <red>¿Confirma el cambio del Líder del Clan?
   General changeleader_confirm items fill name: ' '
   General changeleader_confirm items fill lore: [
     ]
@@ -397,20 +390,20 @@ GUI:
   General clan_homes items ally_homes name: <green>View Ally homes
   General clan_homes items ally_homes lore:
   - ''
-  - ' <yellow>Click to open.'
-  General clan_homes items create name: <green>Create a new Home
+  - ' <yellow>Click para abrir.'
+  General clan_homes items create name: <green>Crear un nuevo Home
   General clan_homes items create lore:
   - ''
-  - ' <yellow>Click to create.'
-  General clan_homes items back name: <red>Come back
+  - ' <yellow>Click para crear.'
+  General clan_homes items back name: <red>Vuelve
   General clan_homes items back lore:
   - ''
   - ' <yellow>Click to Come back.'
-  General clan_homes items next name: <green>Next page
+  General clan_homes items next name: <green>Página siguiente
   General clan_homes items next lore:
   - ''
   - ' <yellow>Click to proceed.'
-  General clan_homes items previous name: <green>Previous page
+  General clan_homes items previous name: <green>Página anterior
   General clan_homes items previous lore:
   - ''
   - ' <yellow>Click to Come back.'
@@ -423,8 +416,8 @@ GUI:
   - ' <gray>Name: <aqua>%uclans_home:{name}:name%'
   - ' <gray>Location: <aqua>%uclans_home:{name}:location%'
   - ''
-  - ' <yellow>Left-Click to teleport '
-  - ' <red>Right-Click to delete.'
+  - ' <yellow>Haz clic con el botón izquierdo para teletransportarte '
+  - ' <red>Haga clic con el botón derecho para eliminar.'
   General clan_homes items current visit name: <green>Home %uclans_home:{name}:name%
   General clan_homes items current visit lore:
   - ''
@@ -453,17 +446,17 @@ GUI:
     ]
   General noclan_home items commands name: <green>Command List and Help
   General noclan_home items commands lore:
-  - ' <yellow>Click to see the complete list'
+  - ' <yellow>Haga clic para ver la lista completa'
   - <yellow>of commands for Clans and Land.
   General noclan_home items clans name: <green>All Clans
   General noclan_home items clans lore:
-  - ' <yellow>Click to open the clan list menu.'
-  General noclan_home items create name: <red>You dont have a Clan
+  - ' <yellow>Haz clic para abrir el menú de la lista de clanes.'
+  General noclan_home items create name: <red>Tu no tienes un Clan
   General noclan_home items create lore:
-  - ' <yellow>Click to create a Clan.'
-  General noclan_home items profile name: <green>Your profile
+  - ' <yellow>Click para crear un Clan.'
+  General noclan_home items profile name: <green>Tu perfil
   General noclan_home items profile lore:
-  - ' <yellow>Click to open your profile'
+  - ' <yellow>Click para abrir tu perfil'
   General clan_home title: <blue>Clan Menu
   General clan_home items fill name: ' '
   General clan_home items fill lore: [
@@ -484,14 +477,7 @@ GUI:
   - ' <gray>Tag: <aqua>%uclans_tag_color%'
   - ' <gray>Desc: <aqua>%uclans_desc_color%'
   - ' '
-  - ' <yellow>Click to open a status list.'
-  General clan_home items logger name: <green>Clan logger
-  General clan_home items logger lore:
-  - ' <yellow>Clan happenings'
-  - ' <gray>'
-  - ' <gray>Amount: <green>%uclans_logger_amount%'
-  - ' '
-  - ' <yellow>Click to open.'
+  - ' <yellow>Haga clic para abrir una lista de estados.'
   General clan_home items banner name: <green>Clan Banner
   General clan_home items banner lore:
   - ' '
@@ -815,7 +801,7 @@ GUI:
   - ' <yellow>Click to toggle on and off to'
   - <yellow>making the homes public and
   - <yellow>visible to other clans.
-  General clan_actions items ff name: <green>Friendly Fire
+  General clan_actions items ff name: <green>Fire friend
   General clan_actions items ff lore:
   - ' '
   - ' <white>State: %uclans_actions_state:CLANFF%'
@@ -1263,7 +1249,7 @@ GUI:
   - ''
   - ' <yellow>Left-Click to accept.'
   - ' <red>Right-Click to deny.'
-  General banner_home title: <blue>Banner menu
+  General banner_home title: <blue><bold>Banner menu
   General banner_home items fill name: ' '
   General banner_home items fill lore: [
     ]
@@ -1304,7 +1290,7 @@ GUI:
   General banner_delete items cancel lore:
   - ''
   - ' <yellow>Click to cancel.'
-  General banner_upload title: <blue>Banner Upload
+  General banner_upload title: <blue><bold>Banner Upload
   General banner_upload items fill name: ' '
   General banner_upload items fill lore: [
     ]
@@ -1323,89 +1309,6 @@ GUI:
   General banner_upload items confirm lore:
   - ''
   - ' <yellow>Click here to save.'
-  General clan_logger title: <blue>Clan Logger <gray>| <green>{timer}
-  General clan_logger items fill name: ' '
-  General clan_logger items fill lore: [
-    ]
-  General clan_logger items fill2 name: ' '
-  General clan_logger items fill2 lore: [
-    ]
-  General clan_logger items current name: '<white>Origin:  <green>%uclans_logger:{id}:plugin%'
-  General clan_logger items current lore:
-  - ' '
-  - ' <white>Date: <aqua>%uclans_logger:{id}:date% <dark_gray>(Expires: %uclans_logger:{id}:expires%)'
-  - ' '
-  - ' <gray>- <yellow>%uclans_logger:{id}:text%'
-  General clan_logger items clear name: <green>Clear all log
-  General clan_logger items clear lore:
-  - ''
-  - ' <yellow>Click to clear.'
-  - ''
-  - <red>! This cannot be undone
-  General clan_logger items next name: <green>Next page
-  General clan_logger items next lore:
-  - ''
-  - ' <yellow>Click to proceed.'
-  General clan_logger items previous name: <green>Previous page
-  General clan_logger items previous lore:
-  - ''
-  - ' <yellow>Click to Come back.'
-  General clan_logger items back name: <red>Come back
-  General clan_logger items back lore:
-  - ''
-  - ' <yellow>Click to Come back.'
-  General clan_logger items filter_all name: '<green>Filter: <aqua>All'
-  General clan_logger items filter_all lore:
-  - ''
-  - ' <yellow>Click to apply filter.'
-  General clan_logger items filter_all_current name: '<green>Filter: <aqua>All'
-  General clan_logger items filter_all_current lore:
-  - ''
-  - ' <green>Current filter'
-  General clan_logger items filter_daily name: '<green>Filter: <aqua>Daily'
-  General clan_logger items filter_daily lore:
-  - ''
-  - ' <yellow>Click to apply filter.'
-  General clan_logger items filter_daily_current name: '<green>Filter: <aqua>Daily'
-  General clan_logger items filter_daily_current lore:
-  - ''
-  - ' <green>Current filter'
-  General clan_logger items filter_weekly name: '<green>Filter: <aqua>Weekly'
-  General clan_logger items filter_weekly lore:
-  - ''
-  - ' <yellow>Click to apply filter.'
-  General clan_logger items filter_weekly_current name: '<green>Filter: <aqua>Weekly'
-  General clan_logger items filter_weekly_current lore:
-  - ''
-  - ' <green>Current filter'
-  General clan_logger items filter_monthly name: '<green>Filter: <aqua>Monthly'
-  General clan_logger items filter_monthly lore:
-  - ''
-  - ' <yellow>Click to apply filter.'
-  General clan_logger items filter_monthly_current name: '<green>Filter: <aqua>Monthly'
-  General clan_logger items filter_monthly_current lore:
-  - ''
-  - ' <green>Current filter'
-  General clan_logger items filter_yearly name: '<green>Filter: <aqua>Yearly'
-  General clan_logger items filter_yearly lore:
-  - ''
-  - ' <yellow>Click to apply filter.'
-  General clan_logger items filter_yearly_current name: '<green>Filter: <aqua>Yearly'
-  General clan_logger items filter_yearly_current lore:
-  - ''
-  - ' <green>Current filter'
-  General clear_logger_confirm title: <red>Confirm clear clan log?
-  General clear_logger_confirm items fill name: ' '
-  General clear_logger_confirm items fill lore: [
-    ]
-  General clear_logger_confirm items confirm name: <green>Confirm
-  General clear_logger_confirm items confirm lore:
-  - ''
-  - ' <red>Click to confirm.'
-  General clear_logger_confirm items cancel name: <green>Cancel
-  General clear_logger_confirm items cancel lore:
-  - ''
-  - ' <yellow>Click to cancel.'
  
  
  # TRANSLATIONS OF THE COMMANDS
@@ -1488,7 +1391,7 @@ COMMANDS:
   clan ff show on_error: '%tag% <red>Error to use ff.'
   clan ff show on_usage: '%tag% <red>Use <aqua>/{_clan} {_ff}'
   clan modtag show on_help: <click:suggest_command:"/{_clan} {_modtag} "><hover:show_text:'<green>Click to change clan tag.'> <aqua>/{_clan} {_modtag} <red><newtag> <gray>-<yellow> Change clan tag.</hover></click>
-  clan modtag show on_success: '%tag% <green>Tag of Clan as changed to <aqua>%clan_tag%'
+  clan modtag show on_success: '%tag% <green>A tag of Clan as changed to <aqua>%clan_tag%'
   clan modtag show on_error: '%tag% <red>Error when changing the clan Tag.'
   clan modtag show on_usage: '%tag% <red>Use <aqua>/{_clan} {_modtag} <red><newtag>'
   clan list show on_help: <click:suggest_command:"/{_clan} {_list} "><hover:show_text:'<green>Click to list all clans.'> <aqua>/{_clan} {_list} <light_purple>(type) <light_purple>(-gui) <gray>-<yellow> List all clans.</hover></click>
@@ -1635,18 +1538,6 @@ COMMANDS:
   clan regroup subcommands deny show on_success: '%tag% <green>You have successfully danied the grouping invitation'
   clan regroup subcommands deny show on_error: '%tag% <red>An error occurred while denying the regroup invitation.'
   clan regroup subcommands deny show on_usage: '%tag% <red>Use <aqua>/{_clan} {_regroup} {_deny}'
-  clan logger show on_help: <click:run_command:"/{_clan} {_logger} "><hover:show_text:'<green>Click to expand logger commands.'> <aqua>/{_clan} {_logger} <gray>-<yellow> Clan Log.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
-  clan logger show on_success: '%tag% <green>Success.'
-  clan logger show on_error: '%tag% <red>Error.'
-  clan logger show on_usage: '%tag% <red>Use <aqua>/{_clan} {_logger}'
-  clan logger subcommands clear: <click:suggest_command:"/{_clan} {_logger} {_clear} "><hover:show_text:'<green>Click to clean clan log'> <aqua>/{_clan} {_logger} {_clear} <gray>-<yellow> Clear clan logger.</hover></click>
-  clan logger subcommands clear show on_success: '%tag% <green>The clan log has been successfully cleared.'
-  clan logger subcommands clear show on_error: '%tag% <red>There was an error clearing the clan log.'
-  clan logger subcommands clear show on_usage: '%tag% <red>Use <aqua>/{_clan} {_logger} {_clear}'
-  clan logger subcommands view: <click:suggest_command:"/{_clan} {_logger} {_view} "><hover:show_text:'<green>Click to view clan logger'> <aqua>/{_clan} {_logger} {_view} <light_purple>(time) <light_purple>(page) <light_purple>(-gui) <gray>-<yellow> View clan logger.</hover></click>
-  clan logger subcommands view show on_success: '%tag% <green>Success'
-  clan logger subcommands view show on_error: '%tag% <red>Error'
-  clan logger subcommands view show on_usage: '%tag% <red>Use <aqua>/{_clan} {_logger} {_view} <light_purple>(time) <light_purple>(page) <light_purple>(-gui)'
   clan ban show on_help: <click:suggest_command:"/{_clan} {_ban} "><hover:show_text:'<green>Click to ban a player.'> <aqua>/{_clan} {_ban} <red><player> <gray>-<yellow> Ban a player.</hover></click>
   clan ban show on_success: '%tag% <green>The player has been successfully banned.'
   clan ban show on_error: '%tag% <red>There was an error banning the player.'
@@ -1909,28 +1800,3 @@ CHAT:
       line: <red>! <yellow>Alliance request
       subline: <yellow>Accept or Deny?
     bossbar: <red><bold>!</bold> <yellow>Alliance request received <red>({time})
- 
- 
- # TRANSLATIONS OF THE LOGGER ACTIONS
- 
-#Variables: {player_other}, {clan_other}, {home} and uclans placeholders
-LOGGER:
-  CLANBANNERCHANGEEVENT: <yellow>Clan Banner changed to <green>%uclans_banner_material%<yellow>.
-  CLANHOMEDELETEEVENT: <yellow>Clan Home <green>{home} <yellow>has been deleted.
-  CLANHOMECREATEEVENT: <yellow>Clan Home called <green>%uclans_home:{home}:name% <yellow>has been created.
-  CLANRIVALADDEVENT: <yellow>A new rivalry was created with the clan <green>{clan_other}<yellow>.
-  CLANRIVALREMOVEEVENT: <yellow>Rivalry with clan <green>{clan_other} <yellow>has been dissolved.
-  CLANALLYREMOVEEVENT: <yellow>Alliance with clan <green>{clan_other} <yellow>has been removed.
-  CLANALLYADDEVENT: <yellow>A new alliance was formed with clan <green>{clan_other}<yellow>.
-  CLANLEADERCHANGEEVENT: <yellow>%uclans_leader_formated% <yellow>is now the new clan leader.
-  CLANVERIFYCHANGEEVENT: '<yellow>Clan verification is now: <white>%uclans_verified%'
-  PATENT_CLANLEVELEVENT: <yellow>Clan patent has now been changed to <green>%uclans_patent_formated%
-  CLANLEVELEVENT: '<yellow>Clan level changed to <green>%uclans_level% <dark_gray>(max: %uclans_max_level_reached%)'
-  CLANPOINTCHANGEEVENT: <yellow>Clan points have been changed to <green>%uclans_points%
-  CLANMODDESCEVENT: <yellow>Clan description has been changed to <green>%uclans_desc_nocolor%
-  CLANMODTAGEVENT: <yellow>Clan tag has been changed to <green>%uclans_tag_color%
-  CLANCREATEEVENT: <yellow>Clan was created.
-  CLANPLAYERLEAVEEVENT: <yellow>Player <green>%uclans_player_name% <yellow>has left the clan.
-  CLANPLAYERJOINEVENT: <yellow>Player <green>%uclans_player_name% <yellow>has joined the clan.
-  CLANPLAYERROLECHANGE: <yellow>Player <green>%uclans_player_name% <yellow>Role has now been changed to <green>%uclans_player_role_formated%
-  CLANPLAYERINVITERECEIVE: <yellow>Player <green>{player_other} <yellow>was invited to the clan by <green>%uclans_player_name%

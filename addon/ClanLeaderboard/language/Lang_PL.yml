@@ -1,0 +1,24 @@
+COMUM:
+  player dont have clan: '%tag% <red>Ten gracz nie ma klanu.'
+  gui error: '%tag% <red>To menu zawiera błąd i nie może być otwarte'
+  disabled function: '%tag% <red>Ta funkcja jest wyłączona lub wyłączona.'
+  chan does not exists: '%tag% <red>Ten klan nie istnieje'
+  command by player: '%tag% <red>Tę komendę musi użyć gracz.'
+  no permission: '%tag% <red>Nie masz uprawnień do tego.'
+  header help: '<green><bold>Komendy rankingowe admina:'
+  already exists: '%tag% <red>Na tej lokalizacji już jest tablica!'
+  sign look: '%tag% <red>Musisz patrzeć na tablicę lub manekin.'
+  enabled true: <green>Włączone
+  enabled false: <red>Wyłączone
+  type kill: Zabójstwa
+  type death: Śmierci
+  type kdr: KDR
+  type member: Członkowie
+  type bank: Bank
+  type level: Poziomy
+  type war: Wojny
+  type all: Data
+  type patent: Patent
+player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>zostało zdeponowane na twoim koncie.'
+player dont have money gui: <red>Musisz mieć <green>%uclans_money_currency%%amount%
+player debited money: '%tag% <yellow>Zostało pobrane <green>%amount% <yellow>z twojego konta.'
