@@ -252,6 +252,7 @@ LANGUAGE:
   translaction patent: Patent
   clan dont leader: '%tag% <red>You are not the leader of the Clan.'
   clan dont permission role: '%tag% <red>Your current role you cannot do this.'
+  clan dont permission role gui: <red>Current role cannot do this.
   player no invitation: '%tag% <red>You have no invites for this clan.'
   clan dont mod and leader: '%tag% <red>You are not the leader or Mod of the Clan.'
   clan dont mod and leader gui: <red>Requires <dark_red>Leader <red>or <dark_red>Mod<red>!
@@ -596,7 +597,7 @@ GUI:
   General player_settings items back name: <red>Back home
   General player_settings items back lore:
   - ' <yellow>Click to return to profile'
-  General clan_stats title: <blue>Stats <gray>| %uclans_tag_color%
+  General clan_stats title: <blue>Stats <gray>| %uclans_tag_nocolor%
   General clan_stats items fill name: ' '
   General clan_stats items fill lore: [
     ]
@@ -824,7 +825,7 @@ GUI:
   - ' '
   - ' <red>When activated, members can'
   - <red>attack each other.
-  General clan_actions items allysharedhome name: <green>Allied shared Home
+  General clan_actions items allysharedhome name: <green>Shared Alliance Home
   General clan_actions items allysharedhome lore:
   - ' '
   - ' <white>State: %uclans_actions_state:ALLYSHAREDHOME%'
@@ -833,7 +834,7 @@ GUI:
   - ' '
   - ' <red>When disabled, your clan''s homes will'
   - <red>not appear in the allied home list.
-  General clan_actions items allysharedchat name: <green>Allied shared chat
+  General clan_actions items allysharedchat name: <green>Shared Alliance Chat
   General clan_actions items allysharedchat lore:
   - ' '
   - ' <white>State: %uclans_actions_state:ALLYSHAREDCHAT%'
@@ -1100,7 +1101,7 @@ GUI:
   - ' <gray>Last Seen: <aqua>%uclans_player_lastsee_formated%'
   - ' '
   - ' <yellow>Click to invite.'
-  General rival title: <blue>List of rivals <gray>| %uclans_tag_color%
+  General rival title: <blue>List of rivals <gray>| %uclans_tag_nocolor%
   General rival items fill name: ' '
   General rival items fill lore: [
     ]
@@ -1128,7 +1129,7 @@ GUI:
   - ' <gray>Members: <aqua>%uclans_count_members%'
   - ''
   - ' <yellow>Right-Click to view info.'
-  General ally title: <blue>List of alliances <gray>| %uclans_tag_color%
+  General ally title: <blue>List of alliances <gray>| %uclans_tag_nocolor%
   General ally items fill name: ' '
   General ally items fill lore: [
     ]
@@ -1156,7 +1157,7 @@ GUI:
   - ' <gray>Members: <aqua>%uclans_count_members%'
   - ''
   - ' <yellow>Right-Click to view info.'
-  General members title: <blue>Member List <gray>| %uclans_tag_color%
+  General members title: <blue>Member List <gray>| %uclans_tag_nocolor%
   General members items fill name: ' '
   General members items fill lore: [
     ]
@@ -1185,7 +1186,7 @@ GUI:
   - ' <gray>Last Seen: <aqua>%uclans_player_lastsee_formated%'
   - ' '
   - ' <yellow>Click to view profile.'
-  General listhomes title: <blue>Home List <gray>| %uclans_tag_color%
+  General listhomes title: <blue>Home List <gray>| %uclans_tag_nocolor%
   General listhomes items fill name: ' '
   General listhomes items fill lore: [
     ]
