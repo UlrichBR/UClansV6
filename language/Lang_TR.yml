@@ -252,6 +252,7 @@ LANGUAGE:
   translaction patent: Patent
   clan dont leader: '%tag% <red>Klanın lideri değilsin.'
   clan dont permission role: '%tag% <red>Mevcut rolünüzle bunu yapamazsınız.'
+  clan dont permission role gui: <red>Geçerli rol bunu yapamaz.
   player no invitation: '%tag% <red>Bu klana hiç davetiniz yok.'
   clan dont mod and leader: '%tag% <red>Klanın lideri veya Modu değilsiniz.'
   clan dont mod and leader gui: <red>Gereklilikler <dark_red>Lider <red>veya <dark_red>Mod<red>!
@@ -596,7 +597,7 @@ GUI:
   General player_settings items back name: <red>Back home
   General player_settings items back lore:
   - ' <yellow>Profile dönmek için tıklayın'
-  General clan_stats title: <blue>İstatistikler <gray>| %uclans_tag_color%
+  General clan_stats title: <blue>Stats <gray>| %uclans_tag_nocolor%
   General clan_stats items fill name: ' '
   General clan_stats items fill lore: [
     ]
@@ -1100,7 +1101,7 @@ GUI:
   - ' <gray>Son görülme: <aqua>%uclans_player_lastsee_formated%'
   - ' '
   - ' <yellow>Davet etmek için tıklayın.'
-  General rival title: <blue>Düşman listesi <gray>| %uclans_tag_color%
+  General rival title: <blue>Düşman listesi <gray>| %uclans_tag_nocolor%
   General rival items fill name: ' '
   General rival items fill lore: [
     ]
@@ -1156,7 +1157,7 @@ GUI:
   - ' <gray>Üyeler: <aqua>%uclans_count_members%'
   - ''
   - ' <yellow>Bilgileri görüntülemek için sağ-tıklayın.'
-  General members title: <blue>Üye Listesi <gray>| %uclans_tag_color%
+  General members title: <blue>Üye Listesi <gray>| %uclans_tag_nocolor%
   General members items fill name: ' '
   General members items fill lore: [
     ]
@@ -1185,7 +1186,7 @@ GUI:
   - ' <gray>Son görülme: <aqua>%uclans_player_lastsee_formated%'
   - ' '
   - ' <yellow>Profili görüntülemek için tıklayın.'
-  General listhomes title: <blue>Ev Listesi <gray>| %uclans_tag_color%
+  General listhomes title: <blue>Ev Listesi <gray>| %uclans_tag_nocolor%
   General listhomes items fill name: ' '
   General listhomes items fill lore: [
     ]
