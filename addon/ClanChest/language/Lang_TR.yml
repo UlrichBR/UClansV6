@@ -32,6 +32,7 @@ COMUM:
   disabled world chest: '%tag% <red>Bu dünyada sandık kullanamazsınız'
   disabled region chest: '%tag% <red>Bu bölgede sandık kullanamazsınız'
   command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+  logger clanchestupgradeevent: <green>%uclans_player% <yellow>fazladan sandık satın aldı, şimdi <aqua>%amount% <yellow>sandığı var
 LANGUAGE:
   clan chest in limit: '%tag% <red>Klanınız sandık sınırına ulaştı ve daha fazla sandık sayfası açmak için seviye atlaması gerekiyor, Klanınızın mevcut sınırı <aqua>%uclans_limit_chest%'
  
