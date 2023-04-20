@@ -32,6 +32,7 @@ COMUM:
   disabled world chest: '%tag% <red>You cannot use chests in this world'
   disabled region chest: '%tag% <red>You cannot use chests in this region'
   command by player: '%tag% <red>This command must be used by a player.'
+  logger clanchestupgradeevent: <green>%uclans_player% <yellow>bought extra chests, now has <aqua>%amount% chest(s)
 LANGUAGE:
   clan chest in limit: '%tag% <red>Your clan has reached the chest limit and needs to gain levels to unlock more chest pages, Your clans current limit is <aqua>%uclans_limit_chest%'
  
