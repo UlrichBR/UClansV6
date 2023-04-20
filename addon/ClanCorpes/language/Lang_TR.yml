@@ -6,6 +6,7 @@ COMUM:
   chan does not exists: '%tag% <red>Bu klan mevcut değil'
   command by player: '%tag% <red>Bu klan mevcut değil.'
   no permission: '%tag% <red>Bunun için izniniz yok.'
+  logger clancorpsecaptureevent: <red>{player_other} , <green>%uclans_player% <yellow>adlı oyuncunun cesedini ele geçirdi
 Config:
   Corpses:
     catch:
