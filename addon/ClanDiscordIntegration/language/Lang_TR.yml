@@ -1,0 +1,7 @@
+COMUM:
+  you player has no clan: '%tag% &cBir klanınız yok, bir klan kurun veya bir klanın üyesi olun.'
+  disabled function: '%tag% &cBu işlev kapalı veya devre dışı.'
+  command by player: '%tag% &cBu komut bir oyuncu tarafından kullanılmalıdır.'
+  war start: '%clan1% ve %clan2% klanları arasındaki savaş %kit% kiti ve %arena% arenası ile başladı.'
+  war win: '%clan1% ve %clan2% klanları arasındaki savaş sona erdi, kazanan %clan_tag_winner% klanı oldu.'
+  war end: '%clan1% ve %clan2% klanları arasındaki savaş %arena% arenasında sona erdi.'

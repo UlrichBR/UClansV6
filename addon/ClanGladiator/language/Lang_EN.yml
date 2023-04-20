@@ -47,6 +47,9 @@ COMUM:
   arena state inwait: <yellow>Waiting...
   arena clan empty: <red>No Clan.
   arena not found: <dark_red>Arena Not Found!
+  logger clangladiatorwinevent: <yellow>The clan WON the Gladiator event.
+  logger clangladiatorloseevent: <red>The clan LOST the Gladiator event.
+  logger clangladiatorjoinevent: <yellow>The Clan entered the Gladiator event.
   arena event message join: '%tag% <green>The player %player% left the event, relocating: <gray>Clans: <aqua>%clans%<gray>, Players: <aqua>%players%'
   arena event message leave: '%tag% <red>The player %player% join the event, relocating: <gray>Clans: <aqua>%clans%<gray>, Players: <aqua>%players%'
   arena event message death: '%tag% <red>The player %player% died and exited the event, rearranging: <gray>Clans: <aqua>%clans%<gray>, Players: <aqua>%players%'

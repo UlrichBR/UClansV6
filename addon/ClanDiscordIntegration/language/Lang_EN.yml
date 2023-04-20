@@ -1,0 +1,7 @@
+COMUM:
+  you player has no clan: '%tag% &cYou dont have a clan, create one or be a member of a clan.'
+  disabled function: '%tag% &cThis function is turned off or disabled.'
+  command by player: '%tag% &cThis command must be used by a player.'
+  war start: The war between the %clan1% and %clan2% clans has started with kit %kit% and arena %arena%.
+  war win: The war between the %clan1% and %clan2% clans ended, the winner was the %clan_tag_winner% clan.
+  war end: The war between the %clan1% and %clan2% clans has ended with arena %arena%.
