@@ -6,6 +6,7 @@ COMUM:
   chan does not exists: '%tag% <red>This clan does not exist'
   command by player: '%tag% <red>This command must be used by a player.'
   no permission: '%tag% <red>You dont have permissions for this.'
+  logger clancorpsecaptureevent: <red>{player_other} <yellow>captured the corpse of <green>%uclans_player%
 Config:
   Corpses:
     catch:

@@ -22,6 +22,8 @@ COMUM:
   bank need: '%tag% <red>Klan bankasında <green>%uclans_money_currency%%amount% <red>yok'
   bank need gui: <red>Bankanın <green>%uclans_money_currency%%amount% <red>ihtiyacı var
   bank view: '%tag% <yellow>Klan bankasında artık <green>%uclans_money_currency%%amount% <yellow>var'
+  logger clanbankwithdrawevent: <red><bold>-</bold> <yellow>bankadan <green>%uclans_money_currency%%amount% <green>%uclans_player% <yellow>tarafından çekildi
+  logger clanbankaddevent: <green><bold>+</bold> <yellow>bankaya <green>%uclans_money_currency%%amount% <green>%uclans_player% tarafından eklendi
 GUI:
   Bank home_bank title: <blue>Banka <gray>| <aqua>%uclans_tag_color%
   Bank home_bank items fill name: ' '

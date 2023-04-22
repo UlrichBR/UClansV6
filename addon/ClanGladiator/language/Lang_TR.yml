@@ -47,6 +47,9 @@ COMUM:
   arena state inwait: <yellow>Bekleniyor...
   arena clan empty: <red>Klan yok.
   arena not found: <dark_red>Arena Bulunamadı!
+  logger clangladiatorwinevent: <yellow>Klan, Gladyatör etkinliğini KAZANDI.
+  logger clangladiatorloseevent: <red>Klan, Gladyatör etkinliğini KAYBETTİ.
+  logger clangladiatorjoinevent: <yellow>Klan, Gladyatör etkinliğine girdi.
   arena event message join: '%tag% <green>%player% adlı oyuncu etkinlikten ayrıldı, relocating: <gray>Klanlar: <aqua>%clans%<gray>, Oyuncular: <aqua>%players%'
   arena event message leave: '%tag% <red>%player% adlı oyuncu etkinliğe katıldı, relocating: <gray>Klanlar: <aqua>%clans%<gray>, Oyuncular: <aqua>%players%'
   arena event message death: '%tag% <red>%player% oyuncusu öldü ve etkinlikten çıktı, rearranging: <gray>Klanlar: <aqua>%clans%<gray>, Oyuncular: <aqua>%players%'

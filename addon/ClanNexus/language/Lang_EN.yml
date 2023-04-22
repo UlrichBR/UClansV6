@@ -27,6 +27,7 @@ COMUM:
   nexus min members: '%tag% <red>This Nexus does not have an amount of members online to protect it.'
   nexus is nearby: '%tag% <red>You are trying to build too close to the nexus.'
   nexus feed error: '%tag% <red>An error occurred while feeding the nexus.'
+  nexus show error gui: <red>An error occurred.
   nexus feed success: '%tag% <green>The nexus was fed on <aqua>%life% <green>and <aqua>%amount% blocks was consumed.'
   nexus under attack true: <dark_red>UNDER ATTACK!
   nexus under attack false: <aqua>EVERYTHING IS PEACEFUL!
@@ -72,6 +73,7 @@ COMUM:
   nexus attack down bar: <gold>Nexus has been destroyed!
   nexus regenerated: '%tag% <green>Your clan Nexus has regenerated and is now active again, a %shield_time% minute shield is active on your land!'
   nexus regenerated bar: <green>Nexus has regenerated!
+  nexus delay nofeed: '%tag% <red>The nexus was recently attacked, wait %feed_time% seconds to feed the nexus.'
   nexus under attack nofeed: '%tag% <dark_red>The Nexus of your clan is being attacked'
   nexus under attack: '%tag% <dark_red>The Nexus of your clan is being attacked, if it is destroyed your land becomes vulnerable, run to protect your lands!'
   nexus under attack bar: <dark_red>Nexus under Attack!
@@ -79,6 +81,10 @@ COMUM:
   nexus shield down bar: <gold>Nexus shield has ended!
   nexus created: '%tag% <green>Clan Nexus was created, defend it to protect your land!!'
   nexus created bar: <green>The Nexus Was Created!
+  nexus tag: '%tag% <red>You are in combat with the nexus for <aqua>%tag_time% seconds<red>, if you log out you will be punished!'
+  nexus tag bar: <red>You are in combat with the nexus! <gray>(%tag_time%)
+  nexus untag: '%tag% <green>You are no longer in combat with the nexus.'
+  nexus untag bar: <green>Combat with the nexus finished
   nexus error delete gui: <red>Error when deleting.
   nexus error delete: '%tag% <red>There was an error deleting nexus, please try again.'
   nexus success delete: '%tag% <green>Clan Nexus Your clan has been successfully deleted.'
@@ -109,6 +115,8 @@ COMUM:
   header list: '<green>List of Nexus:'
   line list: '<green>%num% <gray>- <green>ID: <aqua>%id% <gray>- <green>Name: <aqua>%name%'
   empty list: ' <red>- Empty.'
+  logger clannexusclaimevent: <yellow>The nexus was created by <green>%uclans_player%
+  logger clannexusunclaimevent: <red>Nexus was deleted by <green>%uclans_player%
 GUI:
    
   Nexus: ''
@@ -152,6 +160,10 @@ GUI:
   - ' <yellow>If you are holding more than 1 item'
   - ' <yellow>it will try to consume as many items as'
   - <yellow>possible to recover.
+  Nexus home items show name: <green>Show terrain boundaries
+  Nexus home items show lore:
+  - ''
+  - <yellow>Close and Show.
   Nexus home items back name: <red>Come back
   Nexus home items back lore:
   - ''

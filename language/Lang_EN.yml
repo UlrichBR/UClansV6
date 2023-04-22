@@ -342,11 +342,12 @@ LANGUAGE:
   clan has only points: '%tag% <red>The clan has only <aqua>%num% <red>points'
   clan ally in limit: '%tag% <red>Your clan has reached the allies limit and needs to gain levels to unlock more allies, Your clans current limit is <aqua>%uclans_limit_ally%'
   clan rival in limit: '%tag% <red>Your clan has reached the rivalries limit and needs to gain levels to unlock more rivalries, Your clans current limit is <aqua>%uclans_limit_rival%'
+  clan banner_upload in limit: '%tag% <red>Your clan does not have this feature available, this requires level <aqua>%uclans_required_level:BANNER_UPLOAD%'
+  clan banner_upload in limit gui: <red>Requires level <aqua>%uclans_required_level:BANNER_UPLOAD%
   clan create error: '%tag% <red>There was an error creating.'
   clan create success: '%tag% <green>New Clan created successfully!'
   command deprecated: '%tag% <red>This command has been deprecated and can be removed from the settings'
   chan does not exists: '%tag% <red>This clan does not exist'
-  need level min: '%tag% <red>Your Clan must have at least <aqua>%level% <red>for this!'
   player_leave: '%tag% <red>Member <aqua>%player% <red>has logged out.'
   player_join: '%tag% <green>Member <aqua>%player% <green>has just joined.'
   home name without space: '%tag% <red>Name cannot contain spaces.'
@@ -1293,6 +1294,56 @@ GUI:
   General banner_home items back lore:
   - ''
   - ' <yellow>Click to Come back.'
+  General banner_home_pre title: <blue>Select banner icon
+  General banner_home_pre items back name: <red>Come back
+  General banner_home_pre items back lore:
+  - ''
+  - ' <yellow>Click to Come back.'
+  General banner_home_pre items next name: <green>Next page
+  General banner_home_pre items next lore:
+  - ''
+  - ' <yellow>Click to proceed.'
+  General banner_home_pre items previous name: <green>Previous page
+  General banner_home_pre items previous lore:
+  - ''
+  - ' <yellow>Click to Come back.'
+  General banner_home_pre items current name: <green>%name%.
+  General banner_home_pre items current lore:
+  - ''
+  - ' <yellow>Click to select.'
+  General banner_home_pre items fill name: ' '
+  General banner_home_pre items fill lore: [
+    ]
+  General banner_home_pre items fill2 name: ' '
+  General banner_home_pre items fill2 lore: [
+    ]
+  General banner_home_pre items fill3 name: ' '
+  General banner_home_pre items fill3 lore: [
+    ]
+  General banner_home_pre items common name: '<green>Filter: <aqua>Common'
+  General banner_home_pre items common lore:
+  - ''
+  - ' <yellow>Click to apply filter.'
+  General banner_home_pre items common_current name: '<green>Filter: <aqua>Common'
+  General banner_home_pre items common_current lore:
+  - ''
+  - ' <green>Current filter'
+  General banner_home_pre items head name: '<green>Filter: <aqua>Heads'
+  General banner_home_pre items head lore:
+  - ''
+  - ' <yellow>Click to apply filter.'
+  General banner_home_pre items head_current name: '<green>Filter: <aqua>Heads'
+  General banner_home_pre items head_current lore:
+  - ''
+  - ' <green>Current filter'
+  General banner_home_pre items banner name: '<green>Filter: <aqua>Banners'
+  General banner_home_pre items banner lore:
+  - ''
+  - ' <yellow>Click to apply filter.'
+  General banner_home_pre items banner_current name: '<green>Filter: <aqua>Banners'
+  General banner_home_pre items banner_current lore:
+  - ''
+  - ' <green>Current filter'
   General banner_delete title: <red>Confirm delete current banner?
   General banner_delete items fill name: ' '
   General banner_delete items fill lore: [

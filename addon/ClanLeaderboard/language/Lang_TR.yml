@@ -1,0 +1,24 @@
+COMUM:
+  player dont have clan: '%tag% <red>Bu oyuncunun bir klanı yok.'
+  gui error: '%tag% <red>Bu menü bir hata içeriyor ve açılamıyor'
+  disabled function: '%tag% <red>Bu işlev kapalı veya devre dışı.'
+  chan does not exists: '%tag% <red>Bu klan mevcut değil'
+  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+  no permission: '%tag% <red>Bunun için izniniz yok.'
+  header help: '<green><bold>Admin Leaderboard Komutları:'
+  already exists: '%tag% <red>Bu konumda zaten bir pano var!'
+  sign look: '%tag% <red>Bir SIGN veya ARMOR_STAND'a bakıyor olmanız gerekir.'
+  enabled true: <green>Aktif
+  enabled false: <red>Devre Dışı
+  type kill: Öldürmeler
+  type death: Ölümler
+  type kdr: Kdr
+  type member: Üyeler
+  type bank: Banka
+  type level: Leveller
+  type war: Savaşlar
+  type all: Tarih
+  type patent: Patent
+player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>hesabınıza yatırıldı.'
+player dont have money gui: <green>%uclans_money_currency%%amount% <red>ihtiyacın var.
+player debited money: '%tag% <yellow>Hesabınızdan <green>%amount% <yellow>alındı.'

@@ -252,6 +252,7 @@ LANGUAGE:
   translaction patent: Patent
   clan dont leader: '%tag% <red>Klanın lideri değilsin.'
   clan dont permission role: '%tag% <red>Mevcut rolünüzle bunu yapamazsınız.'
+  clan dont permission role gui: <red>Geçerli rol bunu yapamaz.
   player no invitation: '%tag% <red>Bu klana hiç davetiniz yok.'
   clan dont mod and leader: '%tag% <red>Klanın lideri veya Modu değilsiniz.'
   clan dont mod and leader gui: <red>Gereklilikler <dark_red>Lider <red>veya <dark_red>Mod<red>!
@@ -341,11 +342,12 @@ LANGUAGE:
   clan has only points: '%tag% <red>Klanın yalnızca <aqua>%num% <red>puanları var'
   clan ally in limit: '%tag% <red>Klanınız müttefik sınırına ulaştı ve daha fazla müttefikin kilidini açmak için seviye atlaması gerekiyor, Klanınızın mevcut sınırı <aqua>%uclans_limit_ally%'
   clan rival in limit: '%tag% <red>Klanınız düşmanlık sınırına ulaştı ve daha fazla düşmanlık kilidini açmak için seviye atlaması gerekiyor, Klanınızın mevcut sınırı <aqua>%uclans_limit_rival%'
+  clan banner_upload in limit: '%tag% <red>Klanınızda bu özellik mevcut değil, gereken seviye <aqua>%uclans_required_level:BANNER_UPLOAD%'
+  clan banner_upload in limit gui: <red>Gereken seviye <aqua>%uclans_required_level:BANNER_UPLOAD%
   clan create error: '%tag% <red>Oluşturulurken bir hata oluştu.'
   clan create success: '%tag% <green>Yeni Klan başarıyla oluşturuldu!'
   command deprecated: '%tag% <red>Bu komut kullanımdan kaldırıldı ve ayarlardan kaldırılabilir'
   chan does not exists: '%tag% <red>Bu klan mevcut değil'
-  need level min: '%tag% <red>Bunun için Klanınızın en az <aqua>%level% <red> olması gerekir!'
   player_leave: '%tag% <red>Üye <aqua>%player% <red>çıkış yaptı.'
   player_join: '%tag% <aqua>%player% <green>üyesi yeni katıldı.'
   home name without space: '%tag% <red>Ad boşluk içeremez.'
@@ -596,7 +598,7 @@ GUI:
   General player_settings items back name: <red>Back home
   General player_settings items back lore:
   - ' <yellow>Profile dönmek için tıklayın'
-  General clan_stats title: <blue>İstatistikler <gray>| %uclans_tag_color%
+  General clan_stats title: <blue>Stats <gray>| %uclans_tag_nocolor%
   General clan_stats items fill name: ' '
   General clan_stats items fill lore: [
     ]
@@ -1100,7 +1102,7 @@ GUI:
   - ' <gray>Son görülme: <aqua>%uclans_player_lastsee_formated%'
   - ' '
   - ' <yellow>Davet etmek için tıklayın.'
-  General rival title: <blue>Düşman listesi <gray>| %uclans_tag_color%
+  General rival title: <blue>Düşman listesi <gray>| %uclans_tag_nocolor%
   General rival items fill name: ' '
   General rival items fill lore: [
     ]
@@ -1156,7 +1158,7 @@ GUI:
   - ' <gray>Üyeler: <aqua>%uclans_count_members%'
   - ''
   - ' <yellow>Bilgileri görüntülemek için sağ-tıklayın.'
-  General members title: <blue>Üye Listesi <gray>| %uclans_tag_color%
+  General members title: <blue>Üye Listesi <gray>| %uclans_tag_nocolor%
   General members items fill name: ' '
   General members items fill lore: [
     ]
@@ -1185,7 +1187,7 @@ GUI:
   - ' <gray>Son görülme: <aqua>%uclans_player_lastsee_formated%'
   - ' '
   - ' <yellow>Profili görüntülemek için tıklayın.'
-  General listhomes title: <blue>Ev Listesi <gray>| %uclans_tag_color%
+  General listhomes title: <blue>Ev Listesi <gray>| %uclans_tag_nocolor%
   General listhomes items fill name: ' '
   General listhomes items fill lore: [
     ]
@@ -1292,6 +1294,56 @@ GUI:
   General banner_home items back lore:
   - ''
   - ' <yellow>Geri dönmek için tıklayın.'
+  General banner_home_pre title: <blue>Banner simgesini seçin
+  General banner_home_pre items back name: <red>Geri dön
+  General banner_home_pre items back lore:
+  - ''
+  - ' <yellow>Geri dönmek için tıklayın.'
+  General banner_home_pre items next name: <green>Sonraki sayfa
+  General banner_home_pre items next lore:
+  - ''
+  - ' <yellow>Devam etmek için tıklayın.'
+  General banner_home_pre items previous name: <green>Önceki sayfa
+  General banner_home_pre items previous lore:
+  - ''
+  - ' <yellow>Geri gelmek için tıklayın.'
+  General banner_home_pre items current name: <green>%name%.
+  General banner_home_pre items current lore:
+  - ''
+  - ' <yellow>Seçmek için tıkla.'
+  General banner_home_pre items fill name: ' '
+  General banner_home_pre items fill lore: [
+    ]
+  General banner_home_pre items fill2 name: ' '
+  General banner_home_pre items fill2 lore: [
+    ]
+  General banner_home_pre items fill3 name: ' '
+  General banner_home_pre items fill3 lore: [
+    ]
+  General banner_home_pre items common name: '<green>Filtre: <aqua>Yaygın'
+  General banner_home_pre items common lore:
+  - ''
+  - ' <yellow>Filtreyi uygulamak için tıklayın.'
+  General banner_home_pre items common_current name: '<green>Filtre: <aqua>Yaygın'
+  General banner_home_pre items common_current lore:
+  - ''
+  - ' <green>Geçerli filtre'
+  General banner_home_pre items head name: '<green>Filtre: <aqua>Başlıklar'
+  General banner_home_pre items head lore:
+  - ''
+  - ' <yellow>Filtre uygulamak için tıklayın.'
+  General banner_home_pre items head_current name: '<green>Filtre: <aqua>Başlıklar'
+  General banner_home_pre items head_current lore:
+  - ''
+  - ' <green>Geçerli filtre'
+  General banner_home_pre items banner name: '<green>Filtre: <aqua>Bannerlar'
+  General banner_home_pre items banner lore:
+  - ''
+  - ' <yellow>Filtre uygulamak için tıklayın.'
+  General banner_home_pre items banner_current name: '<green>Filtre: <aqua>Bannerlar'
+  General banner_home_pre items banner_current lore:
+  - ''
+  - ' <green>Geçerli filtre'
   General banner_delete title: <red>Geçerli bannerı silmeyi onaylayın?
   General banner_delete items fill name: ' '
   General banner_delete items fill lore: [

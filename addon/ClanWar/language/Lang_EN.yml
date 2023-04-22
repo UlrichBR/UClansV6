@@ -65,6 +65,8 @@ COMUM:
   arena list header: '<blue><bold>War arena List:'
   arena list format: ' <green>%arena_name% <gray>- <gray>%arena_desc% <gray>- <white>Size: <aqua>%arena_size% <gray>- <white>Mode: <aqua>%arena_mode%'
   arena list format inuse: ' <green>%clan1%<red>x<green>%clan2% <gray>- <white>Arena: <aqua>%arena% <gray>- <white>Kit: <aqua>%kit% <gray>- <white>Max Players: <aqua>%max%'
+  logger clanwarwinevent: <yellow>War won against clan <aqua>{clan_other} <yellow>.
+  logger clanwarloseevent: <red>Lost the war against clan <aqua>{clan_other} <red>.
   kits list header: '<blue><bold>Kit List:'
   kits list empty: ' <red>- No kits to show'
   kits list format: ' <green>%kit_name% <gray>- <gray>%kit_desc% <gray>- <white>Date: <aqua>%kit_creation_date% <gray>- <white>Amount: <aqua>%kit_amount%'
@@ -424,7 +426,7 @@ ANNOUNCE:
     - '<red>! <yellow>Mode: <white>%mode%'
     - '<yellow>Kit: <aqua>%kit% <dark_gray> | <gray>Expires in <aqua>%sec_expires% sec<gray>.'
     - ''
-    - <click:run_command:"/{_clan} {_war} {_accept}"><hover:show_text:"<red>Click to accept"><green><bold>[ACCEPT/JOIN]</bold></green></hover></click> <click:run_command:"/{_clan} {_war} {_deny} %clan_tag_nocolor%"><hover:show_text:"<red>Click to deny"><red><bold>[DENY]</bold></red></hover></click>
+    - <click:run_command:"/{_clan} {_war} {_accept}"><hover:show_text:"<red>Click to accept"><green><bold>[ACCEPT/JOIN]</bold></green></hover></click> <click:run_command:"/{_clan} {_war} {_deny}"><hover:show_text:"<red>Click to deny"><red><bold>[DENY]</bold></red></hover></click>
     - ''
     - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
     actionbar: <red>! <yellow>A War Challenge was thrown at your clan!
