@@ -1,0 +1,131 @@
+COMUM:
+  you player has no clan: '%tag% <red>Bir klanınız yok, bir klan kurun veya bir klanın üyesi olun.'
+  gui error: '%tag% <red>Bu menü bir hata içeriyor ve açılamıyor'
+  do not shift: '%tag% <red>Do not shift on Quests'
+  empty whitelist: <red>Boş
+  disabled function: '%tag% <red>Bu işlev kapalı veya devre dışı.'
+  week plus: 1 hafta+
+  disabled world quest: '%tag% <red>Bu dünyada görevleri kullanamazsınız'
+  command by player: '%tag% <red>Bu komut bir oyuncu tarafından kullanılmalıdır.'
+  clan point reason quest finished: %uclans_quest_finished% görevi tamamlandı
+  clan quest change: '%tag% <green>Klan Görev Puanları artık <aqua>%uclans_quest_points%<green>, toplam tamamlandı <aqua>%uclans_quest_finished%'
+  help clan header subcommand: '<newline><blue><bold>Alt komutlarla ilgili yardım:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>zorunlu <gray>| <light_purple>() <gray>isteğe bağlı <newline> '
+  clan dont permission role: '%tag% <red>Mevcut rolünüz bunu yapamazsınız.'
+  clan dont permission role gui: <red>Rolünüz bunu başlatamaz
+  player no running quest: '%tag% <red>Başlamış herhangi bir görevin yok.'
+  help quest status header: <blue><bold> Görev durumu:</bold>
+  help quest status header empty: ' <gray>- <red>Herhangi bir görevde ilerlemiyorsun.'
+  help quest list header: <newline>%uclans_tag_color%<blue><bold> Görev listesi:</bold> <dark_gray>(%page%/%pages%)
+  help quest list format: '<white>Id: <green>{QUEST} <gray>| <white>İsim: %uclans_quest_name:{QUEST}% <gray>| <white>Tür: <aqua>%uclans_quest_type_formated:{QUEST}%<newline> <gray>- <white>Görev: <aqua>%uclans_quest_missions:{QUEST}% <gray>| <aqua>%uclans_quest_whitelist:{QUEST}%<newline> <gray>- <yellow>Ödüller: <white>Puan: <aqua>%uclans_quest_reward_points:{QUEST}% <gray>| <white>Exp: <aqua>%uclans_quest_reward_exp:{QUEST}% <gray>| <white>Para: <green>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
+  help quest list format finished: '<dark_red>GÖREV TAMAMLANDI <gray>| <white>Id: <green>{QUEST} <gray>| <white>İsim: %uclans_quest_name:{QUEST}% <green>%uclans_player_nickname% <gray>| <white>Tür: <aqua>%uclans_quest_type_formated:{QUEST}%'
+  help quest list format other: '<red>Başka bir oyuncu tarafından devam ediyor! <gray>| <white>Id: <green>{QUEST} <gray>| <white>İsim: %uclans_quest_name:{QUEST}% <green>%uclans_player_nickname% <gray>| <white>Tür: <aqua>%uclans_quest_type_formated:{QUEST}%'
+  help quest list format running: '<red>Şu anki görevin! <gray>| <white>Id: <green>{QUEST} <gray>| <white>İsim: %uclans_quest_name:{QUEST}% <gray>| <white>Tür: <aqua>%uclans_quest_type_formated:{QUEST}%<newline> <gray>- <white>Görev: <aqua>%uclans_quest_missions:{QUEST}% <gray>| <aqua>%uclans_quest_whitelist:{QUEST}% <gray>(<aqua>%uclans_playerquest_earned%<gray>/<aqua>%uclans_quest_mission_total:{QUEST}%<gray>)<newline> <gray>- <white>Bitmesine: <aqua>%uclans_playerquest_expires_time_left% <gray>(%uclans_playerquest_expires%)<newline> <gray>- <yellow>Ödüller: <white>Puan: <aqua>%uclans_quest_reward_points:{QUEST}% <gray>| <white>Exp: <aqua>%uclans_quest_reward_exp:{QUEST}% <gray>| <white>Para: <green>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
+  help quest list empty: ' <red>Bu listede hiçbir şey yok.'
+  logger clanquestabandonevent: <green>%uclans_player% <yellow>görevi terk etti <aqua>%uclans_quest_name:{QUEST}%
+  logger clanqueststartevent: <green>%uclans_player% <yellow>göreve başladı <aqua>%uclans_quest_name:{QUEST}%
+  logger clanquestfinishnevent: <yellow>Görev <aqua>%uclans_quest_name:{QUEST}% <dark_gray>(%uclans_quest_type_formated:{QUEST}%) <green>%uclans_player% <yellow>tarafından yapıldı
+  help quest pagination prev: <click:run_command:"/{_clan} {_quest} {_list} %page%"><hover:show_text:'<green>Geri dönmek için tıklayın.'><aqua><< Önceki</hover></click>
+  help quest pagination next: <click:run_command:"/{_clan} {_quest} {_list} %page%"><hover:show_text:'<green>İlerlemek için tıklayın.'><aqua>Sonraki >></hover></click>
+  help quest pagination separer: <gray>|
+GUI:
+   
+  #QUEST GUI MESSAGES
+  quest home_quest title: <blue>Görevler <gray>| %uclans_tag_color%
+  quest home_quest items fill name: ' '
+  quest home_quest items fill2 name: ' '
+  quest home_quest items daily name: ' <green>Günlük Görevler'
+  quest home_quest items daily lore:
+  - ''
+  - ' <yellow>Açmak için tıklayın.'
+  quest home_quest items once name: ' <green>Tüm Görevler'
+  quest home_quest items once lore:
+  - ''
+  - ' <yellow>Açmak için tıklayın.'
+  quest home_quest items back name: ' <green>Geri dön'
+  quest home_quest items back lore:
+  - ''
+  - ' <yellow>Geri dönmek için tıklayın.'
+  quest home_list title: <blue>Görevler <gray>| %uclans_tag_color%
+  quest home_list items fill name: ' '
+  quest home_list items course name: ' <green>%uclans_quest_name:{QUEST}%'
+  quest home_list items course lore:
+  - ''
+  - ' <gold>Şu anki görevin!'
+  - ''
+  - ' <white>Tür: <aqua>%uclans_quest_type_formated:{QUEST}%'
+  - ' <white>İsim: <aqua>%uclans_quest_name:{QUEST}%'
+  - ' <white>Toplam: <aqua>%uclans_playerquest_earned%<gray>/<aqua>%uclans_quest_mission_total:{QUEST}%'
+  - ' <white>Bitmesine: <aqua>%uclans_playerquest_expires_time_left% <gray>(%uclans_playerquest_expires%)'
+  - ' <white>Görev: <aqua>%uclans_quest_missions:{QUEST}%'
+  - ' <gray>- %uclans_quest_whitelist:{QUEST}%'
+  - ''
+  - ' <yellow>Ödüler:'
+  - ' <white>Puan: <aqua>%uclans_quest_reward_points:{QUEST}%'
+  - ' <white>Exp: <aqua>%uclans_quest_reward_exp:{QUEST}%'
+  - ' <white>Para: <green>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
+  - ''
+  - ' <yellow>Vazgeçmek için tıklayın!'
+  quest home_list items course_other name: ' <green>%uclans_quest_name:{QUEST}%'
+  quest home_list items course_other lore:
+  - ''
+  - ' <red>Başka bir oyuncu tarafından devam ediyor!'
+  - ''
+  - ' <white>Tür: <aqua>%uclans_quest_type_formated:{QUEST}%'
+  - ' <white>İsim: <aqua>%uclans_quest_name:{QUEST}%'
+  - ' <white>Görev: <aqua>%uclans_quest_missions:{QUEST}%'
+  - <gray>- <aqua>%uclans_quest_whitelist:{QUEST}%
+  - ''
+  - ' <yellow>Ödüller:'
+  - ' <white>Puan: <aqua>%uclans_quest_reward_points:{QUEST}%'
+  - ' <white>Exp: <aqua>%uclans_quest_reward_exp:{QUEST}%'
+  - ' <white>Para: <green>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
+  quest home_list items finished name: ' <green>%uclans_quest_name:{QUEST}%'
+  quest home_list items finished lore:
+  - ''
+  - ' <dark_red>GÖREV TAMAMLANDI'
+  - ''
+  - ' <white>Tür: <aqua>%uclans_quest_type_formated:{QUEST}%'
+  - ' <white>İsim: <aqua>%uclans_quest_name:{QUEST}%'
+  - ' <white>Görev: <aqua>%uclans_quest_missions:{QUEST}%'
+  - <gray>- <aqua>%uclans_quest_whitelist:{QUEST}%
+  quest home_list items back name: ' <green>Geri dön'
+  quest home_list items back lore:
+  - ''
+  - ' <yellow>Geri dönmek için tıklayın.'
+  quest home_list items next name: ' <green>Sonraki sayfa'
+  quest home_list items next lore:
+  - ''
+  - ' <yellow>Sonrakine gitmek için tıklayın.'
+  quest home_list items previous name: ' <green>Önceki sayfa'
+  quest home_list items previous lore:
+  - ''
+  - ' <yellow>Öncekine gitmek için tıklayın.'
+ 
+#QUEST MESSAGES
+ 
+QUEST:
+  warning expired title: <red>Bitti!
+  warning expired title sub: <aqua>%uclans_quest_name:{QUEST}%
+  warning expired actionbar: <red>Bitti! <gray>| <aqua>%uclans_quest_name:{QUEST}%
+  warning expired message: '%tag% <aqua>%uclans_quest_name:{QUEST}% <red>Görevinizin süresi doldu ve devre dışı bırakıldı'
+  warning earned title: <aqua>+%act_amount%
+  warning earned title sub: <aqua>%uclans_quest_name:{QUEST}% <gray>(%uclans_playerquest_earned%<gray>/%uclans_quest_mission_total:{QUEST}%)
+  warning earned actionbar: <aqua>+%act_amount% <gray>| <aqua>%uclans_quest_name:{QUEST}% <gray>(%uclans_playerquest_earned%<gray>/%uclans_quest_mission_total:{QUEST}%)
+  warning earned message: '%tag% <aqua>%uclans_quest_name:{QUEST}% <yellow>için <aqua>+%act_amount% <yellow> topladınız <gray>(%uclans_playerquest_earned%<gray>/%uclans_quest_mission_total:{QUEST}%)'
+  warning finished title: <aqua>Tamamlandı!
+  warning finished title sub: <aqua>%uclans_quest_name:{QUEST}% <gray>(+%uclans_quest_reward_points:{QUEST}%)
+  warning finished actionbar: <aqua>Tamamlandı! <gray>| <aqua>%uclans_quest_name:{QUEST}% <gray>(+%uclans_quest_reward_points:{QUEST}%)
+  warning finished message: '%tag% <aqua>%uclans_quest_name:{QUEST}% <yellow>görevini tamamladınız <gray>(+%uclans_quest_reward_points:{QUEST}%)'
+  type daily: <green>Günlük Görev!
+  type once: <green>Sadece bir kere!
+  this day: ' <red>Bugün.'
+  other player gui: <red>Başka bir oyuncu yapıyor!
+  other player: '%tag% <red>Başka bir oyuncu yapıyor!'
+  error to start gui: <red>Başlatma hatası!
+  success to start gui: <green>Görev Başladı, iyi şanslar!
+  error to remove gui: <red>Ayrılırken hata!
+  success to temove gui: <green>Terk Edilmiş Görev!
+  player already started gui: <red>Aktif bir göreviniz var!
+  player already started: '%tag% <red>Aktif bir görevin var!'
+  player already finished: '%tag% <red>Bu görev zaten başka bir üye tarafından tamamlandı.'
+  
