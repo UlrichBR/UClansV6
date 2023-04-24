@@ -21,6 +21,9 @@ COMUM:
   help quest list format other: '<red>In progress by another player! <gray>| <white>Id: <green>{QUEST} <gray>| <white>Name: %uclans_quest_name:{QUEST}% <green>%uclans_player_nickname% <gray>| <white>Type: <aqua>%uclans_quest_type_formated:{QUEST}%'
   help quest list format running: '<red>Your current mission! <gray>| <white>Id: <green>{QUEST} <gray>| <white>Name: %uclans_quest_name:{QUEST}% <gray>| <white>Type: <aqua>%uclans_quest_type_formated:{QUEST}%<newline> <gray>- <white>Mission: <aqua>%uclans_quest_missions:{QUEST}% <gray>| <aqua>%uclans_quest_whitelist:{QUEST}% <gray>(<aqua>%uclans_playerquest_earned%<gray>/<aqua>%uclans_quest_mission_total:{QUEST}%<gray>)<newline> <gray>- <white>Expires: <aqua>%uclans_playerquest_expires_time_left% <gray>(%uclans_playerquest_expires%)<newline> <gray>- <yellow>Rewards: <white>Points: <aqua>%uclans_quest_reward_points:{QUEST}% <gray>| <white>Exp: <aqua>%uclans_quest_reward_exp:{QUEST}% <gray>| <white>Money: <green>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
   help quest list empty: ' <red>Nothing on this list.'
+  logger clanquestabandonevent: <green>%uclans_player% <yellow>abandoned the quest <aqua>%uclans_quest_name:{QUEST}%
+  logger clanqueststartevent: <green>%uclans_player% <yellow>started quest <aqua>%uclans_quest_name:{QUEST}%
+  logger clanquestfinishnevent: <yellow>Quest <aqua>%uclans_quest_name:{QUEST}% <dark_gray>(%uclans_quest_type_formated:{QUEST}%) <yellow>completed by player <green>%uclans_player%
   help quest pagination prev: <click:run_command:"/{_clan} {_quest} {_list} %page%"><hover:show_text:'<green>Click to go back.'><aqua><< Previous</hover></click>
   help quest pagination next: <click:run_command:"/{_clan} {_quest} {_list} %page%"><hover:show_text:'<green>Click to advance.'><aqua>Next >></hover></click>
   help quest pagination separer: <gray>|
