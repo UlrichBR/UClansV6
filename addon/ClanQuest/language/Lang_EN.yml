@@ -1,29 +1,36 @@
 COMUM:
   you player has no clan: '%tag% <red>You dont have a clan, create one or be a member of a clan.'
   gui error: '%tag% <red>This menu contains an error and cannot be opened'
+  no permission: '%tag% <red>You dont have permissions for this.'
   do not shift: '%tag% <red>Do not shift on Quests'
   empty whitelist: <red>Empty
   disabled function: '%tag% <red>This function is turned off or disabled.'
   week plus: 1 week+
   disabled world quest: '%tag% <red>You cannot use quests in this world'
   command by player: '%tag% <red>This command must be used by a player.'
-  clan point reason quest finished: Finished quest %uclans_quest_finished%
-  clan quest change: '%tag% <green>Clan Quest Points is now <aqua>%uclans_quest_points%<green>, total finished <aqua>%uclans_quest_finished%'
+  clan point reason quest finished: Finished quest %clanquest_finished%
+  clan quest change: '%tag% <green>Clan Quest Points is now <aqua>%clanquest_points%<green>, total finished <aqua>%clanquest_finished%'
   help clan header subcommand: '<newline><blue><bold>Help with subcommands:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
   clan dont permission role: '%tag% <red>Your current role you cannot do this.'
   clan dont permission role gui: <red>Your Role cannot start this
   player no running quest: '%tag% <red>You dont have any quests started.'
+  otherplayer no running quest: '%tag% <red>This player has no active quests.'
+  otherplayer no running this quest: '%tag% <red>This player does not have this quest active.'
   help quest status header: <blue><bold> Quest status:</bold>
   help quest status header empty: ' <gray>- <red>You are not in progress with any quests.'
   help quest list header: <newline>%uclans_tag_color%<blue><bold> Quest list:</bold> <dark_gray>(%page%/%pages%)
-  help quest list format: '<white>Id: <green>{QUEST} <gray>| <white>Name: %uclans_quest_name:{QUEST}% <gray>| <white>Type: <aqua>%uclans_quest_type_formated:{QUEST}%<newline> <gray>- <white>Mission: <aqua>%uclans_quest_missions:{QUEST}% <gray>| <aqua>%uclans_quest_whitelist:{QUEST}%<newline> <gray>- <yellow>Rewards: <white>Points: <aqua>%uclans_quest_reward_points:{QUEST}% <gray>| <white>Exp: <aqua>%uclans_quest_reward_exp:{QUEST}% <gray>| <white>Money: <green>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
-  help quest list format finished: '<dark_red>MISSION FINISHED <gray>| <white>Id: <green>{QUEST} <gray>| <white>Name: %uclans_quest_name:{QUEST}% <green>%uclans_player_nickname% <gray>| <white>Type: <aqua>%uclans_quest_type_formated:{QUEST}%'
-  help quest list format other: '<red>In progress by another player! <gray>| <white>Id: <green>{QUEST} <gray>| <white>Name: %uclans_quest_name:{QUEST}% <green>%uclans_player_nickname% <gray>| <white>Type: <aqua>%uclans_quest_type_formated:{QUEST}%'
-  help quest list format running: '<red>Your current mission! <gray>| <white>Id: <green>{QUEST} <gray>| <white>Name: %uclans_quest_name:{QUEST}% <gray>| <white>Type: <aqua>%uclans_quest_type_formated:{QUEST}%<newline> <gray>- <white>Mission: <aqua>%uclans_quest_missions:{QUEST}% <gray>| <aqua>%uclans_quest_whitelist:{QUEST}% <gray>(<aqua>%uclans_playerquest_earned%<gray>/<aqua>%uclans_quest_mission_total:{QUEST}%<gray>)<newline> <gray>- <white>Expires: <aqua>%uclans_playerquest_expires_time_left% <gray>(%uclans_playerquest_expires%)<newline> <gray>- <yellow>Rewards: <white>Points: <aqua>%uclans_quest_reward_points:{QUEST}% <gray>| <white>Exp: <aqua>%uclans_quest_reward_exp:{QUEST}% <gray>| <white>Money: <green>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
+  help quest list format: '<white>Id: <green>{QUEST} <gray>| <white>Name: %clanquest_name:{QUEST}% <gray>| <white>Type: <aqua>%clanquest_type_formated:{QUEST}%<newline> <gray>- <white>Mission: <aqua>%clanquest_missions:{QUEST}% <gray>| <aqua>%clanquest_whitelist:{QUEST}%<newline> <gray>- <yellow>Rewards: <white>Points: <aqua>%clanquest_reward_points:{QUEST}% <gray>| <white>Exp: <aqua>%clanquest_reward_exp:{QUEST}% <gray>| <white>Money: <green>%uclans_money_currency%%clanquest_reward_money:{QUEST}%'
+  help quest list format finished: '<dark_red>MISSION FINISHED <gray>| <white>Id: <green>{QUEST} <gray>| <white>Name: %clanquest_name:{QUEST}% <green>%uclans_player_nickname% <gray>| <white>Type: <aqua>%clanquest_type_formated:{QUEST}%'
+  help quest list format other: '<red>In progress by another player! <gray>| <white>Id: <green>{QUEST} <gray>| <white>Name: %clanquest_name:{QUEST}% <green>%uclans_player_nickname% <gray>| <white>Type: <aqua>%clanquest_type_formated:{QUEST}%'
+  help quest list format running: '<red>Your current mission! <gray>| <white>Id: <green>{QUEST} <gray>| <white>Name: %clanquest_name:{QUEST}% <gray>| <white>Type: <aqua>%clanquest_type_formated:{QUEST}%<newline> <gray>- <white>Mission: <aqua>%clanquest_missions:{QUEST}% <gray>| <aqua>%clanquest_whitelist:{QUEST}% <gray>(<aqua>%clanquest_playerquest_earned%<gray>/<aqua>%clanquest_mission_total:{QUEST}%<gray>)<newline> <gray>- <white>Expires: <aqua>%clanquest_playerquest_expires_time_left% <gray>(%clanquest_playerquest_expires%)<newline> <gray>- <yellow>Rewards: <white>Points: <aqua>%clanquest_reward_points:{QUEST}% <gray>| <white>Exp: <aqua>%clanquest_reward_exp:{QUEST}% <gray>| <white>Money: <green>%uclans_money_currency%%clanquest_reward_money:{QUEST}%'
   help quest list empty: ' <red>Nothing on this list.'
-  logger clanquestabandonevent: <green>%uclans_player% <yellow>abandoned the quest <aqua>%uclans_quest_name:{QUEST}%
-  logger clanqueststartevent: <green>%uclans_player% <yellow>started quest <aqua>%uclans_quest_name:{QUEST}%
-  logger clanquestfinishnevent: <yellow>Quest <aqua>%uclans_quest_name:{QUEST}% <dark_gray>(%uclans_quest_type_formated:{QUEST}%) <yellow>completed by player <green>%uclans_player%
+  logger clanquestabandonevent: <green>%uclans_player% <yellow>abandoned the quest <aqua>%clanquest_name:{QUEST}%
+  logger clanqueststartevent: <green>%uclans_player% <yellow>started quest <aqua>%clanquest_name:{QUEST}%
+  logger clanquestfinishnevent: <yellow>Quest <aqua>%clanquest_name:{QUEST}% <dark_gray>(%clanquest_type_formated:{QUEST}%) <yellow>completed by player <green>%uclans_player%
+  header help: '<green>Quest Admin Commands:'
+  header list: '<green>List of Quest:'
+  line list: '<green>%num% <gray>- <green>ID: <aqua>%id% <gray>- <green>Name: <aqua>%name%'
+  empty list: ' <red>- Empty.'
   help quest pagination prev: <click:run_command:"/{_clan} {_quest} {_list} %page%"><hover:show_text:'<green>Click to go back.'><aqua><< Previous</hover></click>
   help quest pagination next: <click:run_command:"/{_clan} {_quest} {_list} %page%"><hover:show_text:'<green>Click to advance.'><aqua>Next >></hover></click>
   help quest pagination separer: <gray>|
@@ -47,47 +54,47 @@ GUI:
   - ' <yellow>Click to go back.'
   quest home_list title: <blue>Quests <gray>| %uclans_tag_color%
   quest home_list items fill name: ' '
-  quest home_list items course name: ' <green>%uclans_quest_name:{QUEST}%'
+  quest home_list items course name: ' <green>%clanquest_name:{QUEST}%'
   quest home_list items course lore:
   - ''
   - ' <gold>Your current mission!'
   - ''
-  - ' <white>Type: <aqua>%uclans_quest_type_formated:{QUEST}%'
-  - ' <white>Name: <aqua>%uclans_quest_name:{QUEST}%'
-  - ' <white>Total: <aqua>%uclans_playerquest_earned%<gray>/<aqua>%uclans_quest_mission_total:{QUEST}%'
-  - ' <white>Expires: <aqua>%uclans_playerquest_expires_time_left% <gray>(%uclans_playerquest_expires%)'
-  - ' <white>Mission: <aqua>%uclans_quest_missions:{QUEST}%'
-  - ' <gray>- %uclans_quest_whitelist:{QUEST}%'
+  - ' <white>Type: <aqua>%clanquest_type_formated:{QUEST}%'
+  - ' <white>Name: <aqua>%clanquest_name:{QUEST}%'
+  - ' <white>Total: <aqua>%clanquest_playerquest_earned%<gray>/<aqua>%clanquest_mission_total:{QUEST}%'
+  - ' <white>Expires: <aqua>%clanquest_playerquest_expires_time_left% <gray>(%clanquest_playerquest_expires%)'
+  - ' <white>Mission: <aqua>%clanquest_missions:{QUEST}%'
+  - ' <gray>- %clanquest_whitelist:{QUEST}%'
   - ''
   - ' <yellow>Rewards:'
-  - ' <white>Points: <aqua>%uclans_quest_reward_points:{QUEST}%'
-  - ' <white>Exp: <aqua>%uclans_quest_reward_exp:{QUEST}%'
-  - ' <white>Money: <green>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
+  - ' <white>Points: <aqua>%clanquest_reward_points:{QUEST}%'
+  - ' <white>Exp: <aqua>%clanquest_reward_exp:{QUEST}%'
+  - ' <white>Money: <green>%uclans_money_currency%%clanquest_reward_money:{QUEST}%'
   - ''
   - ' <yellow>Click to abandon!'
-  quest home_list items course_other name: ' <green>%uclans_quest_name:{QUEST}%'
+  quest home_list items course_other name: ' <green>%clanquest_name:{QUEST}%'
   quest home_list items course_other lore:
   - ''
   - ' <red>In progress by another player!'
   - ''
-  - ' <white>Type: <aqua>%uclans_quest_type_formated:{QUEST}%'
-  - ' <white>Name: <aqua>%uclans_quest_name:{QUEST}%'
-  - ' <white>Mission: <aqua>%uclans_quest_missions:{QUEST}%'
-  - <gray>- <aqua>%uclans_quest_whitelist:{QUEST}%
+  - ' <white>Type: <aqua>%clanquest_type_formated:{QUEST}%'
+  - ' <white>Name: <aqua>%clanquest_name:{QUEST}%'
+  - ' <white>Mission: <aqua>%clanquest_missions:{QUEST}%'
+  - <gray>- <aqua>%clanquest_whitelist:{QUEST}%
   - ''
   - ' <yellow>Rewards:'
-  - ' <white>Points: <aqua>%uclans_quest_reward_points:{QUEST}%'
-  - ' <white>Exp: <aqua>%uclans_quest_reward_exp:{QUEST}%'
-  - ' <white>Money: <green>%uclans_money_currency%%uclans_quest_reward_money:{QUEST}%'
-  quest home_list items finished name: ' <green>%uclans_quest_name:{QUEST}%'
+  - ' <white>Points: <aqua>%clanquest_reward_points:{QUEST}%'
+  - ' <white>Exp: <aqua>%clanquest_reward_exp:{QUEST}%'
+  - ' <white>Money: <green>%uclans_money_currency%%clanquest_reward_money:{QUEST}%'
+  quest home_list items finished name: ' <green>%clanquest_name:{QUEST}%'
   quest home_list items finished lore:
   - ''
   - ' <dark_red>MISSION FINISHED'
   - ''
-  - ' <white>Type: <aqua>%uclans_quest_type_formated:{QUEST}%'
-  - ' <white>Name: <aqua>%uclans_quest_name:{QUEST}%'
-  - ' <white>Mission: <aqua>%uclans_quest_missions:{QUEST}%'
-  - <gray>- <aqua>%uclans_quest_whitelist:{QUEST}%
+  - ' <white>Type: <aqua>%clanquest_type_formated:{QUEST}%'
+  - ' <white>Name: <aqua>%clanquest_name:{QUEST}%'
+  - ' <white>Mission: <aqua>%clanquest_missions:{QUEST}%'
+  - <gray>- <aqua>%clanquest_whitelist:{QUEST}%
   quest home_list items back name: ' <green>Come back'
   quest home_list items back lore:
   - ''
@@ -105,17 +112,17 @@ GUI:
  
 QUEST:
   warning expired title: <red>Expired!
-  warning expired title sub: <aqua>%uclans_quest_name:{QUEST}%
-  warning expired actionbar: <red>Expired! <gray>| <aqua>%uclans_quest_name:{QUEST}%
-  warning expired message: '%tag% <red>Your Quest <aqua>%uclans_quest_name:{QUEST}% <red>has expired and been deactivated'
+  warning expired title sub: <aqua>%clanquest_name:{QUEST}%
+  warning expired actionbar: <red>Expired! <gray>| <aqua>%clanquest_name:{QUEST}%
+  warning expired message: '%tag% <red>Your Quest <aqua>%clanquest_name:{QUEST}% <red>has expired and been deactivated'
   warning earned title: <aqua>+%act_amount%
-  warning earned title sub: <aqua>%uclans_quest_name:{QUEST}% <gray>(%uclans_playerquest_earned%<gray>/%uclans_quest_mission_total:{QUEST}%)
-  warning earned actionbar: <aqua>+%act_amount% <gray>| <aqua>%uclans_quest_name:{QUEST}% <gray>(%uclans_playerquest_earned%<gray>/%uclans_quest_mission_total:{QUEST}%)
-  warning earned message: '%tag% <yellow>You have collected <aqua>+%act_amount% <yellow>on <aqua>%uclans_quest_name:{QUEST}% <gray>(%uclans_playerquest_earned%<gray>/%uclans_quest_mission_total:{QUEST}%)'
+  warning earned title sub: <aqua>%clanquest_name:{QUEST}% <gray>(%clanquest_playerquest_earned%<gray>/%clanquest_mission_total:{QUEST}%)
+  warning earned actionbar: <aqua>+%act_amount% <gray>| <aqua>%clanquest_name:{QUEST}% <gray>(%clanquest_playerquest_earned%<gray>/%clanquest_mission_total:{QUEST}%)
+  warning earned message: '%tag% <yellow>You have collected <aqua>+%act_amount% <yellow>on <aqua>%clanquest_name:{QUEST}% <gray>(%clanquest_playerquest_earned%<gray>/%clanquest_mission_total:{QUEST}%)'
   warning finished title: <aqua>Finished!
-  warning finished title sub: <aqua>%uclans_quest_name:{QUEST}% <gray>(+%uclans_quest_reward_points:{QUEST}%)
-  warning finished actionbar: <aqua>Finished! <gray>| <aqua>%uclans_quest_name:{QUEST}% <gray>(+%uclans_quest_reward_points:{QUEST}%)
-  warning finished message: '%tag% <yellow>You have finished the quest <aqua>%uclans_quest_name:{QUEST}% <gray>(+%uclans_quest_reward_points:{QUEST}%)'
+  warning finished title sub: <aqua>%clanquest_name:{QUEST}% <gray>(+%clanquest_reward_points:{QUEST}%)
+  warning finished actionbar: <aqua>Finished! <gray>| <aqua>%clanquest_name:{QUEST}% <gray>(+%clanquest_reward_points:{QUEST}%)
+  warning finished message: '%tag% <yellow>You have finished the quest <aqua>%clanquest_name:{QUEST}% <gray>(+%clanquest_reward_points:{QUEST}%)'
   type daily: <green>Daily Mission!
   type once: <green>Only Once!
   this day: ' <red>This Day.'
