@@ -1,0 +1,169 @@
+# Level configurations
+# Configure the amount of points required according to the points set in the created quests, create a balance according to your server
+Level:
+  points:
+    # The basis is calculated according to the formula.
+    # default: '({CLAN_LEVEL}*{BASE})*{EXPONENT}'
+    # Variables: {CLAN_LEVEL} = current clan level, {BASE} = base value, {EXPONENT} = exponent value
+    # TO OLD METHOD USE '{BASE}+({BASE}*Math.pow({CLAN_LEVEL},{EXPONENT}))'.
+    formula: ({CLAN_LEVEL}*{BASE})*{EXPONENT}
+    #Required points are the basis for scoring points for levels.
+    base: 50
+    # This is the multiplier to be applied in each formula
+    exponent: 1.0
+    # The maximum level a clan can reach, use -1 to have no limit
+    max_level: 20
+  patent:
+     
+     
+    #Use this formatting as an example or uncomment the lines:
+    #    list:
+    #      beginner:
+    #        name: '<gray>Beginner'
+    #        required_level: 0
+    #        rewards: []
+    #        rewards_only_once: true
+    #        rewards_disabled_world: []
+    list:
+      beginner:
+        # Name that will appear in menus, texts and placeholders
+        name: <gray>Beginner
+        # How many levels is required
+        required_level: 0
+        # Commands triggered when reaching level
+        # The variable for players nickname is %player%
+        # ex: 'eco give %player% 5000'
+        rewards: [
+          ]
+        # The reward is sent only the first time the clan reaches this level
+        rewards_only_once: true
+        # Worlds where you cannot receive command rewards
+        rewards_disabled_world: [
+          ]
+   
+   
+  # Pattern limits for empty unlocker.
+  default:
+    homes: 3
+    ally: 3
+    rival: 3
+    slots: 10
+   
+  #The actions give points to the clan according to the development
+  #The actions are under development.
+  #If you dont want to use this use values 0 "zero"
+  actions:
+    CREATE: 100
+    NEWMEMBER: 20
+    REMOVEMEMBER: -20
+    WARWIN: 150
+    WARLOSE: -150
+    NEWALLIANCE: 10
+    REMOVEALLIANCE: -10
+    NEWRIVAL: 10
+    REMOVERIVAL: -10
+    PROMOTEMEMBER: 30
+    DEMOTEMEMBER: -30
+    DEATHMEMBER: -2
+    KILLMEMBER: 2
+   
+  #Unlocking allows clans to use resources only if the clan is at a specific level
+  #The unlock are under development.
+  #If you dont want to use this use values 0 "zero"
+  unlocker:
+     
+     
+    # format: CLAN_HOMES/REQUIRED_LEVEL
+    #You can add multiple homes for various clan levels.
+    #example:
+    #    home:
+    #      - '1:1' #The clan can have 1 home if it is level 1
+    #      - '5:10' #The clan can have 5 home if it is level 10
+    #      - '10:20' #The clan can have 10 home if it is level 30
+    home:
+    - '1:1'
+    - '5:10'
+    - '10:20'
+     
+     
+    # format: CLAN_ALLIED/REQUIRED_LEVEL
+    #You can add multiple allys for various clan levels.
+    #example:
+    #    ally:
+    #      - '1:1' #The clan can have 1 ally if it is level 1
+    #      - '5:10' #The clan can have 5 ally if it is level 10
+    #      - '10:20' #The clan can have 10 ally if it is level 20
+    ally:
+    - '1:1'
+    - '5:10'
+    - '10:20'
+     
+     
+    # format: CLAN_RIVALRIES/REQUIRED_LEVEL
+    #You can add multiple rivals for various clan levels.
+    #example:
+    #    rival:
+    #      - '1:1' #The clan can have 1 rival if it is level 1
+    #      - '5:10' #The clan can have 5 rival if it is level 10
+    #      - '10:20' #The clan can have 10 rival if it is level 20
+    rival:
+    - '1:1'
+    - '5:10'
+    - '10:20'
+     
+     
+    # format: CLAN_SLOTS/REQUIRED_LEVEL
+    #You can add multiple slots for various clan levels.
+    #example:
+    #    slots:
+    #      - '10:0' #The clan can have 10 slots if it is level 0
+    #      - '15:10' #The clan can have 15 slots if it is level 10
+    #      - '20:20' #The clan can have 20 slots if it is level 20
+    slots:
+    - '10:0'
+    - '15:10'
+    - '20:20'
+     
+     
+    # format: BANNER_GROUP/REQUIRED_LEVEL
+    #You can add multiple slots for various clan levels.
+    #example:
+    #    banner:
+    #      - 'GROUP_1:0' # Clan can use these groups if it is level 0
+    #      - 'GROUP_1,HEAD_GROUP_1:10' # Clan can use these groups if it is level 10
+    #      - 'GROUP_1,HEAD_GROUP_1,BANNER_GROUP_1:20' # Clan can use these groups if it is level 20
+    banner:
+    - GROUP_1:0
+    - HEAD_GROUP_1:10
+    - BANNER_GROUP_1:20
+     
+    # Minimum amount of level to change desc, Use 0 "zero" to not need levels.
+    desc: 1
+    # Minimum amount of level to tag, Use 0 "zero" to not need levels.
+    modtag: 1
+    # Minimum amount of level to invite members, Use 0 "zero" to not need levels.
+    invite_members: 1
+    # Minimum amount of level to remove members, Use 0 "zero" to not need levels.
+    remove_members: 1
+    # Minimum amount of level to send war challenges, Use 0 "zero" to not need levels.
+    invite_war: 1
+    # Minimum amount of level to accept war challenges, Use 0 "zero" to not need levels.
+    accept_war: 1
+    # Minimum amount of level to send regroup, Use 0 "zero" to not need levels.
+    regroup: 1
+    # Minimum amount of level to promote members, Use 0 "zero" to not need levels.
+    promote: 1
+    # Minimum amount of level to demote members, Use 0 "zero" to not need levels.
+    demote: 1
+    # Minimum amount of level to upload banners, Use 0 "zero" to not need levels.
+    banner_upload: 3
+   
+  # Level rewards are added to all clan players.
+  # To add or edit use the format level_<NUMBER>:
+  # The variable for players nickname is %player%
+  # Example:
+  #  rewards:
+  #    level_5:
+  #    - eco give %player% 1000000
+  rewards: [
+    ]

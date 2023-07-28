@@ -1,0 +1,312 @@
+#
+#
+# Time: in seconds
+#
+# BossBar:
+# Colors: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+# Styles: PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
+# Flags: DARKEN_SCREEN, PLAY_BOSS_MUSIC, CREATE_WORLD_FOG
+#
+#
+# All texts are located in the language files and accept all placeholders from UClans.
+Chat:
+  config:
+    #Chat interactions listener priority.
+    #values (lowercase or UPPERCASE): LOWEST, LOW, NORMAL, HIGH, HIGHEST.
+    priority: NORMAL
+    # Turns off chat interactions, using common results.
+    disable_all_interactions: false
+   
+  changenickname:
+    enabled: true
+    time: 30
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  commandunknownplayer:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: BLOCK_ANVIL_USE
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags:
+      - DARKEN_SCREEN
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  commandunknownadmin:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: BLOCK_ANVIL_USE
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags:
+      - DARKEN_SCREEN
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  clanlevelreceived:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: ENTITY_PLAYER_LEVELUP
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  clanpatentreceived:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: ENTITY_PLAYER_LEVELUP
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags:
+      - DARKEN_SCREEN
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  clanhomecreate:
+    enabled: true
+    time: 60
+    sound:
+      enabled: false
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  clancreate:
+    enabled: true
+    time: 60
+    sound:
+      enabled: false
+      display: ENTITY_WITCH_CELEBRATE
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  clanmodtag:
+    enabled: true
+    time: 60
+    sound:
+      enabled: false
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  clandesc:
+    enabled: true
+    time: 60
+    sound:
+      enabled: false
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  invitereceive:
+    enabled: true
+    time: 5
+    sound:
+      enabled: false
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  clanregroupreceive:
+    enabled: true
+    time: 60
+    sound:
+      enabled: false
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  claninvite:
+    enabled: true
+    time: 60
+    sound:
+      enabled: false
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  clanrivalremove:
+    enabled: true
+    time: 60
+    sound:
+      enabled: false
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  clanallyreceive:
+    enabled: true
+    time: 60
+    sound:
+      enabled: false
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true

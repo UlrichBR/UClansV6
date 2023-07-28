@@ -1,0 +1,21 @@
+# Module settings. The module configurations bring functioning configurations linked to the functioning modules
+Modules:
+  holograms:
+    # IN TICKS (don't use zero)
+    task: 5
+    # IN BLOCK
+    view_distance: 70
+    # CMI, HOLOGRAPHICDISPLAYS, HOLOGRAMS, DECENTHOLOGRAMS
+    preference: CMI
+  deluxecombat:
+    forced_worlds:
+    - forced_pvp_world
+    # worldguard regions
+    forced_regions:
+    - forced_pvp_region
+  skinsrestorer:
+    enabled: true
+    debug: true
+  #If this option is turned off, clans will not receive membtos message entering or disconnecting, the button to change this in settings will not appear either.
+  join_quit:
+    enabled: true

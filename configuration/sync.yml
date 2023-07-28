@@ -1,0 +1,28 @@
+ 
+# This is an experimental and still evolving method.
+ 
+Sync:
+  high:
+    #CAUTION!
+    #Keep in mind that this feature is still under development so it is NOT RECOMMENDED to use it in production mode
+    enabled: false
+    #values: QUEUE or COOLDOWN
+    mode: QUEUE
+    # in ticks
+    sync_delay: 60
+    max_updates: 10
+    # in ticks. the teleport_delay must be greater than the sync_delay
+    teleport_delay: 60
+    # unique name
+    server_name: Clans
+    redis:
+      # redis channel
+      channel: uclans:highsync
+      # redis://[user]:[password@]host[:port][/databaseNumber]
+      url: redis://:password@localhost:6379/0
+     
+    debug:
+      console_messages_sent: false
+      file_messages_sent: false
+      console_received_messages: false
+      file_received_messages: false

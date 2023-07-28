@@ -1,0 +1,331 @@
+Commands:
+  list:
+    clan:
+      help:
+        permission: uclans.player.help
+        # Active currency amount charged to use the command. This options can be applied to all commands.
+        value: 0.0
+        # in seconds
+        cooldown: 0
+        # Enables or disables the command, this can be added to all commands.
+        enabled: true
+        # This can be added to all commands.
+        disabled_worlds: [
+          ]
+        # This can be added to all commands.
+        disabled_regions: [
+          ]
+         # Title options can be applied to all commands. Clan placeholders can be applied to texts.
+        title:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+         # Actionbar options can be applied to all commands. Clan placeholders can be applied to texts.
+        actionbar:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+         # Sound options can be applied to all commands.
+        sound:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+      create:
+        permission: uclans.player.create
+        # Active currency amount charged to use the command. This options can be applied to all commands.
+        value: 100.0
+        # in seconds
+        cooldown: 0
+      cancel:
+        permission: uclans.player.cancel
+        # in seconds
+        cooldown: 0
+      changeleader:
+        permission: uclans.player.changeleader
+        # in seconds
+        cooldown: 0
+      desc:
+        permission: uclans.player.desc
+        # in seconds
+        cooldown: 0
+      disband:
+        permission: uclans.player.disband
+        # in seconds
+        cooldown: 0
+        sound:
+          on_error: BLOCK_ANVIL_DESTROY
+      leave:
+        permission: uclans.player.leave
+        # in seconds
+        cooldown: 0
+        sound:
+          on_error: BLOCK_ANVIL_DESTROY
+      join:
+        permission: uclans.player.join
+        # in seconds
+        cooldown: 0
+        sound:
+          on_error: ENTITY_PLAYER_LEVELUP
+      deny:
+        permission: uclans.player.deny
+        # in seconds
+        cooldown: 0
+      promote:
+        permission: uclans.player.promote
+        # in seconds
+        cooldown: 0
+      demote:
+        permission: uclans.player.demote
+        # in seconds
+        cooldown: 0
+      home:
+        permission: uclans.player.home
+        # in seconds
+        cooldown: 0
+        # Use the subcommand_aliases session to change aliases
+        subcommands:
+        - create
+        - delete
+        - list
+        - teleport
+        - view
+      chat:
+        permission: uclans.player.chat
+        # in seconds
+        cooldown: 0
+      ff:
+        permission: uclans.player.ff
+        # in seconds
+        cooldown: 0
+      modtag:
+        permission: uclans.player.modtag
+        # in seconds
+        cooldown: 0
+      list:
+        permission: uclans.player.list
+        # in seconds
+        cooldown: 0
+      info:
+        permission: uclans.player.info
+        cooldown: 0
+      profile:
+        permission: uclans.player.profile
+        cooldown: 0
+        subcommands:
+        - view
+        - set
+        - updateskin
+        - invites
+      rival:
+        permission: uclans.player.rival
+        cooldown: 0
+        subcommands:
+        - add
+        - remove
+        - list
+        - deny
+        - accept
+      ally:
+        permission: uclans.player.ally
+        cooldown: 0
+        subcommands:
+        - add
+        - remove
+        - list
+        - accept
+        - deny
+      member:
+        permission: uclans.player.member
+        cooldown: 0
+        subcommands:
+        - invite
+        - kick
+        - list
+        - search
+      settings:
+        permission: uclans.player.settings
+        cooldown: 0
+        subcommands:
+        - view
+        - set
+        - banned
+      regroup:
+        permission: uclans.player.regroup
+        cooldown: 0
+        subcommands:
+        - send
+        - accept
+        - deny
+      ban:
+        permission: uclans.player.ban
+        cooldown: 0
+      unban:
+        permission: uclans.player.unban
+        cooldown: 0
+      nickname:
+        permission: uclans.player.nickname
+        cooldown: 0
+      banner:
+        permission: uclans.player.banner
+        cooldown: 0
+        subcommands:
+        - upload
+        - delete
+        - view
+      role:
+        permission: uclans.player.role
+        cooldown: 0
+        subcommands:
+        - view
+        - set
+        - sync
+      logger:
+        permission: uclans.player.logger
+        cooldown: 0
+        subcommands:
+        - clear
+        - view
+      discord:
+        permission: uclans.player.discord
+        cooldown: 0
+        subcommands:
+        - createhook
+        - remove
+        - view
+    uclan:
+      help:
+        permission: uclans.admin.help
+        enabled: true
+        disabled_worlds: [
+          ]
+        disabled_regions: [
+          ]
+        title:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+        actionbar:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+        sound:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+      chatspy:
+        permission: uclans.admin.chatspy
+      addslot:
+        permission: uclans.admin.addslot
+      setslot:
+        permission: uclans.admin.setslot
+      removeslot:
+        permission: uclans.admin.removeslot
+      addpoints:
+        permission: uclans.admin.addpoints
+        alias: addpoints
+      setpoints:
+        permission: uclans.admin.setpoints
+      removepoints:
+        permission: uclans.admin.removepoints
+      changetag:
+        permission: uclans.admin.changetag
+      resetplayerkdr:
+        permission: uclans.admin.resetplayerkdr
+      resetclankdr:
+        permission: uclans.admin.resetclankdr
+      globalff:
+        permission: uclans.admin.globalff
+      delete:
+        permission: uclans.admin.delete
+      forcejoin:
+        permission: uclans.admin.forcejoin
+      verify:
+        permission: uclans.admin.verify
+      reload:
+        permission: uclans.admin.reload
+      checkclanplayers:
+        permission: uclans.admin.checkclanplayers
+      emptyclans:
+        permission: uclans.admin.emptyclans
+      bank:
+        permission: uclans.admin.bank
+        cooldown: 0
+        subcommands:
+        - set
+        - view
+        - remove
+        - add
+      kick:
+        permission: uclans.admin.kick
+      setleader:
+        permission: uclans.admin.setleader
+  command_main:
+    clan: clan
+    uclan: uclan
+  command_aliases:
+    help: help
+    create: create
+    cancel: cancel
+    changeleader: changeleader
+    desc: desc
+    disband: disband
+    leave: leave
+    join: join
+    deny: deny
+    promote: promote
+    demote: demote
+    home: home
+    chat: chat
+    ff: ff
+    modtag: modtag
+    list: list
+    info: info
+    profile: profile
+    rival: rival
+    ally: ally
+    member: member
+    settings: settings
+    regroup: regroup
+    ban: ban
+    unban: unban
+    nickname: nickname
+    banner: banner
+    role: role
+    sync: sync
+    reload: reload
+    verify: verify
+    forcejoin: forcejoin
+    delete: delete
+    globalff: globalff
+    resetclankdr: resetclankdr
+    resetplayerkdr: resetplayerkdr
+    changetag: changetag
+    removepoints: removepoints
+    setpoints: setpoints
+    removeslot: removeslot
+    setslot: setslot
+    addslot: addslot
+    chatspy: chatspy
+    addpoints: addpoints
+    teleport: teleport
+    view: view
+    add: add
+    remove: remove
+    accept: accept
+    invite: invite
+    kick: kick
+    search: search
+    set: set
+    banned: banned
+    send: send
+    updateskin: updateskin
+    invites: invites
+    upload: upload
+    clear: clear
+    logger: logger
+    discord: discord
+    createhook: createhook
+    checkclanplayers: checkclanplayers
+    emptyclans: emptyclans
+    bank: bank
+    setleader: setleader

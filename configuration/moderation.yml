@@ -1,0 +1,232 @@
+# This file contains changes to member roles and promotions
+# This setting requires advanced knowledge as it affects addons too!
+# usage: KEY:DEFAULT VALUE ex (KICK:true/false, KICK:0/1) always use boolean value. Values ​​not added are always considered FALSE
+# Applicable permissions list:
+# DEFAULT - MANDATORY FOR EMPTY PERMISSION
+# KICK - Kick members
+# INVITE - Send invites
+# BAN - Ban players
+# UNBAN - Unban players
+# MODTAG - Change the clan tag
+# DISBAND - Disband the clan !CAUTION
+# HOMEMANAGER - Criar and delete homes
+# ALLYMANAGER - Send, remove, accept and deny alliances
+# RIVALMANAGER - Send, remove, accept and deny rivalries
+# BANNERMANAGER - Edit and delete banners
+# REGROUP - Use clan regroup
+# FF - Toggle clan ff
+# DESC - Change clan description
+# SETTINGS - Open, read and edit in settings
+# PERMISSIONS - Open, read and edit member permissions
+# VIEW_LOGGER - View clan log
+# EDIT_LOGGER - Edit and delete clan log
+# EDIT_WEBHOOK - Edit and delete clan discord webhook
+# PROMOTE - Promote Members
+# DEMOTE - Demote Members
+ 
+# Addon permissions are in the config.yml of each addon.
+Moderation:
+   
+   
+  # This setting only allows you to edit roles below him, for example a load with priority 2 cannot edit loads with priority 3
+  just_edit_permissions_below: true
+   
+   
+  # If the DEFAULT permissions are changed, the clans can update the Roles.
+  update:
+    # enable update button
+    enabled: true
+    # in seconds
+    cooldown: 3600
+   
+   
+  # Use this formatting as an example or uncomment the lines:
+  # EXAMPLE
+  #    list:
+  #      member:
+  #        name: '<gray>Member'
+  #        priority: 0
+  #        upgradable: true
+  #        icon:
+  #            material: STONE
+  #            name: '<gray>Member Permissions'
+  #            lore:
+  #            - ' <yellow>Click to edit'
+  #            glow: true
+  #            amount: 1
+  #            model: 0
+  #            texture: ''
+  #            slot: 7
+  #        editable: true
+  #        default_permissions:
+  #        - 'DEFAULT:true'
+  #      moderator:
+  #        name: '<green>Mod'
+  #        priority: 1
+  #        upgradable: true
+  #        icon:
+  #            material: STONE
+  #            name: '<green>Mod Permissions'
+  #            lore:
+  #            - ' <yellow>Click to edit'
+  #            glow: true
+  #            amount: 1
+  #            model: 0
+  #            texture: ''
+  #            slot: 8
+  #        editable: true
+  #        default_permissions:
+  #        - 'KICK:true'
+  #        - 'INVITE:true'
+  #      admin:
+  #        name: '<yellow>Admin'
+  #        priority: 2
+  #        upgradable: true
+  #        icon:
+  #            material: STONE
+  #            name: '<yellow>Admin Permissions'
+  #            lore:
+  #            - ' <yellow>Click to edit'
+  #            glow: true
+  #            amount: 1
+  #            model: 0
+  #            texture: ''
+  #            slot: 9
+  #        editable: true
+  #        default_permissions:
+  #        - 'KICK:true'
+  #        - 'INVITE:true'
+  #        - 'BAN:true'
+  #        - 'UNBAN:true'
+  #        - 'MODTAG:true'
+  #        - 'HOMEMANAGER:true'
+  #        - 'ALLYMANAGER:true'
+  #        - 'RIVALMANAGER:true'
+  #        - 'PERMISSIONS:true'
+  #        - 'EDIT_WEBHOOK:true'
+  #      leader:
+  #        name: '<red>Leader'
+  #        priority: 100
+  #        upgradable: false
+  #        icon:
+  #            material: STONE
+  #            name: '<red>Leader'
+  #            lore:
+  #            - ' <red>These permissions are not editable'
+  #            glow: true
+  #            amount: 1
+  #            model: 0
+  #            texture: ''
+  #            slot: 10
+  #        default_permissions:
+  #        - 'DEFAULT:true'
+  list:
+    # Default first role.
+    member:
+      # The name that will appear in menus, placeholders, and commands.
+      name: <gray>Member
+      # Priority is in ascending order, for example 0 for members, 1 for moderator, the higher the position, the higher the priority.
+      priority: 0
+      # usage: KEY:DEFAULT VALUE ex (KEY:true or false, KEY:0 or 1) always use boolean value.
+      default_permissions:
+      - DEFAULT:true
+      - VIEW_LOGGER:true
+      # Can the leader change these permissions?
+      editable: true
+      # Can it be achieved with promotion?
+      upgradable: true
+      # Icon for GUI menus
+      icon:
+        material: PLAYER_HEAD
+        name: <gray>Member Permissions
+        lore:
+        - ''
+        - ' &eClick to edit member permissions'
+        glow: 'true'
+        amount: 1
+        model: 0
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxZmFjNmIyYTgyODg1ODk1YzVhN2I2OTc2OWE4NWFmOTBhZmRkOGMzZDNhYjUxOTRjYzU3ODU5MTBiZDM0NSJ9fX0=
+        slot: 11
+    # This is the leader configuration
+    leader:
+      # The name that will appear in menus, placeholders, and commands.
+      name: <red>Leader
+      # Priority is in ascending order, for example 0 for leaders, 1 for moderator, the higher the position, the higher the priority.
+      priority: 100
+      # usage: KEY:DEFAULT VALUE ex (KEY:true or false, KEY:0 or 1) always use boolean value.
+      default_permissions:
+      - DEFAULT:true
+      # Icon for GUI menus
+      icon:
+        material: PLAYER_HEAD
+        name: <red>Leader
+        lore:
+        - ''
+        - ' <red>These permissions are not editable'
+        glow: 'false'
+        amount: 1
+        model: 0
+        texture: '%uclans_leader_head%'
+        slot: 10
+  # DEFAULT - MANDATORY FOR EMPTY PERMISSION
+  # KICK - Kick members
+  # INVITE - Send invites
+  # BAN - Ban players
+  # UNBAN - Unban players
+  # MODTAG - Change the clan tag
+  # DISBAND - Disband the clan !CAUTION
+  # HOMEMANAGER - Criar and delete homes
+  # ALLYMANAGER - Send, remove, accept and deny alliances
+  # RIVALMANAGER - Send, remove, accept and deny rivalries
+  # BANNERMANAGER - Edit and delete banners
+  # REGROUP - Use clan regroup
+  # FF - Toggle clan ff
+  # DESC - Change clan description
+  # SETTINGS - Open, read and edit in settings !CAUTION
+  # PERMISSIONS - Open, read and edit member permissions !CAUTION
+  # EDIT_WEBHOOK - Open, read and edit discord webhook
+  # PROMOTE - Permission to promote a member
+  # DEMOTE - Permission to demote a member
+  permissions:
+    DEFAULT:
+      name: Default
+    KICK:
+      name: Kick-Members
+    INVITE:
+      name: Invite-Members
+    BAN:
+      name: Ban-Member
+    UNBAN:
+      name: Unban-Member
+    MODTAG:
+      name: Modtag
+    DISBAND:
+      name: Disband
+    HOMEMANAGER:
+      name: Home-Manager
+    ALLYMANAGER:
+      name: Ally-Manager
+    RIVALMANAGER:
+      name: Rival-Manager
+    BANNERMANAGER:
+      name: Banner-Manager
+    REGROUP:
+      name: Regroup-Invite
+    FF:
+      name: FF
+    DESC:
+      name: Change-Desc
+    SETTINGS:
+      name: Manage-Settings
+    PERMISSIONS:
+      name: Change-Permissions
+    VIEW_LOGGER:
+      name: View-Logger
+    EDIT_LOGGER:
+      name: Edit-Logger
+    EDIT_WEBHOOK:
+      name: Edit-Webhook
+    PROMOTE:
+      name: Promote-Members
+    DEMOTE:
+      name: Demote-Members

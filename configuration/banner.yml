@@ -1,0 +1,31 @@
+Banner:
+  enabled: true
+  default_material: ARMOR_STAND
+  ucfirst_id: true
+   
+  groups:
+     
+    # Enabled all material types, and parts of materials starting or ending with name using PREFIX_partial and SUFFIX_partial
+    # Example: SUFFIX_ORE will show items ending in ORE, PREFIX_DIAMOND will show items starting with DIAMOND
+    # Filters are always required to show specific groups or items
+    common:
+      GROUP_1:
+      - SUFFIX_BANNER
+     
+    # The head groups only receive the texture in base64 format
+    # try to always use lowercase for the ids
+    head:
+      HEAD_GROUP_1:
+        brasil: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE0NjQ3NWQ1ZGNjODE1ZjZjNWYyODU5ZWRiYjEwNjExZjNlODYxYzBlYjE0ZjA4ODE2MWIzYzBjY2IyYjBkOSJ9fX0=
+        bunny: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjMzODlhMzI0M2EyOWRiZjg4OTkwYmQ0MmM4OTQ1ZWMyMDFmNjk4MTQ5OWU3OGU1MWQwMTU3MjQzMGU5Mzk4YSJ9fX0=
+        eye: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwY2U1MjBmMjY3YTBkMDI1OGQwYmM2NWY0N2U4ZTMxYTVkNmFkMzI2ZjcwNTE3Yjg2NjNmNTJkZGEyNjcwYyJ9fX0=
+     
+    # Banner groups must have pattern and color specifications.
+    # The banner groups only receive the banners in JSON format
+    # Available patterns: [BASE, SQUARE_BOTTOM_LEFT, SQUARE_BOTTOM_RIGHT, SQUARE_TOP_LEFT, SQUARE_TOP_RIGHT, STRIPE_BOTTOM, STRIPE_TOP, STRIPE_LEFT, STRIPE_RIGHT, STRIPE_CENTER, STRIPE_MIDDLE, STRIPE_DOWNRIGHT, STRIPE_DOWNLEFT, STRIPE_SMALL, CROSS, STRAIGHT_CROSS, TRIANGLE_BOTTOM, TRIANGLE_TOP, TRIANGLES_BOTTOM, TRIANGLES_TOP, DIAGONAL_LEFT, DIAGONAL_RIGHT, DIAGONAL_LEFT_MIRROR, DIAGONAL_RIGHT_MIRROR, CIRCLE_MIDDLE, RHOMBUS_MIDDLE, HALF_VERTICAL, HALF_HORIZONTAL, HALF_VERTICAL_MIRROR, HALF_HORIZONTAL_MIRROR, BORDER, CURLY_BORDER, CREEPER, GRADIENT, GRADIENT_UP, BRICKS, SKULL, FLOWER, MOJANG, GLOBE, PIGLIN]
+    # Available colors: [WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK]
+    # try to always use lowercase for the ids
+    banner:
+      BANNER_GROUP_1:
+        creeper: '{"Color": "GREEN","Patterns": [{Pattern: "CREEPER", Color: "BLACK"}]}'
+        mojang: '{"Color": "WHITE","Patterns": [{Pattern: "MOJANG", Color: "YELLOW"}]}'
