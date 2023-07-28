@@ -100,6 +100,8 @@ LANGUAGE:
   clan tag blacklist: '%tag% <red>This Tag cannot be used in Clans.'
   clan changed settings: '%tag% <green>Clan settings have been changed.'
   clan changed settings gui: <green>Settings have been changed.
+  clan editor changed settings: '%tag% <green>Clan settings have been changed.'
+  clan editor changed settings gui: <green>Settings have been changed.
   clan sync settings gui: <green>Synchronizing permissions...
   clan settings warinvite: <aqua>War Invite
   clan settings allysharedchat: <aqua>Ally shared chat
@@ -121,6 +123,7 @@ LANGUAGE:
   banner empty gui: <red>Your Clan has no Banner!
   banner empty item: <red>The item must be a banner!
   banner not acceptable: '%tag% <red>This item is not acceptable as a Clan banner.'
+  banner acceptable list: ' <red>Acceptable types: <aqua>%uclans_banner_upload_acceptable%'
   banner not acceptable gui: <red>Item is not acceptable.
   banner not banner: '%tag% <red>The item you are holding must be a banner'
   banner hand empty: '%tag% <red>You need to be holding an item.'
@@ -153,6 +156,19 @@ LANGUAGE:
   help clan rival list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Click to view.''> <gray>- %uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Level: <green>%uclans_level% | <white>Leader: <green>%uclans_leader% | <white>Creation: <green>%uclans_creation_date_formated%</hover></click>'
   help clan member_search list header: '<newline>%uclans_tag_color%<blue><bold> search member List:'
   help clan member_search list format: '<click:suggest_command:"/{_clan} {_member} invite %uclans_player_realname% "><hover:show_text:''<green>Click to invite.''> <gray>- %uclans_player_role_formated% <green>%uclans_player_nickname% <gray>| <white>Last see: <green>%uclans_player_lastsee_formated% | <white>KDR: <green>%uclans_player_kdr% <yellow>[Invite]</hover></click>'
+  help clan webhook header: '<newline>%uclans_tag_color%<blue><bold> webhook:'
+  help clan webhook format:
+  - '<blue><bold>|</bold> <blue>Webhook:'
+  - ' <white>Is connected: <aqua>%uclans_haswebhook_formated%'
+  - ' <white>Url: <aqua>%uclans_webhook_url%'
+  help clan webhook success add: '%tag% <green>The webhook has been successfully added.'
+  help clan webhook error add: '%tag% There was an error adding the webhook, check the url! (format: https://discord.com/api/webhooks/{channel}/{token})'
+  help clan webhook success remove: '%tag% <green>Webhook successfully removed'
+  help clan webhook success remove gui: <green>Successfully removed
+  help clan webhook error remove: '%tag% <red>Error removing webhook, try again.'
+  help clan webhook error remove gui: <red>Error removing
+  help clan webhook cooldown: '%tag% <red>You made a request a little while ago, wait for more %sec% to try again'
+  help clan webhook linked: The player %player% linked the clan %uclans_tag_nocolor% with the discord webhook, now the clan notifications and actions will appear here.
   help logger header: <blue><bold>Clan Logger:</bold> <gray>%time% <gray>| <gray>(%page%/%pages%)
   help logger format: '<hover:show_text:''<green>%uclans_logger:{id}:text%''><gray>- <white>Origin: <aqua>%uclans_logger:{id}:plugin%<gray> | <white>Date: <aqua>%uclans_logger:{id}:date% <dark_gray>(Expires: %uclans_logger:{id}:expires%)<newline>  <aqua>%uclans_logger:{id}:text%</hover>'
   help logger clear success gui: <green>Successfully cleared log
@@ -250,6 +266,10 @@ LANGUAGE:
   translaction all: All
   translaction point: Point
   translaction patent: Patent
+  translaction daily: Daily
+  translaction weekly: Weekly
+  translaction monthly: Monthly
+  translaction yearly: Yearly
   clan dont leader: '%tag% <red>You are not the leader of the Clan.'
   clan dont permission role: '%tag% <red>Your current role you cannot do this.'
   clan dont permission role gui: <red>Current role cannot do this.
@@ -342,8 +362,8 @@ LANGUAGE:
   clan has only points: '%tag% <red>The clan has only <aqua>%num% <red>points'
   clan ally in limit: '%tag% <red>Your clan has reached the allies limit and needs to gain levels to unlock more allies, Your clans current limit is <aqua>%uclans_limit_ally%'
   clan rival in limit: '%tag% <red>Your clan has reached the rivalries limit and needs to gain levels to unlock more rivalries, Your clans current limit is <aqua>%uclans_limit_rival%'
-  clan banner_upload in limit: '%tag% <red>Your clan does not have this feature available, this requires level <aqua>%uclans_required_level:BANNER_UPLOAD%'
-  clan banner_upload in limit gui: <red>Requires level <aqua>%uclans_required_level:BANNER_UPLOAD%
+  clan feature not unlocked: '%tag% <red>Your clan does not have this feature available, this requires level <aqua>%uclans_required_level:{type}%'
+  clan feature not unlocked gui: <red>Requires level <aqua>%uclans_required_level:{type}%
   clan create error: '%tag% <red>There was an error creating.'
   clan create success: '%tag% <green>New Clan created successfully!'
   command deprecated: '%tag% <red>This command has been deprecated and can be removed from the settings'
@@ -715,6 +735,14 @@ GUI:
   - <red>it is opened nor can they be invited again.
   - ''
   - ' <yellow>Click to open.'
+  General clan_settings items webhook name: <green>Discord Webhook.
+  General clan_settings items webhook lore:
+  - ''
+  - ' <white>Is Connected: <aqua>%uclans_haswebhook_formated%'
+  - ' <white>Url: <aqua>%uclans_webhook_urlshort%'
+  - ''
+  - ' <yellow>LEFT-CLICK to change.'
+  - ' <red>RIGHT-CLICK to reset.'
   General clan_settings items clan_edit name: <green>Edit clan.
   General clan_settings items clan_edit lore:
   - ''
@@ -1067,6 +1095,11 @@ GUI:
   General clan_top items back name: <red>Come back
   General clan_top items back lore:
   - ' <yellow>Click to go back'
+  General clan_top items only_open name: <green>Only open Clans?
+  General clan_top items only_open lore:
+  - ''
+  - ' <white>State: <aqua>{state}'
+  - ' <yellow>Click to apply filter.'
   General clan_members_invite title: <blue>Invite Members
   General clan_members_invite items fill name: ' '
   General clan_members_invite items fill lore: [
@@ -1210,7 +1243,7 @@ GUI:
   - ' <gray>'
   - ' <gray>Server: <green>%uclans_home:{name}:server%'
   - ' <gray>Name: <aqua>%uclans_home:{name}:name%'
-  - ' <gray>Location: <aqua>%uclans_home:<num>:location%'
+  - ' <gray>Location: <aqua>%uclans_home:{name}:location%'
   General clan_allyhome title: <blue>Allied Homes
   General clan_allyhome items back name: <red>Come back
   General clan_allyhome items back lore:
@@ -1476,7 +1509,7 @@ COMMANDS:
   clan cancel show on_error: '%tag% <red>Error canceling'
   clan cancel show on_usage: '%tag% <red>Use <aqua>/{_clan} {_cancel}'
   clan changeleader show on_help: <click:suggest_command:"/{_clan} {_changeleader} "><hover:show_text:'<green>Click to transfer the leadership.'> <aqua>/{_clan} {_changeleader} <red><player> <gray>-<yellow> Transfer the leadership.</hover></click>
-  clan changeleader show on_success: '%tag% <green>You have changed clan leadership to %clan_leader%'
+  clan changeleader show on_success: '%tag% <green>You have changed clan leadership to %uclans_leader%'
   clan changeleader show on_error: '%tag% <red>Error transferring leadership.'
   clan changeleader show on_usage: '%tag% <red>Use <aqua>/{_clan} {_changeleader} <red><player>'
   clan desc show on_help: <click:suggest_command:"/{_clan} {_desc} "><hover:show_text:'<green>Click to add/change a clan description.'> <aqua>/{_clan} {_desc} <red><description> <gray>-<yellow> Add description to Clan.</hover></click>
@@ -1547,10 +1580,10 @@ COMMANDS:
   clan list show on_success: '%tag% <green>Success.'
   clan list show on_error: '%tag% <red>Error to use list.'
   clan list show on_usage: '%tag% <red>Use <aqua>/{_clan} {_list} <light_purple>(type) <light_purple>(-gui)'
-  clan info show on_help: <click:suggest_command:"/{_clan} {_info} "><hover:show_text:'<green>Click to view clan info.'> <aqua>/{_clan} {_info} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> View clan info.</hover></click>
+  clan info show on_help: <click:suggest_command:"/{_clan} {_info} "><hover:show_text:'<green>Click to view clan info.'> <aqua>/{_clan} {_info} <light_purple>(tag|nickname) <light_purple>(-gui) <gray>-<yellow> View clan info.</hover></click>
   clan info show on_success: ''
   clan info show on_error: '%tag% <red>Error to use info.'
-  clan info show on_usage: '%tag% <red>Use <aqua>/{_clan} {_info} <light_purple>(tag) <light_purple>(-gui)'
+  clan info show on_usage: '%tag% <red>Use <aqua>/{_clan} {_info} <light_purple>(tag|nickname) <light_purple>(-gui)'
   clan profile show on_help: <click:run_command:"/{_clan} {_profile} "><hover:show_text:'<green>Click to expand.'> <aqua>/{_clan} {_profile} <gray>-<yellow> View member commands.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
   clan profile show on_success: '%tag% <green>Success!'
   clan profile show on_error: '%tag% <red>Error to use profile.'
@@ -1699,6 +1732,22 @@ COMMANDS:
   clan logger subcommands view show on_success: '%tag% <green>Success'
   clan logger subcommands view show on_error: '%tag% <red>Error'
   clan logger subcommands view show on_usage: '%tag% <red>Use <aqua>/{_clan} {_logger} {_view} <light_purple>(time) <light_purple>(page) <light_purple>(-gui)'
+  clan discord show on_help: <click:run_command:"/{_clan} {_discord} "><hover:show_text:'<green>Click to expand discord commands.'> <aqua>/{_clan} {_discord} <gray>-<yellow> Clan Webhook.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  clan discord show on_success: '%tag% <green>Success.'
+  clan discord show on_error: '%tag% <red>Error.'
+  clan discord show on_usage: '%tag% <red>Use <aqua>/{_clan} {_discord}'
+  clan discord subcommands remove: <click:suggest_command:"/{_clan} {_discord} {_remove} "><hover:show_text:'<green>Click to remove webhook'> <aqua>/{_clan} {_discord} {_remove} <gray>-<yellow> Remove discord webhook.</hover></click>
+  clan discord subcommands remove show on_success: '%tag% <green>The clan webhook has been successfully removed.'
+  clan discord subcommands remove show on_error: '%tag% <red>There was an error removing the webhook, it may not be set.'
+  clan discord subcommands remove show on_usage: '%tag% <red>Use <aqua>/{_clan} {_discord} {_remove}'
+  clan discord subcommands view: <click:suggest_command:"/{_clan} {_discord} {_view} "><hover:show_text:'<green>Click to view clan webhook'> <aqua>/{_clan} {_discord} {_view} <light_purple>(-gui) <gray>-<yellow> View clan webhook.</hover></click>
+  clan discord subcommands view show on_success: '%tag% <green>Success'
+  clan discord subcommands view show on_error: '%tag% <red>Error'
+  clan discord subcommands view show on_usage: '%tag% <red>Use <aqua>/{_clan} {_discord} {_view} <light_purple>(-gui)'
+  clan discord subcommands createhook: <click:suggest_command:"/{_clan} {_discord} {_createhook} "><hover:show_text:'<green>Click to create clan webhook'> <aqua>/{_clan} {_discord} {_createhook} <red><url> <gray>-<yellow> Create clan webhook.</hover></click>
+  clan discord subcommands createhook show on_success: '%tag% <green>We are testing your webhook, please wait a few seconds...'
+  clan discord subcommands createhook show on_error: '%tag% <red>An error occurred while creating the webhook'
+  clan discord subcommands createhook show on_usage: '%tag% <red>Use <aqua>/{_clan} {_discord} {_createhook} <red><url>'
   clan ban show on_help: <click:suggest_command:"/{_clan} {_ban} "><hover:show_text:'<green>Click to ban a player.'> <aqua>/{_clan} {_ban} <red><player> <gray>-<yellow> Ban a player.</hover></click>
   clan ban show on_success: '%tag% <green>The player has been successfully banned.'
   clan ban show on_error: '%tag% <red>There was an error banning the player.'
@@ -1791,6 +1840,42 @@ COMMANDS:
   uclan reload show on_success: '%tag% <green>Plugin reloaded successfully <gray>(%time%).'
   uclan reload show on_error: '%tag% <red>Error reloading settings.'
   uclan reload show on_usage: '%tag% <red>Use <aqua>/{_uclan} {_reload}'
+  uclan checkclanplayers show on_help: <click:suggest_command:"/{_uclan} {_checkclanplayers} "><hover:show_text:'<green>Click to start.'> <aqua>/{_uclan} {_checkclanplayers} <gray>-<yellow> Check data consistency.</hover></click>
+  uclan checkclanplayers show on_success: '%tag% <green>Verification of player and clan data has started, follow below.'
+  uclan checkclanplayers show on_error: '%tag% <red>An error occurred while verifying.'
+  uclan checkclanplayers show on_usage: '%tag% <red>Use <aqua>/{_uclan} {_checkclanplayers}'
+  uclan emptyclans show on_help: <click:suggest_command:"/{_uclan} {_emptyclans} "><hover:show_text:'<green>Click to start.'> <aqua>/{_uclan} {_emptyclans} <red><-arg:value> <gray>-<yellow> Clear server clans.</hover></click>
+  uclan emptyclans show on_success: '%tag% <green>Verification of player and clan data has started, follow below.'
+  uclan emptyclans show on_error: '%tag% <red>An error occurred, maybe you didnt specify the arguments correctly. <red>Keys: {keys}'
+  uclan emptyclans show on_usage: '%tag% <red>Use <aqua>/{_uclan} {_emptyclans} <red><-arg:value>'
+  uclan kick show on_help: <click:suggest_command:"/{_uclan} {_kick} "><hover:show_text:'<green>Click to start.'> <aqua>/{_uclan} {_kick} <red><TAG> <Player> <gray>-<yellow> Remove a clan player.</hover></click>
+  uclan kick show on_success: '%tag% <green>The player has been successfully removed.'
+  uclan kick show on_error: '%tag% <red>An error occurred while removing the player from the clan.'
+  uclan kick show on_usage: '%tag% <red>Use <aqua>/{_uclan} {_kick} <red><TAG> <Player>'
+  uclan setleader show on_help: <click:suggest_command:"/{_uclan} {_setleader} "><hover:show_text:'<green>Click to start.'> <aqua>/{_uclan} {_setleader} <red><TAG> <Player> <gray>-<yellow> Set a clan leader.</hover></click>
+  uclan setleader show on_success: '%tag% <green>The new leader has been successfully changed.'
+  uclan setleader show on_error: '%tag% <red>An error occurred while set the new clan leader.'
+  uclan setleader show on_usage: '%tag% <red>Use <aqua>/{_uclan} {_setleader} <red><TAG> <Player>'
+  uclan bank show on_help: <click:run_command:"/{_uclan} {_bank} "><hover:show_text:'<green>Click to expand bank commands.'> <aqua>/{_uclan} {_bank} <gray>-<yellow> Change clan bank.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  uclan bank show on_success: '%tag% <green>success'
+  uclan bank show on_error: '%tag% <red>An error occurred while changing uclan bank.'
+  uclan bank show on_usage: '%tag% <red>Use <aqua>/{_uclan} {_bank}'
+  uclan bank subcommands view: <click:suggest_command:"/{_uclan} {_bank} {_view} "><hover:show_text:'<green>Click to view a bank.'> <aqua>/{_uclan} {_bank} {_view} <red><tag|player> <gray>-<yellow> View a clan bank.</hover></click>
+  uclan bank subcommands view show on_success: '%tag% <green>This clans bank has <green>{value}.'
+  uclan bank subcommands view show on_error: '%tag% <red>Error when viewing a clans bank.'
+  uclan bank subcommands view show on_usage: '%tag% <red>Use <aqua>/{_uclan} {_bank} {_view} <red><tag|player>'
+  uclan bank subcommands set: <click:suggest_command:"/{_uclan} {_bank} {_set} "><hover:show_text:'<green>Click to set the bank.'> <aqua>/{_uclan} {_bank} {_set} <gray>-<yellow> Set the clan bank.</hover></click>
+  uclan bank subcommands set show on_success: '%tag% <green>The clan bank has been set to <green>{value}'
+  uclan bank subcommands set show on_error: '%tag% <red>An error occurred while changing the bank.'
+  uclan bank subcommands set show on_usage: '%tag% <red>Use <aqua>/{_uclan} {_bank} {_set} <red><tag|player> <value>'
+  uclan bank subcommands remove: <click:suggest_command:"/{_uclan} {_bank} {_remove} "><hover:show_text:'<green>Click to remove bank.'> <aqua>/{_uclan} {_bank} {_remove} <red><tag|player> <value> <gray>-<yellow> Remove from a clan bank.</hover></click>
+  uclan bank subcommands remove show on_success: '%tag% <green>The clan bank has been changed to <green>{value}'
+  uclan bank subcommands remove show on_error: '%tag% <red>An error occurred while changing the bank.'
+  uclan bank subcommands remove show on_usage: '%tag% <red>Use <aqua>/{_uclan} {_bank} {_remove} <red><tag|player> <value>'
+  uclan bank subcommands add: <click:suggest_command:"/{_uclan} {_bank} {_add} "><hover:show_text:'<green>Click to add bank.'> <aqua>/{_uclan} {_bank} {_add} <red><tag|player> <value> <gray>-<yellow> Add to a clan bank.</hover></click>
+  uclan bank subcommands add show on_success: '%tag% <green>The clan bank has been changed to <green>{value}'
+  uclan bank subcommands add show on_error: '%tag% <red>An error occurred while changing the bank.'
+  uclan bank subcommands add show on_usage: '%tag% <red>Use <aqua>/{_uclan} {_bank} {_add} <red><tag|player> <value>'
  
  
  # TRANSLATIONS OF THE CHAT ACTIONS
@@ -1986,3 +2071,9 @@ LOGGER:
   CLANPLAYERJOINEVENT: <yellow>Player <green>%uclans_player_name% <yellow>has joined the clan.
   CLANPLAYERROLECHANGE: <yellow>Player <green>%uclans_player_name% <yellow>Role has now been changed to <green>%uclans_player_role_formated%
   CLANPLAYERINVITERECEIVE: <yellow>Player <green>{player_other} <yellow>was invited to the clan by <green>%uclans_player_name%
+  CLANALLYINVITEEVENT: <yellow>Your clan has sent an ally request to clan <green>{clan_other}
+  CLANRIVALINVITEEVENT: <yellow>New rivalry against clan <green>{clan_other}
+  CLANPLAYERBANEVENT: <yellow>The player <green>{player_other} <yellow>has been banned from the clan.
+  CLANPLAYERUNBANEVENT: <yellow>The player <green>{player_other} <yellow>has been unbaned from the clan.
+  CLANFFCHANGEEVENT: <yellow>Clan friendly fire changed to <green>{status}
+  CLANREGROUPSENDEVENT: <yellow>A request to regroup the clan has been sent by <green>{player_other}
