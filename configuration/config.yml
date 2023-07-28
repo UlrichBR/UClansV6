@@ -1,0 +1,310 @@
+Plugin:
+  check_for_updates: true
+ 
+Config:
+  tag: <#FFAA00><bold>U</bold><gradient:#0000AA:#5555FF><bold>Clans</bold></gradient> <gray>|
+  date_format: dd/MM/yyyy HH:mm
+  date_format_short: dd/MM/yyyy
+  # You can insert your own languages ​​in the /language/ folder following the Lang_ID.yml pattern.
+  # Default languages:
+  # EN - English
+  # PL - Polish
+  # TR - Turkish
+  # BR - Brazilian
+  # RU - Russian
+  # ES - Spanish
+  # HU - Hungarian
+  # GE - German
+  language: EN
+  # Timezone is the definition of times by locations and countries. you can choose which timezone best fits your schedule
+  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  timezone: America/Sao_Paulo
+   
+  translate:
+    enabled: true
+    reference:
+      block: block.minecraft.{object}
+      entity: entity.minecraft.{object}
+      item: item.minecraft.{object}
+      biome: biome.minecraft.{object}
+      color: color.minecraft.{object}
+      enchantment: enchantment.minecraft.{object}
+      gameMode: gameMode.{object}
+  teleport_delay: 3
+   
+  gui:
+    # The gui menus work as of 1.8 but you can turn it off and just use text mode
+    enabled: true
+    # Open gui menu when commands have no arguments
+    open_gui_noargs: true
+    # Force open gui menus (if enabled) without using the -gui arg
+    forge_open-gui: true
+    titles:
+      # This is the character limiter for menu titles, by default minecraft supports 32 but this value can be exceeded with ProtocolLib
+      max_characters: 30
+      ellipsis: ..
+   
+  command:
+    sort_alphabetically: true
+    max_results_per_page: 8
+    disabled_worlds: [
+      ]
+    disabled_regions: [
+      ]
+   
+  special_permissions:
+    bypass_command_cooldown: uclans.bypass_command_cooldown
+    bypass_command_worlds: uclans.bypass_command_worlds
+    bypass_command_regions: uclans.bypass_region
+    bypass_teleport: uclans.bypass_teleport
+    bypass_leader: uclans.bypass_leader
+   
+  money:
+    enabled: true
+    currency: $
+    # VAULT, PLAYERPOINTS, CLANSOULS, ELEMENTALGEMS or TOKENENCHANT
+    type: VAULT
+    format: '#,##0'
+   
+  player:
+    # about store_all_players
+    #Players with data storage (true) retain KDR to join new clan
+    # If TRUE it will store the data of all players for profile.
+    # If it is FALSE, non-clan players will also have no profile and KDR.
+    store_all_players: true
+    #If this option is turned off, clans will not receive membtos message entering or disconnecting, the button to change this in settings will not appear either.
+    join_quit: true
+    nickname:
+      custom_char: <red>~
+      allowed_chars: '[0-9a-zA-Z_-]*'
+      max_size: 16
+    invites:
+      # by player
+      max_store: 9
+      # in minutes, 1440 minutes = 1 day
+      time_expires: 1440
+    # Turns pvp management between members on or off
+    ff:
+      enabled: true
+      # Turns off pvp between non-clan players.
+      disable_noclan_pvp: false
+      forced_worlds:
+      - disabled_worlds
+      #WorldGuard Regions
+      forced_regions:
+      - forced_worlds
+     
+    # Turns kdr management between clans on or off.
+    kdr:
+      enabled: true
+      #Deaths by pvp when the player has no clan.
+      noclan_count: true
+      #Natural deaths, takedowns, mobs and other types.
+      nopvp_count: true
+      #points added to the clan and player KDR when the events below occur, (kills/deaths = ratio)
+      kills:
+        neutral: 1
+        ally: 1
+        rival: 1
+        noclan: 1
+        nopvp: 1
+      disabled_kdr_worlds:
+      - no_kdr_world
+      #WorldGuard Regions
+      disabled_kdr_regions:
+      - no_kdr_region
+    # The Skin Cache option is experimental and intended to remove player headlist loading errors.
+    skin:
+      # If the skins preference is hooks the plugin will not make requests to mojango, thus using hooks by default.
+      prefer_to_hook: false
+      # Check the Mojang API?.
+      mojang: true
+      # This option can be used for servers in OFFLINE mode, Uses skins based on the players nickname
+      enable_offline: true
+      # This option caches player skins along with the player data in the clan.
+      store: true
+      # If the player cache is empty use this skin (Base64) by default
+      on_empty: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGRhODkzYzI2ZDQ4YmVmZDk4YWRmZmFkZDhjNDk2YmM1YWIyZjEyY2IzZDY3OGU4MTA4MGI5M2JjYTM4M2UifX19
+      # in seconds
+      custom_cooldown: 60
+      # If the server is in OFFLINE MODE the plugin will try to retrieve skins using the hooks below
+      hooks:
+        skinsrestorer:
+          enabled: false
+          # This placeholder option can be used for skins restorer in 'Standalone Mode' and NOT in Proxy mode.
+           
+          # For servers in offline mode and PROXY mode follow the steps below (these steps created by skinsrestorer)
+          # Set skinsrestorer to true.
+          # Install the latest DEV version https://ci.codemc.io/job/SkinsRestorer/job/SkinsRestorerX-DEV on your backend and proxy servers.
+          # You can enable the backend storage by create a file called enableSkinStorageAPI.txt in SkinsRestorer folder (backend server -> ./plugins/SkinsRestorer/enableSkinStorageAPI.txt)
+          # Enable Mysql mode in the SkinsRestorer configuration file in the backend and also in the proxy, the connections must point to the same database.
+          # Restart your entire network.
+          useplaceholder: '%skinsrestorer_getTextureUrl_Or_Empty%'
+ 
+Clan:
+   
+  home:
+    #If disabled this does not appear in the menu and the command is marked as disabled.
+    enabled: true
+    guiclick_teleport_as_command: false
+    allowed_chars: '[0-9a-zA-Z_-]*'
+    public: false
+    can_toggle_view: true
+  banner: {
+    }
+   
+  #Relationship between clans
+  relation:
+    ally:
+      color: <green>
+      text: '[Ally]'
+    rival:
+      color: <red>
+      text: '[Rival]'
+    neutral:
+      color: <yellow>
+      text: '[NR]'
+    sameclan:
+      color: <gold>
+      text: ''
+   
+  # This option will delete inactive clans for X days.
+  inactivity:
+    enabled: false
+    # in days
+    delete_after: 30
+   
+  chat:
+    #Clan Chat listener priority.
+    #values (lowercase or UPPERCASE): LOWEST, LOW, NORMAL, HIGH, HIGHEST.
+    priority: NORMAL
+    format: '<hover:show_text:"<green>Clan %uclans_tag_color%<newline><newline><white> Leader: <aqua>%uclans_leader%<newline><white> Members: <aqua>%uclans_count_members%<newline><white> Level: <aqua>%uclans_level%">%uclans_tag_color% <light_purple>> <light_purple>%uclans_player_role_formated%<dark_purple>%player%<light_purple>: <light_purple>%chat_message%</hover>'
+    spy_tag: '<dark_gray>[SPY] '
+    enable_colors: false
+    # BOLD, ITALIC, UNDERLINED, STRIKETHROUGH, OBFUSCATED
+    disabled_decoration:
+    - OBFUSCATED
+   
+  verify:
+    always_verified: true
+    list_unverified: true
+   
+  tag:
+    #You can enable colors, gradient and rainbow with user permissions, leave it blank so everyone can use colors!
+    color_permission: ''
+    min_chars: 2
+    max_chars: 4
+    allowed_chars: '[0-9a-zA-Z_-]*'
+    # BOLD, ITALIC, UNDERLINED, STRIKETHROUGH, OBFUSCATED
+    disabled_decoration:
+    - OBFUSCATED
+    default_color: <dark_gray>
+    start: <white>[
+    end: <white>]
+    noclan_formated: <dark_red>WITHOUT CLAN
+    # example, for russian character use 'CYRILLIC', all list in https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html
+    unicodeblock: ''
+    #This Tag cannot be used in Clans. Sensitive to upper and lower case, no color should be added.
+    blacklist:
+    - ADMIN
+    - admin
+    - MOD
+    - mod
+    - OWNER
+    - owner
+   
+  desc:
+    #You can enable colors, gradient and rainbow with user permissions, leave it blank so everyone can use colors!
+    color_permission: ''
+    min_chars: 2
+    max_chars: 32
+    allowed_chars: '[0-9a-zA-Z_ -]*'
+    # BOLD, ITALIC, UNDERLINED, STRIKETHROUGH, OBFUSCATED
+    disabled_decoration:
+    - BOLD
+    - OBFUSCATED
+    default_color: <dark_gray>
+    nodesc_formated: <dark_gray>WITHOUT DESC
+    # example, for russian character use 'CYRILLIC', all list in https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html
+    unicodeblock: ''
+   
+  command_actions:
+    enabled: true
+    # INSECONDS
+    execute_delay: 1
+    #example commands, Only %clantag% and %player% can be used here
+    create_clan_commands: [
+      ]
+    #example commands, Only %clantag% and %player% can be used here
+    delete_clan_commands: [
+      ]
+    #example commands, Only %clantag% and %player% can be used here
+    join_clan_commands: [
+      ]
+    #example commands, Only %clantag% and %player% can be used here
+    leave_clan_commands: [
+      ]
+    #example commands, Only %oldtag%, %newtag% and %player% can be used here
+    modtag_clan_commands: [
+      ]
+  regroup_invite:
+     # IN SECONDS
+    max_time_seconds: 60
+  rival_remove:
+    need_confirmation: true
+     # IN SECONDS
+    max_time_seconds: 60
+  ally_invite:
+    need_confirmation: true
+     # IN SECONDS
+    max_time_seconds: 60
+   
+  logger:
+    enabled: true
+    enable_colors: true
+    # in minutes, 2880 minutes = 2 days
+    time_expires: 2880
+    plugin_material: IRON_AXE
+    plugin_name: Clan
+     
+    discord:
+      # Send events to discord?
+      enabled: true
+      # in seconds
+      ping_cooldown: 300
+      regex: (https?:\/\/)?(www\.)?(discord\.(gg|io|me|li|com)|discordapp\.com\/api\/webhooks)\/.+[0-9a-zA-Z_-]
+      embed:
+        enabled: true
+        #only hex colors
+        color: '#5555FF'
+        #variables: %player_uuid%
+        avatar: https://crafatar.com/avatars/%player_uuid%.png
+    events:
+      ClanPlayerInviteReceive: true
+      ClanPlayerRoleChangeEvent: true
+      ClanPlayerJoinEvent: true
+      ClanPlayerLeaveEvent: true
+      ClanCreateEvent: true
+      ClanModTagEvent: true
+      ClanModDescEvent: true
+      ClanPointChangeEvent: false
+      ClanLevelEvent: true
+      ClanVerifyChangeEvent: true
+      ClanLeaderChangeEvent: true
+      ClanAllyAddEvent: true
+      ClanAllyRemoveEvent: true
+      ClanRivalRemoveEvent: true
+      ClanRivalAddEvent: true
+      ClanHomeCreateEvent: true
+      ClanHomeDeleteEvent: true
+      ClanBannerChangeEvent: true
+      ClanAllyInviteEvent: true
+      ClanRivalInviteEvent: true
+      ClanPlayerBanEvent: true
+      ClanPlayerUnbanEvent: true
+      ClanFFChangeEvent: true
+      ClanRegroupSendEvent: true
+ 
+# DONT CHANGE THIS
+version:
+  generated: 6.9.0
