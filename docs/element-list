@@ -1,0 +1,10 @@
+me.ulrich.clans
+me.ulrich.clans.api
+me.ulrich.clans.data
+me.ulrich.clans.events
+me.ulrich.clans.interfaces
+me.ulrich.clans.library.holo.lines
+me.ulrich.clans.library.holo.lines.types
+me.ulrich.clans.manager
+me.ulrich.clans.manager.addon
+me.ulrich.clans.packets.WorldGuard
