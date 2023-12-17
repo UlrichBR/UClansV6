@@ -100,6 +100,8 @@ LANGUAGE:
   clan tag blacklist: '%tag% <red>Bu etiket Klanlarda kullanılamaz.'
   clan changed settings: '%tag% <green>Clan ayarları değiştirildi.'
   clan changed settings gui: <green>Ayarlar değiştirildi.
+  clan editor changed settings: '%tag% <green>Klan ayarları değiştirildi.'
+  clan editor changed settings gui: <green>Ayarlar değiştirildi.
   clan sync settings gui: <green>İzinler senkronize ediliyor...
   clan settings warinvite: <aqua>Savaş Daveti
   clan settings allysharedchat: <aqua>Müttefik paylaşımlı sohbet
@@ -121,6 +123,7 @@ LANGUAGE:
   banner empty gui: <red>Klanınızın bir flaması yok!
   banner empty item: <red>Öğe bir flama olmalı!
   banner not acceptable: '%tag% <red>Bu öğe bir Klan flaması olarak kabul edilemez.'
+  banner acceptable list: ' <red>Kabul edilebilir tipler: <aqua>%uclans_banner_upload_acceptable%'
   banner not acceptable gui: <red>Öğe kabul edilemez.
   banner not banner: '%tag% <red>Tuttuğunuz öğe bir flama olmalı'
   banner hand empty: '%tag% <red>Bir öğe tutmanız gerekiyor.'
@@ -153,6 +156,19 @@ LANGUAGE:
   help clan rival list format: '<click:suggest_command:"/{_clan} {_info} %uclans_tag_nocolor% "><hover:show_text:''<green>Görüntülemek için tıklayın.''> <gray>- %uclans_tag_color% <gray>| <white>Patent: <green>%uclans_patent_formated% <gray>| <white>Seviye: <green>%uclans_level% | <white>Lider: <green>%uclans_leader% | <white>Oluşturulma: <green>%uclans_creation_date_formated%</hover></click>'
   help clan member_search list header: '<newline>%uclans_tag_color%<blue><bold> üye arama listesi:'
   help clan member_search list format: '<click:suggest_command:"/{_clan} {_member} invite %uclans_player_realname% "><hover:show_text:''<green>Davet etmek için tıklayın.''> <gray>- %uclans_player_role_formated% <green>%uclans_player_nickname% <gray>| <white>Son görülme: <green>%uclans_player_lastsee_formated% | <white>KDR: <green>%uclans_player_kdr% <yellow>[Davet Et]</hover></click>'
+  help clan webhook header: '<newline>%uclans_tag_color%<blue><bold> web kancası:'
+  help clan webhook format:
+  - '<blue><bold>|</bold> <blue>Web kancası:'
+  - ' <white>Bağlantı: <aqua>%uclans_haswebhook_formated%'
+  - ' <white>Url: <aqua>%uclans_webhook_url%'
+  help clan webhook success add: '%tag% <green>Web kancası başarıyla eklendi.'
+  help clan webhook error add: '%tag% Web kancası eklenirken bir hata oluştu, urlyi kontrol edin! (format: https://discord.com/api/webhooks/{channel}/{token})'
+  help clan webhook success remove: '%tag% <green>Webhook successfully removed'
+  help clan webhook success remove gui: <green>Başarıyla kaldırıldı
+  help clan webhook error remove: '%tag% <red>Web kancası kaldırılırken hata oluştu, tekrar deneyin.'
+  help clan webhook error remove gui: <red>Hata kaldırılıyor
+  help clan webhook cooldown: '%tag% <red>Kısa bir süre önce bir talepte bulundunuz, tekrar denemek için %sec% bekleyin'
+  help clan webhook linked: Oyuncu %player% klanı %uclans_tag_nocolor% discord webhook ile bağladı, artık klan bildirimleri ve eylemleri burada görünecek.
   help logger header: <blue><bold>Klan Kaydedici:</bold> <gray>%time% <gray>| <gray>(%page%/%pages%)
   help logger format: '<hover:show_text:''<green>%uclans_logger:{id}:text%''><gray>- <white>Kaynak: <aqua>%uclans_logger:{id}:plugin%<gray> | <white>Tarih: <aqua>%uclans_logger:{id}:date% <dark_gray>(Bitmesine: %uclans_logger:{id}:expires%)<newline>  <aqua>%uclans_logger:{id}:text%</hover>'
   help logger clear success gui: <green>Günlük başarıyla temizlendi
@@ -250,6 +266,10 @@ LANGUAGE:
   translaction all: Tümü
   translaction point: Puan
   translaction patent: Patent
+  translaction daily: Günlük
+  translaction weekly: Haftalık
+  translaction monthly: Aylık
+  translaction yearly: Yıllık
   clan dont leader: '%tag% <red>Klanın lideri değilsin.'
   clan dont permission role: '%tag% <red>Mevcut rolünüzle bunu yapamazsınız.'
   clan dont permission role gui: <red>Geçerli rol bunu yapamaz.
@@ -342,8 +362,8 @@ LANGUAGE:
   clan has only points: '%tag% <red>Klanın yalnızca <aqua>%num% <red>puanları var'
   clan ally in limit: '%tag% <red>Klanınız müttefik sınırına ulaştı ve daha fazla müttefikin kilidini açmak için seviye atlaması gerekiyor, Klanınızın mevcut sınırı <aqua>%uclans_limit_ally%'
   clan rival in limit: '%tag% <red>Klanınız düşmanlık sınırına ulaştı ve daha fazla düşmanlık kilidini açmak için seviye atlaması gerekiyor, Klanınızın mevcut sınırı <aqua>%uclans_limit_rival%'
-  clan banner_upload in limit: '%tag% <red>Klanınızda bu özellik mevcut değil, gereken seviye <aqua>%uclans_required_level:BANNER_UPLOAD%'
-  clan banner_upload in limit gui: <red>Gereken seviye <aqua>%uclans_required_level:BANNER_UPLOAD%
+  clan feature not unlocked: '%tag% <red>Klanınızda bu özellik mevcut değildir, açılması için gerekli seviye: <aqua>%uclans_required_level:{type}%'
+  clan feature not unlocked gui: <red>Gerekli seviye <aqua>%uclans_required_level:{type}%
   clan create error: '%tag% <red>Oluşturulurken bir hata oluştu.'
   clan create success: '%tag% <green>Yeni Klan başarıyla oluşturuldu!'
   command deprecated: '%tag% <red>Bu komut kullanımdan kaldırıldı ve ayarlardan kaldırılabilir'
@@ -715,6 +735,14 @@ GUI:
   - <red>katılamazlar ve tekrar davet edilemezler.
   - ''
   - ' <yellow>Açmak için tıkla.'
+  General clan_settings items webhook name: <green>Discord Web Kancası.
+  General clan_settings items webhook lore:
+  - ''
+  - ' <white>Bağlantı: <aqua>%uclans_haswebhook_formated%'
+  - ' <white>Url: <aqua>%uclans_webhook_urlshort%'
+  - ''
+  - ' <yellow>Değiştirmek için SOL-TIKLAYIN.'
+  - ' <red>Sıfırlamak için SAĞ-TIKLAYIN.'
   General clan_settings items clan_edit name: <green>Klanı düzenle.
   General clan_settings items clan_edit lore:
   - ''
@@ -1067,6 +1095,11 @@ GUI:
   General clan_top items back name: <red>Geri dön
   General clan_top items back lore:
   - ' <yellow>Geri dönmek için tıklayın'
+  General clan_top items only_open name: <green>Sadece açık Klanlar?
+  General clan_top items only_open lore:
+  - ''
+  - ' <white>Durum: <aqua>{state}'
+  - ' <yellow>Filtre uygulamak için tıklayın.'
   General clan_members_invite title: <blue>Üyeleri davet et
   General clan_members_invite items fill name: ' '
   General clan_members_invite items fill lore: [
@@ -1210,7 +1243,7 @@ GUI:
   - ' <gray>'
   - ' <gray>Sunucu: <green>%uclans_home:{name}:server%'
   - ' <gray>İsim: <aqua>%uclans_home:{name}:name%'
-  - ' <gray>Lokasyon: <aqua>%uclans_home:<num>:location%'
+  - ' <gray>Lokasyon: <aqua>%uclans_home:<name>:location%'
   General clan_allyhome title: <blue>Müttefik Evleri
   General clan_allyhome items back name: <red>Geri dön
   General clan_allyhome items back lore:
@@ -1476,7 +1509,7 @@ COMMANDS:
   clan cancel show on_error: '%tag% <red>İptal hatası'
   clan cancel show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_clan} {_cancel}'
   clan changeleader show on_help: <click:suggest_command:"/{_clan} {_changeleader} "><hover:show_text:'<green>Liderliği aktarmak için tıklayın.'> <aqua>/{_clan} {_changeleader} <red><player> <gray>-<yellow> Liderliği devret.</hover></click>
-  clan changeleader show on_success: '%tag% <green>Klan liderliğini %clan_leader% olarak değiştirdiniz'
+  clan changeleader show on_success: '%tag% <green>Klan liderliğini %uclans_leader% olarak değiştirdiniz'
   clan changeleader show on_error: '%tag% <red>Liderlik aktarılırken hata oluştu.'
   clan changeleader show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_clan} {_changeleader} <red><player>'
   clan desc show on_help: <click:suggest_command:"/{_clan} {_desc} "><hover:show_text:'<green>Bir klan açıklaması eklemek/değiştirmek için tıklayın.'> <aqua>/{_clan} {_desc} <red><açıklama> <gray>-<yellow> Klana açıklama ekle.</hover></click>
@@ -1547,10 +1580,10 @@ COMMANDS:
   clan list show on_success: '%tag% <green>Başarılı.'
   clan list show on_error: '%tag% <red>Listeyi kullanma hatası.'
   clan list show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_clan} {_list} <light_purple>(tür) <light_purple>(-gui)'
-  clan info show on_help: <click:suggest_command:"/{_clan} {_info} "><hover:show_text:'<green>Klan bilgilerini görüntülemek için tıklayın.'> <aqua>/{_clan} {_info} <light_purple>(tag) <light_purple>(-gui) <gray>-<yellow> Klan bilgilerini görüntüle.</hover></click>
+  clan info show on_help: <click:suggest_command:"/{_clan} {_info} "><hover:show_text:'<green>Klan bilgilerini görüntülemek için tıklayın.'> <aqua>/{_clan} {_info} <light_purple>(tag|oyuncu) <light_purple>(-gui) <gray>-<yellow> Klan bilgilerini görüntüle.</hover></click>
   clan info show on_success: ''
   clan info show on_error: '%tag% <red>Bilgileri kullanma hatası.'
-  clan info show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_clan} {_info} <light_purple>(tag) <light_purple>(-gui)'
+  clan info show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_clan} {_info} <light_purple>(tag|oyuncu) <light_purple>(-gui)'
   clan profile show on_help: <click:run_command:"/{_clan} {_profile} "><hover:show_text:'<green>Genişletmek için tıklayın.'> <aqua>/{_clan} {_profile} <gray>-<yellow> Üye komutlarını görüntüle.</hover></click> <hover:show_text:'<green>Alt komutlarla.'><green>[!]</hover>
   clan profile show on_success: '%tag% <green>Başarılı!'
   clan profile show on_error: '%tag% <red>Profili kullanma hatası.'
@@ -1699,6 +1732,22 @@ COMMANDS:
   clan logger subcommands view show on_success: '%tag% <green>Başarılı'
   clan logger subcommands view show on_error: '%tag% <red>Hata'
   clan logger subcommands view show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_clan} {_logger} {_view} <light_purple>(time) <light_purple>(page) <light_purple>(-gui)'
+  clan discord show on_help: <click:run_command:"/{_clan} {_discord} "><hover:show_text:'<green>Discord komutlarını genişletmek için tıklayın.'> <aqua>/{_clan} {_discord} <gray>-<yellow> Klan Web Kancası.</hover></click> <hover:show_text:'<green>Alt komutlar ile.'><green>[!]</hover>
+  clan discord show on_success: '%tag% <green>Başarılı.'
+  clan discord show on_error: '%tag% <red>Hata.'
+  clan discord show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_clan} {_discord}'
+  clan discord subcommands remove: <click:suggest_command:"/{_clan} {_discord} {_remove} "><hover:show_text:'<green>Web kancasını kaldırmak için tıklayın'> <aqua>/{_clan} {_discord} {_remove} <gray>-<yellow> Discord web kancasını kaldırma.</hover></click>
+  clan discord subcommands remove show on_success: '%tag% <green>Klan web kancası başarıyla kaldırıldı.'
+  clan discord subcommands remove show on_error: '%tag% <red>Web kancası kaldırılırken bir hata oluştu, ayarlanmamış olabilir.'
+  clan discord subcommands remove show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_clan} {_discord} {_remove}'
+  clan discord subcommands view: <click:suggest_command:"/{_clan} {_discord} {_view} "><hover:show_text:'<green>Klan web kancasını görüntülemek için tıklayın'> <aqua>/{_clan} {_discord} {_view} <light_purple>(-gui) <gray>-<yellow> Klan web kancasını görüntüle.</hover></click>
+  clan discord subcommands view show on_success: '%tag% <green>Başarılı'
+  clan discord subcommands view show on_error: '%tag% <red>Hata'
+  clan discord subcommands view show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_clan} {_discord} {_view} <light_purple>(-gui)'
+  clan discord subcommands createhook: <click:suggest_command:"/{_clan} {_discord} {_createhook} "><hover:show_text:'<green>Klan web kancası oluşturmak için tıklayın'> <aqua>/{_clan} {_discord} {_createhook} <red><url> <gray>-<yellow> Klan web kancası oluşturma.</hover></click>
+  clan discord subcommands createhook show on_success: '%tag% <green>Web kancanızı test ediyoruz, lütfen birkaç saniye bekleyin...'
+  clan discord subcommands createhook show on_error: '%tag% <red>Web kancası oluşturulurken bir hata oluştu'
+  clan discord subcommands createhook show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_clan} {_discord} {_createhook} <red><url>'
   clan ban show on_help: <click:suggest_command:"/{_clan} {_ban} "><hover:show_text:'<green>Bir oyuncuyu yasaklamak için tıklayın.'> <aqua>/{_clan} {_ban} <red><oyuncu> <gray>-<yellow> Bir oyuncuyu yasakla.</hover></click>
   clan ban show on_success: '%tag% <green>Oyuncu başarıyla yasaklandı.'
   clan ban show on_error: '%tag% <red>Oyuncu yasaklanırken bir hata oluştu.'
@@ -1791,6 +1840,42 @@ COMMANDS:
   uclan reload show on_success: '%tag% <green>Eklenti başarıyla yeniden yüklendi <gray>(%time%).'
   uclan reload show on_error: '%tag% <red>Ayarlar yeniden yüklenirken hata oluştu.'
   uclan reload show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_uclan} {_reload}'
+  uclan checkclanplayers show on_help: <click:suggest_command:"/{_uclan} {_checkclanplayers} "><hover:show_text:'<green>Başlatmak için tıklayın.'> <aqua>/{_uclan} {_checkclanplayers} <gray>-<yellow> Veri tutarlılığını kontrol edin.</hover></click>
+  uclan checkclanplayers show on_success: '%tag% <green>Oyuncu ve klan verilerinin doğrulanması başladı, aşağıdakileri takip edin.'
+  uclan checkclanplayers show on_error: '%tag% <red>Doğrulama sırasında bir hata oluştu.'
+  uclan checkclanplayers show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_uclan} {_checkclanplayers}'
+  uclan emptyclans show on_help: <click:suggest_command:"/{_uclan} {_emptyclans} "><hover:show_text:'<green>Başlatmak için tıklayın.'> <aqua>/{_uclan} {_emptyclans} <red><-arg:value> <gray>-<yellow> Sunucu klanlarını temizle.</hover></click>
+  uclan emptyclans show on_success: '%tag% <green>Oyuncu ve klan verilerinin doğrulanması başladı, aşağıdakileri takip edin.'
+  uclan emptyclans show on_error: '%tag% <red>Bir hata oluştu, belki de argümanları doğru belirtmediniz. <red>Anahtarlar: {keys}'
+  uclan emptyclans show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_uclan} {_emptyclans} <red><-arg:value>'
+  uclan kick show on_help: <click:suggest_command:"/{_uclan} {_kick} "><hover:show_text:'<green>Başlatmak için tıklayın.'> <aqua>/{_uclan} {_kick} <red><TAG> <Oyuncu> <gray>-<yellow> Bir klan oyuncusunu kaldırın.</hover></click>
+  uclan kick show on_success: '%tag% <green>Oyuncu başarıyla çıkarıldı.'
+  uclan kick show on_error: '%tag% <red>Oyuncuyu klandan çıkarırken bir hata oluştu.'
+  uclan kick show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_uclan} {_kick} <red><TAG> <Oyuncu>'
+  uclan setleader show on_help: <click:suggest_command:"/{_uclan} {_setleader} "><hover:show_text:'<green>Başlatmak için tıkla.'> <aqua>/{_uclan} {_setleader} <red><TAG> <Oyuncu> <gray>-<yellow> Bir klan lideri belirleyin.</hover></click>
+  uclan setleader show on_success: '%tag% <green>Yeni lider başarıyla değiştirildi.'
+  uclan setleader show on_error: '%tag% <red>Yeni klan lideri belirlenirken bir hata oluştu.'
+  uclan setleader show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_uclan} {_setleader} <red><TAG> <Oyuncu>'
+  uclan bank show on_help: <click:run_command:"/{_uclan} {_bank} "><hover:show_text:'<green>Banka komutlarını genişletmek için tıklayın.'> <aqua>/{_uclan} {_bank} <gray>-<yellow> Klan bankasını değiştirin.</hover></click> <hover:show_text:'<green>Alt komutlar ile.'><green>[!]</hover>
+  uclan bank show on_success: '%tag% <green>başarılı'
+  uclan bank show on_error: '%tag% <red>uclan bankası değiştirilirken bir hata oluştu.'
+  uclan bank show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_uclan} {_bank}'
+  uclan bank subcommands view: <click:suggest_command:"/{_uclan} {_bank} {_view} "><hover:show_text:'<green>Bir bankayı görüntülemek için tıklayın.'> <aqua>/{_uclan} {_bank} {_view} <red><tag|oyuncu> <gray>-<yellow> Bir klan bankasını görüntüleyin.</hover></click>
+  uclan bank subcommands view show on_success: '%tag% <green>Bu klan bankası şuna sahip: <green>{value}.'
+  uclan bank subcommands view show on_error: '%tag% <red>Bir klan bankasını görüntülerken hata oluştu.'
+  uclan bank subcommands view show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_uclan} {_bank} {_view} <red><tag|oyuncu>'
+  uclan bank subcommands set: <click:suggest_command:"/{_uclan} {_bank} {_set} "><hover:show_text:'<green>Bankayı ayarlamak için tıklayın.'> <aqua>/{_uclan} {_bank} {_set} <gray>-<yellow> Klan bankasını ayarlayın.</hover></click>
+  uclan bank subcommands set show on_success: '%tag% <green>Klan bankası <green>{value} <green>olarak ayarlandı'
+  uclan bank subcommands set show on_error: '%tag% <red>Banka değiştirilirken bir hata oluştu.'
+  uclan bank subcommands set show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_uclan} {_bank} {_set} <red><tag|oyuncu> <değer>'
+  uclan bank subcommands remove: <click:suggest_command:"/{_uclan} {_bank} {_remove} "><hover:show_text:'<green>Bankayı kaldırmak için tıklayın.'> <aqua>/{_uclan} {_bank} {_remove} <red><tag|oyuncu> <değer> <gray>-<yellow> Bir klan bankasından çıkarın.</hover></click>
+  uclan bank subcommands remove show on_success: '%tag% <green>Klan bankası şu şekilde değiştirildi: <green>{value}'
+  uclan bank subcommands remove show on_error: '%tag% <red>Banka değiştirilirken bir hata oluştu.'
+  uclan bank subcommands remove show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_uclan} {_bank} {_remove} <red><tag|oyuncu> <değer>'
+  uclan bank subcommands add: <click:suggest_command:"/{_uclan} {_bank} {_add} "><hover:show_text:'<green>Banka eklemek için tıklayın.'> <aqua>/{_uclan} {_bank} {_add} <red><tag|oyuncu> <değer> <gray>-<yellow> Bir klan bankasına ekle.</hover></click>
+  uclan bank subcommands add show on_success: '%tag% <green>Klan bankası şu şekilde değiştirildi: <green>{value}'
+  uclan bank subcommands add show on_error: '%tag% <red>Banka değiştirilirken bir hata oluştu.'
+  uclan bank subcommands add show on_usage: '%tag% <red>Şunu kullan: <aqua>/{_uclan} {_bank} {_add} <red><tag|oyuncu> <değer>'
  
  
  # TRANSLATIONS OF THE CHAT ACTIONS
@@ -1986,3 +2071,9 @@ LOGGER:
   CLANPLAYERJOINEVENT: <yellow>Oyuncu <green>%uclans_player_name% <yellow>klana katıldı.
   CLANPLAYERROLECHANGE: <yellow>Oyuncu <green>%uclans_player_name% <yellow>Rolü şimdi <green>%uclans_player_role_formated% <yellow>olarak değiştirildi
   CLANPLAYERINVITERECEIVE: <yellow>Oyuncu <green>{player_other} <yellow>klana <green>%uclans_player_name% <yellow>tarafından davet edildi
+  CLANALLYINVITEEVENT: <yellow>Klanınız klana bir müttefik isteği gönderdi: <green>{clan_other}
+  CLANRIVALINVITEEVENT: <yellow>Klana karşı yeni rekabet: <green>{clan_other}
+  CLANPLAYERBANEVENT: <yellow>Oyuncu <green>{player_other} <yellow>klandan yasaklandı.
+  CLANPLAYERUNBANEVENT: <yellow>Oyuncu <green>{player_other} <yellow>klandan yasağı kaldırıldı
+  CLANFFCHANGEEVENT: <yellow>Klan dost ateşi <green>{status} <yellow>olarak değiştirildi
+  CLANREGROUPSENDEVENT: <yellow>Klanın yeniden toplanması için bir talep <green>{player_other} <yellow>tarafından gönderildi
