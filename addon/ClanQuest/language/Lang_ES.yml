@@ -1,0 +1,167 @@
+COMUM:
+  you player has no clan: '%tag% <red>No tienes un clan, crea uno o unete algún clan.'
+  gui error: '%tag% <red>El menú tiene errores por eso no se puede abrir.'
+  no permission: '%tag% <red>No tienes permisos para esto.'
+  do not shift: '%tag% <red>No hagas Shift en las Misiones'
+  empty whitelist: <red>Vacío
+  disabled function: '%tag% <red>Esta función esta apagada o deshabilitada.'
+  week plus: 1 semana+
+  disabled world quest: '%tag% <red>No puedes usar las misiones en este mundo.'
+  command by player: '%tag% <red>Este comando solo puede ser usado por el jugador.'
+  clan point reason quest finished: Mision terminada %uclans_quest_finished%
+  clan quest change: '%tag% <green>Los puntos de misión del clan ahora son <aqua>%uclans_points%<green>, total terminado <aqua>%uclans_quest_finished%'
+  help clan header subcommand: '<newline><blue><bold>Ayuda con sub-comandos:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatorio <gray>| <light_purple>() <gray>opcional <nuevalínea> '
+  clan dont permission role: '%tag% <red>Tu rol actual no te permite hacer esto.'
+  clan dont permission role gui: <red>Tu rol no puede iniciar esta mision.'
+  player no running quest: '%tag% <red>Tu no tienes misiones por iniciar.'
+  otherplayer no running quest: '%tag% <red>Este jugador no tiene misiones activas.'
+  otherplayer no running this quest: '%tag% <red>Este jugador no tiene esta misión activa.'
+  help quest status header: <blue><bold> Estado de la Mision:</bold>
+  help quest status header empty: ' <gray>- <red>No tienes ningún progreso con ninguna misión..'
+  help quest list header: <newline>%uclans_tag_color%<blue><bold> Lista de misiones:</bold> <dark_gray>(%page%/%pages%)
+  help quest list format: '<white>Id: <green>{QUEST} <gray>| <white>Nombre: %clanquest_name:{QUEST}% <gray>| <white>Tipo: <aqua>%clanquest_type_formated:{QUEST}%<newline> <gray>- <white>Mision: <aqua>%clanquest_missions:{QUEST}% <gray>| <aqua>%clanquest_whitelist:{QUEST}%<newline> <gray>- <yellow>Recompensas: <white>Puntos: <aqua>%clanquest_reward_points:{QUEST}% <gray>| <white>Exp: <aqua>%clanquest_reward_exp:{QUEST}% <gray>| <white>Dinero: <green>%uclans_money_currency%%clanquest_reward_money:{QUEST}%'
+  help quest list format finished: '<dark_red>MISION TERMINADA <gray>| <white>Id: <green>{QUEST} <gray>| <white>Nombre: %clanquest_name:{QUEST}% <green>%uclans_player_nickname% <gray>| <white>Tipo: <aqua>%clanquest_type_formated:{QUEST}%'
+  help quest list format other: '<red>Otro jugador ya esta en progreso! <gray>| <white>Id: <green>{QUEST} <gray>| <white>Nombre: %clanquest_name:{QUEST}% <green>%uclans_player_nickname% <gray>| <white>Tipo: <aqua>%clanquest_type_formated:{QUEST}%'
+  help quest list format running: '<red>Tu misión actual! <gray>| <white>Id: <green>{QUEST} <gray>| <white>Nombre: %clanquest_name:{QUEST}% <gray>| <white>Tipo: <aqua>%clanquest_type_formated:{QUEST}%<newline> <gray>- <white>Mision: <aqua>%clanquest_missions:{QUEST}% <gray>| <aqua>%clanquest_whitelist:{QUEST}% <gray>(<aqua>%clanquest_playerquest_earned%<gray>/<aqua>%clanquest_mission_total:{QUEST}%<gray>)<newline> <gray>- <white>Expira en: <aqua>%clanquest_playerquest_expires_time_left% <gray>(%clanquest_playerquest_expires%)<newline> <gray>- <yellow>Recompensas: <white>Puntos: <aqua>%clanquest_reward_points:{QUEST}% <gray>| <white>Exp: <aqua>%clanquest_reward_exp:{QUEST}% <gray>| <white>Dinero: <green>%uclans_money_currency%%clanquest_reward_money:{QUEST}%'
+  help quest list empty: ' <red>No hay nada en esta lista.'
+  logger clanquestabandonevent: <green>%uclans_player% <yellow>Misión abandonada <aqua>%clanquest_name:{QUEST}%
+  logger clanqueststartevent: <green>%uclans_player% <yellow>Misión iniciada <aqua>%clanquest_name:{QUEST}%
+  logger clanquestfinishnevent: <yellow>Mision <aqua>%clanquest_name:{QUEST}% <dark_gray>(%clanquest_type_formated:{QUEST}%) <yellow>fue completado por el jugador <green>%uclans_player%
+  header help: '<green>Comandos de Admin para Misiones:'
+  header list: '<green>Lista de Misiones:'
+  line list: '<green>%num% <gray>- <green>ID: <aqua>%id% <gray>- <green>Nombre: <aqua>%name%'
+  empty list: ' <red>- Vacío.'
+  help quest pagination prev: <click:run_command:"/{_clan} {_quest} {_list} %page%"><hover:show_text:'<green>Click para volver.'><aqua><< Anterior</hover></click>
+  help quest pagination next: <click:run_command:"/{_clan} {_quest} {_list} %page%"><hover:show_text:'<green>Click para avanzar.'><aqua>Siguiente >></hover></click>
+  help quest pagination separer: <gray>|
+  mission break: Romper
+  mission place: Colocar
+  mission fishing: Pescar
+  mission crafting: Craftear
+  mission smelt: Fundir
+  mission eat: Comer
+  mission enchanting: Encantar
+  mission repair: Reparar
+  mission kill: Matar
+  mission kill_entity: Matar entidades.
+  mission dye: Teñir
+  mission shear: Cortar/Segar
+  mission tame: Domar
+  mission breed: Criar
+  mission milk: Ordeñar
+  mission vtrade: Intercambiar con Aldeanos
+  mission collect: Recolectar
+  mission bake: Cocinar
+  mission striplogs: Pelar Troncos
+  mission pickup: Recoger
+  mission explode: Explotar
+  mission clanwar: Guerra de Clanes
+  mission clanlevel: Nivel del Clan
+  mission exp: Exp
+  mission mythic: Mythic Mobs
+  mission enderpearl: Perla de Ender
+  mission thrown: Arrojar
+  mission elytra: Elytra
+  mission explore: Explorar
+  mission levelled: Levear
+GUI:
+   
+  #QUEST GUI MESSAGES
+  quest home_quest title: <blue>Misiones <gray>| %uclans_tag_color%
+  quest home_quest items fill name: ' '
+  quest home_quest items fill2 name: ' '
+  quest home_quest items daily name: ' <green>Misiones diarias'
+  quest home_quest items daily lore:
+  - ''
+  - ' <yellow>Click para abrir.'
+  quest home_quest items once name: ' <green>Todas las misiones'
+  quest home_quest items once lore:
+  - ''
+  - ' <yellow>Click para abrir.'
+  quest home_quest items back name: ' <green>Volver'
+  quest home_quest items back lore:
+  - ''
+  - ' <yellow>Click para volver.'
+  quest home_list title: <blue>Misiones <gray>| %uclans_tag_color%
+  quest home_list items fill name: ' '
+  quest home_list items course name: ' <green>%clanquest_name:{QUEST}%'
+  quest home_list items course lore:
+  - ''
+  - ' <gold>Tu misión actual!'
+  - ''
+  - ' <white>Tipo: <aqua>%clanquest_type_formated:{QUEST}%'
+  - ' <white>Nombre: <aqua>%clanquest_name:{QUEST}%'
+  - ' <white>Total: <aqua>%clanquest_playerquest_earned%<gray>/<aqua>%clanquest_mission_total:{QUEST}%'
+  - ' <white>Expira en: <aqua>%clanquest_playerquest_expires_time_left% <gray>(%clanquest_playerquest_expires%)'
+  - ' <white>Misión: <aqua>%clanquest_missions:{QUEST}%'
+  - ' <gray>- %clanquest_whitelist:{QUEST}%'
+  - ''
+  - ' <yellow>Recompensas:'
+  - ' <white>Puntos: <aqua>%clanquest_reward_points:{QUEST}%'
+  - ' <white>Exp: <aqua>%clanquest_reward_exp:{QUEST}%'
+  - ' <white>Dinero: <green>%uclans_money_currency%%clanquest_reward_money:{QUEST}%'
+  - ''
+  - ' <yellow>Click para abandonar mision!'
+  quest home_list items course_other name: ' <green>%clanquest_name:{QUEST}%'
+  quest home_list items course_other lore:
+  - ''
+  - ' <red>Otro jugador esta completando esta misión!'
+  - ''
+  - ' <white>Tipo: <aqua>%clanquest_type_formated:{QUEST}%'
+  - ' <white>Nombre: <aqua>%clanquest_name:{QUEST}%'
+  - ' <white>Misión: <aqua>%clanquest_missions:{QUEST}%'
+  - <gray>- <aqua>%clanquest_whitelist:{QUEST}%
+  - ''
+  - ' <yellow>Recompensas:'
+  - ' <white>Puntos: <aqua>%clanquest_reward_points:{QUEST}%'
+  - ' <white>Exp: <aqua>%clanquest_reward_exp:{QUEST}%'
+  - ' <white>Dinero: <green>%uclans_money_currency%%clanquest_reward_money:{QUEST}%'
+  quest home_list items finished name: ' <green>%clanquest_name:{QUEST}%'
+  quest home_list items finished lore:
+  - ''
+  - ' <dark_red>MISION TERMINADA'
+  - ''
+  - ' <white>Tipo: <aqua>%clanquest_type_formated:{QUEST}%'
+  - ' <white>Nombre: <aqua>%clanquest_name:{QUEST}%'
+  - ' <white>Misión: <aqua>%clanquest_missions:{QUEST}%'
+  - <gray>- <aqua>%clanquest_whitelist:{QUEST}%
+  quest home_list items back name: ' <green>Volver'
+  quest home_list items back lore:
+  - ''
+  - ' <yellow>Click para volver.'
+  quest home_list items next name: ' <green>Siguiente página'
+  quest home_list items next lore:
+  - ''
+  - ' <yellow>Click para pasar de página.'
+  quest home_list items previous name: ' <green>Anterior página'
+  quest home_list items previous lore:
+  - ''
+  - ' <yellow>Click para retroceder de página.'
+ 
+#QUEST MESSAGES
+ 
+QUEST:
+  warning expired title: <red>Ha expirado!
+  warning expired title sub: <aqua>%clanquest_name:{QUEST}%
+  warning expired actionbar: <red>Ha expirado! <gray>| <aqua>%clanquest_name:{QUEST}%
+  warning expired message: '%tag% <red>Tu misión <aqua>%clanquest_name:{QUEST}% <red>ha expirado y se ha desactivado'
+  warning earned title: <aqua>+%act_amount%
+  warning earned title sub: <aqua>%clanquest_name:{QUEST}% <gray>(%clanquest_playerquest_earned%<gray>/%clanquest_mission_total:{QUEST}%)
+  warning earned actionbar: <aqua>+%act_amount% <gray>| <aqua>%clanquest_name:{QUEST}% <gray>(%clanquest_playerquest_earned%<gray>/%clanquest_mission_total:{QUEST}%)
+  warning earned message: '%tag% <yellow>Haz recogido <aqua>+%act_amount% <yellow>en <aqua>%clanquest_name:{QUEST}% <gray>(%clanquest_playerquest_earned%<gray>/%clanquest_mission_total:{QUEST}%)'
+  warning finished title: <aqua>Terminado!
+  warning finished title sub: <aqua>%clanquest_name:{QUEST}% <gray>(+%clanquest_reward_points:{QUEST}%)
+  warning finished actionbar: <aqua>Terminado! <gray>| <aqua>%clanquest_name:{QUEST}% <gray>(+%clanquest_reward_points:{QUEST}%)
+  warning finished message: '%tag% <yellow>Haz terminado la misión <aqua>%clanquest_name:{QUEST}% <gray>(+%clanquest_reward_points:{QUEST}%)'
+  type daily: <green>Misión diaria!
+  type once: <green>Sólo una vez!
+  this day: ' <red>Este día.'
+  other player gui: <red>Otra jugadora lo esta haciendo!
+  other player: '%tag% <red>Otra jugadora lo esta haciendo!'
+  error to start gui: <red>Error al iniciar!
+  success to start gui: <green>Misión iniciada, buena suerte!
+  error to remove gui: <red>Error al querer abandonar!
+  success to temove gui: <green>Misión abandonada!
+  player already started gui: <red>Necesitas activar esta misión!
+  player already started: '%tag% <red>Necesitas activar esta misión!'
+  player already finished: '%tag% <red>Esta misión ya ha sido completada por otro miembro.'
