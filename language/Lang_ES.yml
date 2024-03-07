@@ -12,11 +12,11 @@ LANGUAGE:
   error character: '%tag% <red>Contiene caracteres no válidos.'
   error mod desc: '%tag% <red>Error al cambiar la descripción del clan.'
   has globalff: '%tag% <green>¡El fuego amigo global ya está en marcha!'
-  no permission: '%tag% <redNo tienes permiso'
+  no permission: '%tag% <red>No tienes permiso'
   chest extra buyed update: '%tag% <aqua>%player% <green>Ha comprado un nuevo cofre para el clan.'
-  currency vault: Money
-  currency playerpoints: Points
-  currency clansouls: Souls
+  currency vault: Dinero
+  currency playerpoints: Puntos
+  currency clansouls: Almas
   export same storage: '%tag% <red>Debe elegir un almacenamiento diferente al actual para exportar.'
   export no data: '%tag% <red>Actualmente no hay datos para exportar.'
   export mysql deconfigured: '%tag% <red>Se ha producido un error, los campos mysql están mal configurados.'
@@ -230,7 +230,7 @@ LANGUAGE:
   translaction players: jugadores
   translaction is on: <green>Conectado
   translaction is off: <red>Desconectado
-  translaction yes: <aqua>Si
+  translaction yes: <aqua>Sí
   translaction no: <red>No
   translaction no clan: <red>Sin clan
   translaction kill: Asesinato
