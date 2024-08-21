@@ -1,0 +1,336 @@
+COMUM:
+  player dont have clan: '%tag% <red>Este jugador no tiene un clan.'
+  gui error: '%tag% <red>Este menú contiene un error y no puede abrirse.'
+  header help: '<green><bold>Comandos de la Liga:'
+  header list season help: '<green><bold>Lista de temporadas:'
+  header list season format: ' <white>Nombre: <green>%clanleague_season:{name}:name% <gray>| <white>Inicio: <green>%clanleague_season:{name}:start% <gray>| <white>Fin: <green>%clanleague_season:{name}:end% <gray>| <white>Estado: <green>%clanleague_season:{name}:state%'
+  header list season items help: '<green><bold>Lista de ítems de la temporada:'
+  header list season items format: ' <white>Núm: <green>{num} <gray>| <white>Tipo: <green>{material} <gray>| <white>Cantidad: <green>{amount} <gray>| <white>Nombre: <green>{name}'
+  header list season commands help: '<green><bold>Lista de comandos de la temporada:'
+  header list season commands format: ' <white>Núm: <green>{num} <gray>| <white>Cmd: <green>{cmd}'
+  disabled function: '%tag% <red>Esta función está desactivada o inhabilitada.'
+  chan does not exists: '%tag% <red>Este clan no existe.'
+  command by player: '%tag% <red>Este comando debe ser usado por un jugador.'
+  no permission: '%tag% <red>No tienes permisos para esto.'
+  none: <red>Ninguno.
+  season state future: <yellow>Futuro
+  season state old: <red>Finalizado
+  season state current: <green><bold>Actual</bold>
+  season state inprogress: <yellow>En Progreso
+  season state stillinprogress: <yellow>Aún en progreso...
+  season state counting: <aqua>Contando...
+  season already exists: '%tag% <red>Ya existe una temporada con este nombre.'
+  season doesnot exists: '%tag% <red>No hay ninguna temporada con este nombre.'
+  season already finished: '%tag% <red>Esta temporada ya ha finalizado.'
+  season wrong date format: '%tag% <red>El formato de la fecha es incorrecto, usa <aqua>{date}'
+  season date another season: '%tag% <red>La fecha elegida para <aqua>{chosen}<red> ya está en otra temporada, las fechas no pueden coincidir.'
+  season already happening: '%tag% <red>Ya hay una temporada en curso.'
+  season no running: '%tag% <red>No hay ninguna temporada en curso en este momento.'
+  season hand empty: '%tag% <red>Necesitas tener un ítem en la mano para hacer esto.'
+  season start: Inicio
+  season end: Fin
+  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>ha sido depositado en tu cuenta.'
+  player dont have money: '%tag% <red>Necesitas <green>%uclans_money_currency%%amount%'
+  player dont have money gui: <red>Necesitas <green>%uclans_money_currency%%amount%'
+  player debited money: '%tag% <yellow>Se ha debitado <green>%amount% <yellow>de tu cuenta.'
+  player money nozero: '%tag% <red>El valor debe ser mayor que cero.'
+  help clan header subcommand: '<newline><blue><bold>Ayuda con subcomandos:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatorio <gray>| <light_purple>() <gray>opcional <newline> '
+  help list empty: ' <red>- No hay nada en esta lista.'
+  clan dont permission role: '%tag% <red>Tu rol actual no te permite hacer esto.'
+  league limit: '%tag% <red>El límite de nivel de tu clan se ha alcanzado <gray>(%uclans_money_currency%{limit})<red>, sube de nivel para desbloquear un límite mayor.'
+  league limit gui: <red>Límite alcanzado <gray>(%uclans_money_currency%{limit}).
+  league value max title: <dark_red>! <red>Valor máximo de <green>%uclans_money_currency%%max%'
+  league value min title: <dark_red>! <red>Valor mínimo de <green>%uclans_money_currency%%min%'
+  league value max: '%tag% <red>Valor máximo de <green>%uclans_money_currency%%max%'
+  league value min: '%tag% <red>Valor mínimo de <green>%uclans_money_currency%%min%'
+  league add error gui: <red>¡Error en la transacción!'
+  league add success gui: <green>¡Éxito!'
+  league need: '%tag% <red>La liga del clan no tiene <green>%uclans_money_currency%%amount%'
+  league need gui: <red>La liga necesita <green>%uclans_money_currency%%amount%'
+  league view: '%tag% <yellow>La liga del clan ahora tiene <green>%uclans_money_currency%%amount%'
+  league logger league_points: <yellow>El clan recibió <aqua>{points} <green>de la Liga <gray>({reason})
+  logger clanleaguewithdrawevent: <red><bold>-</bold> <green>%uclans_money_currency%%amount% <yellow>fue retirado de la liga por <green>%uclans_player%'
+  logger clanleagueaddevent: <green><bold>+</bold> <green>%uclans_money_currency%%amount% <yellow>fue añadido a la liga por <green>%uclans_player%'
+GUI:
+  League home_league title: <blue>Clan League <gray>| <aqua>%clanleague_season:{seasonname}:name%
+  League home_league items fill name: ' '
+  League home_league items fill lore: [
+    ]
+  League home_league items fill2 name: ' '
+  League home_league items fill2 lore: [
+    ]
+  League home_league items fill3 name: ' '
+  League home_league items fill3 lore: [
+    ]
+  #variables: {position}, {points}, {amount_clans}
+  League home_league items top name: '<green>Top #{position}'
+  League home_league items top lore:
+  - ''
+  - ' <white>Clan: <aqua>%uclans_tag_color% <gray>(Level: %uclans_level%)'
+  - ' <white>Líder: <aqua>%uclans_leader_formated%'
+  - ' <white>Miembros: <aqua>%uclans_count_members%'
+  - ' <white>Patent: <aqua>%uclans_patent_formated%'
+  - ''
+  - ' <white>Puntos: <green><bold>{points} point(s)'
+  - ' <white>Posición: <aqua>#{position}<gray>/<red>{amount_clans}'
+  - ''
+  - ' <yellow>Clic para ver'
+  League home_league items all name: <red>Todos los participantes.
+  League home_league items all lore:
+  - ''
+  - ' <yellow>Haga clic para abrir la lista.'
+  League home_league items rewards name: <red>Recompensas no reclamadas.
+  League home_league items rewards lore:
+  - ''
+  - ' <white>Recompensas no reclamadas: <aqua>{unclaimed_amount}'
+  - ''
+  - ' <green><bold>Tienes Recompensas no reclamadas'
+  - <green><bold>de otras temporadas.
+  - ''
+  - ' <yellow>Clic para abrir.'
+  League home_league items rewards_none name: <green>Recompensas no reclamadas.
+  League home_league items rewards_none lore:
+  - ''
+  - ' <white>Recompensas no reclamadas: <aqua>{unclaimed_amount}'
+  - ''
+  - ' <yellow>Clic para abrir.'
+  #variables: {position}, {points}, {amount_clans}
+  League home_league items clan name: <green>Tu clan en la liga.
+  League home_league items clan lore:
+  - ''
+  - ' <white>Clan: <aqua>%uclans_tag_color% <gray>(Level: %uclans_level%)'
+  - ' '
+  - ' <white>Puntos: <green><bold>{points} point(s)'
+  - ' <white>Posición: <aqua>#{position}<gray>/<red>{amount_clans}'
+  - ''
+  - ' <yellow>Clic para ver los eventos de clan.'
+  League home_league items clan_noparticipant name: <green>Tu clan en la liga.
+  League home_league items clan_noparticipant lore:
+  - ''
+  - ' <red>Tu clan no participa en la '
+  - ' <red>liga. Para unirse a la liga, tu '
+  - ' <red>clan debe participar en eventos '
+  - ' <red>que se llevan a cabo en el servidor '
+  - ' <red>y ganar puntos. '
+  League home_league items previous name: <red>Liga anterior.
+  League home_league items previous lore:
+  - ''
+  - ' <yellow>Clic para ver la lista'
+  League home_league items info name: <red>Liga actual.
+  League home_league items info lore:
+  - ''
+  - ' <yellow>Información de liga:'
+  - ''
+  - ' <white>Nombre: <aqua>%clanleague_season:{seasonname}:name%'
+  - ' <white>Descripción: <aqua>%clanleague_season:{seasonname}:desc%'
+  - ' <white>Fecha: <aqua>%clanleague_season:{seasonname}:start% <gray>to <aqua>%clanleague_season:{seasonname}:end%'
+  - ''
+  - ' <white>Estado: <aqua>%clanleague_season:{seasonname}:state%'
+  - ''
+  - ' <yellow>Recompensas:'
+  - ' <white>Items: <aqua>%clanleague_season:{seasonname}:rewards_items_amount%'
+  - ' <white>Comandos: <aqua>%clanleague_season:{seasonname}:rewards_commands_amount%'
+  - ''
+  - ' <yellow>Clic izquierdo para ver los participantes.'
+  - ' <red>Clic derecho para ver las recompensas.'
+  League home_league items back name: <red>Volver
+  League home_league items back lore:
+  - ''
+  - ' <yellow>Clic para volver.'
+  League home_allparticipants title: <blue>Participantes <gray>| <aqua>%clanleague_season:{seasonname}:name%
+  League home_allparticipants items fill name: ' '
+  League home_allparticipants items fill lore: [
+    ]
+  #variables: {position}, {points}, {amount_clans}
+  League home_allparticipants items current name: '<green>Top #{position}'
+  League home_allparticipants items current lore:
+  - ''
+  - ' <white>Clan: <aqua>%uclans_tag_color% <gray>(Level: %uclans_level%)'
+  - ' <white>Líder: <aqua>%uclans_leader_formated%'
+  - ' <white>Miembros: <aqua>%uclans_count_members%'
+  - ' <white>Patent: <aqua>%uclans_patent_formated%'
+  - ''
+  - ' <white>Puntos: <green><bold>{points} point(s)'
+  - ' <white>Posición: <aqua>#{position}<gray>/<red>{amount_clans}'
+  - ''
+  - ' <yellow>Clic para ver'
+  League home_allparticipants items previous name: <red>Pagina anterior.
+  League home_allparticipants items previous lore:
+  - ''
+  - ' <yellow>Clic para regresar'
+  League home_allparticipants items next name: <red>Siguiente página.
+  League home_allparticipants items next lore:
+  - ''
+  - ' <yellow>Clic para avanzar.'
+  League home_allparticipants items back name: <red>Volver
+  League home_allparticipants items back lore:
+  - ''
+  - ' <yellow>Clic para volver.'
+  League home_previous_league title: <blue>Liga anterior
+  League home_previous_league items fill name: ' '
+  League home_previous_league items fill lore: [
+    ]
+  League home_previous_league items current name: <green>%clanleague_season:{seasonname}:name%
+  League home_previous_league items current lore:
+  - ''
+  - ' <white>Nombre: <aqua>%clanleague_season:{seasonname}:name%'
+  - ' <white>Descripción: <aqua>%clanleague_season:{seasonname}:desc%'
+  - ' <white>Fecha: <aqua>%clanleague_season:{seasonname}:start% <gray>to <aqua>%clanleague_season:{seasonname}:end%'
+  - ''
+  - ' <white>Estado: <aqua>%clanleague_season:{seasonname}:state%'
+  - ' <white>Ganador: <aqua>%clanleague_season:{seasonname}:winner%'
+  - ''
+  - ' <yellow>Recompensas:'
+  - ' <white>Items: <aqua>%clanleague_season:{seasonname}:rewards_items_amount%'
+  - ' <white>Comandos: <aqua>%clanleague_season:{seasonname}:rewards_commands_amount%'
+  - ''
+  - ' <yellow>Clic izquierdo para ver los participantes.'
+  - ' <red>Clic derecho para ver las recompensas.'
+  League home_previous_league items previous name: <red>Pagina anterior.
+  League home_previous_league items previous lore:
+  - ''
+  - ' <yellow>Clic para regresar'
+  League home_previous_league items next name: <red>Siguiente página.
+  League home_previous_league items next lore:
+  - ''
+  - ' <yellow>Clic para avanzar.'
+  League home_previous_league items back name: <red>Volver
+  League home_previous_league items back lore:
+  - ''
+  - ' <yellow>Clic para volver.'
+  League home_clan_events title: <blue>Eventos de clan <gray>| <aqua>%clanleague_season:{seasonname}:name%
+  League home_clan_events items fill name: ' '
+  League home_clan_events items fill lore: [
+    ]
+  #Variables: {eventname}, {points}, {date}
+  League home_clan_events items current name: <green>{eventname}
+  League home_clan_events items current lore:
+  - ''
+  - ' <white>Evento: <aqua>{eventname}'
+  - ' <white>Puntos received: <green><bold>{points}'
+  - ' <white>Fecha: <aqua>{date}'
+  League home_clan_events items info name: '<green>Clan: %uclans_tag_color%'
+  League home_clan_events items info lore:
+  - ''
+  - ' <white>Clan: <aqua>%uclans_tag_color% <gray>(Level: %uclans_level%)'
+  - ' <white>Líder: <aqua>%uclans_leader_formated%'
+  - ' <white>Miembros: <aqua>%uclans_count_members%'
+  - ' <white>Patent: <aqua>%uclans_patent_formated%'
+  - ''
+  - ' <white>Puntos: <green><bold>{points} point(s)'
+  - ' <white>Posición: <aqua>#{position}<gray>/<red>{amount_clans}'
+  League home_clan_events items previous name: <red>Previous page.
+  League home_clan_events items previous lore:
+  - ''
+  - ' <yellow>Clic para regresar'
+  League home_clan_events items next name: <red>Siguiente página.
+  League home_clan_events items next lore:
+  - ''
+  - ' <yellow>Clic para avanzar.'
+  League home_clan_events items back name: <red>Volver
+  League home_clan_events items back lore:
+  - ''
+  - ' <yellow>Clic para volver.'
+  League home_season_rewards title: <blue>Recompensas de temporada <gray>| <aqua>%clanleague_season:{seasonname}:name%
+  League home_season_rewards items fill name: ' '
+  League home_season_rewards items fill lore: [
+    ]
+  #Variables: , {cmd}
+  League home_season_rewards items current_commands name: '<green>Comando:'
+  League home_season_rewards items current_commands lore:
+  - ''
+  - ' <white>Cmd: <aqua>{cmd}'
+  #Variables: {item}
+  League home_season_rewards items current_items name: <green>Item
+  League home_season_rewards items current_items lore:
+  - ''
+  - ' <white>Item: <aqua>{item}'
+  League home_season_rewards items previous name: <red>Pagina anterior.
+  League home_season_rewards items previous lore:
+  - ''
+  - ' <yellow>Haga clic para volver'
+  League home_season_rewards items next name: <red>Siguiente página.
+  League home_season_rewards items next lore:
+  - ''
+  - ' <yellow>Clic para avanzar.'
+  League home_season_rewards items back name: <red>Volver
+  League home_season_rewards items back lore:
+  - ''
+  - ' <yellow>Clic para volver.'
+  League home_season_unclaimed_rewards title: <blue>Recompensas no reclamadas
+  League home_season_unclaimed_rewards items fill name: ' '
+  League home_season_unclaimed_rewards items fill lore: [
+    ]
+  League home_season_unclaimed_rewards items current name: <green>%clanleague_season:{seasonname}:name%
+  League home_season_unclaimed_rewards items current lore:
+  - ''
+  - ' <white>Nombre: <aqua>%clanleague_season:{seasonname}:name%'
+  - ' <white>Descripción: <aqua>%clanleague_season:{seasonname}:desc%'
+  - ' <white>Fecha: <aqua>%clanleague_season:{seasonname}:start% <gray>to <aqua>%clanleague_season:{seasonname}:end%'
+  - ''
+  - ''
+  - ' <yellow>Recompensa:'
+  - ' <white>Items: <aqua>%clanleague_season:{seasonname}:rewards_items_amount%'
+  - ' <white>Comandos: <aqua>%clanleague_season:{seasonname}:rewards_commands_amount%'
+  - ''
+  - ' <yellow>Clic para abrir.'
+  - ' <red>¡Atención, este menú sólo se puede abrir UNA VEZ!'
+  League home_season_unclaimed_rewards items previous name: <red>Pagina anterior.
+  League home_season_unclaimed_rewards items previous lore:
+  - ''
+  - ' <yellow>Clic para volver'
+  League home_season_unclaimed_rewards items next name: <red>Siguiente página.
+  League home_season_unclaimed_rewards items next lore:
+  - ''
+  - ' <yellow>Clic para avanzar.'
+  League home_season_unclaimed_rewards items back name: <red>Volver
+  League home_season_unclaimed_rewards items back lore:
+  - ''
+  - ' <yellow>Clic para volver.'
+  League home_player_claim_rewards title: <red><bold>¡Oportunidad única de reclamar!
+  League home_player_claim_rewards items fill name: ' '
+  League home_player_claim_rewards items fill lore: [
+    ]
+  #Variables: , {cmds}
+  League home_player_claim_rewards items current_commands name: '<green>Commands:'
+  League home_player_claim_rewards items current_commands lore:
+  - ''
+  - ' <white>Comandos: <aqua>{cmds}'
+  - ' <red>Los comandos se ejecutarán '
+  - ' <red>¡Cuando el menú este cerrado!. '
+  #Variables: {item}
+  League home_player_claim_rewards items current_items name: <green>Item
+  League home_player_claim_rewards items current_items lore:
+  - ''
+  - ' <white>Item: <aqua>{item}'
+  League home_player_claim_rewards items info name: <red>¡Atención.
+  League home_player_claim_rewards items info lore:
+  - ''
+  - ' <red>Después de cerrar esta página, las recompensas '
+  - ' <red>ya no estarán disponibles para usted. '
+  - ' <red>Obtenga todos los artículos que desee '
+  - ' <red>¡antes de cerrar! '
+  League home_player_claim_rewards items back name: <red>Volver
+  League home_player_claim_rewards items back lore:
+  - ''
+  - ' <yellow>Clic para volver.'
+CHAT:
+  leaguepointreceived:
+    message:
+    - ' '
+    - '%tag% <red><bold>!</bold> <yellow>Tu clan ha recibido <aqua>{amount}<yellow> puntos de liga!<yellow>.'
+    actionbar: <red><bold>!</bold> <yellow>Recibido <aqua>{amount}<yellow> puntos de liga!
+    title:
+      line: <red>! <yellow>Puntos de liga
+      subline: <aqua>+{amount}
+    bossbar: <red><bold>!</bold> <yellow>Recibido <aqua>{amount}<yellow> puntos de liga! <red>({time})
+  leagueclanwinner:
+    message:
+    - ' '
+    - <red><bold>!</bold> <yellow>Tu clan ganó la liga %clanleague_season:{seasonname}:name%!<yellow>.
+    - ' <gray>- ¡Los miembros pueden recolectar recompensas desde el menú de la liga!'
+    actionbar: <red><bold>!</bold> <yellow>Tu clan ganó la liga %clanleague_season:{seasonname}:name%!
+    title:
+      line: <red>! <yellow>¡Ganador de la liga!
+      subline: <aqua>%clanleague_season:{seasonname}:name%
+    bossbar: <red><bold>!</bold> <yellow>Tu clan ganó la liga %clanleague_season:{seasonname}:name% <red>({time})
