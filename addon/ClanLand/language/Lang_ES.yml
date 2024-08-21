@@ -1,0 +1,437 @@
+COMUM:
+  player donthave clan: '%tag% <red>Este jugador no tiene un clan.'
+  gui error: '%tag% <red>Este menú contiene un error y no puede ser abierto.'
+  disabled function: '%tag% <red>Esta función está desactivada o inhabilitada.'
+  chan does not exists: '%tag% <red>Este clan no existe.'
+  command by player: '%tag% <red>Este comando debe ser utilizado por un jugador.'
+  no permission: '%tag% <red>No tienes permisos para esto.'
+  player deposited money: '%tag% <green>%uclans_money_currency%%amount% <yellow>han sido depositados en tu cuenta.'
+  player dont have money: '%tag% <red>Necesitas <green>%uclans_money_currency%%amount%'
+  player dont have money gui: <red>Necesitas <green>%uclans_money_currency%%amount%
+  player not found: '%tag% <red>No se encontró a un jugador con este nombre o está desconectado.'
+  player debited money: '%tag% <yellow>Se ha descontado <green>%amount% <yellow>de tu cuenta.'
+  terrain name max chars: '%tag% <red>El nombre del terreno puede tener entre <aqua>%min% <red>y <aqua>%max% <red>caracteres.'
+  disabled world land: '%tag% <red>No puedes usar terrenos en este mundo.'
+  land help header: '<blue>Terrenos del clan:'
+  land list header: '<newline>%uclans_tag_color%<blue><bold> lista de terrenos:'
+  land list format: '<click:suggest_command:"/{_clan} {_land} {_view} %clanland_id%"><hover:show_text:''<green>Haz clic para ver.''> <gray>- <white>Id: %clanland_id% <gray>| <aqua>%clanland_name% <gray>| <white>Tamaño: <aqua>%clanland_size% <gray>| <white>Nivel: <aqua>%clanland_level% <yellow>[CLIC PARA VER]</hover></click>'
+  land list banned header: '<newline>%uclans_tag_color%<blue><bold> lista de baneados:'
+  land list banned format: '<click:suggest_command:"/{_clan} {_land} {_unban} %uclans_player%"><hover:show_text:''<green>Clic para desbanear.''> <gray>- <green>%uclans_player% <gray>| <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%) <white>Rol: <aqua>%uclans_player_role_formated% <yellow>[CLIC PARA DESBANEAR]</hover></click>'
+  land list trusted header: '<newline>%uclans_tag_color%<blue><bold> trusted list:'
+  land list trusted format: '<click:suggest_command:"/{_clan} {_land} {_untrust} %uclans_player%"><hover:show_text:''<green>Click to untrust.''> <gray>- <green>%uclans_player% <gray>| <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%) <white>Rol: <aqua>%uclans_player_role_formated% <yellow>[CLIC PARA DEJAR DE CONFIAR]</hover></click>'
+  land view header: '<newline><blue><bold>Información del Terreno:'
+  land view format:
+  - '<blue><bold>|</bold> <blue>Dueño:'
+  - ' <white>Clan: <aqua>%uclans_tag_color%'
+  - ' <white>Miembros: <aqua>%uclans_count_members%'
+  - ' <white>Líder: <aqua>%uclans_leader_formated%'
+  - '<blue><bold>|</bold> <blue>Info:'
+  - ' <white>Id: %clanland_id%'
+  - ' <white>Nombre: <aqua>%clanland_name%'
+  - ' <white>Tamaño: <aqua>%clanland_size%'
+  - ' <white>Fecha de creación: <aqua>%clanland_creation_date%'
+  land settings header: '<newline><blue><bold>Ajustes del Terreno:'
+  land settings format:
+  - '<blue><bold>|</bold> <blue>Ubicación:'
+  - ' <white>Spawn: <aqua>%clanland_spawn%'
+  - '<blue><bold>|</bold> <blue>Banderas:'
+  - ' <white>Criaturas: <aqua>Monstruo: <yellow>%clanland_flag:monster_spawn% <gray>| <aqua>Animales: <yellow>%clanland_flag:animal_spawn%'
+  - ' <white>Decaimiento: <yellow>%clanland_flag:leaf_decay%'
+  - ' <white>Líquidos: <aqua>Lava: <yellow>%clanland_flag:lava_flow% <gray>| <aqua>Agua: <yellow>%clanland_flag:water_flow%'
+  - ' <white>Destrucción: <aqua>TNT: <yellow>%clanland_flag:tnt% <gray>| <aqua>Destrucción por mobs: <yellow>%clanland_flag:mob_grief%'
+  - ' <white>PvP: <aqua>TNT: <yellow>%clanland_flag:pvp%'
+  help clan header subcommand: '<newline><blue><bold>Ayuda con subcomandos:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatorio <gray>| <light_purple>() <gray>opcional <newline> '
+  help list empty: ' <red>- No hay nada en esta lista.'
+  clan dont permission role: '%tag% <red>Tu rol actual no te permite hacer esto.'
+  need bank money: '%tag% <red>Tu clan necesita <green>%uclans_money_currency%%amount% en el banco.'
+  need bank money gui: <red>Se necesita <green>%uclans_money_currency%%amount% en el banco.'
+  economy disabled: '%tag% <red>La economía está desactivada.'
+  economy disabled gui: <red>La economía está desactivada.'
+  terrain no land: '%tag% <red>Esta tierra no está protegida y no pertenece a ningún clan.'
+  player teleport dont move: '%tag% <yellow>Preparando teletransporte, no te muevas durante %sec% segundos.'
+  player teleport moved: '%tag% <red>Te moviste y el teletransporte fue cancelado!!!'
+  player teleport true: '%tag% <yellow>¡Has sido teletransportado!'
+  player teleport false: '%tag% <red>No has sido teletransportado debido a un error.'
+  value none: <red>Ninguno
+  value true: <green>Habilitado
+  value false: <red>Deshabilitado
+  player delete error gui: ''
+  player delete error: ''
+  player:
+    delete success gui: ''
+    delete success: ''
+  banner get error: '%tag% <red>Hubo un error al obtener el estandarte del clan.'
+  banner get error gui: <red>¡Error al obtener el estandarte!'
+  banner get success: '%tag% <green>Estandarte del clan recibido con éxito. Para comenzar la reclamación, haz clic en los dos puntos en los extremos de la nueva tierra.'
+  banner no clan: '%tag% <red>Este estandarte no pertenece a tu clan.'
+  banner clan empty: '%tag% <red>Este estandarte no pertenece a tu clan.'
+  disabled region: '%tag% <red>No puedes usarlo en esta región.'
+  colliding terrain: '%tag% <red>¡Esta ubicación parece estar colisionando con otro terreno!'
+  land no owner: '%tag% <red>Tu clan no es dueño de esta tierra.'
+  land empty: '%tag% <red>Tu clan no tiene tierras.'
+  land flag change error gui: <red>Error al cambiar.'
+  land flag change success gui: <green>Cambiado con éxito.'
+  land nomember: '%tag% <red>No eres parte de la tierra de este clan.'
+  land player banned: '%tag% <red>No puedes hacer esto porque estás baneado de esta tierra.'
+  land player unbanned: '%tag% <red>¡El jugador ha sido desbaneado con éxito!'
+  land player unbanned gui: <green>¡Jugador desbaneado con éxito!'
+  land player unbanned error: '%tag% <red>¡Hubo un error al desbanear al jugador!'
+  land player unbanned error gui: <red>Error al desbanear al jugador.'
+  land player is banned: '%tag% <red>Este jugador está baneado de la tierra.'
+  land player untrusted: '%tag% <red>¡El jugador ha sido removido de la lista de confianza con éxito!'
+  land player untrusted gui: <green>Jugador removido de la lista de confianza con éxito!'
+  land player ununtrusted error: '%tag% <red>¡Hubo un error al remover la confianza del jugador!'
+  land player ununtrusted error gui: <red>Error al remover la confianza del jugador.'
+  land player already banned: '%tag% <red>Este jugador ya está baneado de esta tierra.'
+  land player no banned: '%tag% <red>Este jugador no está baneado de esta tierra.'
+  land player no trusted: '%tag% <red>Este jugador no es de confianza en esta tierra.'
+  land player already trusted: '%tag% <red>Este jugador ya es de confianza en esta tierra.'
+  land player is leader: '%tag% <red>Este jugador es el líder de la tierra.'
+  land player is leader gui: <red>¡Es el líder de la tierra!'
+  land errorclaim: '%tag% <red>Ocurrió un error al reclamar la tierra.'
+  land hasland: '%tag% <red>Tu clan ya tiene una tierra.'
+  land successclaim: '%tag% <green>Tierra asegurada con éxito, usa <aqua>/clan nexus<green> para administrar.'
+  land veryclose: '%tag% <red>Hay otra tierra muy cerca de los límites.'
+  land nobanner: '%tag% <red>Tu clan aún no ha configurado un estandarte.'
+  land claim canceled: '%tag% <red>La reclamación fue cancelada porque el tiempo se agotó o te alejaste demasiado.'
+  land claim start: '%tag% <green>Has comenzado la reclamación de la tierra, selecciona dos puntos para generar el tamaño.'
+  land claim claimed: '%tag% <green>La tierra ha sido reclamada con éxito.'
+  land claim claimed gui: <green>Tierra reclamada con éxito.'
+  land claim error: '%tag% <red>Hubo un error al reclamar la tierra.'
+  land claim error gui: <red>¡Error al reclamar!'
+  land claim finish: '%tag% <green>Has seleccionado los dos puntos y ahora puedes ver el tamaño real del terreno. Incluso puedes cambiar los puntos o hacer clic dentro del cuadro para continuar.'
+  land claim veryfaraway: '%tag% <red>El tamaño seleccionado excede el límite.'
+  land claim veryclose: '%tag% <red>El punto seleccionado parece estar muy cerca del primer punto seleccionado.'
+  land claim tiny: '%tag% <red>El tamaño seleccionado es demasiado pequeño.'
+  land claim nearland: '%tag% <red>¡Parece que estás demasiado cerca de otro terreno!'
+  
+  # JOIN AND LEAVE LAND MESSAGES (Use '' to not send, All placeholders from PLACEHOLDERS.txt can be used.)
+  enter title: <blue>Entraste en <green>%uclans_tag_color%
+  enter title sub: <gold>%clanland_name%
+  enter actionbar: <blue>Entraste en el terreno <gold>%clanland_name% <blue>de <green>%uclans_tag_color%
+  enter message: '%tag% <blue>Entraste en el terreno <gold>%clanland_name% <blue>de <green>%uclans_tag_color%'
+  leave title: <red>Saliste de <green>%uclans_tag_color%
+  leave title sub: <gold>%clanland_name%
+  leave actionbar: <red>Saliste del terreno <gold>%clanland_name% <red>de <green>%uclans_tag_color%
+  leave message: '%tag% <red>Saliste del terreno <gold>%clanland_name% <red>de <green>%uclans_tag_color%'
+  land build outside: '%tag% <red>Estás construyendo fuera de tu terreno.'
+  land build only land: '%tag% <red>Solo puedes construir en tu terreno.'
+  logger clanlandclaimevent: <yellow>El terreno del clan fue reclamado por <green>%uclans_player%
+  logger clanlandunclaimevent: <red>El terreno del clan fue desreclamado por <green>%uclans_player%
+LANGUAGE:
+  value accept type: '%tag% <red>El tipo no es válido, utilice: <aqua>%types%'
+COMMUM:
+  land player already member: '%tag% <red>Este jugador ya es miembro de la Tierra.'
+GUI:
+  Land home_noclaim title: <dark_red>Sin tierra <gray>| <aqua>%uclans_tag_color%
+  Land home_noclaim items fill name: ' '
+  Land home_noclaim items fill lore: [
+    ]
+  Land home_noclaim items fill2 name: ' '
+  Land home_noclaim items fill2 lore: [
+    ]
+  Land home_noclaim items info name: <green>Estandarte del clan
+  Land home_noclaim items info lore:
+  - ''
+  - ' <yellow>Información del Banner:'
+  - ''
+  - ' <yellow>El banner del clan se usa para crear'
+  - ' <yellow>el <green>Terreno de Clanes <yellow>y proteger'
+  - ' <yellow>la tierra para el clan.'
+  - ''
+  - ' <red>¡Solo el líder puede gestionar terrenos!'
+  Land home_noclaim items start name: <green>Comenzar la reclamación
+  Land home_noclaim items start lore:
+  - ''
+  - ' <yellow>Tu clan no tiene terrenos, puedes'
+  - ' <yellow>empezar la reclamación ahora.'
+  Land home_noclaim items banner name: <red>Sin Banner
+  Land home_noclaim items banner lore:
+  - ''
+  - ' <red>Para usar los Terrenos, tu'
+  - ' <red>clan necesita un Banner!'
+  Land home_noclaim items nomod name: <red>Sin Terreno
+  Land home_noclaim items nomod lore:
+  - ''
+  - ' <red>Tu clan no tiene terrenos, solo los moderadores'
+  - ' <red>o el líder pueden reclamar nuevos terrenos!'
+  Land home_noclaim items back name: <red>Volver
+  Land home_noclaim items back lore:
+  - ''
+  - ' <yellow>Haz clic para volver.'
+  Land home_claim title: <blue>Reclamación <gray>| <aqua>%size% bloque(s)
+  Land home_claim items fill name: ' '
+  Land home_claim items fill lore: [
+    ]
+  Land home_claim items fill2 name: ' '
+  Land home_claim items fill2 lore: [
+    ]
+  Land home_claim items claim name: <green>Reclamar Terreno
+  Land home_claim items claim lore:
+  - ''
+  - ' <yellow>Información:'
+  - ''
+  - ' <white>Tamaño: <aqua>%size% bloque(s)'
+  - ' <white>Precio: <green>%uclans_money_currency%%price%'
+  - ''
+  - ' <yellow>Haz clic para finalizar la reclamación.'
+  Land home_claim items ajust name: <green>Ajustar tamaño
+  Land home_claim items ajust lore:
+  - ''
+  - ' <yellow>Cerrar y continuar la selección.'
+  Land home_claim items deselect name: <green>Deseleccionar
+  Land home_claim items deselect lore:
+  - ''
+  - ' <yellow>Haz clic para deseleccionar completamente.'
+  Land home_claim items back name: <red>Volver
+  Land home_claim items back lore:
+  - ''
+  - ' <yellow>Haz clic para volver.'
+  Land home_land title: <blue>Lista de Terrenos <gray>| <aqua>%uclans_tag_color%
+  Land home_land items fill name: ' '
+  Land home_land items fill lore: [
+    ]
+  Land home_land items current name: <gold>Terreno <aqua>%clanland_name%
+  Land home_land items current lore:
+  - ''
+  - ' <yellow>Información del Terreno:'
+  - ''
+  - ' <white>Clan: <aqua>%uclans_tag_color%'
+  - ' <white>Líder: <aqua>%uclans_leader%'
+  - ' <white>Miembros: <aqua>%uclans_count_members%'
+  - ' <white>Baneados: <red>%clanland_count_banned%'
+  - ' <white>Tamaño: <aqua>%clanland_size%'
+  - ' <white>Fecha de creación: <aqua>%clanland_creation_date%'
+  - ' <white>Nivel: <aqua>%clanland_level%'
+  - ''
+  - <yellow>Haz clic para abrir.
+  Land home_land items next name: <green>Página siguiente.
+  Land home_land items next lore:
+  - ''
+  - ' <yellow>Haz clic para continuar.'
+  Land home_land items prev name: <green>Página anterior.
+  Land home_land items prev lore:
+  - ''
+  - ' <yellow>Haz clic para volver.'
+  Land home_land items back name: <red>Volver
+  Land home_land items back lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
+  Land land_info title: <blue>Información del Terreno <gray>| <aqua>%clanland_name%
+  Land land_info items fill name: ' '
+  Land land_info items fill lore: [
+    ]
+  Land land_info items fill2 name: ' '
+  Land land_info items fill2 lore: [
+    ]
+  Land land_info items teleport name: <green>Teletransportarse al Terreno
+  Land land_info items teleport lore:
+  - ''
+  - ' <yellow>Haz clic para ir al punto de inicio del terreno.'
+  Land land_info items info name: <green>Terreno %clanland_name%
+  Land land_info items info lore:
+  - ''
+  - ' <yellow>Información del Terreno:'
+  - ''
+  - ' <white>Clan: <aqua>%uclans_tag_color%'
+  - ' <white>Líder: <aqua>%uclans_leader%'
+  - ' <white>Miembros: <aqua>%uclans_count_members%'
+  - ' <white>Baneados: <red>%clanland_count_banned%'
+  - ' <white>Tamaño: <aqua>%clanland_size%'
+  - ' <white>Fecha de creación: <aqua>%clanland_creation_date%'
+  - ' <white>Nivel: <aqua>%clanland_level%'
+  Land land_info items members name: <green>Miembros del Terreno.
+  Land land_info items members lore:
+  - ''
+  - ' <yellow>Haz clic para abrir.'
+  Land land_info items banned name: <green>Jugadores baneados.
+  Land land_info items banned lore:
+  - ''
+  - ' <yellow>Haz clic para abrir.'
+  Land land_info items ajust name: <red>Ajustes del Terreno
+  Land land_info items ajust lore:
+  - ''
+  - ' <yellow>Haz clic para abrir.'
+  Land land_info items back name: <red>Volver
+  Land land_info items back lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
+  Land land_banned title: <dark_red>Jugadores baneados <gray>| <aqua>%clanland_name%
+  Land land_banned items fill name: ' '
+  Land land_banned items fill lore: [
+    ]
+  Land land_banned items current name: <green>%uclans_player%
+  Land land_banned items current lore:
+  - ''
+  - ' <yellow>Información del Jugador'
+  - ''
+  - ' <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <white>Rol: <aqua>%uclans_player_role_formated%'
+  Land land_banned items current_action name: <green>%uclans_player%
+  Land land_banned items current_action lore:
+  - ''
+  - ' <yellow>Información del Jugador'
+  - ''
+  - ' <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <white>Rol: <aqua>%uclans_player_role_formated%'
+  - ''
+  - ' <red>HAZ CLIC PARA DESBANEAR.'
+  Land land_banned items next name: <green>Página siguiente.
+  Land land_banned items next lore:
+  - ''
+  - ' <yellow>Haz clic para continuar.'
+  Land land_banned items prev name: <green>Página anterior.
+  Land land_banned items prev lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
+  Land land_banned items new name: <green>Banear a un jugador
+  Land land_banned items new lore:
+  - ''
+  - ' <green>Haz clic para abrir.'
+  Land land_banned items back name: <red>Volver
+  Land land_banned items back lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
+  Land land_members title: <blue>Miembros del Terreno <gray>| <aqua>%clanland_name%
+  Land land_members items fill name: ' '
+  Land land_members items fill lore: [
+    ]
+  Land land_members items current name: <green>%uclans_player%
+  Land land_members items current lore:
+  - ''
+  - ' <yellow>Información del Jugador'
+  - ''
+  - ' <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <white>Rol: <aqua>%uclans_player_role_formated%'
+  Land land_members items current_action name: <green>%uclans_player%
+  Land land_members items current_action lore:
+  - ''
+  - ' <yellow>Información del Jugador'
+  - ''
+  - ' <white>Kdr: <aqua>%uclans_player_kills%<gray>/<aqua>%uclans_player_deaths% <dark_gray>(%uclans_player_kdr%)'
+  - ' <white>Rol: <aqua>%uclans_player_role_formated%'
+  - ''
+  - ' <red>HAZ CLIC PARA DESCONFIAR.'
+  Land land_members items next name: <green>Página siguiente.
+  Land land_members items next lore:
+  - ''
+  - ' <yellow>Haz clic para continuar.'
+  Land land_members items prev name: <green>Página anterior.
+  Land land_members items prev lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
+  Land land_members items new name: <green>Confiar en un jugador
+  Land land_members items new lore:
+  - ''
+  - ' <green>Haz clic para abrir.'
+  Land land_members items back name: <red>Volver
+  Land land_members items back lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
+  Land confirm_unban title: <dark_red>¿Confirmar Desbanear a <green>%uclans_player%<dark_red>?
+  Land confirm_unban items fill name: ' '
+  Land confirm_unban items fill lore: [
+    ]
+  Land confirm_unban items confirm name: <green>Desbanear a <green>%uclans_player%
+  Land confirm_unban items confirm lore:
+  - ''
+  - ' <yellow>Haz clic para confirmar y <dark_red>DESBANEAR<yellow> al jugador.'
+  Land confirm_unban items back name: <red>Cancelar y volver
+  Land confirm_unban items back lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
+  Land confirm_untrust title: <dark_red>¿Confirmar Desconfiar de <green>%uclans_player%<dark_red>?
+  Land confirm_untrust items fill name: ' '
+  Land confirm_untrust items fill lore: [
+    ]
+  Land confirm_untrust items confirm name: <green>Desconfiar de <green>%uclans_player%
+  Land confirm_untrust items confirm lore:
+  - ''
+  - ' <yellow>Haz clic para confirmar y <dark_red>DESCONFIAR<yellow> del jugador.'
+  Land confirm_untrust items back name: <red>Cancelar y volver
+  Land confirm_untrust items back lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
+  Land confirm_abandon title: <dark_red>¿Confirmar Abandonar <aqua>%clanland_name%<dark_red>?
+  Land confirm_abandon items fill name: ' '
+  Land confirm_abandon items fill lore: [
+    ]
+  Land confirm_abandon items confirm name: <green>Sí, confirmar.
+  Land confirm_abandon items confirm lore:
+  - ''
+  - ' <yellow>Haz clic para confirmar y abandonar.'
+  Land confirm_abandon items back name: <red>Cancelar y volver
+  Land confirm_abandon items back lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
+  Land land_ajust title: <red>Ajustes del Terreno <gray>| <aqua>%clanland_name%
+  Land land_ajust items fill name: ' '
+  Land land_ajust items fill lore: [
+    ]
+  Land land_ajust items rename name: <green>Renombrar el terreno.
+  Land land_ajust items rename lore:
+  - ''
+  - ' <yellow>Haz clic para renombrar el terreno.'
+  Land land_ajust items setspawn name: <green>Cambiar spawn del terreno.
+  Land land_ajust items setspawn lore:
+  - ''
+  - ' <yellow>Haz clic para cambiar el spawn '
+  - '<yellow>a tu ubicación actual o usa el '
+  - <yellow>comando <aqua>/clan land setspawn <yellow>mientras
+  - <yellow>estés dentro de tu terreno.
+  Land land_ajust items abandon name: <green>Abandonar el terreno.
+  Land land_ajust items abandon lore:
+  - ''
+  - ' <dark_red>Atención, si abandonas el'
+  - '<dark_red>terreno, los ítems y edificios '
+  - <dark_red>perderán protección!'
+  - ''
+  - ' <yellow>Haz clic para abandonar.'
+  Land land_ajust items back name: <red>Regresar.
+  Land land_ajust items back lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
+  Land land_ajust items flags name: <red>Flags del terreno.
+  Land land_ajust items flags lore:
+  - ''
+  - ' <yellow>Haz clic para editar los flags.'
+  Land land_flags title: <red>Flags del terreno <gray>| <aqua>%clanland_name%
+  Land land_flags items fill name: ' '
+  Land land_flags items fill lore: [
+    ]
+  Land land_flags items monster_spawn name: <green>Spawn de monstruos.
+  Land land_flags items monster_spawn lore:
+  - ''
+  - ' <yellow>Estado: <aqua>%clanland_flag:monster_spawn%.'
+  Land land_flags items animal_spawn name: <green>Spawn de animales.
+  Land land_flags items animal_spawn lore:
+  - ''
+  - ' <yellow>Estado: <aqua>%clanland_flag:animal_spawn%.'
+  Land land_flags items leaf_decay name: <green>Descomposición de hojas.
+  Land land_flags items leaf_decay lore:
+  - ''
+  - ' <yellow>Estado: <aqua>%clanland_flag:leaf_decay%.'
+  Land land_flags items pvp name: <green>PvP.
+  Land land_flags items pvp lore:
+  - ''
+  - ' <yellow>Estado: <aqua>%clanland_flag:pvp%.'
+  Land land_flags items water_flow name: <green>Flujo de agua.
+  Land land_flags items water_flow lore:
+  - ''
+  - ' <yellow>Estado: <aqua>%clanland_flag:water_flow%.'
+  Land land_flags items lava_flow name: <green>Flujo de lava.
+  Land land_flags items lava_flow lore:
+  - ''
+  - ' <yellow>Estado: <aqua>%clanland_flag:lava_flow%.'
+  Land land_flags items tnt name: <green>Explosión de TNT.
+  Land land_flags items tnt lore:
+  - ''
+  - ' <yellow>Estado: <aqua>%clanland_flag:tnt%.'
+  Land land_flags items mob_grief name: <green>Destrucción por mobs.
+  Land land_flags items mob_grief lore:
+  - ''
+  - ' <yellow>Estado: <aqua>%clanland_flag:mob_grief%.'
+  Land land_flags items back name: <red>Regresar.
+  Land land_flags items back lore:
+  - ''
+  - ' <yellow>Haz clic para regresar.'
