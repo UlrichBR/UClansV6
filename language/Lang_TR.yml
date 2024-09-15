@@ -2071,8 +2071,8 @@ LOGGER:
   CLANPLAYERJOINEVENT: <yellow>Oyuncu <green>%uclans_player_name% <yellow>klana katıldı.
   CLANPLAYERROLECHANGE: <yellow>Oyuncu <green>%uclans_player_name% <yellow>Rolü şimdi <green>%uclans_player_role_formated% <yellow>olarak değiştirildi
   CLANPLAYERINVITERECEIVE: <yellow>Oyuncu <green>{player_other} <yellow>klana <green>%uclans_player_name% <yellow>tarafından davet edildi
-  CLANALLYINVITEEVENT: <yellow>Klanınız klana bir müttefik isteği gönderdi: <green>{clan_other}
-  CLANRIVALINVITEEVENT: <yellow>Klana karşı yeni rekabet: <green>{clan_other}
+  CLANALLYINVITEEVENT: '<yellow>Klanınız klana bir müttefik isteği gönderdi: <green>{clan_other}'
+  CLANRIVALINVITEEVENT: '<yellow>Klana karşı yeni rekabet: <green>{clan_other}'
   CLANPLAYERBANEVENT: <yellow>Oyuncu <green>{player_other} <yellow>klandan yasaklandı.
   CLANPLAYERUNBANEVENT: <yellow>Oyuncu <green>{player_other} <yellow>klandan yasağı kaldırıldı
   CLANFFCHANGEEVENT: <yellow>Klan dost ateşi <green>{status} <yellow>olarak değiştirildi
